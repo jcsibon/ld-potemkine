@@ -1,0 +1,12 @@
+.button-primary {
+  background-color: $color-orange;
+  border: none;
+  border-radius: 1px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 16px 50px;
+  &:hover {
+    background-color: lighten($color-orange, 2);
+  }
+}

@@ -1,0 +1,441 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container-fluid page pt-4">
+  <div class="row">
+    <div class="col-5">
+      <div aria-multiselectable="true" id="accordion" role="tablist">
+        <div class="card">
+          <div class="card-header" id="chapter1" role="tab">
+            <h5 class="mb-0"><a aria-controls="collapse1" aria-expanded="true" data-toggle="collapse" href="#collapse1">Type de chantier</a></h5>
+          </div>
+          <div aria-labelledby="chapter1" class="collapse show" id="collapse1" role="tabpanel">
+            <div class="card-block py-0">
+              <div class="row radio-box-wrapper">
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="chantier-nouvelle-construction" name="chantier-type" value="nouvelle-construction">
+                  <label class="radio-box m-0" for="chantier-nouvelle-construction">
+                    <img class="img-fluid" src="/images/chantier-nouvelle-construction.png" width="68" height="67" aria-hidden="true">
+                    <p class="small text-center">Nouvelle construction</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="chantier-remplacement-partiel" name="chantier-type" value="remplacement-partiel">
+                  <label class="radio-box m-0" for="chantier-remplacement-partiel">
+                    <img class="img-fluid" src="/images/chantier-remplacement-partiel.png" width="68" height="67" aria-hidden="true">
+                    <p class="small text-center">Remplacement partiel</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="chantier-remplacement-integral" name="chantier-type" value="remplacement-integral">
+                  <label class="radio-box m-0" for="chantier-remplacement-integral">
+                    <img class="img-fluid" src="/images/chantier-remplacement-integral.png" width="68" height="67" aria-hidden="true">
+                    <p class="small text-center">Remplacement intégral</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="chapter2" role="tab">
+            <h5 class="mb-0"><a aria-controls="collapse2" aria-expanded="false" data-toggle="collapse" href="#collapse2">Dimensions</a></h5>
+          </div>
+          <div aria-labelledby="chapter2" class="collapse" id="collapse2" role="tabpanel">
+            <div class="card-block py-0">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6 pl-0 pr-3">
+                    <div class="form-group">
+                      <label class="radio m-0-box text-uppercase small font-weight-bold text-muted" for="largeur">Largeur (cm)</label>
+                      <input class="form-control" id="largeur" type="number">
+                      <small class="form-text text-muted">Entre 40 et 180 cm</small>
+                    </div>
+                  </div>
+                  <div class="col-6 pl-3 pr-0">
+                    <div class="form-group">
+                      <label class="radio m-0-box text-uppercase small font-weight-bold text-muted" for="largeur">Hauteur (cm)</label>
+                      <input class="form-control" id="hauteur" type="number">
+                      <small class="form-text text-muted">Entre 120 et 260 cm</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p><a href="#">Comment bien prendre vos dimensions ?</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="chapter3" role="tab">
+            <h5 class="mb-0"><a aria-controls="collapse3" aria-expanded="false" data-toggle="collapse" href="#collapse3">Type d'ouverture</a></h5>
+          </div>
+          <div aria-labelledby="chapter3" class="collapse" id="collapse3" role="tabpanel">
+            <div class="card-block py-0">
+              <div class="row radio-box-wrapper">
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="ouverture-fenetre" name="ouverture-type" value="fenetre">
+                  <label class="radio-box m-0" for="ouverture-fenetre">
+                    <img class="img-fluid" src="/images/type-fenetre.png" width="68" height="67" aria-hidden="true">
+                    <p class="small text-center">Fenêtre</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="ouverture-porte-fenetre" name="ouverture-type" value="porte-fenetre">
+                  <label class="radio-box m-0" for="ouverture-porte-fenetre">
+                    <img class="img-fluid" src="/images/type-porte-fenetre.png" width="68" height="67" aria-hidden="true">
+                    <p class="small text-center">Porte fenêtre</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="ouverture-baie-coulissante" name="ouverture-type" value="baie-coulissante">
+                  <label class="radio-box m-0" for="ouverture-baie-coulissante">
+                    <img class="img-fluid" src="/images/type-baie-coulissante.png" width="68" height="67" aria-hidden="true">
+                    <p class="small text-center">Baie coulissante</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-row-config">
+          <label class="col-form-label h5" for="example-text-input">Nombre de ventaux</label>
+          <div class="d-inline-block form-row-config-inputs">
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">
+                <input class="form-check-input radio-input sr-only" id="inlineRadio1" name="inlineRadioOptions" type="radio" value="option1">
+                <label for="inlineRadio1" class="radio-label" aria-hidden="true"></label>
+                <span>1 ventail</span>
+              </label>
+              <label class="form-check-label">
+                <input class="form-check-input radio-input sr-only" id="inlineRadio2" name="inlineRadioOptions" type="radio" value="option2">
+                <label for="inlineRadio2" class="radio-label" aria-hidden="true"></label>
+                <span>2 ventaux</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-row-config">
+          <label class="col-form-label h5" for="example-text-input">Clé intégrée</label>
+          <div class="d-inline-block form-row-config-inputs">
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">
+                <input class="form-check-input radio-input sr-only" id="cle-integree-oui" name="cle-integree" type="radio" value="true">
+                <label class="radio-label" aria-hidden="true" for="cle-integree-oui"></label>
+                <span>Oui</span>
+              </label>
+              <label class="form-check-label">
+                <input class="form-check-input radio-input sr-only" id="cle-integree-non" name="cle-integree" type="radio" value="false">
+                <label class="radio-label" aria-hidden="true" for="cle-integree-non"></label>
+                <span>Non</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="chapter4" role="tab">
+            <h5 class="mb-0"><a aria-controls="collapse4" aria-expanded="false" data-toggle="collapse" href="#collapse4">Ouverture</a></h5>
+          </div>
+          <div aria-labelledby="chapter4" class="collapse" id="collapse4" role="tabpanel">
+            <div class="card-block py-0">
+              <div class="row radio-box-wrapper">
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="ouverture-battante" name="ouverture" value="battante">
+                  <label class="radio-box m-0" for="ouverture-battante">
+                    <img class="img-fluid" src="/images/ouverture-battante.png" width="68" height="67" aria-hidden="true">
+                    <p class="small text-center">Battante</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="ouverture-oscillo-battante" name="ouverture" value="oscillo-battante">
+                  <label class="radio-box m-0" for="ouverture-oscillo-battante">
+                    <img class="img-fluid" src="/images/ouverture-oscillo-battante.png" width="68" height="67" aria-hidden="true">
+                    <p class="small text-center">Oscillo-battante</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-row-config">
+          <label class="col-form-label h5" for="example-text-input">Sens de fermeture</label>
+          <div class="d-inline-block form-row-config-inputs">
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">
+                <input class="form-check-input radio-input sr-only" id="sens-fermeture-gauche" name="sens-fermeture" type="radio" value="gauche">
+                <label class="radio-label" aria-hidden="true" for="sens-fermeture-gauche"></label>
+                <span>Gauche</span>
+              </label>
+              <label class="form-check-label">
+                <input class="form-check-input radio-input sr-only" id="sens-fermeture-droite" name="sens-fermeture" type="radio" value="droite">
+                <label class="radio-label" aria-hidden="true" for="sens-fermeture-droite"></label>
+                <span>Droite</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="chapter5" role="tab">
+            <h5 class="mb-0"><a aria-controls="collapse5" aria-expanded="false" data-toggle="collapse" href="#collapse5">Volets</a></h5>
+          </div>
+          <div aria-labelledby="chapter5" class="collapse" id="collapse5" role="tabpanel">
+            <div class="card-block py-0">
+              <div class="row radio-box-wrapperb">
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="volets-sans" name="volets" value="sans">
+                  <label class="radio-box m-0" for="volets-sans">
+                    <img class="img-fluid" src="/images/type-fenetre.png" width="68" height="67" aria-hidden="true">
+                    <p class="small text-center">Sans volets</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="volets-roulants" name="volets" value="roulants">
+                  <label class="radio-box m-0" for="volets-roulants">
+                    <img class="img-fluid" src="/images/volets-manuels.png" width="68" height="67" aria-hidden="true">
+                    <p class="small text-center">Volets roulants</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-4">
+                  <input class="sr-only" type="radio" id="volets-electriques" name="volets" value="electriques">
+                  <label class="radio-box m-0" for="volets-electriques">
+                    <img class="img-fluid" src="/images/volets-electriques.png" width="68" height="67" aria-hidden="true">
+                    <p class="small text-center">Volets électriques</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="chapter6" role="tab">
+            <h5 class="mb-0"><a aria-controls="collapse6" aria-expanded="false" data-toggle="collapse" href="#collapse6">Finition</a></h5>
+          </div>
+          <div aria-labelledby="chapter6" class="collapse" id="collapse6" role="tabpanel">
+            <div class="card-block py-0">
+              <div class="row">
+                <div class="col-3 p-0">
+                  <input class="sr-only" type="radio" id="finition-pvc" name="finition" value="pvc">
+                  <label class="radio-box m-0" for="finition-pvc">
+                    <img class="img-fluid" src="/images/materiau-pvc.png" width="39" height="50" aria-hidden="true">
+                    <p class="small text-center">PVC</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-3 p-0">
+                  <input class="sr-only" type="radio" id="finition-pin" name="finition" value="pin">
+                  <label class="radio-box m-0" for="finition-pin">
+                    <img class="img-fluid" src="/images/materiau-boisalu.png" width="31" height="50" aria-hidden="true">
+                    <p class="small text-center">Pin</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-3 p-0">
+                  <input class="sr-only" type="radio" id="finition-bois" name="finition" value="bois">
+                  <label class="radio-box m-0" for="finition-bois">
+                    <img class="img-fluid" src="/images/materiau-bois.png" width="46" height="50" aria-hidden="true">
+                    <p class="small text-center">Chene</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-3 p-0">
+                  <input class="sr-only" type="radio" id="finition-aluminium" name="finition" value="aluminium">
+                  <label class="radio-box m-0" for="finition-aluminium">
+                    <img class="img-fluid" src="/images/materiau-alu.png" width="45" height="50" aria-hidden="true">
+                    <p class="small text-center">Aluminium</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="chapter" role="tab">
+            <h5 class="mb-0"><a aria-controls="collapse7" aria-expanded="false" data-toggle="collapse" href="#collapse7">Isolation acoustique</a></h5>
+          </div>
+          <div aria-labelledby="chapter" class="collapse" id="collapse7" role="tabpanel">
+            <div class="card-block py-0">
+              <div class="row">
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="isolation-standard" name="isolation" value="standard">
+                  <label class="radio-box m-0" for="isolation-standard">
+                    <img class="img-fluid" src="/images/acoustique-1.png" width="29" height="50" aria-hidden="true">
+                    <p class="small text-center">Standard</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="isolation-acoustique" name="isolation" value="acoustique">
+                  <label class="radio-box m-0" for="isolation-acoustique">
+                    <img class="img-fluid" src="/images/acoustique-2.png" width="45" height="50" aria-hidden="true">
+                    <p class="small text-center">Acoustique</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="isolation-renforce" name="isolation" value="renforce">
+                  <label class="radio-box m-0" for="isolation-renforce">
+                    <img class="img-fluid" src="/images/acoustique-3.png" width="44" height="50" aria-hidden="true">
+                    <p class="small text-center">Renforcé</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="chapter8" role="tab">
+            <h5 class="mb-0"><a aria-controls="collapse8" aria-expanded="false" data-toggle="collapse" href="#collapse8">Sécurité</a></h5>
+          </div>
+          <div aria-labelledby="chapter8" class="collapse" id="collapse8" role="tabpanel">
+            <div class="card-block py-0">
+              <div class="row">
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="securite-standard" name="securite" value="standard">
+                  <label class="radio-box m-0" for="securite-standard">
+                    <img class="img-fluid" src="/images/securite-1.png" width="29" height="50" aria-hidden="true">
+                    <p class="small text-center">Standard</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="securite-personnes" name="securite" value="personnes">
+                  <label class="radio-box m-0" for="securite-personnes">
+                    <img class="img-fluid" src="/images/securite-2.png" width="45" height="50" aria-hidden="true">
+                    <p class="small text-center">Sécurité des personnes</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+                <div class="col-4 p-0">
+                  <input class="sr-only" type="radio" id="securite-biens" name="securite" value="biens">
+                  <label class="radio-box m-0" for="securite-biens">
+                    <img class="img-fluid" src="/images/securite-3.png" width="44" height="50" aria-hidden="true">
+                    <p class="small text-center">Sécurité des biens</p>
+                    <a href="#" class="radio-box-link">Info</a>
+                    <a href="#" class="sr-only">Info</a>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--<div class="card">
+          <div class="card-header" id="chapter9" role="tab">
+            <h5 class="mb-0"><a aria-controls="collapse9" aria-expanded="false" data-toggle="collapse" href="#collapse9">Décoration</a></h5>
+          </div>
+          <div aria-labelledby="chapter9" class="collapse" id="collapse9" role="tabpanel">
+            <div class="card-block py-0">
+              <div class="row">
+                <div class="col-4">
+                   <img class="img-fluid" src="https://cdn.pbrd.co/images/1Dj0mWTqu.png">
+                  <p class="small text-center">Aucun</p>
+                </div>
+                <div class="col-4">
+                   <img class="img-fluid" src="https://cdn.pbrd.co/images/1Dj0mWTqu.png">
+                  <p class="small text-center">Satinovo</p>
+                </div>
+                <div class="col-4">
+                   <img class="img-fluid" src="https://cdn.pbrd.co/images/1Dj0mWTqu.png">
+                  <p class="small text-center">Pixarena</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="sur-mesure-block clearfix">
+        <div class="float-left">
+          <h5 class="mb-0">Solution sur mesure</h5>
+          <div class="font-italic">Commandable uniquement en magasin</div>
+        </div>
+        <input type="checkbox" class="sr-only" id="sur-mesure">
+        <label class="switch float-right mt-2" for="sur-mesure"></label>
+      </div>
+    </div>
+    <div class="col-7">
+      <div aria-multiselectable="true" id="accordion2" role="tablist">
+        <div class="card product">
+          <div class="product-header" id="solution-1" role="tab">
+            <h4 class="mb-0">
+              <a aria-controls="solution1" aria-expanded="false" data-toggle="collapse" href="#solution1" class="collapsed" data-parent="#accordion2">
+                Fenetre nue oscillo-battante - Classique PVC
+                <div class="checkbox-fake float-left mr-3"></div>
+                <div class="product-price float-right">129,00 €</div>
+              </a>
+            </h4>
+          </div>
+          <div aria-labelledby="solution-1" class="collapse product-body" id="solution1" role="tabpanel">
+            <div class="card-block pt-0">
+              
+            </div>
+          </div>
+        </div>
+        <div class="card product">
+          <div class="product-header" id="solution-2" role="tab">
+            <h4 class="mb-0">
+              <a aria-controls="solution2" aria-expanded="false" data-toggle="collapse" href="#solution2" class="collapsed" data-parent="#accordion2">
+                Prêt à poser - Fenetre nue oscillo-battante - Classique PVC
+                <div class="checkbox-fake float-left mr-3"></div>
+                <div class="product-price float-right">129,00 €</div>
+              </a>
+            </h4>
+          </div>
+          <div aria-labelledby="solution-2" class="collapse product-body" id="solution2" role="tabpanel">
+            <div class="card-block pt-0">
+              <ul>
+                <li>Kit de fixation fenêtre PVC - ref. de l'article : 2187200</li>
+                <li>Élargisseurs <strong>x 2</strong></li>
+                <li>Poignée fenêtre aluminium <strong>x 1</strong></li>
+                <li>Caches-fiches blanc ouverture oscillo-battante</li>
+                <li>Patte de scellement pour fenêtre PVC</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="float-right">
+        <label>
+          <span class="input-text-label">Quantité</span>
+          <div class="input-number">
+            <input type="number" value="1">
+            <span class="input-number-minus">-</span>
+            <span class="input-number-plus">+</span>
+          </div>
+        </label>
+        <button class="button-primary">Ajouter au panier</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
