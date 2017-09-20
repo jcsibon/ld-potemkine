@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-  
-</head>
+	<head>
+		{% include 'widgets/headerUI/headerUI.twig' %}
+	</head>
+	<body>
+		{# {% include 'widgets/nav.twig' %} #}
 
-<body>
-  
+		{% block content %}
+		{% endblock %}
 
-  {% block content %}{% endblock %}
-    
-</body>
+		{% include 'widgets/footer/footer.twig' %}
+	</body>
 </html>
