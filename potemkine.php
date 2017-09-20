@@ -18,7 +18,7 @@ if(isset($argv[1]))
 						{
 							$argv[3] = lcfirst(str_replace("_", "", $argv[3]));
 							echo "Génération du masque ".$argv[3].PHP_EOL;
-							$layout = "web/layouts/".$argv[3].".twig";
+							$layout = "web/views/layouts/".$argv[3].".twig";
 							if(!file_exists($layout))
 							{
 								touch($layout);
@@ -39,7 +39,7 @@ if(isset($argv[1]))
 						{
 							$argv[3] = lcfirst(str_replace("_", "", $argv[3]));
 							echo "Génération de la vue ".$argv[3].PHP_EOL;
-							$view = "web/views/".$argv[3].".twig";
+							$view = "web/views/pages/".$argv[3].".twig";
 
 							if(file_exists($view) && (!isset($argv[4]) || $argv[4] != "-force"))
 							{
@@ -66,7 +66,7 @@ if(isset($argv[1]))
 						{
 							$argv[3] = lcfirst(str_replace("_", "", $argv[3]));
 							echo "Génération du widget ".$argv[3].PHP_EOL;
-							$dir = "web/widgets/".$argv[3];
+							$dir = "web/views/widgets/".$argv[3];
 							if(!is_dir($dir))
 							{
 								mkdir($dir);
