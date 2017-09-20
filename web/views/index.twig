@@ -2,6 +2,267 @@
 
 {% block content %}
 
-YOPPP
+
+      <header class="row">
+         <div class="col s12">
+            <div class="col s6">Logo</div>
+            <div class="col s2">100% sécurisé</div>
+            <div class="col s2">02 43 25 20 52</div>
+            <div class="col s2">Aide</div>
+         </div>
+      </header>
+      <div class="divider"></div>
+      <div class="row col s12 blue-grey lighten-5">
+         <div class="row col s12">
+            <div class="col s3">Panier</div>
+            <div class="col s3">Identification</div>
+            <div class="col s3">Retrait / Livraison</div>
+            <div class="col s3">Paiement</div>
+         </div>
+         <div class="row col s12">
+            <div class="col s9 white">
+               <ul class="collapsible" data-collapsible="accordion">
+                  <li>
+                     <div class="col s12 collapsible-header"><h4>Livraison à domicile</h4> 30€</div>
+                     <div class="collapsible-body col s12">
+                        <div class="col s12">Votre adresse de livraison</div>
+                        <div class="col s12 light-blue lighten-5">Votre livraison est prévue à partir du 24/03/2017<br/>Le magasin qui prépare votre commande prendra contact 
+                           avec 
+                           vous sous 2 jours pour convenir des détails liés à la livraison.
+                        </div>
+                        <div class="col s12">
+                           <div class="col s4">Votre adresse</div>
+                           <div class="col s8">Choisir une autre adresse</div>
+                           <div class="col s4">Jean Dupont<br/>14 rue de la Roquette<br/>75011 Paris<br/>0143252052</div>
+                           <div class="col s4">Jean Dupont<br/>1 boulevard Richard Lenoir<br/>75011 Paris<br/>0143252052<br/><a 
+                              class="btn">Choisir</a></div>
+                           <div class="col s4 modal-trigger" data-target="modalAdress">Vous avez besoin d'être facturé à une autre adresse ?</div>
+                        </div>
+                        <div class="col s12">
+                           <div class="col s12">Votre adresse</div>
+                           <div class="col s12">
+                              <div class="row">
+                                 <label for="civilité">Civilité</label>
+                                 <input name="group1" type="radio" id="test1" />
+                                 <label for="test1">Madame</label>
+                                 <input name="group1" type="radio" id="test2" />
+                                 <label for="test2">Monsieur</label>
+                              </div>
+                              <div class="row">
+                                 <div class="input-field col s6">
+                                    <input id="prenom" type="text" class="validate">
+                                    <label for="prenom">Prénom</label>
+                                 </div>
+                                 <div class="input-field col s6">
+                                    <input id="nom" type="text" class="validate">
+                                    <label for="nom">Nom</label>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="input-field col s6">
+                                    <input id="mail" type="text" class="validate">
+                                    <label for="mail">Adresse email</label>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="input-field col s6">
+                                    <input id="voie" type="text" class="validate">
+                                    <label for="voie">N° et voie</label>
+                                 </div>
+                                 <div class="input-field col s3">
+                                    <input id="batiment" type="text" class="validate">
+                                    <label for="batiment">Bâtiment, escalier</label>
+                                 </div>
+                                 <div class="input-field col s3">
+                                    <input id="etage" type="text" class="validate">
+                                    <label for="etage">Etage</label>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="input-field col s3">
+                                    <input id="cp" type="text" class="validate">
+                                    <label for="cp">Code postal</label>
+                                 </div>
+                                 <div class="input-field col s6">
+                                    <input id="ville" type="text" class="validate">
+                                    <label for="ville">Ville</label>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="input-field col s6">
+                                    <input id="pays" type="text" class="validate">
+                                    <label for="pays">Pays</label>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="input-field col s6">
+                                    <input id="telephone" type="text" class="validate">
+                                    <label for="telephone">Numéro de téléphone</label>
+                                 </div>
+                                 <div class="input-field col s4">
+                                    <input id="type_telephone" type="text" class="validate">
+                                    <label for="type_telephone">Type de téléphone</label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col s12">
+                           <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                           <label> J'utilise la même adresse pour la facturation</label> 
+                        </div>
+                        <div class="col s4">Jean Dupont<br/>1 boulevard Richard Lenoir<br/>75011 Paris<br/>0143252052<br/><a class="btn">Choisir</a></div>
+                        <div class="col s4 modal-trigger" data-target="modalAdress">Vous avez besoin d'être facturé à une autre adresse ?</div>
+                        <div class="col s12">
+                           <a class="btn">Valider et payer</a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="col s12 collapsible-header"><h4>Retrait en Drive</h4> Gratuit</div>
+                     <div class="collapsible-body col s12">
+                        <div class="col s12">Votre magasin</div>
+                        <div class="col s9">
+                           <div class="input-field col s9">
+                              <input id="email" type="email" class="validate">
+                              <label for="email">Votre ville ou CP</label>
+                              <div class="col s12">
+                                 Le code postal n'est pas livrable. veuillez Réessayer.
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col s3">
+                           <a class="btn">Ok</a>
+                        </div>
+                        <div class="col s4">lapeyre Le Mans<br/>RN 138<br/>ZAC Porte Océane<br/>72650 Saint-Saturnin<br/>02 43 25 20 52</div>
+                        <div class="col s4">lapeyre Le Mans<br/>RN 138<br/>ZAC Porte Océane<br/>72650 Saint-Saturnin<br/>02 43 25 20 52</div>
+                        <div class="col s4">lapeyre Le Mans<br/>RN 138<br/>ZAC Porte Océane<br/>72650 Saint-Saturnin<br/>02 43 25 20 52</div>
+                        <div class="col s4">lapeyre Le Mans<br/>RN 138<br/>ZAC Porte Océane<br/>72650 Saint-Saturnin<br/>02 43 25 20 52</div>
+                        <div class="col s4">lapeyre Le Mans<br/>RN 138<br/>ZAC Porte Océane<br/>72650 Saint-Saturnin<br/>02 43 25 20 52</div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div class="col s3">
+               <div class="row col s12">Panier (6 produits)</div>
+               <div class="col s5">Image</div>
+               <div class="col s7">
+                  <div>Ref. 1234567<br/>Bloc-Porte palier coupe feu chêne à vernir<br/>Largeur : 120cm<br/>Hauteur : 50cm<br/>Sens d'ouverture : 
+                     Intérieur<br/>Finition : Chêne gris
+                  </div>
+                  <div class="col s8">Quantité : 1</div>
+                  <div class="col s4">89,00€</div>
+               </div>
+               <div class="col s5">Image</div>
+               <div class="col s7">
+                  <div>Ref. 1234567<br/>Bloc-Porte palier coupe feu chêne à vernir<br/>Largeur : 120cm<br/>Hauteur : 50cm<br/>Sens d'ouverture : 
+                     Intérieur<br/>Finition : Chêne gris
+                  </div>
+                  <div class="col s8">Quantité : 1</div>
+                  <div class="col s4">89,00€</div>
+               </div>
+               <div class="col s12">
+                  <a class="btn">Voir tout mon panier</a>
+               </div>
+               <div class="col s7">
+                  Total TTC
+               </div>
+               <div class="col s5">
+                  221,00€
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal Structure -->
+      <div id="modalAdress" class="modal">
+         <div class="modal-content">
+            <h4>Ajouter une nouvelle adresse</h4>
+            <div class="col s12">
+               <div class="col s12">
+                  <div class="row">
+                     <label for="civilité">Civilité</label>
+                     <input name="group1" type="radio" id="test1" />
+                     <label for="test1">Madame</label>
+                     <input name="group1" type="radio" id="test2" />
+                     <label for="test2">Monsieur</label>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s6">
+                        <input id="prenom" type="text" class="validate">
+                        <label for="prenom">Prénom</label>
+                     </div>
+                     <div class="input-field col s6">
+                        <input id="nom" type="text" class="validate">
+                        <label for="nom">Nom</label>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s6">
+                        <input id="mail" type="text" class="validate">
+                        <label for="mail">Adresse email</label>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s6">
+                        <input id="voie" type="text" class="validate">
+                        <label for="voie">N° et voie</label>
+                     </div>
+                     <div class="input-field col s3">
+                        <input id="batiment" type="text" class="validate">
+                        <label for="batiment">Bâtiment, escalier</label>
+                     </div>
+                     <div class="input-field col s3">
+                        <input id="etage" type="text" class="validate">
+                        <label for="etage">Etage</label>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s3">
+                        <input id="cp" type="text" class="validate">
+                        <label for="cp">Code postal</label>
+                     </div>
+                     <div class="input-field col s6">
+                        <input id="ville" type="text" class="validate">
+                        <label for="ville">Ville</label>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s6">
+                        <input id="pays" type="text" class="validate">
+                        <label for="pays">Pays</label>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s6">
+                        <input id="telephone" type="text" class="validate">
+                        <label for="telephone">Numéro de téléphone</label>
+                     </div>
+                     <div class="input-field col s4">
+                        <input id="type_telephone" type="text" class="validate">
+                        <label for="type_telephone">Type de téléphone</label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn">Ajouter</a>
+         </div>
+      </div>
+      <footer>
+         FOOTER
+      </footer>
+      <script>
+         $('.modal').modal({
+             dismissible: true, // Modal can be dismissed by clicking outside of the modal
+             opacity: .5, // Opacity of modal background
+             inDuration: 300, // Transition in duration
+             outDuration: 200, // Transition out duration
+             startingTop: '4%', // Starting top style attribute
+             endingTop: '10%', // Ending top style attribute
+             ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+             },
+             complete: function() { } // Callback for Modal close
+           }
+         );
+             
+      </script>
 
 {% endblock %}
