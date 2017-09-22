@@ -60,13 +60,13 @@ if(isset($argv[1]))
 							die("Vous devez préciser un intitulé.".PHP_EOL);
 						}
 						break;	
-					case 'widget':
+					case 'storewidget':
 					case 'w':
 						if(isset($argv[3])) 
 						{
 							$argv[3] = lcfirst(str_replace("_", "", $argv[3]));
-							echo "Génération du widget ".$argv[3].PHP_EOL;
-							$dir = "web/views/widgets/".$argv[3];
+							echo "Génération du storewidget ".$argv[3].PHP_EOL;
+							$dir = "web/views/storeWidgets/".$argv[3];
 							if(!is_dir($dir))
 							{
 								mkdir($dir);
@@ -78,7 +78,10 @@ if(isset($argv[1]))
 									die("Le dossier existe déjà.".PHP_EOL);									
 								}
 							}
-							touch($dir."/".$argv[3].".twig");
+							$twigContent = "";
+							$twigContent .= PHP_EOL;
+							$twigContent .= 'Storewidget '.$argv[3].PHP_EOL;
+							file_put_contents($dir."/".$argv[3].".twig", $twigContent);
 							touch($dir."/".$argv[3].".scss");
 						}
 						else

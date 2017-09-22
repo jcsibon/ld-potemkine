@@ -1,0 +1,89 @@
+{% extends "layout.html" %} 
+
+{% block content %}
+
+{# Pvc, Aluminium, Chêne, Pin #}
+
+
+{% set nav = [
+   {"anchor" : "abattants", "image" : "//statics.lapeyre.fr/img/catalogue/zoom1/515/121/200515121.jpg", "name" : "Abattants","ouverture":""},
+   {"anchor" : "chassis", "image" : "//statics.lapeyre.fr/img/catalogue/standardMain/515/167/200515167.jpg", "name" : "Châssis","ouverture":""},
+   {"anchor" : "chassis", "image" : "//statics.lapeyre.fr/img/catalogue/standardMain/515/167/200515167.jpg", "name" : "Châssis","ouverture":"Oscillo-battants"},
+   {"anchor" : "fenetres", "image" : "//statics.lapeyre.fr/img/catalogue/standardMain/002/132/201002132.jpg", "name" : "Fenêtres","ouverture":""},
+   {"anchor" : "fenetres", "image" : "//statics.lapeyre.fr/img/catalogue/standardMain/002/117/201002117.jpg", "name" : "Fenêtres","ouverture":"Oscillo-battantes"},
+   {"anchor" : "portes-fenetres", "image" : "//statics.lapeyre.fr/img/catalogue/standardMain/515/168/200515168.jpg", "name" : "Portes-fenêtres","ouverture":""},
+   {"anchor" : "portes-fenetres", "image" : "//statics.lapeyre.fr/img/catalogue/collMain/515/117/200515117.jpg", "name" : "Baies coulissantes","ouverture":""}
+] %}
+
+
+
+<div id="contentWrapper">
+  <div class="row criteria">
+    <header>
+        <h1>Fenêtres Pin Lapeyre</h1>
+        <p>La garantie d'une menuiserie de qualité, fabriquée en grande partie dans nos usines en France, quel que soit le matériau, la dimension, la forme ou le type d'ouverture !</p>
+        <ul class="hide-on-med-and-down">
+          {% for anchor in nav %}
+                     <li data-target="#abattants"><div><img src="//statics.lapeyre.fr/img/catalogue/zoom1/515/121/200515121.jpg"></div><p>Abattants</p><p>&nbsp;</p></li>
+          {% endfor %}
+        </ul>
+    </header>
+    {% for type in ['abbattants','chassis','fenetres','portes-fenetres','baies coulissantes'] %}
+    <div class="col l12" id="{{ type }}"> 
+        <div class="col s12 m3 l3">
+           <h2>Fenêtres</h2>
+           <p>Battantes, oscillo-battantes</p>
+           <img src="//statics.lapeyre.fr/img/catalogue/standardMain/002/132/201002132.jpg">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+        <div class="col s12 m9 l9">
+ 
+        {% include table.twig %}
+
+          </table><div class="col s12 customTool">
+              <div class="col s6 m3">Vous ne trouvez pas vos dimensions ?</div>
+              <div class="col s6 m3">Vous voulez avoir plus chaud ?</div>
+              <div class="col s6 m3">Vous voulez plus de silence ?</div>
+              <div class="col s6 m3">Vous voulez une autre couleur ?</div>
+              <div class="col s12"><a href="//www.lapeyre.fr/c/h/configurateur-fenetres">Démarrer le configurateur</a></div>
+          </div>
+          
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+  </div>
+  <script>
+$('head').append('<link rel="stylesheet" type="text/css" href="https://www.lapeyre.fr/img/contrib/freehtml/pages/v8/familles/css/family.css">');
+   
+$( ".criteria table tr:not(:first-child) td" )
+  .on( "mouseenter", function() {
+   if ($(this).text().trim().length=='0') {
+     $(this).addClass('td_sm');
+   }
+  })
+  .on( "mouseleave", function() {
+    $('.criteria table td').removeClass('td_sm');
+  });
+
+$( ".criteria ul li" )
+  .on( "mouseenter", function() {
+     $(this).addClass('criteria_li_hover');
+     $(this).find('div').addClass('criteria_li_div_hover');
+  })
+  .on( "mouseleave", function() {
+    $(".criteria ul li").removeClass('criteria_li_hover');
+    $(".criteria ul li div").removeClass('criteria_li_div_hover');
+  });
+
+
+
+
+
+
+
+  </script> 
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,17 @@
+{% extends "layout.html" %} 
+
+{% block content %}
+
+{% include 'breadcrumb.twig' %}
+
+<div class="container">
+      {% if global.request.get('familyUrlname') == "fenetres-portes-fenetres-baies-coulissantes-pvc" %}
+        {% include 'windows-pvc.twig' %}
+      {% elseif global.request.get('familyUrlname') == "fenetres-portes-fenetres-baies-coulissantes-pin" %}
+        {% include 'windows-pin.twig' %}
+      {% elseif global.request.get('familyUrlname') == "fenetres-portes-fenetres-baies-coulissantes-chene" %}
+        {% include 'windows-chene.twig' %}
+      {% endif %} 
+</div>
+
+{% endblock %}

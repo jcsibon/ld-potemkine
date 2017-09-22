@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include 'header.html' %}
+</head>
+
+<body>
+  {% include 'nav.twig' %}
+  
+  {% block content %}{% endblock %}
+
+ {% include 'footer.html' %}
+
+<script>
+function animationScroll(destination) {
+    $('html, body').animate({
+        scrollTop: $( destination ).offset().top
+    }, 500);
+} 
+
+$('.subUniverseMobTitle').click(function() {
+  $('.subUniverseMobTitle').removeClass('subUniverseMobActive');
+  $('.subUniverseMobTitle').addClass('subUniverseMobDisable');
+  if ($(this).parents().next('.subUniverseFamilies').is(':visible')!=0) {
+    $(this).parents().next('.subUniverseFamilies').slideUp();
+  } else {
+    $('.subUniverseFamilies').hide();
+    $(this).removeClass('subUniverseMobDisable');
+    $(this).addClass('subUniverseMobActive');
+    $(this).parents().next('.subUniverseFamilies').slideDown();
+  }
+})
+/*
+if (window.location.href.indexOf('lapeyre.herokuapp.com/fenetres-CCU0003')>0) $('.universeContainer').html('<img src="/images/windows/universFenetres.jpg">');  
+*/
+</script>
+{#<script async defer src="//assets.pinterest.com/js/pinit.js"></script>#}
+</body>
+</html>

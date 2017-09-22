@@ -1,0 +1,28 @@
+{% extends "layout.html" %} 
+
+{% block content %}
+      
+{#<h1>{{ catalog[global.request.get('universeUrlcode')]['Content'][global.request.get('subuniverseUrlcode')]['Content'][global.request.get('familyUrlcode')]['Name'] }}</h1>#}
+
+<div class="row familyContainer">
+<div class="col s12">
+   <div class="col s12 familyHeader" style="background-image:url('/images/headers/CCU0002.jpg')">
+         <p>{{ catalog[global.request.get('universeUrlcode')]['Content'][global.request.get('subuniverseUrlcode')]['Content'][global.request.get('familyUrlcode')]['Name'] }}</p>
+         <span>{{ catalog[global.request.get('universeUrlcode')]['Descriptifgnral'] }}
+         {# Meuble-vasque, carrelage, espace douche, baignoire ou encore robinetterie : nous vous proposons des matériaux de qualité, des marques reconnues et un conseil hors pair, du projet d’agencement à l’installation de votre salle de bains. #}</span>
+   </div>
+</div>
+<div class="col l12">
+	{% for subfamily in catalog[global.request.get('universeUrlcode')]['Content'][global.request.get('subuniverseUrlcode')]['Content'][global.request.get('familyUrlcode')]['Content'] %}
+	    <div class="col l3 m4 s6">
+			<fieldset class="subFamilyContainer" onclick="location.href='/{{ catalog[global.request.get('universeUrlcode')]['URL'] }}/{{ catalog[global.request.get('universeUrlcode')]['Content'][global.request.get('subuniverseUrlcode')]['URL'] }}/{{ catalog[global.request.get('universeUrlcode')]['Content'][global.request.get('subuniverseUrlcode')]['Content'][global.request.get('familyUrlcode')]['URL'] }}/{{ subfamily['URL'] }}'">
+			   <legend align="center"><div><a href="/{{ catalog[global.request.get('universeUrlcode')]['URL'] }}/{{ catalog[global.request.get('universeUrlcode')]['Content'][global.request.get('subuniverseUrlcode')]['URL'] }}/{{ catalog[global.request.get('universeUrlcode')]['Content'][global.request.get('subuniverseUrlcode')]['Content'][global.request.get('familyUrlcode')]['URL'] }}/{{ subfamily['URL'] }}">{{ subfamily.Name }}</a></div></legend>
+			   <div class="subFamilyImage">
+			       <div style="background-image:url('//statics.lapeyre.fr/img/catalogue/desktopList/{{ subfamily['VisuelprincipalAssetReferenceID'][subfamily['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) }}/{{ subfamily['VisuelprincipalAssetReferenceID'][subfamily['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) }}/{{ subfamily['VisuelprincipalAssetReferenceID'] }}.jpg')"></div>
+			   </div>
+			</fieldset>
+	    </div> 
+	{% endfor %}
+</div>
+</div>
+{% endblock %}

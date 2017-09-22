@@ -1,0 +1,144 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<div id="content" role="main">
+   <div class="container universeContainer" id="container_">
+      <div class="row">
+		<div class="col s12 universeHeader" style="background-image:url('/images/headers/{{ global.request.get('universeUrlcode') }}.jpg')">
+         <p>{{ catalog[global.request.get('universeUrlcode')]['Name'] }}</p>
+         <span>
+         {{ catalog[global.request.get('universeUrlcode')]['Descriptifgnral'] }}</span>
+        </div>
+        <div class="universeAnchor">
+             {% for subuniverse in catalog[global.request.get('universeUrlcode')]['Content'] %}
+             <div class="universeAnchors  hide-on-med-and-down" onclick="javascript:animationScroll('#{{ subuniverse['ID'] }}');">{{ subuniverse['Name'] }}<img src="/images/fleche.png"></div>
+             {% endfor %}
+             <div class="universeAnchors universeMainAnchor hide-on-large-only hide-on-small-only" onclick="javascript:animationScroll('.subUniverse');">Voir les produits<img src="/images/fleche.png"></div>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col s12 hide-on-med-and-down">   
+        <img src="/images/contents/{{ global.request.get('universeUrlcode') }}.jpg" />
+      </div>   
+    </div>    
+      {% for subuniverse in catalog[global.request.get('universeUrlcode')]['Content'] %}
+	      <div class="row subUniverse"  id="{{ subuniverse['ID'] }}">
+		 <div class="col l3 s12">
+		    <div class="col l12 m8 s12">
+			<h2 class="h2 hide-on-small-only">{{ subuniverse['Name'] }}</h2>
+			<h2 class="h2 subUniverseMobTitle subUniverseMobDisable hide-on-med-and-up">{{ subuniverse['Name'] }}</h2>
+			<p class="hide-on-small-only">{{ subuniverse['Descriptifgnral'] }}</p>
+		    </div>
+		    <div class="col l12 m4 hide-on-small-only"> 
+			{% if subuniverse['Content'] is defined %}
+				{# {% if subuniverse['Content']|length > 3 %} #}
+				<div id="widgetPinterest" class="col l12 m4 hide-on-small-only">
+				   <a data-pin-do="embedBoard" data-pin-lang="fr" data-pin-board-width="230" data-pin-scale-height="150" data-pin-scale-width="100" href="{{ subuniverse['Pinterest'] }}"></a>
+				</div>                
+				{# {% endif %} #}
+			{% endif %}
+		    </div>
+		 </div>
+		 <div class="col l9 s12 subUniverseFamilies">
+		       {% if subuniverse['ID'] == 'SCU687471XXX' %}
+			<div class="col l6 m6 s12" id="SCU687471">
+				<fieldset class="subFamilyContainer">
+				   <legend align="center"><div>Découvrez nos matériaux</div></legend>
+				   <div class="col s3"><a href="/fenetres-CCU0003/accessoires-SCU687471/pvc-CCN688463"><img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/v8/univers/images/windows/sample_pvc.jpg" /></a><p><a href="/fenetres-CCU0003/fenetres-porte-fenetres-baies-coulissantes-SCU687471/fenetres-pvc-CCN688129">PVC</a></p></div>
+				   <div class="col s3"><a href="/fenetres-CCU0003/accessoires-SCU687471/chene-CCN688466"><img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/v8/univers/images/windows/sample_chene.jpg" /></a><p><a href="/fenetres-CCU0003/fenetres-porte-fenetres-baies-coulissantes-SCU687471/fenetres-chene-CCN688132">Chêne</a></p></div>
+				   <div class="col s3"><a href="/fenetres-CCU0003/accessoires-SCU687471/pin-CCN688465"><img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/v8/univers/images/windows/sample_pin.jpg" /></a><p><a href="/fenetres-CCU0003/fenetres-porte-fenetres-baies-coulissantes-SCU687471/fenetres-pin-CCN688131">Pin</a></p></div>
+				   <div class="col s3"><a href="/fenetres-CCU0003/accessoires-SCU687471/aluminium-CCN688464"><img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/v8/univers/images/windows/sample_aluminium.jpg" /></a><p><a href="/fenetres-CCU0003/fenetres-porte-fenetres-baies-coulissantes-SCU687471/fenetres-aluminium-CCN688130">Aluminium</a></p></div>
+				</fieldset>
+			</div>
+			<div class="col l6 m6 s12">
+                 		   <a href="/c/h/configurateur-fenetres" class="button button-primary">Démarrer</a>
+			</div>
+			{#<div class="col l6 m6 s12">
+			   <h3>Trouver votre Fenêtre, Porte-fenêtre ou Baie coulissante</h3>
+			   <p>En quelques clics, Lapeyre vous accompagne pour trouver la solution parfaite selon vos souhaits.</p>
+                 		   <a href="/c/h/configurateur-fenetres" class="button button-primary">C'est parti !</a>
+			</div>#}
+
+			    {% set otherFamiliesDetails = null %}
+			    {% set otherFamilies = '<div class="col s12"><fieldset class="subFamilyContainerOther subFamilyContainer"><legend align="center"><div>Et aussi :</div></legend>' %}
+				  {% for family in subuniverse['Content'] %}
+					{% if family['Affichageunivers'] == "Petit" %} 
+					      {% set otherFamiliesDetails = otherFamiliesDetails ~ '<div class="col m4 s6" onclick="location.href=\'/' ~ catalog[global.request.get('universeUrlcode')]['URL'] ~ '/' ~ subuniverse['URL'] ~ '/' ~ family['URL'] ~ '\'"><div class="col s4" style="background-image: url(\'//statics.lapeyre.fr/img/catalogue/desktopList/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'] ~ '.jpg\')"></div><div class="col s8"><a href="/' ~ catalog[global.request.get('universeUrlcode')]['URL'] ~ '/' ~ subuniverse['URL'] ~ '/' ~ family['URL'] ~ '">' ~ family.Name ~ '</a></div></div>' %}  
+					{% endif %} 
+				  {% endfor %} 
+			       {% set otherFamilies = otherFamilies ~ otherFamiliesDetails | trim(',') ~ '</fieldset></div>' %}  
+			    {% if otherFamiliesDetails %}
+			    {{ otherFamilies | raw }}	
+			    {% endif %}	
+
+{#
+
+		    <h2 class="h2 text-center">Explorez directement nos gammes</h2>
+		    <div class="row">
+		       {% for gamme in ['pvc','pin','chene','aluminium'] %}
+
+			<div class="col m3 s6">
+			    <fieldset class="subFamilyContainer" onclick="location.href='/fenetres-CCU0000/fenetres-portes-fenetres-baies-coulissantes-CCN0000/fenetres-portes-fenetres-baies-coulissantes-{{ gamme }}-CCN0000/'">
+			       <legend align="center" class="capitalize"><div><a href="/fenetres-CCU0000/fenetres-portes-fenetres-baies-coulissantes-CCN0000/fenetres-portes-fenetres-baies-coulissantes-{{ gamme }}-CCN0000/">{{ gamme }}</a></div></legend>
+			       <div class="subFamilyImage subFamilyImageTiny">
+				   <div style="background-image:url('/images/windows/{{ gamme }}.png')"></div>
+			       </div>
+			    </fieldset>
+			</div> 
+		       {% endfor %}
+		    </div>
+		    <h2 class="text-center" style="padding-top:20px">Découvrez en quelques questions le produit le plus adapté à votre projet </h2>
+		    <a href="/c/h/configurateur-fenetres">
+		    <img class="responsive-img" src="/images/windows/MEA_sur_mesure.png" style="margin-bottom:10px">
+		    </a>
+#}
+		    {% else %}
+			    {% if subuniverse['Content'] is defined %}
+				    {% for family in subuniverse['Content'] %}
+					    {% if family['Affichageunivers'] != "Petit" %} 
+					    {% set familySize = 'm4 s6' %} 
+					    {% set familyImageSize = 'desktopList' %}
+					    {% if family['Affichageunivers'] == "Grand" %}
+					       {% set familySize = 'm8 s12' %}
+					       {% set familyImageSize = 'zoom1' %}
+					    {% endif %}
+					    
+					    <div class="col {{familySize}}">
+						<fieldset class="subFamilyContainer" onclick="location.href='/{{ catalog[global.request.get('universeUrlcode')]['URL'] }}/{{ subuniverse['URL'] }}/{{ family['URL'] }}'">
+						   <legend align="center"><div><a href="/{{ catalog[global.request.get('universeUrlcode')]['URL'] }}/{{ subuniverse['URL'] }}/{{ family['URL'] }}">{{ family.Name }}</a></div></legend>
+						   <div class="subFamilyImage">
+						       <div style="background-image:url('//statics.lapeyre.fr/img/catalogue/{{ familyImageSize }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'] }}.jpg')"></div>
+						   </div>
+						</fieldset>
+					    </div> 
+					    {% endif %} 
+				    {% endfor %}
+			    {% endif %}
+			    {% set otherFamiliesDetails = null %}
+			    {% set otherFamilies = '<div class="col s12"><fieldset class="subFamilyContainerOther subFamilyContainer"><legend align="center"><div>Et aussi :</div></legend>' %}
+			       {% if subuniverse['Content'] is defined %}
+				  {% for family in subuniverse['Content'] %}
+					{% if family['Affichageunivers'] == "Petit" %} 
+					{% set otherFamiliesDetails = otherFamiliesDetails ~ '<div class="col m4 s6" onclick="location.href=\'/' ~ catalog[global.request.get('universeUrlcode')]['URL'] ~ '/' ~ subuniverse['URL'] ~ '/' ~ family['URL'] ~ '\'"><div class="col s4" style="background-image: url(\'//statics.lapeyre.fr/img/catalogue/desktopList/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'] ~ '.jpg\')"></div><div class="col s8"><a href="/' ~ catalog[global.request.get('universeUrlcode')]['URL'] ~ '/' ~ subuniverse['URL'] ~ '/' ~ family['URL'] ~ '">' ~ family.Name ~ '</a></div></div>' %}  
+					{% endif %} 
+				  {% endfor %} 
+			       {% endif %}
+			       {% set otherFamilies = otherFamilies ~ otherFamiliesDetails | trim(',') ~ '</fieldset></div>' %}  
+			    {% if otherFamiliesDetails %}
+			    {{ otherFamilies | raw }}	
+			    {% endif %}	
+		    {% endif %}
+		 </div>
+	      </div>
+	      <div class="divider hide-on-med-and-up"></div>
+      {% endfor %}
+    {#<div class="row">
+      <div class="col s12 hide-on-med-and-down">
+          <img src="/images/footerFenetres.jpg" />
+      </div>
+    </div>#}
+   </div>
+</div>
+
+{% endblock %}

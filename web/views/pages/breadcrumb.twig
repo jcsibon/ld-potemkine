@@ -1,0 +1,18 @@
+{#
+<div class="container breadcrumb">
+    <nav> <a href="/javascript:history.back()"><strong>&lt; Retour </strong></a><span>|</span> <a href="/https://www.lapeyre.fr">Accueil</a> 
+	{% if global.request.get('universeUrlcode') is defined %}
+		<span>></span> <a href="/{{ global.request.get('universeUrlcode') }}-CCU0000/">{{ catalog[global.request.get('universeUrlcode')]['universeTitle'] }}</a>&nbsp;
+		{% if global.request.get('subuniverseUrlcode') is defined %}
+			<span>></span> <a href="/{{ global.request.get('universeUrlcode') }}-CCU0000/">{{ catalog[global.request.get('universeUrlcode')]['subuniverses'][global.request.get('subuniverseUrlcode')]['subuniverseTitle'] }}</a>&nbsp;
+			{% if global.request.get('familyUrlname') is defined %}
+				<span>></span> <a href="/{{ global.request.get('universeUrlcode') }}-CCU0000/{{ global.request.get('subuniverseUrlcode') }}-CCN0000/{{ global.request.get('familyUrlname') }}-CCN0000">{{ catalog[global.request.get('universeUrlcode')]['subuniverses'][global.request.get('subuniverseUrlcode')]['families'][global.request.get("familyUrlname")]['familyTitle'] }}</a>&nbsp;
+				{% if global.request.get('subfamilyUrlname') is defined %}
+					<span>></span> <a href="/{{ global.request.get('universeUrlcode') }}-CCU0000/{{ global.request.get('subuniverseUrlcode') }}-CCN0000/{{ global.request.get('familyUrlname') }}-CCN0000/{{ global.request.get('subfamilyUrlname') }}-CCN0000">{{ catalog[global.request.get('universeUrlcode')]['subuniverses'][global.request.get('subuniverseUrlcode')]['families'][global.request.get("familyUrlname")]['familyTitle'] }}</a>&nbsp;
+				{% endif %}
+			{% endif %}
+		{% endif %}
+	{% endif %}
+	</nav>
+</div>
+#}

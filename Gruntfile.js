@@ -19,6 +19,14 @@ module.exports = function(grunt) {
         }
       }
     },
+    concat: { 
+       dist: {
+         src: [
+           'web/views/*/*/*.scss',
+         ],
+         dest: 'web/css/concat.scss'
+       }
+     },
     sass: {
       dist: {
         files: {
@@ -38,7 +46,7 @@ module.exports = function(grunt) {
   });
 
   // Default tasks
-  grunt.registerTask('css', ['sass', 'postcss']);
+  grunt.registerTask('css', ['concat', 'sass', 'postcss']);
   grunt.registerTask('default', ['watch']);
 
 };

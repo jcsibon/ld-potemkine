@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% include 'breadcrumb.twig' %}
+
+  <div class="row" id="contentPageArea">
+    <div class="container">
+      <div class="col s3 m12 l3" id="leftColumnCategory">
+        <div>
+          <div>
+            <h3>&lt; {{ catalog[global.request.get('universeUrlcode')]['Name'] }}</h3>
+            <ul></ul>
+          </div>
+          <div class="listFilters">
+            <div class="listSubFilters">
+              <ul>
+                <li>Promotions</li>
+                <li><input type="checkbox"><span>Afficher les promotions uniquement (8)</span></li>
+              </ul>
+              <ul>
+                <li>Disponibilité</li>
+                <li><input type="checkbox"><span>Disponibilité en ligne (8)</span></li>
+                <li><input type="checkbox"><span>Disponibilité en magasin (8)</span></li>
+              </ul>
+              <ul>
+                <li>Prix</li>
+                <li><img src="/images/family/liste_prix.png"></li>
+              </ul>
+              <div id="filtersCustom"></div>
+            </div>
+          </div>
+        </div>
+        <div class="listTool"><img src="/images/family/tool.jpg"></div>
+        <div class="listIntro">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="col s12 m12 l9 right">
+      <h1><strong>{{ catalog[global.request.get('universeUrlcode')]['Content'][global.request.get('subuniverseUrlcode')]['Content'][global.request.get('familyUrlcode')]['Name'] }}</strong> (345 produits)</h1>
+      <div class="listMEA"></div><img src="/images/family/bloc_product1.png"> <img src="/images/family/bloc_product2.png"> <img src="/images/family/bloc_product1.png"> <img src="/images/family/bloc_promo.jpg"> <img src="/images/family/bloc_product1.png"> <img src="/images/family/bloc_product3.png"> <img src="/images/family/bloc_product1.png"> <img src="/images/family/bloc_product2.png"> <img src="/images/family/bloc_mag.jpg"> <img src="/images/family/bloc_product1.png"> <img src="/images/family/bloc_product3.png"> <img src="/images/family/bloc_product1.png"> <img src="/images/family/bloc_product3.png"> <img src="/images/family/bloc_mea.jpg"> <img src="/images/family/bloc_product1.png"> <img src="/images/family/bloc_product2.png"> <img src="/images/family/bloc_product1.png"> <img src="/images/family/bloc_product3.png"> <img src="/images/family/bloc_product1.png"> <img src="/images/family/bloc_product1.png"> <img src="/images/family/bloc_product2.png"> <img src="/images/family/bloc_product1.png"> <img src="/images/family/bloc_product1.png"> <img src="/images/family/bloc_product1.png"> <img class="liste_bottom" src="/images/family/liste_bottom.png"></div>
+    </div>
+  </div>
+{#
+
+<div class="list">
+
+<div class="listLeft">
+
+</div>
+
+<div class="listRight">
+
+</div>
+#}
+{% endblock %}

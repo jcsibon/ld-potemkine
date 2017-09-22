@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/styles_liste.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+<!--<script src="dist/cpexcel.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="http://oss.sheetjs.com/js-xlsx/iemagic.js"></script>
+<script src="http://oss.sheetjs.com/js-xlsx/shim.js"></script>
+<script src="http://oss.sheetjs.com/js-xlsx/jszip.js"></script>
+<script src="http://oss.sheetjs.com/js-xlsx/xlsx.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/script_liste.js"></script>
+<script>
+
+$( document ).ready(function() {
+//   $('.mag img').attr('src','images/edito/EDITO_'+getParameterByName('univers')+'.jpg'); 
+});
+    
+jQuery.get(url, function(data) {
+   process_wb(data);    
+   megaMenu();
+});    
+    
+</script>
+<div class="container">
+<header>
+   <div><img src="images/header.jpg" /></div>   
+</header>
+
+<div class="list">
+    <nav> <a href="javascript:history.back()"><strong>&lt; Retour </strong></a><span>|</span> <a href="https://www.lapeyre.fr">Accueil</a> <span>></span> <a href="" id="breadcrumbUnivers"></a><span>></span> <strong></strong></nav>
+
+<div class="listLeft">
+    <div>
+        <div>
+           <h3> &lt; Portes d'intérieur</h3>
+           <ul>
+           </ul>
+        </div>
+       <div class="listFilters">
+           <div class="listSubFilters">
+              <ul>
+                 <li>Promotions</li>
+                 <li><input type="checkbox"/><span>Afficher les promotions uniquement (8)</span></li>
+              </ul>
+              <ul>
+                 <li>Disponibilité</li>
+                 <li><input type="checkbox"/><span>Disponibilité en ligne (8)</span></li>
+                 <li><input type="checkbox"/><span>Disponibilité en magasin (8)</span></li>
+              </ul>
+              <ul>
+                 <li>Prix</li>
+                 <li><img src="images/liste_prix.png" /></li> 
+              </ul>
+               <div id="filtersCustom"></div>
+            </div>
+       </div>
+    </div>
+   <div class="listTool"><img src="images/tool.jpg" /></div>
+   <div class="listIntro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</div>
+
+<div class="listRight">
+    <h1><strong>Portes battantes</strong> (345 produits)</h1>
+    <div class="listMEA"></div>
+    <img src="images/bloc_product1.png" />
+    <img src="images/bloc_product2.png" />
+    <img src="images/bloc_product1.png" />
+    <img src="images/bloc_promo.jpg" />
+    <img src="images/bloc_product1.png" />
+    <img src="images/bloc_product3.png" />
+    <img src="images/bloc_product1.png" />
+    <img src="images/bloc_product2.png" />
+    <img src="images/bloc_mag.jpg" />
+    <img src="images/bloc_product1.png" />
+    <img src="images/bloc_product3.png" />
+    <img src="images/bloc_product1.png" />
+    <img src="images/bloc_product3.png" />
+    <img src="images/bloc_mea.jpg" />
+    <img src="images/bloc_product1.png" />
+    <img src="images/bloc_product2.png" />
+    <img src="images/bloc_product1.png" />
+    <img src="images/bloc_product3.png" />
+    <img src="images/bloc_product1.png" />
+    <img src="images/bloc_product1.png" />
+    <img src="images/bloc_product2.png" />
+    <img src="images/bloc_product1.png" />
+    <img src="images/bloc_product1.png" />
+    <img src="images/bloc_product1.png" />
+    <img src="images/liste_bottom.png" class="liste_bottom"/>
+</div>
+   
+</div>  
+
+<footer>
+   <div><img src="images/footer.jpg" /></div>
+</footer>
+</div>
+   <div class="megamenuOverlay"></div>
+</body>
+</html>
