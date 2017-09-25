@@ -1,0 +1,37 @@
+.accordion__header{
+  background-color: #FFF;
+  border-bottom: 1px solid $border-color;
+  line-height: 10px;
+  padding: 20px 0px 20px 40px;
+  
+  .collapse-arrow{
+     height: 20px;
+      width: 20px;
+      display: block;
+      bottom: 40px;
+      position: relative;
+      margin-left: 10px;
+      margin-right: 60px;
+  }
+  h4{
+    margin-bottom: 0;
+  }
+  span{
+    color: #9f9f9f;
+    font-weight: 100;
+  }
+}
+
+.accordion__body{
+  padding: 20px 30px;
+  h2{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.accordion__header__picto{
+  width: 30px;
+  position: relative;
+  top: 30px;
+}

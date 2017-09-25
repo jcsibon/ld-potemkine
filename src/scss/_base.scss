@@ -1,25 +1,40 @@
 html {
-  color: $color-text;
-  font: 14px $font-sans;
-}
-body{
-	font-family: $base-font;
+    color: $color-text;
+    font: 14px $font-sans;
 }
 
-
-a {
-  color: $color-link;
+body {
+    font-family: $base-font;
 }
 
-h4, .h4 {
-  font-size: 1.2rem;
+h4,
+.h4 {
+    font-size: 1.2rem;
 }
 
-h5, .h5 {
-  font-size: 1em;
-  text-transform: uppercase;
+h5,
+.h5 {
+    font-size: 1em;
 }
 
 .page {
-  background-image: linear-gradient($color-grey-5 281px, white 281px);
+    background-image: linear-gradient($color-grey-5 281px, white 281px);
+}
+
+.clear {
+    clear: both;
+}
+
+p {
+    font-size: 13px;
+    font-family: $base-font;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
 }

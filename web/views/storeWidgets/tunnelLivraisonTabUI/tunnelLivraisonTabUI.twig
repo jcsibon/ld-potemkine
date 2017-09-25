@@ -1,117 +1,114 @@
-      
-<div class="tunnel-container">
-
+<!-- =================== CONTAINER====================== -->
+<div class="tunnelLivraisonTab__container">
+    <!-- =================== ACCORDIONS====================== -->
     <div id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="card">
-     <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-    <div class="card-header" role="tab" id="headingOne">
-      
-        <img src="../../images/picto_truck.png" alt="">
-          <p>Livraison à domicile</p>
-          <span>Gratuit</span>
-          <img src="../../images/arrow-down.svg" class="pull-right" alt="">
-    </div>
-  </a>
-    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-      <div class="card-block">
-       <h4>Votre adresse de livraison</h4>
-       <div class="info-livraison">
-        <img src="../../images/picto_livraison.png"  alt="">
-           <p>
-               Votre livraison est prévu à partir du 24/03/2017 <br>
-                Le magasin qui prépare votre commande prendra contact avec vous sous 2 jours pour convenir des détails liés à la livraison.
-           </p>
-       </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h5>Votre adresse</h5>
-                {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
-            </div>
-            <div class="col-md-8">
-                <h5>Choisir une autre adresse</h5>
-                <div class="row">
-                  <div class="col-md-6">
-                      <div class="adress-container is-saved">
-                    <span>Anne Sophie Maison</span>
-                    <p>1 Boulevard Richard Lenoir <br>
-                    75011 Paris<br>
-                    01 43 25 20 52</p>
-                    <button class="btn ">Choisir</button>
+        <!-- =================== ACCORDION 1====================== -->
+        <div class="card">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="accordion__header" role="tab" id="headingOne">
+                    <div class="row">
+                        <div class="col-md-1 hidden-sm hidden-xs ">
+                            <img src="/web/images/picto_truck-red.png" class="accordion__header__picto" alt="">
+                        </div>
+                        <div class="col-md-11 ">
+                            <h3 class="accordion__title">Livraison à domicile</h3>
+                            <span>Gratuit</span>
+                            <img src="/web/images/arrow-down.svg" class="pull-right collapse-arrow" alt="">
+                        </div>
+                    </div>
                 </div>
-                  </div>
-                
-              
-          
-            <div class="col-md-6">
-                <div class="adress-container is-new">
-                <p>Vous avez besoin
-                d’être facturé à une
-                autre adresse ?
-                </p>
-            </div>
-            </div>
-            </div>
-          </div>
-           
-        </div>
-         <div class="checkbox">
-            <label><input type="checkbox" value="">Je n'utilise pas la même adresse pour la facturation</label>
-            </div>
-                <div class="row">
-            <div class="col-md-4">
-                <h5>Choisir une autre adresse</h5>
-                <div class="adress-container is-saved">
-                    <span>Anne Sophie Maison</span>
-                    <p>14 rue de la Roquette <br>
-                    75011 Paris<br>
-                    01 43 25 20 52</p>
-                    <button class="btn ">Choisir</button>
+            </a>
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                <div class="accordion__body">
+                    <h4>Votre adresse de livraison</h4>
+                    <div class="livraison__info">
+                        <img src="/web/images/picto_livraison.png" alt="">
+                        <span>Votre livraison est prévu à partir du 24/03/2017</span>
+                            <p>Le magasin qui prépare votre commande prendra contact avec vous <strong>sous 2 jours</strong> pour convenir des détails liés à la livraison.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 ">
+                            <h5>Votre adresse</h5> 
+                            {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
+                        </div>
+                        <div class="col-md-8">
+                            <h5>Choisir une autre adresse</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="livraison__adress is-saved">
+                                        <span>Anne Sophie Maison</span>
+                                        <p>1 Boulevard Richard Lenoir
+                                            <br> 75011 Paris</p>
+                                             <p class="livraison__adress__tel">01 43 25 20 52</p>
+                                        <button class="btn ">Choisir</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="livraison__adress is-new">
+                                        <p>Vous avez besoin d’être facturé à une autre adresse ?
+                                        </p>
+                                        <div class="text-center">
+                                            <img src="/web/images/picto_more.png" class="picto_more" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">Je n'utilise pas la même adresse pour la facturation</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- AJOUTER IS ACTIVE -->
+                            {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
+                        </div>
+                        <div class="col-md-4">
+                            <div class="livraison__adress is-new">
+                                <p>Vous avez besoin d’être facturé à une autre adresse ?
+                                </p>
+                                <div class="text-center">
+                                    <img src="/web/images/picto_more.png" class="picto_more" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8"></div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary btn-lg pull-right">Valider et payer</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-               <h5>&nbsp; </h5>
-                <div class="adress-container is-new">
-                <p>Vous avez besoin
-                d’être facturé à une
-                autre adresse ?
-                </p>
-                <img src="" alt="">
+        </div>
+        <!-- =================== END ACCORDION 1====================== -->
+        <!-- =================== ACCORDION 2====================== -->
+        <div class="card">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="accordion__header" role="tab" id="headingOne">
+                    <div class="row">
+                        <div class="col-md-1 ">
+                            <img src="/web/images/picto_truck-red.png" class="accordion__header__picto hidden-sm hidden-xs " alt="">
+                        </div>
+                        <div class="col-md-11">
+                            <h3 class="accordion__title">Retrait en drive</h3>
+                            <span>Gratuit</span>
+                            <img src="/web/images/arrow-down.svg" class="pull-right collapse-arrow" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="accordion__body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
             </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8"></div>
-        <div class="col-md-4">
-          <button class ="btn btn-primary">Valider et payer</button>
-        </div>
-      </div>
+        <!-- =================== END ACCORDION 2====================== -->
     </div>
-  </div>
-  <div class="card">
-     <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-    <div class="card-header" role="tab" id="headingTwo">
-      <h5 class="mb-0">
-       
-          Retrait en drive
-          <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-      
-      </h5>
-    </div>
-      </a>
-    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="card-block">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div>
+    <!-- =================== END ACCORDIONS====================== -->
 </div>
-
-
-
-
-
-
-   </div>
-</div>
-</div>
+<!-- =================== END CONTAINER====================== -->

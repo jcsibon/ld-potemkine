@@ -1,36 +1,35 @@
 
-@import "bootstrap.scss";
+/*----------  LIBS  ----------*/
 
+@import "bootstrap";
 
+/*----------  SMACSS  ----------*/
 
-
-
-
-/*UTILITIES*/
-@import "_general.scss";
-@import "_normalize.scss";
-@import "_responsive-utilities.scss";
-@import "_responsive.scss";
-@import "_variables.scss";
-
-/*CUSTOM*/
-@import "_color.scss";
-@import "_title.scss";
-
-/*PAGES*/
-@import "_livraison_drive.scss";
-
-
-
-/*SMACCS*/
 @import 'vars';
 @import 'base';
-@import 'elements';
-@import 'forms';
-@import 'buttons';
+@import 'shame';
 
-/*MODULES*/
-@import "_buttons.scss";
-@import "_buttonscharles.scss";
-@import "_input.scss";
-@import "_accordion.scss";
+/*----------  UTILITIES  ----------*/
+
+@import "_utilities__normalize";
+@import "_utilities__custom-responsive";
+
+/*----------  CUSTOM  ----------*/
+
+@import "_custom__color";
+@import "_custom__title";
+
+/*----------  MODULES  ----------*/
+@import '_module__forms';
+@import "_module__accordion";
+@import "_module__cards";
+@import '_module__buttons';
+
+/*----------  PAGES  ----------*/
+
+@import "../../web/views/storeWidgets/tunnelLivraisonTabUI/tunnelLivraisonTabUI";
+
+
+
+
+
