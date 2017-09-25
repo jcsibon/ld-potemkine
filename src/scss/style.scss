@@ -1,6 +1,36 @@
+
+@import "bootstrap.scss";
+
+
+
+
+
+
+/*UTILITIES*/
+@import "_general.scss";
+@import "_normalize.scss";
+@import "_responsive-utilities.scss";
+@import "_responsive.scss";
+@import "_variables.scss";
+
+/*CUSTOM*/
+@import "_color.scss";
+@import "_title.scss";
+
+/*PAGES*/
+@import "_livraison_drive.scss";
+
+
+
+/*SMACCS*/
 @import 'vars';
 @import 'base';
-
 @import 'elements';
 @import 'forms';
 @import 'buttons';
+
+/*MODULES*/
+@import "_buttons.scss";
+@import "_buttonscharles.scss";
+@import "_input.scss";
+@import "_accordion.scss";

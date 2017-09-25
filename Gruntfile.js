@@ -1,7 +1,6 @@
 module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-postcss');
 
   // Project configuration
@@ -36,7 +35,7 @@ module.exports = function(grunt) {
     },
     watch: {
       options: {
-        atBegin: true
+        atBegin: true,
       },
       scripts: {
         files: 'src/scss/**/*.scss',
