@@ -1,10 +1,10 @@
 <!-- =================== CONTAINER====================== -->
-<div class="tunnelLivraisonTab__container">
+<div class="tunnelLivraisonTab__container  full-height">
     <!-- =================== ACCORDIONS====================== -->
     <div id="accordion" role="tablist" aria-multiselectable="true">
         <!-- =================== ACCORDION 1====================== -->
         <div class="card">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
                 <div class="accordion__header" role="tab" id="headingOne">
                     <div class="row">
                         <div class="col-md-1 hidden-sm hidden-xs ">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </a>
-            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="accordion__body">
                     <h4>Votre adresse de livraison</h4>
                     <div class="livraison__info">
@@ -40,7 +40,7 @@
                                         <span>Anne Sophie Maison</span>
                                         <p>1 Boulevard Richard Lenoir
                                             <br> 75011 Paris</p>
-                                             <p class="livraison__adress__tel">01 43 25 20 52</p>
+                                             <p class="adress__tel">01 43 25 20 52</p>
                                         <button class="btn ">Choisir</button>
                                     </div>
                                 </div>
@@ -91,7 +91,7 @@
                 <div class="accordion__header" role="tab" id="headingOne">
                     <div class="row">
                         <div class="col-md-1 ">
-                            <img src="/web/images/picto_truck-red.png" class="accordion__header__picto hidden-sm hidden-xs " alt="">
+                            <img src="/web/images/picto_drive-red.png" class="accordion__header__picto hidden-sm hidden-xs " alt="">
                         </div>
                         <div class="col-md-11">
                             <h3 class="accordion__title">Retrait en drive</h3>
@@ -101,11 +101,8 @@
                     </div>
                 </div>
             </a>
-            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="accordion__body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-            </div>
+             {% include 'storeWidgets/tunnelRetraitMagasinTabUI/tunnelRetraitMagasinTabUI.twig' %}
+         
         </div>
         <!-- =================== END ACCORDION 2====================== -->
     </div>

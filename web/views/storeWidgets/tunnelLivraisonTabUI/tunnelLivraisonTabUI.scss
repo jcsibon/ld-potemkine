@@ -1,7 +1,7 @@
 
 .tunnelLivraisonTab__container{
 	background-color: $bkg-light;
-	padding: 0 40px;
+	padding: 20px 50px;
     h5{
 		font-size: 18px;
 		color: $dark-color;
@@ -9,6 +9,7 @@
     p{
     	margin:0;
     	color: #666666;
+    	font-size: 14px;
     }
     .checkbox{
     	margin:20px 0 10px 0;
@@ -31,15 +32,20 @@
     	}
     }
 }
+.livraison__container{
+	padding: 20px 40px;
+}
 
 .livraison__adress{
 	padding: 20px;
 	min-height: 200px;
 	&.is-active{
 		border: 5px solid #fbe5e7;
+		max-width: 210px;
 	}
 	&.is-saved{
 		border: 2px solid $grey-default;
+
 
 	}
 	&.is-new{
@@ -59,13 +65,22 @@
 	}
 	button{
 		margin-top:15px;
+		/*left: -31px;*/
+    	position: relative;
 	}
 	.picto_more{
 	width: 30px;
     margin-top: 10px;
 	}
+	.location_picto{
+		width: 13px;
+		margin-right: 5px;
+    	margin-bottom: 40px;
+	}
 }
 
-.livraison__adress__tel{
+.adress__tel{
 	margin-top: 10px;
 }
+
+

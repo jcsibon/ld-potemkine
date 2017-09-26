@@ -1,0 +1,54 @@
+.tunnelRecapPanier__container {
+    border: 10px solid $border-color;
+    h3,
+    p {
+        display: inline-block;
+    }
+}
+
+.tunnelRecapPanier__header,
+.tunnelRecapPanier__product,
+.tunnelRecapPanier__total {
+    border-bottom: 1px solid $border-color;
+    padding: 10px 20px;
+    h3 {
+        color: $color-grey-0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    p {
+        font-weight: 200;
+    }
+    strong {
+        font-weight: 600;
+        font-family: 'roboto';
+        color: #47494a;
+    }
+    .tunnelRecapPanier__quantity {
+        color: $text-grey-darken;
+    }
+    .tunnelRecapPanier__price {
+        color: $brand-color;
+        font-weight: 600;
+        font-size: 19px;
+        font-family: 'roboto';
+        bottom: 4px;
+    }
+/*    img {
+        width: 100%;
+        @media (max-width: 992px) {
+            width: auto;
+        }
+    }*/
+}
+
+
+
+
+.tunnelRecapPanier__total {
+    p {
+        font-size: 20px;
+        bottom: 5px;
+        position: relative;
+    }
+}
