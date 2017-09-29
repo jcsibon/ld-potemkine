@@ -1,0 +1,40 @@
+ <html>
+      <head>
+        <script src="/node_modules//jquery/dist/jquery.min.js"></script>
+        <script src="/node_modules/moment/moment.js"></script>
+        <script src='/node_modules/fullcalendar/dist/fullcalendar.js'></script>
+        <script src='/node_modules/fullcalendar/dist/locale/fr.js'></script>
+        <link rel='stylesheet' href="/node_modules/fullcalendar/dist/fullcalendar.css" />
+            <link href="css/style.css" rel="stylesheet">
+
+        </head>
+      <body>
+         <div id='calendar'></div>
+
+        <script>
+            $(document).ready(function() {
+$('#calendar').fullCalendar({
+
+  lang : 'fr',
+ defaultView : 'agendaWeek',
+    header: {
+        left: 'prev',
+        right: 'next',
+    },
+    weekends : false,
+    allDaySlot: false,
+    minTime: "09:30:00",
+    maxTime: "19:30:00",
+    slotDuration: "02:00:00",
+    contentHeight: "auto",
+    selectable: true,
+    eventBackgroundColor : '#000',
+backgroundColor: '#378006',
+
+
+});
+
+            });
+        </script>
+      </body>
+      </html>
