@@ -22,4 +22,9 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('pages/index.twig');
 });
 
+$app->get('/TunnelCommandShippingView', function() use($app) {
+  $app['monolog']->addDebug('logging output.');
+  return $app['twig']->render('pages/TunnelCommandShippingView.twig');
+});
+
 $app->run();

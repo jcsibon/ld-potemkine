@@ -1,20 +1,9 @@
-{% extends "layouts/tunnel.html" %} 
-{% block content %} 
-{% include 'storeWidgets/headerLightUI/headerLightUI.twig' %}
-<div class="row ">
-    <div class="col-md-12">
-        {% include 'storeWidgets/tunnelShopCartHeaderUI/tunnelShopCartHeaderUI.twig' %}
-    </div>
-</div>
-<div class="row">
+{% extends "layout.html" %}
 
-    <!-- TUNNEL -->
-    <div class="col-md-8 tunnelLivraisonTabUI__widget">
-        {% include 'storeWidgets/tunnelLivraisonTabUI/tunnelLivraisonTabUI.twig' %}
-    </div>
-    <div class="col-md-4 tunnelRecapPanier__widget ">
-        {% include 'storeWidgets/tunnelRecapPanier/tunnelRecapPanier.twig' %}
-    </div>
-    {% include 'storeWidgets/footer/footer.twig' %}
+{% block content %}
+
+<div class="universeContainer">
+	<img src="/images/pages/home.png" />
 </div>
+
 {% endblock %}
