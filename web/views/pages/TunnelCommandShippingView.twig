@@ -1,20 +1,26 @@
 {% extends "layouts/tunnel.html" %} 
 {% block content %} 
 {% include 'storeWidgets/headerLightUI/headerLightUI.twig' %}
-<div class="row ">
-    <div class="col-md-12">
-        {% include 'storeWidgets/tunnelShopCartHeaderUI/tunnelShopCartHeaderUI.twig' %}
+{% include 'storeWidgets/tunnelShopCartHeaderUI/tunnelShopCartHeaderUI.twig' %}
+<div class="container-fluid">
+    <div class="row">
+        <!-- TUNNEL -->
+        <div class="col-md-8 tunnelLivraisonTabUI__widget">
+            <!-- =================== CONTAINER====================== -->
+            <div class="tunnelLivraisonTab__container  full-height">
+                <!-- =================== ACCORDIONS====================== -->
+                <div id="accordion" role="tablist" aria-multiselectable="true">
+                    {% include 'storeWidgets/tunnelRetraitMagasinTabUI/tunnelRetraitMagasinTabUI.twig' %}
+                    {% include 'storeWidgets/tunnelLivraisonTabUI/tunnelLivraisonTabUI.twig' %}
+                </div>
+                <!-- =================== END ACCORDIONS====================== -->
+            </div>
+            <!-- =================== END CONTAINER====================== -->
+        </div>
+        <div class="col-md-4 tunnelRecapPanier__widget ">
+            {% include 'storeWidgets/tunnelRecapPanier/tunnelRecapPanier.twig' %}
+        </div>
     </div>
 </div>
-<div class="row">
-
-    <!-- TUNNEL -->
-    <div class="col-md-8 tunnelLivraisonTabUI__widget">
-        {% include 'storeWidgets/tunnelLivraisonTabUI/tunnelLivraisonTabUI.twig' %}
-    </div>
-    <div class="col-md-4 tunnelRecapPanier__widget ">
-        {% include 'storeWidgets/tunnelRecapPanier/tunnelRecapPanier.twig' %}
-    </div>
     {% include 'storeWidgets/footer/footer.twig' %}
-</div>
 {% endblock %}

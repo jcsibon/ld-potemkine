@@ -1,61 +1,86 @@
-<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-    <div class="accordion__body">
-        <div class="row">
-            <div class="col-md-12">
-                <h4>Votre magasin</h4>
-                <div class="row">
-                    <div class="col-md-12">
-                        <form class="form-inline form__search__shop">
-                            <input type="text" class="form-control " id="inlineFormInput" placeholder="Votre ville ou CP">
-                            <button type="submit" class="btn btn-primary form__search__shop__button">Ok</button>
-                        </form>
-                    </div>
+<div class="card">
+    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <div class="accordion__header" role="tab" id="headingOne">
+            <div class="row">
+                <div class="col-md-1 ">
+                    <img src="/images/picto_drive-red.png" class="accordion__header__picto hidden-sm hidden-xs " alt="">
                 </div>
-            </div>
-            <div class="col-md-4 ">
-                {% include 'storeWidgets/nearestShopsDisplay/nearestShopsDisplay.twig' %}
-            </div>
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="livraison__adress ">
-                            <span>Lapeyre Le Mans</span>
-                            <div class="accordion__body__border">
-                                <p>RN 138
-                                    <img src="/images/location_picto.png" class="pull-left location_picto" alt="">
-                                    <br>ZAC Porte Océane
-                                    <br> 72650 Saint-Saturmin</p>
-                                <p class="adress__tel">
-                                    <img src="/images/phone_picto.png" class="pull-left location_picto" alt=""> 02 43 25 20 52</p>
-                            </div>
-                            <button class="btn btn-primary">Choisir</button>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="livraison__adress ">
-                            <span>Lapeyre Le Mans</span>
-                            <div class="accordion__body__border">
-                                <p>RN 138
-                                    <img src="/images/location_picto.png" class="pull-left location_picto" alt="">
-                                    <br>ZAC Porte Océane
-                                    <br> 72650 Saint-Saturmin</p>
-                                <p class="adress__tel">
-                                    <img src="/images/phone_picto.png" class="pull-left location_picto" alt=""> 02 43 25 20 52</p>
-                            </div>
-                            <button class="btn btn-primary ">Choisir</button>
-                        </div>
-                    </div>
+                <div class="col-md-11">
+                    <h3 class="accordion__title">Retrait en drive</h3>
+                    <span>Gratuit</span>
+                    <img src="/images/arrow-down.svg" class="pull-right collapse-arrow" alt="">
                 </div>
             </div>
         </div>
-        <button class="btn pull-right">Changer de magasin</button>
-        <div class="clear"></div>
-    </div>
-    <div class="accordion__separator"></div>
+    </a>
+    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="accordion__body">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Votre magasin</h4>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="form-inline form__search__shop">
+                                <input type="text" class="form-control " id="inlineFormInput" placeholder="Votre ville ou CP">
+                                <button type="submit" class="btn btn-primary form__search__shop__button">Ok</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    {% include 'storeWidgets/nearestShopsDisplay/nearestShopsDisplay.twig' %}
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="livraison__adress ">
+                                <span>Lapeyre Le Mans</span>
+                                <div class="accordion__body__border">
+                                    <p>RN 138
+                                        <img src="/images/location_picto.png" class="pull-left location_picto" alt="">
+                                        <br>ZAC Porte Océane
+                                        <br> 72650 Saint-Saturmin</p>
+                                        <p class="adress__tel">
+                                            <img src="/images/phone_picto.png" class="pull-left location_picto" alt=""> 02 43 25 20 52</p>
+                                        </div>
+                                        <button class="btn btn-primary">Choisir</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="livraison__adress ">
+                                        <span>Lapeyre Le Mans</span>
+                                        <div class="accordion__body__border">
+                                            <p>RN 138
+                                                <img src="/images/location_picto.png" class="pull-left location_picto" alt="">
+                                                <br>ZAC Porte Océane
+                                                <br> 72650 Saint-Saturmin</p>
+                                                <p class="adress__tel">
+                                                    <img src="/images/phone_picto.png" class="pull-left location_picto" alt=""> 02 43 25 20 52</p>
+                                                </div>
+                                                <button class="btn btn-primary ">Choisir</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn pull-right">Changer de magasin</button>
+                            <div class="clear"></div>
 
-        {% include 'storeWidgets/driveScheduleWidgetUI/driveScheduleWidgetUI.twig' %} 
-            <div class="accordion__separator"></div>
+                        <div class="accordion__separator"></div>
 
-        {% include 'storeWidgets/addressFormUI/addressFormUI.twig' %}
-   
-</div>
+                        {% include 'storeWidgets/driveScheduleWidgetUI/driveScheduleWidgetUI.twig' %} 
+                        <div class="accordion__separator"></div>
+
+                        {% include 'storeWidgets/addressFormUI/addressFormUI.twig' %}
+                        <div class="row">
+                            <div class="col-md-8"></div>
+                            <div class="col-md-4">
+                                <button class="btn btn-primary btn-lg pull-right">Valider et payer</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+
+

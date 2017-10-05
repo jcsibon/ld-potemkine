@@ -1,7 +1,4 @@
-<!-- =================== CONTAINER====================== -->
-<div class="tunnelLivraisonTab__container  full-height">
-    <!-- =================== ACCORDIONS====================== -->
-    <div id="accordion" role="tablist" aria-multiselectable="true">
+
         <!-- =================== ACCORDION 1====================== -->
         <div class="card">
             <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
@@ -18,53 +15,31 @@
                     </div>
                 </div>
             </a>
-            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="accordion__body">
-                    <h4>Votre adresse de livraison</h4>
                     <div class="livraison__info">
                         <img src="/images/picto_livraison.png" alt="">
                         <span>Votre livraison est prévu à partir du 24/03/2017</span>
                             <p>Le magasin qui prépare votre commande prendra contact avec vous <strong>sous 2 jours</strong> pour convenir des détails liés à la livraison.
                         </p>
                     </div>
+                    <br>
+                    <h4>Votre adresse de livraison</h4>    
+                    {% if data.session.logged == 1  and data.session.addresses|length > 0 %}
                     <div class="row">
-                        <div class="col-md-4 ">
-                            <h5>Votre adresse</h5> 
-                            {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
-                        </div>
-                        <div class="col-md-8">
-                            <h5>Choisir une autre adresse</h5>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="livraison__adress is-saved">
-                                        <span>Anne Sophie Maison</span>
-                                        <p>1 Boulevard Richard Lenoir
-                                            <br> 75011 Paris</p>
-                                             <p class="adress__tel">01 43 25 20 52</p>
-                                        <button class="btn ">Choisir</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="livraison__adress is-new">
-                                        <p>Vous avez besoin d’être facturé à une autre adresse ?
-                                        </p>
-                                        <div class="text-center">
-                                            <img src="/images/picto_more.png" class="picto_more" alt="">
-                                        </div>
-                                    </div>
+                        {% for address in data.session.addresses %}
+                            <div class="col-md-4">
+<!-- <div class="livraison__adress is-active">
+</div> -->
+                                
+                                    <div class="livraison__adress {% if loop.index0 != 0 %}is-saved{% else %}is-active{% endif %}">
+                                    {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
+                                    {% if loop.index0 != 0 %}
+                                    <button class="btn ">Choisir</button>
+                                    {% endif %}
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="">Je n'utilise pas la même adresse pour la facturation</label>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <!-- AJOUTER IS ACTIVE -->
-                            {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
-                        </div>
+                        {% endfor %}
                         <div class="col-md-4">
                             <div class="livraison__adress is-new">
                                 <p>Vous avez besoin d’être facturé à une autre adresse ?
@@ -75,6 +50,40 @@
                             </div>
                         </div>
                     </div>
+                    {% else %}
+                        {% include 'storeWidgets/addressFormUI/addressFormUI.twig' %}
+                    {% endif %}
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">Je n'utilise pas la même adresse pour la facturation</label>
+                    </div>
+                    <br>
+                    <h4>Votre adresse de facturation</h4>
+                    {% if data.session.logged == 1 and data.session.addresses|length > 0 %}
+                        <div class="row">
+                        {% for address in data.session.addresses %}
+                            <div class="col-md-4">
+                                <div class="livraison__adress is-saved">
+                                    {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
+                                    {% if loop.index0 != 0 %}
+                                    <button class="btn ">Choisir</button>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                            <div class="col-md-4">
+                                <div class="livraison__adress is-new">
+                                    <p>Vous avez besoin d’être facturé à une autre adresse ?
+                                    </p>
+                                    <div class="text-center">
+                                        <img src="/images/picto_more.png" class="picto_more" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    {% else %}
+                        {% include 'storeWidgets/addressFormUI/addressFormUI.twig' %}
+                    {% endif %}
                     <div class="row">
                         <div class="col-md-8"></div>
                         <div class="col-md-4">
@@ -85,27 +94,3 @@
             </div>
         </div>
         <!-- =================== END ACCORDION 1====================== -->
-        <!-- =================== ACCORDION 2====================== -->
-        <div class="card">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <div class="accordion__header" role="tab" id="headingOne">
-                    <div class="row">
-                        <div class="col-md-1 ">
-                            <img src="/images/picto_drive-red.png" class="accordion__header__picto hidden-sm hidden-xs " alt="">
-                        </div>
-                        <div class="col-md-11">
-                            <h3 class="accordion__title">Retrait en drive</h3>
-                            <span>Gratuit</span>
-                            <img src="/images/arrow-down.svg" class="pull-right collapse-arrow" alt="">
-                        </div>
-                    </div>
-                </div>
-            </a>
-             {% include 'storeWidgets/tunnelRetraitMagasinTabUI/tunnelRetraitMagasinTabUI.twig' %}
-         
-        </div>
-        <!-- =================== END ACCORDION 2====================== -->
-    </div>
-    <!-- =================== END ACCORDIONS====================== -->
-</div>
-<!-- =================== END CONTAINER====================== -->
