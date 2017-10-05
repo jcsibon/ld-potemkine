@@ -70,8 +70,35 @@
 
                         {% include 'storeWidgets/driveScheduleWidgetUI/driveScheduleWidgetUI.twig' %} 
                         <div class="accordion__separator"></div>
+                        <br>
+                        <h4>Votre adresse de facturation</h4>
+                        {% if data.session.logged == 1 and data.session.addresses|length > 0 %}
+                            <div class="row">
+                            {% for address in data.session.addresses %}
+                                <div class="col-md-4">
+                                    <div class="livraison__adress is-saved">
+                                        {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
+                                        {% if loop.index0 != 0 %}
+                                        <button class="btn ">Choisir</button>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                                <div class="col-md-4">
+                                    <div class="livraison__adress is-new">
+                                        <p>Vous avez besoin d’être facturé à une autre adresse ?
+                                        </p>
+                                        <div class="text-center">
+                                            <img src="/images/picto_more.png" class="picto_more" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                    
+                        {% else %}
+                            {% include 'storeWidgets/addressFormUI/addressFormUI.twig' %}
+                        {% endif %}
 
-                        {% include 'storeWidgets/addressFormUI/addressFormUI.twig' %}
+
                         <div class="row">
                             <div class="col-md-8"></div>
                             <div class="col-md-4">
