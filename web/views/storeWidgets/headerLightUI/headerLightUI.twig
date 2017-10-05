@@ -2,7 +2,12 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">
-      	<img src="/images/logo.png" alt="">
+      	{% if data.session.pro is defined and data.session.pro == 1 %}
+            <img src="/images/logo_pro.png" alt="">    
+        {% else %}
+            <img src="/images/logo.png" alt="">
+        {% endif %}
+
       </a>
         </div>
         <ul class="nav navbar-nav navbar-right hidden-xs">

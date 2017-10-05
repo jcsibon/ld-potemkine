@@ -9,17 +9,17 @@
             <div class="row">
                 <div class="col-md-6">
                     <label for="usr">Pr&eacute;nom</label>
-                    <input type="text" class="form-control" value="{{ data.session.firstname }}">
+                    <input type="text" class="form-control" value="{% if data.session.firstname is defined %}{{ data.session.firstname }}{% if data.session.firstname is defined %}{{ data.session.firstname }}{% endif %}">
                 </div>
                 <div class="col-md-6">
                     <label for="pwd">Nom</label>
-                    <input type="text" class="form-control" value="{{ data.session.lastname }}">
+                    <input type="text" class="form-control" value="{% if data.session.lastname is defined %}{{ data.session.lastname }}{% endif %}">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <label for="usr">Adresse email</label>
-                    <input type="email" class="form-control" value="{{ data.session.email }}">
+                    <input type="email" class="form-control" value="{% if data.session.email is defined %}{{ data.session.email }}{% endif %}">
                 </div>
             </div>
             <div class="row">
@@ -45,11 +45,11 @@
             <div class="row">
                 <div class="col-md-3">
                     <label for="usr">Code postal</label>
-                    <input type="text" class="form-control" value="{{ data.session.postcode }}">
+                    <input type="text" class="form-control" value="{% if data.session.postcode is defined %}{{ data.session.postcode }}{% endif %}">
                 </div>
                 <div class="col-md-6">
                     <label for="pwd">Ville</label>
-                    <input type="text" class="form-control" value="{{ data.session.city }}">
+                    <input type="text" class="form-control" value="{% if data.session.city is defined %}{{ data.session.city }}{% endif %}">
                 </div>
             </div>
             <div class="row">
