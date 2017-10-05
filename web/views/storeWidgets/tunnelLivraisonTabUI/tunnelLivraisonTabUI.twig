@@ -1,96 +1,93 @@
-
-        <!-- =================== ACCORDION 1====================== -->
-        <div class="card">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
-                <div class="accordion__header" role="tab" id="headingOne">
-                    <div class="row">
-                        <div class="col-md-1 hidden-sm hidden-xs ">
-                            <img src="/images/picto_truck-red.png" class="accordion__header__picto" alt="">
-                        </div>
-                        <div class="col-md-11 ">
-                            <h3 class="accordion__title">Livraison à domicile</h3>
-                            <span>Gratuit</span>
-                            <img src="/images/arrow-down.svg" class="pull-right collapse-arrow" alt="">
-                        </div>
-                    </div>
+<!-- BEGIN tunnelLivraisonTabUI -->
+<div class="card">
+    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+        <div class="accordion__header" role="tab" id="headingOne">
+            <div class="row">
+                <div class="col-md-1 hidden-sm hidden-xs ">
+                    <img src="/images/picto_truck-red.png" class="accordion__header__picto" alt="">
                 </div>
-            </a>
-            <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
-                <div class="accordion__body">
-                    <div class="livraison__info">
-                        <img src="/images/picto_livraison.png" alt="">
-                        <span>Votre livraison est prévu à partir du 24/03/2017</span>
-                            <p>Le magasin qui prépare votre commande prendra contact avec vous <strong>sous 2 jours</strong> pour convenir des détails liés à la livraison.
-                        </p>
-                    </div>
-                    <br>
-                    <h4>Votre adresse de livraison</h4>    
-                    {% if data.session.logged == 1  and data.session.addresses|length > 0 %}
-                    <div class="row">
-                        {% for address in data.session.addresses %}
-                            <div class="col-md-4">
-<!-- <div class="livraison__adress is-active">
-</div> -->
-                                
-                                    <div class="livraison__adress {% if loop.index0 != 0 %}is-saved{% else %}is-active{% endif %}">
-                                    {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
-                                    {% if loop.index0 != 0 %}
-                                    <button class="btn ">Choisir</button>
-                                    {% endif %}
-                                </div>
-                            </div>
-                        {% endfor %}
-                        <div class="col-md-4">
-                            <div class="livraison__adress is-new">
-                                <p>Vous avez besoin d’être facturé à une autre adresse ?
-                                </p>
-                                <div class="text-center">
-                                    <img src="/images/picto_more.png" class="picto_more" alt="">
-                                </div>
-                            </div>
+                <div class="col-md-11 ">
+                    <h3 class="accordion__title">Livraison à domicile</h3>
+                    <span>Gratuit</span>
+                    <img src="/images/arrow-down.svg" class="pull-right collapse-arrow" alt="">
+                </div>
+            </div>
+        </div>
+    </a>
+    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+        <div class="accordion__body">
+            <br>
+            <h4>Votre adresse de livraison</h4>    
+            {% if data.session.logged == 1  and data.session.addresses|length > 0 %}
+            <div class="row">
+                {% for address in data.session.addresses %}
+                    <div class="col-md-4">                        
+                        <div class="livraison__adress {% if loop.index0 != 0 %}is-saved{% else %}is-active{% endif %}">
+                            {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
+                            {% if loop.index0 != 0 %}
+                            <button class="btn ">Choisir</button>
+                            {% endif %}
                         </div>
                     </div>
-                    {% else %}
-                        {% include 'storeWidgets/addressFormUI/addressFormUI.twig' %}
-                    {% endif %}
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="">Je n'utilise pas la même adresse pour la facturation</label>
-                    </div>
-                    <br>
-                    <h4>Votre adresse de facturation</h4>
-                    {% if data.session.logged == 1 and data.session.addresses|length > 0 %}
-                        <div class="row">
-                        {% for address in data.session.addresses %}
-                            <div class="col-md-4">
-                                <div class="livraison__adress is-saved">
-                                    {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
-                                    {% if loop.index0 != 0 %}
-                                    <button class="btn ">Choisir</button>
-                                    {% endif %}
-                                </div>
-                            </div>
-                        {% endfor %}
-                            <div class="col-md-4">
-                                <div class="livraison__adress is-new">
-                                    <p>Vous avez besoin d’être facturé à une autre adresse ?
-                                    </p>
-                                    <div class="text-center">
-                                        <img src="/images/picto_more.png" class="picto_more" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                    
-                    {% else %}
-                        {% include 'storeWidgets/addressFormUI/addressFormUI.twig' %}
-                    {% endif %}
-                    <div class="row">
-                        <div class="col-md-8"></div>
-                        <div class="col-md-4">
-                            <button class="btn btn-primary btn-lg pull-right">Valider et payer</button>
+                {% endfor %}
+                <div class="col-md-4">
+                    <div class="livraison__adress is-new">
+                        <p>Vous avez besoin d’être facturé à une autre adresse ?
+                        </p>
+                        <div class="text-center">
+                            <img src="/images/picto_more.png" class="picto_more" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+            {% else %}
+                {% include 'storeWidgets/addressFormUI/addressFormUI.twig' %}
+            {% endif %}
+            <div class="livraison__info">
+                <img src="/images/picto_livraison.png" alt="">
+                <span>Votre livraison est prévu à partir du 24/03/2017</span>
+                    <p>Le magasin qui prépare votre commande prendra contact avec vous <strong>sous 2 jours</strong> pour convenir des détails liés à la livraison.
+                </p>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">Je n'utilise pas la même adresse pour la facturation
+                </label>
+            </div>
+            <br>
+            <h4>Votre adresse de facturation</h4>
+            {% if data.session.logged == 1 and data.session.addresses|length > 0 %}
+                <div class="row">
+                {% for address in data.session.addresses %}
+                    <div class="col-md-4">
+                        <div class="livraison__adress is-saved">
+                            {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
+                            {% if loop.index0 != 0 %}
+                            <button class="btn ">Choisir</button>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+                    <div class="col-md-4">
+                        <div class="livraison__adress is-new">
+                            <p>Vous avez besoin d’être facturé à une autre adresse ?
+                            </p>
+                            <div class="text-center">
+                                <img src="/images/picto_more.png" class="picto_more" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>                    
+            {% else %}
+                {% include 'storeWidgets/addressFormUI/addressFormUI.twig' %}
+            {% endif %}
+            <div class="row">
+                <div class="col-sm-9"></div>
+                <div class="col-sm-3">
+                    <button class="btn btn-primary btn-block">Valider et payer</button>
+                </div>
+            </div>
         </div>
-        <!-- =================== END ACCORDION 1====================== -->
+    </div>
+</div>
+<!-- END tunnelLivraisonTabUI -->

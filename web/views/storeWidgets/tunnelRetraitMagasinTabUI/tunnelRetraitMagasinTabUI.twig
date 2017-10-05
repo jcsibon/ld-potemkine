@@ -1,3 +1,4 @@
+<!-- BEGIN tunnelRetraitMagasinTabUI -->
 <div class="card">
     <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         <div class="accordion__header" role="tab" id="headingOne">
@@ -6,14 +7,14 @@
                     <img src="/images/picto_drive-red.png" class="accordion__header__picto hidden-sm hidden-xs " alt="">
                 </div>
                 <div class="col-md-11">
-                    <h3 class="accordion__title">Retrait en drive</h3>
+                    <h3 class="accordion__title">Retrait</h3>
                     <span>Gratuit</span>
                     <img src="/images/arrow-down.svg" class="pull-right collapse-arrow" alt="">
                 </div>
             </div>
         </div>
     </a>
-    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+    <div id="collapseTwo" class="collapse in" role="tabpanel" aria-labelledby="headingTwo">
         <div class="accordion__body">
             <div class="row">
                 <div class="col-md-12">
@@ -39,75 +40,77 @@
                                     <p>RN 138
                                         <img src="/images/location_picto.png" class="pull-left location_picto" alt="">
                                         <br>ZAC Porte Océane
-                                        <br> 72650 Saint-Saturmin</p>
-                                        <p class="adress__tel">
-                                            <img src="/images/phone_picto.png" class="pull-left location_picto" alt=""> 02 43 25 20 52</p>
-                                        </div>
-                                        <button class="btn btn-primary">Choisir</button>
-                                    </div>
+                                        <br> 72650 Saint-Saturmin
+                                    </p>
+                                    <p class="adress__tel">
+                                        <img src="/images/phone_picto.png" class="pull-left location_picto" alt=""> 02 43 25 20 52
+                                    </p>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="livraison__adress ">
-                                        <span>Lapeyre Le Mans</span>
-                                        <div class="accordion__body__border">
-                                            <p>RN 138
-                                                <img src="/images/location_picto.png" class="pull-left location_picto" alt="">
-                                                <br>ZAC Porte Océane
-                                                <br> 72650 Saint-Saturmin</p>
-                                                <p class="adress__tel">
-                                                    <img src="/images/phone_picto.png" class="pull-left location_picto" alt=""> 02 43 25 20 52</p>
-                                                </div>
-                                                <button class="btn btn-primary ">Choisir</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn pull-right">Changer de magasin</button>
-                            <div class="clear"></div>
-
-                        <div class="accordion__separator"></div>
-
-                        {% include 'storeWidgets/driveScheduleWidgetUI/driveScheduleWidgetUI.twig' %} 
-                        <div class="accordion__separator"></div>
-                        <br>
-                        <h4>Votre adresse de facturation</h4>
-                        {% if data.session.logged == 1 and data.session.addresses|length > 0 %}
-                            <div class="row">
-                            {% for address in data.session.addresses %}
-                                <div class="col-md-4">
-                                    <div class="livraison__adress is-saved">
-                                        {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
-                                        {% if loop.index0 != 0 %}
-                                        <button class="btn ">Choisir</button>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            {% endfor %}
-                                <div class="col-md-4">
-                                    <div class="livraison__adress is-new">
-                                        <p>Vous avez besoin d’être facturé à une autre adresse ?
-                                        </p>
-                                        <div class="text-center">
-                                            <img src="/images/picto_more.png" class="picto_more" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                    
-                        {% else %}
-                            {% include 'storeWidgets/addressFormUI/addressFormUI.twig' %}
-                        {% endif %}
-
-
-                        <div class="row">
-                            <div class="col-md-8"></div>
-                            <div class="col-md-4">
-                                <button class="btn btn-primary btn-lg pull-right">Valider et payer</button>
+                                <button class="btn btn-primary">Choisir</button>
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="livraison__adress ">
+                                <span>Lapeyre Le Mans</span>
+                                <div class="accordion__body__border">
+                                    <p>RN 138
+                                        <img src="/images/location_picto.png" class="pull-left location_picto" alt="">
+                                        <br>ZAC Porte Océane
+                                        <br> 72650 Saint-Saturmin
+                                    </p>
+                                    <p class="adress__tel">
+                                        <img src="/images/phone_picto.png" class="pull-left location_picto" alt=""> 02 43 25 20 52
+                                    </p>
+                                </div>
+                                <button class="btn btn-primary ">Choisir</button>
+                            </div>
                         </div>
                     </div>
-
                 </div>
+            </div>
+            <button class="btn pull-right">Changer de magasin</button>
+            <div class="clear"></div>
+
+            <div class="accordion__separator"></div>
+
+            {% include 'storeWidgets/driveScheduleWidgetUI/driveScheduleWidgetUI.twig' %} 
+            <div class="accordion__separator"></div>
+            <br>
+            <h4>Votre adresse de facturation</h4>
+            {% if data.session.logged == 1 and data.session.addresses|length > 0 %}
+            <div class="row">
+                {% for address in data.session.addresses %}
+                <div class="col-md-4">
+                    <div class="livraison__adress is-saved">
+                        {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
+                        {% if loop.index0 != 0 %}
+                        <button class="btn ">Choisir</button>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="col-md-4">
+                    <div class="livraison__adress is-new">
+                        <p>Vous avez besoin d’être facturé à une autre adresse ?
+                        </p>
+                        <div class="text-center">
+                            <img src="/images/picto_more.png" class="picto_more" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>                    
+            {% else %}
+            {% include 'storeWidgets/addressFormUI/addressFormUI.twig' %}
+            {% endif %}
 
 
+            <div class="row">
+                <div class="col-md-9"></div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary btn-block">Valider et payer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END tunnelRetraitMagasinTabUI -->
