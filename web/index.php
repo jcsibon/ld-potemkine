@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL);
 require('../vendor/autoload.php');
 
 $app = new Silex\Application();
@@ -15,7 +15,25 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/views',
 ));
 
-// Our web handlers
+
+//die(json_encode($_GET));
+$clients = json_decode(file_get_contents("data/clients.json"));
+
+
+if(isset($_GET['client']) && isset($clients->{$_GET['client']}))
+  $data['session']=$clients->{$_GET['client']};
+else
+  $data['session']=$clients->guest;
+
+$app['twig']->addGlobal('data', $data);
+
+
+$app->get('/session', function() use($app) {
+  echo '<pre>' . var_export($data, true) . '</pre>';
+  die();
+  return true;
+});
+
 
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
