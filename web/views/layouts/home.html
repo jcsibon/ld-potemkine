@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		{% include 'storeWidgets/headerUI/headerUI.twig' %}
-	</head>
-	<body>
-		{# {% include 'storeWidgets/nav.twig' %} #}
 
-		{% block content %}
-		{% endblock %}
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lapeyre</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-		{% include 'storeWidgets/footer/footer.twig' %}
-	</body>
+<body class="bg-faded">
+    {% block content %} {% endblock %}
+    <script src="js/plugins/plugins.js"></script>
+</body>
+
 </html>
