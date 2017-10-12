@@ -1,0 +1,84 @@
+/*----------  COLOURS  ----------*/
+/*OLD A TRIER*/
+
+$color-gray-0: #212121;
+$color-gray-1: #3f3d3d;
+$color-gray-2: #8a8a8a;
+$color-gray-3: #969696;
+$color-gray-4: #bcbcbc;
+$color-gray-5: #e4e5e7;
+$color-gray-6: #f8f8f8;
+
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$white: #FFF;
+$blue: #3970ca;
+$green: #59b957;
+$orange: #fe8105;
+$red: #aa192d;
+$red-secondary: #ea0028;
+
+$theme-colors: (
+  primary: $red,
+  secondary: $red-secondary,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-200,
+  dark: $gray-800
+);
+
+$link-hover-decoration: none;
+
+$font-family-sans-serif: 'Gotham Book Regular',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$title-font: 'Roboto', sans-serif;
+$styled-font:'Gotham Book Regular',sans-serif;
+$base-font:'Gotham Book Regular',sans-serif;
+
+$border-radius:0;           // .25rem !default;
+$border-radius-lg:0;        // .3rem !default;
+$border-radius-sm:0;        // .2rem !default;
+
+// Navbar
+$navbar-dark-color:                 rgba($white,0.8);
+$navbar-dark-hover-color:           rgba($white,0.9);
+$navbar-dark-active-color:          rgba($white,1.0);
+
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1340px 
+)
+// 1140px

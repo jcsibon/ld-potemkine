@@ -1,6 +1,6 @@
 
 .card, .card-header, .card-header:first-child {
-  border-color: $color-border-light;
+  border-color: $gray-100;
   border-radius: 0;
 }
 .card{
@@ -21,11 +21,11 @@
       width: 0;
     }
     &[aria-expanded=false]:after {
-      border-top-color: $color-grey-3;
+      border-top-color: $color-gray-3;
       margin-top: 5px;
     }
     &[aria-expanded=true]:after {
-      border-bottom-color: $color-grey-3;
+      border-bottom-color: $color-gray-3;
       margin-top: 1px;
     }
   }

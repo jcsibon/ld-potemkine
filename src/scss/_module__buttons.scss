@@ -8,10 +8,10 @@
     font-weight:600;
     letter-spacing: 0rem;
     font-size:13px;
-    font-family:$base-font;
+//  font-family:$base-font;
     padding:13px 25px 13px;
     vertical-align:middle;
-    background-color: $grey-default;
+    background-color: $gray-500;
     color: #000; 
         &:hover{
         box-shadow: 0 0.05em 1em rgba(0,0,0,0.18);
@@ -56,7 +56,7 @@
         font-size:.95rem;
     }
     &.btn-link{
-        color:$primary-color;
+        color:$red;
         text-transform:capitalize;
         &:after{
                 font-family: 'themify';
@@ -94,86 +94,86 @@
     }
 }
 .btn-outline-primary{
-    border:2px solid $primary-color;
+    border:2px solid $red;
     background-color:transparent;
-    color:$primary-color;
+    color:$red;
     &:hover,&:focus,&:active{
         &:before{
              width:100%;
-            background-color:$primary-color;
+            background-color:$red;
         }
         color:#fff;
-        border-color:$primary-color;
+        border-color:$red;
         background-color:transparent;
     }
 }
 .btn-outline-info{
-    border:2px solid $info-color;
+    border:2px solid $blue;
     background-color:transparent;
-    color:$info-color;
+    color:$blue;
     &:hover,&:focus,&:active{
         &:before{
              width:100%;
-            background-color:$info-color;
+            background-color:$blue;
         }
         color:#fff;
-        border-color:$info-color;
+        border-color:$blue;
         background-color:transparent;
     }
 }
 .btn-outline-info{
-    border:2px solid $info-color;
+    border:2px solid $blue;
     background-color:transparent;
-    color:$info-color;
+    color:$blue;
     &:hover,&:focus,&:active{
         &:before{
              width:100%;
-            background-color:$info-color;
+            background-color:$blue;
         }
         color:#fff;
-        border-color:$info-color;
+        border-color:$blue;
         background-color:transparent;
     }
 }
 .btn-outline-success{
-    border:2px solid $success-color;
+    border:2px solid $green;
     background-color:transparent;
-    color:$success-color;
+    color:$green;
     &:hover,&:focus,&:active{
         &:before{
              width:100%;
-            background-color:$success-color;
+            background-color:$green;
         }
         color:#fff;
-        border-color:$success-color;
+        border-color:$green;
         background-color:transparent;
     }
 }
 .btn-outline-danger{
-    border:2px solid $danger-color;
+    border:2px solid $red;
     background-color:transparent;
-    color:$danger-color;
+    color:$red;
     &:hover,&:focus,&:active{
         &:before{
              width:100%;
-            background-color:$danger-color;
+            background-color:$red;
         }
         color:#fff;
-        border-color:$danger-color;
+        border-color:$red;
         background-color:transparent;
     }
 }
 .btn-outline-warning{
-    border:2px solid $warning-color;
+    border:2px solid $orange;
     background-color:transparent;
-    color:$warning-color;
+    color:$orange;
     &:hover,&:focus,&:active{
         &:before{
              width:100%;
-            background-color:$warning-color;
+            background-color:$orange;
         }
         color:#fff;
-        border-color:$warning-color;
+        border-color:$orange;
         background-color:transparent;
     }
 }
@@ -210,10 +210,10 @@
     }
 }
 .btn-primary{
-    background: $btn-primary;
+    background: $red;
     color:#fff;
     &:hover,&:focus,&:active{
-        background: $btn-primary;
+        background: $red;
         color:#fff;
     }
 }
@@ -236,10 +236,10 @@
     }
 }
 .btn-dark{
-    background: $dark-color;
+    background: $blue;
     color:#fff;
     &:hover,&:focus,&:active{
-        background: $dark-color;
+        background: $blue;
         color:#fff;
     }
 }
@@ -250,7 +250,7 @@
     display: inline-block!important;
     text-align: center;
     border-radius: 50%;
-    background: $primary-color;
+    background: $red;
     color: #fff;
 }
 

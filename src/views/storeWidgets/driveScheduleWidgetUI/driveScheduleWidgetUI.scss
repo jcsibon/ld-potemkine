@@ -1,0 +1,58 @@
+.calendar__container {
+    text-align: center;
+}
+
+.calendar__day {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $red;
+    strong {
+        margin-left: 5px;
+    }
+}
+
+.calendar__hour {
+    border: 1px solid transparent !important;
+    background-color: $gray-100;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.calendar__hour:hover {
+    background-color: $red;
+    color: #FFF;
+}
+
+
+
+.calendar__column {
+    width: 70% !important;
+}
+
+.is-unavailable {
+    border: 1px solid $gray-100 !important;
+    background-color: #FFF !important;
+    color: $gray-100 !important;
+}
+
+.hour-is-active {
+    background-color: $red;
+    color: #FFF;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: 1;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev,
+.slick-next {
+    top: 12%;
+}

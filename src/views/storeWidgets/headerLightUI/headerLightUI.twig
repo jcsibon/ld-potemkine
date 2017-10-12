@@ -1,0 +1,30 @@
+<!-- BEGIN headerLightUI -->
+<nav class="navbar navbar-light bg-white navbar-expand-md">
+    <div class="container">
+        <div class="navbar-header mr-auto">
+            <a class="navbar-brand" href="/">
+                {% if data.session.pro is defined and data.session.pro == 1 %}
+                    <img src="/images/logo_pro.png" alt="">    
+                {% else %}
+                    <img src="/images/logo.png" alt="">
+                {% endif %}
+            </a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <p class="header__p">
+                        <a href="#"><span ><img src="/images/picto_lock.png" class="header__picto" alt=""></span>                100% sécurisé</a></p>
+                </li>
+                <li class="nav-item">
+                    <span ><img src="/images/picto_phone.png" class="header__picto" alt=""></span> 
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-grey"> <img src="/images/picto_help.png" class="header__picto" alt=""> Aide </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- END headerLightUI -->
+

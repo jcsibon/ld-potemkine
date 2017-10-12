@@ -1,0 +1,23 @@
+{% extends"layouts/checkout.html" %} 
+{% block content %} 
+<div id="TunnelCommandPaymentView" class="bg-light">
+    {% include 'storeWidgets/tunnelShopCartHeaderUI/tunnelShopCartHeaderUI.twig' %}
+    <div class="container">
+        <div class="row">
+            <!-- TUNNEL -->
+            <div class="col-lg-7 col-xl-8">
+    			CHOISISSEZ VOTRE MODE DE PAIEMENT
+    			Montant de commande TTC : 14,35 €
+
+    			 Carte Visa   Carte Mastercard   Carte CB   AURORE   Carte AMEX
+    			Plus d'info sur le paiement en carte  J'accepte les conditions générales de vente. 
+    			Commande avec obligation de paiement. Vous devez accepter les conditions générales de ventes pour finaliser votre commandeVALIDER MA COMMANDE
+            </div>
+            <div class="col-lg-5 col-xl-4">
+                {% include 'storeWidgets/tunnelRecapPanier/tunnelRecapPanier.twig' %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

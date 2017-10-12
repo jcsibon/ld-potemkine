@@ -1,0 +1,84 @@
+
+.tunnelLivraisonTab__container{
+	background-color: $gray-100;
+	// padding: 20px 30px;
+    h5{
+		font-size: 18px;
+		color: $gray-700;
+	}
+    p{
+    	margin:0;
+    	color: #666666;
+    	font-size: 14px;
+    }
+    .checkbox{
+    	margin:20px 0 10px 0;
+    }
+    .livraison__info{
+    	background-color: #f3f9fc;
+    	border: 1px solid #e1ebf0;
+    	padding: 20px;
+    	img{
+    		margin-right: 10px;
+    	}
+    	span{
+    		color: #47494a;
+    		font-weight: bold;
+    	}
+    	p{
+    		color: #47494a;
+    		margin-left: 42px;
+    		font-weight: 300;
+    	}
+    }
+}
+.livraison__container{
+	padding: 20px 40px;
+}
+
+.livraison__adress{
+	padding: 20px;
+	min-height: 200px;
+	margin-bottom: 15px;
+	border: 3px solid $gray-200;
+	&:hover{
+		border: 3px solid #fbe5e7;
+		cursor: pointer;
+	}
+	&.is-active{
+		border: 3px solid $red;
+	}
+	&.is-new{
+		border: 3px dashed #dadada;
+		padding: 40px;
+    	text-align: center;
+	}
+	span{
+		font-size: 15px;
+		font-weight:400;
+	}
+	p{
+		font-size: 13px;
+		margin-top: 10px;
+		font-weight:300;
+	}
+	button{
+		margin-top:15px;
+    	position: relative;
+	}
+	.picto_more{
+	width: 30px;
+    margin-top: 10px;
+	}
+	.location_picto{
+		width: 13px;
+		margin-right: 5px;
+    	margin-bottom: 40px;
+	}
+}
+
+.adress__tel{
+	margin-top: 10px;
+}
+
+

@@ -1,0 +1,129 @@
+<!-- BEGIN driveScheduleWidgetUI -->
+<h4>Choisissez votre horaire de retrait</h4>
+<div class="alert alert-info" role="alert">
+    Votre commande sera disponible &agrave; partir du 24/07/2017.
+</div>
+{# 
+<div class="calendar__container">
+    <div id="calendar" class="mt20">
+        <div class="calendar__column">
+            <div class="calendar__day">Lundi <strong> 24/04</strong></div>
+            <div class="calendar__hour is-unavailable">
+                09h30
+            </div>
+            <div class="calendar__hour is-unavailable">
+                11h30
+            </div>
+            <div class="calendar__hour is-unavailable">
+                13h30
+            </div>
+            <div class="calendar__hour">
+                15h30
+            </div>
+            <div class="calendar__hour">
+                17h30
+            </div>
+          
+        </div>
+        <div class="calendar__column">
+            <div class="calendar__day">Mardi<strong> 25/04</strong></div>
+            <div class="calendar__hour">
+                09h30
+            </div>
+            <div class="calendar__hour">
+                11h30
+            </div>
+            <div class="calendar__hour">
+                13h30
+            </div>
+            <div class="calendar__hour">
+                15h30
+            </div>
+            <div class="calendar__hour">
+                17h30
+            </div>
+           
+        </div>
+        <div class="calendar__column">
+            <div class="calendar__day">Mercredi<strong> 26/04</strong></div>
+            <div class="calendar__hour">
+                09h30
+            </div>
+            <div class="calendar__hour">
+                11h30
+            </div>
+            <div class="calendar__hour">
+                13h30
+            </div>
+            <div class="calendar__hour">
+                15h30
+            </div>
+            <div class="calendar__hour">
+                17h30
+            </div>
+           
+        </div>
+        <div class="calendar__column">
+            <div class="calendar__day">Jeudi<strong> 27/04</strong></div>
+            <div class="calendar__hour">
+                09h30
+            </div>
+            <div class="calendar__hour">
+                11h30
+            </div>
+            <div class="calendar__hour">
+                13h30
+            </div>
+            <div class="calendar__hour">
+                15h30
+            </div>
+            <div class="calendar__hour">
+                17h30
+            </div>
+           
+        </div>
+        <div class="calendar__column">
+            <div class="calendar__day">Vendredi<strong> 28/04</strong></div>
+            <div class="calendar__hour">
+                09h30
+            </div>
+            <div class="calendar__hour">
+                11h30
+            </div>
+            <div class="calendar__hour">
+                13h30
+            </div>
+            <div class="calendar__hour">
+                15h30
+            </div>
+            <div class="calendar__hour">
+                17h30
+            </div>
+         
+        </div>
+    </div>
+</div>
+#}
+<script>
+$(document).ready(function() {
+
+    // DECLARATION DU CALENDAR
+    $('#calendar').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        adaptiveHeight: true
+    })
+    // AJOUT DE LA CLASS IS-ACTIVE AU CLICK
+    var hours = document.querySelectorAll('.calendar__hour');
+    var div = document.querySelectorAll('div');
+    for (var i = 0; i < hours.length; i++) {
+        var hour = hours[i]
+        var isActive = function() {
+            this.classList.toggle('hour-is-active')
+        }
+        hour.addEventListener('click', isActive)
+    }
+});
+</script>
+<!-- END driveScheduleWidgetUI -->

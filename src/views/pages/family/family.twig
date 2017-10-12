@@ -1,0 +1,10 @@
+{% extends"layouts/default.html" %}
+{% block content %}
+	{% if template|length > 0 %}
+		{% include 'contents/CCN0010.twig' %}
+	{% else %}
+		<div class="container">
+			<img src="/images/family.png" class="img-fluid">
+		</div>
+	{% endif %}
+{% endblock %}

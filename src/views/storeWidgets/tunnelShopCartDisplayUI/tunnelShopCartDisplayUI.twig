@@ -1,0 +1,50 @@
+<!-- BEGIN tunnelShopCartDisplayUI -->
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            {% if data.session.cart.articles|length > 0 %}
+            <h2>Panier <small class="text-muted">({{ data.session.cart.articles|length }} produits)</small></h2>
+            <br>
+            <ul class="list-group">
+                {% for article in data.session.cart.articles %}
+                {% include 'storeWidgets/orderItemDetail/orderItemDetail.twig' %}
+                {% endfor %}
+            </ul>
+            <br>
+            <div class="row">
+                <div class="ml-auto col-md-8 col-lg-5 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Code avantage ?</p>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Votre code" aria-label="Votre code">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">Appliquer</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    {% include 'storeWidgets/orderSummaryViewUI/orderSummaryViewUI.twig' %}
+                    <br>
+                    <p class="text-center"><strong>Moyens de paiement accept&eacute;s</strong></p>
+                    <div class="text-center">
+                        <img src="/images/card-cb.png">
+                        &nbsp;
+                        <img src="/images/card-mastercard.png">
+                        &nbsp;
+                        <img src="/images/card-visa.png">
+                        &nbsp;
+                        <img src="/images/card-amex.png">
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="alert alert-warning">
+                Votre panier est vide
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!-- END tunnelShopCartDisplayUI -->

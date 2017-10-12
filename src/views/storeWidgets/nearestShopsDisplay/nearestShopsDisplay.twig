@@ -1,0 +1,37 @@
+<!-- BEGIN nearestShopsDisplay -->
+<div class="card my-2 {% if active == 1 %}is-active{% endif %}">
+  <div class="card-body">
+      <p><strong>Lapeyre Le Mans</strong></p>
+
+  <div class="border-left">
+  	<p>RN 138
+      <img src="/images/location_picto.png" class="pull-left location_picto" alt="">
+      <br>ZAC Porte Océane
+      <br> 72650 Saint-Saturmin</p>
+      <p>
+        <img src="/images/phone_picto.png" class="pull-left location_picto" alt=""> 02 43 25 20 52</p>
+      </div>
+    <button class="btn btn-primary d-lg-none">Choisir</button>
+      <a href="#" data-toggle="modal" data-target="#shop{{ loop.index0 }}"></a>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END nearestShopsDisplay -->

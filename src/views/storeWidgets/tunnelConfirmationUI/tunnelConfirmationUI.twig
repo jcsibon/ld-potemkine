@@ -1,0 +1,92 @@
+{% include 'storeWidgets/tunnelShopHero/tunnelShopHero.twig' %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-7 col-xl-8">
+            {% if data.session.cart.delivery is defined and data.session.cart.delivery == 1 %}
+            <div class="card mb-2">
+                <p class="mb-2">Votre commande <span class="text-muted">#2376832</span> vous sera livr&eacute; d'ici le <strong>Lundi 24 mars</strong></p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="livraison__info">
+                            <img src="/images/picto_livraison.png" alt="">
+                            <span>Votre livraison est prévu à partir du 24/03/2017</span>
+                            <p>Le magasin qui prépare votre commande prendra contact avec vous <strong>sous 2 jours</strong> pour convenir des détails liés à la livraison.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="livraison__question">
+                            <img src="/images/picto_phone2.png" alt="">
+                            <span>Une question ?</span>
+                            <p>Contacez nous au <strong>02 43 25 20 52</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            {% else %}
+            <div class="card mb-2">
+                <p class="mb-2">Votre commande <span class="text-muted">#2376832</span> vous sera disponible dans votre magasin : <strong>Lapeyre Le Mans</strong>
+                    <br> et est &agrave; venir chercher le :<strong>Lundi 24 mars</strong></p>
+                <img src="/Web/images/map.png" style="width: 100%;">
+            
+            
+                        <p class="mt-2"><strong>Lorsque vous venez r&eacute;cuperer votre commande :</strong></p>
+                   
+                    <div class="col-lg-12 mt-2 confirmation__print">
+                        <div class="col-lg-8">
+                            <p>N'OUBLIEZ PAS D'IMPRIMER</p>
+                            <span>Votre bon de commande</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <button class="btn btn-primary"><i class="fa fa-print" aria-hidden="true"></i> Imprimer</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mt-2 confirmation__id-card">
+                        <img src="/images/picto_card.png">
+                        <p>Pensez &agrave; prendre un papier d'identit&eacute;</p>
+                    </div>
+             
+                <div class="clear"></div>
+            </div>
+          {% endif %}  
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tunnel__block">
+                        <h2>Informations clients</h2>
+                        {% if data.session.cart.delivery is defined and data.session.cart.delivery == 1 %}
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h5>Adresse de livraison</h5>
+                                    {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
+                                </div>
+                                <div class="col-lg-6">
+                                    <h5>Adresse de livraison</h5>
+                                    {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center mt-2">
+                    <div class="col-lg-6">
+                        <a href="#">
+                            <p class="pull-right p__go-home">
+                                <img src="/images/picto_arrow-left.png" style='width: 15px; margin-right: 5px;'> Retour à l'accueil</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <button class="btn btn-primary pull-left">Imprimer cette page</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-xl-4">
+            {% include 'storeWidgets/tunnelRecapPanier/tunnelRecapPanier.twig' %}
+        </div>
+    </div>
+</div>
