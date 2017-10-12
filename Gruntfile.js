@@ -14,22 +14,22 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'web/css/style.css': 'web/css/style.css'
+          'src/css/style.css': 'src/css/style.css'
         }
       }
     },
     concat: { 
        dist: {
          src: [
-           'web/views/*/*/*.scss',
+           'src/views/*/*/*.scss',
          ],
-         dest: 'web/css/concat.scss'
+         dest: 'src/scss/views.scss'
        }
      },
     sass: {
       dist: {
         files: {
-          'web/css/style.css': 'src/scss/style.scss'
+          'src/css/style.css': 'src/scss/style.scss'
         }
       }
     },
