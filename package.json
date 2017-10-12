@@ -1,20 +1,20 @@
 {
   "name": "lapeyre-potemkine",
   "version": "0.1.0",
-  "scripts": {
-    "postinstall": "grunt css"
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "grunt-contrib-concat": "^1.0.1",
+    "requirejs": "^2.3.5",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "cssnano": "^3.10.0",
-    "fullcalendar": "^3.5.1",
     "grunt": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^2.0.0",
     "load-grunt-tasks": "^3.5.2"
-  },
-  "dependencies": {
-    "grunt-contrib-concat": "^1.0.1"
   }
 }
