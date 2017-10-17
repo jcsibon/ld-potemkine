@@ -1,17 +1,21 @@
 <!-- BEGIN nearestShopsDisplay -->
-<div class="card my-2 {% if active == 1 %}is-active{% endif %}">
+<div class="card my-3 {% if active == 1 %}is-active{% endif %}">
   <div class="card-body">
-      <p><strong>Lapeyre Le Mans</strong></p>
+      <p><strong>Lapeyre Le Mans <a data-toggle="modal" data-target="#shop{{ loop.index0 }}"><i class="fa fa-question-circle-o"></i></a></strong></p>
 
   <div class="border-left">
-  	<p>RN 138
-      <img src="/images/location_picto.png" class="pull-left location_picto" alt="">
+  	   <p>RN 138
       <br>ZAC Porte Océane
       <br> 72650 Saint-Saturmin</p>
-      <p>
-        <img src="/images/phone_picto.png" class="pull-left location_picto" alt=""> 02 43 25 20 52</p>
+      <p>02 43 25 20 52</p>
       </div>
-    <button class="btn btn-primary d-lg-none">Choisir</button>
+      <p class="small text-success"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Disponible dès à présent</p>
+      <p class="small text-danger"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Livraison indisponible à cette adresse</p>
+      {% if active == 1 %}
+          <button class="btn btn-default disabled">Sélectionné</button>
+      {% else %}
+          <button class="btn btn-primary">Choisir</button>
+      {% endif %}
       <a href="#" data-toggle="modal" data-target="#shop{{ loop.index0 }}"></a>
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">

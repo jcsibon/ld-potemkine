@@ -10,7 +10,7 @@
                         <img class="img-fluid" src="/images/product_thumb.png" alt="">
                     </div>
                     <div class="col-9">
-                            <p class="small text-muted">Ref.123456</p>
+                            <p class="small text-muted">{{ article.id }}</p>
                             <p><strong>Bloc-Porte palier coupe feu ch&ecirc;ne &agrave; vernir</strong></p>
                             <p class="small mt10 text-orange"><i class="fa fa-circle" aria-hidden="true"></i> Disponible</p>
                         <div class="row">
@@ -18,7 +18,7 @@
                                 <p>Quantité: 1</p>
                             </div>
                             <div class=" col-6">
-                                89,00 €
+                                {{ article.price|number_format(2, '.') }}
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                 <p class="pl-3 my-1">Frais de livraison</p>
             </div>
             <div class="col-5">
-                <p class="pr-3 my-1 pull-right"><strong>{{ data.session.cart.deliveryfees|number_format(2, '.', ',') }} €</strong></p>
+                <p class="pr-3 my-1 pull-right"><strong>{{ data.session.cart.deliveryfees|number_format(2, '.') }} €</strong></p>
             </div>
         </div>
         <hr>
