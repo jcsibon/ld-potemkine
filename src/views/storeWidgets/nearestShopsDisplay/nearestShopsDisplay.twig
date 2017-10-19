@@ -1,16 +1,20 @@
 <!-- BEGIN nearestShopsDisplay -->
-<div class="card my-3 {% if active == 1 %}is-active{% endif %}">
+<div class="card my-3 {% if active == 1 %}is-active{% endif %} align-items-stretch">
   <div class="card-body">
-      <p><strong>Lapeyre Le Mans <a data-toggle="modal" data-target="#shop{{ loop.index0 }}"><i class="fa fa-question-circle-o"></i></a></strong></p>
+      <p><strong>{{ shop.titre }}<a data-toggle="modal" data-target="#shop{{ loop.index0 }}">&nbsp;<i class="fa fa-question-circle-o"></i></a></strong></p>
 
   <div class="border-left">
-  	   <p>RN 138
-      <br>ZAC Porte Océane
-      <br> 72650 Saint-Saturmin</p>
-      <p>02 43 25 20 52</p>
+      <p><small>{{ shop.adresse.numVoie }}
+      {% if shop.adresse.compl1|length > 0 %}<br>{{ shop.adresse.compl1 }}{% endif %}
+      {% if shop.adresse.compl2|length > 0 %}<br>{{ shop.adresse.compl2 }}{% endif %}
+      {% if shop.adresse.compl3|length > 0 %}<br>{{ shop.adresse.compl3 }}{% endif %}
+      <br>{{ shop.adresse.codePostal }}&nbsp;{{ shop.adresse.ville }}</small></p>
       </div>
-      <p class="small text-success"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Disponible dès à présent</p>
-      <p class="small text-danger"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Livraison indisponible à cette adresse</p>
+      {% if active == 1 %}
+      <p class="small text-success"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Disponible aujourd'hui</p>
+      {% else %}
+      <p class="small text-warning"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Disponible le 14/04/17</p>
+      {% endif %}
       {% if active == 1 %}
           <button class="btn btn-default disabled">Sélectionné</button>
       {% else %}
