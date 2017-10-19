@@ -1,7 +1,6 @@
 {
    "empty":{
       "delivery":1,
-   	  "deliveryfeeson": 0,
       "articles":[]
    },
    "small":{
@@ -37,7 +36,7 @@
             "promotionName":"-20% sur les produits Grohe",
             "price":79.00,
             "promotion":-15.80,
-            "quantity":1
+            "quantity":2
          },
          {
             "id":1239721,
@@ -57,7 +56,16 @@
             "price":72.47,
             "quantity":1
          }
-      ]
+      ],
+      "promotion": {
+         "title": "Remise Anniversaire",
+         "amount": -100
+      },
+      "coupon": {
+         "code": "NOELBIENFAIT",
+         "title": "Coupon « NOELBIENFAIT »",
+         "amount": -50
+      }
    },
    "large":{
       "delivery":1,
@@ -79,7 +87,7 @@
             "promoitiontitle":"-20% sur les produits Grohe",
             "price":79.00,
             "promotion":-15.80,
-            "quantity":1
+            "quantity":2
          },
          {
             "id":1239721,
@@ -123,6 +131,15 @@
             "price":4.90,
             "quantity":2
          }
-      ]
+      ],
+      "promotion": {
+         "title": "Remise Anniversaire",
+         "amount": -100
+      },
+      "coupon": {
+         "code": "NOELBIENFAIT",
+         "title": "Coupon « NOELBIENFAIT »",
+         "amount": -50
+      }
    }
 }

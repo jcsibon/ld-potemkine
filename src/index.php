@@ -65,7 +65,7 @@ $app->get('/catalog', function() use($app, $catalog) {
 });
 */
 
-
+$app['twig']->addGlobal("uri", strtok(trim($_SERVER["REQUEST_URI"],"/"),'?'));
 
 //die(json_encode($_GET));
 $clients = json_decode(file_get_contents("data/clients.json"));
@@ -84,9 +84,38 @@ else
 
 if(isset($_GET['delivery'])) //&& isset($carts->{$_GET['cart']}))
   $data['session']->cart->delivery = $carts->{$_GET['delivery']};
-else
-  $data['session']->cart->delivery = 0;
+// else
+//  $data['session']->cart->delivery = 0;
 
+if(count($data['session']->cart->articles)) {
+  $data['session']->cart->subtotal = 0;
+  $data['session']->cart->length = 0;
+
+  foreach ($data['session']->cart->articles as $article) {
+    $data['session']->cart->length += $article->quantity;
+    if(isset($article->promotion)) {
+      $data['session']->cart->subtotal += $article->quantity * ($article->price + $article->promotion);
+    } else {
+      $data['session']->cart->subtotal += $article->quantity * $article->price;
+
+    }
+  }
+  if(isset($data['session']->cart->promotion)) {
+      $data['session']->cart->subtotal += $data['session']->cart->promotion; 
+  }
+  if(isset($data['session']->cart->coupon)) {
+      $data['session']->cart->subtotal += $data['session']->cart->coupon; 
+  }
+  $data['session']->cart->vat = $data['session']->cart->subtotal / 6;
+
+  $data['session']->cart->total = $data['session']->cart->subtotal;
+  if(isset($data['session']->cart->delivery))
+    $data['session']->cart->total += $data['session']->cart->deliveryfees;
+}
+
+$shops = json_decode(file_get_contents("data/shops.json"));
+
+$data['store']['shops'] = array_slice(json_decode(file_get_contents("data/shops.json")),0,6);
 
 $app['twig']->addGlobal('data', $data);
 
