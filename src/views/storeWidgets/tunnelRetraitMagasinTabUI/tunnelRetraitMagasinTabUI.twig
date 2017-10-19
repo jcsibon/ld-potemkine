@@ -6,7 +6,7 @@
                 <i class="fa fa-home"></i>&nbsp;Je souhaite retirer ma commande en magasin
             </a>
         </h2>
-        <p class="text-muted m-0">Auprès de l'un de vos [130] magasins en France Métropolitaine</p>
+        <p class="text-muted m-0">Auprès de l'un de vos [115] magasins relais en France Métropolitaine</p>
         <div id="retrait" class="collapse show" role="tabpanel" aria-labelledby="retrait">
             <hr>
             <div id="retrait-step1">
@@ -18,7 +18,7 @@
                   </span>
                 </div>
                 <ul class="row list-unstyled">
-                    {% for shop in 1..6 %}
+                    {% for shop in data.store.shops %}
                     <li class="col-12 col-md-6 col-xl-4">
                         {% if loop.index0 == 0 %}
                         {% set active = 1 %}
@@ -54,7 +54,7 @@
                     </li>
                     {% endfor %}
                     <li class="col-12 col-md-6 col-xl-4">
-                        <div class="card my-3 is-new">
+                        <div class="card my-36 is-new">
                             <div class="card-body">
                                 <div class="text-center">
                                     <p class="small">Vous avez besoin d’être facturé à une autre adresse ?</p>
