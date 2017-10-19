@@ -29,7 +29,7 @@
                             <br>        
                             <span class="text-primary">{{ article.promotion|number_format(2, '.') }} €</span>
                             <br>
-                            <span class="text-muted">{{ article.price + article.promotion |number_format(2, '.') }} €</span>
+                            <span class="text-muted">{{ (article.price + article.promotion) |number_format(2, '.') }} €</span>
                         </p>
                         {% else %}
                         <p class="text-right small">
@@ -43,7 +43,7 @@
                            <span class="input-group-btn d-none d-md-inline">
                             <button class="btn btn-light" type="button">-</button>
                           </span>
-                          <input type="number" class="form-control text-primary text-center" aria-label="Quantité" value="1">
+                          <input type="number" class="form-control text-primary text-center" aria-label="Quantité" value="{{  article.quantity }}">
                            <span class="input-group-btn d-none d-md-inline">
                             <button class="btn btn-light" type="button">+</button>
                           </span>
@@ -54,9 +54,9 @@
                 <div class="col-3 align-self-center">
                     <p class="text-right">
                         {% if article.promotion is defined %}
-                            {{ (article.price + article.promotion) * article.quantity|number_format(2, '.') }} €
+                            {{ ((article.price + article.promotion) * article.quantity)|number_format(2, '.') }} €
                         {% else %}
-                            {{ article.price * article.quantity|number_format(2, '.') }} €
+                            {{ (article.price * article.quantity)|number_format(2, '.') }} €
                         {% endif %}
                     </p>
             </div>

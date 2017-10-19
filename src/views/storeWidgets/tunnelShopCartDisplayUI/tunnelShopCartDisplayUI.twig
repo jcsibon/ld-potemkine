@@ -3,7 +3,7 @@
     <div class="card mb-4">
         <div class="card-body">
             {% if data.session.cart.articles|length > 0 %}
-            <h2>Panier <small class="text-muted">({{ data.session.cart.articles|length }} produits)</small></h2>
+            <h2>Panier</h2>
             <br>
             <div class="alert alert-warning">
                 <i class="fa fa-info-circle"></i>&nbsp;Remise immédiate de 50€ à partir de 500 € d'achat
@@ -24,6 +24,10 @@
                                 <span class="input-group-btn">
                                     <button class="btn btn-primary" type="button">Appliquer</button>
                                 </span>
+                            </div>
+                            <br>
+                            <div class="alert alert-danger">
+                                <i class="fa fa-info-circle"></i>&nbsp;Code coupon invalide
                             </div>
                         </div>
                     </div>
