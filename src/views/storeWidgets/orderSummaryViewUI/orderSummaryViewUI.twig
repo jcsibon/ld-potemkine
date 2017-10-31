@@ -1,46 +1,47 @@
 {% if data.session.cart.promotion is defined %}
 <div class="row">
-    <div class="col-9">
+    <div class="col-7">
          <p class="pl-3 my-1 text-primary">{{ data.session.cart.promotion.title }}</p>
      </div>
-     <div class="col-3">
-         <p class="pr-3 my-1 text-primary float-right">{{ data.session.cart.promotion.amount|number_format(2, '.') }} €</p>
+     <div class="col-5">
+         <p class="pr-3 my-1 text-primary text-right">{{ data.session.cart.promotion.amount|number_format(2, '.') }} €</p>
      </div>
 </div>
 {% endif %}
 {% if data.session.cart.coupon is defined %}
 <div class="row">
-    <div class="col-9">
+    <div class="col-7">
          <p class="pl-3 my-1 text-primary">{{ data.session.cart.coupon.title }}</p>
      </div>
-     <div class="col-3">
-         <p class="pr-3 my-1 text-primary float-right">{{ data.session.cart.coupon.amount|number_format(2, '.') }} €</p>
+     <div class="col-5">
+         <p class="pr-3 my-1 text-primary text-right">{{ data.session.cart.coupon.amount|number_format(2, '.') }} €</p>
      </div>
 </div>
 {% endif %}
 <div class="row">
-    <div class="col-9">
+    <div class="col-7">
         <p class="pl-3 my-1">Sous-total TTC</p>
+
     </div>
-    <div class="col-3">
-        <p class="pr-3 my-1 float-right"><strong>{{ data.session.cart.subtotal|number_format(2, '.') }} €</strong></p>
+    <div class="col-5">
+        <p class="pr-3 my-1 text-right"><strong>{{ data.session.cart.subtotal|number_format(2, '.') }} €</strong></p>
     </div>
 </div>
 <div class="row">
-    <div class="col-9">
+    <div class="col-7">
         <p class="pl-3 my-1 small text-muted">dont TVA</p>
 
     </div>
-    <div class="col-3">
-        <p class="pr-3 my-1 float-right small text-muted"><strong>{{ data.session.cart.vat|number_format(2, '.') }} €</strong></p>
+    <div class="col-5">
+        <p class="pr-3 my-1 text-right small text-muted"><strong>{{ data.session.cart.vat|number_format(2, '.') }} €</strong></p>
     </div>
 </div>
 <div class="row">
-    <div class="col-9">
+    <div class="col-7">
         <p class="pl-3 my-1 small text-muted">dont Eco-Particpation</p>
     </div>
-    <div class="col-3">
-        <p class="pr-3 my-1 float-right small text-muted"><strong>0,00 €</strong></p>
+    <div class="col-5">
+        <p class="pr-3 my-1 text-right small text-muted"><strong>0,00 €</strong></p>
     </div>
 </div>
 <br>
