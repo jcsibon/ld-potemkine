@@ -38,7 +38,7 @@
                  <p class="pl-1 my-1 text-primary">{{ data.session.cart.promotion.title }}</p>
              </div>
              <div class="col-4">
-                 <p class="pr-1 my-1 text-primary pull-right">{{ data.session.cart.promotion.amount|number_format(2, '.') }} €</p>
+                 <p class="pr-1 my-1 text-primary float-right">{{ data.session.cart.promotion.amount|number_format(2, '.') }} €</p>
              </div>
         </div>
         {% endif %}
@@ -48,7 +48,7 @@
                  <p class="pl-1 my-1 text-primary">{{ data.session.cart.coupon.title }}</p>
              </div>
              <div class="col-4">
-                 <p class="pr-1 my-1 text-primary pull-right">{{ data.session.cart.coupon.amount|number_format(2, '.') }} €</p>
+                 <p class="pr-1 my-1 text-primary float-right">{{ data.session.cart.coupon.amount|number_format(2, '.') }} €</p>
              </div>
         </div>
         {% endif %}
@@ -58,7 +58,7 @@
                  <p class="pl-1 my-1">Sous total</p>
              </div>
              <div class="col-4">
-                 <p class="pr-1 my-1 pull-right">{{ data.session.cart.subtotal|number_format(2, '.') }} €</p>
+                 <p class="pr-1 my-1 float-right">{{ data.session.cart.subtotal|number_format(2, '.') }} €</p>
              </div>
         </div>
          <div class="row">
@@ -66,7 +66,7 @@
                 <p class="pl-1 my-1">Frais de livraison</p>
             </div>
             <div class="col-4">
-                <p class="pr-1 my-1 pull-right">{{ data.session.cart.deliveryfees|number_format(2, '.') }} €</p>
+                <p class="pr-1 my-1 float-right">{{ data.session.cart.deliveryfees|number_format(2, '.') }} €</p>
             </div>
         </div>
         {% endif %}
@@ -75,7 +75,7 @@
                 <p class="pl-1 my-1"><strong>Total TTC</strong></p>
             </div>
             <div class="col-4">
-                <p class="pr-1 my-1 pull-right"><strong>{{ data.session.cart.total|number_format(2, '.') }} €</strong></p>
+                <p class="pr-1 my-1 float-right"><strong>{{ data.session.cart.total|number_format(2, '.') }} €</strong></p>
             </div>
         </div>
     </li>
