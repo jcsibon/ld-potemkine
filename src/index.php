@@ -101,10 +101,10 @@ if(count($data['session']->cart->articles)) {
     }
   }
   if(isset($data['session']->cart->promotion)) {
-      $data['session']->cart->subtotal += $data['session']->cart->promotion; 
+      $data['session']->cart->subtotal += $data['session']->cart->promotion->amount;
   }
   if(isset($data['session']->cart->coupon)) {
-      $data['session']->cart->subtotal += $data['session']->cart->coupon; 
+      $data['session']->cart->subtotal += $data['session']->cart->coupon->amount;
   }
   $data['session']->cart->vat = $data['session']->cart->subtotal / 6;
 
