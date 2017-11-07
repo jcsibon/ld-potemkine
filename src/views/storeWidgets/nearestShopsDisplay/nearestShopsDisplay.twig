@@ -1,27 +1,29 @@
 <!-- BEGIN nearestShopsDisplay -->
 <div class="card my-3 {% if active == 1 %}is-active{% endif %} align-items-stretch">
-  <div class="card-body">
-      <p><strong>{{ shop.titre }}<a data-toggle="modal" data-target="#shop{{ loop.index0 }}">&nbsp;<i class="fa fa-question-circle-o"></i></a></strong></p>
-
-  <div class="border-left">
-      <p><small>{{ shop.adresse.numVoie }}
+    <div class="card-body">
+        <!--OLD TEST JEAN CHRISTOPHE -->
+        <!--       <p><strong>{{ shop.titre }}<a data-toggle="modal" data-target="#shop{{ loop.index0 }}">&nbsp;<i class="fa fa-question-circle-o"></i></a></strong></p> -->
+        <p><strong>{{ shop.titre }}<a data-toggle="modal" data-target="#exampleModalLong">&nbsp;<i class="fa fa-question-circle-o"></i></a></strong></p>
+        <div class="border-left">
+            <p><small>{{ shop.adresse.numVoie }}
       {% if shop.adresse.compl1|length > 0 %}<br>{{ shop.adresse.compl1 }}{% endif %}
       {% if shop.adresse.compl2|length > 0 %}<br>{{ shop.adresse.compl2 }}{% endif %}
       {% if shop.adresse.compl3|length > 0 %}<br>{{ shop.adresse.compl3 }}{% endif %}
       <br>{{ shop.adresse.codePostal }}&nbsp;{{ shop.adresse.ville }}</small></p>
-      </div>
-      {% if active == 1 %}
-      <p class="small text-success"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Disponible aujourd'hui</p>
-      {% else %}
-      <p class="small text-warning"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Disponible le 14/04/17</p>
-      {% endif %}
-      {% if active == 1 %}
-          <button class="btn btn-default disabled">Sélectionné</button>
-      {% else %}
-          <button class="btn btn-primary">Choisir</button>
-      {% endif %}
-      <a href="#" data-toggle="modal" data-target="#shop{{ loop.index0 }}"></a>
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        </div>
+        {% if active == 1 %}
+        <p class="small text-success"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Disponible aujourd'hui</p>
+        {% else %}
+        <p class="small text-warning"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Disponible le 14/04/17</p>
+        {% endif %} {% if active == 1 %}
+        <button class="btn btn-default disabled">Sélectionné</button>
+        {% else %}
+        <button class="btn btn-primary">Choisir</button>
+        {% endif %}
+        <!--OLD TEST JEAN CHRISTOPHE -->
+        <!--       <a href="#" data-toggle="modal" data-target="#shop{{ loop.index0 }}"></a>
+ -->
+        <!--    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -40,6 +42,116 @@
           </div>
         </div>
       </div>
+ -->
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+        <div class="modal fade bd-example-modal-lg" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Informations Pratiques</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Le Magasin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Le drive</a>
+                            </li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home" role="tabpanel">
+                                <img src="/images/gmap_mag.png" class="img-fluid">
+                            </div>
+                            <div class="tab-pane" id="profile" role="tabpanel">
+                                <table class="responsive-table text-center ">
+                                    <thead>
+                                        <tr>
+                                            <th>Lundi</th>
+                                            <th>Mardi</th>
+                                            <th>Mercredi</th>
+                                            <th>Jeudi</th>
+                                            <th>Vendredi</th>
+                                            <th>Samedi</th>
+                                            <th>Dimanche</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>9h30</td>
+                                            <td>9h30</td>
+                                            <td>9h30</td>
+                                            <td>9h30</td>
+                                            <td>9h30</td>
+                                            <td>9h30</td>
+                                            <td>Fermé</td>
+                                        </tr>
+                                        <tr>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>12h30</td>
+                                            <td>12h30</td>
+                                            <td>12h30</td>
+                                            <td>12h30</td>
+                                            <td>12h30</td>
+                                            <td>12h30</td>
+
+                                        </tr>
+                                         <tr>
+                                            <td><div class="divider"></div></td>
+                                            <td><div class="divider"></div></td>
+                                            <td><div class="divider"></div></td>
+                                            <td><div class="divider"></div></td>
+                                            <td><div class="divider"></div></td>
+                                            <td><div class="divider"></div></td>
+                                        </tr>
+                                            <tr>
+                                            <td>14h30</td>
+                                            <td>14h30</td>
+                                            <td>14h30</td>
+                                            <td>14h30</td>
+                                            <td>14h30</td>
+                                            <td>Fermé</td>
+                                           
+                                        </tr>
+                                          <tr>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+
+
+                                        </tr>
+                                            <tr>
+                                            <td>19h30</td>
+                                            <td>19h30</td>
+                                            <td>19h30</td>
+                                            <td>19h30</td>
+                                            <td>19h30</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
 <!-- END nearestShopsDisplay -->

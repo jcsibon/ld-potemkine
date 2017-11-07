@@ -142,10 +142,6 @@ $app->get('/session', function() use($app) {
 
 
 
-
-
-
-
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('pages/index/index.twig');
@@ -209,6 +205,10 @@ $app->get('/TunnelCommandPaymentView', function() use($app) {
 
 $app->get('/TunnelCommandConfirmation', function() use($app) {
   return $app['twig']->render('pages/TunnelCommandConfirmation/TunnelCommandConfirmation.twig');
+});
+
+$app->get('/Popup', function() use($app) {
+  return $app['twig']->render('pages/Popup/Popup.twig');
 });
 
 $app->run();
