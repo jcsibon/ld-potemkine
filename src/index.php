@@ -73,7 +73,7 @@ $clients = json_decode(file_get_contents("data/clients.json"));
 if(isset($_GET['client']) && isset($clients->{$_GET['client']}))
   $data['session'] = $clients->{$_GET['client']};
 else
-  $data['session'] = $clients->guest;
+  $data['session'] = $clients->part;
 
 $carts = json_decode(file_get_contents("data/carts.json"));
 
@@ -122,8 +122,8 @@ $app['twig']->addGlobal('data', $data);
 
 
 $app->get('/session', function() use($app) {
-  echo '<pre>' . var_export($data, true) . '</pre>';
-  die();
+  header('Content-Type: application/json');
+  die(json_encode($data));
   return true;
 });
 
