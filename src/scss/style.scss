@@ -6,7 +6,7 @@
 // @import '_module__forms';
 // @import "_module__accordion";
 // @import "_module__cards";
-// // @import '_module__buttons';
+// @import '_module__buttons';
 // @import '_module__breadcrump';
 // @import '_module__hero';
 
@@ -93,6 +93,8 @@ p {
     font-size: $font-size-base-p + unquote("rem");
   }
 }
+
+
 /*
 ul li .card{
   &.is-active{
@@ -109,3 +111,5 @@ ul li .card{
   }
 }
 */
+
+@import 'views';
