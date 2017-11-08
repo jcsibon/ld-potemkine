@@ -1,7 +1,11 @@
 <!-- BEGIN tunnelRecapPanier -->
 <ul class="list-group mb-4">
     <li class="list-group-item">
+        {% if uri == 'TunnelCommandConfirmation' %}        
+        <h3>Commande <small class="text-muted">({{ data.session.cart.length }} produits)</small></h3>
+        {% else %}
         <h3>Panier <small class="text-muted">({{ data.session.cart.length }} produits)</small></h3>
+        {% endif %}
     </li>
     {% for article in data.session.cart.articles %}
     <li class="list-group-item">
