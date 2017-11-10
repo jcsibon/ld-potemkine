@@ -22,93 +22,78 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Informations Pratiques</h5>
+                        <h5 class="modal-title">Horaires</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#location-{{ shop.idMetier }}" " role="tab">Le Magasin</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#timetable-{{ shop.idMetier }}" " role="tab">Le drive</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane p-2 p-md-4 active" id="location-{{ shop.idMetier }}" role="tabpanel">
-                                <img src="/images/gmap_mag.png" class="img-fluid p-3">
-                            </div>
-                            <div class="tab-pane p-2 p-md-4" id="timetable-{{ shop.idMetier }}" role="tabpanel">
-                                <div class="container-fluid">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md">
                                     <div class="row">
-                                        <div class="col-md">
-                                            <div class="row">
-                                                <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-left small strong">&nbsp;</div>
-                                                <div class="col-md-12 d-none d-md-block p-2 border border-light border-top-0 border-right-0 border-left-0 text-left small">&nbsp;<br><strong>Matin</strong><br>&nbsp;</div>
-                                                <div class="col-md-12 d-none d-md-block p-2 border border-light border-top-0 border-right-0 border-left-0 text-left small">&nbsp;<br><strong>Après-midi</strong><br>&nbsp;</div>
-                                                <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-center small strong">&nbsp;</div>
-                                                <div class="col-4 d-md-none p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"><strong>Matin</strong></div>
-                                                <div class="col-4 d-md-none p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"><strong>Après-midi</strong></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md">
-                                            <div class="row">
-                                                <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Lundi </div>
-                                                <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Lundi </div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"> 9h30 <span class="d-inline d-lg-block">-</span> 12h30</div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">14h30 <span class="d-inline d-lg-block">-</span> 19h30</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md">
-                                            <div class="row">
-                                                <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Mardi</div>
-                                                <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Mardi</div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"> 9h30 <span class="d-inline d-lg-block">-</span> 12h30</div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">14h30 <span class="d-inline d-lg-block">-</span> 19h30</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md">
-                                            <div class="row">
-                                                <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Mercredi</div>
-                                                <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Mercredi</div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"> 9h30 <span class="d-inline d-lg-block">-</span> 12h30</div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">14h30 <span class="d-inline d-lg-block">-</span> 19h30</div>          
-                                            </div>
-                                        </div>
-                                        <div class="col-md">
-                                            <div class="row">
-                                                <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Jeudi</div>
-                                                <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Jeudi</div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"> 9h30 <span class="d-inline d-lg-block">-</span> 12h30</div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">14h30 <span class="d-inline d-lg-block">-</span> 19h30</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md">
-                                            <div class="row">
-                                                <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Vendredi</div>
-                                                <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Vendredi</div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"> 9h30 <span class="d-inline d-lg-block">-</span> 12h30</div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">14h30 <span class="d-inline d-lg-block">-</span> 19h30</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md">
-                                            <div class="row">
-                                                <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Samedi</div>
-                                                <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Samedi</div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"> 9h30 <span class="d-inline d-lg-block">-</span> 12h30</div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">&nbsp;<br class="d-none d-lg-block">Fermé<br class="d-none d-lg-block">&nbsp;</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md">
-                                            <div class="row">
-                                                <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Dimanche</div>
-                                                <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Dimanche</div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">&nbsp;<br class="d-none d-lg-block">Fermé<br class="d-none d-lg-block">&nbsp;</div>
-                                                <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">&nbsp;<br class="d-none d-lg-block">Fermé<br class="d-none d-lg-block">&nbsp;</div>
-                                            </div>
-                                        </div>
+                                        <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-left small strong">&nbsp;</div>
+                                        <div class="col-md-12 d-none d-md-block p-2 border border-light border-top-0 border-right-0 border-left-0 text-left small">&nbsp;<br><strong>Matin</strong><br>&nbsp;</div>
+                                        <div class="col-md-12 d-none d-md-block p-2 border border-light border-top-0 border-right-0 border-left-0 text-left small">&nbsp;<br><strong>Après-midi</strong><br>&nbsp;</div>
+                                        <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-center small strong">&nbsp;</div>
+                                        <div class="col-4 d-md-none p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"><strong>Matin</strong></div>
+                                        <div class="col-4 d-md-none p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"><strong>Après-midi</strong></div>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="row">
+                                        <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Lundi </div>
+                                        <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Lundi </div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"> 9h30 <span class="d-inline d-lg-block">-</span> 12h30</div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">14h30 <span class="d-inline d-lg-block">-</span> 19h30</div>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="row">
+                                        <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Mardi</div>
+                                        <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Mardi</div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"> 9h30 <span class="d-inline d-lg-block">-</span> 12h30</div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">14h30 <span class="d-inline d-lg-block">-</span> 19h30</div>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="row">
+                                        <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Mercredi</div>
+                                        <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Mercredi</div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"> 9h30 <span class="d-inline d-lg-block">-</span> 12h30</div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">14h30 <span class="d-inline d-lg-block">-</span> 19h30</div>          
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="row">
+                                        <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Jeudi</div>
+                                        <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Jeudi</div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"> 9h30 <span class="d-inline d-lg-block">-</span> 12h30</div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">14h30 <span class="d-inline d-lg-block">-</span> 19h30</div>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="row">
+                                        <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Vendredi</div>
+                                        <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Vendredi</div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"> 9h30 <span class="d-inline d-lg-block">-</span> 12h30</div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">14h30 <span class="d-inline d-lg-block">-</span> 19h30</div>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="row">
+                                        <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Samedi</div>
+                                        <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Samedi</div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small"> 9h30 <span class="d-inline d-lg-block">-</span> 12h30</div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">&nbsp;<br class="d-none d-lg-block">Fermé<br class="d-none d-lg-block">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="row">
+                                        <div class="col-md-12 d-none d-md-block p-2 border border-primary border-top-0 border-right-0 border-left-0 text-center small strong">Dimanche</div>
+                                        <div class="col-4 d-md-none p-2 px-4 border border-primary border-top-0 border-bottom-0 border-left-0 text-left small strong">Dimanche</div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">&nbsp;<br class="d-none d-lg-block">Fermé<br class="d-none d-lg-block">&nbsp;</div>
+                                        <div class="col-4 col-md-12 p-2 border border-light border-top-0 border-right-0 border-left-0 text-center small">&nbsp;<br class="d-none d-lg-block">Fermé<br class="d-none d-lg-block">&nbsp;</div>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +101,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>    
     </div>
 </div>
 <!-- END nearestShopsDisplay -->
