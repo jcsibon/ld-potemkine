@@ -1,10 +1,381 @@
 {% extends"layouts/default.html" %} 
 
 {% block content %}
-<img src="/images/home.png" class="img-fluid">
+<!--<img src="/images/home.png" class="img-fluid">-->
 <div class="container">
-	<div class="row">
+    <div class="col-12 d-flex">
 
-	</div>
+
+        <div id="carouselExampleIndicators" class="carousel slide m-auto pb-5" data-ride="carousel" style="overflow: hidden">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox" style="overflow: visible">
+                <div class="carousel-item active">
+                    <div class="col-3 bg-dark position-absolute pb-2 pt-4 pr-4 pl-4 m-5" style="bottom: -90px;">
+                        <h2>Profitez de nos prix bien faits</h2>
+                        <h4 class="text-white py-2">Sur une large sélection de produits</h4>
+                        <p class="text-center">
+                            <button class="btn btn-secondary" type="button"><a href="" class="text-white">Découvrir</a></button>
+                        </p>
+                    </div>
+                    <img class="d-block img-fluid" src="/images/pages/index/slide1.jpeg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <div class="col-3 bg-dark position-absolute pb-2 pt-4 pr-4 pl-4 m-5" style="bottom: -80px;">
+                        <h2>Retrouvez nos offres exclusives</h2>
+                        <h4 class="text-white py-2">Sur tous nos univers</h4>
+                        <p class="text-center">
+                            <button class="btn btn-secondary" type="button"><a href="" class="text-white">Découvrir</a></button>
+                        </p>
+                    </div>
+                    <img class="d-block img-fluid" src="/images/pages/index/slide2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <div class="col-3 bg-dark position-absolute pb-2 pt-4 pr-4 pl-4 m-5" style="bottom: -80px;">
+                        <h2>Retrouvez nos cuisines</h2>
+                        <h4 class="text-white py-2">Tendances et fonctionnelles</h4>
+                        <p class="text-center">
+                            <button class="btn btn-secondary" type="button"><a href="" class="text-white">Découvrir</a></button>
+                        </p>
+                    </div>
+                    <img class="d-block img-fluid" src="/images/pages/index/slide3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="row justify-content-center">
+        <div class="col-11 p-5 d-none d-xl-block">
+            <div class="row">
+                <div class="col-12 d-flex flex-row align-items-stretch" style="height:180px">
+                    <div class="col-3 p-2" >
+                        <div class="h-100 bg-dark d-flex" style="background: url(/images/pages/index/shortcut_cuisine.jpg) center center no-repeat /cover">
+                            <p class="h5 m-auto text-white text-center text-uppercase">Nos cuisines</p>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2">
+                        <div class="h-100 bg-dark d-flex" style="background: url(/images/pages/index/shortcut_bains.png) center center no-repeat /cover">
+                            <p class="h5 m-auto text-white text-center text-uppercase">Nos salles de bains</p>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2">
+                        <div class="h-100 bg-dark d-flex" style="background: url(/images/pages/index/shortcut_exterieur.png) center center no-repeat /cover">
+                            <p class="h5 m-auto text-white text-center text-uppercase">Nos extérieurs</p>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2">
+                        <div class="h-100 bg-dark d-flex" style="background: url(/images/pages/index/shortcut_fenetres.jpg) center center no-repeat /cover">
+                            <p class="h5 m-auto text-white text-center text-uppercase">Nos fenêtres</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex flex-row align-items-stretch" style="height:180px">
+                    <div class="col-3 p-2">
+                        <div class="h-100 bg-dark d-flex" style="background: url(/images/pages/index/shortcut_portes.jpg) center center no-repeat /cover">
+                            <p class="h5 m-auto text-white text-center text-uppercase">Nos portes</p>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2">
+                        <div class="h-100 bg-dark d-flex" style="background: url(/images/pages/index/shortcut_rangements.png) center center no-repeat /cover">
+                            <p class="h5 m-auto text-white text-center text-uppercase">Nos rangements</p>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2">
+                        <div class="h-100 bg-dark d-flex" style="background: url(/images/pages/index/shortcut_escaliers.png) center center no-repeat /cover">
+                            <p class="h5 m-auto text-white text-center text-uppercase">Nos escaliers</p>
+                        </div>
+                    </div>
+                    <div class="col-3 p-2">
+                        <div class="h-100 bg-dark d-flex" style="background: url(/images/pages/index/shortcut_sols.png) center center no-repeat /cover">
+                            <p class="h5 m-auto text-white text-center text-uppercase">Nos sols et murs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <h3 class="display-4 text-right text-light text-uppercase">Sélection du moment</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 ">
+
+        </div>
+    </div>
+</div>
+
+<div class="row bg-light">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-4 pt-5 mt-5">
+                        <h3 class="display-4 text-right text-white text-uppercase">
+                            Nos<br/>services
+                        </h3>
+                    </div>
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-12 my-4 p-5" style="min-height: 465px; background: url(/images/pages/index/bg_nos_services.png) no-repeat top right">
+                                <div class="row" style="height: 170px">
+                                    <div class="col-3 p-3 bg-white">
+                                        <img src="/images/pages/index/pose.png">
+                                        <p class="text-center" style="line-height: 0.9em"><small>L'installation est faite sur-mesure par des artisans qualifiés.</small></p>
+                                    </div>
+                                    <div class="col-3 p-3 bg-white">
+                                        <img src="/images/pages/index/livraison.png">
+                                        <p class="text-center" style="line-height: 0.9em"><small>Nous assurons la livraison de nos produits chez vous.</small></p>
+                                    </div>
+                                    <div class="col-3 p-3 bg-white">
+                                        <img src="/images/pages/index/atelier.png">
+                                        <p class="text-center" style="line-height: 0.9em"><small>Nos menuisiers sont à votre écoute pour réaliser vos projets sur-mesure.</small></p>
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 170px">
+                                    <div class="col-3 p-3 bg-dark">
+                                        <p>
+                                            Découvrez toutes nos expertises
+                                        </p>
+                                        <p>
+                                            <a class="text-light" href="#">> En savoir plus</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-12 my-4 p-5" style="min-height: 465px; background: url(/images/pages/index/bg_magasin.png) no-repeat top left">
+                                <div class="row" style="height: 170px">
+                                    <div class="col-9">
+                                    </div>
+                                    <div class="col-3 p-3 bg-dark">
+                                        <p>
+                                            DÉCOUVREZ NOS ENGAGEMENTS
+                                        </p>
+                                        <p>
+                                            <a class="text-light" href="#">> En savoir plus</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 170px">
+                                    <div class="col-3">
+                                    </div>
+                                    <div class="col-9 py-3 px-4 bg-white d-flex">
+                                        <p class="my-auto">Le savoir bien faire, c'est une question de compétences, de savoir-faire... mais c'est avant tout une question de passion.
+                                            Une passion pour l'artisanat et le travail bien fait, que Lapeyre cultive depuis 1931 pour réaliser tous vos projets.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pt-5 mt-5">
+                        <h3 class="display-4 text-left text-white text-uppercase">
+                            Le savoir<br/>bien faire
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 d-flex py-5">
+                <div class="col-9 m-auto">
+                    <div class="row">
+                        <div class="col-12 d-flex flex-row align-items-stretch" style="height:300px">
+                            <div class="col-4 p-2">
+                                <div class="h-100 d-flex p-3">
+                                    <div class="m-auto">
+                                        <h3>Projets & idées</h3>
+                                        <p>Inscrivez-vous à la newsletter pour ne rater aucune bonne idée.</p>
+                                        <div class="row">
+                                            <div class="col-12 d-block">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Votre adresse mail" aria-label="Votre adresse mail">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-primary" type="button">S'inscrire</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 p-2">
+                                <div class="h-100 d-flex p-3" style="background: url(https://statics.lapeyre.fr/img/contrib/32880f5611400604/vignette_verriere_zue4dm.jpg) center center no-repeat /cover">
+                                    <div>Article</div>
+                                    <h3><a href="#">A chaque pièce, sa verrière intérieure</a></h3>
+                                </div>
+                            </div>
+                            <div class="col-4 p-2">
+                                <div class="h-100 d-flex p-3" style="background: url(https://statics.lapeyre.fr/img/contrib/32880f5611400cdc/carrelage_et_faience_vignette_nxnayq.jpg) center center no-repeat /cover">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex flex-row align-items-stretch" style="height:300px">
+                            <div class="col-4 p-2">
+                                <div class="h-100 d-flex p-3" style="background: url(https://statics.lapeyre.fr/img/contrib/32880f5611400d25/vignettre_porte-coulissante_lgiqel.jpg) center center no-repeat /cover">
+                                    4
+                                </div>
+                            </div>
+                            <div class="col-4 p-2">
+                                <div class="h-100 d-flex p-3" style="background: url(https://statics.lapeyre.fr/img/contrib/32880f5611400d4a/vignette_e-publiredac_amenagt_meuble_cuisine_z1vtxh.jpg) center center no-repeat /cover">
+                                    5
+                                </div>
+                            </div>
+                            <div class="col-4 p-2">
+                                <div class="h-100 d-flex p-3" style="background: url(https://statics.lapeyre.fr/img/contrib/32880f5611400d8a/vignettesdb_ds8e7q.jpg) center center no-repeat /cover">
+                                    6
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex flex-row align-items-stretch" style="height:300px">
+                            <div class="col-4 p-2">
+                                <div class="h-100 d-flex p-3" style="background: url(https://statics.lapeyre.fr/img/contrib/32880f5611400db2/vignette_optim_rangements.jpg) center center no-repeat /cover">
+                                    7
+                                </div>
+                            </div>
+                            <div class="col-4 p-2">
+                                <div class="h-100 d-flex p-3" style="background: url(https://statics.lapeyre.fr/img/contrib/32880f5611400e0b/vignette_salle_de_bains_k0kuxw.jpg) center center no-repeat /cover">
+                                    8
+                                </div>
+                            </div>
+                            <div class="col-4 p-2">
+                                <div class="h-100 d-flex p-3" style="background: url(https://statics.lapeyre.fr/img/contrib/326fe2b0118002f1/volets.jpg) center center no-repeat /cover">
+                                    9
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-12 my-4 p-5" style="min-height: 465px; background: url(/images/pages/index/bg_le_savoir_bien_faire.png) no-repeat top left">
+                                <div class="row" style="height: 170px">
+                                    <div class="col-9">
+                                    </div>
+                                    <div class="col-3 p-3 bg-dark">
+                                        <p>
+                                            RETROUVEZ LE SAVOIR BIEN FAIRE
+                                            PARTOUT EN FRANCE
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 170px">
+                                    <div class="col-3">
+                                    </div>
+                                    <div class="col-9 py-3 px-4 bg-white d-flex">
+                                        <div class="my-auto">
+                                            <div class="row">
+                                                <div class="col-12 d-block">
+                                                    <p>Horaires, coordonnées, services proposés : accédez à toutes les informations sur votre magasin, en un clic.</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 d-block">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Ville ou code postal" aria-label="Ville ou code postal">
+                                                        <span class="input-group-btn">
+                                                            <button class="btn btn-primary" type="button">Trouver</button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pt-5 mt-5">
+                        <h3 class="display-4 text-left text-white text-uppercase">
+                            Votre<br/>magasin<br/>Lapeyre
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-4 pt-5 mt-5">
+                        <h3 class="display-4 text-right text-white text-uppercase">
+                            Du coté<br/>des pros
+                        </h3>
+                    </div>
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-12 my-4 p-5" style="min-height: 465px; background: url(/images/pages/index/bg_pros.png) no-repeat top right">
+                                <div class="row" style="height: 170px">
+                                    <div class="col-3 p-3 bg-white d-flex">
+                                        <p class="text-center my-auto">Toute l'offre Lapeyre en prix HT remisés</p>
+                                    </div>
+                                    <div class="col-3 p-3 bg-white d-flex">
+                                        <p class="text-center my-auto">Un devis simple et rapide</p>
+                                    </div>
+                                    <div class="col-3 p-3 bg-white d-flex">
+                                        <p class="text-center my-auto">Et bien d'autres avantages...</p>
+                                    </div>
+                                </div>
+                                <div class="row" style="height: 170px">
+                                    <div class="col-3 p-3 bg-dark">
+                                        <p>
+                                            DÉCOUVREZ L'ESPACE PRO
+                                        </p>
+                                        <p>
+                                            <a class="text-light" href="#">> Accéder</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
