@@ -1,19 +1,464 @@
 <!-- BEGIN headerUI -->
-<img src="/images/header.png" class="img-fluid">
-{#
-<nav class="navbar navbar-inverse">
-    <div class="container">
-        <ul class="nav navbar-nav hidden-xs">
-			{% for family in catalog %}
-			<li>YEP</li>
-			{% endfor %}
-        </ul>
-        <ul class="nav navbar-nav navbar-right hidden-xs">
-			<li>LE SAVOIR BIEN FAIRE</li>
-			<li>PROMOTIONS</li>
-			<li>LE MAGAZINE</li>
-		</ul>
+
+<style>
+    @font-face {
+        font-family: 'DinCondensed', sans-serif;
+        src: url('../fonts/DinCond-bold.otf');
+    }
+    header .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+    .header__fav {
+        border-left: 1px solid lightgray;
+    }
+    .header__main-nav, .header__main-nav>ul>li {
+        position: inherit;
+    }
+    .header__main-nav>ul>li {
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+    .header__main-nav>ul>li:hover {
+        border-bottom: 3px solid #aa192d; /* $red */
+        margin-bottom: 0px;
+    }
+    .header__font-secondary {
+        font-family: 'DinCondensed', sans-serif;
+    }
+    .header__mega-menu {
+        width: 100%; 
+        border: none;
+        margin-top: -2px;
+    }
+    header .dropdown-toggle::after {
+        display: none;
+    }
+    header .dropdown-item {
+        white-space: inherit;
+    }
+    header .dropdown-item:focus, .dropdown-item:hover {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    .header__mag {
+        border-left: 1px solid lightgray;
+    }
+    header .input-group-sm > .form-control{
+        border: none;
+        background: none;
+        font-size: 80%;
+    }
+    header .input-group-sm > .input-group-btn > .btn {
+        background: none;
+        border: none;
+        color: #aa192d;
+        font-size: 18px;
+    }
+    header .fa-shopping-cart, header .fa-user-o, header .fa-heart-o, header .fa-map-marker, header .fa-search {
+        font-size: 20px;
+    }
+    header .fa-bars {
+        font-size: 26px;
+    }
+
+
+    /* Responsive Menu Start */ 
+
+    #sidebar {
+        z-index: 999;
+        overflow: hidden;
+    }
+    #sidebar .list-group {
+        min-width: 300px;
+        min-height: 100vh;
+    }
+    #sidebar i {
+        margin-right: 6px;
+    }
+
+    #sidebar .list-group-item {
+        max-width: 300px;
+    }
+
+    /* closed state */
+    #sidebar .list-group .list-group-item[aria-expanded="false"]::after {
+        content: " \f0d7";
+        font-family: FontAwesome;
+        display: inline;
+        text-align: right;
+        padding-left: 5px;
+    }
+
+    /* open state */
+    #sidebar .list-group .list-group-item[aria-expanded="true"]::after {
+        content: " \f0da";
+        font-family: FontAwesome;
+        display: inline;
+        text-align: right;
+        padding-left: 5px;
+    }
+    .collapse.show {
+        visibility: visible;
+    }
+    .collapsing {
+        visibility: visible;
+        height: 0;
+        -webkit-transition-property: height, visibility;
+        transition-property: height, visibility;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    .collapsing.width {
+        -webkit-transition-property: width, visibility;
+        transition-property: width, visibility;
+        width: 0;
+        height: 100%;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    /* Responsive Menu End */ 
+
+
+</style>
+
+
+<header>
+    <div class="container-fluid">
+        <div class="row d-flex d-block d-xl-none flex-nowrap wrapper">
+            <div class="position-fixed pl-0 pr-0 collapse width" id="sidebar">
+                <div class="list-group border-0 card text-left bg-dark col-12 pr-0">
+                    <div class="text-right bg-white">
+                        <a href="#" data-target="#sidebar" data-toggle="collapse"><i class="fa fa-times fa-2x text-dark p-2" aria-hidden="true"></i></a>
+                    </div>
+                    <a href="#" class="list-group-item d-inline-block collapsed bg-light text-center text-dark border-right-0">
+                        <i class="fa fa-user-o text-primary" aria-hidden="true"></i><span class="d-inline"><small class="font-weight-bold">Mon espace</small></span> 
+                    </a>
+                    <a href="#" class="list-group-item d-inline-block d-md-none collapsed bg-light text-center text-dark border-right-0">
+                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i><span class="d-inline"><small class="font-weight-bold">Mon magasin</small></span> 
+                    </a>
+                    <a href="#" class="list-group-item d-inline-block d-md-none collapsed bg-dark text-center text-white header__font-secondary text-uppercase border-right-0">
+                        <span class="d-inline">Le magazine</span> 
+                    </a>
+                    <a href="#" class="list-group-item d-inline-block d-md-none collapsed bg-secondary text-center text-white header__font-secondary text-uppercase border-right-0">
+                        <span class="d-inline">Promotions</span> 
+                    </a>
+
+
+                    <a href="#menu1" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-dark header__font-secondary" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"> <span class="d-inline">Fenêtres</span> </a>
+                    <div class="collapse" id="menu1">
+                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>> Voir l'univers</small></a>
+                        <a href="#" class="list-group-item text-uppercase text-dark header__font-secondary border-top-1 border-left-0 border-right-0" data-parent="#menu1">Fenêtres, portes fenêtres et baies coulissantes</a>
+                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>PVC</small></a>
+                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Aluminium</small></a>
+                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Pin</small></a>
+                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Chêne</small></a>
+                        <a href="#" class="list-group-item text-uppercase text-dark header__font-secondary border-top-1 border-left-0 border-right-0" data-parent="#menu1">Fenêtres de toit</a>
+                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Fenêtres de toit et lucarnes de toit</small></a>
+                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Raccords</small></a>
+                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Stores et volets</small></a>
+                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Sun tunnel</small></a>
+                        <a href="#" class="list-group-item text-uppercase text-dark header__font-secondary border-top-1 border-left-0 border-right-0" data-parent="#menu1">Volets</a>
+                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Volets</small></a>
+                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Accessoires</small></a>
+                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Motorisations</small></a>
+                    </div>
+                    <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Portes</span></a>
+                    <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Cuisines</span></a>
+                    <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Salles de bains</span></a>
+                    <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Rangements</span></a>
+                    <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Escaliers</span></a>
+                    <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Sols et murs</span></a>
+                    <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Extérieurs</span></a>
+                    <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Destockage</span></a>
+                    <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-white bg-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Nos services</span></a>
+                    <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-white bg-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Le savoir bien faire</span></a>
+                    <p class="list-group-item d-inline-block collapsed border-right-0 text-white bg-dark text-center" data-parent="#sidebar">     <small>
+                        <a href="" class="text-white">CGV</a> - 
+                        <a href="" class="text-white">Mentions légales</a>  - 
+                        <a href="" class="text-white">Contact</a>  - 
+                        <a href="" class="text-white">Partenaires</a>  - 
+                        <a href="" class="text-white">Recrutement</a> - 
+                        <a href="" class="text-white">FAQ</a>  - 
+                        <a href="" class="text-white">Déclaration des performances produits</a> 
+                        </small>
+                    </p>
+                    <p class="list-group-item d-inline-block collapsed border-right-0 text-white bg-dark text-center" data-parent="#sidebar"> <small class="d-inline">© 2017 Lapeyre</small></p>
+                </div>
+            </div>
+        </div>
     </div>
-</nav>
-#}
+
+
+    <div class="bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-1 d-xl-none d-flex">
+                            <span class="m-auto">
+                                <a href="#" data-target="#sidebar" data-toggle="collapse" class="text-dark"><i class="fa fa-navicon fa-2x py-2 p-1"></i></a>
+                            </span>
+                        </div>
+                        <div class="col-3 col-xl-4 py-2 px-0 pl-xl-5 pr-xl-4 d-none d-md-flex">
+                            <div class="input-group input-group-sm m-auto">
+                                <input type="text" class="form-control" placeholder="Rechercher un produit, un conseil, un article, &hellip;" aria-label="Rechercher un produit, un conseil, un article,&hellip;">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-3 col-xl-4 py-2 px-0 pl-xl-5 pr-xl-4 d-flex d-md-none d-md-none text-center">
+                            <i class="fa fa-search m-auto text-primary" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="images/logo.png" alt="Logo Lapeyre" />
+                        </div>
+                        <div class="col-4 d-flex">
+                            <div class="col-12 my-auto">
+                                <div class="row">
+                                    <div class="col-2 col-xl-4 d-none d-md-block px-0">
+                                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i> <small class="font-weight-bold d-xl-inline-block d-none">
+                                        <a href="" class="text-dark">Mon magasin</a>
+                                        </small>
+                                    </div>
+                                    <div class="col-6 col-xl-4 d-none d-md-block px-0 text-center text-xl-left">
+                                        <i class="fa fa-user-o text-primary" aria-hidden="true"></i> <small class="font-weight-bold">
+                                        <a href="" class="text-dark">Mon espace</a>
+                                        </small>
+                                    </div>
+                                    <div class="d-xl-inline-block d-none col-2 px-0 text-center header__fav">
+                                        <i class="fa fa-heart-o text-primary" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-xl-2 col-md-4 col-sm-12 px-0 text-right text-md-center">
+                                        <i class="fa fa-shopping-cart text-primary" aria-hidden="true"></i> <small class="font-weight-bold">(0)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="d-none d-xl-flex">
+            <div class="col-12 my-auto">
+                <div class="row">
+                    <div class="col-8 header__main-nav pl-4">
+                        <ul class="nav">
+                            <li class="nav-item py-1 px-0 dropdown">
+                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <strong>Fenêtres</strong>
+                                </a>
+                                <div class="dropdown-menu bg-light p-4 header__mega-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <div class="row">
+                                        <div class="col-9 px-5">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <p class="text-dark text-uppercase header__font-secondary">
+                                                        <strong>
+                                                            Fenêtres, portes-fenêtres et baies coulissantes
+                                                        </strong>
+                                                    </p>
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">PVC</a>
+                                                        </small>
+                                                    </p>
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">Aluminium</a>
+                                                        </small>
+                                                    </p>
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">Pin</a>
+                                                        </small>
+                                                    </p>
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">Chêne</a>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p class="text-dark text-uppercase header__font-secondary">
+                                                        <strong>
+                                                            Fenêtres de toit
+                                                        </strong>
+                                                    </p>
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">
+                                                                Fenêtre de toit et Lucarnes de toit</a>
+                                                        </small>
+                                                    </p>
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">Raccords</a>
+                                                        </small>
+                                                    </p>
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">Stores et volets</a>
+                                                        </small>
+                                                    </p>
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">Sun Tunnel</a>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p class="text-dark text-uppercase header__font-secondary">
+                                                        <strong>
+                                                            Volets
+                                                        </strong>
+                                                    </p>
+
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">Volets</a>
+                                                        </small>
+                                                    </p>
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">Accessoires volets</a>
+                                                        </small>
+                                                    </p>
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">Motorisations</a>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p class="text-dark text-uppercase header__font-secondary">
+                                                        <strong>
+                                                            Volets
+                                                        </strong>
+                                                    </p>
+
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">Volets</a>
+                                                        </small>
+                                                    </p>
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">Accessoires volets</a>
+                                                        </small>
+                                                    </p>
+                                                    <p class="p-0 m-0">
+                                                        <small>
+                                                            <a class="dropdown-item" href="#">Motorisations</a>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <p class="pt-3">
+                                                <a href="#" class="text-dark"><small><strong>> Voir l'univers</strong></small></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-3 header__mag px-5">
+                                            <p class="text-center mb-3"><strong>LE MAG</strong></p>
+                                            <p class="p-0 m-0">
+                                                <small>
+                                                    <a href="" class="text-muted">Blogueuse en cuisine</a>
+                                                </small>
+                                            </p>
+                                            <p class="p-0 m-0">
+                                                <small>
+                                                    <a href="" class="text-muted">Choisir un plan de travail</a>
+                                                </small>
+                                            </p>
+                                            <p class="p-0 m-0">
+                                                <small>
+                                                    <a href="" class="text-muted">Délimiter les espaces</a>
+                                                </small>
+                                            </p>
+                                            <p class="p-0 m-0">
+                                                <small>
+                                                    <a href="" class="text-muted">Ranger dans une petite cuisine</a>
+                                                </small>
+                                            </p>
+                                            <p class="p-0 mt-2">
+                                                <small>
+                                                    <a href="" class="text-dark"><strong>Voir tous les articles</strong></a>
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item py-1 px-0 dropdown">
+                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <strong>Portes</strong>
+                                </a>
+                            </li>
+                            <li class="nav-item py-1 px-0 dropdown">
+                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <strong>Cuisines</strong>
+                                </a>
+                            </li>
+                            <li class="nav-item py-1 px-0 dropdown">
+                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <strong>Salles de bains</strong></a>
+
+                            </li>
+                            <li class="nav-item py-1 px-0 dropdown">
+                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <strong>Rangements</strong>
+                                </a>
+                            </li>
+                            <li class="nav-item py-1 px-0 dropdown">
+                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <strong>Escaliers</strong>
+                                </a>
+                            </li>
+                            <li class="nav-item py-1 px-0 dropdown">
+                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <strong>Sols et murs</strong>
+                                </a>
+                            </li>
+                            <li class="nav-item py-1 px-0 dropdown">
+                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <strong>Extérieurs</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul class="nav header__font-secondary text-uppercase">
+                            <li class="nav-item p-3 mx-1">
+                                <a href="#" class="text-dark">Le savoir bien faire</a>
+                            </li>
+                            <li class="nav-item px-3 mx-1">
+                                <div class="d-flex pt-2">
+                                    <div class="row">
+                                        <div class="m-auto bg-light my-1 p-2">
+                                            <a href="" class="text-uppercase text-dark">Le magazine</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item px-3 mx-1">
+                                <div class="d-flex pt-2">
+                                    <div class="row">
+                                        <div class="m-auto bg-secondary my-1 p-2">
+                                            <a href="" class="text-uppercase text-white">Promotions</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
 <!-- END headerUI -->
