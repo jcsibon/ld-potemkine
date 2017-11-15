@@ -190,6 +190,9 @@
                         <i class="fa fa-user-o text-primary" aria-hidden="true"></i>
                         <span class="d-inline small font-weight-bold">Mon espace</span> 
                     </a>
+                    <a href="#" class="list-group-item d-inline-block d-md-none collapsed bg-light text-center text-dark border-right-0">
+                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i><span class="d-inline small font-weight-bold">Mon magasin</span> 
+                    </a>
                     {% else %}
                     <a href="#menu0" class="list-group-item d-inline-block collapsed bg-light text-center text-dark border-right-0" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
                         <i class="fa fa-user-o text-primary" aria-hidden="true"></i>
@@ -210,9 +213,6 @@
                         <span class="d-inline small font-weight-bold">Lapeyre Bourg-en-Bresse</span> 
                     </a>
                     {% endif %}
-                    <a href="#" class="list-group-item d-inline-block d-md-none collapsed bg-light text-center text-dark border-right-0">
-                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i><span class="d-inline small font-weight-bold">Mon magasin</span> 
-                    </a>
                     <a href="#" class="list-group-item d-inline-block d-md-none collapsed bg-dark text-center text-white header__font-secondary text-uppercase border-right-0">
                         <span class="d-inline">Le magazine</span> 
                     </a>
@@ -363,7 +363,7 @@
                                 <div class="col-4 d-none d-md-block d-xl-none"></div>
                                 <div class="col-2 col-md-3 col-xl-5 d-none d-md-flex pr-1">
                                     <i class="fa fa-map-marker text-primary my-auto ml-0 pl-0 mr-2" aria-hidden="true"></i>
-                                    <div {% if data.session.logged == 0 %} class="header__rollover"{% endif %}>
+                                    <div {% if data.session.logged == 1 %} class="header__rollover"{% endif %}>
                                         <small class="font-weight-bold d-xl-inline-block d-none">
                                             {% if data.session.logged == 0 %}
                                             <a href="" class="text-dark my-auto">Mon magasin</a>
@@ -392,7 +392,7 @@
                                 </div>
                                 <div class="col-6 col-md-3 col-xl-4 d-none d-md-flex px-0 text-xl-left">
                                     <i class="fa fa-user-o text-primary my-auto m-2" aria-hidden="true"></i>
-                                    <div class="header__rollover d-md-flex ">
+                                    <div class="d-md-flex {% if data.session.logged == 1 %} header__rollover{% endif %}">
                                         <small class="font-weight-bold my-auto d-none d-xl-block">
                                             {% if data.session.logged == 0 %}
                                             <a href="" class="text-dark">Mon espace</a>
