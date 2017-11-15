@@ -117,6 +117,8 @@ $shops = json_decode(file_get_contents("data/shops.json"));
 
 $data['store']['shops'] = array_slice(json_decode(file_get_contents("data/shops.json")),0,6);
 
+if (isset($_GET['search'])) $data['session']->search = $_GET['search'];
+
 $app['twig']->addGlobal('data', $data);
 
 

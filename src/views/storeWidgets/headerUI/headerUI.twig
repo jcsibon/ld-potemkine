@@ -11,6 +11,12 @@
     .header__fav {
         border-left: 1px solid lightgray;
     }
+    .header__logo {
+        height: 60px;
+    }
+    .header__spacer {
+        height: 116px;
+    }
     .header__main-nav, .header__main-nav>ul>li {
         position: inherit;
     }
@@ -44,8 +50,6 @@
         border-left: 1px solid lightgray;
     }
     header .input-group-sm > .form-control{
-        border: none;
-        background: none;
         font-size: 80%;
     }
     header .input-group-sm > .input-group-btn > .btn {
@@ -60,13 +64,68 @@
     header .fa-bars {
         font-size: 26px;
     }
-
+    .header__nav-menu {
+        right: inherit
+    }
+    .header__search-suggest {
+        max-width: 85%;
+    }
+    .header__rollover-shop {
+        width: 300px;
+        margin-left: -50px;
+    }
+    .header__rollover-user {
+        max-width: 310px !important; 
+        width: 310px; 
+        margin-left:-90px;
+    }
+    .header__rollover-cart {
+        max-width: 400px !important; 
+        width: 400px; 
+        margin-left:-310px;
+    }
+    .header__rollover-div::before {
+        content: "";
+        display: block;
+        width: 0; 
+        height: 0; 
+        border-bottom: 12px solid #fff;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent; 
+        position: absolute;
+        top: 40px;
+        left: calc(50% - 10px);
+        z-index: 1;
+    }
+    .header__rollover-cart::before {
+        left: 80%;
+    }
+    .header__rollover-div {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.2s linear;
+    }
+    .header__rollover-div>div {
+        box-shadow: 0px 0px 4px #ccc;
+        border: none;
+    }
+    .header__rollover:hover>.header__rollover-div {
+        visibility: visible;
+        opacity: 1;
+    }
+    #collapseSearch {
+        z-index: 1;
+        top: 60px; 
+    }
 
     /* Responsive Menu Start */ 
 
     #sidebar {
-        z-index: 999;
-        overflow: hidden;
+        z-index: 9999;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        top: 60px;
+        bottom: 0;
     }
     #sidebar .list-group {
         min-width: 300px;
@@ -118,7 +177,6 @@
     }
     /* Responsive Menu End */ 
 
-
 </style>
 
 
@@ -127,14 +185,33 @@
         <div class="row d-flex d-block d-xl-none flex-nowrap wrapper">
             <div class="position-fixed pl-0 pr-0 collapse width" id="sidebar">
                 <div class="list-group border-0 card text-left bg-dark col-12 pr-0">
-                    <div class="text-right bg-white">
-                        <a href="#" data-target="#sidebar" data-toggle="collapse"><i class="fa fa-times fa-2x text-dark p-2" aria-hidden="true"></i></a>
-                    </div>
+                    {% if data.session.logged == 0 %}
                     <a href="#" class="list-group-item d-inline-block collapsed bg-light text-center text-dark border-right-0">
-                        <i class="fa fa-user-o text-primary" aria-hidden="true"></i><span class="d-inline"><small class="font-weight-bold">Mon espace</small></span> 
+                        <i class="fa fa-user-o text-primary" aria-hidden="true"></i>
+                        <span class="d-inline small font-weight-bold">Mon espace</span> 
                     </a>
+                    {% else %}
+                    <a href="#menu0" class="list-group-item d-inline-block collapsed bg-light text-center text-dark border-right-0" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                        <i class="fa fa-user-o text-primary" aria-hidden="true"></i>
+                        <span class="d-inline small font-weight-bold">{{data.session.firstname}} {{data.session.lastname}}</span>
+                    </a>
+                    <div class="collapse" id="menu0">
+                        <a href="#" class="list-group-item text-dark border-0 small bg-light" data-parent="#menu0">Mon compte</a>
+                        <a href="#" class="list-group-item text-dark border-0 small bg-light" data-parent="#menu0">Mes adresses</a>
+                        <a href="#" class="list-group-item text-dark border-0 small bg-light" data-parent="#menu0">Newsletter</a>
+                        <a href="#" class="list-group-item text-dark border-0 small bg-light" data-parent="#menu0">Mes magasins</a>
+                        <a href="#" class="list-group-item text-dark border-0 small bg-light" data-parent="#menu0">Mes commandes</a>
+                        <a href="#" class="list-group-item text-dark border-0 small bg-light" data-parent="#menu0">Mes devis magasin</a>
+                        <a href="#" class="list-group-item text-dark border-0 small bg-light" data-parent="#menu0">Mes listes d'achat</a>
+                        <a href="#" class="list-group-item text-dark border-0 small bg-light" data-parent="#menu0">Me déconnecter</a>
+                    </div>                    
+                    <a href="#" class="list-group-item d-inline-block collapsed bg-light text-center text-dark border-right-0">
+                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
+                        <span class="d-inline small font-weight-bold">Lapeyre Bourg-en-Bresse</span> 
+                    </a>
+                    {% endif %}
                     <a href="#" class="list-group-item d-inline-block d-md-none collapsed bg-light text-center text-dark border-right-0">
-                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i><span class="d-inline"><small class="font-weight-bold">Mon magasin</small></span> 
+                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i><span class="d-inline small font-weight-bold">Mon magasin</span> 
                     </a>
                     <a href="#" class="list-group-item d-inline-block d-md-none collapsed bg-dark text-center text-white header__font-secondary text-uppercase border-right-0">
                         <span class="d-inline">Le magazine</span> 
@@ -146,21 +223,21 @@
 
                     <a href="#menu1" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-dark header__font-secondary" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"> <span class="d-inline">Fenêtres</span> </a>
                     <div class="collapse" id="menu1">
-                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>> Voir l'univers</small></a>
+                        <a href="#" class="list-group-item text-dark border-0 small" data-parent="#menu1">> Voir l'univers</a>
                         <a href="#" class="list-group-item text-uppercase text-dark header__font-secondary border-top-1 border-left-0 border-right-0" data-parent="#menu1">Fenêtres, portes fenêtres et baies coulissantes</a>
-                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>PVC</small></a>
-                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Aluminium</small></a>
-                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Pin</small></a>
-                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Chêne</small></a>
+                        <a href="#" class="list-group-item text-dark border-0 small" data-parent="#menu1">PVC</a>
+                        <a href="#" class="list-group-item text-dark border-0 small" data-parent="#menu1">Aluminium</a>
+                        <a href="#" class="list-group-item text-dark border-0 small" data-parent="#menu1">Pin</a>
+                        <a href="#" class="list-group-item text-dark border-0 small" data-parent="#menu1">Chêne</a>
                         <a href="#" class="list-group-item text-uppercase text-dark header__font-secondary border-top-1 border-left-0 border-right-0" data-parent="#menu1">Fenêtres de toit</a>
-                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Fenêtres de toit et lucarnes de toit</small></a>
-                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Raccords</small></a>
-                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Stores et volets</small></a>
-                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Sun tunnel</small></a>
+                        <a href="#" class="list-group-item text-dark border-0 small" data-parent="#menu1">Fenêtres de toit et lucarnes de toit</a>
+                        <a href="#" class="list-group-item text-dark border-0 small" data-parent="#menu1">Raccords</a>
+                        <a href="#" class="list-group-item text-dark border-0 small" data-parent="#menu1">Stores et volets</a>
+                        <a href="#" class="list-group-item text-dark border-0 small" data-parent="#menu1">Sun tunnel</a>
                         <a href="#" class="list-group-item text-uppercase text-dark header__font-secondary border-top-1 border-left-0 border-right-0" data-parent="#menu1">Volets</a>
-                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Volets</small></a>
-                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Accessoires</small></a>
-                        <a href="#" class="list-group-item text-dark border-0" data-parent="#menu1"><small>Motorisations</small></a>
+                        <a href="#" class="list-group-item text-dark border-0 small" data-parent="#menu1">Volets</a>
+                        <a href="#" class="list-group-item text-dark border-0 small" data-parent="#menu1">Accessoires</a>
+                        <a href="#" class="list-group-item text-dark border-0 small" data-parent="#menu1">Motorisations</a>
                     </div>
                     <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Portes</span></a>
                     <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Cuisines</span></a>
@@ -172,7 +249,7 @@
                     <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Destockage</span></a>
                     <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-white bg-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Nos services</span></a>
                     <a href="#" class="list-group-item d-inline-block collapsed border-right-0 text-uppercase text-white bg-dark header__font-secondary" data-parent="#sidebar"> <span class="d-inline">Le savoir bien faire</span></a>
-                    <p class="list-group-item d-inline-block collapsed border-right-0 text-white bg-dark text-center" data-parent="#sidebar">     <small>
+                    <p class="list-group-item d-inline-block collapsed border-right-0 text-white bg-dark text-center small" data-parent="#sidebar"> 
                         <a href="" class="text-white">CGV</a> - 
                         <a href="" class="text-white">Mentions légales</a>  - 
                         <a href="" class="text-white">Contact</a>  - 
@@ -180,57 +257,238 @@
                         <a href="" class="text-white">Recrutement</a> - 
                         <a href="" class="text-white">FAQ</a>  - 
                         <a href="" class="text-white">Déclaration des performances produits</a> 
-                        </small>
                     </p>
                     <p class="list-group-item d-inline-block collapsed border-right-0 text-white bg-dark text-center" data-parent="#sidebar"> <small class="d-inline">© 2017 Lapeyre</small></p>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div class="bg-light">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-1 d-xl-none d-flex">
-                            <span class="m-auto">
-                                <a href="#" data-target="#sidebar" data-toggle="collapse" class="text-dark"><i class="fa fa-navicon fa-2x py-2 p-1"></i></a>
-                            </span>
+    <div class="header__spacer d-none d-xl-block"></div><div class="d-xl-none p-md-4 m-md-3 p-3 m-3"></div>
+    <div id="header__nav" class="fixed-top">
+        <div class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="fixed-top d-xl-none d-flex px-1 px-sm-3 pt-2 header__nav-menu">
+                                <span class="m-auto">
+                                    <a href="#" data-target="#sidebar" data-toggle="collapse" class="text-dark"><i class="fa fa-navicon fa-2x py-2 p-1"></i></a>
+                                </span>
+                            </div>
+                            <div class="col-1 p-0 d-xl-none d-flex">
+                            </div>
+                            <div class="col-3 col-xl-4 py-2 px-0 pl-xl-5 pr-xl-4 d-none d-xl-flex">
+                                <div class="input-group input-group-sm m-auto">
+                                    <input type="text" class="form-control border-0 bg-transparent" placeholder="Rechercher un produit, un conseil, un article, &hellip;" aria-label="Rechercher un produit, un conseil, un article,&hellip;">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </span>
+                                </div>
+                                {% if data.session.search is defined and data.session.search|length<1 %}
+                                                                                                      <div class="popover p-0 m-5 py-2 col-1 header__search-suggest">
+                                <p class="font-bold p-2 m-0 small text-uppercase">Aucun résultat</p>
+                            </div>
+                            {% elseif data.session.search is defined and data.session.search|length>0 %}
+                            <div class="popover p-0 m-5 py-2 col-1 header__search-suggest">
+                                <div class="list-group p-0 m-0 small border-0">
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1">Armoire</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1">Arrondi</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1">Argent</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1">Ardoise</a>
+                                </div>
+                                <p class="font-bold p-2 mt-2 mb-0 small text-uppercase bg-light">Catégories associées à votre recherche</p>
+                                <div class="list-group p-0 m-0 small border-0">
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1 bg-light">Salles de bains  >  Douche  >  Receveurs et receveurs à carreler</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1 bg-light">Sols et murs  >  Parquets et sols stratifiés  >  Produits pour parquets et stratifiés</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1 bg-light">Sols et murs  >  Parquets et sols stratifiés  >  Plinthes pour parquets, sols stratifiés et vinyles</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1 bg-light">Rangements  >  Aménagements et portes de placards  >  Portes de placard  >  Portes de placard pliantes</a>
+                                </div>
+                                <p class="font-bold p-2 mt-2 mb-0 small text-uppercase">Marque</p>
+                                <div class="list-group p-0 m-0 small border-0">
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1">Emaux De Briare</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1">Jardimat</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1">Marantec</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1">Tarkett</a>
+                                </div>
+                            </div>
+                            {% endif %}
                         </div>
-                        <div class="col-3 col-xl-4 py-2 px-0 pl-xl-5 pr-xl-4 d-none d-md-flex">
-                            <div class="input-group input-group-sm m-auto">
-                                <input type="text" class="form-control" placeholder="Rechercher un produit, un conseil, un article, &hellip;" aria-label="Rechercher un produit, un conseil, un article,&hellip;">
+                        <div class="col-1 d-none d-xl-flex"></div>
+                        <div class="col-3 col-xl-4 py-2 px-0 pl-xl-5 pr-xl-4 d-none d-md-flex d-xl-none text-center">
+                            <p class="my-auto">
+                                <a class="text-dark" data-toggle="collapse" href="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">
+                                    <small>Rechercher un produit...</small>
+                                    <i class="fa fa-search m-auto text-primary pl-4" aria-hidden="true"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-2 col-sm-3 col-xl-4 py-2 px-0 pl-xl-5 pr-xl-4 d-flex d-md-none text-center">
+                            <a class="m-auto" data-toggle="collapse" href="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">
+                                <i class="fa fa-search text-primary" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-12 pt-0 mt-0 pb-2 px-4 d-xl-none collapse bg-light position-absolute" id="collapseSearch">
+                            <div class="input-group input-group-sm m-auto pt-3">
+                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0 border-bottom-1 bg-transparent" placeholder="Rechercher un produit, un conseil, un article, &hellip;" aria-label="Rechercher un produit, un conseil, un article,&hellip;">
                                 <span class="input-group-btn">
                                     <button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
                                 </span>
                             </div>
+                            {% if data.session.search is defined and data.session.search|length>0 %}
+                            <div class="pb-3">
+                                <div class="list-group py-3 m-0 small border-0">
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1 bg-light">Armoire</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1 bg-light">Arrondi</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1 bg-light">Argent</a>
+                                    <a href="#" class="list-group-item list-group-item-action border-0 py-1 bg-light">Ardoise</a>
+                                </div>
+                                <a href="" class="text-dark small p-3">Voir tous les produits ></a>
+                            </div>
+                            {% elseif data.session.search is defined and data.session.search|length<1 %}
+                                                                                                      <div class="p-3 small">
+                            Aucun résultat
                         </div>
-                        <div class="col-3 col-xl-4 py-2 px-0 pl-xl-5 pr-xl-4 d-flex d-md-none d-md-none text-center">
-                            <i class="fa fa-search m-auto text-primary" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-4 text-center">
-                            <img src="images/logo.png" alt="Logo Lapeyre" />
-                        </div>
-                        <div class="col-4 d-flex">
-                            <div class="col-12 my-auto">
-                                <div class="row">
-                                    <div class="col-2 col-xl-4 d-none d-md-block px-0">
-                                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i> <small class="font-weight-bold d-xl-inline-block d-none">
-                                        <a href="" class="text-dark">Mon magasin</a>
+                        {% endif %}
+                    </div>
+                    <div class="col-7 col-sm-4 col-xl-2 px-0 px-sm-2 text-center header__logo">                         
+                        {% if data.session.pro is defined and data.session.pro == 1 %}
+                        <img src="/images/logo_pro.png" alt="Logo Lapeyre" />    
+                        {% else %}
+                        <img src="images/logo.png" alt="Logo Lapeyre" />
+                        {% endif %}
+                    </div>
+                    <div class="col-2 col-sm-4 col-xl-5 d-flex px-0 px-sm-2">
+                        <div class="col-12 my-auto">
+                            <div class="row">
+                                <div class="col-4 d-none d-md-block d-xl-none"></div>
+                                <div class="col-2 col-md-3 col-xl-5 d-none d-md-flex pr-1">
+                                    <i class="fa fa-map-marker text-primary my-auto ml-0 pl-0 mr-2" aria-hidden="true"></i>
+                                    <div {% if data.session.logged == 0 %} class="header__rollover"{% endif %}>
+                                        <small class="font-weight-bold d-xl-inline-block d-none">
+                                            {% if data.session.logged == 0 %}
+                                            <a href="" class="text-dark my-auto">Mon magasin</a>
+                                            {% else %}
+                                            <a href="" class="text-dark my-auto">Lapeyre Bourg-en-Bresse <br/>04 74 23 32 55</a>
+                                            {% endif %}
                                         </small>
+                                        <div class="popover bg-transparent border-0 pt-5 header__rollover-div header__rollover-shop">
+                                            <div class="bg-white px-3">
+                                                <p class="p-2">
+                                                    <span class="text-center d-block pb-0 font-weight-bold">MON MAGASIN</span>
+                                                    <span class="text-center d-block pt-0 small pb-4"><a href="">Voir tous nos magasins</a></span>
+                                                    <span class="d-block pt-0 small font-weight-bold"><a href="">Lapeyre Bourg-en-Bresse</a></span>
+                                                    <span class="d-block pt-0 small border border-top-0 border-right-0 border-left-0 pb-2 mb-2">Magasin</span>
+                                                    <span class="d-block pt-0 small">209, rue du Fort<br/>
+                                                        01440 Viriat<br/>
+                                                        04 74 23 32 55<br/>
+                                                    </span>
+                                                    <span class="text-center d-block pt-3 small font-weight-bold">
+                                                        <a href="" class="text-dark">Se rendre au magasin</a>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-6 col-xl-4 d-none d-md-block px-0 text-center text-xl-left">
-                                        <i class="fa fa-user-o text-primary" aria-hidden="true"></i> <small class="font-weight-bold">
-                                        <a href="" class="text-dark">Mon espace</a>
+                                </div>
+                                <div class="col-6 col-md-3 col-xl-4 d-none d-md-flex px-0 text-xl-left">
+                                    <i class="fa fa-user-o text-primary my-auto m-2" aria-hidden="true"></i>
+                                    <div class="header__rollover d-md-flex ">
+                                        <small class="font-weight-bold my-auto d-none d-xl-block">
+                                            {% if data.session.logged == 0 %}
+                                            <a href="" class="text-dark">Mon espace</a>
+                                            {% else %}
+                                            <a href="" class="text-dark">{{data.session.firstname}} {{data.session.lastname}}</a>
+                                            {% endif %}
                                         </small>
+                                        <div class="popover bg-transparent border-0 pt-5 header__rollover-div header__rollover-user">
+                                            <div class="bg-white col-12 p-0">
+                                                <div class="py-2 px-4">
+                                                    <div class="row">
+                                                        <div class="col-12 text-center d-block font-weight-bold p-0">
+                                                            <p>MON COMPTE</p>
+                                                        </div>
+                                                        <div class="col-5 d-inline-block">
+                                                            <p>
+                                                                <a href="" class="text-dark d-block small">Mon compte</a>
+                                                                <a href="" class="text-dark d-block small">Mes adresses</a>
+                                                                <a href="" class="text-dark d-block small">Newsletter</a>
+                                                                <a href="" class="text-dark d-block small">Mes magasins</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-7 d-inline-block">
+                                                            <p>
+                                                                <a href="" class="text-dark d-block small">Mes commandes</a>
+                                                                <a href="" class="text-dark d-block small">Mes devis magasin</a>
+                                                                <a href="" class="text-dark d-block small">Mes listes d'achat</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 bg-light p-2">
+                                                    <a href="" class="text-dark d-block text-center">Me déconnecter</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="d-xl-inline-block d-none col-2 px-0 text-center header__fav">
-                                        <i class="fa fa-heart-o text-primary" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-xl-2 col-md-4 col-sm-12 px-0 text-right text-md-center">
-                                        <i class="fa fa-shopping-cart text-primary" aria-hidden="true"></i> <small class="font-weight-bold">(0)</small>
+                                </div>
+                                <div class="d-xl-inline-flex d-none col-1 px-0 text-center header__fav">
+                                    <i class="fa fa-heart-o text-primary m-auto" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-2 col-sm-12 px-0 d-flex d-sm-inline-block d-md-flex d-xl-none text-center text-sm-right text-md-center header__rollover">
+                                    <i class="fa fa-shopping-cart text-primary my-auto m-1" aria-hidden="true"></i> <small class="font-weight-bold my-auto">({% if data.session.cart.articles|length > 0 %}{{ data.session.cart.length }}{% else %}0{% endif %})</small>
+                                </div>
+                                <div class="col-xl-2 px-0 d-none d-xl-flex text-center header__rollover">
+                                    <i class="fa fa-shopping-cart text-primary my-auto m-1" aria-hidden="true"></i> <small class="font-weight-bold my-auto">({% if data.session.cart.articles|length > 0 %}{{ data.session.cart.length }}{% else %}0{% endif %})</small>
+                                    <div class="popover bg-transparent border-0 pt-5 header__rollover-div header__rollover-cart">
+                                        <div class="bg-white col-12 p-3">
+                                            {% if data.session.cart.articles|length > 0 %}
+                                            <div class="col-12 p-2">
+                                                <h5 class="d-inline-block">Panier</h5> ({{ data.session.cart.length }} produits)
+                                            </div>
+                                            <div class="col-12 px-2 py-0">
+                                                <ul class="list-group p-0 m-0">
+                                                    {% for article in data.session.cart.articles %}
+                                                    {% if loop.index < 4 %}
+                                                                        <li class="list-group-item pt-3 pb-0 m-0 border-right-0 border-top-0 border-left-0">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <img class="img-fluid" src="{{ article.img }}" alt="">
+                                                        </div>
+                                                        <div class="col-9">
+                                                            <p class="small"><span class="text-muted">{{ article.id }}</span><br>
+                                                                {{ article.articleName }}</p>
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <p class="text-left small">Quantité : {{ article.quantity }}</p>
+                                                                </div>
+                                                                <div class="col-6 small">
+                                                                    <p class="text-right">{{ article.price|number_format(2, '.') }} €</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </li>
+                                                {% endif %}
+                                                {% endfor %}
+                                                </ul>
+                                        </div>
+                                        <div class="col-12 p-2">
+                                            <a href="" class="d-block text-center text-dark">Afficher d'autres articles</a>
+                                        </div>
+                                        <div class="col-12 p-2">
+                                            <div class="row">
+                                                <div class="col-6"><h5>Total TTC</h5></div>
+                                                <div class="col-6 text-right"><h5>{{ data.session.cart.total|number_format(2, '.') }} €</h5></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 bg-primary p-2">
+                                            <a href="" class="d-block text-center text-white"><i class="fa fa-shopping-cart text-primary my-auto m-1" aria-hidden="true"></i> Voir mon panier</a>
+                                        </div>
+                                        {% else %}
+                                        <div class="col-12 p-2 text-center">
+                                            Votre panier est vide pour le moment.
+                                        </div>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>
@@ -240,225 +498,202 @@
             </div>
         </div>
     </div>
-    <nav>
-        <div class="d-none d-xl-flex">
-            <div class="col-12 my-auto">
-                <div class="row">
-                    <div class="col-8 header__main-nav pl-4">
-                        <ul class="nav">
-                            <li class="nav-item py-1 px-0 dropdown">
-                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <strong>Fenêtres</strong>
-                                </a>
-                                <div class="dropdown-menu bg-light p-4 header__mega-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <div class="row">
-                                        <div class="col-9 px-5">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <p class="text-dark text-uppercase header__font-secondary">
-                                                        <strong>
-                                                            Fenêtres, portes-fenêtres et baies coulissantes
-                                                        </strong>
-                                                    </p>
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">PVC</a>
-                                                        </small>
-                                                    </p>
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">Aluminium</a>
-                                                        </small>
-                                                    </p>
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">Pin</a>
-                                                        </small>
-                                                    </p>
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">Chêne</a>
-                                                        </small>
-                                                    </p>
-                                                </div>
-                                                <div class="col-3">
-                                                    <p class="text-dark text-uppercase header__font-secondary">
-                                                        <strong>
-                                                            Fenêtres de toit
-                                                        </strong>
-                                                    </p>
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">
-                                                                Fenêtre de toit et Lucarnes de toit</a>
-                                                        </small>
-                                                    </p>
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">Raccords</a>
-                                                        </small>
-                                                    </p>
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">Stores et volets</a>
-                                                        </small>
-                                                    </p>
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">Sun Tunnel</a>
-                                                        </small>
-                                                    </p>
-                                                </div>
-                                                <div class="col-3">
-                                                    <p class="text-dark text-uppercase header__font-secondary">
-                                                        <strong>
-                                                            Volets
-                                                        </strong>
-                                                    </p>
-
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">Volets</a>
-                                                        </small>
-                                                    </p>
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">Accessoires volets</a>
-                                                        </small>
-                                                    </p>
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">Motorisations</a>
-                                                        </small>
-                                                    </p>
-                                                </div>
-                                                <div class="col-3">
-                                                    <p class="text-dark text-uppercase header__font-secondary">
-                                                        <strong>
-                                                            Volets
-                                                        </strong>
-                                                    </p>
-
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">Volets</a>
-                                                        </small>
-                                                    </p>
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">Accessoires volets</a>
-                                                        </small>
-                                                    </p>
-                                                    <p class="p-0 m-0">
-                                                        <small>
-                                                            <a class="dropdown-item" href="#">Motorisations</a>
-                                                        </small>
-                                                    </p>
-                                                </div>
+    </div>
+</div>
+<div class="container-fluid d-none d-md-flex d-xl-none header__font-secondary text-uppercase position-absolute">
+    <div class="col-12 pt-1 mt-3 pr-3 text-right">
+        <button class="btn text-uppercase" type="button" >
+            <a href="#" class="text-dark">Le magazine</a>
+        </button>
+        <button class="btn btn-secondary text-uppercase" type="button" >
+            <a href="#" class="text-white">Promotions</a>
+        </button>
+    </div>
+</div>
+<nav class="bg-white">
+    <div class="container d-none d-xl-flex">
+        <div class="col-12 my-auto">
+            <div class="row">
+                <div class="col-8 header__main-nav pl-4">
+                    <ul class="nav">
+                        <li class="nav-item py-1 px-0 dropdown">
+                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <strong>Fenêtres</strong>
+                            </a>
+                            <div class="dropdown-menu bg-light p-4 header__mega-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="row">
+                                    <div class="col-9 px-5">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p class="text-dark text-uppercase header__font-secondary">
+                                                    Fenêtres, portes-fenêtres et baies coulissantes
+                                                </p>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">PVC</a>
+                                                </p>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">Aluminium</a>
+                                                </p>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">Pin</a>
+                                                </p>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">Chêne</a>
+                                                </p>
                                             </div>
+                                            <div class="col-3">
+                                                <p class="text-dark text-uppercase header__font-secondary">
+                                                    Fenêtres de toit
+                                                </p>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">
+                                                        Fenêtre de toit et Lucarnes de toit</a>
+                                                </p>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">Raccords</a>
+                                                </p>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">Stores et volets</a>
+                                                </p>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">Sun Tunnel</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p class="text-dark text-uppercase header__font-secondary">
+                                                    Volets
+                                                </p>
 
-                                            <p class="pt-3">
-                                                <a href="#" class="text-dark"><small><strong>> Voir l'univers</strong></small></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-3 header__mag px-5">
-                                            <p class="text-center mb-3"><strong>LE MAG</strong></p>
-                                            <p class="p-0 m-0">
-                                                <small>
-                                                    <a href="" class="text-muted">Blogueuse en cuisine</a>
-                                                </small>
-                                            </p>
-                                            <p class="p-0 m-0">
-                                                <small>
-                                                    <a href="" class="text-muted">Choisir un plan de travail</a>
-                                                </small>
-                                            </p>
-                                            <p class="p-0 m-0">
-                                                <small>
-                                                    <a href="" class="text-muted">Délimiter les espaces</a>
-                                                </small>
-                                            </p>
-                                            <p class="p-0 m-0">
-                                                <small>
-                                                    <a href="" class="text-muted">Ranger dans une petite cuisine</a>
-                                                </small>
-                                            </p>
-                                            <p class="p-0 mt-2">
-                                                <small>
-                                                    <a href="" class="text-dark"><strong>Voir tous les articles</strong></a>
-                                                </small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item py-1 px-0 dropdown">
-                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <strong>Portes</strong>
-                                </a>
-                            </li>
-                            <li class="nav-item py-1 px-0 dropdown">
-                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <strong>Cuisines</strong>
-                                </a>
-                            </li>
-                            <li class="nav-item py-1 px-0 dropdown">
-                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <strong>Salles de bains</strong></a>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">Volets</a>
+                                                </p>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">Accessoires volets</a>
+                                                </p>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">Motorisations</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p class="text-dark text-uppercase header__font-secondary">
+                                                    Volets
+                                                </p>
 
-                            </li>
-                            <li class="nav-item py-1 px-0 dropdown">
-                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <strong>Rangements</strong>
-                                </a>
-                            </li>
-                            <li class="nav-item py-1 px-0 dropdown">
-                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <strong>Escaliers</strong>
-                                </a>
-                            </li>
-                            <li class="nav-item py-1 px-0 dropdown">
-                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <strong>Sols et murs</strong>
-                                </a>
-                            </li>
-                            <li class="nav-item py-1 px-0 dropdown">
-                                <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <strong>Extérieurs</strong>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-4">
-                        <ul class="nav header__font-secondary text-uppercase">
-                            <li class="nav-item p-3 mx-1">
-                                <a href="#" class="text-dark">Le savoir bien faire</a>
-                            </li>
-                            <li class="nav-item px-3 mx-1">
-                                <div class="d-flex pt-2">
-                                    <div class="row">
-                                        <div class="m-auto bg-light my-1 p-2">
-                                            <a href="" class="text-uppercase text-dark">Le magazine</a>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">Volets</a>
+                                                </p>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">Accessoires volets</a>
+                                                </p>
+                                                <p class="p-0 m-0 small">
+                                                    <a class="dropdown-item" href="#">Motorisations</a>
+                                                </p>
+                                            </div>
                                         </div>
+
+                                        <p class="pt-3">
+                                            <a href="#" class="text-dark small font-weight-bold">> Voir l'univers</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-3 header__mag px-5">
+                                        <p class="text-center mb-3 font-weight-bold">LE MAG</p>
+                                        <p class="p-0 m-0 small">
+                                            <a href="" class="text-muted">Blogueuse en cuisine</a>
+                                        </p>
+                                        <p class="p-0 m-0 small">
+                                            <a href="" class="text-muted">Choisir un plan de travail</a>
+                                        </p>
+                                        <p class="p-0 m-0 small">
+                                            <a href="" class="text-muted">Délimiter les espaces</a>
+                                        </p>
+                                        <p class="p-0 m-0 small">
+                                            <a href="" class="text-muted">Ranger dans une petite cuisine</a>
+                                        </p>
+                                        <p class="p-0 mt-2 small font-weight-bold">
+                                            <a href="" class="text-dark">Voir tous les articles</a>
+                                        </p>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="nav-item px-3 mx-1">
-                                <div class="d-flex pt-2">
-                                    <div class="row">
-                                        <div class="m-auto bg-secondary my-1 p-2">
-                                            <a href="" class="text-uppercase text-white">Promotions</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                        </li>
+                        <li class="nav-item py-1 px-0 dropdown">
+                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <strong>Portes</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item py-1 px-0 dropdown">
+                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <strong>Cuisines</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item py-1 px-0 dropdown">
+                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <strong>Salles de bains</strong></a>
+
+                        </li>
+                        <li class="nav-item py-1 px-0 dropdown">
+                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <strong>Rangements</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item py-1 px-0 dropdown">
+                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <strong>Escaliers</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item py-1 px-0 dropdown">
+                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <strong>Sols et murs</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item py-1 px-0 dropdown">
+                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <strong>Extérieurs</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="nav header__font-secondary text-uppercase">
+                        <li class="nav-item py-3 mx-1">
+                            <a href="#" class="text-dark">Le savoir bien faire</a>
+                        </li>
+                        <li class="nav-item px-0 mx-1 d-flex">
+                            <button class="btn text-uppercase m-auto" type="button" >
+                                <a href="#" class="text-dark">Le magazine</a>
+                            </button>
+                        </li>
+                        <li class="nav-item px-0 mx-1 d-flex">
+                            <button class="btn btn-secondary text-uppercase m-auto" type="button" >
+                                <a href="#" class="text-white">Promotions</a>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
+
+</nav>
 
 </header>
 
+<script>
+    $(function () {
+        var lastScrollTop = 0;
+        var $navbar = $('#header__nav');
+        $(window).scroll(function(event){
+            var st = $(this).scrollTop();
+            if ($('.header__spacer').is(":visible") && st > $('.header__spacer').height()) {
+                if (st > lastScrollTop) {
+                    $navbar.fadeOut()
+                } else {
+                    $navbar.fadeIn()
+                }
+                lastScrollTop = st;
+            }
+        });
+    });
+
+</script>
 <!-- END headerUI -->
