@@ -284,11 +284,7 @@ p{
 .slick-next {
     top: 12%;
 }
-   @font-face {
-        font-family: 'DinCondensed', sans-serif;
-        src: url('../fonts/DinCond-bold.otf');
-    }
-    header .dropdown:hover>.dropdown-menu {
+     header .dropdown:hover>.dropdown-menu {
         display: block;
     }
     .header__fav {
@@ -312,7 +308,7 @@ p{
         margin-bottom: 0px;
     }
     .header__font-secondary {
-        font-family: 'DinCondensed', sans-serif;
+        font-family: $font-family-1;
     }
     .header__mega-menu {
         width: 100%; 
