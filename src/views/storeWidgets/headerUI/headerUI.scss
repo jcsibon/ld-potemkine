@@ -1,0 +1,175 @@
+   @font-face {
+        font-family: 'DinCondensed', sans-serif;
+        src: url('../fonts/DinCond-bold.otf');
+    }
+    header .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+    .header__fav {
+        border-left: 1px solid lightgray;
+    }
+    .header__logo {
+        height: 60px;
+    }
+    .header__spacer {
+        height: 116px;
+    }
+    .header__main-nav, .header__main-nav>ul>li {
+        position: inherit;
+    }
+    .header__main-nav>ul>li {
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+    .header__main-nav>ul>li:hover {
+        border-bottom: 3px solid $red; /* $red */
+        margin-bottom: 0px;
+    }
+    .header__font-secondary {
+        font-family: 'DinCondensed', sans-serif;
+    }
+    .header__mega-menu {
+        width: 100%; 
+        border: none;
+        margin-top: -2px;
+    }
+    header .dropdown-toggle::after {
+        display: none;
+    }
+    header .dropdown-item {
+        white-space: inherit;
+    }
+    header .dropdown-item:focus, .dropdown-item:hover {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    .header__mag {
+        border-left: 1px solid lightgray;
+    }
+    header .input-group-sm > .form-control{
+        font-size: 80%;
+    }
+    header .input-group-sm > .input-group-btn > .btn {
+        background: none;
+        border: none;
+        color: $red;
+        font-size: 18px;
+    }
+    header .fa-shopping-cart, header .fa-user-o, header .fa-heart-o, header .fa-map-marker, header .fa-search {
+        font-size: 20px;
+    }
+    header .fa-bars {
+        font-size: 26px;
+    }
+    .header__nav-menu {
+        right: inherit
+    }
+    .header__search-suggest {
+        max-width: 85%;
+    }
+    .header__rollover-shop {
+        width: 300px;
+        margin-left: -50px;
+    }
+    .header__rollover-user {
+        max-width: 310px !important; 
+        width: 310px; 
+        margin-left:-90px;
+    }
+    .header__rollover-cart {
+        max-width: 400px !important; 
+        width: 400px; 
+        margin-left:-310px;
+    }
+    .header__rollover-div::before {
+        content: "";
+        display: block;
+        width: 0; 
+        height: 0; 
+        border-bottom: 12px solid $white;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent; 
+        position: absolute;
+        top: 40px;
+        left: calc(50% - 10px);
+        z-index: 1;
+    }
+    .header__rollover-cart::before {
+        left: 80%;
+    }
+    .header__rollover-div {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.2s linear;
+    }
+    .header__rollover-div>div {
+        box-shadow: 0px 0px 4px #ccc;
+        border: none;
+    }
+    .header__rollover:hover>.header__rollover-div {
+        visibility: visible;
+        opacity: 1;
+    }
+    #collapseSearch {
+        z-index: 1;
+        top: 60px; 
+    }
+
+    /* Responsive Menu Start */ 
+
+    #sidebar {
+        z-index: 9999;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        top: 60px;
+        bottom: 0;
+    }
+    #sidebar .list-group {
+        min-width: 300px;
+        min-height: 100vh;
+    }
+    #sidebar i {
+        margin-right: 6px;
+    }
+
+    #sidebar .list-group-item {
+        max-width: 300px;
+    }
+
+    /* closed state */
+    #sidebar .list-group .list-group-item[aria-expanded="false"]::after {
+        content: " \f0d7";
+        font-family: FontAwesome;
+        display: inline;
+        text-align: right;
+        padding-left: 5px;
+    }
+
+    /* open state */
+    #sidebar .list-group .list-group-item[aria-expanded="true"]::after {
+        content: " \f0da";
+        font-family: FontAwesome;
+        display: inline;
+        text-align: right;
+        padding-left: 5px;
+    }
+    .collapse.show {
+        visibility: visible;
+    }
+    .collapsing {
+        visibility: visible;
+        height: 0;
+        -webkit-transition-property: height, visibility;
+        transition-property: height, visibility;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    .collapsing.width {
+        -webkit-transition-property: width, visibility;
+        transition-property: width, visibility;
+        width: 0;
+        height: 100%;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    /* Responsive Menu End */ 
