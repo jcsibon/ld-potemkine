@@ -6,9 +6,9 @@
 		<p>01 43 25 20 52</p>
 		{% if livraison == 1 %}
 			{% if active == 1 %}
-			<p class="small text-success"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Livraison à partir du 14/04/17</p>
+			<p class="small text-success"><svg width="10" height="10"><use xlink:href="#circle"/></svg>&nbsp;Livraison à partir du 14/04/17</p>
 			{% else %}
-			<p class="small text-danger"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Adresse non desservie</p>
+			<p class="small text-danger"><svg width="10" height="10"><use xlink:href="#circle"/></svg>&nbsp;Adresse non desservie</p>
 			{% endif %}
 		{% endif %}
 		{% if active == 1 %}

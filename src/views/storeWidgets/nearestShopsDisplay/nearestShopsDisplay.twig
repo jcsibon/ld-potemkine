@@ -1,7 +1,7 @@
 <!-- BEGIN nearestShopsDisplay -->
 <div class="card my-3 {% if active == 1 %}is-active{% endif %} align-items-stretch">
     <div class="card-body">
-        <p><strong>{{ shop.titre }}<a alt="Voir les horaires" data-toggle="modal" data-target="#shopModal-{{ shop.idMetier }}">&nbsp;<i class="fa fa-question-circle-o"></i></a></strong></p>
+        <p><strong>{{ shop.titre }}<a alt="Voir les horaires" data-toggle="modal" data-target="#shopModal-{{ shop.idMetier }}">&nbsp;<svg width="15" height="15"><use xlink:href="#question-circle-o"/></svg></a></strong></p>
         <div class="border-left">
             <p><small>{{ shop.adresse.numVoie }}
       {% if shop.adresse.compl1|length > 0 %}<br>{{ shop.adresse.compl1 }}{% endif %}
@@ -10,9 +10,9 @@
       <br>{{ shop.adresse.codePostal }}&nbsp;{{ shop.adresse.ville }}</small></p>
         </div>
         {% if active == 1 %}
-        <p class="small text-success"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Disponible aujourd'hui</p>
+        <p class="small text-success"><svg width="10" height="10"><use xlink:href="#circle"/></svg>&nbsp;Disponible aujourd'hui</p>
         {% else %}
-        <p class="small text-warning"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Disponible le 14/04/17</p>
+        <p class="small text-warning"><svg width="10" height="10"><use xlink:href="#circle"/></svg>&nbsp;Disponible le 14/04/17</p>
         {% endif %} {% if active == 1 %}
         <button class="btn btn-default disabled">Sélectionné</button>
         {% else %}
@@ -24,7 +24,7 @@
                     <div class="modal-header">
                         <h5 class="modal-title">Horaires du magasin {{ shop.titre }}</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <span>&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">

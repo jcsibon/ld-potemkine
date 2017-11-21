@@ -6,7 +6,7 @@
             <h2>Mon panier</h2>
             <br>
             <div class="alert alert-warning">
-                <i class="fa fa-info-circle"></i>&nbsp;Remise immédiate de 50€ à partir de 500 € d'achat
+                <svg width="15" height="15"><use xlink:href="#info-circle"/></svg>&nbsp;Remise immédiate de 50€ à partir de 500 € d'achat
             </div>
             <ul class="list-group">
                 {% for article in data.session.cart.articles %}
@@ -27,7 +27,7 @@
                             </div>
                             <br>
                             <div class="alert alert-danger">
-                                <i class="fa fa-info-circle"></i>&nbsp;Code coupon invalide
+                                <svg width="15" height="15"><use xlink:href="#info-circle"/></svg>&nbsp;Code coupon invalide
                             </div>
                         </div>
                     </div>
