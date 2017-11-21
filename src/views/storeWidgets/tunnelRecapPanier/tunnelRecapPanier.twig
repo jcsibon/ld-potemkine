@@ -4,7 +4,7 @@
         {% if uri == 'TunnelCommandConfirmation' %}        
         <h3>Commande <small class="text-muted">({{ data.session.cart.length }} produits)</small></h3>
         {% else %}
-        <h3>Panier <small class="text-muted">({{ data.session.cart.length }} produits)</small></h3>
+        <h3>Mon panier <small class="text-muted">({{ data.session.cart.length }} produits)</small></h3>
         {% endif %}
     </li>
     {% for article in data.session.cart.articles %}
