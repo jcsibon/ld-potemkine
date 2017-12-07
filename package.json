@@ -1,21 +1,23 @@
 {
   "name": "lapeyre-potemkine",
-  "version": "0.1.0",
+  "version": "2.0.20",
   "scripts": {
-    "install": "grunt css"
+    "install": "grunt css",
+    "sprites": "svg-sprite --config sprite-config.json src/images/svg/*.svg"
   },
   "dependencies": {
+    "autoprefixer": "^7.2.1",
     "bootstrap": "^4.0.0-beta",
-    "grunt-contrib-concat": "^1.0.1",
-    "requirejs": "^2.3.5",
-    "slick": "^1.12.2",
-    "slick-carousel": "^1.8.1",
-    "autoprefixer": "^7.1.1",
     "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^2.0.0",
-    "load-grunt-tasks": "^3.5.2"
+    "load-grunt-tasks": "^3.5.2",
+    "requirejs": "^2.3.5",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1",
+    "svg-sprite": "^1.3.7"
   }
 }

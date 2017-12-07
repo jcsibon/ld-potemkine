@@ -1,12 +1,13 @@
 <!-- BEGIN tunnelRetraitMagasinTabUI -->
+
 <div class="card mb-4">
     <div class="card-body">
         <h2>
             <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#retrait" aria-expanded="false" aria-controls="retrait">
-                <i class="fa fa-home"></i>&nbsp;Je souhaite retirer ma commande en magasin
+                <svg width="35" height="35"><use xlink:href="#home"/></svg>&nbsp;Je souhaite retirer ma commande en magasin
             </a>
         </h2>
-        <p class="text-muted m-0">Auprès de l'un de vos [115] magasins relais en France Métropolitaine</p>
+        <p class="text-muted m-0">Auprès de l’un de nos magasins</p>
         <div id="retrait" class="collapse show" role="tabpanel" aria-labelledby="retrait">
             <hr>
             <div id="retrait-step1">
@@ -19,7 +20,7 @@
                 </div>
                 <ul class="row list-unstyled">
                     {% for shop in data.store.shops %}
-                    <li class="col-12 col-md-6 col-xl-4">
+                    <li class="col-12 col-md-6 col-xl-4 d-flex">
                         {% if loop.index0 == 0 %}
                         {% set active = 1 %}
                         {% else %}
@@ -43,7 +44,7 @@
                 {% if data.session.logged == 1 and data.session.addresses|length > 0 %}
                 <ul class="row list-unstyled">
                     {% for address in data.session.addresses %}
-                    <li class="col-12 col-md-6 col-xl-4">
+                    <li class="col-12 col-md-6 col-xl-4 d-flex">
                         {% set livraison = 0 %}
                         {% if loop.index0 == 0 %}
                         {% set active = 1 %}
@@ -53,12 +54,12 @@
                         {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
                     </li>
                     {% endfor %}
-                    <li class="col-12 col-md-6 col-xl-4">
-                        <div class="card my-3 is-new">
+                    <li class="col-12 col-md-6 col-xl-4 d-flex">
+                        <div class="card my-3 is-new col-12">
                             <div class="card-body">
                                 <div class="text-center">
                                     <p class="small">Vous avez besoin d’être facturé à une autre adresse ?</p>
-                                    <i class="fa fa-plus-circle fa-2x"></i>
+                                    <svg width="30" height="30"><use xlink:href="#plus-circle"/></svg>
                                 </div>
                             </div>
                         </div>

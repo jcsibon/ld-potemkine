@@ -18,7 +18,7 @@
         margin-top: 3px;
     }
     .header__main-nav>ul>li:hover {
-        border-bottom: 3px solid $red; /* $red */
+        border-bottom: 3px solid $red;
         margin-bottom: 0px;
     }
     .header__font-secondary {
@@ -134,8 +134,7 @@
 
     /* closed state */
     #sidebar .list-group .list-group-item[aria-expanded="false"]::after {
-        content: " \f0d7";
-        font-family: FontAwesome;
+        content: "+";
         display: inline;
         text-align: right;
         padding-left: 5px;
@@ -143,8 +142,7 @@
 
     /* open state */
     #sidebar .list-group .list-group-item[aria-expanded="true"]::after {
-        content: " \f0da";
-        font-family: FontAwesome;
+        content: "-";
         display: inline;
         text-align: right;
         padding-left: 5px;

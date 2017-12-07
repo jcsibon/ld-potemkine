@@ -1,36 +1,61 @@
 <!-- BEGIN tunnelShopCartHeaderUI -->
-<div id="tunnelShopCartHeaderUI" class="container py-4">
-    <div class="row">
-        <div class="col-4 text-center">
-            <a href="/TunnelShopCartView">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-stack-1x fa-inverse">1</i>
-                </span>
-                &nbsp;
-                <span class="d-none d-md-inline">Panier</span>
-            </a>
-        </div>
-        <div class="col-4 text-center">
-            <a href="/TunnelCommandShippingView">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-stack-1x fa-inverse">2</i>
-                </span>
-                &nbsp;
-                <span class="d-none d-md-inline">Modalités</span>
-            </a>
-        </div>
-        <div class="col-4 text-center">
-            <a href="/TunnelCommandPaymentView">
-                  <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-stack-1x fa-inverse">3</i>
-                </span>
-                &nbsp;
-                <span class="d-none d-md-inline">Paiement</span>
-            </a>
-        </div>
+<div class="container pt-1 pb-4">
+  <div class="row my-2">
+    {# <div class="timeline-horizontal"></div> #}
+    <div class="col-4 text-center">
+      {% if uri != 'TunnelShopCartView' %}
+      <a href="/TunnelShopCartView">
+      {% endif %} 
+        <span class="fa-stack fa-lg {% if uri == 'TunnelShopCartView' %}text-primary{% else %}text-muted{% endif %}">
+          <i class="fa fa-circle fa-stack-2x py-2"></i>
+          <i class="fa fa-stack-1x fa-inverse py-2">1</i>
+        </span>
+      {% if uri != 'TunnelShopCartView' %}
+      </a>
+      {% endif %}
     </div>
+    <div class="col-4 text-center">
+      {% if uri == 'TunnelCommandPaymentView' %}
+      <a href="/TunnelCommandShippingView">
+      {% endif %}
+        <span class="fa-stack fa-lg {% if uri == 'TunnelCommandShippingView' %}text-primary{% else %}text-muted{% endif %}">
+          <i class="fa fa-circle fa-stack-2x py-2"></i>
+          <i class="fa fa-stack-1x fa-inverse py-2">2</i>
+        </span>
+      {% if uri != 'TunnelShopCartView' %}
+      </a>
+      {% endif %}
+    </div>
+    <div class="col-4 text-center">
+        <span class="fa-stack fa-lg {% if uri == 'TunnelCommandPaymentView' %}text-primary{% else %}text-muted{% endif %}">
+          <i class="fa fa-circle fa-stack-2x py-2"></i>
+          <i class="fa fa-stack-1x fa-inverse py-2">3</i>
+        </span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="timeline-horizontal"></div>
+    <div class="col-4 text-center">
+      <a href="/TunnelShopCartView">
+        <span class="{% if uri == 'TunnelShopCartView' %}text-primary{% else %}text-muted{% endif %}">
+        Panier
+        </span>
+      </a>
+    </div>
+    <div class="col-4 text-center">
+      <a href="/TunnelCommandShippingView">
+        <span class="{% if uri == 'TunnelCommandShippingView' %}text-primary{% else %}text-muted{% endif %}">
+          Modalités
+        </span>
+      </a>
+    </div>
+    <div class="col-4 text-center">
+      <a href="/TunnelCommandPaymentView">
+        <span class="{% if uri == 'TunnelCommandPaymentView' %}text-primary{% else %}text-muted{% endif %}">
+          Paiement
+        </span>
+      </a>
+    </div>
+  </div>
 </div>
 <!-- END tunnelShopCartHeaderUI -->
