@@ -177,7 +177,7 @@
                         {% if data.session.pro is defined and data.session.pro == 1 %}
                         <img src="/images/logo_pro.png" alt="Logo Lapeyre" />    
                         {% else %}
-                        <img src="images/logo.png" alt="Logo Lapeyre" />
+                        <img src="/images/logo.png" alt="Logo Lapeyre" />
                         {% endif %}
                     </div>
                     <div class="col-2 col-sm-4 col-xl-5 d-flex px-0 px-sm-2">
@@ -510,14 +510,13 @@
             var st = $(this).scrollTop();
             if ($('.header__spacer').is(":visible") && st > $('.header__spacer').height()) {
                 if (st > lastScrollTop) {
-                    $navbar.fadeOut()
+                    $navbar.css({'visibility':'hidden','opacity':'0', 'transition':'visibility 0s, opacity 0.5s linear'});
                 } else {
-                    $navbar.fadeIn()
+                    $navbar.css({'visibility':'visible','opacity':'1'});
                 }
                 lastScrollTop = st;
             }
         });
     });
-
 </script>
 <!-- END headerUI -->
