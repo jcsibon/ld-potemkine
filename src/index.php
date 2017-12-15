@@ -119,6 +119,12 @@ $data['store']['shops'] = array_slice(json_decode(file_get_contents("data/shops.
 
 if (isset($_GET['search'])) $data['session']->search = $_GET['search'];
 
+if (isset($_GET['promo'])) $data['session']->promo = $_GET['promo'];
+
+if (isset($_GET['colisage'])) $data['session']->colisage = $_GET['colisage'];
+
+if (isset($_GET['stock'])) $data['session']->stock = $_GET['stock'];
+
 $app['twig']->addGlobal('data', $data);
 
 
@@ -157,7 +163,7 @@ $app->get('/{urlname}-{code}/', function($code) use($app) {
   if(file_exists('views/contents/'.$code.".twig"))
     $template = $code;
   else
-    $temlpate = "";
+    $template = "";
   return $app['twig']->render('pages/universe/universe.twig',array("template"=>$template));
 })->assert('urlname', '[a-z\-]+')->assert('code', 'CCU[0-9\-]+');
 
@@ -173,7 +179,7 @@ $app->get('/{urlname}-{code}/', function($code) use($app) {
   if(file_exists('views/contents/'.$code.".twig"))
     $template = $code;
   else
-    $temlpate = "";
+    $template = "";
   return $app['twig']->render('pages/product/product.twig',array("template"=>$template));
 })->assert('urlname', '[a-z\-]+')->assert('code', 'FPC[0-9\-]+');
 
@@ -181,7 +187,7 @@ $app->get('/{urlname}-{code}/', function($code) use($app) {
   if(file_exists('views/contents/'.$code.".twig"))
     $template = $code;
   else
-    $temlpate = "";
+    $template = "";
   return $app['twig']->render('pages/article/article.twig',array("template"=>$template));
 })->assert('urlname', '[a-z\-]+')->assert('code', '[0-9\-]+');
 
