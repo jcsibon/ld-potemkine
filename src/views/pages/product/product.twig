@@ -1,10 +1,576 @@
 {% extends"layouts/default.html" %}
 {% block content %}
-	{% if template|length > 0 %}
-		{% include 'contents/CCN0010.twig' %}
-	{% else %}
-		<div class="container">
-			<img src="/images/family.png" class="img-fluid">
-		</div>
-	{% endif %}
+{% if template|length > 0 %}
+{% include 'contents/CCN0010.twig' %}
+{% else %}
+
+<div class="container fp__container">
+    <div class="row m-0">
+        <div class="col-12 py-2 px-5 small fp__breadcrumb d-none d-lg-block">
+            <a href="javascript:window.history.back();" class="text-dark font-weight-bold">&lsaquo; Retour</a>
+            <span class="px-2">|</span>
+            <a href="" class="text-dark">Accueil</a>
+            <span class="px-2">&rsaquo;</span>
+            <a href="" class="text-dark">Rangements</a>
+            <span class="px-2">&rsaquo;</span>
+            <a href="" class="text-dark">Aménagements de placard et dressing</a>
+            <span class="px-2">&rsaquo;</span>
+            <a href="" class="text-dark">Kits dressing</a>
+            <span class="px-2">&rsaquo;</span>
+            <span class="font-weight-bold">Aménagement Panama</span>
+        </div>
+    </div>
+    <div class="row m-0">
+        <div class="col-12 col-xl-10 offset-xl-1 pt-4 pb-0 ">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="col-12 col-xl-9 order-xl-2">
+                            <div class="row"> 
+                                <div class="col-12 p-3 position-relative text-center" id="fp__main_image">
+                                    {% if data.session.promo is defined and data.session.promo == 1 %}
+                                    <div class="position-absolute d-flex bg-secondary px-3 py-4 products__list_promo">
+                                        <span class="m-auto text-white small">Promo</span>
+                                    </div>
+                                    {% endif %}
+                                    <img src="https://statics.lapeyre.fr/img/catalogue/standardMain/721/458/201721458.jpg" class="img-fluid d-none d-md-block" data-toggle="modal" data-target="#imageModal">
+                                    <div id="carouselFpIndicators" class="carousel slide d-block d-md-none" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselFpIndicators" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselFpIndicators" data-slide-to="1"></li>
+                                            <li data-target="#carouselFpIndicators" data-slide-to="2"></li>
+                                            <li data-target="#carouselFpIndicators" data-slide-to="3"></li>
+                                        </ol>
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="carousel-item active">
+                                                <img class="d-block img-fluid" src="https://statics.lapeyre.fr/img/catalogue/standardMain/721/458/201721458.jpg">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block img-fluid" src="https://statics.lapeyre.fr/img/catalogue/standardMain/721/239/201721239.jpg">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block img-fluid" src="https://statics.lapeyre.fr/img/catalogue/standardMain/721/240/201721240.jpg">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block img-fluid" src="https://statics.lapeyre.fr/img/catalogue/standardMain/721/459/201721459.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row"> 
+                                <div class="col-9 d-none d-lg-block">
+                                    <img src="https://statics.lapeyre.fr/img/catalogue/picto/_an/s_q/Garantie_02_ans_Q.jpg" alt="Garantie Lapeyre 2 ans" class="fp__picto m-2" />
+                                    <img src="https://statics.lapeyre.fr/img/catalogue/picto/iqu/e_q/Isolation_thermique_Q.jpg" alt="Isolation thermique" class="fp__picto m-2" />
+                                </div>
+                                <div class="col-3 d-none text-center d-lg-flex p-0">
+                                    <svg width="25" height="25" class="m-auto"><use xlink:href="#share-alt"/></svg>
+                                    <a href="#" class="text-muted small position-absolute col-12 fp__bottom-0" data-toggle="modal" data-target="#sharingModal">
+                                        <u>Partager</u>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-3 d-none d-md-block fp__display_thumbnails">
+                            <div class="position-relative border my-2 mx-1 mx-xl-2 d-inline-block d-xl-block fp__selected">
+                                <img src="https://statics.lapeyre.fr/img/catalogue/thumbnail/721/458/201721458.jpg" class="img-fluid" data-image-md-url="https://statics.lapeyre.fr/img/catalogue/standardMain/721/458/201721458.jpg" data-image-hd-url="https://statics.lapeyre.fr/img/catalogue/zoom1/721/458/201721458.jpg">
+                            </div>
+                            <div class="position-relative border my-2 mx-1 mx-xl-2 d-inline-block d-xl-block">
+                                <img src="https://statics.lapeyre.fr/img/catalogue/thumbnail/721/239/201721239.jpg" class="img-fluid" data-image-md-url="https://statics.lapeyre.fr/img/catalogue/standardMain/721/239/201721239.jpg" data-image-hd-url="https://statics.lapeyre.fr/img/catalogue/zoom1/721/239/201721239.jpg">
+                            </div>
+                            <div class="position-relative border my-2 mx-1 mx-xl-2 d-inline-block d-xl-block">
+                                <img src="https://statics.lapeyre.fr/img/catalogue/thumbnail/721/240/201721240.jpg" class="img-fluid" data-image-md-url="https://statics.lapeyre.fr/img/catalogue/standardMain/721/240/201721240.jpg" data-image-hd-url="https://statics.lapeyre.fr/img/catalogue/zoom1/721/240/201721240.jpg">
+                            </div>
+                            <div class="position-relative border my-2 mx-1 mx-xl-2 d-inline-block d-xl-block">
+                                <img src="https://statics.lapeyre.fr/img/catalogue/thumbnail/721/459/201721459.jpg" class="img-fluid" data-image-md-url="https://statics.lapeyre.fr/img/catalogue/standardMain/721/459/201721459.jpg" data-image-hd-url="https://statics.lapeyre.fr/img/catalogue/zoom1/721/459/201721459.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 pl-lg-5">
+                    <div class="row">
+                        <div class="col-12 pt-5 pt-md-4 pb-0 py-xl-4 px-3 px-lg-5 fp__product_bloc"> 
+                            <div class="row">
+                                <div class="col-12 px-2">
+                                    <p class="text-muted small">Réf. de l'article : 2490390</p>
+                                </div>
+                                <div class="col-12 px-2">
+                                    <h1 class="h3 font-weight-bold">Aménagement Panama <sup class="text-primary">&#9679</sup></h1>
+                                </div>
+                                <div class="col-12 p-2">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p>
+                                                <a href="#description" class="font-weight-bold text-dark"><u>Détails produit</u></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="text-muted">
+                                                (Avis clients)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6 p-2">
+                                    <label class="text-muted d-block">Couleur</label>
+                                    <img src="https://statics.lapeyre.fr/img/catalogue/nuancier/20-/862/NUA-couleur20-862.jpg" class="img-fluid fp__color m-1 border fp__selected" data-image-md-url="https://statics.lapeyre.fr/img/catalogue/standardMain/649/564/649564.jpg" data-image-hd-url="https://statics.lapeyre.fr/img/catalogue/zoom1/649/564/649564.jpg" />
+                                    <img src="https://statics.lapeyre.fr/img/catalogue/nuancier/20-/s02/NUA-couleur20-S02.jpg" class="img-fluid fp__color m-1 border" data-image-md-url="https://statics.lapeyre.fr/img/catalogue/standardMain/721/459/201721459.jpg" data-image-hd-url="https://statics.lapeyre.fr/img/catalogue/zoom1/721/459/201721459.jpg" /> 
+                                    <img src="https://statics.lapeyre.fr/img/catalogue/nuancier/20-/s02/NUA-couleur20-S02.jpg" class="img-fluid fp__color m-1 border" data-image-md-url="https://statics.lapeyre.fr/img/catalogue/standardMain/721/459/201721459.jpg" data-image-hd-url="https://statics.lapeyre.fr/img/catalogue/zoom1/721/459/201721459.jpg" /> 
+                                </div>
+                                {% if data.session.colisage is not defined %}
+                                <div class="col-12 col-xl-6 p-2">
+                                    <label class="text-muted d-block">Hauteur</label>
+                                    <select class="form-control">
+                                        <option>7.5</option>
+                                        <option>9.5</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-xl-6 p-2">
+                                    <label class="text-muted d-block">Profondeur</label>
+                                    <select class="form-control">
+                                        <option>7.5</option>
+                                        <option>9.5</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-xl-6 p-2">
+                                    <label class="text-muted d-block">Finition</label>
+                                    <select class="form-control">
+                                        <option>Beige naturel</option>
+                                        <option>Gris clair</option>
+                                        <option>Gris foncé</option>
+                                    </select>
+                                </div>
+                                {% endif %}
+                                {% if data.session.colisage is defined and data.session.colisage == 1 %}
+                                <div class="col-12 p-2">
+                                    <label class="text-muted d-block">Surface</label>
+                                    <div class="row m-0">
+                                        <div class="col-12 border fp__area_block p-2">
+                                            <div class="row">
+                                                <div class="col-9 text-center px-0">
+                                                    <input onpaste="return false;" id="fp__area" type="text" class="border-0 text-right font-weight-bold" value="1.38" data-area-value="1.38" size="5" maxlength="6" >
+                                                </div>
+                                                <div class="col-3 pl-0">
+                                                    <span class="text-muted small">m²</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                <div class="col-12 p-2">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <label class="text-muted d-block">Quantité</label>
+                                            <div class="row m-0">
+                                                <div class="col-12 border fp__quantity_block p-2">
+                                                    <div class="row">
+                                                        <div class="col-4 text-right pr-0">
+                                                            <span class="text-muted font-weight-bold" id="qtyLeftBtn">-</span>
+                                                        </div>
+                                                        <div class="col-4 text-center px-0">
+                                                            <input onpaste="return false;" id="fp__quantity" type="text" class="border-0 text-center font-weight-bold" value="1" size="2" maxlength="4" >
+                                                        </div>
+                                                        <div class="col-4 text-left pl-0">
+                                                            <span class="" id="qtyRightBtn">+</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>      
+                                        <div class="col-7 mt-4">
+                                            <div class="row">
+                                                <div class="col-12 text-right">
+                                                    {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                    <p class="small m-0"><s>219,00 € {% if data.session.pro is defined and data.session.pro == 1 %}HT{% endif %}</s></p>
+                                                    {% endif %}
+                                                    <p class="h2 font-weight-bold fp__price mb-0 {% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %}">159,00 € {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small font-weight-normal fp__pro_small">HT</sup>{% endif %}{% if data.session.colisage is defined and data.session.colisage == 1 %}<span class="small font-weight-bold fp__area_small">le m²</span>{% endif %}{% if data.session.promo is defined and data.session.promo == 1 %}<sup class="small font-weight-normal fp__promo_small">*</sup>{% endif %}</p> 
+                                                </div>
+                                                <div class="col-12 text-right">
+                                                    {% if data.session.colisage is defined and data.session.colisage == 1 %}
+                                                    <p class="m-0 text-muted small">Soit 17,94 € {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %} la boite de 1,38 m²</p>
+                                                    {% endif %}
+                                                    {% if data.session.colisage is not defined %}
+                                                    <p class="m-0 text-muted small">Dont éco-part : 5,20 € {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %}</p>
+                                                    {% endif %}
+                                                    {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                    <p class="small m-0"><a href="javascript:void(0);" class="text-muted text-dark" onclick="javascript:window.open('/c/conditions-generales-de-vente?omitHeader=1', '_blank', 'toolbar=yes, scrollbars=yes, resizable=yes, width=820, height=600'); return false;">* voir les conditions</a></p>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-3">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <a id="addToShoppingList_89106" href="#" onclick="wishList.goLogin('https://www.lapeyre.fr/amenagement-panama-decor-chene-blanchi-2490390','wishlist'); return false;" class="fp__product-wishlist-button" role="button">
+                                                <svg width="20" height="20" class="m-auto"><use xlink:href="#heart-o-white"/></svg>
+                                            </a>
+                                        </div>
+                                        <div class="col-9 col-xl-8 offset-xl-1">
+                                            <div class="col s12 m12 l9 p-0">
+                                                <a id="add2CartBtn" href="#" class="btn btn-primary col-12" onclick="javascript:setCurrentId('add2CartBtn');productDisplayJS.Add2ShopCartAjax('entitledItem_89104',document.getElementById('quantity_89104').value, false)" wairole="button" role="button" title="Ajouter au panier" onkeypress="javascript:MessageHelper.setFocusElement('add2CartBtn');">
+                                                    <div id="productPageAdd2Cart" class="button_text">
+                                                        Ajouter au panier
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-4">
+                                    {% if data.session.stock is defined and data.session.stock == 'dispo' %}
+                                    <p>
+                                        <span class="text-warning fp__font-130">&#9679</span> Disponible à <a href="" class="text-warning">Lapeyre Montluçon</a> seulement le 26/12/2017
+                                    </p>
+                                    {% endif %}
+                                    {% if data.session.stock is defined and data.session.stock == 'stock' %}
+                                    <p>
+                                        <span class="text-success fp__font-130">&#9679</span> <span class="text-success">En stock</span> à <a href="">Lapeyre Pointe de Gournay</a> à partir du 14/12/2017
+                                    </p>
+                                    {% endif %}
+                                    {% if data.session.stock is defined and data.session.stock == 'indispo' %}
+                                    <p>
+                                        <span class="text-danger fp__font-130">&#9679</span> <span class="text-danger">Indisponible</span> à <a href="">Lapeyre Caen</a>
+                                    </p>
+                                    {% endif %}
+                                    {% if data.session.stock is defined %}
+                                    <p>
+                                        <a href="#" class="text-muted" data-toggle="modal" data-target="#availabilityModal"><u>Voir la disponibilité dans d'autres magasins</u></a>
+                                    </p>
+                                    {% endif %}
+                                    {% if data.session.stock is not defined %}
+                                    <p>
+                                        <a href="#" class="text-muted" data-toggle="modal" data-target="#availabilityModal"><u>Voir la disponibilité en magasin</u></a>
+                                    </p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center pt-3"> 
+                            <p class="text-muted d-block d-lg-flex">
+                                <span class="d-block d-lg-flex m-auto">
+                                    <svg width="20" height="20" class="m-auto"><use xlink:href="#refresh"/></svg>
+                                    <span class="pl-2">Retours gratuits</span>
+                                </span>
+                                <span class="mx-2 d-none d-lg-block">-</span>
+                                <span class="d-block d-lg-flex m-auto">
+                                    <svg width="25" height="25" class="m-auto"><use xlink:href="#truck-grey"/></svg>
+                                    <span class="pl-2">Livraison à domicile</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-light my-4" id="description">
+    <div class="container fp__container">
+        <div class="row">
+            <div class="col-12 col-xl-10 offset-xl-1 pb-4">
+                <div class="row">
+                    <div class="col-12 py-4 h3 text-center font-weight-bold">
+                        Détails produit
+                    </div>
+                    <div class="col-12 col-md-6 pb-0 pb-md-3">
+                        <p class="font-weight-bold">
+                            Prêt à poser et extensible, l'Aménagement Panama est une solution de rangement pratique et économique. Double colonne, tiroirs et tablettes sont réalisés en panneaux de particules décor acacia.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-5 offset-md-1 pb-3">
+                        <img src="https://statics.lapeyre.fr/img/catalogue/picto/_an/s_q/Garantie_02_ans_Q.jpg" alt="Garantie Lapeyre 2 ans" class="fp__picto m-2" />
+                        <img src="https://statics.lapeyre.fr/img/catalogue/picto/iqu/e_q/Isolation_thermique_Q.jpg" alt="Isolation thermique" class="fp__picto m-2" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-11 col-xl-6 fp__border-top pt-3">
+                        <p class="font-weight-bold h5">
+                            Description détaillée
+                        </p>
+                        <p class="collapse" id="collapseDescription">
+                            - Aménagement prêt à poser extensible 2 colonnes<br/>
+                            - Extensible de 105 à 185 cm<br/>
+                            - Panneaux de particules agglomérées d'épaisseur 15 mm<br/>
+                            - Décor papier imitation bois acacia et ton bois chêne blanchi<br/>
+                            - Dimensions : H.218 x l.185 x P.50 cm<br/>
+                            - Composition :<br/>
+                            * 2 colonnes<br/>
+                            * 2 tiroirs à coulisses à billes invisibles, ouverture push-lash<br/>
+                            * 8 tablettes (dont 4 fixes)<br/>
+                            * 2 tringles recoupables<br/>
+                            * 1 tablette haute extensible<br/>
+                            - Largeur des colonnes : l.56 et l.36 cm<br/>
+                            - Livré en 2 colis<br/>
+                        </p>
+                    </div>
+                    <div class="col-1 d-xl-none fp__border-top pt-3 pt-md-2 px-0">
+                        <a data-toggle="collapse" class="text-dark" href="#collapseDescription" aria-expanded="false" aria-controls="collapseDescription">
+                            <p class="h1 text-center">+</p>
+                            <p class="h1 text-center">-</p>
+                        </a>
+                    </div>
+                    <div class="col-11 col-xl-5 offset-xl-1 fp__border-top pt-3">
+                        <p class="font-weight-bold h5">
+                            Marque
+                        </p>
+                        <p class="collapse" id="collapseBrand">
+                            <img src="https://statics.lapeyre.fr/img/catalogue/mobileList/ane/o_q/Aquaneo_Q.jpg" alt="Aquaneo" class="fp__brand p-2"/>
+                            <img src="https://statics.lapeyre.fr/img/catalogue/mobileList/fel/d_q/Grohe_Markenfeld_Q.jpg" alt="Grohe" class="fp__brand p-2"/>
+                            <a href="" class="d-block text-dark"><u>Voir tous les produits de la marque</u></a>
+                        </p>
+                    </div>
+                    <div class="col-1 d-xl-none fp__border-top pt-3 pt-md-2 px-0">
+                        <a data-toggle="collapse" class="text-dark" href="#collapseBrand" aria-expanded="false" aria-controls="collapseBrand">
+                            <p class="h1 text-center">+</p>
+                            <p class="h1 text-center">-</p>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <p class="pt-3">
+                            <sup class="text-primary">&#9679</sup> Ce produit ne peut pas bénéficier de remises.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container fp__container">
+    <div class="row m-0">
+        <div class="col-12 col-xl-10 offset-xl-1 pb-3">
+            <div class="row">
+                <div class="col-12 col-xl-3">
+                    <p class="font-weight-bold h5 pt-2 text-center">
+                        Notice de montage
+                    </p>
+                </div>
+                <div class="col-12 col-xl-9">
+                    <div class="row">
+                        <div class="col-12">
+                            <p><a href="" class="text-dark"><img class="img-fluid mr-3" src="/images/pdf.png" /><u>Aménagement PANAMA - Notice de montage</u></a></p>
+                        </div>
+                        <div class="col-12">
+                            <p><a href="" class="text-dark"><img class="img-fluid mr-3" src="/images/pdf.png" /><u>Aménagement PANAMA - Notice de montage n°2</u></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-0 px-1 px-md-0">
+        <div class="col-12 col-xl-10 offset-xl-1 px-0 px-md-3 pt-5 pb-4 my-4 fp__advices position-relative">
+            <div class="row">
+                <div class="position-absolute h3 text-center font-weight-bold bg-white">
+                    Tous nos conseils
+                </div>
+                <div class="col-12 d-flex">
+                    <div class="col-12 m-auto">
+                        <div class="grid">
+                            <div class="col-12 d-flex flex-row align-items-stretch home__mag_row p-0">
+                                <div class="col-12 col-md-6 col-lg-4 p-2">
+                                    <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400604/vignette_verriere_zue4dm.jpg)">
+                                        <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
+                                        <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Les 5 étapes pour installer sa porte coulissante</a></h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 p-2 d-none d-md-block">
+                                    <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400d4a/vignette_e-publiredac_amenagt_meuble_cuisine_z1vtxh.jpg)">
+                                        <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
+                                        <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Battle : ouverte ou semi-ouverte ?</a></h5>
+                                    </div>
+                                </div>
+                                <div class="col-4 p-2 d-none d-lg-block">
+                                    <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400d8a/vignettesdb_ds8e7q.jpg)">
+                                        <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
+                                        <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Salle de bains : les meubles les plus adaptés pour bien l’agencer</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex flex-row align-items-stretch home__mag_row p-0">
+                                <div class="col-12 col-md-6 col-lg-4 p-2">
+                                    <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400db2/vignette_optim_rangements.jpg)">
+                                        <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
+                                        <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Dressing : comment bien optimiser ses rangements ?</a></h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 p-2 d-none d-md-block">
+                                    <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400e0b/vignette_salle_de_bains_k0kuxw.jpg)">
+                                        <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
+                                        <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Notre top 5 des petites salles de bains ouvertes sur la chambre</a></h5>
+                                    </div>
+                                </div>
+                                <div class="col-4 p-2 d-none d-lg-block">
+                                    <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/326fe2b0118002f1/volets.jpg)">
+                                        <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
+                                        <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Quel matériau pour ses volets ?</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-0">
+        <div class="col-12 col-xl-10 offset-xl-1 py-4 h3 text-center font-weight-bold">
+            Avis clients
+            <img class="img-fluid" src="/images/contents/bazaarvoice.png" />
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="availabilityModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header px-4">
+                <h5 class="modal-title" id="exampleModalLabel">Disponibilité</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body px-4">
+                <div class="row">
+                    <div class="col-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleSelect1">Choisissez votre magasin :</label>
+                                <div class="col-12 text-center">
+                                    <select class="form-control" id="">
+                                        <option>Choisir dans la liste</option>
+                                        {% for shop in data.store.shops %}
+                                        <option>
+                                            {{ shop.adresse.codePostal }} - Lapeyre {{ shop.adresse.ville }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <p class="text-center pt-4">
+                                    <button type="submit" class="btn btn-primary px-5">Valider</button>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="sharingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header px-4">
+                <h5 class="modal-title" id="exampleModalLabel">Partager ce produit</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-2 offset-1">
+                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#facebook"/></svg></a>
+                    </div>
+                    <div class="col-2">
+                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#pinterest"/></svg></a>
+                    </div>
+                    <div class="col-2">
+                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#twitter"/></svg></a>
+                    </div>
+                    <div class="col-2">
+                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#envelope"/></svg></a>
+                    </div>
+                    <div class="col-2">
+                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#instagram"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="https://statics.lapeyre.fr/img/catalogue/zoom1/721/458/201721458.jpg" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.fp__display_thumbnails>div').click(function() {
+        $('.fp__display_thumbnails>div').removeClass('fp__selected');
+        $(this).addClass('fp__selected');
+        $('#fp__main_image>img').attr('src', $(this).find('img').attr('data-image-md-url'));
+        $('#imageModal img').attr('src', $(this).find('img').attr('data-image-hd-url'));
+    });
+
+    $('.fp__color').click(function() {
+        $('.fp__color').removeClass('fp__selected');
+        $('.fp__display_thumbnails>div').removeClass('fp__selected');
+        $(this).addClass('fp__selected');
+        $('#fp__main_image>img').attr('src', $(this).attr('data-image-md-url'));
+        $('#imageModal img').attr('src', $(this).attr('data-image-hd-url'));
+        if (!$('#fp__main_image>img').is(":visible")) $('#imageModal').modal();
+    });
+
+    $("#fp__quantity").keypress(function (e) {
+        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) return false;
+    });
+
+    $("#qtyLeftBtn").click(function() {
+        if (!$("#qtyLeftBtn").hasClass('text-muted')) $("#fp__quantity").val(parseInt($("#fp__quantity").val())-1);
+        if (parseInt($("#fp__quantity").val())<=1) $("#qtyLeftBtn").addClass('text-muted');
+        refresh_packing_qty();
+    });
+
+    $("#qtyRightBtn").click(function() {
+        $("#qtyLeftBtn").removeClass('text-muted');
+        if (!parseInt($("#fp__quantity").val())) $("#fp__quantity").val('0');  
+        $("#fp__quantity").val(parseInt($("#fp__quantity").val())+1);
+        refresh_packing_qty();
+    });
+
+    $("#fp__area").keypress(function (e) {
+        if (e.which != 8 && e.which != 0 && (e.which < 46 || e.which > 57)) return false;
+    });
+
+    $("#fp__area").focusout(function() {
+        refresh_packing(); 
+    });
+
+    $("#fp__area").keypress(function(e){
+        if(e.which == 13) refresh_packing();
+    });
+
+    $("#fp__quantity").focusout(function() {
+        refresh_packing_qty(); 
+    });
+
+    $("#fp__quantity").keypress(function(e){
+        if(e.which == 13) refresh_packing_qty();
+    });
+
+    function refresh_packing() {
+        $("#fp__quantity").val(Math.ceil(parseInt($("#fp__area").val())/$("#fp__area").attr("data-area-value")));
+        $("#fp__area").val(Math.round(parseInt($("#fp__quantity").val())*$("#fp__area").attr("data-area-value")*100)/100);
+    }
+
+    function refresh_packing_qty() {
+        $("#fp__area").val(Math.round(parseInt($("#fp__quantity").val())*$("#fp__area").attr("data-area-value")*100)/100);
+    }
+
+</script>
+
+{% endif %}
 {% endblock %}

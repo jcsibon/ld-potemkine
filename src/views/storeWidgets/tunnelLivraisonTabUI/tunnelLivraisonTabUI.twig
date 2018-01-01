@@ -14,7 +14,7 @@
             {% if data.session.logged == 1  and data.session.addresses|length > 0 %}
             <ul class="row list-unstyled">
                 {% for address in data.session.addresses %}
-                    <li class="col-12 col-md-6 col-xl-4">
+                    <li class="col-12 col-md-6 col-xl-4 d-flex">
                         {% set livraison = 1 %}
                         {% if loop.index0 == 0 %}
                         {% set active = 1 %}
@@ -24,8 +24,8 @@
                         {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
                     </li>
                 {% endfor %}
-                <li class="col-12 col-md-6 col-xl-4">
-                    <div class="card my-3 is-new">
+                <li class="col-12 col-md-6 col-xl-4 d-flex">
+                    <div class="card my-3 col-12 is-new">
                         <div class="card-body">
                             <div class="text-center">
                                 <p class="small">Vous avez besoin d’être facturé à une autre adresse ?</p>
@@ -51,7 +51,7 @@
             {% if data.session.logged == 1 and data.session.addresses|length > 0 %}
                 <ul class="row list-unstyled">
                 {% for address in data.session.addresses %}
-                    <li class="col-12 col-md-6 col-xl-4">
+                    <li class="col-12 col-md-6 col-xl-4 d-flex">
                         {% set livraison = 0 %}
                         {% if loop.index0 == 0 %}
                         {% set active = 1 %}
@@ -61,8 +61,8 @@
                         {% include 'storeWidgets/blocAdresseUI/blocAdresseUI.twig' %}
                     </li>
                 {% endfor %}
-                    <li class="col-12 col-md-6 col-xl-4">
-                        <div class="card my-3 is-new">
+                    <li class="col-12 col-md-6 col-xl-4 d-flex">
+                        <div class="card my-3 col-12 is-new">
                             <div class="card-body">
                                 <div class="text-center">
                                     <p class="small">Vous avez besoin d’être facturé à une autre adresse ?</p>

@@ -30,30 +30,42 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
-$white: #FFF;
+$white: #FFF; 
 $blue: #3970ca;
 $green: #59b957;
 $orange: #fe8105;
 $red: #aa192d;
 $red-secondary: #ea0028;
+$gray-light: #F8F8F8;
+$font-light: #E5DED9;
+
 
 $theme-colors: (
-  primary: $red,
-  secondary: $red-secondary,
-  success: $green,
-  info: $cyan,
-  warning: $yellow,
-  danger: $red,
-  light: $gray-200,
-  dark: $gray-800
+    primary: $red,
+    secondary: $red-secondary,
+    success: $green,
+    info: $cyan,
+    warning: $yellow,
+    danger: $red,
+    light: $gray-light,
+    dark: $gray-800
 );
 
 $link-hover-decoration: none;
 
-$font-family-sans-serif: 'Gotham Book Regular',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@font-face {
+    font-family: 'DinCondensed', sans-serif;
+    src: url('../fonts/DinCond-bold.otf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+$font-family-sans-serif: 'Gotham Book Regular',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Roboto Condensed", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $title-font: 'Roboto', sans-serif;
 $styled-font:'Gotham Book Regular',sans-serif;
 $base-font:'Gotham Book Regular',sans-serif;
+$font-family-1: 'DinCondensed', sans-serif;
+$font-family-2: 'Roboto Condensed', sans-serif;
 
 $border-radius:0;           // .25rem !default;
 $border-radius-lg:0;        // .3rem !default;
@@ -68,17 +80,17 @@ $grid-columns:      12;
 $grid-gutter-width: 30px;
 
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
 );
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1340px 
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1340px 
 )
-// 1140px
+    // 1140px
