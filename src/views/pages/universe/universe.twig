@@ -1,3 +1,4 @@
+
 {% extends"layouts/default.html" %}
 {% block content %}
 
@@ -72,27 +73,7 @@
 			    {{ otherFamilies | raw }}	
 			    {% endif %}	
 
-{#
 
-		    <h2 class="h2 text-center">Explorez directement nos gammes</h2>
-		    <div class="row">
-		       {% for gamme in ['pvc','pin','chene','aluminium'] %}
-
-			<div class="col m3 s6">
-			    <fieldset class="subFamilyContainer" onclick="location.href='/fenetres-CCU0000/fenetres-portes-fenetres-baies-coulissantes-CCN0000/fenetres-portes-fenetres-baies-coulissantes-{{ gamme }}-CCN0000/'">
-			       <legend align="center" class="capitalize"><div><a href="/fenetres-CCU0000/fenetres-portes-fenetres-baies-coulissantes-CCN0000/fenetres-portes-fenetres-baies-coulissantes-{{ gamme }}-CCN0000/">{{ gamme }}</a></div></legend>
-			       <div class="subFamilyImage subFamilyImageTiny">
-				   <div style="background-image:url('/images/windows/{{ gamme }}.png')"></div>
-			       </div>
-			    </fieldset>
-			</div> 
-		       {% endfor %}
-		    </div>
-		    <h2 class="text-center" style="padding-top:20px">Découvrez en quelques questions le produit le plus adapté à votre projet </h2>
-		    <a href="/c/h/configurateur-fenetres">
-		    <img class="responsive-img" src="/images/windows/MEA_sur_mesure.png" style="margin-bottom:10px">
-		    </a>
-#}
 		    {% else %}
 			    {% if subuniverse['Content'] is defined %}
 				    {% for family in subuniverse['Content'] %}

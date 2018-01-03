@@ -15,55 +15,61 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/views',
 ));
 
-/*
+$load_catalog = 1;
 
-$file = array_map("str_getcsv", file("https://docs.google.com/spreadsheets/d/1s10qJviUHayRFRHxSbMGNDKaIg7-gyYAjz6kOPhPm6g/pub?gid=922201227&single=true&output=csv",FILE_SKIP_EMPTY_LINES));
 
-foreach($file[0] as $cell) {
-  $keys[]=preg_replace('/[^A-Za-z0-9\-]/', '', $cell);
-}
+if($load_catalog == 1)
+{
 
-array_shift($file);
+  $file = array_map("str_getcsv", file("https://docs.google.com/spreadsheets/d/1s10qJviUHayRFRHxSbMGNDKaIg7-gyYAjz6kOPhPm6g/pub?gid=922201227&single=true&output=csv",FILE_SKIP_EMPTY_LINES));
 
-foreach ($file as $i=>$row) {
-    foreach($keys as $j=>$key)
-      $newrow[$key] = str_replace("_", "-", $row[$j]);
-
-  switch (substr($newrow['ParentID'],0,3)) {
-      case "CCR":
-          $CCU[$newrow['ID']]=$newrow;
-      break;
-      case "CCU":
-          $SCU[$newrow['ID']]=$newrow;
-      break;
-      case "SCU":
-          $CCN[$newrow['ID']]=$newrow;
-      break;
-      case "CCN":
-          $SCN[$newrow['ID']]=$newrow;
-      break;    
+  foreach($file[0] as $cell) {
+    $keys[]=preg_replace('/[^A-Za-z0-9\-]/', '', $cell);
   }
+
+  array_shift($file);
+
+  foreach ($file as $i=>$row) {
+      foreach($keys as $j=>$key)
+        $newrow[$key] = str_replace("_", "-", $row[$j]);
+
+    switch (substr($newrow['ParentID'],0,3)) {
+        case "CCR":
+            $CCU[$newrow['ID']]=$newrow;
+        break;
+        case "CCU":
+            $SCU[$newrow['ID']]=$newrow;
+        break;
+        case "SCU":
+            $CCN[$newrow['ID']]=$newrow;
+        break;
+        case "CCN":
+            $SCN[$newrow['ID']]=$newrow;
+        break;    
+    }
+  }
+
+  foreach ($SCN as $row)
+    $CCN[$row['ParentID']]["Content"][$row['ID']]=$row;
+
+  foreach ($CCN as $row)
+    $SCU[$row['ParentID']]["Content"][$row['ID']]=$row;
+
+  foreach ($SCU as $row)
+    $CCU[$row['ParentID']]["Content"][$row['ID']]=$row;
+
+  $catalog=$CCU;
+
+  $app['twig']->addGlobal('catalog', $catalog);
+
+  $app->get('/catalog', function() use($app, $catalog) {
+    echo '<pre>' . var_export($catalog, true) . '</pre>';
+    die();
+    return true;
+  });
 }
 
-foreach ($SCN as $row)
-  $CCN[$row['ParentID']]["Content"][$row['ID']]=$row;
 
-foreach ($CCN as $row)
-  $SCU[$row['ParentID']]["Content"][$row['ID']]=$row;
-
-foreach ($SCU as $row)
-  $CCU[$row['ParentID']]["Content"][$row['ID']]=$row;
-
-$catalog=$CCU;
-
-$app['twig']->addGlobal('catalog', $catalog);
-
-$app->get('/catalog', function() use($app, $catalog) {
-  echo '<pre>' . var_export($catalog, true) . '</pre>';
-  die();
-  return true;
-});
-*/
 
 $app['twig']->addGlobal("uri", strtok(trim($_SERVER["REQUEST_URI"],"/"),'?'));
 
@@ -161,18 +167,28 @@ $app->get('/', function() use($app) {
 
 $app->get('/{urlname}-{code}/', function($code) use($app) {
   if(file_exists('views/contents/'.$code.".twig"))
+  {
     $template = $code;
+    return $app['twig']->render("contents/".$template.".twig",array("template"=>$template));   
+  }
   else
+  {
     $template = "";
-  return $app['twig']->render('pages/universe/universe.twig',array("template"=>$template));
+    return $app['twig']->render('pages/universe/universe.twig',array("template"=>$template));
+  }
 })->assert('urlname', '[a-z\-]+')->assert('code', 'CCU[0-9\-]+');
 
-$app->get('/{urlname}-{code}/', function($code) use($app) {
+$app->get('/{urlname}-{code}/', function($urlname, $code) use($app) {
   if(file_exists('views/contents/'.$code.".twig"))
+  {
     $template = $code;
+    return $app['twig']->render("contents/".$template.".twig",array("code"=>$code, "urlname"=>$urlname));   
+  }
   else
+  {
     $template = "";
-  return $app['twig']->render('pages/family/family.twig',array("template"=>$template));
+    return $app['twig']->render('pages/family/family.twig',array("template"=>$template, "urlname"=>$urlname));
+  }
 })->assert('urlname', '[a-z\-]+')->assert('code', 'CCN[0-9\-]+');
 
 $app->get('/{urlname}-{code}/', function($code) use($app) {

@@ -1,0 +1,28 @@
+{% extends"layouts/default.html" %}
+{% block content %}
+  
+
+<div class="container">
+	<img src="/images/pages/{{ code }}/{{ code }}-00.png" class="img-fluid d-block mx-auto">
+	{# <img src="/images/headers/{{ code }}.png" class="img-fluid d-block mx-auto"> #}
+	{% for gamme in ['Abbattants','Chassis','Fenetres','Porte-fenetres'] %}
+		<div class="row mx-3 my-5">
+			<div class="col-3 pl-5">
+				<h2 class="h3">{{ gamme }}</h2>
+				<img src="/images/windows/avis.png" class="img-fluid">
+				<br>
+				<img src="/images/windows/{{ gamme | lower }}-{{ urlname }}.jpg" class="img-fluid">
+				<p class="strong small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales, turpis id suscipit hendrerit, lectus metus sodales elit, sed molestie leo sapien non ligula.</p>
+
+			</div>
+			<div class="col-9 pr-5">
+				<img src="/images/windows/table.png" class="mx-auto d-block">
+				<br>
+				<img src="/images/windows/sur-mesure.png" class="mx-auto d-block">
+			</div>
+		</div>
+		<hr>	
+	{% endfor %}
+</div>
+
+{% endblock %}
