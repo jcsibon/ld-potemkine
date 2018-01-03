@@ -2,11 +2,67 @@
 {% block content %}
   
 
+
+
+<div class="bg-light">
+     <header class="p-5" style="background-image: url('/images/headers/{{ code }}.png')">
+        <br>
+        <h1 class="m-2 text-center text-white" style="text-shadow: 1px 1px 2px #000000;">Fenêtres, portes-fenêtres et baies coulissantes {{ urlname | upper }}</h1>
+        <p class="m-2 text-center text-white" style="text-shadow: 1px 1px 2px #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Fusce sodales, turpis id suscipit hendrerit, lectus metus sodales elit, sed molestie leo sapien non ligula.</p>
+        <br>
+        <br>
+        <br>
+  </header>
+<div class="container" style="margin-top: -50px">
+  <div class="row mx-5 px-5">
+    {% for gamme in ['Abbattants','Chassis','Fenetres','Porte-fenetres','Baies coulissantes'] %}
+    <div class="col mx-4">
+      <a href="#{{ gamme | lower | replace({' ': '-'}) }}">
+        <img src="/images/windows/{{ gamme | lower | replace({' ': '-'}) }}-{{ urlname }}.png" class="img-fluid bg-white rounded-circle border border">
+        <p class="my-2 text-center small text-dark"><strong>{{ gamme }}</strong></p>
+      </a>
+    </div>
+{% endfor %}
+</div>
+  <div class="container py-5">
+    <div class="row mx-5">
+      <div class="col-4 pl-5">
+              <img class="img-fluid" src="/images/windows/colonne-pvc.png">
+      </div>
+      <div class="col-8 pr-5">
+          {#
+          <div class="grid">
+              <div class="col-12 d-flex flex-row align-items-stretch home__mag_row p-0">
+                  <div class="col-12 col-md-6 col-lg-6 p-2">
+                      <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400604/vignette_verriere_zue4dm.jpg)">
+                          <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
+                          <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Comment prendre mes mesures ?</a></h5>
+                      </div>
+                  </div>
+                  <div class="col-6 col-lg-6 p-2 d-none d-md-block">
+                      <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400d4a/vignette_e-publiredac_amenagt_meuble_cuisine_z1vtxh.jpg)">
+                          <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
+                          <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Tout savoir sur les crédits d'impôts ?</a></h5>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          #}
+          <div class="p-2">
+            <img class="img-fluid" src="/images/windows/articles.png">
+          </div>
+          <div class="p-2">
+            <img class="img-fluid" src="/images/windows/sur-mesure-header.png">
+          </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
 <div class="container">
-  <img src="/images/pages/{{ code }}/{{ code }}-00.png" class=" d-block mx-auto">
-  {# <img src="/images/headers/{{ code }}.png" class="img-fluid d-block mx-auto"> #}
   {% for gamme in ['Abbattants','Chassis','Fenetres','Porte-fenetres','Baies coulissantes'] %}
-    <div class="row mx-3 my-5">
+    <div id="{{ gamme | lower | replace({' ': '-'}) }}" class="row mx-3 my-5">
       <div class="col-3 pl-5">
         <h2 class="h3">{{ gamme }}</h2>
         <img src="/images/windows/avis.png" class="img-fluid">
