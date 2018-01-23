@@ -169,12 +169,12 @@ $app->get('/{urlname}-{code}/', function($code) use($app) {
   if(file_exists('views/contents/'.$code.".twig"))
   {
     $template = $code;
-    return $app['twig']->render("contents/".$template.".twig",array("template"=>$template));   
+    return $app['twig']->render("contents/".$template.".twig",array("code"=>$code, "template"=>$template));   
   }
   else
   {
     $template = "";
-    return $app['twig']->render('pages/universe/universe.twig',array("template"=>$template));
+    return $app['twig']->render('pages/universe/universe.twig',array("code"=>$code, "template"=>$template));
   }
 })->assert('urlname', '[a-z\-]+')->assert('code', 'CCU[0-9\-]+');
 
