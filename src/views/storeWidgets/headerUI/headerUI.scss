@@ -61,7 +61,11 @@
         right: inherit
     }
     .header__search-suggest {
-        max-width: 85%;
+        max-width: 100%;
+    }
+    .header__search-suggest a {
+        color: $dark;
+        font-size: 12px;
     }
     .header__rollover-shop {
         width: 300px;
@@ -167,3 +171,16 @@
         transition-timing-function: ease-out;
     }
     /* Responsive Menu End */ 
+
+   @media screen and (max-width: 1200px) { 
+       .header__search-suggest {
+           background: $gray-light;
+           border: none;
+       }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        #searchBox {
+            border: none !important;
+        }
+    }
