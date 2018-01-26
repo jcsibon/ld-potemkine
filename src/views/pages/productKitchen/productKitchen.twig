@@ -1,0 +1,26 @@
+{% extends"layouts/default.html" %}
+{% block content %}
+
+<img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" class="img-fluid">
+
+<div class="container">
+    <p>{{ content.line }}</p>
+
+    <p>{{ content.title }}</p>
+    <p>{{ content.description }}</p>
+    <p>{{ content.longDescription }}</p>
+    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg1 }}" class="img-fluid">
+    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg2 }}" class="img-fluid">
+    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg3 }}" class="img-fluid">
+    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg4 }}" class="img-fluid">
+    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg5 }}" class="img-fluid">
+    <p>{{ content.longDescription2 }}</p>
+    <p>{{ content.testimonial }}</p>
+
+    <img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload/c_fill,h_864,w_801/v1516025993/201620767_tgxozc.jpg">
+    Les cuisines Lapeyre proviennent de son usine située au cœur du Massif Central, où la robustesse des meubles et la qualité des matériaux sont testés.
+
+    <img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload/c_fill,g_east,h_934,w_1145/v1516024943/201721160.jpg">
+    <img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload/c_limit,h_1184,w_1359/v1516022887/_MGL6765.jpg">
+</div>
+{% endblock %}

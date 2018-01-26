@@ -192,11 +192,31 @@ $app->get('/{urlname}-{code}/', function($urlname, $code) use($app) {
 })->assert('urlname', '[a-z\-]+')->assert('code', 'CCN[0-9\-]+');
 
 $app->get('/{urlname}-{code}/', function($code) use($app) {
+  // die("FPC");
+
+  if(file_exists('data/'.$code.".json"))
+  {
+    $content = json_decode(file_get_contents("data/".$code.".json"),1);
+  }
+
   if(file_exists('views/contents/'.$code.".twig"))
+  {
     $template = $code;
+    return $app['twig']->render("contents/".$template.".twig",array("content"=>$content,"code"=>$code, "urlname"=>$urlname));   
+  }
   else
+  {
+
+    if(isset($content["template"]))
+    {
+      return $app['twig']->render("pages/".$content["template"]."/".$content["template"].".twig",array("content"=>$content,"code"=>$code, "urlname"=>$urlname));   
+    }
+    else
+    {
     $template = "";
-  return $app['twig']->render('pages/product/product.twig',array("template"=>$template));
+    return $app['twig']->render('pages/product/product.twig',array("content"=>$content,"template"=>$template));      
+    }
+  }
 })->assert('urlname', '[a-z\-]+')->assert('code', 'FPC[0-9\-]+');
 
 $app->get('/{urlname}-{code}/', function($code) use($app) {
