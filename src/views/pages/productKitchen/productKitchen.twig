@@ -17,6 +17,16 @@
         font-family: DinCondensed,sans-serif;
         line-height: 1em;
     }
+    .kitchen__tiny-block {
+        height: 200px;
+    }
+
+    .kitchen__tiny_title {
+        font-family: DinCondensed,sans-serif;
+        color: #9e887a;
+        line-height: 1.1em;
+        font-size: 25px;
+    }
 </style>
 
 <div>
@@ -72,7 +82,7 @@
 </div>
 <div class="bg-light pt-5 pb-5">
     <div class="container">
-        <div class="row py-5">
+        <div class="row pt-5 pb-3">
             <div class="col-7 offset-1">
                 <p class="text-uppercase display-3 kitchen__title">{{ content.title }}</p>
             </div>
@@ -82,10 +92,10 @@
                     <img src="/images/picto_made_in_france.png" width="80" class="px-2 py-3" />
                     <img src="/images/picto_made_by_lapeyre.png" width="80" class="px-2 py-3" />
                 </div>
-                <p>{{ content.description }}</p>
+                <p class="px-5">{{ content.description }}</p>
             </div>
         </div>
-        <div class="row py-2">
+        <div class="row">
             <div class="col-2 d-flex">
                 <div class="position-absolute fixed-bottom px-3">
                     <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg1 }}" class="img-fluid"/>
@@ -99,7 +109,7 @@
             <div class="col-6 pt-5">
                 <p class="text-uppercase display-3 kitchen__title text-right">{{ content.title }}</p>
                 <div class="bg-white p-5">
-                    {{ content.longDescription }}
+                    <p class="px-5">{{ content.longDescription }}</p>
                 </div>
             </div>
             <div class="col-3 offset-1 pt-4">
@@ -110,6 +120,27 @@
             </div>
             <div class="col-3 pt-4">
                 <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg1 }}" class="img-fluid" />
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-6 pt-5 offset-1 p-0">
+                <p class="text-uppercase display-3 kitchen__title col-6">S'adapte à vos envies</p>
+                <div class="bg-white p-5">
+                    <p class="px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                </div>
+                <div class="row kitchen__tiny-block mx-0 px-0">
+                    <div class="col-4 col-md-4 p-4 bg-dark offset-8">
+                        <p class="text-uppercase kitchen__tiny_title pt-3">
+                            Choisissez <span class="text-white d-block">vos finitions!</span>
+                        </p>
+                        <p>
+                            <a class="text-light" href="#">&gt; Voir les 157 finitions</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 pl-0 pt-5">
+                <img src="/images/kitchen_colors.png" class="img-fluid"/>
             </div>
         </div>
     </div>
