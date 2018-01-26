@@ -15,9 +15,10 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/views',
 ));
 
-/*
+
 
 $file = array_map("str_getcsv", file("https://docs.google.com/spreadsheets/d/1s10qJviUHayRFRHxSbMGNDKaIg7-gyYAjz6kOPhPm6g/pub?gid=922201227&single=true&output=csv",FILE_SKIP_EMPTY_LINES));
+
 
 foreach($file[0] as $cell) {
   $keys[]=preg_replace('/[^A-Za-z0-9\-]/', '', $cell);
@@ -26,8 +27,9 @@ foreach($file[0] as $cell) {
 array_shift($file);
 
 foreach ($file as $i=>$row) {
-    foreach($keys as $j=>$key)
-      $newrow[$key] = str_replace("_", "-", $row[$j]);
+    foreach($keys as $j=>$key) {
+        $newrow[$key] = str_replace("_", "-", @$row[$j]);
+    }
 
   switch (substr($newrow['ParentID'],0,3)) {
       case "CCR":
@@ -41,18 +43,18 @@ foreach ($file as $i=>$row) {
       break;
       case "CCN":
           $SCN[$newrow['ID']]=$newrow;
-      break;    
+      break;
   }
 }
 
 foreach ($SCN as $row)
-  $CCN[$row['ParentID']]["Content"][$row['ID']]=$row;
+  $CCN[@$row['ParentID']]["Content"][@$row['ID']]=$row;
 
 foreach ($CCN as $row)
-  $SCU[$row['ParentID']]["Content"][$row['ID']]=$row;
+  $SCU[@$row['ParentID']]["Content"][@$row['ID']]=$row;
 
 foreach ($SCU as $row)
-  $CCU[$row['ParentID']]["Content"][$row['ID']]=$row;
+  $CCU[@$row['ParentID']]["Content"][@$row['ID']]=$row;
 
 $catalog=$CCU;
 
@@ -63,7 +65,7 @@ $app->get('/catalog', function() use($app, $catalog) {
   die();
   return true;
 });
-*/
+
 
 $app['twig']->addGlobal("uri", strtok(trim($_SERVER["REQUEST_URI"],"/"),'?'));
 
