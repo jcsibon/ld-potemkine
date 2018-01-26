@@ -1,0 +1,22 @@
+{% extends"layouts/default.html" %}
+{% block content %}
+
+<div class="container">
+	<p>{{ content.id }}</p>
+	<p>{{ content.shortName }}</p>
+	<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}">
+	<p>{{ content.description }}</p>
+	<p>{{ content.text1 }}</p>
+	<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.img }}">
+	<p>{{ content.text2 }}</p>
+	<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.img2 }}">
+
+	<p>Matière de choix</p>
+	<p>Pièce maitresse de la cuisine, le plan de travail est l’élément le plus exposé. On y découpe,  prépare, on y pose des plats chauds. Au-delà de son aspect esthétique, sa résistance doit convenir à vos habitudes de cuisine. Tandis que certains matériaux seront plus ou moins résistants aux rayures, d’autres seront plus sensibles à la chaleur ou à l’acidité de certains produits. </p>
+	<p>Entretien</p>
+	<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload/c_fill,g_center,h_998,w_1525/v1516700699/201823646.jpg">
+	<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload/c_fill,g_center,h_720,w_887/v1516695883/12072016-5300_5.jpg">
+
+	<p>Recoupe et ajustement au millimètre par nos menuisiers</p>
+</div>
+{% endblock %}
