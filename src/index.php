@@ -147,100 +147,73 @@ $app->get('/session', function() use($app) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 $app->get('/', function() use($app) {
-  $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('pages/index/index.twig');
 });
 
-$app->get('/{urlname}-{code}/', function($code) use($app) {
-  if(file_exists('views/contents/'.$code.".twig"))
-  {
-    $template = $code;
-    return $app['twig']->render("contents/".$template.".twig",array("code"=>$code, "template"=>$template));   
-  }
-  else
-  {
-    $template = "";
-    return $app['twig']->render('pages/universe/universe.twig',array("code"=>$code, "template"=>$template));
-  }
-})->assert('urlname', '[a-z\-]+')->assert('code', 'CCU[0-9\-]+');
-
-$app->get('/{urlname}-{code}/', function($urlname, $code) use($app) {
-  if(file_exists('views/contents/'.$code.".twig"))
-  {
-    $template = $code;
-    return $app['twig']->render("contents/".$template.".twig",array("code"=>$code, "urlname"=>$urlname));   
-  }
-  else
-  {
-    $template = "";
-    return $app['twig']->render('pages/family/family.twig',array("template"=>$template, "urlname"=>$urlname));
-  }
-})->assert('urlname', '[a-z\-]+')->assert('code', 'CCN[0-9\-]+');
+/* CATALOGUE */
 
 $app->get('/{urlname}-{code}/', function($code) use($app) {
   // die("FPC");
-
-  if(file_exists('data/'.$code.".json"))
+  $content = array();
+  if(file_exists('data/radar/'.$code.".json"))
   {
-    $content = json_decode(file_get_contents("data/".$code.".json"),1);
+    $content = json_decode(file_get_contents("data/radar/".$code.".json"),1);
+  }
+  if(file_exists('data/layer/'.$code.".json"))
+  {
+    foreach(json_decode(file_get_contents("data/layer/".$code.".json"),1) as $key=>$field)
+      $content[$key]=$field;
   }
 
   if(file_exists('views/contents/'.$code.".twig"))
   {
-    $template = $code;
-    return $app['twig']->render("contents/".$template.".twig",array("content"=>$content,"code"=>$code, "urlname"=>$urlname));   
+    return $app['twig']->render("contents/".$code.".twig",array("content"=>$content));
   }
   else
   {
-
     if(isset($content["template"]))
     {
-      return $app['twig']->render("pages/".$content["template"]."/".$content["template"].".twig",array("content"=>$content,"code"=>$code, "urlname"=>$urlname));   
+      return $app['twig']->render("pages/".$content["template"]."/".$content["template"].".twig",array("content"=>$content));
     }
     else
     {
     $template = "";
-    return $app['twig']->render('pages/product/product.twig',array("content"=>$content,"template"=>$template));      
+      switch (substr($code, 0, 3)) {
+        case "CCU":
+          return $app['twig']->render('pages/universe/universe.twig',array("content"=>$content));
+        break;
+        case "CCN":
+          return $app['twig']->render('pages/family/family.twig',array("content"=>$content));
+        break;
+        case "FPC":
+          return $app['twig']->render('pages/product/product.twig',array("content"=>$content));
+        break;
+        default:
+          return $app['twig']->render('pages/article/article.twig',array("template"=>$template));      
+      }
     }
   }
-})->assert('urlname', '[a-z\-]+')->assert('code', 'FPC[0-9\-]+');
-
-$app->get('/{urlname}-{code}/', function($code) use($app) {
-  if(file_exists('views/contents/'.$code.".twig"))
-    $template = $code;
-  else
-    $template = "";
-  return $app['twig']->render('pages/article/article.twig',array("template"=>$template));
-})->assert('urlname', '[a-z\-]+')->assert('code', '[0-9\-]+');
+})->assert('urlname', '[a-z\-]+')->assert('code', '(CCU|SCU|CCN|FPC)[0-9\-]+');
 
 $app->get('/SearchDisplay', function() use($app) {
   return $app['twig']->render('pages/SearchDisplay/SearchDisplay.twig');
 });
 
-$app->get('/TunnelShopCartView', function() use($app) {
-  return $app['twig']->render('pages/TunnelShopCartView/TunnelShopCartView.twig');
+/* COMPTE */
+
+$app->get('/UserRegistrationForm', function() use($app) {
+  return $app['twig']->render('pages/UserRegistrationForm/UserRegistrationForm.twig');
 });
 
 $app->get('/LogonForm', function() use($app) {
   return $app['twig']->render('pages/LogonForm/LogonForm.twig');
 });
 
-$app->get('/UserRegistrationForm', function() use($app) {
-  return $app['twig']->render('pages/UserRegistrationForm/UserRegistrationForm.twig');
+/* TUNNEL */
+
+$app->get('/TunnelShopCartView', function() use($app) {
+  return $app['twig']->render('pages/TunnelShopCartView/TunnelShopCartView.twig');
 });
 
 $app->get('/TunnelCommandShippingView', function() use($app) {
