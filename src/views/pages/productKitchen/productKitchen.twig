@@ -11,10 +11,16 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
         bottom: 0;
     }
+
+    .kitchen__title {
+        color: #e5ded9;
+        font-family: DinCondensed,sans-serif;
+        line-height: 1em;
+    }
 </style>
 
 <div>
-    <div id="carouselKitchen" class="carousel slide m-auto pb-5 overflow-hidden" data-ride="carousel" >
+    <div id="carouselKitchen" class="carousel slide m-auto overflow-hidden" data-ride="carousel" >
         <ol class="carousel-indicators">
             <li data-target="#carouselKitchen" data-slide-to="0" class="mx-2 active"></li>
             <li data-target="#carouselKitchen" data-slide-to="1" class="mx-2"></li>
@@ -69,13 +75,65 @@
         </a>
     </div>
 </div>
-
-<div class="container">
-    <div class="col-12">
-        Content bottom
+<div class="bg-light pt-5 pb-5">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-7 offset-1">
+                <p class="text-uppercase display-3 kitchen__title">{{ content.title }}</p>
+            </div>
+            <div class="col-10 offset-1 bg-white p-5">
+                <div class="position-absolute bg-white col-3 text-center" style="top:-90px; right:0;">
+                    <img src="/images/picto_pefc.png" width="80" class="px-2 py-3" />
+                    <img src="/images/picto_made_in_france.png" width="80" class="px-2 py-3" />
+                    <img src="/images/picto_made_by_lapeyre.png" width="80" class="px-2 py-3" />
+                </div>
+                <p>{{ content.description }}</p>
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-2 d-flex">
+                <div class="position-absolute fixed-bottom px-3">
+                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg1 }}" class="img-fluid"/>
+                </div>
+            </div>
+            <div class="col-3 d-flex">
+                <div class="position-absolute fixed-bottom px-3">
+                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg1 }}" class="img-fluid"/>
+                </div>
+            </div>
+            <div class="col-6 pt-5">
+                <p class="text-uppercase display-3 kitchen__title text-right">{{ content.title }}</p>
+                <div class="bg-white p-5">
+                    {{ content.longDescription }}
+                </div>
+            </div>
+            <div class="col-3 offset-1 pt-4">
+                <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg1 }}" class="img-fluid"/>
+            </div>
+            <div class="col-3 pt-4">
+                <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg1 }}" class="img-fluid" />
+            </div>
+            <div class="col-3 pt-4">
+                <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg1 }}" class="img-fluid" />
+            </div>
+        </div>
     </div>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <div class="container">
     <p>{{ content.line }}</p>
 
