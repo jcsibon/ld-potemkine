@@ -538,6 +538,10 @@
 
 
 
+
+
+
+
 /*
 .tunnelConfirmation__container{
     padding: 0 20px;
@@ -715,6 +719,185 @@ p{
         text-align: center;
     }
 }
+.universe__row_header {
+    min-height: 300px;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.universe__row_header p.h2, .universe__row_header p.h6 {
+    text-shadow: 2px 2px 7px #000;
+}
+.universe__subFamilyContainer {
+    border: 10px solid #f1f1f1;
+}
+.universe__articleContainer {
+    border: 10px solid #fff;
+    line-height: 1em;
+}
+.universe__subFamilyImage {
+    height: 210px;
+    overflow: hidden;
+}
+.universe__subFamilyImage div {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+.universe__subFamilyContainer legend p, .universe__articleContainer p {
+    line-height: 1.1em;
+    align-items: center;
+    height: 46px;
+    justify-content: center;
+    width: 100%;
+}
+.universe__articleContainer p {
+    height: 14px;
+}
+.universe__subFamilyContainer legend, .universe__articleContainer legend {
+    width: 80%;
+    height: 56px;
+    max-width: 300px;
+    font-size: inherit;
+}
+
+.universe__articleContainer legend {
+    height: 20px;
+    width: 60%;
+}
+
+.universe__subFamilyContainerOther legend {
+    width: 50%;
+    max-width: 200px;
+}
+
+.universe__subFamilyContainerOtherImage {
+    height: 45px;
+    background-position: center center !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.universe__articleContainerImage {
+    height: 30px;
+    background-position: center center !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    cursor: pointer;
+}
+
+.universe__articleServices .universe__articleContainerImage {
+    height: 66px;
+    background-size: 70%;
+}
+
+.universe__subFamilyContainerOther {
+    line-height: 1em;
+}
+.universe__anchor {
+    bottom: -25px;
+}
+.universe__anchor div {
+    cursor: pointer;
+}
+
+.universe__family {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FFFFFF),
+        color-stop(0.75, #FAFAFA)
+    );
+    background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #FAFAFA 75%);
+    background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #FAFAFA 75%);
+    background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #FAFAFA 75%);
+    background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #FAFAFA 75%);
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #FAFAFA 75%);
+}
+
+.universe__subFamilyContainer:hover > .universe__subFamilyImage div {
+    transform: scale(1.1);
+    transition: all 1.5s;
+}
+
+.universe__family a[aria-expanded=true] p:nth-of-type(1) {
+    display: none;
+}
+.universe__family a[aria-expanded=false] p:nth-of-type(2) {
+    display: none;
+}
+
+/* Widget Pinterest Debut */
+
+#widgetPinterest {
+    padding: 0;
+    text-align: center;
+}
+
+#widgetPinterest > span[class*="_board"] {
+    padding: 5px;
+}
+
+#widgetPinterest span {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#widgetPinterest > span {
+    box-shadow: 0 0 10px #e2e2e2;
+    border-radius: 2px;
+}
+
+#widgetPinterest span span:nth-of-type(2) span[class*="_img"] {
+    padding-bottom: 100% !important;
+    background-position: center center;
+    background-size: inherit;
+}
+
+#widgetPinterest span[class*="_img"] {
+    box-shadow: none;
+}
+
+#widgetPinterest>span:nth-of-type(1) {
+    min-width: 210px;
+    width: 100% !important;
+}
+
+#widgetPinterest span[class*="_bd"] {
+    height: inherit !important;
+    padding-bottom: 6px;
+}
+
+#widgetPinterest span[class*="_img"]:nth-child(n+3), #widgetPinterest span[class*="_ft"], #widgetPinterest span[class*="_pinner"]{
+    display:none;
+}
+
+#widgetPinterest span span span[class*="_board"] {
+    height: 24px;
+    color: #666;
+    width: 70%;
+}
+
+@media screen and (max-width: 1200px) {
+    #widgetPinterest span[class*="_img"]:nth-child(n+2) {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .universe__family div[id*="collapse"] {
+        display: block;
+    }
+}
+
+/* Widget Pinterest Fin */
 
 
 .calendar__container {
@@ -775,92 +958,6 @@ p{
 .slick-next {
     top: 12%;
 }
-/* Début v2.0.20 */
-#tableShopInfo{
-td{
-    padding:5px;
-}
-}
-
-table{
-    width: 100%;
-}  
-@media only screen and (max-width: 992px) {
-  table.responsive-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    display: block;
-    position: relative;
-    /* sort out borders */
-  }
-  table.responsive-table td:empty:before {
-    content: '\00a0';
-  }
-  table.responsive-table th,
-  table.responsive-table td {
-    margin: 0;
-    vertical-align: top;
-  }
-  table.responsive-table th {
-    text-align: left;
-  }
-  table.responsive-table thead {
-    display: block;
-    float: left;
-  }
-  table.responsive-table thead tr {
-    display: block;
-    padding: 0 10px 0 0;
-  }
-  table.responsive-table thead tr th::before {
-    content: "\00a0";
-  }
-  table.responsive-table tbody {
-    display: block;
-    width: auto;
-    position: relative;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  table.responsive-table tbody tr {
-    display: inline-block;
-    vertical-align: top;
-  }
-  table.responsive-table th {
-    display: block;
-    text-align: right;
-  }
-  table.responsive-table td {
-    display: block;
-    min-height: 1.25em;
-    text-align: left;
-  }
-  table.responsive-table tr {
-    padding: 0 10px;
-  }
-  table.responsive-table thead {
-    border: 0;
-    border-right: 1px solid #d0d0d0;
-  }
-  table.responsive-table.bordered th {
-    border-bottom: 0;
-    border-left: 0;
-  }
-  table.responsive-table.bordered td {
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
-  }
-  table.responsive-table.bordered tr {
-    border: 0;
-  }
-  table.responsive-table.bordered tbody tr {
-    border-right: 1px solid #d0d0d0;
-  }
-}
-/* Fin v2.0.20 */
-/* Début v2.0.20-CHB */
     header .dropdown:hover>.dropdown-menu {
         display: block;
     }
@@ -1047,6 +1144,91 @@ table{
             border: none !important;
         }
     }
+
+#tableShopInfo{
+td{
+    padding:5px;
+}
+}
+
+table{
+    width: 100%;
+}  
+@media only screen and (max-width: 992px) {
+  table.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    position: relative;
+    /* sort out borders */
+  }
+  table.responsive-table td:empty:before {
+    content: '\00a0';
+  }
+  table.responsive-table th,
+  table.responsive-table td {
+    margin: 0;
+    vertical-align: top;
+  }
+  table.responsive-table th {
+    text-align: left;
+  }
+  table.responsive-table thead {
+    display: block;
+    float: left;
+  }
+  table.responsive-table thead tr {
+    display: block;
+    padding: 0 10px 0 0;
+  }
+  table.responsive-table thead tr th::before {
+    content: "\00a0";
+  }
+  table.responsive-table tbody {
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table.responsive-table tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  table.responsive-table th {
+    display: block;
+    text-align: right;
+  }
+  table.responsive-table td {
+    display: block;
+    min-height: 1.25em;
+    text-align: left;
+  }
+  table.responsive-table tr {
+    padding: 0 10px;
+  }
+  table.responsive-table thead {
+    border: 0;
+    border-right: 1px solid #d0d0d0;
+  }
+  table.responsive-table.bordered th {
+    border-bottom: 0;
+    border-left: 0;
+  }
+  table.responsive-table.bordered td {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  table.responsive-table.bordered tr {
+    border: 0;
+  }
+  table.responsive-table.bordered tbody tr {
+    border-right: 1px solid #d0d0d0;
+  }
+}
+
 
 .tunnelLivraisonTab__container{
 	background-color: $gray-100;

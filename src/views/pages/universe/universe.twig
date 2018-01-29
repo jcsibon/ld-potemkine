@@ -1,119 +1,236 @@
 {% extends"layouts/default.html" %}
-
 {% block content %}
 
-	{% if 1 == 0 %}
-	    <!-- BEGIN CMS home-universes -->
-	    {{ api.getByUID('block', 'home-universes').getStructuredText("block.content").asText() | raw }}
-	    <!-- END CMS home-universes -->
-	{% else %}
-	<header class="p-5" style="background: url('/images/headers/{{ global.request.get('code') }}.jpg') no-repeat; -webkit-background-size: 100%; background-size: 100%;">
-		<br>
-		<h1 class="m-2 text-center text-white" style="text-shadow: 1px 1px 2px #000000;">{{ catalog[global.request.get('code')]['Name'] }}</h1>
-		<p class="m-2 text-center text-white" style="text-shadow: 1px 1px 2px #000000;">{{ catalog[global.request.get('code')]['Descriptifgnral'] }}</p>
-		<br>
-		<br>
-		<br>
-	</header>
-	<div class="container" style="margin-top: -70px">
-		<div class="row mx-5 px-5 text-center">
-			{% for subuniverse in catalog[global.request.get('code')]['Content'] %}
-			&nbsp;
-			<a class="btn btn-primary" href="#{{ subuniverse['ID'] }}">
-				{{ subuniverse['Name'] }}
-			</a>
-			&nbsp;
-			{% endfor %}
-		</div>
-	</div>
-	<img class="img-fluid" src="/images/contents/{{ global.request.get('code') }}.jpg" />
+<div class="container">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-12 universe__row_header" style="background-image:url('/images/headers/{{ global.request.get('code') }}.jpg')">
+                <p class="h2 text-center text-white mt-5 pt-5 display-4">
+                    <strong>
+                        {{ catalog[global.request.get('code')]['Name'] }}
+                    </strong>
+                </p>
+                <p class="h6 text-center text-white mt-4 px-xl-5 mx-xl-5 d-none d-sm-block">
+                    {{ catalog[global.request.get('code')]['Descriptifgnral'] }}
+                </p>
+                <div class="col-12 d-flex position-absolute universe__anchor">
+                    <div class="d-flex m-auto">
+                        {% for subuniverse in catalog[global.request.get('code')]['Content'] %}
+                        <a href="#{{ subuniverse['ID'] }}">
+                            <div class="d-xl-flex d-none text-white py-3 px-2 mr-1 small bg-primary">{{ subuniverse['Name'] }} <span class="ml-2">&#8595;</span></div>
+                        </a>
+                        {% endfor %}
+                        <a href="#subuniverse">
+                            <div class="d-flex d-xl-none text-white py-3 px-2 mr-1 small bg-primary" >Voir les produits <span class="ml-2">&#8595;</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-light">
     <div class="container">
-		{% for subuniverse in catalog[global.request.get('code')]['Content'] %}
-		<div class="row"  id="{{ subuniverse['ID'] }}">
-			<div class="col-12 col-sm-4">
-				<div class="col l12 m8 s12">
-					<h2 class="h2 hide-on-small-only">{{ subuniverse['Name'] }}</h2>
-					<h2 class="h2 subUniverseMobTitle subUniverseMobDisable hide-on-med-and-up">{{ subuniverse['Name'] }}</h2>
-					<p class="hide-on-small-only">{{ subuniverse['Descriptifgnral'] }}</p>
-				</div>
-				<div class="col l12 m4 hide-on-small-only"> 
-					{% if subuniverse['Content'] is defined %}
-					{# {% if subuniverse['Content']|length > 3 %} #}
-					<div id="widgetPinterest" class="col l12 m4 hide-on-small-only">
-						<a data-pin-do="embedBoard" data-pin-lang="fr" data-pin-board-width="230" data-pin-scale-height="150" data-pin-scale-width="100" href="{{ subuniverse['Pinterest'] }}"></a>
-					</div>                
-					{# {% endif %} #}
-					{% endif %}
-				</div>
-			</div>
-			<div class="col-12 col-sm-8">
-				{% if subuniverse['ID'] == 'SCU687471XXX' %}
-				<div class="col l6 m6 s12" id="SCU687471">
-					<fieldset class="subFamilyContainer">
-						<legend align="center"><div>Découvrez nos matériaux</div></legend>
-						<div class="col s3"><a href="/fenetres-CCU0003/accessoires-SCU687471/pvc-CCN688463"><img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/v8/univers/images/windows/sample_pvc.jpg" /></a><p><a href="/fenetres-CCU0003/fenetres-porte-fenetres-baies-coulissantes-SCU687471/fenetres-pvc-CCN688129">PVC</a></p></div>
-						<div class="col s3"><a href="/fenetres-CCU0003/accessoires-SCU687471/chene-CCN688466"><img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/v8/univers/images/windows/sample_chene.jpg" /></a><p><a href="/fenetres-CCU0003/fenetres-porte-fenetres-baies-coulissantes-SCU687471/fenetres-chene-CCN688132">Chêne</a></p></div>
-						<div class="col s3"><a href="/fenetres-CCU0003/accessoires-SCU687471/pin-CCN688465"><img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/v8/univers/images/windows/sample_pin.jpg" /></a><p><a href="/fenetres-CCU0003/fenetres-porte-fenetres-baies-coulissantes-SCU687471/fenetres-pin-CCN688131">Pin</a></p></div>
-						<div class="col s3"><a href="/fenetres-CCU0003/accessoires-SCU687471/aluminium-CCN688464"><img src="https://www.lapeyre.fr/img/contrib/freehtml/pages/v8/univers/images/windows/sample_aluminium.jpg" /></a><p><a href="/fenetres-CCU0003/fenetres-porte-fenetres-baies-coulissantes-SCU687471/fenetres-aluminium-CCN688130">Aluminium</a></p></div>
-					</fieldset>
-				</div>
-				<div class="col l6 m6 s12">
-					<a href="/c/h/configurateur-fenetres" class="button button-primary">Démarrer</a>
-				</div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 d-flex pb-5 pt-0 py-md-5 px-0">
+                    <div class="col-12 col-xl-10 m-auto pt-5 pt-md-0 m-0">
+                        <div class="grid">
+                            <div class="col-12 d-flex flex-row align-items-stretch home__mag_row p-0">
+                                <div class="col-12 col-md-6 col-lg-4 p-3 d-block">
+                                    <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400604/vignette_verriere_zue4dm.jpg)">
+                                        <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
+                                        <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">A chaque pièce, sa verrière intérieure</a></h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 p-3 d-none d-md-block">
+                                    <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400cdc/carrelage_et_faience_vignette_nxnayq.jpg)">
+                                        <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
+                                        <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Carrelage et faïence, les tendances de 2017</a></h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 p-3 d-none d-lg-block">
+                                    <fieldset class="universe__articleContainer px-4 pb-3">
+                                        <legend class="d-flex" align="center">
+                                            <p class="m-auto d-inline-flex"><strong>Le Magazine</strong></p>
+                                        </legend>
+                                        <div class="row">
+                                            <div class="col-12 py-1" onclick="location.href='https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois'">
+                                                <div class="row">
+                                                    <div class="col-3 universe__articleContainerImage" style="background-image: url('//statics.lapeyre.fr/img/catalogue/desktopList/516/441/VSF-201516441.jpg')"></div>
+                                                    <div class="col-9"><a href="https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois" class="text-dark small">Comment entretenir son escalier en bois ?</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 py-1" onclick="location.href='https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois'">
+                                                <div class="row">
+                                                    <div class="col-3 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/2bdd4da30020ab4e/desktop_lesescaliersexterieur_newyork.jpg')"></div>
+                                                    <div class="col-9"><a href="https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois" class="text-dark small">Escalier standard ou escalier sur mesure ?</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 py-1" onclick="location.href='https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois'">
+                                                <div class="row">
+                                                    <div class="col-3 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/31949891598041ac/ESCALIER%20EXTERIEUR.jpg')"></div>
+                                                    <div class="col-9"><a href="https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois" class="text-dark small">Nos conseils pour bien rénover votre escalier intérieur</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 py-1" onclick="location.href='https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois'">
+                                                <div class="row">
+                                                    <div class="col-3 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/3194989159804145/renover%20escalier.jpg')"></div>
+                                                    <div class="col-9"><a href="https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois" class="text-dark small">Quel matériau ou revêtement pour un escalier extérieur ?</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 py-1" onclick="location.href='https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois'">
+                                                <div class="row">
+                                                    <div class="col-3 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/2bdd4da30020b3b3/desktop_escalierstandardousurmesure_festastandard.jpg')"></div>
+                                                    <div class="col-9"><a href="https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois" class="text-dark small">Les escaliers extérieurs</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex flex-row align-items-stretch home__mag_row p-0">
+                            <div class="col-6 col-lg-4 p-3 d-none d-md-block">
+                                <fieldset class="universe__articleContainer universe__articleServices px-4 pb-3">
+                                    <legend class="d-flex" align="center">
+                                        <p class="m-auto d-inline-flex"><strong>Les services</strong></p>
+                                    </legend>
+                                    <div class="row">
+                                        <div class="col-6 px-3 pt-2" onclick="location.href='https://www.lapeyre.fr/c/services/installation-lapeyre'">
+                                            <div class="row">
+                                                <div class="col-12 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/2bdd4da300200ba0/service_installation.jpg')"></div>
+                                                <div class="col-12 text-center"><a href="https://www.lapeyre.fr/c/services/installation-lapeyre" class="text-dark small">Installation à domicile</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-3 pt-2" onclick="location.href='https://www.lapeyre.fr/c/services/le-service-atelier'">
+                                            <div class="row">
+                                                <div class="col-12 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/2bdd4da300200bb7/service_atelier.jpg')"></div>
+                                                <div class="col-12 text-center"><a href="https://www.lapeyre.fr/c/services/le-service-atelier" class="text-dark small">Service atelier</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-3 pt-2" onclick="location.href='https://www.lapeyre.fr/c/le-conseil-a-domicile'">
+                                            <div class="row">
+                                                <div class="col-12 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/2bdd4da300200bc7/service_livraison.jpg')"></div>
+                                                <div class="col-12 text-center"><a href="https://www.lapeyre.fr/c/le-conseil-a-domicile" class="text-dark small">Le conseil à domicile</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 px-3 pt-2" onclick="location.href='https://www.lapeyre.fr/c/services/'">
+                                            <div class="row">
+                                                <div class="col-12 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/2bdd4da300200c54/service_drive.jpg')"></div>
+                                                <div class="col-12 text-center"><a href="https://www.lapeyre.fr/c/services/" class="text-dark small">Tous nos services</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 p-3 d-block">
+                                <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400d4a/vignette_e-publiredac_amenagt_meuble_cuisine_z1vtxh.jpg)">
+                                    <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
+                                    <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Battle : ouverte ou semi-ouverte ?</a></h5>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 p-3 d-none d-lg-block">
+                                <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400d8a/vignettesdb_ds8e7q.jpg)">
+                                    <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
+                                    <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Salle de bains : les meubles les plus adaptés pour bien l’agencer</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="subuniverse">
+    {% for subuniverse in catalog[global.request.get('code')]['Content'] %}
+    <div class="universe__family" id="{{ subuniverse['ID'] }}">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pb-2 pt-3 py-md-5">
+                    <div class="row">
+                        <div class="col-12 col-xl-3 pr-md-5">
+                            <div class="row">
+                                <div class="col-10 col-md-8 col-xl-12">
+                                    <p class="h4">{{ subuniverse['Name'] }}</p>
+                                    <p class="d-none d-md-block">{{ subuniverse['Descriptifgnral'] }}</p>
 
+                                    {% if subuniverse['Content'] is defined %}
+                                    {# {% if subuniverse['Content']|length > 3 %} #}
+                                </div>
+                                <div class="col-2 d-md-none pr-0">
+                                    <a data-toggle="collapse" class="text-dark" href="#collapse{{ subuniverse['ID'] }}" aria-expanded="false" aria-controls="collapse{{ subuniverse['ID'] }}">
+                                        <p class="h1 text-center">+</p>
+                                        <p class="h1 text-center">-</p>
+                                    </a>
+                                </div>
+                                <div class="col-3 col-xl-12 universe__pinterest pt-3 d-none d-md-block" id="widgetPinterest">
+                                    <a data-pin-do="embedBoard" data-pin-lang="fr" data-pin-board-width="230" data-pin-scale-height="150" data-pin-scale-width="100" href="{{ subuniverse['Pinterest'] }}"></a>
+                                </div>                
+                                {# {% endif %} #}
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-9 collapse" id="collapse{{ subuniverse['ID'] }}" >
+                            <div class="row">
+                                {% if subuniverse['Content'] is defined %}
+                                {% for family in subuniverse['Content'] %}
+                                {% if family['Affichageunivers'] !="Petit" %} 
+                                {% set familySize = 'col-12 col-sm-6 col-md-4' %} 
+                                {% set familyImageSize = 'desktopList' %}
+                                {% if family['Affichageunivers'] =="Grand" %}
+                                {% set familySize = 'col-12 col-md-8' %}
+                                {% set familyImageSize = 'zoom1' %}
+                                {% endif %}
+                                <div class="{{familySize}} py-2">
+                                    <fieldset class="universe__subFamilyContainer" onclick="location.href='/{{ catalog[global.request.get('code')]['URL'] }}/{{ subuniverse['URL'] }}/{{ family['URL'] }}'">
+                                        <legend align="center" class="d-flex mb-0">
+                                            <p class="m-auto d-inline-flex px-2">
+                                                <a href="/{{ catalog[global.request.get('code')]['URL'] }}/{{ subuniverse['URL'] }}/{{ family['URL'] }}" class="text-dark"><strong>{{ family.Name }}</strong></a>
+                                            </p>
+                                        </legend>
+                                        <div class="universe__subFamilyImage mt-1 mb-3 mx-3">
+                                            <a href="/{{ catalog[global.request.get('code')]['URL'] }}/{{ subuniverse['URL'] }}/{{ family['URL'] }}">
+                                                <div style="background-image:url('//statics.lapeyre.fr/img/catalogue/{{ familyImageSize }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'] }}.jpg')" class="bg-white"></div>
+                                            </a>
+                                        </div>
+                                    </fieldset>
+                                </div> 
+                                {% endif %} 
+                                {% endfor %}
+                                {% endif %}
+                                {% set otherFamiliesDetails = null %}
+                                {% set otherFamilies = '<div class="col-12 py-2"><fieldset class="universe__subFamilyContainerOther universe__subFamilyContainer px-5 pb-3"><legend class="d-flex text-left" align="center"><p class="m-auto d-inline-flex"><strong>Et aussi :</strong></p></legend><div class="row">' %}
+                                {% if subuniverse['Content'] is defined %}
+                                {% for family in subuniverse['Content'] %}
+                                {% if family['Affichageunivers'] =="Petit" %} 
+                                {% set otherFamiliesDetails = otherFamiliesDetails ~ '<div class="col-12 col-sm-6 col-md-4 py-1" onclick="location.href=\'/' ~ catalog[global.request.get('code')]['URL'] ~ '/' ~ subuniverse['URL'] ~ '/' ~ family['URL'] ~ '\'"><div class="row"><div class="col-4 universe__subFamilyContainerOtherImage" style="background-image: url(\'//statics.lapeyre.fr/img/catalogue/desktopList/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'] ~ '.jpg\')"></div><div class="col-8"><a href="/' ~ catalog[global.request.get('code')]['URL'] ~ '/' ~ subuniverse['URL'] ~ '/' ~ family['URL'] ~ '" class="text-dark small">' ~ family.Name ~ '</a></div></div></div>' %}  
+                                {% endif %} 
+                                {% endfor %} 
+                                {% endif %}
+                                {% set otherFamilies = otherFamilies ~ otherFamiliesDetails | trim(',') ~ '</div></fieldset></div>' %}  
+                                {% if otherFamiliesDetails %}
+                                {{ otherFamilies | raw }}	
+                                {% endif %}	
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 
-				{% set otherFamiliesDetails = null %}
-				{% set otherFamilies = '<div class="col s12"><fieldset class="subFamilyContainerOther subFamilyContainer"><legend align="center"><div>Et aussi :</div></legend>' %}
-					{% for family in subuniverse['Content'] %}
-					{% if family['Affichageunivers'] =="Petit" %} 
-					{% set otherFamiliesDetails = otherFamiliesDetails ~ '<div class="col m4 s6" onclick="location.href=\'/' ~ family['URL'] ~ '\'"><div class="col s4" style="background-image: url(\'//statics.lapeyre.fr/img/catalogue/desktopList/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'] ~ '.jpg\')"></div><div class="col s8"><a href="/' ~ family['URL'] ~ '">' ~ family.Name ~ '</a></div></div>' %}  
-					{% endif %} 
-					{% endfor %} 
-				{% set otherFamilies = otherFamilies ~ otherFamiliesDetails | trim(',') ~ '</fieldset></div>' %}  
-				{% if otherFamiliesDetails %}
-				{{ otherFamilies | raw }}	
-				{% endif %}	
-
-
-				{% else %}
-				{% if subuniverse['Content'] is defined %}
-				{% for family in subuniverse['Content'] %}
-				{% if family['Affichageunivers'] !="Petit" %} 
-				{% set familySize = 'm4 s6' %} 
-				{% set familyImageSize = 'desktopList' %}
-				{% if family['Affichageunivers'] =="Grand" %}
-				{% set familySize = 'm8 s12' %}
-				{% set familyImageSize = 'zoom1' %}
-				{% endif %}
-
-				<div class="col {{familySize}}">
-					<fieldset class="subFamilyContainer" onclick="location.href='/{{ catalog[global.request.get('code')]['URL'] }}/{{ subuniverse['URL'] }}/{{ family['URL'] }}'">
-						yoooo<legend align="center"><div><a href="/{{ family['URL'] }}">{{ family.Name }}</a></div></legend>
-						<div class="subFamilyImage">
-							<img class="img-fluid" src="//statics.lapeyre.fr/img/catalogue/{{ familyImageSize }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'] }}.jpg">
-						</div>
-					</fieldset>
-				</div> 
-				{% endif %} 
-				{% endfor %}
-				{% endif %}
-				{% set otherFamiliesDetails = null %}
-				{% set otherFamilies = '<div class="col s12"><fieldset class="subFamilyContainerOther subFamilyContainer"><legend align="center"><div>Et aussi :</div></legend>' %}
-					{% if subuniverse['Content'] is defined %}
-					{% for family in subuniverse['Content'] %}
-					{% if family['Affichageunivers'] =="Petit" %} 
-					{% set otherFamiliesDetails = otherFamiliesDetails ~ '<div class="col m4 s6" onclick="location.href=\'/' ~ family['URL'] ~ '\'"><div class="col s4" style="background-image: url(\'//statics.lapeyre.fr/img/catalogue/desktopList/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'] ~ '.jpg\')"></div><div class="col s8"><a href="/' ~ family['URL'] ~ '">' ~ family.Name ~ '</a></div></div>' %}  
-					{% endif %} 
-					{% endfor %} 
-					{% endif %}
-				{% set otherFamilies = otherFamilies ~ otherFamiliesDetails | trim(',') ~ '</fieldset></div>' %}  
-				{% if otherFamiliesDetails %}
-				{{ otherFamilies | raw }}	
-				{% endif %}	
-				{% endif %}
-			</div>
-		</div>
-		{% endfor %}
-	</div>
-	{% endif %}
+<script async defer src="//assets.pinterest.com/js/pinit.js">
+</script>
+<script>
+    function animationScroll(destination) {
+        $('html, body').animate({
+            scrollTop: $( destination ).offset().top-170
+        }, 500);
+    }
+</script>
 {% endblock %}
