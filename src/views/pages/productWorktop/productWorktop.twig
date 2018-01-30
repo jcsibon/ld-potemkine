@@ -22,6 +22,11 @@
     .worktop__display_thumbnails, .carousel-item {
         cursor: pointer;
     }
+    .worktop__price {
+        font-size: 40px;
+        font-family: 'DinCondensed', sans-serif;
+        line-height: 1em;
+    }
     @media screen and (min-width: 1200px) {
         .worktop__bloc_title {  
             position:absolute;
@@ -31,6 +36,11 @@
 </style>
 <div class="d-flex flex-column">
     <div id="carouselWorktop" class="carousel slide m-auto order-xl-2" >
+        <ol class="carousel-indicators">
+            <li data-target="#carouselWorktop" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselWorktop" data-slide-to="1"></li>
+            <li data-target="#carouselWorktop" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner overflow-visible" role="listbox">
             <div class="carousel-item active">
                 <img class="d-block img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" alt="" data-toggle="modal" data-target="#imageModal">
@@ -120,7 +130,7 @@
                                             {% if data.session.promo is defined and data.session.promo == 1 %}
                                             <p class="small m-0"><s>219,00 € {% if data.session.pro is defined and data.session.pro == 1 %}HT{% endif %}</s></p>
                                             {% endif %}
-                                            <p class="h2 font-weight-bold fp__price mb-0 {% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %}" style="font-size: 40px; font-family: 'DinCondensed', sans-serif; line-height: 1em;">159,00 € {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small font-weight-normal fp__pro_small">HT</sup>{% endif %}{% if data.session.colisage is defined and data.session.colisage == 1 %}<span class="small font-weight-bold fp__area_small">le m²</span>{% endif %}{% if data.session.promo is defined and data.session.promo == 1 %}<sup class="small font-weight-normal fp__promo_small">*</sup>{% endif %}</p> 
+                                            <p class="h2 font-weight-bold fp__price mb-0 {% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %} worktop__price" >159,00 € {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small font-weight-normal fp__pro_small">HT</sup>{% endif %}{% if data.session.colisage is defined and data.session.colisage == 1 %}<span class="small font-weight-bold fp__area_small">le m²</span>{% endif %}{% if data.session.promo is defined and data.session.promo == 1 %}<sup class="small font-weight-normal fp__promo_small">*</sup>{% endif %}</p> 
                                         </div>
                                         <div class="col-12 text-right">
                                             {% if data.session.colisage is defined and data.session.colisage == 1 %}
