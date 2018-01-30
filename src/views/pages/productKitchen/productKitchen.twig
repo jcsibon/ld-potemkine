@@ -169,7 +169,7 @@
             <div class="col-8 col-xl-6 pt-5 offset-xl-1 p-0">
                 <p class="text-uppercase display-3 kitchen__title col-8 col-xl-6">S'adapte à vos envies</p>
                 <div class="bg-white p-5">
-                    <p class="px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                    <p class="px-5">{{ content.longDescription2 }}</p>
                 </div>
                 <div class="row mx-0 px-0">
                     <div class="col-4 col-md-4 p-4 bg-dark offset-8">
@@ -206,21 +206,15 @@
 <div class="container">
     <p>{{ content.line }}</p>
 
-    <p>{{ content.title }}</p>
-    <p>{{ content.description }}</p>
-    <p>{{ content.longDescription }}</p>
-    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg1 }}" class="img-fluid">
-    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg2 }}" class="img-fluid">
-    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg3 }}" class="img-fluid">
-    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg4 }}" class="img-fluid">
-    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg5 }}" class="img-fluid">
-    <p>{{ content.longDescription2 }}</p>
+    <p></p>
     <p>{{ content.testimonial }}</p>
+    {% include 'storeWidgets/madeinfrance/madeinfrance.twig' %}
 
-    <img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload/c_fill,h_864,w_801/v1516025993/201620767_tgxozc.jpg">
-    Les cuisines Lapeyre proviennent de son usine située au cœur du Massif Central, où la robustesse des meubles et la qualité des matériaux sont testés.
 
-    <img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload/c_fill,g_east,h_934,w_1145/v1516024943/201721160.jpg">
-    <img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload/c_limit,h_1184,w_1359/v1516022887/_MGL6765.jpg">
+    {% include 'storeWidgets/appointment/appointment.twig' %}
+
+    {% include 'storeWidgets/services/services.twig' %}
+
+    
 </div>
 {% endblock %}

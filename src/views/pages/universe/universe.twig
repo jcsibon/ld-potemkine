@@ -1,51 +1,11 @@
 {% extends"layouts/default.html" %}
 {% block content %}
 
-<div class="container">
-    <div class="col-12">
-        <div class="row">
-            <div class="col-12 universe__row_header" style="background-image:url('/images/headers/{{ global.request.get('code') }}.jpg'); height:450px;">
-                <p class="h2 text-center text-white mt-5 pt-5 display-4">
-                    <strong style="font-size:85px;">
-                        {{ catalog[global.request.get('code')]['Name'] }}
-                    </strong>
-                </p>
-            </div>
-            <div class="row m-0">
-                <div class="col-12 py-2 px-5 small fp__breadcrumb d-none d-lg-block">
-                    <a href="javascript:window.history.back();" class="text-dark font-weight-bold">&lsaquo; Retour</a>
-                    <span class="px-2">|</span>
-                    <a href="" class="text-dark">Accueil</a>
-                    <span class="px-2">&rsaquo;</span>
-                    <a href="" class="text-dark">Rangements</a>
-                    <span class="px-2">&rsaquo;</span>
-                    <a href="" class="text-dark">Aménagements de placard et dressing</a>
-                    <span class="px-2">&rsaquo;</span>
-                    <a href="" class="text-dark">Kits dressing</a>
-                    <span class="px-2">&rsaquo;</span>
-                    <span class="font-weight-bold">Aménagement Panama</span>
-                </div>
-            </div>
-            <div class="col-12">
-                <p class="h6 text-center mt-4 px-xl-5 mx-xl-5 d-none d-sm-block">
-                    {{ catalog[global.request.get('code')]['Descriptifgnral'] }}
-                </p>
-                <div class="col-12 d-flex position-relative universe__anchor">
-                    <div class="d-flex m-auto">
-                        {% for subuniverse in catalog[global.request.get('code')]['Content'] %}
-                        <a href="#{{ subuniverse['ID'] }}">
-                            <div class="d-xl-flex d-none text-white py-3 px-2 mr-1 small bg-primary" style="">{{ subuniverse['Name'] }} </div>
-                        </a>
-                        {% endfor %}
-                        <a href="#subuniverse">
-                            <div class="d-flex d-xl-none text-white py-3 px-2 mr-1 small bg-primary" >Voir les produits <span class="ml-2">&#8595;</span></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{% include 'storeWidgets/jumbotron/jumbotron.twig' %}
+
+{% include 'storeWidgets/breadcrumb/breadcrumb.twig' %}
+
+{% include 'storeWidgets/description/description.twig' %}
 
 <div id="subuniverse">
     {% for subuniverse in catalog[global.request.get('code')]['Content'] %}
@@ -129,120 +89,13 @@
     {% endfor %}
 </div>
 
-<div class="bg-light">
-    <div class="container">
-        <div class="col-12">
-            <div class="row">
-                <div class="col-12 d-flex pb-5 pt-0 py-md-5 px-0">
-                    <div class="col-12 col-xl-10 m-auto pt-5 pt-md-0 m-0">
-                        <div class="grid">
-                            <div class="col-12 d-flex flex-row align-items-stretch home__mag_row p-0">
-                                <div class="col-12 col-md-6 col-lg-4 p-3 d-block">
-                                    <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400604/vignette_verriere_zue4dm.jpg)">
-                                        <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
-                                        <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">A chaque pièce, sa verrière intérieure</a></h5>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-lg-4 p-3 d-none d-md-block">
-                                    <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400cdc/carrelage_et_faience_vignette_nxnayq.jpg)">
-                                        <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
-                                        <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Carrelage et faïence, les tendances de 2017</a></h5>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-lg-4 p-3 d-none d-lg-block">
-                                    <fieldset class="universe__articleContainer px-4 pb-3">
-                                        <legend class="d-flex" align="center">
-                                            <p class="m-auto d-inline-flex"><strong>Le Magazine</strong></p>
-                                        </legend>
-                                        <div class="row">
-                                            <div class="col-12 py-1" onclick="location.href='https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois'">
-                                                <div class="row">
-                                                    <div class="col-3 universe__articleContainerImage" style="background-image: url('//statics.lapeyre.fr/img/catalogue/desktopList/516/441/VSF-201516441.jpg')"></div>
-                                                    <div class="col-9"><a href="https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois" class="text-dark small">Comment entretenir son escalier en bois ?</a></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 py-1" onclick="location.href='https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois'">
-                                                <div class="row">
-                                                    <div class="col-3 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/2bdd4da30020ab4e/desktop_lesescaliersexterieur_newyork.jpg')"></div>
-                                                    <div class="col-9"><a href="https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois" class="text-dark small">Escalier standard ou escalier sur mesure ?</a></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 py-1" onclick="location.href='https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois'">
-                                                <div class="row">
-                                                    <div class="col-3 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/31949891598041ac/ESCALIER%20EXTERIEUR.jpg')"></div>
-                                                    <div class="col-9"><a href="https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois" class="text-dark small">Nos conseils pour bien rénover votre escalier intérieur</a></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 py-1" onclick="location.href='https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois'">
-                                                <div class="row">
-                                                    <div class="col-3 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/3194989159804145/renover%20escalier.jpg')"></div>
-                                                    <div class="col-9"><a href="https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois" class="text-dark small">Quel matériau ou revêtement pour un escalier extérieur ?</a></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 py-1" onclick="location.href='https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois'">
-                                                <div class="row">
-                                                    <div class="col-3 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/2bdd4da30020b3b3/desktop_escalierstandardousurmesure_festastandard.jpg')"></div>
-                                                    <div class="col-9"><a href="https://www.lapeyre.fr/c/magazine/pieces-maison/comment-entretenir-son-escalier-en-bois" class="text-dark small">Les escaliers extérieurs</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex flex-row align-items-stretch home__mag_row p-0">
-                            <div class="col-6 col-lg-4 p-3 d-none d-md-block">
-                                <fieldset class="universe__articleContainer universe__articleServices px-4 pb-3">
-                                    <legend class="d-flex" align="center">
-                                        <p class="m-auto d-inline-flex"><strong>Les services</strong></p>
-                                    </legend>
-                                    <div class="row">
-                                        <div class="col-6 px-3 pt-2" onclick="location.href='https://www.lapeyre.fr/c/services/installation-lapeyre'">
-                                            <div class="row">
-                                                <div class="col-12 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/2bdd4da300200ba0/service_installation.jpg')"></div>
-                                                <div class="col-12 text-center"><a href="https://www.lapeyre.fr/c/services/installation-lapeyre" class="text-dark small">Installation à domicile</a></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 px-3 pt-2" onclick="location.href='https://www.lapeyre.fr/c/services/le-service-atelier'">
-                                            <div class="row">
-                                                <div class="col-12 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/2bdd4da300200bb7/service_atelier.jpg')"></div>
-                                                <div class="col-12 text-center"><a href="https://www.lapeyre.fr/c/services/le-service-atelier" class="text-dark small">Service atelier</a></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 px-3 pt-2" onclick="location.href='https://www.lapeyre.fr/c/le-conseil-a-domicile'">
-                                            <div class="row">
-                                                <div class="col-12 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/2bdd4da300200bc7/service_livraison.jpg')"></div>
-                                                <div class="col-12 text-center"><a href="https://www.lapeyre.fr/c/le-conseil-a-domicile" class="text-dark small">Le conseil à domicile</a></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 px-3 pt-2" onclick="location.href='https://www.lapeyre.fr/c/services/'">
-                                            <div class="row">
-                                                <div class="col-12 universe__articleContainerImage" style="background-image: url('https://www.lapeyre.fr/img/contrib/2bdd4da300200c54/service_drive.jpg')"></div>
-                                                <div class="col-12 text-center"><a href="https://www.lapeyre.fr/c/services/" class="text-dark small">Tous nos services</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 p-3 d-block">
-                                <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400d4a/vignette_e-publiredac_amenagt_meuble_cuisine_z1vtxh.jpg)">
-                                    <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
-                                    <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Battle : ouverte ou semi-ouverte ?</a></h5>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-4 p-3 d-none d-lg-block">
-                                <div class="h-100 d-flex p-0 home__bloc_mag" style="background-image: url(https://statics.lapeyre.fr/img/contrib/32880f5611400d8a/vignettesdb_ds8e7q.jpg)">
-                                    <div class="text-white text-uppercase bg-dark px-4 py-1 d-table position-relative">Article</div>
-                                    <h5 class="py-5 pl-5 pr-3 position-absolute"><a href="#" class="text-white font-weight-bold">Salle de bains : les meubles les plus adaptés pour bien l’agencer</a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
+
+{% include 'storeWidgets/contents/contents.twig' %}
+
+{% include 'storeWidgets/appointment/appointment.twig' %}
+
+{% include 'storeWidgets/services/services.twig' %}
 
 <script async defer src="//assets.pinterest.com/js/pinit.js">
 </script>
