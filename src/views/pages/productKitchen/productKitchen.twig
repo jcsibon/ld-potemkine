@@ -138,7 +138,9 @@
             </div>
             <div class="col-4 col-lg-4 col-xl-3 d-flex">
                 <div class="kitchen__pictureDesc px-3 pt-5">
-                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg1 }}" class="img-fluid"/>
+                    {% if content.longDescriptionImg2 != "" %}
+                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg2 }}" class="img-fluid"/>
+                    {% endif %}
                 </div>
             </div>
             <div class="col-12 col-lg-8 col-xl-6 pt-5">
@@ -148,13 +150,19 @@
                 </div>
             </div>
             <div class="col-4 col-xl-3 offset-xl-1 pt-4">
-                <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg1 }}" class="img-fluid"/>
+                {% if content.longDescriptionImg3 != "" %}
+                <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg3 }}" class="img-fluid"/>
+                {% endif %}
             </div>
             <div class="col-4 col-xl-3 pt-4">
-                <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg1 }}" class="img-fluid" />
+                {% if content.longDescriptionImg4 != "" %}
+                <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg4 }}" class="img-fluid" />
+                {% endif %}
             </div>
             <div class="col-4 col-xl-3 pt-4">
-                <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg1 }}" class="img-fluid" />
+                {% if content.longDescriptionImg5 != "" %}
+                <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.longDescriptionImg5 }}" class="img-fluid" />
+                {% endif %}
             </div>
         </div>
         <div class="row pt-5">
