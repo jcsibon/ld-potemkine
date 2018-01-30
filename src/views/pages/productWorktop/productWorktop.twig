@@ -11,9 +11,6 @@
     .worktop__display_thumbnails div {
         width: 70px;
         height: 70px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center;
         overflow: hidden;
     }
     .worktop__display_thumbnails div img {
@@ -33,7 +30,7 @@
     }
 </style>
 <div class="d-flex flex-column">
-    <div id="carouselWorktop" class="carousel slide m-auto order-xl-2" data-ride="carousel" >
+    <div id="carouselWorktop" class="carousel slide m-auto order-xl-2" >
         <div class="carousel-inner overflow-visible" role="listbox">
             <div class="carousel-item active">
                 <img class="d-block img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" alt="" data-toggle="modal" data-target="#imageModal">
@@ -46,13 +43,13 @@
             </div>
             <div class="col-12 col-xl-1 offset-xl-1 pr-5 d-none d-md-block position-absolute worktop__display_thumbnails">
                 <div class="position-relative border my-3 mx-1 mx-xl-2 d-block fp__selected">
-                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-image-md-url="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-image-hd-url="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-target="#carouselWorktop" data-slide-to="0">
+                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-image-hd-url="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-target="#carouselWorktop" data-slide-to="0">
                 </div>
                 <div class="position-relative border my-3 mx-1 mx-xl-2 d-block">
-                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-image-md-url="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-image-hd-url="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-target="#carouselWorktop" data-slide-to="1">
+                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-image-hd-url="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-target="#carouselWorktop" data-slide-to="1">
                 </div>
                 <div class="position-relative border my-3 mx-1 mx-xl-2 d-block">
-                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-image-md-url="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-image-hd-url="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-target="#carouselWorktop" data-slide-to="2">
+                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-image-hd-url="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-target="#carouselWorktop" data-slide-to="2">
                 </div>
             </div>
         </div>
@@ -69,12 +66,12 @@
                             <h1 class="h2 font-weight-bold">Plan de travail {{ content.shortName }} <sup class="text-primary">&#9679</sup></h1>
                         </div>
                         <div class="col-12 px-2 py-3">
-                                    <p class="d-inline-block">
-                                        <a href="#description" class="font-weight-bold text-dark"><u>Détails produit</u></a>
-                                    </p>
-                                    <p class="text-muted d-inline-block pl-5">
-                                        (Avis clients)
-                                    </p>
+                            <p class="d-inline-block">
+                                <a href="#description" class="font-weight-bold text-dark"><u>Détails produit</u></a>
+                            </p>
+                            <p class="text-muted d-inline-block pl-5">
+                                (Avis clients)
+                            </p>
                         </div>
                         <div class="col-12 col-md-6 col-xl-6 px-2 py-2">
                             <label class="text-dark d-block">&Eacute;paisseur (cm)</label>
@@ -269,50 +266,50 @@
             </div>
         </div>
     </div>
+</div>
 
-    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" class="img-fluid" />
-                </div>
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" class="img-fluid" />
             </div>
         </div>
     </div>
+</div>
 
-    <script>
-        $('.worktop__display_thumbnails>div').click(function() {
-            $('.worktop__display_thumbnails>div').removeClass('fp__selected');
-            $(this).addClass('fp__selected');
-            $('#worktop__main_image>img').attr('src', $(this).find('img').attr('data-image-md-url'));
-            $('#imageModal img').attr('src', $(this).find('img').attr('data-image-hd-url'));
-        });
+<script>
+    $('.worktop__display_thumbnails>div').click(function() {
+        $('.worktop__display_thumbnails>div').removeClass('fp__selected');
+        $(this).addClass('fp__selected');
+        $('#imageModal img').attr('src', $(this).find('img').attr('data-image-hd-url'));
+    });
 
-        $("#fp__quantity").keypress(function (e) {
-            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) return false;
-        });
+    $("#fp__quantity").keypress(function (e) {
+        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) return false;
+    });
 
-        $("#qtyLeftBtn").click(function() {
-            if (!$("#qtyLeftBtn").hasClass('text-muted')) $("#fp__quantity").val(parseInt($("#fp__quantity").val())-1);
-            if (parseInt($("#fp__quantity").val())<=1) $("#qtyLeftBtn").addClass('text-muted');
-            refresh_packing_qty();
-        });
+    $("#qtyLeftBtn").click(function() {
+        if (!$("#qtyLeftBtn").hasClass('text-muted')) $("#fp__quantity").val(parseInt($("#fp__quantity").val())-1);
+        if (parseInt($("#fp__quantity").val())<=1) $("#qtyLeftBtn").addClass('text-muted');
+        refresh_packing_qty();
+    });
 
-        $("#qtyRightBtn").click(function() {
-            $("#qtyLeftBtn").removeClass('text-muted');
-            if (!parseInt($("#fp__quantity").val())) $("#fp__quantity").val('0');  
-            $("#fp__quantity").val(parseInt($("#fp__quantity").val())+1);
-            refresh_packing_qty();
-        });
+    $("#qtyRightBtn").click(function() {
+        $("#qtyLeftBtn").removeClass('text-muted');
+        if (!parseInt($("#fp__quantity").val())) $("#fp__quantity").val('0');  
+        $("#fp__quantity").val(parseInt($("#fp__quantity").val())+1);
+        refresh_packing_qty();
+    });
 
-    </script>
+</script>
 
-    <!--
+<!--
 <div class="container">
 <p>{{ content.id }}</p>
 <p>{{ content.shortName }}</p>
@@ -332,4 +329,4 @@
 <p>Recoupe et ajustement au millimètre par nos menuisiers</p>
 </div>
 -->
-    {% endblock %}
+{% endblock %}
