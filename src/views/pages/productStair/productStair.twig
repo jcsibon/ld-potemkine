@@ -1,4 +1,355 @@
 {% extends"layouts/default.html" %}
 {% block content %}
+<style>
+    .stair__display_thumbnails {
+        top:35%;
+    }
+    #carouselStair img {
+        cursor: pointer;
+    }
+    .stair__display_thumb > div > div:nth-child(1)  {
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        cursor: pointer;
+    }
+    .stair__display_thumb > div > div:nth-child(2)  {
+        opacity: 0.5;
+    }
+
+    @media screen and (min-width: 1200px) {
+
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-7">
+            <div id="carouselStair" class="carousel slide m-auto order-xl-2 overflow-hidden" >
+                <div class="carousel-inner overflow-visible" role="listbox">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="/images/primo.jpg" alt="" data-toggle="modal" data-target="#imageModal">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="/images/primo.jpg" alt="" data-toggle="modal" data-target="#imageModal">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="/images/primo.jpg" alt="" data-toggle="modal" data-target="#imageModal">
+                    </div>
+                    <div class="col-6 offset pl-4 d-none d-md-block position-absolute stair__display_thumbnails">
+                        <div class="row">
+                            <div class="stair__display_thumb position-relative my-2 mx-1 mx-xl-2 d-block col-12" data-target="#carouselStair" data-slide-to="0" class="img-fluid">
+                                <div class="row">
+                                    <div style="background-image: url('/images/primo.jpg')" data-image-hd-url="/images/primo.jpg" class="col-2 fp__selected stair__display_thumb_image border"></div>
+                                    <div class="col-10 bg-dark px-2 stair__display_thumb_desc">
+                                        <p class="small m-0 text-white">Visuel 1/3 : </p>
+                                        <p class="small m-0 text-white">Escalier droit en hêtre noir de 274cm de hauteur, sans rampe avec contremarches.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stair__display_thumb position-relative my-2 mx-1 mx-xl-2 d-block col-12" data-target="#carouselStair" data-slide-to="1" class="img-fluid">
+                                <div class="row">
+                                    <div style="background-image: url('/images/primo.jpg')" data-image-hd-url="/images/primo.jpg" class="col-2 stair__display_thumb_image border"></div>
+                                    <div class="col-10 bg-dark px-2 stair__display_thumb_desc" style="display: none;">
+                                        <p class="small m-0 text-white">Visuel 2/3 : </p>
+                                        <p class="small m-0 text-white">Escalier droit en hêtre noir de 274cm de hauteur, sans rampe avec contremarches.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stair__display_thumb position-relative my-2 mx-1 mx-xl-2 d-block col-12" data-target="#carouselStair" data-slide-to="2" class="img-fluid">
+                                <div class="row">
+                                    <div style="background-image: url('/images/primo.jpg')" data-image-hd-url="/images/primo.jpg" class="col-2 stair__display_thumb_image border" ></div>
+                                    <div class="col-10 bg-dark px-2 stair__display_thumb_desc" style="display: none;">
+                                        <p class="small m-0 text-white">Visuel 3/3 : </p>
+                                        <p class="small m-0 text-white">Escalier droit en hêtre noir de 274cm de hauteur, sans rampe avec contremarches.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="col-12 pt-5 pt-md-4 pb-0 py-xl-4 px-3 px-lg-5 stair__product_bloc"> 
+                <div class="row">
+                    <div class="col-12 px-2">
+                        <p class="text-dark small">Réf #2490390</p>
+                    </div>
+                    <div class="col-12 px-2">
+                        <h1 class="h2 font-weight-bold">Escalier {{ content.shortName }} <sup class="text-primary">&#9679</sup></h1>
+                    </div>
+                    <div class="col-12 px-2 py-3">
+                        <p class="d-inline-block">
+                            <a href="#description" class="font-weight-bold text-dark"><u>Détails produit</u></a>
+                        </p>
+                        <p class="text-muted d-inline-block pl-5">
+                            (Avis clients)
+                        </p>
+                    </div>
+                    <div class="col-12 px-2 py-2">
+                        <label class="text-dark d-block">Essence & couleur</label>
+                        <select class="form-control">
+                            <option>Sapin - Brut</option>
+                        </select>
+                    </div>
+                    <div class="col-12 px-2 py-2">
+                        <label class="text-dark d-block">Forme</label>
+                        <select class="form-control">
+                            <option>Droit</option>
+                            <option>Quart tournant</option>
+                        </select>
+                    </div>
+                    <div class="col-6 px-2 py-2">
+                        <label class="text-dark d-block">Rampe</label>
+                        <select class="form-control">
+                            <option>Non</option>
+                            <option>Oui</option>
+                        </select>
+                    </div>
+                    <div class="col-6 px-2 py-2">
+                        <label class="text-dark d-block">Sens</label>
+                        <select class="form-control">
+                            <option>/</option>
+                        </select>
+                    </div>
+                    <div class="col-12 px-2 py-2">
+                        <label class="text-dark d-block">Contremarche</label>
+                        <select class="form-control">
+                            <option>274 x 76 x 242 - 13 marches</option>
+                        </select>
+                    </div>
+                    <div class="col-12 px-2 py-2">
+                        <div class="row">
+                            <div class="col-5 d-none">
+                                <label class="text-dark d-block">Quantité</label>
+                                <div class="row m-0">
+                                    <div class="col-12 border fp__quantity_block p-2">
+                                        <div class="row">
+                                            <div class="col-4 text-right pr-0">
+                                                <span class="text-dark font-weight-bold" id="qtyLeftBtn">-</span>
+                                            </div>
+                                            <div class="col-4 text-center px-0">
+                                                <input onpaste="return false;" id="fp__quantity" type="text" class="border-0 text-center font-weight-bold" value="1" size="2" maxlength="4" >
+                                            </div>
+                                            <div class="col-4 text-left pl-0">
+                                                <span class="" id="qtyRightBtn">+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>      
+                            <div class="col-12 mt-4">
+                                <div class="row">
+                                    <div class="col-12 text-right">
+                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                        <p class="small m-0"><s>219,00 € {% if data.session.pro is defined and data.session.pro == 1 %}HT{% endif %}</s></p>
+                                        {% endif %}
+                                        <p class="h2 font-weight-bold fp__price mb-0 {% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %}" style="font-size: 40px; font-family: 'DinCondensed', sans-serif; line-height: 1em;">159,00 € {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small font-weight-normal fp__pro_small">HT</sup>{% endif %}{% if data.session.colisage is defined and data.session.colisage == 1 %}<span class="small font-weight-bold fp__area_small">le m²</span>{% endif %}{% if data.session.promo is defined and data.session.promo == 1 %}<sup class="small font-weight-normal fp__promo_small">*</sup>{% endif %}</p> 
+                                    </div>
+                                    <div class="col-12 text-right">
+                                        {% if data.session.colisage is defined and data.session.colisage == 1 %}
+                                        <p class="m-0 text-dark small">Soit 17,94 € {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %} la boite de 1,38 m²</p>
+                                        {% endif %}
+                                        {% if data.session.colisage is not defined %}
+                                        <p class="m-0 text-dark small">Dont éco-part : 5,20 € {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %}</p>
+                                        {% endif %}
+                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                        <p class="small m-0"><a href="javascript:void(0);" class="text-dark" onclick="javascript:window.open('/c/conditions-generales-de-vente?omitHeader=1', '_blank', 'toolbar=yes, scrollbars=yes, resizable=yes, width=820, height=600'); return false;">* voir les conditions</a></p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="bg-dark">
+                                    <a id="addToShoppingList_89106" href="#" onclick="wishList.goLogin('https://www.lapeyre.fr/amenagement-panama-decor-chene-blanchi-2490390','wishlist'); return false;" class="d-flex px-2 py-3" role="button">
+                                        <svg width="26" height="26" class="m-auto"><use xlink:href="#heart-o-white"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-10 col-xl-5 pl-0">
+                                <div class="col s12 m12 l9 p-0">
+                                    <a class="btn btn-light col-12 py-3">
+                                        <div id="" class="button_text">
+                                            RDV Magasin
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-10 col-xl-5 pl-0">
+                                <div class="col s12 m12 l9 p-0">
+                                    <a id="add2CartBtn" href="#" class="btn btn-primary col-12 py-3" onclick="javascript:setCurrentId('add2CartBtn');productDisplayJS.Add2ShopCartAjax('entitledItem_89104',document.getElementById('quantity_89104').value, false)" wairole="button" role="button" title="Ajouter au panier" onkeypress="javascript:MessageHelper.setFocusElement('add2CartBtn');">
+                                        <div id="productPageAdd2Cart" class="button_text">
+                                            Ajouter au panier
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 pt-4 text-right">
+                        {% if data.session.stock is defined and data.session.stock == 'dispo' %}
+                        <p>
+                            <span class="text-warning fp__font-130">&#9679</span> Disponible à <a href="" class="text-warning">Lapeyre Montluçon</a> seulement le 26/12/2017
+                        </p>
+                        {% endif %}
+                        {% if data.session.stock is defined and data.session.stock == 'stock' %}
+                        <p>
+                            <span class="text-success fp__font-130">&#9679</span> <span class="text-success">En stock</span> à <a href="">Lapeyre Pointe de Gournay</a> à partir du 14/12/2017
+                        </p>
+                        {% endif %}
+                        {% if data.session.stock is defined and data.session.stock == 'indispo' %}
+                        <p>
+                            <span class="text-danger fp__font-130">&#9679</span> <span class="text-danger">Indisponible</span> à <a href="">Lapeyre Caen</a>
+                        </p>
+                        {% endif %}
+                        {% if data.session.stock is defined %}
+                        <p>
+                            <a href="#" class="text-dark" data-toggle="modal" data-target="#availabilityModal"><u>Voir la disponibilité dans d'autres magasins</u></a>
+                        </p>
+                        {% endif %}
+                        {% if data.session.stock is not defined %}
+                        <p>
+                            <a href="#" class="text-dark" data-toggle="modal" data-target="#availabilityModal"><u>Voir la disponibilité en magasin</u></a>
+                        </p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<div class="modal fade" id="availabilityModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header px-4">
+                <h5 class="modal-title" id="exampleModalLabel">Disponibilité</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body px-4">
+                <div class="row">
+                    <div class="col-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleSelect1">Choisissez votre magasin :</label>
+                                <div class="col-12 text-center">
+                                    <select class="form-control" id="">
+                                        <option>Choisir dans la liste</option>
+                                        {% for shop in data.store.shops %}
+                                        <option>
+                                            {{ shop.adresse.codePostal }} - Lapeyre {{ shop.adresse.ville }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <p class="text-center pt-4">
+                                    <button type="submit" class="btn btn-primary px-5">Valider</button>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="sharingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header px-4">
+                <h5 class="modal-title" id="exampleModalLabel">Partager ce produit</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-2 offset-1">
+                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#facebook"/></svg></a>
+                    </div>
+                    <div class="col-2">
+                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#pinterest"/></svg></a>
+                    </div>
+                    <div class="col-2">
+                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#twitter"/></svg></a>
+                    </div>
+                    <div class="col-2">
+                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#envelope"/></svg></a>
+                    </div>
+                    <div class="col-2">
+                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#instagram"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="/images/primo.jpg" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $('.stair__display_thumb_image').click(function() {
+        $('.stair__display_thumb_image').removeClass('fp__selected');
+        $('.stair__display_thumb_desc').hide();
+        $(this).addClass('fp__selected');
+        $(this).next('.stair__display_thumb_desc').show();
+        $(this).attr('data-image-hd-url');
+        $('#imageModal img').attr('src', $(this).attr('data-image-hd-url'));
+    });
+
+    $("#fp__quantity").keypress(function (e) {
+        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) return false;
+    });
+
+    $("#qtyLeftBtn").click(function() {
+        if (!$("#qtyLeftBtn").hasClass('text-muted')) $("#fp__quantity").val(parseInt($("#fp__quantity").val())-1);
+        if (parseInt($("#fp__quantity").val())<=1) $("#qtyLeftBtn").addClass('text-muted');
+        refresh_packing_qty();
+    });
+
+    $("#qtyRightBtn").click(function() {
+        $("#qtyLeftBtn").removeClass('text-muted');
+        if (!parseInt($("#fp__quantity").val())) $("#fp__quantity").val('0');  
+        $("#fp__quantity").val(parseInt($("#fp__quantity").val())+1);
+        refresh_packing_qty();
+    });
+
+</script>
 
 {% endblock %}
