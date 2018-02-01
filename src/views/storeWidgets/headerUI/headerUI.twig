@@ -89,7 +89,7 @@
                         <a href="" class="text-white">FAQ</a>  - 
                         <a href="" class="text-white">Déclaration des performances produits</a> 
                     </p>
-                    <p class="list-group-item d-inline-block collapsed border-right-0 text-white bg-dark text-center" data-parent="#sidebar"> <small class="d-inline">© 2017 Lapeyre</small></p>
+                    <p class="list-group-item d-inline-block collapsed border-right-0 text-white bg-dark text-center" data-parent="#sidebar"> <small class="d-inline">© 2018 Lapeyre</small></p>
                 </div>
             </div>
         </div>
@@ -113,7 +113,7 @@
                             </div>
                             <div class="col-1 p-0 d-xl-none d-flex">
                             </div>
-                            <div class="col-3 col-xl-4 py-2 px-0 pl-xl-5 pr-xl-4 d-none d-xl-flex">
+                            <div class="col-3 col-xl-4 py-2 px-0 pl-xl-3 pr-xl-4 d-none d-xl-flex header__nav-menu-search">
                                 <div id="searchBar" data-parent="header" class="col-12 px-0 m-auto">
                                     <form id="searchBox" name="CatalogSearchForm" method="get" action="https://www.lapeyre.fr/SearchDisplay" class="my-2 mx-4 m-xl-0 border border-top-0 border-left-0 border-right-0">
                                         <input name="storeId" value="10101" type="hidden" autocomplete="off">
@@ -128,7 +128,7 @@
                                         <input name="pageSize" value="24" type="hidden" autocomplete="off">
                                         <div id="searchTermWrapper" class="input-group input-group-sm m-auto">
                                             <label id="searchFormLabel" for="SimpleSearchForm_SearchTerm" class="d-none">Rechercher un produit, un conseil, un article, ...</label>
-                                            <input id="SimpleSearchForm_SearchTerm" name="searchTerm" maxlength="254" placeholder="Rechercher un produit, un conseil, un article, ..." autocomplete="off" type="text" class="search_input form-control border-0 bg-transparent  text-italic">
+                                            <input id="SimpleSearchForm_SearchTerm" name="searchTerm" maxlength="254" placeholder="Rechercher un produit, un conseil, un article, ..." autocomplete="off" type="text" class="search_input form-control border-0 bg-transparent text-italic">
                                             <span id="closeButtonSearch" class="input-group-btn">
                                                 <button class="btn btn-primary" type="button">
                                                     <svg width="20" height="16">
@@ -425,7 +425,7 @@
     <img src="/images/logo.png" alt="Logo Lapeyre" />
     {% endif %}
 </div>
-<div class="col-2 col-sm-4 col-xl-5 d-flex px-0 px-sm-2">
+<div class="col-2 col-sm-4 col-xl-5 d-flex px-0 px-sm-2 header__menu-right">
     <div class="col-12 my-auto">
         <div class="row">
             <div class="col-3 d-none d-md-block d-xl-none"></div>
@@ -434,7 +434,7 @@
                     <use xlink:href="#map-marker"/>
                 </svg>
                 <div {% if data.session.logged == 1 %} class="header__rollover"{% endif %}>
-                    <small class="font-weight-bold d-xl-inline-block d-none">
+                    <small class="font-weight-600 d-xl-inline-block d-none">
                         {% if data.session.logged == 0 %}
                         <a href="" class="text-dark my-auto">Mon magasin</a>
                         {% else %}
@@ -465,7 +465,7 @@
                     <use xlink:href="#user-o"/>
                 </svg>
                 <div class="d-md-flex {% if data.session.logged == 1 %} header__rollover{% endif %}">
-                    <small class="font-weight-bold my-auto d-none d-xl-block">
+                    <small class="font-weight-600 my-auto d-none d-xl-block">
                         {% if data.session.logged == 0 %}
                         <a href="" class="text-dark">Mon espace</a>
                         {% else %}
@@ -567,7 +567,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 bg-primary p-2">
+                    <div class="col-12 bg-primary p-2 rounded">
                         <a href="" class="d-block text-center text-white">
                             <svg width="28" height="24">
                                 <use xlink:href="#shopping-cart"/>
@@ -606,14 +606,14 @@
     </div>
 </div>
 <nav class="bg-white">
-    <div class="container d-none d-xl-flex">
+    <div class="container d-none d-xl-flex header__nav-menu-universes">
         <div class="col-12 my-auto">
             <div class="row">
-                <div class="col-8 header__main-nav pl-4">
+                <div class="col-8 header__main-nav pl-0">
                     <ul class="nav">
                         <li class="nav-item py-1 px-0 mt-1 dropdown">
                             <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <strong>Fenêtres</strong>
+                                Fenêtres
                             </a>
                             <div class="dropdown-menu bg-light p-4 header__mega-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <div class="row">
@@ -710,42 +710,42 @@
                         </li>
                         <li class="nav-item py-1 px-0 mt-1 dropdown">
                             <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <strong>Portes</strong>
+                                Portes
                             </a>
                         </li>
                         <li class="nav-item py-1 px-0 mt-1 dropdown">
                             <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <strong>Cuisines</strong>
+                                Cuisines
                             </a>
                         </li>
                         <li class="nav-item py-1 px-0 mt-1 dropdown">
                             <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <strong>Salles de bains</strong></a>
+                                Salles de bains</a>
                         </li>
                         <li class="nav-item py-1 px-0 mt-1 dropdown">
                             <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <strong>Rangements</strong>
+                                Rangements
                             </a>
                         </li>
                         <li class="nav-item py-1 px-0 mt-1 dropdown">
                             <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <strong>Escaliers</strong>
+                                Escaliers
                             </a>
                         </li>
                         <li class="nav-item py-1 px-0 mt-1 dropdown">
                             <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <strong>Sols et murs</strong>
+                                Sols et murs
                             </a>
                         </li>
                         <li class="nav-item py-1 px-0 mt-1 dropdown">
                             <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <strong>Extérieurs</strong>
+                                Extérieurs
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-4 px-0">
-                    <ul class="nav header__font-secondary text-uppercase d-flex">
+                    <ul class="nav header__font-secondary text-uppercase d-flex header__nav-menu-right">
                         <li class="nav-item py-3 mx-1 px-2 my-auto">
                             <a href="#" class="text-dark">Le savoir bien faire</a>
                         </li>
