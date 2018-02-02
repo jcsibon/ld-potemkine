@@ -9,7 +9,7 @@
 
 <div id="subuniverse">
     {% for subuniverse in catalog[global.request.get('code')]['Content'] %}
-    <div class="universe__family" id="{{ subuniverse['ID'] }}">
+    <div class="universe__family bg-light" id="{{ subuniverse['ID'] }}">
         <div class="container">
             <div class="row">
                 <div class="col-12 pb-2 pt-3 py-md-5">
@@ -17,9 +17,9 @@
                         <div class="col-12 col-xl-3 pr-md-5">
                             <div class="row">
                                 <div class="col-10 col-md-8 col-xl-12">
-                                    <p class="h4">{{ subuniverse['Name'] }}</p>
+                                    <p class="h4 d-none d-md-block">{{ subuniverse['Name'] }}</p>
+                                    <p class="h4 d-md-none"><a data-toggle="collapse" class="text-dark" href="#collapse{{ subuniverse['ID'] }}" aria-expanded="false" aria-controls="collapse{{ subuniverse['ID'] }}">{{ subuniverse['Name'] }}</a></p>
                                     <p class="d-none d-md-block">{{ subuniverse['Descriptifgnral'] }}</p>
-
                                     {% if subuniverse['Content'] is defined %}
                                     {# {% if subuniverse['Content']|length > 3 %} #}
                                 </div>
@@ -49,33 +49,28 @@
                                 {% set familySize = 'col-12 col-md-8' %}
                                 {% set familyImageSize = 'zoom1' %}
                                 {% endif %}
-                                <div class="{{familySize}} py-2">
-                                    <fieldset class="universe__subFamilyContainer" onclick="location.href='/{{ catalog[global.request.get('code')]['URL'] }}/{{ subuniverse['URL'] }}/{{ family['URL'] }}'">
-                                        <legend align="center" class="d-flex mb-0">
-                                            <p class="m-auto d-inline-flex px-2">
-                                                <a href="/{{ catalog[global.request.get('code')]['URL'] }}/{{ subuniverse['URL'] }}/{{ family['URL'] }}" class="text-dark"><strong>{{ family.Name }}</strong></a>
-                                            </p>
-                                        </legend>
-                                        <div class="universe__subFamilyImage mt-1 mb-3 mx-3">
-                                            <a href="/{{ catalog[global.request.get('code')]['URL'] }}/{{ subuniverse['URL'] }}/{{ family['URL'] }}">
-                                                <div style="background-image:url('//statics.lapeyre.fr/img/catalogue/{{ familyImageSize }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'] }}.jpg')" class="bg-white"></div>
-                                            </a>
+
+                                <div class="col-6 col-md-4 p-3" >
+                                    <a href="#">
+                                        <div class="bg-dark d-flex universe__familyBloc rounded p-4" style="background-image: url('//statics.lapeyre.fr/img/catalogue/{{ familyImageSize }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'] }}.jpg')">
+                                            <p class="h2 m-auto text-white text-center text-uppercase">{{ family.Name }}</p>
                                         </div>
-                                    </fieldset>
-                                </div> 
+                                    </a>
+                                </div>
+
                                 {% endif %} 
                                 {% endfor %}
                                 {% endif %}
                                 {% set otherFamiliesDetails = null %}
-                                {% set otherFamilies = '<div class="col-12 py-2"><fieldset class="universe__subFamilyContainerOther universe__subFamilyContainer px-5 pb-3"><legend class="d-flex text-left" align="center"><p class="m-auto d-inline-flex"><strong>Et aussi :</strong></p></legend><div class="row">' %}
+                                {% set otherFamilies = '<div class="col-12 py-2 universe__subFamilyContainerOther"><p class="m-auto d-inline-flex py-3 px-3"><strong>Et aussi :</strong></p><div class="row">' %}
                                 {% if subuniverse['Content'] is defined %}
                                 {% for family in subuniverse['Content'] %}
                                 {% if family['Affichageunivers'] =="Petit" %} 
-                                {% set otherFamiliesDetails = otherFamiliesDetails ~ '<div class="col-12 col-sm-6 col-md-4 py-1" onclick="location.href=\'/' ~ catalog[global.request.get('code')]['URL'] ~ '/' ~ subuniverse['URL'] ~ '/' ~ family['URL'] ~ '\'"><div class="row"><div class="col-4 universe__subFamilyContainerOtherImage" style="background-image: url(\'//statics.lapeyre.fr/img/catalogue/desktopList/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'] ~ '.jpg\')"></div><div class="col-8"><a href="/' ~ catalog[global.request.get('code')]['URL'] ~ '/' ~ subuniverse['URL'] ~ '/' ~ family['URL'] ~ '" class="text-dark small">' ~ family.Name ~ '</a></div></div></div>' %}  
+                                {% set otherFamiliesDetails = otherFamiliesDetails ~ '<div class="col-12 col-sm-6 col-md-4 py-1 px-5" onclick="location.href=\'/' ~ catalog[global.request.get('code')]['URL'] ~ '/' ~ subuniverse['URL'] ~ '/' ~ family['URL'] ~ '\'"><div class="row"><div class="col-4 universe__subFamilyContainerOtherImage" style="background-image: url(\'//statics.lapeyre.fr/img/catalogue/desktopList/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'] ~ '.jpg\')"></div><div class="col-8"><a href="/' ~ catalog[global.request.get('code')]['URL'] ~ '/' ~ subuniverse['URL'] ~ '/' ~ family['URL'] ~ '" class="text-dark small">' ~ family.Name ~ '</a></div></div></div>' %}  
                                 {% endif %} 
                                 {% endfor %} 
                                 {% endif %}
-                                {% set otherFamilies = otherFamilies ~ otherFamiliesDetails | trim(',') ~ '</div></fieldset></div>' %}  
+                                {% set otherFamilies = otherFamilies ~ otherFamiliesDetails | trim(',') ~ '</div></div>' %}  
                                 {% if otherFamiliesDetails %}
                                 {{ otherFamilies | raw }}	
                                 {% endif %}	
@@ -89,8 +84,6 @@
     {% endfor %}
 </div>
 
-
-
 {% include 'storeWidgets/contents/contents.twig' %}
 
 {% include 'storeWidgets/appointment/appointment.twig' %}
@@ -100,10 +93,14 @@
 <script async defer src="//assets.pinterest.com/js/pinit.js">
 </script>
 <script>
-    function animationScroll(destination) {
+   /*
+   function animationScroll(destination) {
         $('html, body').animate({
             scrollTop: $( destination ).offset().top-170
         }, 500);
     }
+*/
+
 </script>
+
 {% endblock %}

@@ -1,7 +1,5 @@
-<div class="universe__row_header" style="background-image:url('/images/headers/{{ global.request.get('code') }}.jpg'); height:450px;">
-    <p class="h2 text-center text-white pt-5 display-4">
-        <strong style="font-size:85px;">
-            {{ catalog[global.request.get('code')]['Name'] }}
-        </strong>
+<div class="jumbotron d-flex" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(/images/headers/{{ global.request.get('code') }}.jpg);">
+    <p class="h1 text-center text-white d-flex m-auto text-uppercase">
+        {{ catalog[global.request.get('code')]['Name'] }}
     </p>
 </div>

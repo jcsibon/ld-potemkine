@@ -1,0 +1,36 @@
+.services__bloc {
+    height: 200px;
+    width: 25%;
+    max-width: 220px;
+}
+.services__tiny_title {
+    font-family: $font-family-1; 
+    color: $font-light;
+    line-height: 1.1em;
+    font-size: 30px;
+}
+.services .h2 {
+    color:$font-light;
+    opacity: 0.3;
+    font-family: $font-family-1;
+}
+.services__articleContainerImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.services__magazine {
+    line-height: 1em;
+}
+
+@include media-breakpoint-down(md) {
+    .services__bloc {
+        width: 50%;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .services__bloc {
+        width: 100%;
+    }
+}

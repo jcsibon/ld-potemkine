@@ -1,21 +1,19 @@
 <div class="container">
-    <div class="col-12">
-        <div class="row">
-            <div class="col-12">
-                <p class="h6 text-center mt-4 px-xl-5 mx-xl-5 d-none d-sm-block">
-                    {{ catalog[global.request.get('code')]['Descriptifgnral'] }}
-                </p>
-                <div class="col-12 d-flex position-relative universe__anchor">
-                    <div class="d-flex m-auto">
-                        {% for subuniverse in catalog[global.request.get('code')]['Content'] %}
-                        <a href="#{{ subuniverse['ID'] }}">
-                            <div class="d-xl-flex d-none text-white py-3 px-2 mr-1 small bg-primary" style="">{{ subuniverse['Name'] }} </div>
-                        </a>
-                        {% endfor %}
-                        <a href="#subuniverse">
-                            <div class="d-flex d-xl-none text-white py-3 px-2 mr-1 small bg-primary" >Voir les produits <span class="ml-2">&#8595;</span></div>
-                        </a>
-                    </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="h6 text-center my-4 pt-lg-5 pb-lg-4 px-xl-5 mx-xl-5 d-none d-sm-block">
+                {{ catalog[global.request.get('code')]['Descriptifgnral'] }}
+            </p>
+            <div class="col-12 d-flex position-relative universe__anchor">
+                <div class="d-flex m-auto">
+                    {% for subuniverse in catalog[global.request.get('code')]['Content'] %}
+                    <a href="#{{ subuniverse['ID'] }}">
+                        <div class="d-xl-flex d-none text-white py-3 px-4 mr-1 small bg-primary rounded" style="">{{ subuniverse['Name'] }} </div>
+                    </a>
+                    {% endfor %}
+                    <a href="#subuniverse">
+                        <div class="d-flex d-xl-none text-white py-3 px-4 mr-1 small bg-primary rounded" >Voir les produits <span class="ml-2">&#8595;</span></div>
+                    </a>
                 </div>
             </div>
         </div>

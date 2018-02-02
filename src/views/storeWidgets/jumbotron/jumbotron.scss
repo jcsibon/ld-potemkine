@@ -1,0 +1,19 @@
+.jumbotron {
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.jumbotron .h1 {
+    font-family: $font-family-1;
+    font-size: 6rem;
+}
+
+@include media-breakpoint-down(lg) {
+    .jumbotron .h1 {
+        font-size: 4rem;
+    }
+    .jumbotron {
+        height: 300px;
+    }
+}

@@ -1,0 +1,18 @@
+.breadcrumb__angle {
+    width:40px; 
+    padding-top: 40px;
+}
+.breadcrumb__list li:not(:first-child)::before {
+    content: "›";
+    padding: 0 5px 0 2px;
+    color: $red;
+    font-weight: 700;
+    font-size: 120%;
+}
+.breadcrumb__active {
+    font-weight: bold;
+}
+.breadcrumb__container{
+    position: absolute;
+    top: -72px;
+}
