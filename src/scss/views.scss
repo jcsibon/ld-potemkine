@@ -795,57 +795,6 @@ p{
     display: none;
 }
 
-/* Widget Pinterest Debut */
-
-#widgetPinterest {
-    padding: 0;
-    text-align: center;
-}
-
-#widgetPinterest > span[class*="_board"] {
-    padding: 5px;
-}
-
-#widgetPinterest span {
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-#widgetPinterest > span {
-    box-shadow: 0 0 10px #e2e2e2;
-    border-radius: 2px;
-}
-
-#widgetPinterest span span:nth-of-type(2) span[class*="_img"] {
-    padding-bottom: 100% !important;
-    background-position: center center;
-    background-size: inherit;
-}
-
-#widgetPinterest span[class*="_img"] {
-    box-shadow: none;
-}
-
-#widgetPinterest>span:nth-of-type(1) {
-    min-width: 210px;
-    width: 100% !important;
-}
-
-#widgetPinterest span[class*="_bd"] {
-    height: inherit !important;
-    padding-bottom: 6px;
-}
-
-#widgetPinterest span[class*="_img"]:nth-child(n+3), #widgetPinterest span[class*="_ft"], #widgetPinterest span[class*="_pinner"]{
-    display:none;
-}
-
-#widgetPinterest span span span[class*="_board"] {
-    height: 24px;
-    color: #666;
-    width: 70%;
-}
-
 @include media-breakpoint-down(xl) {
     #widgetPinterest span[class*="_img"]:nth-child(n+2) {
         display:none;
@@ -857,9 +806,6 @@ p{
         display: block;
     }
 }
-
-/* Widget Pinterest Fin */
-
 
 .breadcrumb__angle {
     width:40px; 
@@ -1247,6 +1193,62 @@ table{
   table.responsive-table.bordered tbody tr {
     border-right: 1px solid #d0d0d0;
   }
+}
+.pinterest_title {
+    opacity: .3;
+    font-family: $font-family-1;
+    color: $font-light;
+}
+
+#widgetPin {
+    padding: 0;
+    text-align: center;
+}
+
+#widgetPin > span[class*="_board"] {
+    padding: 5px;
+}
+
+#widgetPin span {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#widgetPin > span {
+    box-shadow: none;
+    margin: auto;
+}
+
+#widgetPin span span:nth-of-type(2) span[class*="_img"] {
+    padding-bottom: 100% !important;
+    background-position: center center;
+    background-size: cover;
+    background-color: transparent !important;
+    margin: 5px 15px;
+}
+
+#widgetPin span[class*="_img"] {
+    box-shadow: none;
+}
+
+#widgetPin>span:nth-of-type(1) {
+    min-width: 210px;
+    width: 100% !important;
+}
+
+#widgetPin span[class*="_bd"] {
+    height: inherit !important;
+    padding-bottom: 6px;
+}
+
+#widgetPin span[class*="_img"]:nth-child(n+3), #widgetPin span[class*="_ft"], #widgetPin span[class*="_pinner"], #widgetPin span[class*="_hd"] {
+    display:none;
+}
+
+@include media-breakpoint-down(md) {
+    #widgetPin span[class*="_col"] {
+        width: 33%;
+    }
 }
 .services__bloc {
     height: 200px;
