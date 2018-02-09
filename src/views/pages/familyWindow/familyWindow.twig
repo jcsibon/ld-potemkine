@@ -1,11 +1,10 @@
 {% extends"layouts/default.html" %}
 {% block content %}
   
-
-
+{% include "storeWidgets/jumbotron/jumbotron.twig" %}
 
 <div class="bg-light">
-     <header class="p-5" style="background-image: url('/images/headers/{{ code }}.png')">
+     <header class="p-5" style="background-image: url('/images/headers/{{ global.request.get('code') }}.png')">
         <br>
         <h1 class="m-2 text-center text-white" style="text-shadow: 1px 1px 2px #000000;">Fenêtres, portes-fenêtres et baies coulissantes {{ urlname | upper }}</h1>
         <p class="m-2 text-center text-white" style="text-shadow: 1px 1px 2px #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Fusce sodales, turpis id suscipit hendrerit, lectus metus sodales elit, sed molestie leo sapien non ligula.</p>
@@ -87,13 +86,13 @@
 
 
 {% set nav = [
-   {"anchor" :"abattants","image" :"//statics.lapeyre.fr/img/catalogue/zoom1/515/121/200515121.jpg","name" :"Abattants","ouverture":""},
-   {"anchor" :"chassis","image" :"//statics.lapeyre.fr/img/catalogue/standardMain/515/167/200515167.jpg","name" :"Châssis","ouverture":""},
-   {"anchor" :"chassis","image" :"//statics.lapeyre.fr/img/catalogue/standardMain/515/167/200515167.jpg","name" :"Châssis","ouverture":"Oscillo-battants"},
-   {"anchor" :"fenetres","image" :"//statics.lapeyre.fr/img/catalogue/standardMain/002/132/201002132.jpg","name" :"Fenêtres","ouverture":""},
-   {"anchor" :"fenetres","image" :"//statics.lapeyre.fr/img/catalogue/standardMain/002/117/201002117.jpg","name" :"Fenêtres","ouverture":"Oscillo-battantes"},
-   {"anchor" :"portes-fenetres","image" :"//statics.lapeyre.fr/img/catalogue/standardMain/515/168/200515168.jpg","name" :"Portes-fenêtres","ouverture":""},
-   {"anchor" :"portes-fenetres","image" :"//statics.lapeyre.fr/img/catalogue/collMain/515/117/200515117.jpg","name" :"Baies coulissantes","ouverture":""}
+   {"anchor" :"abattants","image" :"zoom1/515/121/200515121.jpg","name" :"Abattants","ouverture":""},
+   {"anchor" :"chassis","image" :"standardMain/515/167/200515167.jpg","name" :"Châssis","ouverture":""},
+   {"anchor" :"chassis","image" :"standardMain/515/167/200515167.jpg","name" :"Châssis","ouverture":"Oscillo-battants"},
+   {"anchor" :"fenetres","image" :"standardMain/002/132/201002132.jpg","name" :"Fenêtres","ouverture":""},
+   {"anchor" :"fenetres","image" :"standardMain/002/117/201002117.jpg","name" :"Fenêtres","ouverture":"Oscillo-battantes"},
+   {"anchor" :"portes-fenetres","image" :"standardMain/515/168/200515168.jpg","name" :"Portes-fenêtres","ouverture":""},
+   {"anchor" :"portes-fenetres","image" :"collMain/515/117/200515117.jpg","name" :"Baies coulissantes","ouverture":""}
 ] %}
 
 <style>
@@ -342,7 +341,7 @@
         <p>La garantie d'une menuiserie de qualité, fabriquée en grande partie dans nos usines en France, quel que soit le matériau, la dimension, la forme ou le type d'ouverture !</p>
         <ul class="hide-on-med-and-down">
           {% for anchor in nav %}
-                     <li data-target="#abattants"><div><img src="//statics.lapeyre.fr/img/catalogue/zoom1/515/121/200515121.jpg"></div><p>Abattants</p><p>&nbsp;</p></li>
+                     <li data-target="#abattants"><div><img src="zoom1/515/121/200515121.jpg"></div><p>Abattants</p><p>&nbsp;</p></li>
           {% endfor %}
         </ul>
     </header>
@@ -351,7 +350,7 @@
         <div class="col-4">
            <h2>Fenêtres</h2>
            <p>Battantes, oscillo-battantes</p>
-           <img src="//statics.lapeyre.fr/img/catalogue/standardMain/002/132/201002132.jpg">
+           <img src="standardMain/002/132/201002132.jpg">
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
         </div>
         <div class="col-8">

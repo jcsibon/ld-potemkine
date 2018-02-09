@@ -1,5 +1,5 @@
-<div class="jumbotron d-flex" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(/images/headers/{{ global.request.get('code') }}.jpg);">
+<div class="jumbotron d-flex" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('{% if categories[global.request.get('code')]['imageFull']['content'] is defined %}{{ categories[global.request.get('code')]['imageFull']['content'] }}{% endif %}');">
     <p class="h1 text-center text-white d-flex m-auto text-uppercase">
-        {{ catalog[global.request.get('code')]['Name'] }}
+        {{ categories[global.request.get('code')]['label']['content'] }}
     </p>
 </div>

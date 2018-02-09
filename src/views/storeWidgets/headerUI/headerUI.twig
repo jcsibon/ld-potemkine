@@ -325,7 +325,7 @@
                                                                 <ul class="autoSuggestDivNestedList list-unstyled px-3 py-1">
                                                                     <li id="suggestionItem_1000" role="listitem" tabindex="-1">
                                                                         <a id="autoSelectOption_1000" title="Accessoires de portes d" entrée'="" onmouseout="this.className=&quot;&quot;; this.autoSuggestURL=&quot;&quot;;" onmousedown="SearchJS.cancelEvent(event);" onmouseup="SearchJS.hideSearchComponent();" onmouseover="SearchJS.enableAutoSelect(1000); this.autoSuggestURL=this.href;" href="https://www.lapeyre.fr/accessoires-pour-portes-dentree-CCN424524">
-                                                                                                                                             <div class="category_list">Portes<span class="gt">&nbsp; &gt; &nbsp;</span>Portes d'entrée<span class="gt">&nbsp; &gt; &nbsp;</span>Accessoires de <span class="highlight">porte</span>s d'entrée</div>
+                                                                                                                                          <div class="category_list">Portes<span class="gt">&nbsp; &gt; &nbsp;</span>Portes d'entrée<span class="gt">&nbsp; &gt; &nbsp;</span>Accessoires de <span class="highlight">porte</span>s d'entrée</div>
                                                             </a>
                                                         </li>
                                                 </ul>
@@ -418,9 +418,9 @@
 </div>
 <div class="col-7 col-sm-4 col-xl-2 px-0 px-sm-2 text-center header__logo">                         
     {% if data.session.pro is defined and data.session.pro == 1 %}
-    <img src="/images/logo_pro.png" alt="Logo Lapeyre" />    
+    <a href="/"><img src="/images/logo_pro.png" alt="Logo Lapeyre" /></a>
     {% else %}
-    <img src="/images/logo.png" alt="Logo Lapeyre" />
+    <a href="/"><img src="/images/logo.png" alt="Logo Lapeyre" /></a>
     {% endif %}
 </div>
 <div class="col-2 col-sm-4 col-xl-5 d-flex px-0 px-sm-2 header__menu-right">
@@ -609,80 +609,34 @@
             <div class="row">
                 <div class="col-8 header__main-nav pl-0">
                     <ul class="nav">
+                        {% for universe in ['CCU0003','CCU0004','CCU0001','CCU0002','CCU0005','CCU0006','CCU0007','CCU0008'] %}
                         <li class="nav-item py-1 px-0 mt-1 dropdown">
-                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Fenêtres
+                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="/{{ categories[universe]['url'] }}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ categories[universe]['label']['content'] }}
                             </a>
                             <div class="dropdown-menu bg-light p-4 header__mega-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <div class="row">
                                     <div class="col-9 px-5">
                                         <div class="row">
-                                            <div class="col-3">
-                                                <p class="text-dark text-uppercase header__font-secondary">
-                                                    Fenêtres, portes-fenêtres et baies coulissantes
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">PVC</a>
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">Aluminium</a>
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">Pin</a>
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">Chêne</a>
-                                                </p>
-                                            </div>
-                                            <div class="col-3">
-                                                <p class="text-dark text-uppercase header__font-secondary">
-                                                    Fenêtres de toit
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">
-                                                        Fenêtre de toit et Lucarnes de toit</a>
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">Raccords</a>
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">Stores et volets</a>
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">Sun Tunnel</a>
-                                                </p>
-                                            </div>
-                                            <div class="col-3">
-                                                <p class="text-dark text-uppercase header__font-secondary">
-                                                    Volets
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">Volets</a>
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">Accessoires volets</a>
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">Motorisations</a>
-                                                </p>
-                                            </div>
-                                            <div class="col-3">
-                                                <p class="text-dark text-uppercase header__font-secondary">
-                                                    Volets
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">Volets</a>
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">Accessoires volets</a>
-                                                </p>
-                                                <p class="p-0 m-0 small">
-                                                    <a class="dropdown-item" href="#">Motorisations</a>
-                                                </p>
-                                            </div>
+                                            {% for subuniverse,subuniverseContent in tree[universe] %}
+                                                {% if categories[subuniverse]['hiddenHeader'] == false %}
+                                                <div class="col-3">
+                                                    <p class="text-dark text-uppercase header__font-secondary">
+                                                        {{ categories[subuniverse]['label']['content'] }}
+                                                    </p>
+                                                    {% for family,familyContent in subuniverseContent %}
+                                                        {% if categories[family]['hiddenHeader'] == false %}
+                                                        <p class="p-0 m-0 small">
+                                                            <a class="dropdown-item" href="/{{ categories[family]['url'] }}">{{ categories[family]['shortDesc']['content'] }}</a>
+                                                        </p>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </div>
+                                                {% endif %}
+                                            {% endfor %}
                                         </div>
                                         <p class="pt-3">
-                                            <a href="#" class="text-dark small font-weight-bold">> Voir l'univers</a>
+                                            <a href="/{{ categories[universe]['url'] }}" class="text-dark small font-weight-bold">> Voir l'univers</a>
                                         </p>
                                     </div>
                                     <div class="col-3 header__mag px-5">
@@ -706,40 +660,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item py-1 px-0 mt-1 dropdown">
-                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Portes
-                            </a>
-                        </li>
-                        <li class="nav-item py-1 px-0 mt-1 dropdown">
-                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Cuisines
-                            </a>
-                        </li>
-                        <li class="nav-item py-1 px-0 mt-1 dropdown">
-                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Salles de bains</a>
-                        </li>
-                        <li class="nav-item py-1 px-0 mt-1 dropdown">
-                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Rangements
-                            </a>
-                        </li>
-                        <li class="nav-item py-1 px-0 mt-1 dropdown">
-                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Escaliers
-                            </a>
-                        </li>
-                        <li class="nav-item py-1 px-0 mt-1 dropdown">
-                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Sols et murs
-                            </a>
-                        </li>
-                        <li class="nav-item py-1 px-0 mt-1 dropdown">
-                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Extérieurs
-                            </a>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
                 <div class="col-4 px-0">

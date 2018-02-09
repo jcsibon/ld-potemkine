@@ -43,23 +43,23 @@
         </ol>
         <div class="carousel-inner overflow-visible" role="listbox">
             <div class="carousel-item active">
-                <img class="d-block img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" alt="" data-toggle="modal" data-target="#imageModal">
+                <img class="d-block img-fluid" src="{{ categories[global.request.get('code')]['imageFull']['content'] }}" alt="" data-toggle="modal" data-target="#imageModal">
             </div>
             <div class="carousel-item">
-                <img class="d-block img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" alt="" data-toggle="modal" data-target="#imageModal">
+                <img class="d-block img-fluid" src="{{ categories[global.request.get('code')]['imageFull']['content'] }}" alt="" data-toggle="modal" data-target="#imageModal">
             </div>
             <div class="carousel-item">
-                <img class="d-block img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" alt="" data-toggle="modal" data-target="#imageModal">
+                <img class="d-block img-fluid" src="{{ categories[global.request.get('code')]['imageFull']['content'] }}" alt="" data-toggle="modal" data-target="#imageModal">
             </div>
             <div class="col-12 col-xl-1 offset-xl-1 pr-5 d-none d-md-block position-absolute worktop__display_thumbnails">
                 <div class="position-relative border my-3 mx-1 mx-xl-2 d-block fp__selected">
-                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-image-hd-url="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-target="#carouselWorktop" data-slide-to="0">
+                    <img src="{{ categories[global.request.get('code')]['imageFull']['content'] }}" data-image-hd-url="{{ categories[global.request.get('code')]['imageFull']['content'] }}" data-target="#carouselWorktop" data-slide-to="0">
                 </div>
                 <div class="position-relative border my-3 mx-1 mx-xl-2 d-block">
-                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-image-hd-url="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-target="#carouselWorktop" data-slide-to="1">
+                    <img src="{{ categories[global.request.get('code')]['imageFull']['content'] }}" data-image-hd-url="{{ categories[global.request.get('code')]['imageFull']['content'] }}" data-target="#carouselWorktop" data-slide-to="1">
                 </div>
                 <div class="position-relative border my-3 mx-1 mx-xl-2 d-block">
-                    <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-image-hd-url="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" data-target="#carouselWorktop" data-slide-to="2">
+                    <img src="{{ categories[global.request.get('code')]['imageFull']['content'] }}" data-image-hd-url="{{ categories[global.request.get('code')]['imageFull']['content'] }}" data-target="#carouselWorktop" data-slide-to="2">
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
                             <p class="text-dark small">Réf #2490390</p>
                         </div>
                         <div class="col-12 px-2">
-                            <h1 class="h2 font-weight-bold">Plan de travail {{ content.shortName }} <sup class="text-primary">&#9679</sup></h1>
+                            <h1 class="h2 font-weight-bold">{{ categories[global.request.get('code')]['label']['content'] }} <sup class="text-primary">&#9679</sup></h1>
                         </div>
                         <div class="col-12 px-2 py-3">
                             <p class="d-inline-block">
@@ -287,7 +287,7 @@
                 </button>
             </div>
             <div class="modal-body text-center">
-                <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" class="img-fluid" />
+                <img src="{{ categories[global.request.get('code')]['label']['content'] }}" class="img-fluid" />
             </div>
         </div>
     </div>
@@ -321,20 +321,20 @@
 
 <!--
 <div class="container">
-<p>{{ content.id }}</p>
-<p>{{ content.shortName }}</p>
-<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}">
-<p>{{ content.description }}</p>
-<p>{{ content.text1 }}</p>
-<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.img }}">
-<p>{{ content.text2 }}</p>
-<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.img2 }}">
+<p>{{ categories[global.request.get('code')]['identifier'] }}</p>
+<p>{{ categories[global.request.get('code')]['label']['content'] }}</p>
+<img class="img-fluid" src="{{ categories[global.request.get('code')]['label']['content'] }}">
+<p>{{ categories[global.request.get('code')]['description'] }}</p>
+<p>{{ categories[global.request.get('code')]['text1'] }}</p>
+<img class="img-fluid" src="{{ categories[global.request.get('code')]['img'] }}">
+<p>{{ categories[global.request.get('code')]['text2'] }}</p>
+<img class="img-fluid" src="{{ categories[global.request.get('code')]['img2'] }}">
 
 <p>Matière de choix</p>
 <p>Pièce maitresse de la cuisine, le plan de travail est l’élément le plus exposé. On y découpe,  prépare, on y pose des plats chauds. Au-delà de son aspect esthétique, sa résistance doit convenir à vos habitudes de cuisine. Tandis que certains matériaux seront plus ou moins résistants aux rayures, d’autres seront plus sensibles à la chaleur ou à l’acidité de certains produits. </p>
 <p>Entretien</p>
-<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload/c_fill,g_center,h_998,w_1525/v1516700699/201823646.jpg">
-<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload/c_fill,g_center,h_720,w_887/v1516695883/12072016-5300_5.jpg">
+<img class="img-fluid" src="/c_fill,g_center,h_998,w_1525/v1516700699/201823646.jpg">
+<img class="img-fluid" src="/c_fill,g_center,h_720,w_887/v1516695883/12072016-5300_5.jpg">
 
 <p>Recoupe et ajustement au millimètre par nos menuisiers</p>
 </div>
