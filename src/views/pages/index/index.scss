@@ -103,6 +103,24 @@ div.home__large_block_left {
     display: block;
 }
 
+.h-400 {
+    height: 400px;
+}
+
+.blockquote p {
+    font-size: 30px;
+}
+
+.blockquote::before {
+    content: "“";
+    color: $font-light;
+    opacity: 0.3;
+    font-size: 130px;
+    position: absolute;
+    top: -25px;
+    left: 40px;
+}
+
 @media screen and (min-width: 1200px) {
     .home__title {
         font-size: 100px;
@@ -142,6 +160,9 @@ div.home__large_block_left {
     }
     .home__tiny-block p:not(.home__tiny_title) {
         font-size: 0.8rem;
+    }
+    .blockquote p {
+        font-size: 90%;
     }
 }
 
