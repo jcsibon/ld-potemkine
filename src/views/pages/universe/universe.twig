@@ -50,13 +50,11 @@
                                 {% set familyImageSize = 'zoom1' %}
                                 {% endif %}
 
-                                <div class="col-6 col-md-4 p-3" >
-                                    <a href="#">
-                                        <div class="bg-dark d-flex universe__familyBloc rounded p-4" style="background-image: url('//statics.lapeyre.fr/img/catalogue/{{ familyImageSize }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'] }}.jpg')">
-                                            <p class="h2 m-auto text-white text-center text-uppercase">{{ family.Name }}</p>
-                                        </div>
-                                    </a>
-                                </div>
+                                {% set thumbName = family.Name %}
+                                {% set thumbSize = 4 %}
+                                {% set thumbPadding = 3 %}
+                                {% set thumbImage = "//statics.lapeyre.fr/img/catalogue/" ~ familyImageSize ~ "/" ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) ~ "/" ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) ~ "/" ~ family['VisuelprincipalAssetReferenceID'] ~ ".jpg" %}
+                                {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
 
                                 {% endif %} 
                                 {% endfor %}
@@ -94,11 +92,11 @@
 
 <!--
 <script>
-   function animationScroll(destination) {
-        $('html, body').animate({
-            scrollTop: $( destination ).offset().top-170
-        }, 500);
-    }
+function animationScroll(destination) {
+$('html, body').animate({
+scrollTop: $( destination ).offset().top-170
+}, 500);
+}
 </script>
 -->
 

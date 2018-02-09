@@ -6,30 +6,6 @@
     opacity: 0.3;
 }
 
-.home__universe {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-.home__universe p {
-    font-family: $font-family-1;
-    font-size: 31px;
-    z-index: 1;
-}
-.home__universe::after {
-    background: rgba(0,0,0,0.30);
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    content: " ";
-    border-radius: 3px;
-    top: 0;
-    left: 0;
-}
-.home__universe:hover::after {
-    background: rgba(234, 0, 40, 0.5);
-}
 .home__tiny_title {
     font-family: $font-family-1;
     color: #9E887A;
