@@ -9,30 +9,6 @@
     opacity: 0.3;
 }
 
-.home__universe {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-.home__universe p {
-    font-family: $font-family-1;
-    font-size: 31px;
-    z-index: 1;
-}
-.home__universe::after {
-    background: rgba(0,0,0,0.30);
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    content: " ";
-    border-radius: 3px;
-    top: 0;
-    left: 0;
-}
-.home__universe:hover::after {
-    background: rgba(234, 0, 40, 0.5);
-}
 .home__tiny_title {
     font-family: $font-family-1;
     color: #9E887A;
@@ -130,6 +106,24 @@ div.home__large_block_left {
     display: block;
 }
 
+.h-400 {
+    height: 400px;
+}
+
+.blockquote p {
+    font-size: 30px;
+}
+
+.blockquote::before {
+    content: "“";
+    color: $font-light;
+    opacity: 0.3;
+    font-size: 130px;
+    position: absolute;
+    top: -25px;
+    left: 40px;
+}
+
 @media screen and (min-width: 1200px) {
     .home__title {
         font-size: 100px;
@@ -169,6 +163,9 @@ div.home__large_block_left {
     }
     .home__tiny-block p:not(.home__tiny_title) {
         font-size: 0.8rem;
+    }
+    .blockquote p {
+        font-size: 90%;
     }
 }
 
@@ -540,10 +537,10 @@ div.home__large_block_left {
 }
 
 @media only screen and (max-width: 1200px) {
-    .h3 {
+    .fp__container .h3 {
         font-size: 20px !important;
     }
-    .h2 {
+    .fp__container .h2 {
         font-size: 26px !important; 
     }
 }
@@ -560,10 +557,187 @@ div.home__large_block_left {
     }
 }
 
+.kitchen__price {
+    font-size: 40px; 
+    font-family: $font-family-1; 
+    line-height: 1em;
+}
+
+#carouselKitchen .carousel-indicators>li {
+    background: $gray-300;
+    width: 12px;
+    height: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#carouselKitchen .carousel-indicators>li.active {
+    background: $red;
+}
+
+#carouselKitchen .carousel-indicators {
+    bottom: 190px;
+}
+
+#carouselKitchen {
+    max-width: 1980px;
+}
+
+.kitchen__tiny-block img {
+    height: 230px;
+}
+
+.kitchen__tiny_title {
+    font-family: $font-family-1;
+    color: $font-light;
+    line-height: 1.1em;
+    font-size: 25px;
+}
+
+#carouselKitchen .carousel-control-next, #carouselKitchen .carousel-control-prev {
+    opacity: inherit;
+}
+
+#carouselKitchen .carousel-control-next:hover > div, #carouselKitchen .carousel-control-prev:hover > div {
+    background-color: $red-secondary !important;
+}
+
+#carouselKitchen .carousel-control-prev {
+    left: -4%;
+}
+
+#carouselKitchen .carousel-control-next {
+    right: -4%;
+}
+
+.blockquote::after {
+    content: "”";
+    color: $font-light;
+    opacity: 0.3;
+    font-size: 130px;
+    position: absolute;
+    line-height: 111px;
+    right: 40px;
+}
+
+@include media-breakpoint-down(xs) {
+    #carouselKitchen .carousel-indicators {
+        bottom: 225px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .kitchen__pictos {
+        position: absolute;
+        top: -90px;
+        right: 0;
+    }
+    .kitchen__pictureDesc {  
+        position:absolute;
+        bottom: 0;
+    }
+    .kitchen__bloc_title {
+        position:absolute;
+        bottom: 0;
+        max-width: 660px;
+        background: $white; /* Old browsers */
+        background: -moz-linear-gradient(top, $white 40%, $white 85%, $gray-300 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, $white 40%,$white 85%,$gray-300 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, $white 40%,$white 85%,$gray-300 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$white', endColorstr='$gray-300',GradientType=0 ); /* IE6-9 */
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .frenchFlag::before {
+        content: "";
+        background-image: url(/images/svg/french-flag.svg);
+        background-repeat: no-repeat;
+        width: 45px;
+        height: 88px;
+        bottom: 57px;
+        left: -30px;
+        position: absolute;
+    }
+}
 
 
+.worktop__price {
+    font-size: 40px;
+    font-family: $font-family-1;
+    line-height: 1em;
+}
+.h-45 {
+    height: 45px;
+}
+.w-90 {
+    width: 90px !important;
+}
+.w-200 {
+    width: 200px;
+}
+.h-200 {
+    height: 200px;
+}
+.title_h1 {
+    color: $font-light;
+    line-height: 1em;
+    opacity: .3;
+    font-size: 85px;
+    font-family: $font-family-1;
+}
+.h-600 {
+    height: 600px
+}
+.h-500 {
+    height: 500px
+}
+.bg-cover {
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+}
 
+.title_h2 {
+    opacity: .3;
+    font-family: $font-family-1;
+    color: $font-light;
+}
 
+.worktop__desc_image {
+    max-height: 400px;
+    height: 73vw;
+}
+
+@include media-breakpoint-down(sm) {
+    .margin-fix {
+        margin:0;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .position-lg-absolute {
+        position: absolute;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .title_h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .worktop__container {
+        background-image: none !important;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .worktop__bloc_title {  
+        max-width: 530px;
+    }
+}
 
 
 /*
@@ -748,29 +922,6 @@ p{
 }
 .universe__anchor {
     bottom: -25px;
-}
-.universe__familyBloc {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 190px;
-}
-.universe__familyBloc p {
-    font-family: $font-family-1;
-    z-index: 1;
-}
-.universe__familyBloc::after {
-    background: rgba(0,0,0,0.30); 
-    width: calc(100% - 32px);
-    position: absolute;
-    height: calc(100% - 32px);
-    content: " ";
-    border-radius: 3px;
-    top: 16px;
-    left: 16px;
-}
-.universe__familyBloc:hover::after {
-    background: rgba(234, 0, 40, 0.5);
 }
 .universe__family:nth-child(1) {
     padding-top: 40px;
@@ -1111,6 +1262,7 @@ header .fa-bars {
         height: 300px;
     }
 }
+
 #tableShopInfo{
 td{
     padding:5px;
@@ -1285,6 +1437,27 @@ table{
     .services__bloc {
         width: 100%;
     }
+}
+.thumbnailFamily {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+}
+.thumbnailFamily::after {
+    background: rgba(0,0,0,.3);
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    content: " ";
+    border-radius: 3px;
+}
+.thumbnailFamily p {
+    font-family: DinCondensed,sans-serif;
+    z-index: 1;
+}
+.thumbnailFamily:hover::after {
+    background: rgba(234, 0, 40, 0.5);
 }
 
 

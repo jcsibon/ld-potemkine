@@ -1,63 +1,11 @@
 {% extends"layouts/default.html" %}
 {% block content %}
 
-<style>
-
-    .kitchen__price {
-        font-size: 40px; 
-        font-family: 'DinCondensed', sans-serif; 
-        line-height: 1em;
-    }
-
-    #carouselKitchen {
-        max-width: 1980px;
-    }
-
-    .kitchen__title {
-        color: #e5ded9;
-        font-family: DinCondensed,sans-serif;
-        line-height: 1em;
-    }
-    .kitchen__tiny-block img {
-        height: 230px;
-    }
-
-    .kitchen__tiny_title {
-        font-family: DinCondensed,sans-serif;
-        color: #9e887a;
-        line-height: 1.1em;
-        font-size: 25px;
-    }
-
-    @media screen and (min-width: 992px) {
-        .kitchen__pictos {
-            position: absolute;
-            top: -90px;
-            right: 0;
-        }
-        .kitchen__pictureDesc {  
-            position:absolute;
-            bottom: 0;
-        }
-        .kitchen__bloc_title {
-            position:absolute;
-            bottom: 0;
-            max-width: 660px;
-            background: #ffffff; /* Old browsers */
-            background: -moz-linear-gradient(top, #ffffff 40%, #ffffff 85%, #e5e5e5 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, #ffffff 40%,#ffffff 85%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, #ffffff 40%,#ffffff 85%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-        }
-    }
-</style>
-
-
 <div id="carouselKitchen" class="carousel slide m-auto overflow-hidden" data-ride="carousel" >
     <ol class="carousel-indicators d-lg-none">
-        <li data-target="#carouselWorktop" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselWorktop" data-slide-to="1"></li>
-        <li data-target="#carouselWorktop" data-slide-to="2"></li>
+        <li data-target="#carouselKitchen" data-slide-to="0" class="mx-2 active"></li>
+        <li data-target="#carouselKitchen" data-slide-to="1" class="mx-2"></li>
+        <li data-target="#carouselKitchen" data-slide-to="2" class="mx-2"></li>
     </ol>
     <div class="carousel-inner overflow-visible" role="listbox">
         <div class="carousel-item active">
@@ -71,150 +19,145 @@
         </div>
         <div class="col-12 col-lg-6 offset-lg-3 col-xl-5 offset-xl-5 bg-white p-4 pb-5 kitchen__bloc_title">
             <div class="row">
-                <div class="col-8">
+                <div class="col-12 col-sm-8 pt-4 pt-sm-0">
                     <h2 class="mb-0">Cuisine {{ categories[global.request.get('code')]['line'] }}</h2>
                     <p class="small">Fabrication Française - Garantie 10 ans</p>
                 </div>
-                <div class="col-4 pl-4">
+                <div class="col-12 col-sm-4 pl-4">
                     <p class="small mb-0">à partir de</p>
                     <p class="kitchen__price">355,00€</p>
                 </div>
-                <div class="col-2">
-                    <div class="bg-dark">
-                        <a id="addToShoppingList_89106" href="#" onclick="wishList.goLogin('https://www.lapeyre.fr/amenagement-panama-decor-chene-blanchi-2490390','wishlist'); return false;" class="d-flex px-2 py-3" role="button">
-                            <svg width="26" height="26" class="m-auto"><use xlink:href="#heart-o-white"/></svg>
+                <div class="col-4 col-sm-2">
+                    <div class="bg-dark rounded d-flex h-45">
+                        <a id="addToShoppingList_89106" href="#" onclick="wishList.goLogin('https://www.lapeyre.fr/amenagement-panama-decor-chene-blanchi-2490390','wishlist'); return false;" class="d-flex m-auto" role="button">
+                            <svg width="20" height="20" class="m-auto"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart-o-white"></use></svg>
                         </a>
                     </div>
                 </div>
-                <div class="col-9 col-xl-10 pl-0">
-                    <div class="col s12 m12 l9 p-0">
-                        <a href="#" class="btn btn-primary col-12 py-3">
-                            <div id="productPageAdd2Cart" class="button_text">
-                                Prendre RDV
-                            </div>
-                        </a>
-                    </div>
+                <div class="col-8 col-sm-10 pl-0">
+                    <a href="#" class="btn btn-primary col-12 h-45 rounded d-flex">
+                        <div id="productPageAdd2Cart" class="button_text m-auto">
+                            Prendre RDV
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <a class="carousel-control-prev text-dark d-none d-lg-block" href="#carouselKitchen" role="button" data-slide="prev">
-        <svg width="80" height="80" class="m-auto"><use xlink:href="#arrow-point-to-left"/></svg>
-        <span class="sr-only">Previous</span>
+    <a class="carousel-control-prev text-dark d-none d-lg-flex" href="#carouselKitchen" role="button" data-slide="prev">
+        <div class="bg-primary d-flex" style="width:40px; height: 40px">
+            <svg width="20" height="20" class="m-auto"><use xlink:href="#arrow-point-to-left"/></svg>
+            <span class="sr-only">Previous</span>
+        </div>
     </a>
-    <a class="carousel-control-next text-dark d-none d-lg-block" href="#carouselKitchen" role="button" data-slide="next">
-        <svg width="80" height="80" class="m-auto"><use xlink:href="#arrow-point-to-right"/></svg>
-        <span class="sr-only">Next</span>
+    <a class="carousel-control-next text-dark d-none d-lg-flex" href="#carouselKitchen" role="button" data-slide="next">
+        <div class="bg-primary d-flex" style="width:40px; height: 40px">
+            <svg width="20" height="20" class="m-auto"><use xlink:href="#arrow-point-to-right"/></svg>
+            <span class="sr-only">Next</span>
+        </div>
     </a>
 </div>
 <div class="bg-light pt-5 pb-5">
-    <div class="container">
-        <div class="row pt-5 pb-3">
-            <div class="col-12 col-lg-7 col-xl-7 offset-xl-1">
-                <p class="text-uppercase display-3 kitchen__title">{{ categories[global.request.get('code')]['title'] }}</p>
+    <div class="container pb-5">
+        <div class="row pt-lg-5 pb-3">
+            <div class="col-12 col-lg-6 col-xl-6 offset-xl-1">
+                <p class="title_h1 text-uppercase">{{ categories[global.request.get('code')]['title'] }}</p>
             </div>
-            <div class="col-12 col-xl-10 offset-xl-1 bg-white p-5">
-                <p class="px-0 px-lg-5">{{ categories[global.request.get('code')]['description'] }}</p>
-                <div class="kitchen__pictos bg-white col-lg-4 col-xl-4 text-center">
-                    <div class="row m-4">
-                        <div class="col-4">
-                            <img src="/images/picto_pefc.png" class="img-fluid px-0 px-md-4 px-lg-0" />
-                        </div>
-                        <div class="col-4">
-                            <img src="/images/picto_made_in_france.png" class="img-fluid px-0 px-md-4 px-lg-0" />
-                        </div>
-                        <div class="col-4">
-                            <img src="/images/picto_made_by_lapeyre.png" class="img-fluid px-0 px-md-4 px-lg-0" />
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12 col-xl-10 offset-xl-1 bg-white p-3 p-md-5">
+                <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['description'] }}</p>
+                <p class="text-center mb-0 pt-3">
+                    <img src="/images/picto_pefc.png" class="p-2 w-90" />
+                    <img src="/images/picto_made_in_france.png" class="p-2 w-90" />
+                    <img src="/images/picto_made_by_lapeyre.png" class="p-2 w-90" />
+                </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-4 offset-2 col-xl-3 offset-lg-0 d-flex d-flex d-lg-none d-xl-flex">
-                <div class="kitchen__pictureDesc px-3 pt-5">
+            <div class="col-6 col-md-4 offset-md-2 col-xl-3 offset-lg-0 d-flex d-flex d-lg-none d-xl-flex">
+                <div class="kitchen__pictureDesc px-md-3 pt-5">
                     <img src="{{ categories[global.request.get('code')]['longDescriptionImg1'] }}" class="img-fluid"/>
                 </div>
             </div>
-            <div class="col-4 col-lg-4 col-xl-3 d-flex">
-                <div class="kitchen__pictureDesc px-3 pt-5">
-                    {% if categories[global.request.get('code')]['longDescriptionImg2'] != "" %}
+            <div class="col-6 col-md-4 col-lg-4 col-xl-3 d-flex">
+                <div class="kitchen__pictureDesc px-md-3 pt-5">
+                    {% if content.longDescriptionImg2 != "" %}
                     <img src="{{ categories[global.request.get('code')]['longDescriptionImg2'] }}" class="img-fluid"/>
                     {% endif %}
                 </div>
             </div>
             <div class="col-12 col-lg-8 col-xl-6 pt-5">
-                <p class="text-uppercase display-3 kitchen__title text-right">{{ categories[global.request.get('code')]['title'] }}</p>
-                <div class="bg-white p-5">
-                    <p class="px-0 px-lg-5">{{ categories[global.request.get('code')]['longDescription'] }}</p>
+                <p class="title_h1 text-uppercase text-right">{{ categories[global.request.get('code')]['title'] }}</p>
+                <div class="bg-white p-3 p-md-5">
+                    <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['longDescription'] }}</p>
                 </div>
             </div>
-            <div class="col-4 col-xl-3 offset-xl-1 pt-4">
+            <div class="col-md-4 col-xl-3 offset-xl-1 pt-4 d-none d-md-block">
                 {% if categories[global.request.get('code')]['longDescriptionImg3'] != "" %}
                 <img src="{{ categories[global.request.get('code')]['longDescriptionImg3'] }}" class="img-fluid"/>
                 {% endif %}
             </div>
-            <div class="col-4 col-xl-3 pt-4">
+            <div class="col-6 col-md-4 col-xl-3 pt-4">
                 {% if categories[global.request.get('code')]['longDescriptionImg4'] != "" %}
                 <img src="{{ categories[global.request.get('code')]['longDescriptionImg4'] }}" class="img-fluid" />
                 {% endif %}
             </div>
-            <div class="col-4 col-xl-3 pt-4">
+            <div class="col-6 col-md-4 col-xl-3 pt-4">
                 {% if categories[global.request.get('code')]['longDescriptionImg5'] != "" %}
                 <img src="{{ categories[global.request.get('code')]['longDescriptionImg5'] }}" class="img-fluid" />
                 {% endif %}
             </div>
         </div>
         <div class="row pt-5">
-            <div class="col-8 col-xl-6 pt-5 offset-xl-1 p-0">
-                <p class="text-uppercase display-3 kitchen__title col-8 col-xl-6">S'adapte à vos envies</p>
-                <div class="bg-white p-5">
-                    <p class="px-5">{{ categories[global.request.get('code')]['longDescription2'] }}</p>
+            <div class="col-12 col-sm-8 col-xl-6 pt-md-5 offset-xl-1 p-0">
+                <p class="title_h1 text-uppercase col-12 col-sm-8 col-xl-8">S'adapte à vos envies</p>
+                <div class="bg-white p-3 p-md-5">
+                    <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['longDescription2'] }}</p>
                 </div>
                 <div class="row mx-0 px-0">
-                    <div class="col-4 col-md-4 p-4 bg-dark offset-8">
+                    <div class="p-3 bg-dark w-200 h-200 ml-auto">
                         <p class="text-uppercase kitchen__tiny_title pt-3">
                             Choisissez <span class="text-white d-block">vos finitions!</span>
                         </p>
                         <p>
                             <a class="text-light" href="#">&gt; Voir les 157 finitions</a>
                         </p>
-                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xl-3 pl-0 pt-5 d-none d-sm-block">
+                <img src="/images/kitchen_colors.png" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 p-lg-5 mb-5 pt-5 pt-lg-0">
+                    <p class="title_h1 text-uppercase">
+                        Ils ont adopté la Twist
+                    </p>
+                    <blockquote class="blockquote position-relative">
+                        <p class="mb-0" style="padding-top: 80px"><em>Des formes simples, une confection robuste et des finitions esthétiques.</em></p>
+                        <footer class="blockquote-footer text-dark pt-2"> Audrey, 40 ans, Paris</footer>
+                    </blockquote>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-5 p-lg-5 pb-5">
+                    <div class="col-12 my-4 px-0 bg-cover worktop__desc_image" style="background-image: url(http://lapeyre-chb.test:8888/images/pages/index/bg_le_savoir_bien_faire.png)">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-4 col-xl-3 pl-0 pt-5">
-            <img src="/images/kitchen_colors.png" class="img-fluid"/>
-        </div>
     </div>
-</div>
+    <div class="bg-light">
+        {% include 'storeWidgets/madeinfrance/madeinfrance.twig' %}
+    </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="container">
-    <p>{{ categories[global.request.get('code')]['line'] }}</p>
+    <div class="container">
 
-    <p></p>
-    <p>{{ categories[global.request.get('code')]['testimonial'] }}</p>
-ele    {% include 'storeWidgets/madeinfrance/madeinfrance.twig' %}
+        {% include 'storeWidgets/appointment/appointment.twig' %}
+
+        {% include 'storeWidgets/services/services.twig' %}
 
 
-    {% include 'storeWidgets/appointment/appointment.twig' %}
-
-    {% include 'storeWidgets/services/services.twig' %}
-
-    
-</div>
-{% endblock %}
+    </div>
+    {% endblock %}
