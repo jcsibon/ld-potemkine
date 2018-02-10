@@ -1,9 +1,9 @@
 {% extends"layouts/default.html" %}
 {% block content %}
 
-<div style="background-image: url(http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }})" class="bg-cover worktop__container">
+<div style="background-image: url({{ categories[global.request.get('code')]['imageFull']['content'] }}" class="bg-cover worktop__container">
     <div class="d-xl-none">
-        <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}" class="img-fluid" />
+        <img src="{{ categories[global.request.get('code')]['imageFull']['content'] }}" class="img-fluid" />
     </div>
     <div class="container">
         <div class="col-12 col-xl-4 offset-xl-6 bg-white p-0 worktop__bloc_title">
@@ -14,7 +14,7 @@
                             <p class="text-dark small">Réf #2490390</p>
                         </div>
                         <div class="col-12 px-2">
-                            <h1 class="h2 font-weight-bold">Plan de travail {{ content.shortName }} <sup class="text-primary">&#9679</sup></h1>
+                            <h1 class="h2 font-weight-bold">{{ categories[global.request.get('code')]['label']['content'] }} <sup class="text-primary">&#9679</sup></h1>
                         </div>
                         <div class="col-12 px-2 py-3">
                             <p class="d-inline-block">
@@ -348,20 +348,20 @@
 
 <!--
 <div class="container">
-<p>{{ content.id }}</p>
-<p>{{ content.shortName }}</p>
-<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.cover }}">
-<p>{{ content.description }}</p>
-<p>{{ content.text1 }}</p>
-<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.img }}">
-<p>{{ content.text2 }}</p>
-<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.img2 }}">
+<p>{{ categories[global.request.get('code')]['identifier'] }}</p>
+<p>{{ categories[global.request.get('code')]['label']['content'] }}</p>
+<img class="img-fluid" src="{{ categories[global.request.get('code')]['label']['content'] }}">
+<p>{{ categories[global.request.get('code')]['description'] }}</p>
+<p>{{ categories[global.request.get('code')]['text1'] }}</p>
+<img class="img-fluid" src="{{ categories[global.request.get('code')]['img'] }}">
+<p>{{ categories[global.request.get('code')]['text2'] }}</p>
+<img class="img-fluid" src="{{ categories[global.request.get('code')]['img2'] }}">
 
 <p>Matière de choix</p>
 <p>Pièce maitresse de la cuisine, le plan de travail est l’élément le plus exposé. On y découpe,  prépare, on y pose des plats chauds. Au-delà de son aspect esthétique, sa résistance doit convenir à vos habitudes de cuisine. Tandis que certains matériaux seront plus ou moins résistants aux rayures, d’autres seront plus sensibles à la chaleur ou à l’acidité de certains produits. </p>
 <p>Entretien</p>
-<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload/c_fill,g_center,h_998,w_1525/v1516700699/201823646.jpg">
-<img class="img-fluid" src="http://res.cloudinary.com/dwkgy95ov/image/upload/c_fill,g_center,h_720,w_887/v1516695883/12072016-5300_5.jpg">
+<img class="img-fluid" src="/c_fill,g_center,h_998,w_1525/v1516700699/201823646.jpg">
+<img class="img-fluid" src="/c_fill,g_center,h_720,w_887/v1516695883/12072016-5300_5.jpg">
 
 <p>Recoupe et ajustement au millimètre par nos menuisiers</p>
 </div>
