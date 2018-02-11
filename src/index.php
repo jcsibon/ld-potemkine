@@ -260,3 +260,7 @@ $app->get('/TunnelCommandConfirmation', function() use($app) {
 	return $app['twig']->render('pages/TunnelCommandConfirmation/TunnelCommandConfirmation.twig');
 });
 $app->run();
+
+$app->get('/exampleProduct', function() use($app) {
+	return $app['twig']->render('pages/family/exampleProduct.twig');
+});

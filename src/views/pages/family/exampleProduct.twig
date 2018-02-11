@@ -1,0 +1,277 @@
+{% extends"layouts/default.html" %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		{#
+		{% for family in childrens[global.request.get('code')] %}
+			{% include 'storeWidgets/productThumb/productThumb.twig' %}
+	    {% endfor %}
+	    #}
+	</div>
+</div>
+
+<div class="container py-5">
+    <h2 class="text-center pt-5">Vignette générique</h2>
+    <div class="row">  
+        {% set thumbProductIndex = 1 %}
+        {% set thumbProductTitle = "Echelle gain de place droite London hêtre" %}
+        {% set thumbProductSubTitle = "1/3 Escalier droit sans contremarche" %}
+        {% set thumbProductMore = "<img src=\"/images/pages/product/pictos.png\"/>" %}
+        {% set thumbProductImage = "/images/pages/product/stair.jpg" %}
+        {% set thumbProductImage2 = "/images/pages/product/tandem_bordeaux_mat.jpg" %}
+        {% set thumbProductImage3 = "/images/pages/product/AST651922.jpg" %}
+        {% set thumbProductCataPrice = "1490,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 1 %}
+        {% set thumbProductSize = 0 %}
+        {% set thumbProductSurMesure = 1 %}
+        {% set thumbProductAPartir = 0 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+
+        {% set thumbProductIndex = 2 %}
+        {% set thumbProductTitle = "Echelle gain de place" %}
+        {% set thumbProductSubTitle = "1/3 Escalier droit sans contremarche" %}
+        {% set thumbProductMore = "" %}
+        {% set thumbProductImage = "/images/pages/product/stair.jpg" %}
+        {% set thumbProductImage2 = "/images/pages/product/tandem_bordeaux_mat" %}
+        {% set thumbProductImage3 = "/images/pages/product/AST651922.jpg" %}
+        {% set thumbProductCataPrice = "1490,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 1 %}
+        {% set thumbProductSize = 0 %}
+        {% set thumbProductSurMesure = 0 %}
+        {% set thumbProductAPartir = 1 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+
+        {% set thumbProductIndex = 3 %}
+        {% set thumbProductTitle = "Echelle gain de place droite London hêtre" %}
+        {% set thumbProductSubTitle = "" %}
+        {% set thumbProductMore = "" %}
+        {% set thumbProductImage = "/images/pages/product/1221749@DET@03.jpg" %}
+        {% set thumbProductImage2 = "" %}
+        {% set thumbProductImage3 = "" %}
+        {% set thumbProductCataPrice = "1250,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 0 %}
+        {% set thumbProductSize = 0 %}
+        {% set thumbProductSurMesure = 0 %}
+        {% set thumbProductAPartir = 1 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+
+        {% set thumbProductIndex = 4 %}
+        {% set thumbProductTitle = "Echelle droite London" %}
+        {% set thumbProductSubTitle = "" %}
+        {% set thumbProductMore = "" %}
+        {% set thumbProductImage = "/images/pages/product/201411567.jpg" %}
+        {% set thumbProductImage2 = "" %}
+        {% set thumbProductImage3 = "" %}
+        {% set thumbProductCataPrice = "1550,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 0 %}
+        {% set thumbProductSize = 0 %}
+        {% set thumbProductSurMesure = 0 %}
+        {% set thumbProductAPartir = 0 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+
+        {% set thumbProductIndex = 5 %}
+        {% set thumbProductTitle = "Echelle gain de place" %}
+        {% set thumbProductSubTitle = "1/3 Escalier droit sans contremarche" %}
+        {% set thumbProductMore = "Informations supplémentaires<br>Détails produit" %}
+        {% set thumbProductImage = "/images/pages/product/201515122.jpg" %}
+        {% set thumbProductImage2 = "" %}
+        {% set thumbProductImage3 = "" %}
+        {% set thumbProductCataPrice = "1250,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 0 %}
+        {% set thumbProductSize = 0 %}
+        {% set thumbProductSurMesure = 0 %}
+        {% set thumbProductAPartir = 0 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+
+        {% set thumbProductIndex = 6 %}
+        {% set thumbProductTitle = "Echelle gain de place" %}
+        {% set thumbProductSubTitle = "1/3 Escalier droit sans contremarche" %}
+        {% set thumbProductMore = "" %}
+        {% set thumbProductImage = "/images/pages/product/Eyre_Blanche.jpg" %}
+        {% set thumbProductImage2 = "" %}
+        {% set thumbProductImage3 = "" %}
+        {% set thumbProductCataPrice = "1250,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 0 %}
+        {% set thumbProductSize = 0 %}
+        {% set thumbProductSurMesure = 0 %}
+        {% set thumbProductAPartir = 0 %}
+        {% set thumbProductColisage = 1 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+    </div>
+    <h2 class="text-center pt-5">Vignette allongée</h2>  
+    <div class="row">
+        {% set thumbProductIndex = 7 %}
+        {% set thumbProductTitle = "Echelle gain de place droite London hêtre" %}
+        {% set thumbProductSubTitle = "1/3 Escalier droit sans contremarche" %}
+        {% set thumbProductMore = "<img src=\"/images/pages/product/pictos.png\"/>" %}
+        {% set thumbProductImage = "/images/pages/product/stair.jpg" %}
+        {% set thumbProductImage2 = "/images/pages/product/tandem_bordeaux_mat.jpg" %}
+        {% set thumbProductImage3 = "/images/pages/product/AST651922.jpg" %}
+        {% set thumbProductCataPrice = "1490,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 1 %}
+        {% set thumbProductSize = 1 %}
+        {% set thumbProductSurMesure = 1 %}
+        {% set thumbProductAPartir = 0 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+
+        {% set thumbProductIndex = 8 %}
+        {% set thumbProductTitle = "Echelle gain de place" %}
+        {% set thumbProductSubTitle = "1/3 Escalier droit sans contremarche" %}
+        {% set thumbProductMore = "" %}
+        {% set thumbProductImage = "/images/pages/product/stair.jpg" %}
+        {% set thumbProductImage2 = "/images/pages/product/tandem_bordeaux_mat" %}
+        {% set thumbProductImage3 = "/images/pages/product/AST651922.jpg" %}
+        {% set thumbProductCataPrice = "1490,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 1 %}
+        {% set thumbProductSize = 1 %}
+        {% set thumbProductSurMesure = 0 %}
+        {% set thumbProductAPartir = 1 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+
+        {% set thumbProductIndex = 9 %}
+        {% set thumbProductTitle = "Echelle gain de place droite London hêtre" %}
+        {% set thumbProductSubTitle = "" %}
+        {% set thumbProductMore = "" %}
+        {% set thumbProductImage = "/images/pages/product/1221749@DET@03.jpg" %}
+        {% set thumbProductImage2 = "" %}
+        {% set thumbProductImage3 = "" %}
+        {% set thumbProductCataPrice = "1250,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 0 %}
+        {% set thumbProductSize = 1 %}
+        {% set thumbProductSurMesure = 0 %}
+        {% set thumbProductAPartir = 1 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+
+        {% set thumbProductIndex = 10 %}
+        {% set thumbProductTitle = "Echelle droite London" %}
+        {% set thumbProductSubTitle = "" %}
+        {% set thumbProductMore = "" %}
+        {% set thumbProductImage = "/images/pages/product/stair.jpg" %}
+        {% set thumbProductImage2 = "" %}
+        {% set thumbProductImage3 = "" %}
+        {% set thumbProductCataPrice = "1450,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 0 %}
+        {% set thumbProductSize = 1 %}
+        {% set thumbProductSurMesure = 0 %}
+        {% set thumbProductAPartir = 0 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+
+        {% set thumbProductIndex = 11 %}
+        {% set thumbProductTitle = "Echelle gain de place" %}
+        {% set thumbProductSubTitle = "1/3 Escalier droit sans contremarche" %}
+        {% set thumbProductMore = "Informations supplémentaires<br>Détails produit" %}
+        {% set thumbProductImage = "/images/pages/product/201515122.jpg" %}
+        {% set thumbProductImage2 = "" %}
+        {% set thumbProductImage3 = "" %}
+        {% set thumbProductCataPrice = "1250,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 0 %}
+        {% set thumbProductSize = 1 %}
+        {% set thumbProductSurMesure = 0 %}
+        {% set thumbProductAPartir = 0 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+
+        {% set thumbProductIndex = 12 %}
+        {% set thumbProductTitle = "Echelle gain de place" %}
+        {% set thumbProductSubTitle = "1/3 Escalier droit sans contremarche" %}
+        {% set thumbProductMore = "" %}
+        {% set thumbProductImage = "/images/pages/product/Eyre_Blanche.jpg" %}
+        {% set thumbProductImage2 = "" %}
+        {% set thumbProductImage3 = "" %}
+        {% set thumbProductCataPrice = "1250,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 0 %}
+        {% set thumbProductSize = 1 %}
+        {% set thumbProductSurMesure = 0 %}
+        {% set thumbProductAPartir = 0 %}
+        {% set thumbProductColisage = 1 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+    </div>
+    <h2 class="text-center pt-5">Vignette collection</h2> 
+    <div class="row">  
+        {% set thumbProductIndex = 13 %}
+        {% set thumbProductTitle = "Echelle gain de place droite London hêtre" %}
+        {% set thumbProductSubTitle = "1/3 Escalier droit sans contremarche" %}
+        {% set thumbProductMore = "<img src=\"/images/pages/product/pictos.png\"/>" %}
+        {% set thumbProductImage = "/images/pages/product/AST651922.jpg" %}
+        {% set thumbProductImage2 = "/images/pages/product/AST651729.jpg" %}
+        {% set thumbProductImage3 = "/images/pages/product/urban_blanc_pur.jpg" %}
+        {% set thumbProductCataPrice = "1490,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 1 %}
+        {% set thumbProductSize = 2 %}
+        {% set thumbProductSurMesure = 1 %}
+        {% set thumbProductAPartir = 0 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+
+        {% set thumbProductIndex = 14 %}
+        {% set thumbProductTitle = "Echelle gain de place droite London hêtre" %}
+        {% set thumbProductSubTitle = "1/3 Escalier droit sans contremarche" %}
+        {% set thumbProductMore = "" %}
+        {% set thumbProductImage = "/images/pages/product/AST651729.jpg" %}
+        {% set thumbProductImage2 = "/images/pages/product/AST651922.jpg" %}
+        {% set thumbProductImage3 = "/images/pages/product/urban_blanc_pur.jpg" %}
+        {% set thumbProductCataPrice = "1250,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 1 %}
+        {% set thumbProductSize = 2 %}
+        {% set thumbProductSurMesure = 0 %}
+        {% set thumbProductAPartir = 1 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+
+        {% set thumbProductIndex = 15 %}
+        {% set thumbProductTitle = "Echelle gain de place" %}
+        {% set thumbProductSubTitle = "1/3 Escalier droit sans contremarche" %}
+        {% set thumbProductMore = "" %}
+        {% set thumbProductImage = "/images/pages/product/tandem_bordeaux_mat.jpg" %}
+        {% set thumbProductImage2 = "" %}
+        {% set thumbProductImage3 = "" %}
+        {% set thumbProductCataPrice = "1250,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 0 %}
+        {% set thumbProductSize = 2 %}
+        {% set thumbProductSurMesure = 0 %}
+        {% set thumbProductAPartir = 0 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+
+        {% set thumbProductIndex = 16 %}
+        {% set thumbProductTitle = "Echelle gain de place" %}
+        {% set thumbProductSubTitle = "" %}
+        {% set thumbProductMore = "Informations supplémentaires<br>Détails produit" %}
+        {% set thumbProductImage = "/images/pages/product/urban_blanc_pur.jpg" %}
+        {% set thumbProductImage2 = "" %}
+        {% set thumbProductImage3 = "" %}
+        {% set thumbProductCataPrice = "1490,00" %}
+        {% set thumbProductPrice = "1250,00" %}
+        {% set thumbProductCarousel = 0 %}
+        {% set thumbProductSize = 2 %}
+        {% set thumbProductSurMesure = 0 %}
+        {% set thumbProductAPartir = 0 %}
+        {% set thumbProductColisage = 0 %}
+        {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
+    </div>
+</div>
+{% endblock %}
