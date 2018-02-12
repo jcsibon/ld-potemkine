@@ -37,18 +37,26 @@ foreach($categories as $row)
 }
 
 foreach (glob("data/log/*") as $file) {
-	foreach(json_decode(file_get_contents($file),1) as $row)
+	$fileContent = json_decode(file_get_contents($file),1);
+
+	if($fileContent)
 	{
-		if(isset($row['identifier']))
+		foreach($fileContent as $row)
 		{
-			foreach($row as $key => $value)
+			if(isset($row['identifier']))
 			{
-				$categories[$row['identifier']][$key] = $value;			
+				foreach($row as $key => $value)
+				{
+					$categories[$row['identifier']][$key] = $value;			
+				}
 			}
-		}
+		}		
+	}
+	else
+	{
+		die("Le fichier $file est vide.");
 	}
 }
-
 
 
 foreach($categories as $row)
