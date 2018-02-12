@@ -48,27 +48,21 @@
     <div class="row justify-content-center">
         <div class="col-12 p-5 d-none d-xl-block">
             <div class="row">
-                <div class="col-12 d-flex flex-row align-items-stretch home__row_universe"> 
-                    {% for universe in ['CCU0003','CCU0004','CCU0001','CCU0002','CCU0005','CCU0006','CCU0007','CCU0008'] %}
-                        <div class="col-3 p-2" >
-                            <a href="/{{ categories[universe]['url'] }}">
-                                <div class="h-100 bg-dark d-flex home__universe rounded" style="background-image: url(/images/pages/index/shortcut_cuisine.jpg)">
-                                    <p class="h5 m-auto text-white text-center text-uppercase">{{ categories[universe]['label']['content'] }}</p>
-                                </div>
-                            </a>
-                        </div>
-                    {% endfor %}
                 <div class="col-10 offset-1">
                     <div class="row">
-                        {% for universe in ['CCU0003','CCU0004','CCU0001','CCU0002','CCU0005','CCU0006','CCU0007','CCU0008'] %}
-                        {% set thumbName = 'Nos ' ~ universe['Name'] %}
+                        {% for object in ['CCU0003','CCU0004','CCU0001','CCU0002','CCU0005','CCU0006','CCU0007','CCU0008'] %}
+                        {#
+                        {% set thumbName = 'Nos ' ~ categories[universe]['label']['content'] %}
                         {% set thumbSize = 3 %}
                         {% set thumbPadding = 2 %}
                         {% set thumbHeight = 160 %}
                         
-                        {% set thumbImage = "/images/pages/index/" ~ universe['ID'] ~ ".jpg" %}
-
-                        {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
+                        {% set thumbImage = "/images/pages/index/" ~ universe ~ ".jpg" %}
+                        #}
+                        <div class="col-md-3">
+                            {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
+                            <br>
+                        </div>
                         {% endfor %}
                     </div>
                 </div>

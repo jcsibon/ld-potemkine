@@ -1,9 +1,7 @@
-<div class="col-6 col-md-{{ thumbSize }} p-{{ thumbPadding }}" >
-    <a href="#">
-        <div class="p-0 position-relative">
-            <div class="d-flex thumbnailFamily rounded" style="background-image: url({{ thumbImage }}); {% if thumbHeight is defined %} height: {{thumbHeight}}px {% endif %}">
-                <p class="h2 m-auto text-white text-center text-uppercase">{{ thumbName }}</p>
-            </div>
+<a href="/{{ categories[object]['url'] }}">
+    <div class="p-0 position-relative">
+        <div class="d-flex thumbnailFamily rounded" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content'] }}{% endif %}); {% if thumbHeight is defined %} height: {{thumbHeight}}px {% endif %}">
+            <p class="h2 m-auto text-white text-center text-uppercase">{{ categories[object]['shortDesc']['content'] }}</p>
         </div>
-    </a>
-</div>
+    </div>
+</a>

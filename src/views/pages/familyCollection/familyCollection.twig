@@ -9,16 +9,8 @@
 
 <div class="container">
 	<div class="row">
-		{% for family in childrens[global.request.get('code')] %}
-	        {% set familySize = 'col-12 col-md-8' %}
-	        {% set familyImageSize = 'zoom1' %}
-	        <div class="col-6 col-md-4 p-3" >
-	            <a href="/{{ categories[family]['url'] }}">
-	                <div class="bg-dark d-flex universe__familyBloc rounded p-4" style="background-image: url('{% if categories[family]['imageFull']['content'] is defined %}{{ categories[family]['imageFull']['content'] }}{% endif %}')">   
-	                    <p class="h2 m-auto text-white text-center text-uppercase">{{ categories[family]['shortDesc']['content'] }}</p>
-	                </div>
-	            </a>
-	        </div>
+		{% for object in childrens[global.request.get('code')] %}
+            {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
 	    {% endfor %}
 	</div>
 </div>

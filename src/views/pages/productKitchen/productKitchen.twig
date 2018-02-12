@@ -80,7 +80,7 @@
             </div>
             <div class="col-6 col-md-4 col-lg-4 col-xl-3 d-flex">
                 <div class="kitchen__pictureDesc px-md-3 pt-5">
-                    {% if content.longDescriptionImg2 != "" %}
+                    {% if categories[global.request.get('code')]['longDescriptionImg2'] != "" %}
                     <img src="{{ categories[global.request.get('code')]['longDescriptionImg2'] }}" class="img-fluid"/>
                     {% endif %}
                 </div>
