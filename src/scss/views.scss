@@ -998,6 +998,7 @@ p{
     position: absolute;
     top: -72px;
 }
+
 .calendar__container {
     text-align: center;
 }
@@ -1270,6 +1271,7 @@ header .fa-bars {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    max-width: 1920px;
 }
 .jumbotron .h1 {
     font-family: $font-family-1;
@@ -1424,6 +1426,7 @@ table{
         width: 33%;
     }
 }
+
 .services__bloc {
     height: 200px;
     width: 25%;
@@ -1480,6 +1483,11 @@ table{
 }
 .thumbnailFamily:hover::after {
     background: rgba(234, 0, 40, 0.5);
+}
+@include media-breakpoint-down(md) {
+    .thumbnailFamily .h2 {
+        font-size: 1.6666666667rem;
+    }
 }
 .thumb_product {
     cursor: pointer;

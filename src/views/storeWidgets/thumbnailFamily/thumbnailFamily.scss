@@ -19,3 +19,8 @@
 .thumbnailFamily:hover::after {
     background: rgba(234, 0, 40, 0.5);
 }
+@include media-breakpoint-down(md) {
+    .thumbnailFamily .h2 {
+        font-size: 1.6666666667rem;
+    }
+}
