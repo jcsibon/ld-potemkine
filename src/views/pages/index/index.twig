@@ -50,15 +50,19 @@
             <div class="row">
                 <div class="col-10 offset-1">
                     <div class="row">
-                        {% for universe in ['CCU0003','CCU0004','CCU0001','CCU0002','CCU0005','CCU0006','CCU0007','CCU0008'] %}
+                        {% for object in ['CCU0003','CCU0004','CCU0001','CCU0002','CCU0005','CCU0006','CCU0007','CCU0008'] %}
+                        {#
                         {% set thumbName = 'Nos ' ~ categories[universe]['label']['content'] %}
                         {% set thumbSize = 3 %}
                         {% set thumbPadding = 2 %}
                         {% set thumbHeight = 160 %}
                         
                         {% set thumbImage = "/images/pages/index/" ~ universe ~ ".jpg" %}
-
-                        {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
+                        #}
+                        <div class="col-md-3">
+                            {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
+                            <br>
+                        </div>
                         {% endfor %}
                     </div>
                 </div>

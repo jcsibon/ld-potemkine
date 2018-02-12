@@ -25,23 +25,23 @@
                         </div>
                         <div class="col-12 col-xl-9 collapse" id="collapse{{ categories[subuniverse]['identifier'] }}" >
                             <div class="row">
-                                {% for family in childrens[categories[subuniverse]['identifier']] %}
-                                    {% if categories[family]['universeThumbSize'] is defined and categories[family]['universeThumbSize'] == 3 %}
+                                {% for object in childrens[categories[subuniverse]['identifier']] %}
+                                    {% if categories[object]['universeThumbSize'] is defined and categories[object]['universeThumbSize'] == 3 %}
                                     <div class="col-12 col-md-8" >
                                     {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
                                     </div>
                                     {% endif %}
                                 {% endfor %}
-                                {% for family in childrens[categories[subuniverse]['identifier']] %}
-                                    {% if categories[family]['universeThumbSize'] is defined and categories[family]['universeThumbSize'] == 2 %}
+                                {% for object in childrens[categories[subuniverse]['identifier']] %}
+                                    {% if categories[object]['universeThumbSize'] is defined and categories[object]['universeThumbSize'] == 2 %}
                                         {% set familyImageSize = 'desktopList' %}
                                         <div class="col-6 col-md-4 p-3" >
                                         {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
                                         </div>
                                     {% endif %}
                                 {% endfor %}
-                                {% for family in childrens[categories[subuniverse]['identifier']] %}
-                                    {% if categories[family]['universeThumbSize'] is defined and categories[family]['universeThumbSize'] == 1 %}
+                                {% for object in childrens[categories[subuniverse]['identifier']] %}
+                                    {% if categories[object]['universeThumbSize'] is defined and categories[object]['universeThumbSize'] == 1 %}
                                         {% set familyImageSize = 'desktopList' %}
                                         <div class="col-6 col-md-4 p-3" >
                                         {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
