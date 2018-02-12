@@ -31,25 +31,27 @@
         <p class="strong small">{{ pane.description }}</p>
       </div>
       <div class="col-9 pr-5">
-        {% if pane.tabs|length > 1 %}
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          {% for tab in pane.tabs %}
-          <li class="nav-item">
-            <a class="nav-link {% if loop.first == true %}active{% endif %}" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{ tab.name }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          {% for tab in pane.tabs %}
-          <div class="tab-pane fade {% if loop.first == true %}show active{% endif %}" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <br>
-            <img src="/images/windows/table.png" class="d-block">
-            <br>
+        {% if pane.tabs is defined %}
+          {% if pane.tabs|length > 1 %}
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            {% for tab in pane.tabs %}
+            <li class="nav-item">
+              <a class="nav-link {% if loop.first == true %}active{% endif %}" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{ tab.name }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            {% for tab in pane.tabs %}
+            <div class="tab-pane fade {% if loop.first == true %}show active{% endif %}" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <br>
+              <img src="/images/windows/table.png" class="d-block">
+              <br>
+            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
-        </div>
-        {% else %}
-        <img src="/images/windows/table.png" class="d-block">
+          {% else %}
+          <img src="/images/windows/table.png" class="d-block">
+          {% endif %}
         {% endif %}
         {% if pane.customised == true %}
         <img src="/images/windows/sur-mesure.png" class="d-block">
