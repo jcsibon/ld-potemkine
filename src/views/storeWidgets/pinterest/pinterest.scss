@@ -1,0 +1,56 @@
+.pinterest_title {
+    opacity: .3;
+    font-family: $font-family-1;
+    color: $font-light;
+}
+
+#widgetPin {
+    padding: 0;
+    text-align: center;
+}
+
+#widgetPin > span[class*="_board"] {
+    padding: 5px;
+}
+
+#widgetPin span {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#widgetPin > span {
+    box-shadow: none;
+    margin: auto;
+}
+
+#widgetPin span span:nth-of-type(2) span[class*="_img"] {
+    padding-bottom: 100% !important;
+    background-position: center center;
+    background-size: cover;
+    background-color: transparent !important;
+    margin: 5px 15px;
+}
+
+#widgetPin span[class*="_img"] {
+    box-shadow: none;
+}
+
+#widgetPin>span:nth-of-type(1) {
+    min-width: 210px;
+    width: 100% !important;
+}
+
+#widgetPin span[class*="_bd"] {
+    height: inherit !important;
+    padding-bottom: 6px;
+}
+
+#widgetPin span[class*="_img"]:nth-child(n+3), #widgetPin span[class*="_ft"], #widgetPin span[class*="_pinner"], #widgetPin span[class*="_hd"] {
+    display:none;
+}
+
+@include media-breakpoint-down(md) {
+    #widgetPin span[class*="_col"] {
+        width: 33%;
+    }
+}

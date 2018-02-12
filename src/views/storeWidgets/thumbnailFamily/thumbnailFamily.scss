@@ -1,0 +1,21 @@
+.thumbnailFamily {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+}
+.thumbnailFamily::after {
+    background: rgba(0,0,0,.3);
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    content: " ";
+    border-radius: 3px;
+}
+.thumbnailFamily p {
+    font-family: DinCondensed,sans-serif;
+    z-index: 1;
+}
+.thumbnailFamily:hover::after {
+    background: rgba(234, 0, 40, 0.5);
+}

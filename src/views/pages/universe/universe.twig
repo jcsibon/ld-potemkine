@@ -8,8 +8,8 @@
 {% include 'storeWidgets/description/description.twig' %}
 
 <div id="subuniverse">
-    {% for subuniverse in catalog[global.request.get('code')]['Content'] %}
-    <div class="universe__family" id="{{ subuniverse['ID'] }}">
+    {% for subuniverse in childrens[global.request.get('code')] %}
+    <div class="universe__family bg-light" id="{{ categories[subuniverse]['identifier'] }}">
         <div class="container">
             <div class="row">
                 <div class="col-12 pb-2 pt-3 py-md-5">
@@ -17,68 +17,37 @@
                         <div class="col-12 col-xl-3 pr-md-5">
                             <div class="row">
                                 <div class="col-10 col-md-8 col-xl-12">
-                                    <p class="h4">{{ subuniverse['Name'] }}</p>
-                                    <p class="d-none d-md-block">{{ subuniverse['Descriptifgnral'] }}</p>
-
-                                    {% if subuniverse['Content'] is defined %}
-                                    {# {% if subuniverse['Content']|length > 3 %} #}
+                                    <p class="h4 d-none d-md-block">{{ categories[subuniverse]['shortDesc']['content'] }}</p>
+                                    <p class="h4 d-md-none"><a data-toggle="collapse" class="text-dark" href="#collapse{{ categories[subuniverse]['identifier'] }}" aria-expanded="false" aria-controls="collapse{{ categories[subuniverse]['identifier'] }}">{{ categories[subuniverse]['shortDesc']['content'] }}</a></p>
+                                    <p class="d-none d-md-block">{{ categories[subuniverse]['longDesc']['content'] }}</p>
                                 </div>
-                                <div class="col-2 d-md-none pr-0">
-                                    <a data-toggle="collapse" class="text-dark" href="#collapse{{ subuniverse['ID'] }}" aria-expanded="false" aria-controls="collapse{{ subuniverse['ID'] }}">
-                                        <p class="h1 text-center">+</p>
-                                        <p class="h1 text-center">-</p>
-                                    </a>
-                                </div>
-                                <!--
-<div class="col-3 col-xl-12 universe__pinterest pt-3 d-none d-md-block" id="widgetPinterest">
-<a data-pin-do="embedBoard" data-pin-lang="fr" data-pin-board-width="230" data-pin-scale-height="150" data-pin-scale-width="100" href="{{ subuniverse['Pinterest'] }}"></a>
-</div>   
--->
-                                {# {% endif %} #}
-                                {% endif %}
                             </div>
                         </div>
-                        <div class="col-12 col-xl-9 collapse" id="collapse{{ subuniverse['ID'] }}" >
+                        <div class="col-12 col-xl-9 collapse" id="collapse{{ categories[subuniverse]['identifier'] }}" >
                             <div class="row">
-                                {% if subuniverse['Content'] is defined %}
-                                {% for family in subuniverse['Content'] %}
-                                {% if family['Affichageunivers'] !="Petit" %} 
-                                {% set familySize = 'col-12 col-sm-6 col-md-4' %} 
-                                {% set familyImageSize = 'desktopList' %}
-                                {% if family['Affichageunivers'] =="Grand" %}
-                                {% set familySize = 'col-12 col-md-8' %}
-                                {% set familyImageSize = 'zoom1' %}
-                                {% endif %}
-                                <div class="{{familySize}} py-2">
-                                    <fieldset class="universe__subFamilyContainer" onclick="location.href='/{{ catalog[global.request.get('code')]['URL'] }}/{{ subuniverse['URL'] }}/{{ family['URL'] }}'">
-                                        <legend align="center" class="d-flex mb-0">
-                                            <p class="m-auto d-inline-flex px-2">
-                                                <a href="/{{ catalog[global.request.get('code')]['URL'] }}/{{ subuniverse['URL'] }}/{{ family['URL'] }}" class="text-dark"><strong>{{ family.Name }}</strong></a>
-                                            </p>
-                                        </legend>
-                                        <div class="universe__subFamilyImage mt-1 mb-3 mx-3">
-                                            <a href="/{{ catalog[global.request.get('code')]['URL'] }}/{{ subuniverse['URL'] }}/{{ family['URL'] }}">
-                                                <div style="background-image:url('//statics.lapeyre.fr/img/catalogue/{{ familyImageSize }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) }}/{{ family['VisuelprincipalAssetReferenceID'] }}.jpg')" class="bg-white"></div>
-                                            </a>
-                                        </div>
-                                    </fieldset>
-                                </div> 
-                                {% endif %} 
+                                {% for family in childrens[categories[subuniverse]['identifier']] %}
+                                    {% if categories[family]['universeThumbSize'] is defined and categories[family]['universeThumbSize'] == 3 %}
+                                    <div class="col-12 col-md-8" >
+                                    {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
+                                    </div>
+                                    {% endif %}
                                 {% endfor %}
-                                {% endif %}
-                                {% set otherFamiliesDetails = null %}
-                                {% set otherFamilies = '<div class="col-12 py-2"><fieldset class="universe__subFamilyContainerOther universe__subFamilyContainer px-5 pb-3"><legend class="d-flex text-left" align="center"><p class="m-auto d-inline-flex"><strong>Et aussi :</strong></p></legend><div class="row">' %}
-                                {% if subuniverse['Content'] is defined %}
-                                {% for family in subuniverse['Content'] %}
-                                {% if family['Affichageunivers'] =="Petit" %} 
-                                {% set otherFamiliesDetails = otherFamiliesDetails ~ '<div class="col-12 col-sm-6 col-md-4 py-1" onclick="location.href=\'/' ~ catalog[global.request.get('code')]['URL'] ~ '/' ~ subuniverse['URL'] ~ '/' ~ family['URL'] ~ '\'"><div class="row"><div class="col-4 universe__subFamilyContainerOtherImage" style="background-image: url(\'//statics.lapeyre.fr/img/catalogue/desktopList/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 6:3]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'][family['VisuelprincipalAssetReferenceID']|length - 3:]|lower|replace({' ': '_'}) ~ '/' ~ family['VisuelprincipalAssetReferenceID'] ~ '.jpg\')"></div><div class="col-8"><a href="/' ~ catalog[global.request.get('code')]['URL'] ~ '/' ~ subuniverse['URL'] ~ '/' ~ family['URL'] ~ '" class="text-dark small">' ~ family.Name ~ '</a></div></div></div>' %}  
-                                {% endif %} 
-                                {% endfor %} 
-                                {% endif %}
-                                {% set otherFamilies = otherFamilies ~ otherFamiliesDetails | trim(',') ~ '</div></fieldset></div>' %}  
-                                {% if otherFamiliesDetails %}
-                                {{ otherFamilies | raw }}	
-                                {% endif %}	
+                                {% for family in childrens[categories[subuniverse]['identifier']] %}
+                                    {% if categories[family]['universeThumbSize'] is defined and categories[family]['universeThumbSize'] == 2 %}
+                                        {% set familyImageSize = 'desktopList' %}
+                                        <div class="col-6 col-md-4 p-3" >
+                                        {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                                {% for family in childrens[categories[subuniverse]['identifier']] %}
+                                    {% if categories[family]['universeThumbSize'] is defined and categories[family]['universeThumbSize'] == 1 %}
+                                        {% set familyImageSize = 'desktopList' %}
+                                        <div class="col-6 col-md-4 p-3" >
+                                        {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
@@ -89,21 +58,21 @@
     {% endfor %}
 </div>
 
-
-
 {% include 'storeWidgets/contents/contents.twig' %}
+
+{% include 'storeWidgets/pinterest/pinterest.twig' %}
 
 {% include 'storeWidgets/appointment/appointment.twig' %}
 
 {% include 'storeWidgets/services/services.twig' %}
 
-<script async defer src="//assets.pinterest.com/js/pinit.js">
-</script>
+
 <script>
-    function animationScroll(destination) {
-        $('html, body').animate({
-            scrollTop: $( destination ).offset().top-170
-        }, 500);
-    }
+function animationScroll(destination) {
+$('html, body').animate({
+scrollTop: $( destination ).offset().top-170
+}, 500);
+}
 </script>
+
 {% endblock %}

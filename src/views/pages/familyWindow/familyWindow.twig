@@ -1,0 +1,71 @@
+{% extends"layouts/default.html" %}
+{% block content %}
+  
+{% include "storeWidgets/jumbotron/jumbotron.twig" %}
+
+{% include "storeWidgets/description/description.twig" %}
+
+
+<div class="container">
+  <div class="row mx-5 px-5">
+    {% for pane in categories[global.request.get('code')]['panes'] %}
+    <div class="col m-4">
+      <a href="#{{ pane.url }}">    
+        <img src="{{ pane.imageFull['content'] }}" class="img-fluid bg-white rounded-circle border border">
+        <p class="my-2 text-center small text-dark"><strong>{{ pane.name }}</strong></p>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="bg-warning py-5">
+  <div class="my-5 h2 text-center">[ Présentation Matériau - En attente Dagobert ]</div>
+</div>
+<div class="container">
+    {% for pane in categories[global.request.get('code')]['panes'] %}
+    <div id="{{ pane.url }}" class="row mx-3 my-5">
+      <div class="col-3 pl-5">
+        <h2 class="h3">{{ pane.name }}</h2>
+        <img src="/images/windows/avis.png" class="img-fluid">
+        <img src="{{ pane.imageFull['content'] }}" class="my-4 img-fluid">
+        <p class="strong small">{{ pane.description }}</p>
+      </div>
+      <div class="col-9 pr-5">
+        {% if pane.tabs|length > 1 %}
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          {% for tab in pane.tabs %}
+          <li class="nav-item">
+            <a class="nav-link {% if loop.first == true %}active{% endif %}" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{ tab.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          {% for tab in pane.tabs %}
+          <div class="tab-pane fade {% if loop.first == true %}show active{% endif %}" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <br>
+            <img src="/images/windows/table.png" class="d-block">
+            <br>
+          </div>
+          {% endfor %}
+        </div>
+        {% else %}
+        <img src="/images/windows/table.png" class="d-block">
+        {% endif %}
+        {% if pane.customised == true %}
+        <img src="/images/windows/sur-mesure.png" class="d-block">
+        {% endif %}
+          <br>
+      </div>
+    </div>
+    {% if loop.last == false %}
+    <hr>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div class="bg-light">
+{% include 'storeWidgets/madeinfrance/madeinfrance.twig' %}
+</div>
+{% include 'storeWidgets/appointment/appointment.twig' %}
+{% include 'storeWidgets/services/services.twig' %}
+{% endblock %}
