@@ -16,10 +16,12 @@
     <body>
         {% include 'sprite/sprite.svg' %}
     	{% include 'storeWidgets/headerUI/headerUI.twig' %}
+        
     	{# {% include 'storeWidgets/nav.twig' %} #}
 
     	{% block content %}
     	{% endblock %}
+    	{% include 'storeWidgets/appointmentModal/appointmentModal.twig' %}
 
     	{% include 'storeWidgets/footer/footer.twig' %}
     </body>
