@@ -134,15 +134,15 @@
             <div class="row">
                 <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 p-lg-5 mb-5 pt-5 pt-lg-0">
                     <p class="title_h1 text-uppercase">
-                        Ils ont adopté la Twist
+                        Ils ont adopté la { categories[global.request.get('code')]['label']['content'] }}
                     </p>
                     <blockquote class="blockquote position-relative">
-                        <p class="mb-0" style="padding-top: 80px"><em>Des formes simples, une confection robuste et des finitions esthétiques.</em></p>
+                        <p class="mb-0" style="padding-top: 80px"><em>{{ categories[global.request.get('code')]['testimonial'] }}</em></p>
                         <footer class="blockquote-footer text-dark pt-2"> Audrey, 40 ans, Paris</footer>
                     </blockquote>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-5 p-lg-5 pb-5">
-                    <div class="col-12 my-4 px-0 bg-cover worktop__desc_image" style="background-image: url(http://lapeyre-chb.test:8888/images/pages/index/bg_le_savoir_bien_faire.png)">
+                    <div class="col-12 my-4 px-0 bg-cover worktop__desc_image" style="background-image: url(/images/pages/index/bg_le_savoir_bien_faire.png)">
                     </div>
                 </div>
             </div>
