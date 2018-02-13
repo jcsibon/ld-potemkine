@@ -104,6 +104,7 @@
     </div>
     <div class="row">
         <div class="pt-5 col-12">
+            {#
             <div id="materiaux" class="worktop__lvl-0">
                 <div class="worktop__lvl-1 col-12 col-md-8 offset-md-2">
                     <div class="row">
@@ -409,6 +410,23 @@
                         {% include 'storeWidgets/thumbnailProduct/thumbnailProduct.twig' %}
                     </div>
                 </div>
+            </div>
+            #}
+            <div class="row">
+                {% for object in childrens[global.request.get('code')] %}
+                    <div class="col-6 col-sm-4">
+                        <a href="/{% if categories[object]['url'] is defined %}{{ categories[object]['url'] }}{% else %}#{% endif %}">
+                            <div class="h-90 bg-cover cursor-pointer position-relative thumb_worktop" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content'] }}{% endif %})" data-name="">
+                                <div class="thumb_worktop__more position-absolute d-flex bottom-0 h-90">
+                                    <p class="p-2 text-center small text-white m-auto">
+                                        {{ categories[object]['shortDesc']['content'] }}
+                                    </p>
+                                </div>
+                            </div> 
+                        </a>
+                        <p class="text-center pt-1 pb-3">{{ categories[object]['shortDesc']['content'] }}</p>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
