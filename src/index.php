@@ -152,9 +152,9 @@ $app->get('/', function() use($app) {
 /* CATALOGUE */
 $app->get('/{urlname}-{code}/', function($code) use($app, $categories) {
 	// die("FPC");
-	if(file_exists('views/contents/'.$code.".twig"))
+	if(file_exists('views/contents/'.$code.'/'.$code.".twig"))
 	{
-		return $app['twig']->render("contents/".$code.".twig",array("content"=>$content));
+		return $app['twig']->render("contents/".$code.'/'.$code.".twig",array("content"=>$content));
 	}
 	else
 	{
