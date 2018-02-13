@@ -8,12 +8,16 @@
 
 
 <div class="container">
-	<div class="row">
-		{% for object in childrens[global.request.get('code')] %}
-			<div class="col-12 col-lg-4 px-1 py-3 px-sm-3">
-            	{% include 'storeWidgets/thumbnailCollection/thumbnailCollection.twig' %}
-            </div>
-	    {% endfor %}
+    <div class="row">
+        <div class="col-10 offset-1">
+            <div class="row">
+				{% for object in childrens[global.request.get('code')] %}
+					<div class="col-12 col-lg-4 px-1 py-3 px-sm-3">
+		            	{% include 'storeWidgets/thumbnailCollection/thumbnailCollection.twig' %}
+		            </div>
+			    {% endfor %}
+			</div>
+		</div>
 	</div>
 </div>
 
