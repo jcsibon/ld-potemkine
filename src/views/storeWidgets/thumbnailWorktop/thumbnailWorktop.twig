@@ -1,0 +1,12 @@
+<div class="col-6 col-sm-4">
+    <div class="h-90 bg-cover cursor-pointer position-relative thumb_worktop" style="background-image: url({{thumbWorktopImage}})" data-name="{{thumbWorktopTitle}}">
+        {% if thumbWorktopDesc|length > 0 %}
+        <div class="thumb_worktop__more position-absolute d-flex bottom-0 h-90">
+            <p class="p-2 text-center small text-white m-auto">
+                {{thumbWorktopDesc}}
+            </p>
+        </div>
+        {% endif %}
+    </div> 
+    <p class="text-center pt-1 pb-3">{{thumbWorktopTitle}}</p>
+</div>

@@ -140,7 +140,7 @@
     </div>
 </div>
 <div class="container text-center py-5">
-    <p class="py-3">{{ categories[global.request.get('code')]['longDesc']['content'] }}</p>
+    <p class="py-3">{{ content.description }}</p>
     <p>                        
         <img src="/images/picto_pefc.png" class="p-2 w-90" />
         <img src="/images/picto_made_in_france.png" class="p-2 w-90" />
@@ -151,7 +151,7 @@
     <div class="container py-5">
         <div class="col-12">
             <div class="row">
-                <div class="col-12 col-lg-7 offset-5 offset-xl-5 my-5 bg-cover h-600 d-none d-lg-block" style="background-image: url({{ categories[global.request.get('code')]['imageFull']['content'] }});">
+                <div class="col-12 col-lg-7 offset-5 offset-xl-5 my-5 bg-cover h-600 d-none d-lg-block" style="background-image: url(http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.img }});">
                 </div>
                 <div class="position-lg-absolute">
                     <div class="row">
@@ -163,18 +163,18 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-6 offset-xl-1 bg-white p-3 p-md-5">
-                            <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['text1'] }}</p>
+                            <p class="px-2 px-sm-4 my-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 d-lg-none pt-4">
-                            <img src="{{ categories[global.request.get('code')]['imageFull']['content'] }}" class="img-fluid" />
+                            <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.img }}" class="img-fluid" />
                         </div>
                     </div>
                 </div>
             </div> 
             <div class="row">
-                <div class="col-12 col-lg-8 my-5 bg-cover h-500 d-none d-lg-block" style="background-image: url({{ categories[global.request.get('code')]['imageFull']['content'] }});">
+                <div class="col-12 col-lg-8 my-5 bg-cover h-500 d-none d-lg-block" style="background-image: url(http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.img }});">
                 </div>
                 <div class="position-lg-absolute">
                     <div class="row">
@@ -186,18 +186,18 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-6 offset-lg-5 bg-white p-3 p-md-5">
-                            <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['text2'] }}</p>
+                            <p class="px-2 px-sm-4 my-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 d-lg-none pt-4">
-                            <img src="{{ categories[global.request.get('code')]['imageFull']['content'] }}" class="img-fluid" />
+                            <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.img }}" class="img-fluid" />
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 offset-6 my-5 bg-cover h-500 d-none d-lg-block" style="background-image: url({{ categories[global.request.get('code')]['imageFull']['content'] }});">
+                <div class="col-6 offset-6 my-5 bg-cover h-500 d-none d-lg-block" style="background-image: url(http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.img }});">
                 </div>
                 <div class="position-lg-absolute">
                     <div class="row">
@@ -214,7 +214,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 d-lg-none pt-4">
-                            <img src="{{ categories[global.request.get('code')]['imageFull']['content'] }}" class="img-fluid" />
+                            <img src="http://res.cloudinary.com/dwkgy95ov/image/upload{{ content.img }}" class="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -325,12 +325,7 @@
         </div>
     </div>
 </div>
-<div class="bg-light">
-    {% include 'storeWidgets/madeinfrance/madeinfrance.twig' %}
-</div>
-{% include 'storeWidgets/crosssell/crosssell.twig' %}
-{% include 'storeWidgets/appointment/appointment.twig' %}
-{% include 'storeWidgets/services/services.twig' %}
+
 <script>
     $("#fp__quantity").keypress(function (e) {
         if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) return false;
@@ -350,7 +345,7 @@
     });
 
 </script>
-{#
+
 <!--
 <div class="container">
 <p>{{ categories[global.request.get('code')]['identifier'] }}</p>
@@ -371,5 +366,4 @@
 <p>Recoupe et ajustement au millimètre par nos menuisiers</p>
 </div>
 -->
-#}
 {% endblock %}
