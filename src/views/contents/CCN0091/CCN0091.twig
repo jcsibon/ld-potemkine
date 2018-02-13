@@ -16,7 +16,6 @@
     </a>
 </div>
 
-
 <div class="bg-light">
     <div class="container pt-0 pt-lg-5 pb-0 pb-md-5">
         <div class="col-12">
@@ -101,6 +100,7 @@
                 <input type="radio" name="options" autocomplete="off">Finitions
             </label>
         </div>
+        <div class="worktop__filter_container pt-5"></div>
     </div>
     <div class="row">
         <div class="pt-5 col-12">
@@ -164,14 +164,6 @@
                 </div>
                 <div class="worktop__lvl-2 col-12 col-md-8 offset-md-2">
                     <div class="row">
-                        <div class="col-12 text-center pb-5 ">
-                            <a id="btn_materiaux" class="btn_worktop_config rounded py-2 px-5 position-relative">
-                                Matériaux
-                                <span class="cursor-pointer position-absolute">&times;</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
                         {% set thumbWorktopIndex = 1 %}
                         {% set thumbWorktopTitle = "Couleurs unies" %}
                         {% set thumbWorktopImage = "http://res.cloudinary.com/dwkgy95ov/image/upload/v1518512405/worktop_finition_unie_mat.jpg" %}
@@ -198,14 +190,6 @@
                     </div>
                 </div>
                 <div class="worktop__lvl-3">
-                    <div class="row">
-                        <div class="col-12 text-center pb-5 ">
-                            <a id="btn_materiaux" class="btn_worktop_config rounded py-2 px-5 position-relative">
-                                Matériaux 2
-                                <span class="cursor-pointer position-absolute">&times;</span>
-                            </a>
-                        </div>
-                    </div>
                     <div class="row">
                         {% set thumbProductIndex = 1 %}
                         {% set thumbProductTitle = "Plan de travail" %}
@@ -309,14 +293,6 @@
                 </div>
                 <div class="worktop__lvl-2 col-12 col-md-8 offset-md-2">
                     <div class="row">
-                        <div class="col-12 text-center pb-5 ">
-                            <a id="btn_materiaux" class="btn_worktop_config rounded py-2 px-5 position-relative">
-                                Finitions
-                                <span class="cursor-pointer position-absolute">&times;</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
                         {% set thumbWorktopIndex = 1 %}
                         {% set thumbWorktopTitle = "Blanc" %}
                         {% set thumbWorktopImage = "http://res.cloudinary.com/dwkgy95ov/image/upload/v1518512405/worktop_couleur_blanc.jpg" %}
@@ -367,14 +343,6 @@
                     </div>
                 </div>
                 <div class="worktop__lvl-3">
-                    <div class="row">
-                        <div class="col-12 text-center pb-5 ">
-                            <a id="btn_materiaux" class="btn_worktop_config rounded py-2 px-5 position-relative">
-                                Finitions 2
-                                <span class="cursor-pointer position-absolute">&times;</span>
-                            </a>
-                        </div>
-                    </div>
                     <div class="row">
                         {% set thumbProductIndex = 1 %}
                         {% set thumbProductTitle = "Plan de travail" %}
@@ -455,18 +423,24 @@
     });
     $( ".worktop__lvl-1 .thumb_worktop" ).click(function() {
         $( this ).closest('.worktop__lvl-1').hide();
-        $('.worktop__btn-group, .btn_worktop_config').hide();
+        $('.worktop__btn-group').hide();
         $( this ).closest('.worktop__lvl-0').find('.worktop__lvl-2').fadeIn('slow');
         $( this ).closest('.worktop__lvl-0').find('.btn_worktop_config').fadeIn('slow');
+        $( '.worktop__filter_container').fadeIn('slow');
+        var worktop_html = '<a class="btn_worktop_config rounded py-2 px-5 mx-2 my-2 position-relative d-block d-sm-inline-block">' + $( this ).attr('data-name') + '<span class="cursor-pointer position-absolute">&times;</span>';
+        $( '.worktop__filter_container' ).append( worktop_html );
     });
-    $( ".btn_worktop_config span" ).click(function() {
-        $('.worktop__lvl-2, .worktop__lvl-3, .btn_worktop_config').hide();
+    $( "body" ).on( "click", ".btn_worktop_config span", function() {
+        $( '.worktop__filter_container' ).html( '' );
+        $('.worktop__lvl-3, .worktop__lvl-2, .worktop__filter_container').hide();
         $('.worktop__btn-group').fadeIn('slow');
-        $( this ).closest('.worktop__lvl-0').find('.worktop__lvl-1').fadeIn('slow');
+        $( '.worktop__btn-group label:nth-of-type(1)' ).trigger( "click" );
     });
     $( ".worktop__lvl-2 .thumb_worktop" ).click(function() {
         $( this ).closest('.worktop__lvl-2').hide();
         $( this ).closest('.worktop__lvl-0').find('.worktop__lvl-3').fadeIn('slow');
+        var worktop_html = '<a class="btn_worktop_config rounded py-2 px-5 mx-2 position-relative d-block d-sm-inline-block">' + $( this ).attr('data-name') + '<span class="cursor-pointer position-absolute">&times;</span>';
+        $( '.worktop__filter_container' ).append( worktop_html );
     });
 </script>
 
