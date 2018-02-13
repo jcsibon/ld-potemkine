@@ -997,8 +997,46 @@ p{
     }
 }
 
+.appointment__container .h2 {
+    font-family: $font-family-1;
+    color: $font-light;
+    font-size: 24px;
+}
 
+.appointment__container .h3, .appointment__container .h1 {
+    font-family: $font-family-1;
+    color: $red-secondary;
+}
 
+.appointment__address {
+    font-family: $font-family-1;
+}
+
+.border-red-dashed {
+    border:2px dashed $red-secondary;
+}
+.bg-transparent {
+    background: transparent; 
+}
+
+.appointmentModal__close {
+    top: 63px;
+    left: -43px;
+    z-index: 1;
+}
+
+.appointmentModal__close span {
+    font-size: 34px;
+    line-height: 7px;
+    vertical-align: sub;
+    padding-right: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #modalAppointment .modal-dialog {
+        max-width: calc(100% - 40px);
+    }
+}
 .breadcrumb__angle {
     width:40px; 
     padding-top: 40px;
