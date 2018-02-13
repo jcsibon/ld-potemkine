@@ -18,35 +18,43 @@
                             <div class="row">
                                 <div class="col-10 col-md-8 col-xl-12">
                                     <p class="h4 d-none d-md-block">{{ categories[subuniverse]['shortDesc']['content'] }}</p>
-                                    <p class="h4 d-md-none"><a data-toggle="collapse" class="text-dark" href="#collapse{{ categories[subuniverse]['identifier'] }}" aria-expanded="false" aria-controls="collapse{{ categories[subuniverse]['identifier'] }}">{{ categories[subuniverse]['shortDesc']['content'] }}</a></p>
+                                    <p class="h4 d-md-none">
+                                        <a data-toggle="collapse" class="text-dark" href="#collapse{{ categories[subuniverse]['identifier'] }}" aria-expanded="false" aria-controls="collapse{{ categories[subuniverse]['identifier'] }}">{{ categories[subuniverse]['shortDesc']['content'] }}</a>
+                                    </p>
                                     <p class="d-none d-md-block">{{ categories[subuniverse]['longDesc']['content'] }}</p>
+                                </div>
+                                <div class="col-2 d-md-none pr-0">
+                                    <a data-toggle="collapse" class="text-dark" href="#collapse{{ categories[subuniverse]['identifier'] }}" aria-expanded="false" aria-controls="collapse{{ categories[subuniverse]['identifier'] }}">
+                                        <p class="h1 text-center">+</p>
+                                        <p class="h1 text-center">-</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-xl-9 collapse" id="collapse{{ categories[subuniverse]['identifier'] }}" >
                             <div class="row">
                                 {% for object in childrens[categories[subuniverse]['identifier']] %}
-                                    {% if categories[object]['universeThumbSize'] is defined and categories[object]['universeThumbSize'] == 3 %}
-                                    <div class="col-12 col-md-8" >
+                                {% if categories[object]['universeThumbSize'] is defined and categories[object]['universeThumbSize'] == 3 %}
+                                <div class="col-12 col-md-8 p-1 p-sm-3" >
                                     {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
-                                    </div>
-                                    {% endif %}
+                                </div>
+                                {% endif %}
                                 {% endfor %}
                                 {% for object in childrens[categories[subuniverse]['identifier']] %}
-                                    {% if categories[object]['universeThumbSize'] is defined and categories[object]['universeThumbSize'] == 2 %}
-                                        {% set familyImageSize = 'desktopList' %}
-                                        <div class="col-6 col-md-4 p-3" >
-                                        {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
-                                        </div>
-                                    {% endif %}
+                                {% if categories[object]['universeThumbSize'] is defined and categories[object]['universeThumbSize'] == 2 %}
+                                {% set familyImageSize = 'desktopList' %}
+                                <div class="col-6 col-md-4 p-1 p-sm-3" >
+                                    {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
+                                </div>
+                                {% endif %}
                                 {% endfor %}
                                 {% for object in childrens[categories[subuniverse]['identifier']] %}
-                                    {% if categories[object]['universeThumbSize'] is defined and categories[object]['universeThumbSize'] == 1 %}
-                                        {% set familyImageSize = 'desktopList' %}
-                                        <div class="col-6 col-md-4 p-3" >
-                                        {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
-                                        </div>
-                                    {% endif %}
+                                {% if categories[object]['universeThumbSize'] is defined and categories[object]['universeThumbSize'] == 1 %}
+                                {% set familyImageSize = 'desktopList' %}
+                                <div class="col-6 col-md-4 p-1 p-sm-3" >
+                                    {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
+                                </div>
+                                {% endif %}
                                 {% endfor %}
                             </div>
                         </div>
@@ -68,11 +76,11 @@
 
 
 <script>
-function animationScroll(destination) {
-$('html, body').animate({
-scrollTop: $( destination ).offset().top-170
-}, 500);
-}
+    function animationScroll(destination) {
+        $('html, body').animate({
+            scrollTop: $( destination ).offset().top-170
+        }, 500);
+    }
 </script>
 
 {% endblock %}
