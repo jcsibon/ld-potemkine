@@ -21,9 +21,9 @@
 		</div>  
 		<div class="text-center px-1 d-flex thumb_product__bottomBloc h-85">
 			<div class="m-auto">
-				{#
-				<p class="small pt-2 mb-1 text-dark thumb_product__subTitle">1/3 Escalier droit sans contremarche</p>
-				#}
+				{% if categories[object]['shortDesc']['content'] is defined %}
+				<p class="small pt-2 mb-1 text-dark thumb_product__subTitle">{{ categories[object]['shortDesc']['content'] }}</p>
+				{% endif %}
 				<p class="h5 font-weight-bold text-dark thumb_product__title">{{ categories[object]['label']['content'] }}</p>
 			</div>
 		</div>
