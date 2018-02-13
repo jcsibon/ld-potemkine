@@ -16,62 +16,53 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 		'twig.path' => __DIR__.'/views',
 ));
 
-$categories = json_decode(file_get_contents("data/sas/categories copie.json"),1)["category"];
-
-foreach($categories as $row)
-{
-	$row['url'] = str_replace("_", "-", $row['identifier']);
-	$row['identifier'] = preg_replace('/([\S\s]*)(CCN|CCU|SCU)([0-9]+)/', '$2$3', $row['identifier']);
-
-
-	if(isset($row['parentIdentifier']))
-	{
-		$row['parentIdentifier'] = preg_replace('/([\S\s]*)(CCN|CCU|SCU)([0-9]+)/', '$2$3', $row['parentIdentifier']);
-	}
-	if(isset($row['imageFull']['content']))
-		$row['imageFull']['content'] = "https://statics.lapeyre.fr/img/catalogue/" . $row['imageFull']['content'];
-	if(isset($row['imageThumbnail']['content']))
-		$row['imageThumbnail']['content'] = "https://statics.lapeyre.fr/img/catalogue/" . $row['imageThumbnail']['content'];
-
-	$categories[$row['identifier']] = $row;
-}
-
 foreach (glob("data/log/*") as $file) {
-	foreach(json_decode(file_get_contents($file),1) as $row)
+	$fileContent = json_decode(file_get_contents($file),1);
+
+	if($fileContent)
 	{
-		if(isset($row['identifier']))
+		foreach($fileContent as $row)
 		{
-			foreach($row as $key => $value)
+			if(isset($row['identifier']))
 			{
-				$categories[$row['identifier']][$key] = $value;			
+				foreach($row as $key => $value)
+				{
+					$categories[$row['identifier']][$key] = $value;			
+				}
 			}
-		}
+		}		
+	}
+	else
+	{
+		die("Le fichier $file est vide.");
 	}
 }
 
 
-
 foreach($categories as $row)
 {
-	$childrens[$row['parentIdentifier']][] = $row['identifier'];
-	$parents[$row['identifier']]=$row['parentIdentifier'];
+	foreach($row['parentIdentifier'] as $parent)
+	{
+		$childrens[$parent][] = $row['identifier'];
+		$parents[$row['identifier']][] = $parent;
+	}
 
 	if(!isset($row['parentIdentifier']))
 	{
 		$tree[$row['identifier']] = array();
 		foreach($categories as $row2)
 		{
-			if($row['identifier'] === $row2['parentIdentifier'])
+			if(in_array($row['identifier'],$row2['parentIdentifier']))
 			{
 				$tree[$row['identifier']][$row2['identifier']] = array();
 				foreach($categories as $row3)
 				{
-					if($row2['identifier'] === $row3['parentIdentifier'])
+					if(in_array($row2['identifier'],$row3['parentIdentifier']))
 					{
 						$tree[$row['identifier']][$row2['identifier']][$row3['identifier']] = array();
 						foreach($categories as $row4)
 						{
-							if($row3['identifier'] === $row4['parentIdentifier'])
+							if(in_array($row3['identifier'],$row4['parentIdentifier']))
 							{
 								$tree[$row['identifier']][$row2['identifier']][$row3['identifier']][$row4['identifier']] = array();
 							}
@@ -82,8 +73,6 @@ foreach($categories as $row)
 		}
 	}
 }
-
-
 
 $app['twig']->addGlobal('categories', $categories);
 $app['twig']->addGlobal('tree', $tree);
