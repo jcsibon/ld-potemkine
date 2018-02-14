@@ -164,7 +164,7 @@ $app->get('/{urlname}-{code}/', function($code) use($app, $categories) {
 		    	$beezup[(int)$line[0]] = array_combine($keys, $line);
 			}
 		}
-		
+
 //		header('Content-Type: application/json');
 //		die(json_encode($beezup));
 
@@ -180,7 +180,7 @@ $app->get('/{urlname}-{code}/', function($code) use($app, $categories) {
 						"url" => $item['seoItem']['urlKeyword']['content'],
 						"sku" => $item['sku'], 
 						// "price" => number_format(json_decode(file_get_contents("https://www.lapeyre.fr/wcs/resources/store/10101/productview/".$item['sku']),1)['CatalogEntryView'][0]['Price'][0]['priceValue'], 0, ',', '' ),
-						"price" => $beezup[$item['sku']]['PRICE'],
+						"price" => number_format($beezup[$item['sku']]['PRICE'], 0, ',', '' ),
 						"content" => $item['label']['content']
 					);
 					$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['items'][(int)$matches[1]][(int)$matches[2]] = $row;
