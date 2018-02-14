@@ -8,21 +8,6 @@
                     {{ categories[global.request.get('code')]['longDesc']['content'] }}
                 {% endif %}
             </p>
-            {# 
-            <div class="col-12 d-flex position-relative universe__anchor">
-                <div class="d-flex m-auto">
-                    {% for subuniverse in childrens[global.request.get('code')] %}
-                    <a href="#{{ categories[subuniverse]['identifier'] }}">
-                        <div class="d-xl-flex d-none text-white py-3 px-4 mr-1 small bg-primary rounded" style="">{{ categories[subuniverse]['longDesc']['content'] }} </div>
-                    </a>
-                    {% endfor %}
-
-                    <a href="#subuniverse">
-                        <div class="d-flex d-xl-none text-white py-3 px-4 mr-1 small bg-primary rounded" >Voir les produits <span class="ml-2">&#8595;</span></div>
-                    </a>
-                </div>
-            </div>
-            #}
         </div>
     </div>
 </div>
