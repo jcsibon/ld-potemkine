@@ -35,6 +35,9 @@
         content: "-";
         color: #fff;
     }
+    .window__tab .h3 {
+        font-size: 20px;
+    }
     .window__tab {
         line-height: 1.2em;
     }
@@ -64,25 +67,31 @@
     <div class="container">
         {% for pane in categories[global.request.get('code')]['dimensionsPanes'] %}
         <div id="{{ pane.url }}" class="row mx-3 my-5">
-            <div class="col-3 pl-5">
+            <div class="col-12 pl-5">
                 <p class="h1 font-secondary">{{ pane.name }}</p>
                 <img src="/images/windows/avis.png" class="img-fluid">
-                <img src="{{ pane.imageFull['content'] }}" class="my-4 img-fluid">
-                <p class="strong small">{{ pane.description }}</p>
             </div>
-            <div class="col-9 pr-5">
+            <div class="col-12 pt-4 pb-3">
                 {% if pane.tabs is defined %}
                 {% if pane.tabs|length > 1 %}
-                <div class="d-flex font-weight-bold text-center font-secondary">
+                <div class="d-flex font-weight-bold text-center font-secondary pl-4">
                     {% for tab in pane.tabs %}
                     <div class="d-inline-flex m-2 border-dashed-black {% if loop.first == true %} bg-white window__tab_active border-dashed-red{% endif %} px-4 window__tab position-relative" style="min-height: 70px;">
                         <p class="m-auto">
-                            <a class="text-dark nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{ tab.name }}</a>
+                            <a class="text-dark nav-link h3 pb-0" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{ tab.name }}</a>
                         </p>
                     </div>
                     {% endfor %}
                 </div>
                 {% endif %}
+                {% endif %}
+            </div>
+            <div class="col-3 pl-5">
+                <img src="{{ pane.imageFull['content'] }}" class="my-4 img-fluid">
+                <p class="strong small">{{ pane.description }}</p>
+            </div>
+            <div class="col-9 pr-5">
+                {% if pane.tabs is defined %}
                 <div class="tab-content" id="myTabContent">
                     {% for tab in pane.tabs %}
                     <div class="tab-pane fade {% if loop.first == true %}show active{% endif %}" id="home" role="tabpanel" aria-labelledby="home-tab">
