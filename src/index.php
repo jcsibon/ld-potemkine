@@ -96,6 +96,12 @@ $app->get('/tree', function() use($app, $tree) {
 	return true;
 });
 
+$app->get('/childrens', function() use($app, $childrens) {
+	header('Content-Type: application/json');
+	die(json_encode($childrens));
+	return true;
+});
+
 
 $app['twig']->addGlobal("uri", strtok(trim($_SERVER["REQUEST_URI"],"/"),'?'));
 //die(json_encode($_GET));
@@ -154,7 +160,34 @@ $app->get('/', function() use($app) {
 });
 
 /* CATALOGUE */
-$app->get('/{urlname}-{code}/', function($code) use($app, $categories) {
+$app->get('/{urlname}-{code}/', function($code) use($app, $categories, $parents) {
+
+	$breadcrumb = array($code);
+	if($parents[$code][0] != "")
+	{
+		$breadcrumb[] = $parents[$code][0];
+		if($parents[$parents[$code][0]][0] !="")
+		{
+			$breadcrumb[] = $parents[$parents[$code][0]][0];
+			if($parents[$parents[$parents[$code][0]][0]][0] !="")
+			{
+				$breadcrumb[] = $parents[$parents[$parents[$code][0]][0]][0];
+				if($parents[$parents[$parents[$parents[$code][0]][0]][0]][0] !="")
+				{
+					$breadcrumb[] = $parents[$parents[$parents[$parents[$code][0]][0]][0]][0];
+					if($parents[$parents[$parents[$parents[$parents[$code][0]][0]][0]][0]][0] !="")
+					{
+						$breadcrumb[] = $parents[$parents[$parents[$parents[$parents[$code][0]][0]][0]][0]][0];
+					}
+				}
+			}
+		}
+	}
+
+	$breadcrumb = array_reverse($breadcrumb);
+//	header('Content-Type: application/json');
+//	die(json_encode($breadcrumb));
+	$app['twig']->addGlobal('breadcrumb', $breadcrumb);
 
 	if(isset($categories[$code]['dimensionsPanes']))
 	{
@@ -221,7 +254,7 @@ $app->get('/{urlname}-{code}/', function($code) use($app, $categories) {
 					return $app['twig']->render('pages/product/product.twig');
 				break;
 				default:
-					return $app['twig']->render('pages/article/article.twig');      
+					return $app['twig']->render('pages/article/article.twig');
 			}
 		}
 	}

@@ -9,20 +9,13 @@
                     <div class="bg-primary breadcrumb__angle d-inline-block"></div>
                     <ul class="d-inline-block small list-inline my-auto breadcrumb__list pl-3">
                         <li class="list-inline-item">
-                            <a href="" class="text-dark">Accueil</a>
+                            <a href="/" class="text-dark">Accueil</a>
                         </li>
-                        <li class="list-inline-item">
-                            <a href="" class="text-dark">Rangements</a>
+                        {% for step in breadcrumb %}
+                        <li class="list-inline-item {% if loop.last %}breadcrumb__active{% endif %}">
+                            <a href="/" class="text-dark">{{ categories[step]['label']['content'] }}</a>
                         </li>
-                        <li class="list-inline-item">
-                            <a href="" class="text-dark">Aménagements de placard et dressing</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="" class="text-dark">Kits dressing</a>
-                        </li>
-                        <li class="list-inline-item breadcrumb__active">
-                            <a href="" class="text-dark">Aménagement Panama</a>
-                        </li>
+                        {% endfor %}                        
                     </ul>
                 </div>
             </div>
