@@ -24,10 +24,10 @@
         width: 16px;
         height: 16px;
         content: "+";
-        bottom: 0;
+        bottom: -1px;
         line-height: 16px;
         font-weight: 100;
-        right: 0;
+        right: -1px;
         font-family: arial;
         color: #fff;
         background: #000;
@@ -53,7 +53,7 @@
         {% for pane in categories[global.request.get('code')]['dimensionsPanes'] %}
         <div class="col m-4">
             <a href="#{{ pane.url }}">    
-                <img src="{{ pane.imageFull['content'] }}" class="img-fluid bg-white border">
+                <img src="{{ pane.imageFull['content'] }}" class="img-fluid bg-white">
                 <p class="my-2 text-center small text-dark"><strong>{{ pane.name }}</strong></p>
             </a>
         </div>
@@ -68,19 +68,20 @@
 <div class="bg-light pt-5">
     <div class="container">
         {% for pane in categories[global.request.get('code')]['dimensionsPanes'] %}
+        {% set loop_lvl_1 = loop.index %}
         <div id="{{ pane.url }}" class="row mx-3 my-5">
             <div class="col-12 pl-5">
                 <p class="h1 font-secondary">{{ pane.name }}</p>
                 <img src="/images/windows/avis.png" class="img-fluid">
             </div>
-            <div class="col-12 pt-4 pb-3">
+            <div class="col-12 pt-4 pb-3" role="tablist">
                 {% if pane.tabs is defined %}
                 {% if pane.tabs|length > 1 %}
                 <div class="d-flex font-weight-bold text-center font-secondary pl-4">
                     {% for tab in pane.tabs %}
                     <div class="d-inline-flex m-2 border-dashed-black {% if loop.first == true %} bg-white window__tab_active border-dashed-red{% endif %} px-4 window__tab position-relative" style="min-height: 70px;">
                         <p class="m-auto">
-                            <a class="text-dark nav-link h3 pb-0" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{ tab.name }}</a>
+                            <a class="text-dark nav-link h3 pb-0" data-toggle="tab" href="#tab_window_{{loop_lvl_1}}_{{ loop.index }}" role="tab">{{ tab.name }}</a>
                         </p>
                     </div>
                     {% endfor %}
@@ -94,9 +95,9 @@
             </div>
             <div class="col-9 pr-5">
                 {% if pane.tabs is defined %}
-                <div class="tab-content" id="myTabContent">
+                <div class="tab-content" id="myTabContent_{{loop_lvl_1}}">
                     {% for tab in pane.tabs %}
-                    <div class="tab-pane fade {% if loop.first == true %}show active{% endif %}" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="tab-pane fade {% if loop.first == true %}show active{% endif %}" id="tab_window_{{loop_lvl_1}}_{{ loop.index }}" role="tabpanel">
                         <br>
                         {% if tab['table'] is defined %}
                         {% set object = tab['table'] %}
