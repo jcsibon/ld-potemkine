@@ -1,5 +1,5 @@
 {% if modal is not defined %}
-<div class="bg-light" id="appointment_container">
+<div class="bg-light">
     <div class="container py-5">
 {% endif %}
         <div class="row appointment__container">
@@ -11,8 +11,18 @@
                     </p>
                     <p><strong>Venez en magasin</strong> rencontrer nos conseillers escaliers pour vous aider à finaliser votre projet</p>
                     <p class="border-red-dashed text-uppercase text-center p-4 h3">Totalement gratuit</p>
+                    <input type="hidden" value="Nouveau prospect" class="form-control text-italic" placeholder="Votre prenom" aria-label="Votre prenom">
+                    <input type="hidden" value="Web" class="form-control text-italic" placeholder="Votre nom" aria-label="Votre nom">
+                    <input type="hidden" value="no-reply@lapeyre.fr" class="form-control text-italic" placeholder="Votre email" aria-label="Votre email">
+                    <input type="hidden" value="1" class="form-control text-italic" placeholder="Votre codeMag" aria-label="Votre codeMag">
                     <div class="input-group pt-3 pb-1">
                         <input type="text" class="form-control text-italic" placeholder="Votre code postal" aria-label="Votre code postal">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary rounded-right cursor-pointer px-4" type="button">OK</button>
+                        </span>
+                    </div>
+                    <div class="input-group pb-1">
+                        <input type="text" class="form-control text-italic" placeholder="Votre n° de téléphone" aria-label="Votre n° de téléphone">
                         <span class="input-group-btn">
                             <button class="btn btn-secondary rounded-right cursor-pointer px-4" type="button">OK</button>
                         </span>
@@ -56,3 +66,20 @@
     </div>
 </div>
 {% endif %}
+<script>
+$('form#submitButton').submit( function() {
+    $.ajax({
+        url: "https://www.lapeyre.fr/RDVService",
+        type: "POST",
+        contentType: "application/x-www-form-urlencoded",
+        data: $('form#myForm').serialize()
+    })
+    .done(function(data, textStatus, jqXHR) {
+        console.log("HTTP Request Succeeded: " + jqXHR.status);
+        console.log(data);
+    })
+    .fail(function(jqXHR, textStatus, errorThrown) {
+        console.log("HTTP Request Failed");
+    });
+});
+</script>

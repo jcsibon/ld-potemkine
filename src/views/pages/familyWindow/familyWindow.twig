@@ -1,95 +1,107 @@
 {% extends"layouts/default.html" %}
 {% block content %}
-  
+
 {% include "storeWidgets/jumbotron/jumbotron.twig" %}
 
 {% include "storeWidgets/description/description.twig" %}
 
+<style>
+    .font-secondary {
+        font-family: 'DinCondensed', sans-serif;
+    }
+</style>
 
 <div class="container">
-  <div class="row mx-5 px-5">
-    {% for pane in categories[global.request.get('code')]['dimensionsPanes'] %}
-    <div class="col m-4">
-      <a href="#{{ pane.url }}">    
-        <img src="{{ pane.imageFull['content'] }}" class="img-fluid bg-white border">
-        <p class="my-2 text-center small text-dark"><strong>{{ pane.name }}</strong></p>
-      </a>
+    <div class="row mx-5 px-5">
+        {% for pane in categories[global.request.get('code')]['dimensionsPanes'] %}
+        <div class="col m-4">
+            <a href="#{{ pane.url }}">    
+                <img src="{{ pane.imageFull['content'] }}" class="img-fluid bg-white border">
+                <p class="my-2 text-center small text-dark"><strong>{{ pane.name }}</strong></p>
+            </a>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-  </div>
 </div>
-<div class="bg-warning py-5">
-  <div class="my-5 h2 text-center">[ Présentation Matériau - En attente Dagobert ]</div>
+<div class="py-5">
+    <div class="my-5 h2 text-center">
+        <img src="/images/fenetres_texte.png" class="img-fluid" />
+    </div>
 </div>
-<div class="container">
-    {% for pane in categories[global.request.get('code')]['dimensionsPanes'] %}
-    <div id="{{ pane.url }}" class="row mx-3 my-5">
-      <div class="col-3 pl-5">
-        <h2 class="h3">{{ pane.name }}</h2>
-        <img src="/images/windows/avis.png" class="img-fluid">
-        <img src="{{ pane.imageFull['content'] }}" class="my-4 img-fluid">
-        <p class="strong small">{{ pane.description }}</p>
-      </div>
-      <div class="col-9 pr-5">
-        {% if pane.tabs is defined %}
-          {% if pane.tabs|length > 1 %}
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            {% for tab in pane.tabs %}
-            <li class="nav-item">
-              <a class="nav-link {% if loop.first == true %}active{% endif %}" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{ tab.name }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-          <div class="tab-content" id="myTabContent">
-            {% for tab in pane.tabs %}
-            <div class="tab-pane fade {% if loop.first == true %}show active{% endif %}" id="home" role="tabpanel" aria-labelledby="home-tab">
-              <br>
-              {% if tab['table'] is defined %}
-                {% set object = tab['table'] %}
-                {% include 'storeWidgets/table/table.twig' %}
-              {% endif %}
-              <br>
+<div class="bg-light">
+    <div class="container">
+        {% for pane in categories[global.request.get('code')]['dimensionsPanes'] %}
+        <div id="{{ pane.url }}" class="row mx-3 my-5">
+            <div class="col-3 pl-5">
+                <h2 class="h3">{{ pane.name }}</h2>
+                <img src="/images/windows/avis.png" class="img-fluid">
+                <img src="{{ pane.imageFull['content'] }}" class="my-4 img-fluid">
+                <p class="strong small">{{ pane.description }}</p>
             </div>
-            {% endfor %}
-          </div>
+            <div class="col-9 pr-5">
+                {% if pane.tabs is defined %}
+                {% if pane.tabs|length > 1 %}
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    {% for tab in pane.tabs %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if loop.first == true %}active{% endif %}" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{ tab.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                <div class="tab-content" id="myTabContent">
+                    {% for tab in pane.tabs %}
+                    <div class="tab-pane fade {% if loop.first == true %}show active{% endif %}" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <br>
+                        {% if tab['table'] is defined %}
+                        {% set object = tab['table'] %}
+                        {% include 'storeWidgets/table/table.twig' %}
+                        {% endif %}
+                        <br>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% if pane.customised == true %}
+                <div class="col-12">
+                    <h3 class="text-center py-4 font-secondary">Vous ne trouvez pas vos dimensions ?</h3>
+                    <img src="/images/fenetre_eco-elegant.png" class="img-fluid" />
+                </div>
+                {% endif %}
+                <br>
+            </div>
+        </div>
+        {% if loop.last == false %}
+        <hr>
         {% endif %}
-        {% if pane.customised == true %}
-        <img src="/images/windows/sur-mesure.png" class="d-block">
-        {% endif %}
-          <br>
-      </div>
+        {% endfor %}
     </div>
-    {% if loop.last == false %}
-    <hr>
-    {% endif %}
-  {% endfor %}
 </div>
 
 <div class="bg-light">
-{% include 'storeWidgets/madeinfrance/madeinfrance.twig' %}
+    {% include 'storeWidgets/madeinfrance/madeinfrance.twig' %}
 </div>
 {% include 'storeWidgets/appointment/appointment.twig' %}
 {% include 'storeWidgets/services/services.twig' %}
 <script>
-  https://www.lapeyre.fr/wcs/resources/store/10101/productview/{partnumber}
+    https://www.lapeyre.fr/wcs/resources/store/10101/productview/{partnumber}
 
-$.getJSON( "https://www.lapeyre.fr/wcs/resources/store/10101/productview/2513950/", function( data ) {
-  console.log(data.CatalogEntryView[0].title);
-  console.log(data.CatalogEntryView[0].Price.priceValue);
-  console.log(data);
-  /*
+    $.getJSON( "https://www.lapeyre.fr/wcs/resources/store/10101/productview/2513950/", function( data ) {
+        console.log(data.CatalogEntryView[0].title);
+        console.log(data.CatalogEntryView[0].Price.priceValue);
+        console.log(data);
+        /*
   var items = [];
   $.each( data, function( key, val ) {
     items.push( "<li id='" + key + "'>" + val + "</li>" );
   });
- 
+
   $( "<ul/>", {
     "class": "my-new-list",
     html: items.join( "" )
   }).appendTo( "body" );
   */
-});
+    });
 </script>
 {% endblock %}
 
