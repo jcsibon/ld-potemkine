@@ -84,13 +84,36 @@
             </div> 
         </div>
     </div>
-    {% include 'storeWidgets/madeinfrance/madeinfrance.twig' %}
+    <div class="container">
+        <div class="row position-relative">
+            <div class="col-12 col-lg-6 my-5 bg-cover h-400 d-none d-lg-block" style="background-image: url(/images/pages/index/bg_le_savoir_bien_faire.png);">
+            </div>
+            <div class="position-lg-absolute">
+                <div class="row m-0">
+                    <div class="col-12 col-lg-6 col-xl-5 offset-lg-1 offset-xl-3 d-flex pt-lg-5 order-lg-first">
+                        <p class="bg-white p-3 p-md-5 my-auto frenchFlag">Lapeyre sélectionne avec soin les matériaux de ses plans de travail auprès de fournisseurs français. Les plans de travail en bois et en stratifié sont fabriqués dans son usine située dans le Cantal.</p>
+                    </div>
+                    <div class="col-12 col-lg-5 col-xl-4 pt-lg-5 pb-3 order-first pt-5 pt-lg-0">
+                        <p class="title_h1 text-uppercase pt-lg-5">
+                            Fabriqué en France dans nos usines
+                        </p>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-12 d-lg-none py-4 text-center">
+                        <img src="/images/pages/index/bg_le_savoir_bien_faire.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
 </div>
 
 <div class="container pb-5" id="findWorktop">
     <div class="col-12 col-md-8 offset-md-2 pt-5 px-0">
         <p class="title_h1 text-center text-uppercase">Trouvez votre plan de travail idéal</p>
     </div>
+    {#
     <div class="text-center">
         <div class="btn-group worktop__btn-group pt-5" data-toggle="buttons">
             <label class="btn btn-primary active py-2 px-sm-5 mx-1 cursor-pointer rounded" id="optionMateriaux" data-target="materiaux">
@@ -102,6 +125,7 @@
         </div>
         <div class="worktop__filter_container pt-5"></div>
     </div>
+    #}
     <div class="row">
         <div class="pt-5 col-12">
             {#
@@ -412,21 +436,23 @@
                 </div>
             </div>
             #}
-            <div class="row">
-                {% for object in childrens[global.request.get('code')] %}
-                    <div class="col-6 col-sm-4">
-                        <a href="/{% if categories[object]['url'] is defined %}{{ categories[object]['url'] }}{% else %}#{% endif %}">
-                            <div class="h-90 bg-cover cursor-pointer position-relative thumb_worktop" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content'] }}{% endif %})" data-name="">
-                                <div class="thumb_worktop__more position-absolute d-flex bottom-0 h-90">
-                                    <p class="p-2 text-center small text-white m-auto">
-                                        {{ categories[object]['shortDesc']['content'] }}
-                                    </p>
-                                </div>
-                            </div> 
-                        </a>
-                        <p class="text-center pt-1 pb-3">{{ categories[object]['shortDesc']['content'] }}</p>
-                    </div>
-                {% endfor %}
+            <div class="worktop__lvl-1 col-12 col-md-8 offset-md-2">
+                <div class="row">
+                    {% for object in childrens[global.request.get('code')] %}
+                        <div class="col-6 col-sm-4">
+                            <a href="/{% if categories[object]['url']is defined %}{{ categories[object]['url']|replace({' ':'%20'}) }}{% else %}#{% endif %}">
+                                <div class="h-90 bg-cover cursor-pointer position-relative thumb_worktop" style="background-image: url({% if categories[object]['imageThumbnail']['content'] is defined %}{{ categories[object]['imageThumbnail']['content']|replace({' ':'%20'}) }}{% endif %})" data-name="">
+                                    <div class="thumb_worktop__more position-absolute d-flex bottom-0 h-90">
+                                        <p class="p-2 text-center small text-white m-auto">
+                                            {{ categories[object]['shortDesc']['content'] }}
+                                        </p>
+                                    </div>
+                                </div> 
+                            </a>
+                            <p class="text-center pt-1 pb-3">{{ categories[object]['shortDesc']['content'] }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
