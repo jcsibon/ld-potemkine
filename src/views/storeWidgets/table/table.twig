@@ -20,8 +20,8 @@
         {% for width in object['columns'] %}
         <td class="text-center">
           {% if object['items'][height][width] is defined %}
-          <a target="_blank" href="{{ object['items'][height][width]['url'] }} €">
-            {{ object['items'][height][width]['price'] }}
+          <a target="_blank" href="/{{ object['items'][height][width]['url'] }}">
+            {{ object['items'][height][width]['price'] }} €
           </a>
           {% else %}
           -
