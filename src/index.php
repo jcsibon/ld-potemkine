@@ -154,18 +154,19 @@ $app->get('/{urlname}-{code}/', function($code) use($app, $categories) {
 
 	if(isset($categories[$code]['dimensionsPanes']))
 	{
-		$lines = explode(PHP_EOL, file_get_contents("http://export.beezup.com/Lapeyre/Google_Shopping_FRA/0486e485-22e5-40c7-9f91-9e8c37d28bd7"));
-		$keys = str_getcsv($lines[0],"\t");
+		$lines = explode(PHP_EOL, file_get_contents("http://export.beezup.com/Lapeyre/Target2sell_FRA/84b2e910-4e02-4477-af42-225e7d0705e6"));
+		$keys = str_getcsv($lines[0],"|");
 		array_shift($lines);
 
 		foreach ($lines as $line) {
-			$line = str_getcsv($line,"\t");
+			$line = str_getcsv($line,"|");
 			if((int)$line[0]) {
 		    	$beezup[(int)$line[0]] = array_combine($keys, $line);
 			}
 		}
-		//	header('Content-Type: application/json');
-		//	die(json_encode($beezup));
+		
+//		header('Content-Type: application/json');
+//		die(json_encode($beezup));
 
 		foreach ($categories[$code]['dimensionsPanes'] as $keypane => $pane) {
 			foreach ($pane['tabs'] as $keytab => $tab) {
@@ -178,8 +179,8 @@ $app->get('/{urlname}-{code}/', function($code) use($app, $categories) {
 					$row = array(
 						"url" => $item['seoItem']['urlKeyword']['content'],
 						"sku" => $item['sku'], 
-						"price" => number_format(json_decode(file_get_contents("https://www.lapeyre.fr/wcs/resources/store/10101/productview/".$item['sku']),1)['CatalogEntryView'][0]['Price'][0]['priceValue'], 0, ',', '' ),
-						// "price" => $beezup[$item['sku']]['sale_price'],
+						// "price" => number_format(json_decode(file_get_contents("https://www.lapeyre.fr/wcs/resources/store/10101/productview/".$item['sku']),1)['CatalogEntryView'][0]['Price'][0]['priceValue'], 0, ',', '' ),
+						"price" => $beezup[$item['sku']]['PRICE'],
 						"content" => $item['label']['content']
 					);
 					$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['items'][(int)$matches[1]][(int)$matches[2]] = $row;
