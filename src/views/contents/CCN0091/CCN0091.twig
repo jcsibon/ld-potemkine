@@ -113,6 +113,7 @@
     <div class="col-12 col-md-8 offset-md-2 pt-5 px-0">
         <p class="title_h1 text-center text-uppercase">Trouvez votre plan de travail idéal</p>
     </div>
+    {#
     <div class="text-center">
         <div class="btn-group worktop__btn-group pt-5" data-toggle="buttons">
             <label class="btn btn-primary active py-2 px-sm-5 mx-1 cursor-pointer rounded" id="optionMateriaux" data-target="materiaux">
@@ -124,6 +125,7 @@
         </div>
         <div class="worktop__filter_container pt-5"></div>
     </div>
+    #}
     <div class="row">
         <div class="pt-5 col-12">
             {#
@@ -434,21 +436,23 @@
                 </div>
             </div>
             #}
-            <div class="row">
-                {% for object in childrens[global.request.get('code')] %}
-                    <div class="col-6 col-sm-4">
-                        <a href="/{% if categories[object]['url']is defined %}{{ categories[object]['url']|replace({' ':'%20'}) }}{% else %}#{% endif %}">
-                            <div class="h-90 bg-cover cursor-pointer position-relative thumb_worktop" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %})" data-name="">
-                                <div class="thumb_worktop__more position-absolute d-flex bottom-0 h-90">
-                                    <p class="p-2 text-center small text-white m-auto">
-                                        {{ categories[object]['shortDesc']['content'] }}
-                                    </p>
-                                </div>
-                            </div> 
-                        </a>
-                        <p class="text-center pt-1 pb-3">{{ categories[object]['shortDesc']['content'] }}</p>
-                    </div>
-                {% endfor %}
+            <div class="worktop__lvl-1 col-12 col-md-8 offset-md-2">
+                <div class="row">
+                    {% for object in childrens[global.request.get('code')] %}
+                        <div class="col-6 col-sm-4">
+                            <a href="/{% if categories[object]['url']is defined %}{{ categories[object]['url']|replace({' ':'%20'}) }}{% else %}#{% endif %}">
+                                <div class="h-90 bg-cover cursor-pointer position-relative thumb_worktop" style="background-image: url({% if categories[object]['imageThumbnail']['content'] is defined %}{{ categories[object]['imageThumbnail']['content']|replace({' ':'%20'}) }}{% endif %})" data-name="">
+                                    <div class="thumb_worktop__more position-absolute d-flex bottom-0 h-90">
+                                        <p class="p-2 text-center small text-white m-auto">
+                                            {{ categories[object]['shortDesc']['content'] }}
+                                        </p>
+                                    </div>
+                                </div> 
+                            </a>
+                            <p class="text-center pt-1 pb-3">{{ categories[object]['shortDesc']['content'] }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
