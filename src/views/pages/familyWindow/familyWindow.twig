@@ -9,6 +9,38 @@
     .font-secondary {
         font-family: 'DinCondensed', sans-serif;
     }
+    .border-dashed-black {
+        border: dashed 1px #000;
+        border-image: url("/images/dash_black.png") 1 round;
+    }
+    .border-dashed-red {
+        border: dashed 1px #ea0028;
+        border-image: url("/images/dash_red.png") 1 round;
+    }
+    .window__tab::after {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        content: "+";
+        bottom: 0;
+        line-height: 16px;
+        font-weight: 100;
+        right: 0;
+        font-family: arial;
+        color: #fff;
+        background: #000;
+    }
+    .window__tab_active::after {
+        background: #ea0028;
+        content: "-";
+        color: #fff;
+    }
+    .window__tab {
+        line-height: 1.2em;
+    }
+    .window__tab_active a {
+        color: #ea0028 !important;
+    }
 </style>
 
 <div class="container">
@@ -28,12 +60,12 @@
         <img src="/images/fenetres_texte.png" class="img-fluid" />
     </div>
 </div>
-<div class="bg-light">
+<div class="bg-light pt-5">
     <div class="container">
         {% for pane in categories[global.request.get('code')]['dimensionsPanes'] %}
         <div id="{{ pane.url }}" class="row mx-3 my-5">
             <div class="col-3 pl-5">
-                <h2 class="h3">{{ pane.name }}</h2>
+                <p class="h1 font-secondary">{{ pane.name }}</p>
                 <img src="/images/windows/avis.png" class="img-fluid">
                 <img src="{{ pane.imageFull['content'] }}" class="my-4 img-fluid">
                 <p class="strong small">{{ pane.description }}</p>
@@ -41,13 +73,15 @@
             <div class="col-9 pr-5">
                 {% if pane.tabs is defined %}
                 {% if pane.tabs|length > 1 %}
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <div class="d-flex font-weight-bold text-center font-secondary">
                     {% for tab in pane.tabs %}
-                    <li class="nav-item">
-                        <a class="nav-link {% if loop.first == true %}active{% endif %}" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{ tab.name }}</a>
-                    </li>
+                    <div class="d-inline-flex m-2 border-dashed-black {% if loop.first == true %} bg-white window__tab_active border-dashed-red{% endif %} px-4 window__tab position-relative" style="min-height: 70px;">
+                        <p class="m-auto">
+                            <a class="text-dark nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{ tab.name }}</a>
+                        </p>
+                    </div>
                     {% endfor %}
-                </ul>
+                </div>
                 {% endif %}
                 <div class="tab-content" id="myTabContent">
                     {% for tab in pane.tabs %}
@@ -79,29 +113,29 @@
 </div>
 
 <div class="bg-light">
-  <div class="container">
-      <div class="row position-relative">
-          <div class="col-12 col-lg-6 my-5 bg-cover h-400 d-none d-lg-block" style="background-image: url(/images/pages/index/bg_le_savoir_bien_faire.png);">
-          </div>
-          <div class="position-lg-absolute">
-              <div class="row m-0">
-                  <div class="col-12 col-lg-6 col-xl-5 offset-lg-1 offset-xl-3 d-flex pt-lg-5 order-lg-first">
-                      <p class="bg-white p-3 p-md-5 my-auto frenchFlag">Lapeyre sélectionne avec soin les matériaux de ses plans de travail auprès de fournisseurs français. Les plans de travail en bois et en stratifié sont fabriqués dans son usine située dans le Cantal.</p>
-                  </div>
-                  <div class="col-12 col-lg-5 col-xl-4 pt-lg-5 pb-3 order-first pt-5 pt-lg-0">
-                      <p class="title_h1 text-uppercase pt-lg-5">
-                          Fabriqué en France dans nos usines
-                      </p>
-                  </div>
-              </div>
-              <div class="row m-0">
-                  <div class="col-12 d-lg-none py-4 text-center">
-                      <img src="/images/pages/index/bg_le_savoir_bien_faire.png" class="img-fluid" />
-                  </div>
-              </div>
-          </div>
-      </div> 
-  </div>
+    <div class="container">
+        <div class="row position-relative">
+            <div class="col-12 col-lg-6 my-5 bg-cover h-400 d-none d-lg-block" style="background-image: url(/images/pages/index/bg_le_savoir_bien_faire.png);">
+            </div>
+            <div class="position-lg-absolute">
+                <div class="row m-0">
+                    <div class="col-12 col-lg-6 col-xl-5 offset-lg-1 offset-xl-3 d-flex pt-lg-5 order-lg-first">
+                        <p class="bg-white p-3 p-md-5 my-auto frenchFlag">Lapeyre sélectionne avec soin les matériaux de ses plans de travail auprès de fournisseurs français. Les plans de travail en bois et en stratifié sont fabriqués dans son usine située dans le Cantal.</p>
+                    </div>
+                    <div class="col-12 col-lg-5 col-xl-4 pt-lg-5 pb-3 order-first pt-5 pt-lg-0">
+                        <p class="title_h1 text-uppercase pt-lg-5">
+                            Fabriqué en France dans nos usines
+                        </p>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-12 d-lg-none py-4 text-center">
+                        <img src="/images/pages/index/bg_le_savoir_bien_faire.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
 </div>
 {% include 'storeWidgets/appointment/appointment.twig' %}
 {% include 'storeWidgets/services/services.twig' %}
