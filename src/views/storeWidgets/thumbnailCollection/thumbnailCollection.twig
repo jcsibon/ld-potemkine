@@ -1,8 +1,8 @@
-<a href="/{% if categories[object]['url'] is defined %}{{ categories[object]['url'] }}{% else %}#{% endif %}">
+<a href="/{% if categories[object]['url']is defined %}{{ categories[object]['url']|replace({' ':'%20'}) }}{% else %}#{% endif %}">
 	<div class="border bg-white thumb_product">
 		<div class="position-relative carousel slide m-auto overflow-hidden">
 			<div class="carousel-inner overflow-visible" role="listbox">
-				<div class="carousel-item active bg-cover  thumb_product__large" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content'] }}{% endif %}); ">
+				<div class="carousel-item active bg-cover  thumb_product__large" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}); ">
 				</div>
 				<div class="carousel-item bg-cover  thumb_product__large" style="background-image: url(); ">
 				</div>

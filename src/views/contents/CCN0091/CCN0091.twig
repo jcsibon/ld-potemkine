@@ -437,8 +437,8 @@
             <div class="row">
                 {% for object in childrens[global.request.get('code')] %}
                     <div class="col-6 col-sm-4">
-                        <a href="/{% if categories[object]['url'] is defined %}{{ categories[object]['url'] }}{% else %}#{% endif %}">
-                            <div class="h-90 bg-cover cursor-pointer position-relative thumb_worktop" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content'] }}{% endif %})" data-name="">
+                        <a href="/{% if categories[object]['url']is defined %}{{ categories[object]['url']|replace({' ':'%20'}) }}{% else %}#{% endif %}">
+                            <div class="h-90 bg-cover cursor-pointer position-relative thumb_worktop" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %})" data-name="">
                                 <div class="thumb_worktop__more position-absolute d-flex bottom-0 h-90">
                                     <p class="p-2 text-center small text-white m-auto">
                                         {{ categories[object]['shortDesc']['content'] }}
