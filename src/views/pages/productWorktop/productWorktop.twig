@@ -1,9 +1,9 @@
 {% extends"layouts/default.html" %}
 {% block content %}
 
-<div style="background-image: url({{ categories[global.request.get('code')]['imageFull']['content'] }})" class="bg-cover worktop__container position-relative h-600 m-auto">
+<div style="background-image: url({{ categories[global.request.get('code')]['imageFull']['content']|replace({' ':'%20'}) }}" class="bg-cover worktop__container position-relative h-600 m-auto">
     <div class="d-xl-none">
-        <img src="{{ categories[global.request.get('code')]['imageFull']['content'] }}" class="img-fluid" />
+        <img src="{{ categories[global.request.get('code')]['imageFull']['content']|replace({' ':'%20'}) }}" class="img-fluid" />
     </div>
     <div class="container">
         {% if global.request.get('code')|slice(0, 2) == "FPC" %}
@@ -181,7 +181,7 @@
     <div class="container py-5">
         <div class="col-12">
             <div class="row">
-                <div class="col-12 col-lg-7 offset-5 offset-xl-5 my-5 bg-cover h-600 d-none d-lg-block" style="background-image: url({{ categories[global.request.get('code')]['imageFull']['content'] }});">
+                <div class="col-12 col-lg-7 offset-5 offset-xl-5 my-5 bg-cover h-600 d-none d-lg-block" style="background-image: url({{ categories[global.request.get('code')]['imageFull']['content']|replace({' ':'%20'}) }});">
                 </div>
                 <div class="position-lg-absolute">
                     <div class="row">
@@ -198,7 +198,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 d-lg-none pt-4">
-                            <img src="{{ categories[global.request.get('code')]['imageFull']['content'] }}" class="img-fluid" />
+                            <img src="{{ categories[global.request.get('code')]['imageFull']['content']|replace({' ':'%20'}) }}" class="img-fluid" />
                         </div>
                     </div>
                 </div>

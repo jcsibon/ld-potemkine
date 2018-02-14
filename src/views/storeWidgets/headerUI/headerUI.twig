@@ -611,7 +611,7 @@
                     <ul class="nav">
                         {% for universe in ['CCU0003','CCU0004','CCU0001','CCU0002','CCU0005','CCU0006','CCU0007','CCU0008'] %}
                         <li class="nav-item py-1 px-0 mt-1 dropdown">
-                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="/{{ categories[universe]['url'] }}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href='/{{ categories[universe]['url'] }}'">
+                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="/{{ categories[universe]['url']|replace({' ':'%20'}) }}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href='/{{ categories[universe]['url']|replace({' ':'%20'}) }}'">
                                 {{ categories[universe]['label']['content'] }}
                             </a>
                             <div class="dropdown-menu bg-light p-4 header__mega-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -627,7 +627,7 @@
                                                     {% for family,familyContent in subuniverseContent %}
                                                         {% if categories[family]['hiddenHeader'] == false %}
                                                         <p class="p-0 m-0 small">
-                                                            <a class="dropdown-item" href="/{{ categories[family]['url'] }}">{{ categories[family]['shortDesc']['content'] }}</a>
+                                                            <a class="dropdown-item" href="/{{ categories[family]['url']|replace({' ':'%20'}) }}">{{ categories[family]['shortDesc']['content'] }}</a>
                                                         </p>
                                                         {% endif %}
                                                     {% endfor %}
@@ -636,7 +636,7 @@
                                             {% endfor %}
                                         </div>
                                         <p class="pt-3">
-                                            <a href="/{{ categories[universe]['url'] }}" class="text-dark small font-weight-bold">> Voir l'univers</a>
+                                            <a href="/{{ categories[universe]['url']|replace({' ':'%20'}) }}" class="text-dark small font-weight-bold">> Voir l'univers</a>
                                         </p>
                                     </div>
                                     <div class="col-3 header__mag px-5">
