@@ -11,7 +11,7 @@
     {% for pane in categories[global.request.get('code')]['dimensionsPanes'] %}
     <div class="col m-4">
       <a href="#{{ pane.url }}">    
-        <img src="{{ pane.imageFull['content'] }}" class="img-fluid bg-white rounded-circle border border">
+        <img src="{{ pane.imageFull['content'] }}" class="img-fluid bg-white border">
         <p class="my-2 text-center small text-dark"><strong>{{ pane.name }}</strong></p>
       </a>
     </div>
