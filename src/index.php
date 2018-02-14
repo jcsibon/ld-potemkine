@@ -151,76 +151,74 @@ $app->get('/', function() use($app) {
 
 /* CATALOGUE */
 $app->get('/{urlname}-{code}/', function($code) use($app, $categories) {
-	// die("FPC");
+
+	if(isset($categories[$code]['dimensionsPanes']))
+	{
+		$lines = explode(PHP_EOL, file_get_contents("http://export.beezup.com/Lapeyre/Google_Shopping_FRA/0486e485-22e5-40c7-9f91-9e8c37d28bd7"));
+		$keys = str_getcsv($lines[0],"\t");
+		array_shift($lines);
+
+		foreach ($lines as $line) {
+			$line = str_getcsv($line,"\t");
+			if((int)$line[0]) {
+		    	$beezup[(int)$line[0]] = array_combine($keys, $line);
+			}
+		}
+		//	header('Content-Type: application/json');
+		//	die(json_encode($beezup));
+
+		foreach ($categories[$code]['dimensionsPanes'] as $keypane => $pane) {
+			foreach ($pane['tabs'] as $keytab => $tab) {
+				$table[$tab['product']] = array("columns"=>[],"items"=>[]);
+				foreach(json_decode(utf8_encode(file_get_contents("data/sas/".$tab['product'].".json")),1)['product']['itemList']['item'] as $item)
+				{
+					preg_match('/[\S\s]*(?:Tableau|Tabl.|TabL.)[\s]*H[\.]*([0-9]+)[\s]*x[\s]*[l]*[\.]*([0-9]+)/', $item['label']['content'], $matches);
+					// die("https://www.lapeyre.fr/wcs/resources/store/10101/productview/".$item['sku']);
+					//die(json_decode(,1));
+					$row = array(
+						"url" => $item['seoItem']['urlKeyword']['content'],
+						"sku" => $item['sku'], 
+						"price" => number_format(json_decode(file_get_contents("https://www.lapeyre.fr/wcs/resources/store/10101/productview/".$item['sku']),1)['CatalogEntryView'][0]['Price'][0]['priceValue'], 0, ',', '' ),
+						"content" => $item['label']['content']
+					);
+					$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['items'][(int)$matches[1]][(int)$matches[2]] = $row;
+					if(!in_array((int)$matches[2], $categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns']))
+						$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns'][] = (int)$matches[2];
+				}
+				asort($categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns']);
+			}
+		}
+		// header('Content-Type: application/json');
+		// die(json_encode($categories[$code]));
+		$app['twig']->addGlobal('categories', $categories);
+	}
 	if(file_exists('views/contents/'.$code.'/'.$code.".twig"))
 	{
-		return $app['twig']->render("contents/".$code.'/'.$code.".twig",array("content"=>$content));
+		return $app['twig']->render("contents/".$code.'/'.$code.".twig");
 	}
 	else
 	{
 		if(isset($categories[$code]["template"]))
 		{
-			return $app['twig']->render("pages/".$categories[$code]["template"]."/".$categories[$code]["template"].".twig",array("content"=>$content));
+			return $app['twig']->render("pages/".$categories[$code]["template"]."/".$categories[$code]["template"].".twig");
 		}
 		else
 		{
-		$template = "";
 			switch (substr($code, 0, 3)) {
 				case "CCU":
-					return $app['twig']->render('pages/universe/universe.twig',array("content"=>$content));
+					return $app['twig']->render('pages/universe/universe.twig');
 				break;
 				case "CCN":
-					return $app['twig']->render('pages/family/family.twig',array("content"=>$content));
+					return $app['twig']->render('pages/family/family.twig');
 				break;
 				case "FPC":
-					return $app['twig']->render('pages/product/product.twig',array("content"=>$content));
+					return $app['twig']->render('pages/product/product.twig');
 				break;
 				default:
-					return $app['twig']->render('pages/article/article.twig',array("template"=>$template));      
+					return $app['twig']->render('pages/article/article.twig');      
 			}
 		}
 	}
-	/*
-
-	$content = array();
-	if(file_exists('data/radar/'.$code.".json"))
-	{
-		$content = json_decode(file_get_contents("data/radar/".$code.".json"),1);
-	}
-	if(file_exists('data/layer/'.$code.".json"))
-	{
-		foreach(json_decode(file_get_contents("data/layer/".$code.".json"),1) as $row=>$field)
-			$content[$row]=$field;
-	}
-	if(file_exists('views/contents/'.$code.".twig"))
-	{
-		return $app['twig']->render("contents/".$code.".twig",array("content"=>$content));
-	}
-	else
-	{
-		if(isset($categories[$code]["template"]))
-		{
-			return $app['twig']->render("pages/".$categories[$code]["template"]."/".$categories[$code]["template"].".twig",array("content"=>$content));
-		}
-		else
-		{
-		$template = "";
-			switch (substr($code, 0, 3)) {
-				case "CCU":
-					return $app['twig']->render('pages/universe/universe.twig',array("content"=>$content));
-				break;
-				case "CCN":
-					return $app['twig']->render('pages/family/family.twig',array("content"=>$content));
-				break;
-				case "FPC":
-					return $app['twig']->render('pages/product/product.twig',array("content"=>$content));
-				break;
-				default:
-					return $app['twig']->render('pages/article/article.twig',array("template"=>$template));      
-			}
-		}
-	}
-	*/
 })->assert('urlname', '[a-z\-]+')->assert('code', '(CCU|SCU|CCN|FPC)[0-9\-]+');
 
 $app->get('/SearchDisplay', function() use($app) {

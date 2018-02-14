@@ -8,7 +8,7 @@
 
 <div class="container">
   <div class="row mx-5 px-5">
-    {% for pane in categories[global.request.get('code')]['panes'] %}
+    {% for pane in categories[global.request.get('code')]['dimensionsPanes'] %}
     <div class="col m-4">
       <a href="#{{ pane.url }}">    
         <img src="{{ pane.imageFull['content'] }}" class="img-fluid bg-white rounded-circle border border">
@@ -22,7 +22,7 @@
   <div class="my-5 h2 text-center">[ Présentation Matériau - En attente Dagobert ]</div>
 </div>
 <div class="container">
-    {% for pane in categories[global.request.get('code')]['panes'] %}
+    {% for pane in categories[global.request.get('code')]['dimensionsPanes'] %}
     <div id="{{ pane.url }}" class="row mx-3 my-5">
       <div class="col-3 pl-5">
         <h2 class="h3">{{ pane.name }}</h2>
@@ -40,18 +40,19 @@
             </li>
             {% endfor %}
           </ul>
+          {% endif %}
           <div class="tab-content" id="myTabContent">
             {% for tab in pane.tabs %}
             <div class="tab-pane fade {% if loop.first == true %}show active{% endif %}" id="home" role="tabpanel" aria-labelledby="home-tab">
               <br>
-              <img src="/images/windows/table.png" class="d-block">
+              {% if tab['table'] is defined %}
+                {% set object = tab['table'] %}
+                {% include 'storeWidgets/table/table.twig' %}
+              {% endif %}
               <br>
             </div>
             {% endfor %}
           </div>
-          {% else %}
-          <img src="/images/windows/table.png" class="d-block">
-          {% endif %}
         {% endif %}
         {% if pane.customised == true %}
         <img src="/images/windows/sur-mesure.png" class="d-block">
@@ -70,4 +71,26 @@
 </div>
 {% include 'storeWidgets/appointment/appointment.twig' %}
 {% include 'storeWidgets/services/services.twig' %}
+<script>
+  https://www.lapeyre.fr/wcs/resources/store/10101/productview/{partnumber}
+
+$.getJSON( "https://www.lapeyre.fr/wcs/resources/store/10101/productview/2513950/", function( data ) {
+  console.log(data.CatalogEntryView[0].title);
+  console.log(data.CatalogEntryView[0].Price.priceValue);
+  console.log(data);
+  /*
+  var items = [];
+  $.each( data, function( key, val ) {
+    items.push( "<li id='" + key + "'>" + val + "</li>" );
+  });
+ 
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "body" );
+  */
+});
+</script>
 {% endblock %}
+
+
