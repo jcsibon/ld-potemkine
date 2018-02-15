@@ -280,6 +280,22 @@ div.home__large_block_left {
     font-weight: 600;
 }
 
+.font-secondary {
+    font-family: $font-family-1;
+}
+
+@media all and (max-width: 576px) {
+    .h3 {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .h1 {
+        font-size: 2rem;
+    }
+}
+
 @media all and (min-width: 576px) {
     .carousel-showmanymoveone .carousel-inner > .carousel-item.active.carousel-item-left,
     .carousel-showmanymoveone .carousel-inner > .carousel-item-prev {

@@ -1,0 +1,55 @@
+.border-dashed-black {
+    border: dashed 1px #000;
+    border-image: url("http://res.cloudinary.com/dwkgy95ov/image/upload/v1518721326/dash_black.png") 1 round;
+}
+.border-dashed-red {
+    border: dashed 1px $red-secondary;
+    border-image: url("http://res.cloudinary.com/dwkgy95ov/image/upload/v1518721326/dash_red.png") 1 round;
+}
+.window__tab_group .active>div {
+    background: $white;
+    color: $red-secondary;
+    border: dashed 1px $red-secondary;
+    border-image: url("http://res.cloudinary.com/dwkgy95ov/image/upload/v1518721326/dash_red.png") 1 round;
+}
+.window__tab::after {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    content: "+";
+    bottom: -1px;
+    line-height: 16px;
+    font-weight: 100;
+    right: -1px;
+    font-family: arial;
+    color: $white;
+    background: #000;
+}
+.window__tab_group .active>div::after {
+    background: $red-secondary;
+    content: "-";
+    color: $white;
+}
+.window__tab_group p {
+    font-size: 20px;
+}
+.window__tab_group a {
+    vertical-align: top;
+}
+.window__tab {
+    line-height: 1.2em;
+    max-width: 200px;
+}
+.window__tab > div {
+    min-height: 70px;
+}
+.window__title_size {
+    margin-top: -18px;
+    left: calc(50% - 110px);
+    width: 220px;
+}
+.window__anchor .col {
+    min-width: 150px;
+    max-width: 300px;
+    margin: auto;
+}
