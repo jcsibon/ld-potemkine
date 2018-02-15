@@ -67,48 +67,23 @@
     <div class="row">
         <div class="col-10 offset-1">
             <div class="row">
+                {% for advBloc in categories[global.request.get('code')]['advBloc'] %}
                 <div class="col-4 px-2">
                     <div class="text-center border-dashed-red p-4 h-100">
                         <p class="pt-2">
-                            <svg width="60" height="60">
-                                <use xlink:href="#picto-confort"/>
-                            </svg>
+                            <img src="{{ advBloc.image }}" />
                         </p>
-                        <p class="h3 text-uppercase font-secondary">Confort et performance</p>
+                        <p class="h3 text-uppercase font-secondary">
+                        {{ advBloc.title }}
+                        </p>
                         <p class="small pb-0">
-                            Excellent rapport qualité/prix<br/>
-                            Pas d'entretien<br/>
-                            La meilleure solution
+                          {{ advBloc.content | raw }}  
                         </p>
                     </div>
                 </div>
-                <div class="col-4 px-2">
-                    <div class="text-center border-dashed-red p-4 h-100">
-                        <p class="pt-2">
-                            <svg width="60" height="60">
-                                <use xlink:href="#picto-plus-lapeyre"/>
-                            </svg>
-                        </p>
-                        <p class="h3 text-uppercase font-secondary">Le plus Lapeyre</p>
-                        <p class="small pb-0">
-                            Lapeyre fabrique ses profilés PVC à partir d'une formule unique homologuée CSTB, 16% de la matière première utilisée est issue du recyclage du PVC
-                        </p>
-                    </div>
-                </div>
-                <div class="col-4 px-2">
-                    <div class="text-center border-dashed-red p-4 h-100">
-                        <p class="pt-2">
-                            <svg width="60" height="60">
-                                <use xlink:href="#picto-eco"/>
-                            </svg>
-                        </p>
-                        <p class="h3 text-uppercase font-secondary">L'éco-responsabilité Lapeyre</p>
-                        <p class="small pb-0">
-                            Lorem ipsum
-                        </p>
-                        <p><img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1518703497/picto-signe-lapeyre.png" class="px-1" /><img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1518703497/picto-made-france.png" class="px-1" /><img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1518703497/picto-garantie-1.png" class="px-1" /></p>
-                    </div>
-                </div>
+                
+                {% endfor %}
+                <!-- <img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1518703497/picto-signe-lapeyre.png" class="px-1" /><img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1518703497/picto-made-france.png" class="px-1" /><img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1518703497/picto-garantie-1.png" class="px-1" />-->
             </div>
         </div>
     </div>
