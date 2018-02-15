@@ -19,6 +19,12 @@
         border: dashed 1px #ea0028;
         border-image: url("/images/dash_red.png") 1 round;
     }
+    .window__tab_group .active div {
+        background: #fff;
+        color: #ea0028;
+        border: dashed 1px #ea0028;
+        border-image: url("/images/dash_red.png") 1 round;
+    }
     .window__tab::after {
         position: absolute;
         width: 16px;
@@ -32,19 +38,16 @@
         color: #fff;
         background: #000;
     }
-    .window__tab_active::after {
+    .window__tab_group .active div::after {
         background: #ea0028;
         content: "-";
         color: #fff;
     }
-    .window__tab .h3 {
+    .window__tab_group p {
         font-size: 20px;
     }
     .window__tab {
         line-height: 1.2em;
-    }
-    .window__tab_active a {
-        color: #ea0028 !important;
     }
 </style>
 
@@ -60,9 +63,54 @@
         {% endfor %}
     </div>
 </div>
-<div class="py-5">
-    <div class="my-5 h2 text-center">
-        <img src="/images/fenetres_texte.png" class="img-fluid" />
+<div class="container p-5">
+    <div class="row">
+        <div class="col-10 offset-1">
+            <div class="row">
+                <div class="col-4 px-2">
+                    <div class="text-center border-dashed-red p-4 h-100">
+                        <p class="pt-2">
+                            <svg width="60" height="60">
+                                <use xlink:href="#picto-confort"/>
+                            </svg>
+                        </p>
+                        <p class="h3 text-uppercase font-secondary">Confort et performance</p>
+                        <p class="small pb-0">
+                            Excellent rapport qualité/prix<br/>
+                            Pas d'entretien<br/>
+                            La meilleure solution
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4 px-2">
+                    <div class="text-center border-dashed-red p-4 h-100">
+                        <p class="pt-2">
+                            <svg width="60" height="60">
+                                <use xlink:href="#picto-plus-lapeyre"/>
+                            </svg>
+                        </p>
+                        <p class="h3 text-uppercase font-secondary">Le plus Lapeyre</p>
+                        <p class="small pb-0">
+                            Lapeyre fabrique ses profilés PVC à partir d'une formule unique homologuée CSTB, 16% de la matière première utilisée est issue du recyclage du PVC
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4 px-2">
+                    <div class="text-center border-dashed-red p-4 h-100">
+                        <p class="pt-2">
+                            <svg width="60" height="60">
+                                <use xlink:href="#picto-eco"/>
+                            </svg>
+                        </p>
+                        <p class="h3 text-uppercase font-secondary">L'éco-responsabilité Lapeyre</p>
+                        <p class="small pb-0">
+                            Lorem ipsum
+                        </p>
+                        <p><img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1518703497/picto-signe-lapeyre.png" class="px-1" /><img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1518703497/picto-made-france.png" class="px-1" /><img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1518703497/picto-garantie-1.png" class="px-1" /></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class="bg-light pt-5">
@@ -77,13 +125,15 @@
             <div class="col-12 pt-4 pb-3" role="tablist">
                 {% if pane.tabs is defined %}
                 {% if pane.tabs|length > 1 %}
-                <div class="d-flex font-weight-bold text-center font-secondary pl-4">
+                <div class="d-flex font-weight-bold text-center font-secondary pl-2 window__tab_group">
                     {% for tab in pane.tabs %}
-                    <div class="d-inline-flex m-2 border-dashed-black {% if loop.first == true %} bg-white window__tab_active border-dashed-red{% endif %} px-4 window__tab position-relative" style="min-height: 70px;">
-                        <p class="m-auto">
-                            <a class="text-dark nav-link h3 pb-0" data-toggle="tab" href="#tab_window_{{loop_lvl_1}}_{{ loop.index }}" role="tab">{{ tab.name }}</a>
-                        </p>
-                    </div>
+                    <a class="text-dark nav-link h3 px-0 pb-0 {% if loop.first == true %}active{% endif %}" data-toggle="tab" href="#tab_window_{{loop_lvl_1}}_{{ loop.index }}" role="tab" id="tab_{{loop_lvl_1}}_{{ loop.index }}">
+                        <div class="d-inline-flex m-2 border-dashed-black px-4 window__tab position-relative" style="min-height: 70px;">
+                            <p class="m-auto">
+                                {{ tab.name }}
+                            </p>
+                        </div>
+                    </a>
                     {% endfor %}
                 </div>
                 {% endif %}
@@ -149,6 +199,8 @@
         </div> 
     </div>
 </div>
+
+
 {% include 'storeWidgets/appointment/appointment.twig' %}
 {% include 'storeWidgets/services/services.twig' %}
 <script>
@@ -170,6 +222,18 @@
   }).appendTo( "body" );
   */
     });
+
+    /*
+    $(function() {
+        $('body').on('click','.window__tab_group a', function() {
+            $(".window__tab_group a").removeClass("active"); 
+            $(this).addClass("active"); 
+        });
+    });*/
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        $(e.target).parent('.window__tab_group').find('a').removeClass('active');
+        $(e.target).addClass('active');
+    })
 </script>
 {% endblock %}
 
