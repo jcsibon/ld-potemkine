@@ -55,12 +55,17 @@
         left: calc(50% - 110px);
         width: 220px;
     }
+    .window__anchor .col {
+        min-width: 150px;
+        max-width: 300px;
+        margin: auto;
+    }
 </style>
 
 <div class="container">
-    <div class="row mx-5 px-5">
+    <div class="row mx-xl-5 px-xl-5 window__anchor">
         {% for pane in categories[global.request.get('code')]['dimensionsPanes'] %}
-        <div class="col m-4">
+        <div class="col m-xl-4">
             <a href="#{{ pane.url }}">    
                 <img src="{{ pane.imageFull['content'] }}" class="img-fluid bg-white">
                 <p class="my-2 text-center small text-dark"><strong>{{ pane.name }}</strong></p>
@@ -71,20 +76,26 @@
 </div>
 <div class="container p-5">
     <div class="row">
-        <div class="col-10 offset-1">
+        <div class="col-12 col-xl-10 offset-xl-1">
             <div class="row">
                 {% for advBloc in categories[global.request.get('code')]['advBloc'] %}
-                <div class="col-4 px-2">
+                <div class="col-12 col-lg-4 p-2">
                     <div class="text-center border-dashed-red p-4 h-100">
-                        <p class="pt-2">
-                            <img src="{{ advBloc.image }}" />
-                        </p>
-                        <p class="h3 text-uppercase font-secondary">
-                            {{ advBloc.title }}
-                        </p>
-                        <p class="small pb-0">
-                            {{ advBloc.content | raw }}  
-                        </p>
+                        <div class="row">
+                            <div class="col-12 col-sm-4 col-lg-12 d-flex">
+                                <p class="pt-2 pb-3 m-auto">
+                                    <img src="{{ advBloc.image }}" />
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-8 col-lg-12">
+                                <p class="h3 text-uppercase font-secondary">
+                                    {{ advBloc.title }}
+                                </p>
+                                <p class="small pb-0 mb-0">
+                                    {{ advBloc.content | raw }}  
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
