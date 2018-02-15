@@ -49,6 +49,12 @@
     .window__tab {
         line-height: 1.2em;
     }
+
+    .window__title_size {
+        margin-top: -18px;
+        left: calc(50% - 110px);
+        width: 220px;
+    }
 </style>
 
 <div class="container">
@@ -74,21 +80,21 @@
                             <img src="{{ advBloc.image }}" />
                         </p>
                         <p class="h3 text-uppercase font-secondary">
-                        {{ advBloc.title }}
+                            {{ advBloc.title }}
                         </p>
                         <p class="small pb-0">
-                          {{ advBloc.content | raw }}  
+                            {{ advBloc.content | raw }}  
                         </p>
                     </div>
                 </div>
-                
+
                 {% endfor %}
                 <!-- <img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1518703497/picto-signe-lapeyre.png" class="px-1" /><img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1518703497/picto-made-france.png" class="px-1" /><img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1518703497/picto-garantie-1.png" class="px-1" />-->
             </div>
         </div>
     </div>
 </div>
-<div class="bg-light pt-5">
+<div class="bg-light py-5">
     <div class="container">
         {% for pane in categories[global.request.get('code')]['dimensionsPanes'] %}
         {% set loop_lvl_1 = loop.index %}
@@ -135,8 +141,61 @@
                 {% endif %}
                 {% if pane.customised == true %}
                 <div class="col-12">
-                    <h3 class="text-center py-4 font-secondary">Vous ne trouvez pas vos dimensions ?</h3>
-                    <img src="/images/fenetre_eco-elegant.png" class="img-fluid" />
+                    <h3 class="text-center py-4 font-secondary ">Vous ne trouvez pas vos dimensions ?</h3>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-6">
+                        <div class="row px-2">
+                            <div class="col-12 bg-primary">
+                                <p class="h3 text-center text-uppercase position-absolute bg-secondary text-white font-secondary py-1 window__title_size">Le plus économique</p>
+                                <div class="row pt-5 pb-3">
+                                    <div class="col-4">
+                                        <p class="text-center">
+                                            <svg width="100" height="100">
+                                                <use xlink:href="#picto-economique"/>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="text-white">
+                                            Complétez votre fenêtre avec des impostes et élargisseurs.
+                                        </p>
+                                        <p>
+                                            <a href="#" class="btn bg-white col-12 rounded py-2">
+                                                Trouvez la meilleure solution
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row px-2">
+                            <div class="col-12 bg-white border-dashed-black">
+                                <p class="h3 text-center text-uppercase bg-white position-absolute bg-white font-secondary py-1 window__title_size">Le plus élégant</p>
+                                <div class="row pt-5 pb-3">
+                                    <div class="col-4">
+                                        <p class="text-center">
+                                            <svg width="100" height="100">
+                                                <use xlink:href="#picto-elegant"/>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                    <div class="col-8">
+                                        <p>
+                                            Réalisez cette fenêtre avec des dimensions sur-mesure.
+                                        </p>
+                                        <p>
+                                            <a href="#" class="btn btn-primary col-12 rounded py-2">
+                                                Configurer ma fenêtre
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 {% endif %}
                 <br>
@@ -179,7 +238,7 @@
 {% include 'storeWidgets/appointment/appointment.twig' %}
 {% include 'storeWidgets/services/services.twig' %}
 <script>
-    https://www.lapeyre.fr/wcs/resources/store/10101/productview/{partnumber}
+    /* https://www.lapeyre.fr/wcs/resources/store/10101/productview/{partnumber} */
 
     $.getJSON( "https://www.lapeyre.fr/wcs/resources/store/10101/productview/2513950/", function( data ) {
         console.log(data.CatalogEntryView[0].title);
