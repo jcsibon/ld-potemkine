@@ -1,9 +1,10 @@
+<!-- BEGIN RDV rendez-vous magasin + CAD conseil à domicile -->
 {% if modal is not defined %}
 <div class="bg-light">
     <div class="container py-5">
         {% endif %}
-        <div class="row appointment__container">
-            <div class="col-12 col-md-6 {% if modal is not defined %} col-lg-5 offset-lg-1 {% endif %} p-1">
+         <div class="row appointment__container">
+            <div class="col-12 col-md-6  col-lg-5 offset-lg-1  p-1">
                 <div class="col-12 p-3 p-sm-5 bg-white mx-1 h-100">
                     <p class="h2 text-uppercase pb-3 pl-3 pt-3 pl-sm-0 pt-sm-0">Rendez-vous en magasin</p>
                     <p class="text-center py-3 d-none d-md-block">
@@ -11,12 +12,13 @@
                     </p>
                     <p><strong>Venez en magasin</strong> rencontrer nos conseillers pour vous aider à finaliser votre projet</p>
                     <p class="border-dashed-red text-uppercase text-center p-4 h3">Totalement gratuit</p>
-                    <input type="hidden" value="Nouveau prospect" class="form-control text-italic" placeholder="Votre prenom" aria-label="Votre prenom">
-                    <input type="hidden" value="Web" class="form-control text-italic" placeholder="Votre nom" aria-label="Votre nom">
-                    <input type="hidden" value="no-reply@lapeyre.fr" class="form-control text-italic" placeholder="Votre email" aria-label="Votre email">
-                    <input type="hidden" value="1" class="form-control text-italic" placeholder="Votre codeMag" aria-label="Votre codeMag">
-                    <div class="input-group pt-3 pb-1">
-                        <input type="number" class="form-control text-italic" placeholder="Votre code postal" aria-label="Votre code postal" id="rdv_mag_cp">
+                    <div class="input-group pt-3 pb-1 rdv-mag-hideFirst"><input type="text" class="form-control text-italic" placeholder="Votre prénom" aria-label="Votre prénom" id="rdv_mag_prenom"></div>
+                    <div class="input-group pb-1 rdv-mag-hideFirst"><input type="text" class="form-control text-italic" placeholder="Votre nom" aria-label="Votre nom" id="rdv_mag_nom"></div>
+                    <div class="input-group pb-1 rdv-mag-hideFirst"><input type="text" class="form-control text-italic" placeholder="Votre code postal" aria-label="Votre code postal" id="rdv_mag_cp"></div>
+                    <div class="input-group pb-1 rdv-mag-hideFirst"><input type="text" class="form-control text-italic" placeholder="Votre email" aria-label="Votre email" id="rdv_mag_email"></div>
+                    <input type="hidden" value="1" class="form-control text-italic" placeholder="Votre codeMag" aria-label="Votre codeMag" id="rdv_mag_codeMag">
+                    <div class="input-group pb-1">
+                        <input type="number" class="form-control text-italic" placeholder="Votre numéro de téléphone" aria-label="Votre numéro de téléphone" id="rdv_mag_tel">
                         <span class="input-group-btn">
                             <button class="btn btn-secondary rounded-right cursor-pointer px-4" type="button" id="rdv_mag_button">OK</button>
                         </span>
@@ -24,7 +26,7 @@
                     <p class="bg-secondary text-white font-secondary px-4 py-2" id="rdv_mag_result"></p>
                 </div>
             </div>
-            <div class="col-12 col-md-6 {% if modal is not defined %} col-lg-5 {% endif %} p-1">
+            <div class="col-12 col-md-6  col-lg-5  p-1">
                 <div class="col-12 p-3 p-sm-5 bg-white mx-1 h-100">
                     <p class="h2 text-uppercase pb-3">Rendez-vous à domicile</p>
                     <p class="text-center py-3 d-none d-md-block">
@@ -39,17 +41,17 @@
                             <p class="text-uppercase bg-secondary text-white small text-center py-1">Remboursable <sup>*</sup></p>
                         </div>
                         <div class="col-7">
-                            <p class="small text-secondary">La prestation de conseil à domicile est facturée 89€, déduit ensuite du prix de votre projet.<sup>*</sup></p>
+                            <p class="small text-secondary">La prestation de conseil à domicile est facturée 89€.<br />Ils sont remboursés en cas de confirmation du devis réalisé suite au rendez-vous<sup>*</sup>.</p>
                         </div>
                     </div>
                     <div class="input-group pt-3 pb-1">
-                        <input class="form-control text-italic" placeholder="Votre code postal" aria-label="Votre code postal" id="rdv_dom_cp" type="number">
+                        <input class="form-control text-italic" placeholder="Votre code postal" aria-label="Votre code postal" id="rdv_dom_cp" type="number" onKeyPress="if (event.keyCode==13) cadAction();">
                         <span class="input-group-btn">
-                            <button class="btn btn-secondary rounded-right cursor-pointer px-4" type="button" id="rdv_dom_button">OK</button>
+                            <button class="btn btn-secondary rounded-right cursor-pointer px-4" type="button" id="rdv_dom_button" onclick="cadAction();">OK</button>
                         </span>
                     </div>
                     <p class="bg-secondary text-white font-secondary px-4 py-2" id="rdv_dom_result"></p>
-                    <p class="text-center text-muted small">Un conseiller vous appellera sous 48 heures.</p>
+                    <!--<p class="text-center text-muted small">Un conseiller vous appellera sous 48 heures.</p>-->
                     <p class="text-right small"><a href="https://www.lapeyre.fr/c/conditions-generales-de-vente#cgvCAD" target="_blank" class="text-muted">* Voir conditions</a></p>
                 </div>
             </div>
@@ -58,38 +60,108 @@
     </div>
 </div>
 {% endif %}
-<script>$('form#submitButton').submit( function() {
+<script>
+    console.log('Hey');
+
+    $('#rdv_dom_result').hide();
+    $('#rdv_mag_result').hide();
+    $('.rdv-mag-hideFirst').hide();
+
+    /* cad : chargement des cp autorisés */
+
+    $.ajaxPrefilter( function (options) {
+        if (options.crossDomain && jQuery.support.cors) {
+            var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
+            options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
+            //options.url = "http://cors.corsproxy.io/url=" + options.url;
+        }
+    });
+    var allCp=[];
+    $.getJSON('https://www.lapeyre.fr/img/contrib/data/cad.json', function(data) {
+        var i=0;
+        $.each(data['cad'], function(key, val) {
+            $('body').append('<div id="cad-'+i+'" class="cad-bloc">Demandez votre rendez-vous de conseil à domicile auprès de <a href="'+data['cad'][key]['magUrl']+'" target=_blank>Lapeyre '+data['cad'][key]['magVille']+'</a><br /><br />Par téléphone : '+data['cad'][key]['cadTel']+'<br />Par email : <a href="mailto:'+data['cad'][key]['cadMail']+'">'+data['cad'][key]['cadMail']+'</a></div>');
+            var cpList=data['cad'][key]['cp'].split(',');
+            cpList.forEach(function(cpItem) {
+                $('#cad-'+i).addClass('cad-cp-'+cpItem);
+                allCp.push(cpItem);
+            });
+            i++;
+        });
+        $('.cad-bloc').hide();
+    });
+
+    /* cad */
+
+    function cadAction() {
+        $('#rdv_dom_result').fadeIn();
+        var cp = $('#rdv_dom_cp').val();
+        if (!(cp>999 && cp<100000)) { $('#rdv_dom_result').html('Merci de renseigner un code postal valide.'); return; }
+
+        if (allCp.indexOf(cp)>-1) $('#rdv_dom_result').html($('.cad-cp-'+cp).html());
+        else $('#rdv_dom_result').html('Désolé, le conseil à domicile n\'est pas encore disponible chez vous.');
+    }
+
+
+    $('form#submitButton').submit( function() {
+
+    });
+
+    $( "#rdv_mag_tel" ).click(function() {
+
+        $('.rdv-mag-hideFirst').fadeIn();
+    });
+
+    $( "#rdv_mag_button" ).click(function() {
+
+        $('.rdv-mag-hideFirst').fadeIn();
+        $('#rdv_mag_result').fadeIn();
+
+        var nom=$('#rdv_mag_nom').val();
+        var prenom=$('#rdv_mag_prenom').val();
+        var email=$('#rdv_mag_email').val();
+        var tel=$('#rdv_mag_tel').val();
+        var cp=$('#rdv_mag_cp').val();
+        var codeMag=$('#rdv_mag_codeMag').val();
+
+        while(codeMag.length < 4){
+            codeMag="0"+codeMag;
+        }
+
+        if (nom=='' || prenom=='' || email=='' || tel=='') { $('#rdv_mag_result').html('Merci de renseigner tous les champs ci-dessus.'); return; }
+        if (!(cp>999 && cp<100000)) { $('#rdv_mag_result').html('Merci de renseigner un code postal valide.'); return; }
+
+        // validé : envoi
+
+        $('#rdv_mag_result').html('Nous envoyons votre demande...');
+
         $.ajax({
             url: "https://www.lapeyre.fr/RDVService",
             type: "POST",
             contentType: "application/x-www-form-urlencoded",
-            data: $('form#myForm').serialize()
+            data: {
+                "codeMag": codeMag,
+                "nom" : nom,
+                "prenom" : prenom,
+                "telephone" : tel,
+                "email" : email,
+                "currentUrl" : window.location.href,
+                "comment" : "Code postal : "+cp
+            },
         })
             .done(function(data, textStatus, jqXHR) {
+
             console.log("HTTP Request Succeeded: " + jqXHR.status);
             console.log(data);
+
+            $('#rdv_mag_result').html('Votre demande a bien été prise en compte, un conseiller vous rappellera rapidement pour fixer avec vous un rendez-vous en magasin.');
         })
             .fail(function(jqXHR, textStatus, errorThrown) {
             console.log("HTTP Request Failed");
+
+            $('#rdv_mag_result').html('Une erreur est survenue. Veuillez nous en excuser.');
         });
     });
-    
-    $( "#rdv_dom_button" ).click(function() {
-        $('#rdv_dom_result').fadeIn();
-        var cp = $('#rdv_dom_cp').val();
-        if (!(cp>999 && cp<100000)) { $('#rdv_dom_result').html('Merci de renseigner un code postal valide.'); return; }
-        
-        //Ajouter ici les tests d'éligibilité du CP
-        $('#rdv_dom_result').html('Lorem Ipsum');
-    });
-    
-    $( "#rdv_mag_button" ).click(function() {
-        $('#rdv_mag_result').fadeIn();
-        var cp = $('#rdv_mag_cp').val();
-        if (!(cp>999 && cp<100000)) { $('#rdv_mag_result').html('Merci de renseigner un code postal valide.'); return; }
-        
-        //Ajouter ici la recherche du magasin correspondant'
-        $('#rdv_mag_result').html('Lorem Ipsum');
-    });
-    
+
 </script>
+<!-- END RDV -->
