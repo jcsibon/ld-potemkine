@@ -75,7 +75,7 @@
 
 <div class="bg-light pt-5 pb-5">
     <div class="container pb-5">
-        <div class="row pt-lg-5 pb-3">
+        <div class="row pt-lg-5 pb-5">
             <div class="col-12 col-lg-6 col-xl-6 offset-xl-1">
                 <p class="title_h1 text-uppercase">{{ categories[global.request.get('code')]['label']['content'] }} : {{ categories[global.request.get('code')]['shortDesc']['content'] }}</p>
             </div>
@@ -88,7 +88,7 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row overflow-hidden">
             <div class="col-6 col-md-4 offset-md-2 col-xl-3 offset-lg-0 d-flex d-flex d-lg-none d-xl-flex">
                 <div class="kitchen__pictureDesc px-md-3 pt-5">
                     <img src="{{ categories[global.request.get('code')]['longDescriptionImg1'] }}" class="img-fluid"/>
