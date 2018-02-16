@@ -47,34 +47,40 @@
                         <div class="col-12 col-xl-9 collapse" id="collapse{{ categories[subuniverse]['identifier'] }}" >
                             <div class="row">
                                 {% for object in childrens[categories[subuniverse]['identifier']] %}
-                                {% if categories[object]['universeThumbSize'] is defined and categories[object]['universeThumbSize'] == 3 %}
-                                <div class="col-12 p-1 p-sm-3" >
-                                    {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
-                                </div>
-                                {% endif %}
+                                    {% if categories[object]['published']['content'] is not defined or categories[object]['published']['content'] == true %}
+                                        {% if categories[object]['universeThumbSize'] is defined and categories[object]['universeThumbSize'] == 3 %}
+                                            <div class="col-12 p-1 p-sm-3" >
+                                                {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
+                                            </div>
+                                        {% endif %}
+                                    {% endif %}
                                 {% endfor %}
                                 {% for object in childrens[categories[subuniverse]['identifier']] %}
-                                {% if categories[object]['universeThumbSize'] is defined and categories[object]['universeThumbSize'] == 2 %}
-                                {% set familyImageSize = 'desktopList' %}
-                                <div class="col-6 col-md-4 p-1 p-sm-3" >
-                                    {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
-                                </div>
-                                {% endif %}
+                                    {% if categories[object]['published']['content'] is not defined or categories[object]['published']['content'] == true %}
+                                        {% if categories[object]['universeThumbSize'] is defined and categories[object]['universeThumbSize'] == 2 %}
+                                            {% set familyImageSize = 'desktopList' %}
+                                            <div class="col-6 col-md-4 p-1 p-sm-3" >
+                                                {% include 'storeWidgets/thumbnailFamily/thumbnailFamily.twig' %}
+                                            </div>
+                                        {% endif %}
+                                    {% endif %}
                                 {% endfor %}
                             </div>
                             <div class="col-12 py-2 universe__subFamilyContainerOther">
                                 <div class="row">
                                     {% for object in childrens[categories[subuniverse]['identifier']] %}
-                                    {% if categories[object]['universeThumbSize'] is not defined or categories[object]['universeThumbSize'] == 1 %}
-                                    <div class="col-12 col-sm-6 col-md-4 py-1 px-5">
-                                        <div class="row">
-                                            <div class="col-4 universe__subFamilyContainerOtherImage" style="background-image: url('{% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}')"></div>
-                                            <div class="col-8">
-                                                <a class="text-dark small" href="/{% if categories[object]['url']is defined %}{{ categories[object]['url']|replace({' ':'%20'}) }}{% else %}#{% endif %}">{{ categories[object]['shortDesc']['content'] }}</a>
+                                        {% if categories[object]['published']['content'] is not defined or categories[object]['published']['content'] == true %}
+                                            {% if categories[object]['universeThumbSize'] is not defined or categories[object]['universeThumbSize'] == 1 %}
+                                            <div class="col-12 col-sm-6 col-md-4 py-1 px-5">
+                                                <div class="row">
+                                                    <div class="col-4 universe__subFamilyContainerOtherImage" style="background-image: url('{% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}')"></div>
+                                                    <div class="col-8">
+                                                        <a class="text-dark small" href="/{% if categories[object]['url']is defined %}{{ categories[object]['url']|replace({' ':'%20'}) }}{% else %}#{% endif %}">{{ categories[object]['shortDesc']['content'] }}</a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    {% endif %}
+                                            {% endif %}
+                                        {% endif %}
                                     {% endfor %}
                                 </div>
                             </div>
