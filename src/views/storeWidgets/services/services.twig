@@ -40,7 +40,7 @@
                     {% for article in categories[breadcrumb[0]]['articles']|slice(0,4) %}
                     <div class="col-12 py-2">
                         <div class="row">
-                            <div class="col-3 py-3 services__articleContainerImage" style="background-image: url('{{ articles[article]['visuelMea']['url'] }}')"></div>
+                            <div class="col-3 py-3 services__articleContainerImage" style="background-image: url('{% if  articles[article]['visuelMea']['url'] is defined %}{{ articles[article]['visuelMea']['url'] }}{% endif %}')"></div>
                             <div class="col-9"><a href="{{ articles[article]['url'] }}" class="text-dark small">{{ articles[article]['titre'] }}</a></div>
                         </div>
                     </div>
