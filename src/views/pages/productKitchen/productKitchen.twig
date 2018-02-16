@@ -77,7 +77,7 @@
     <div class="container pb-5">
         <div class="row pt-lg-5 pb-5">
             <div class="col-12 col-lg-6 col-xl-6 offset-xl-1">
-                <p class="title_h1 text-uppercase">{{ categories[global.request.get('code')]['label']['content'] }} : {{ categories[global.request.get('code')]['shortDesc']['content'] }}</p>
+                <p class="title_h1 text-uppercase">{{ categories[global.request.get('code')]['shortDesc']['content'] }}</p>
             </div>
             <div class="col-12 col-xl-10 offset-xl-1 bg-white p-3 p-md-5">
                 <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['longDesc']['content'] | raw }}</p>
@@ -102,9 +102,9 @@
                 </div>
             </div>
             <div class="col-12 col-lg-8 col-xl-6 pt-5">
-                <p class="title_h1 text-uppercase text-right">{{ categories[global.request.get('code')]['label']['content'] }}</p>
+                <p class="title_h1 text-uppercase text-right">Les Plus</p>
                 <div class="bg-white p-3 p-md-5">
-                    <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['longDescription'] }}</p>
+                    <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['longDescription'] | raw }}</p>
                 </div>
             </div>
             <div class="col-md-4 col-xl-3 offset-xl-1 pt-4 d-none d-md-block">
