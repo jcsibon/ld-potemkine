@@ -1,8 +1,8 @@
 {% extends"layouts/default.html" %}
 {% block content %}
 
-<div style="background-image: url({{ categories[global.request.get('code')]['imageFull']['content']|replace({' ':'%20'}) }}" class="bg-cover worktop__container position-relative h-600 m-auto">
-    <div class="d-xl-none">
+<div style="background-image: url({{ categories[global.request.get('code')]['imageFull']['content']|replace({' ':'%20'}) }})" class="bg-cover worktop__container position-relative h-600 m-auto">
+    <div class="d-lg-none">
         <img src="{{ categories[global.request.get('code')]['imageFull']['content']|replace({' ':'%20'}) }}" class="img-fluid" />
     </div>
     <div class="container">
@@ -208,14 +208,14 @@
                 </div>
                 <div class="position-lg-absolute" style="right:0;">
                     <div class="row">
-                        <div class="col-12 col-lg-4 offset-lg-8 pt-3 pt-lg-5 pb-3">
+                        <div class="col-12 col-lg-8 offset-lg-4 pt-3 pt-lg-5 pb-3 text-right">
                             <p class="title_h1 text-uppercase pt-5">
                                 Entretien
                             </p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-lg-6 offset-lg-6 bg-white p-3 p-md-5">
+                        <div class="col-12 col-lg-8 offset-lg-4 bg-white p-3 p-md-5">
                             <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['text2'] }}</p>
                         </div>
                     </div>

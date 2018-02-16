@@ -827,6 +827,9 @@ div.home__large_block_left {
     .margin-fix {
         margin:0;
     }
+    .worktop__container {
+        height: 500px;
+    }
 }
 
 @include media-breakpoint-up(lg) {
@@ -838,12 +841,10 @@ div.home__large_block_left {
 @include media-breakpoint-down(md) {
     .title_h1 {
         font-size: 50px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
+    } 
     .worktop__container {
         background-image: none !important;
+        height: inherit;
     }
 }
 
