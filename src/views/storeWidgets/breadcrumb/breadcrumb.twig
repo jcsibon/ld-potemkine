@@ -13,7 +13,9 @@
                         </li>
                         {% for step in breadcrumb %}
                         <li class="list-inline-item {% if loop.last %}breadcrumb__active{% endif %}">
-                            <a href="/" class="text-dark">{{ categories[step]['label']['content'] }}</a>
+                            {% if loop.last == false %}<a href="/{{ categories[step]['seo']['urlKeyword']['content'] }}" class="text-dark">{% endif %}
+                                {{ categories[step]['label']['content'] }}
+                            {% if loop.last == false %}</a>{% endif %}
                         </li>
                         {% endfor %}                        
                     </ul>
