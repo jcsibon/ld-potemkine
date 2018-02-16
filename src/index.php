@@ -102,6 +102,8 @@ $app->get('/childrens', function() use($app, $childrens) {
 	return true;
 });
 
+$articles = json_decode(file_get_contents("data/articles.json"),1);
+$app['twig']->addGlobal('articles', $articles);
 
 $app['twig']->addGlobal("uri", strtok(trim($_SERVER["REQUEST_URI"],"/"),'?'));
 //die(json_encode($_GET));
@@ -210,9 +212,9 @@ $app->get('/{urlname}-{code}/', function($code) use($app, $categories, $parents)
 				$table[$tab['product']] = array("columns"=>[],"items"=>[]);
 				foreach(json_decode(utf8_encode(file_get_contents("data/sas/".$tab['product'].".json")),1)['product']['itemList']['item'] as $item)
 				{
-					preg_match('/[\S\s]*(?:Tableau|Tabl.|TabL.)[\s]*H[\.]*([0-9]+)[\s]*x[\s]*[l]*[\.]*([0-9]+)/', $item['label']['content'], $matches);
+					preg_match('/[\S\s]*(?:direction\s(?P<Tirant>[G|D]*))?[\S\s]*(?:Tableau|Tabl.|TabL.)[\s]*H[\.]*(?P<H>[0-9]+)[\s]*x[\s]*[l]*[\.]*(?P<l>[0-9]+)/', $item['label']['content'], $matches);
 					// die("https://www.lapeyre.fr/wcs/resources/store/10101/productview/".$item['sku']);
-					//die(json_decode(,1));
+					// die(json_encode($matches,1));
 					$row = array(
 						"url" => $item['seoItem']['urlKeyword']['content'],
 						"sku" => $item['sku'], 
@@ -220,15 +222,15 @@ $app->get('/{urlname}-{code}/', function($code) use($app, $categories, $parents)
 						"price" => number_format($beezup[$item['sku']]['PRICE'], 0, ',', '' ),
 						"content" => $item['label']['content']
 					);
-					$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['items'][(int)$matches[1]][(int)$matches[2]] = $row;
-					if(!in_array((int)$matches[2], $categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns']))
-						$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns'][] = (int)$matches[2];
+					$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['items'][(int)$matches["H"]][(int)$matches["l"]] = $row;
+					if(!in_array((int)$matches["l"], $categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns']))
+						$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns'][] = (int)$matches["l"];
 				}
 				asort($categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns']);
 			}
 		}
-		// header('Content-Type: application/json');
-		// die(json_encode($categories[$code]));
+//		header('Content-Type: application/json');
+//		die(json_encode($categories[$code]));
 		$app['twig']->addGlobal('categories', $categories);
 	}
 	if(file_exists('views/contents/'.$code.'/'.$code.".twig"))
