@@ -83,9 +83,9 @@
             <div class="col-12 col-xl-10 offset-xl-1 bg-white p-3 p-md-5">
                 <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['longDesc']['content'] }}</p>
                 <p class="text-center mb-0 pt-3">
-                    <img src="/images/picto_pefc.png" class="p-2 w-90" />
-                    <img src="/images/picto_made_in_france.png" class="p-2 w-90" />
-                    <img src="/images/picto_made_by_lapeyre.png" class="p-2 w-90" />
+                    <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/picto_pefc.png" class="p-2 w-90" />
+                    <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/picto_made_in_france.png" class="p-2 w-90" />
+                    <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/picto_made_by_lapeyre.png" class="p-2 w-90" />
                 </p>
             </div>
         </div>
@@ -135,14 +135,16 @@
                         <p class="text-uppercase kitchen__tiny_title pt-3">
                             Choisissez <span class="text-white d-block">vos finitions!</span>
                         </p>
+                        {# 
                         <p>
                             <a class="text-light" href="#">&gt; Voir les 157 finitions</a>
                         </p>
+                        #}
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 col-xl-3 pl-0 pt-5 d-none d-sm-block">
-                <img src="/images/kitchen_colors.png" class="img-fluid"/>
+                <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/kitchen_colors.png" class="img-fluid"/>
             </div>
         </div>
     </div>
@@ -155,11 +157,11 @@
                     </p>
                     <blockquote class="blockquote position-relative">
                         <p class="mb-0" style="padding-top: 80px"><em>{{ categories[global.request.get('code')]['testimonial'] }}</em></p>
-                        <footer class="blockquote-footer text-dark pt-2"> Audrey, 40 ans, Paris</footer>
+                        <footer class="blockquote-footer text-dark pt-2">{{ categories[global.request.get('code')]['testimonialAuthor'] }}</footer>
                     </blockquote>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-5 p-lg-5 pb-5">
-                    <div class="col-12 my-4 px-0 bg-cover worktop__desc_image" style="background-image: url(/images/pages/index/bg_le_savoir_bien_faire.png)">
+                    <div class="col-12 my-4 px-0 bg-cover worktop__desc_image" style="background-image: url({{ categories[global.request.get('code')]['testimonialImg'] }})">
                     </div>
                 </div>
             </div>
@@ -167,25 +169,23 @@
     </div>
     <div class="bg-light">
         <div class="container">
-            <div class="row position-relative">
-                <div class="col-12 col-lg-6 my-5 bg-cover h-400 d-none d-lg-block" style="background-image: url(/images/pages/index/bg_le_savoir_bien_faire.png);">
+    <div class="row position-relative">
+        <div class="col-12 col-lg-6 my-5 bg-cover h-400 d-none d-lg-block" style="background-image: url(https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/bg_le_savoir_bien_faire.png);">
+        </div>
+        <div class="position-lg-absolute">
+            <div class="row m-0">
+                <div class="col-12 col-lg-6 col-xl-5 offset-lg-1 offset-xl-3 d-flex pt-lg-5 order-lg-first">
+                    <p class="bg-white p-3 p-md-5 my-auto frenchFlag">L’essentiel de nos produits est fabriqué en France. Grâce à ses dix usines françaises, Lapeyre contrôle toute la chaîne de production afin de garantir des produits d’une QUALITÉ et d’une FIABILITÉ irréprochables.</p>
                 </div>
-                <div class="position-lg-absolute">
-                    <div class="row m-0">
-                        <div class="col-12 col-lg-6 col-xl-5 offset-lg-1 offset-xl-3 d-flex pt-lg-5 order-lg-first">
-                            <p class="bg-white p-3 p-md-5 my-auto frenchFlag">L’essentiel de nos produits est fabriqué en France. Grâce à ses dix usines françaises, Lapeyre contrôle toute la chaîne de production afin de garantir des produits d’une QUALITÉ et d’une FIABILITÉ irréprochables.</p>
-                        </div>
-                        <div class="col-12 col-lg-5 col-xl-4 pt-lg-5 pb-3 order-first pt-5 pt-lg-0">
-                            <p class="title_h1 text-uppercase pt-lg-5">
-                                Fabriqué en France dans nos usines
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row m-0">
-                        <div class="col-12 d-lg-none py-4 text-center">
-                            <img src="/images/pages/index/bg_le_savoir_bien_faire.png" class="img-fluid" />
-                        </div>
-                    </div>
+                <div class="col-12 col-lg-5 col-xl-4 pt-lg-5 pb-3 order-first pt-5 pt-lg-0">
+                    <p class="title_h1 text-uppercase pt-lg-5">
+                        Fabriqué en France dans nos usines
+                    </p>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-12 d-lg-none py-4 text-center">
+                    <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/bg_le_savoir_bien_faire.png" class="img-fluid" />
                 </div>
             </div> 
         </div>
