@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-12 col-sm-4 pl-4">
                     <p class="small mb-0">à partir de</p>
-                    <p class="kitchen__price">{{ categories[global.request.get('code')]['price'] |number_format(2, '.', ',') }}€</p>
+                    <p class="kitchen__price">{{ categories[global.request.get('code')]['price'] |number_format(2, '.', ' ') }}€</p>
                 </div>
                 <div class="col-4 col-sm-2">
                     <div class="bg-dark rounded d-flex h-45">
