@@ -195,7 +195,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-6 offset-xl-1 bg-white p-3 p-md-5">
-                            <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['text1'] }}</p>
+                            <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['text1'] | raw }}</p>
                         </div>
                     </div>
                     <div class="row">
@@ -256,17 +256,13 @@
                     <p class="title_h2 text-uppercase h2 pt-5 pt-lg-0">
                         Description détaillée
                     </p>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </li>
-                        <li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li> 
-                        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi  </li>
-                        <li>ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  </li>
-                        <li>Excepteur sint occaecat cupidatat non proident, </li>
-                        <li>sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                    </ul>
+                    {{ categories[global.request.get('code')]['content0'] | raw }}
+                    <br>
+                    {#
                     <p>
                         <a href="#" class="font-weight-bold text-dark"><u>> Télécharger la notice de montage</u></a>
                     </p>
+                    #}
                 </div>
                 <div class="col-12 col-lg-6 col-xl-5 p-lg-5">
                     <div class="col-12 my-4 px-0 bg-cover worktop__desc_image" style="background-image: url(http://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/bg_le_savoir_bien_faire.png)">
