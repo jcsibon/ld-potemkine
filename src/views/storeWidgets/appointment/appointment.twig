@@ -1,7 +1,7 @@
 {% if modal is not defined %}
 <div class="bg-light">
     <div class="container py-5">
-{% endif %}
+        {% endif %}
         <div class="row appointment__container">
             <div class="col-12 col-md-6 {% if modal is not defined %} col-lg-5 offset-lg-1 {% endif %} p-1">
                 <div class="col-12 p-3 p-sm-5 bg-white mx-1 h-100">
@@ -16,18 +16,12 @@
                     <input type="hidden" value="no-reply@lapeyre.fr" class="form-control text-italic" placeholder="Votre email" aria-label="Votre email">
                     <input type="hidden" value="1" class="form-control text-italic" placeholder="Votre codeMag" aria-label="Votre codeMag">
                     <div class="input-group pt-3 pb-1">
-                        <input type="text" class="form-control text-italic" placeholder="Votre code postal" aria-label="Votre code postal">
+                        <input type="number" class="form-control text-italic" placeholder="Votre code postal" aria-label="Votre code postal" id="rdv_mag_cp">
                         <span class="input-group-btn">
-                            <button class="btn btn-secondary rounded-right cursor-pointer px-4" type="button">OK</button>
+                            <button class="btn btn-secondary rounded-right cursor-pointer px-4" type="button" id="rdv_mag_button">OK</button>
                         </span>
                     </div>
-                    <div class="input-group pb-1">
-                        <input type="text" class="form-control text-italic" placeholder="Votre n° de téléphone" aria-label="Votre n° de téléphone">
-                        <span class="input-group-btn">
-                            <button class="btn btn-secondary rounded-right cursor-pointer px-4" type="button">OK</button>
-                        </span>
-                    </div>
-                    <p class="bg-secondary text-white appointment__address px-4 py-2">Lapeyre Porte d'Orléans<br/>47-55 avenue Aristide Briand, 94140 Arcueil<br/>01 49 85 42 90</p>
+                    <p class="bg-secondary text-white font-secondary px-4 py-2" id="rdv_mag_result"></p>
                 </div>
             </div>
             <div class="col-12 col-md-6 {% if modal is not defined %} col-lg-5 {% endif %} p-1">
@@ -42,46 +36,60 @@
                     <div class="row">
                         <div class="col-5 pr-0">
                             <p class="border-dashed-red text-uppercase text-center py-1 h1 mb-0 border-bottom-0">89€</p>
-                            <p class="text-uppercase bg-secondary text-white small text-center py-1">Remboursable</p>
+                            <p class="text-uppercase bg-secondary text-white small text-center py-1">Remboursable <sup>*</sup></p>
                         </div>
                         <div class="col-7">
-                            <p class="small text-secondary">La prestation de conseil à domicile est facturée 89€, déduite ensuite du prix de votre projet.</p>
+                            <p class="small text-secondary">La prestation de conseil à domicile est facturée 89€, déduit ensuite du prix de votre projet.<sup>*</sup></p>
                         </div>
                     </div>
                     <div class="input-group pt-3 pb-1">
-                        <input type="text" class="form-control text-italic" placeholder="Votre code postal" aria-label="Votre code postal">
+                        <input class="form-control text-italic" placeholder="Votre code postal" aria-label="Votre code postal" id="rdv_dom_cp" type="number">
                         <span class="input-group-btn">
-                            <button class="btn btn-secondary rounded-right cursor-pointer px-4" type="button">OK</button>
+                            <button class="btn btn-secondary rounded-right cursor-pointer px-4" type="button" id="rdv_dom_button">OK</button>
                         </span>
                     </div>
-                    <div class="input-group pb-3">
-                        <input type="text" class="form-control text-italic" placeholder="Votre n° de téléphone" aria-label="Votre n° de téléphone">
-                        <span class="input-group-btn">
-                            <button class="btn btn-secondary rounded-right cursor-pointer px-4" type="button">OK</button>
-                        </span>
-                    </div>
+                    <p class="bg-secondary text-white font-secondary px-4 py-2" id="rdv_dom_result"></p>
                     <p class="text-center text-muted small">Un conseiller vous appellera sous 48 heures.</p>
+                    <p class="text-right small"><a href="https://www.lapeyre.fr/c/conditions-generales-de-vente#cgvCAD" target="_blank" class="text-muted">* Voir conditions</a></p>
                 </div>
             </div>
         </div>
-{% if modal is not defined %}        
+        {% if modal is not defined %}        
     </div>
 </div>
 {% endif %}
-<script>
-$('form#submitButton').submit( function() {
-    $.ajax({
-        url: "https://www.lapeyre.fr/RDVService",
-        type: "POST",
-        contentType: "application/x-www-form-urlencoded",
-        data: $('form#myForm').serialize()
-    })
-    .done(function(data, textStatus, jqXHR) {
-        console.log("HTTP Request Succeeded: " + jqXHR.status);
-        console.log(data);
-    })
-    .fail(function(jqXHR, textStatus, errorThrown) {
-        console.log("HTTP Request Failed");
+<script>$('form#submitButton').submit( function() {
+        $.ajax({
+            url: "https://www.lapeyre.fr/RDVService",
+            type: "POST",
+            contentType: "application/x-www-form-urlencoded",
+            data: $('form#myForm').serialize()
+        })
+            .done(function(data, textStatus, jqXHR) {
+            console.log("HTTP Request Succeeded: " + jqXHR.status);
+            console.log(data);
+        })
+            .fail(function(jqXHR, textStatus, errorThrown) {
+            console.log("HTTP Request Failed");
+        });
     });
-});
+    
+    $( "#rdv_dom_button" ).click(function() {
+        $('#rdv_dom_result').fadeIn();
+        var cp = $('#rdv_dom_cp').val();
+        if (!(cp>999 && cp<100000)) { $('#rdv_dom_result').html('Merci de renseigner un code postal valide.'); return; }
+        
+        //Ajouter ici les tests d'éligibilité du CP
+        $('#rdv_dom_result').html('Lorem Ipsum');
+    });
+    
+    $( "#rdv_mag_button" ).click(function() {
+        $('#rdv_mag_result').fadeIn();
+        var cp = $('#rdv_mag_cp').val();
+        if (!(cp>999 && cp<100000)) { $('#rdv_mag_result').html('Merci de renseigner un code postal valide.'); return; }
+        
+        //Ajouter ici la recherche du magasin correspondant'
+        $('#rdv_mag_result').html('Lorem Ipsum');
+    });
+    
 </script>
