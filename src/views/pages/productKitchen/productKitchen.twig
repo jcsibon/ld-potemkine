@@ -118,9 +118,11 @@
                         <p class="text-uppercase kitchen__tiny_title pt-3">
                             Choisissez <span class="text-white d-block">vos finitions!</span>
                         </p>
+                        {# 
                         <p>
                             <a class="text-light" href="#">&gt; Voir les 157 finitions</a>
                         </p>
+                        #}
                     </div>
                 </div>
             </div>
@@ -138,11 +140,11 @@
                     </p>
                     <blockquote class="blockquote position-relative">
                         <p class="mb-0" style="padding-top: 80px"><em>{{ categories[global.request.get('code')]['testimonial'] }}</em></p>
-                        <footer class="blockquote-footer text-dark pt-2"> Audrey, 40 ans, Paris</footer>
+                        <footer class="blockquote-footer text-dark pt-2">{{ categories[global.request.get('code')]['testimonialAuthor'] }}</footer>
                     </blockquote>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-5 p-lg-5 pb-5">
-                    <div class="col-12 my-4 px-0 bg-cover worktop__desc_image" style="background-image: url(https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/bg_le_savoir_bien_faire.png)">
+                    <div class="col-12 my-4 px-0 bg-cover worktop__desc_image" style="background-image: url({{ categories[global.request.get('code')]['testimonialImg'] }})">
                     </div>
                 </div>
             </div>
