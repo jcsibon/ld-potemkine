@@ -146,7 +146,7 @@
                     <p class="small">Fabrication Française - Garantie 10 ans</p>
                 </div>
                 <div class="col-12 col-sm-4 pl-4">
-                    {% if categories[global.request.get('code')]['price'] is not defined %}
+                    {% if categories[global.request.get('code')]['price'] is defined %}
                     <p class="kitchen__price mb-0">{{ categories[global.request.get('code')]['price'] |number_format(2, '.', ' ') }} €</p>
                     <p class="small">{{ categories[global.request.get('code')]['size'] }}</p>
                     {% endif %}
