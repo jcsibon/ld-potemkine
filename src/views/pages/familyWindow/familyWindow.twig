@@ -233,6 +233,15 @@
         $(e.target).parent('.window__tab_group').find('a').removeClass('active');
         $(e.target).addClass('active');
     })
+
+    $( "body" ).on( "click", 'a[data-toggle="tab"]', function() {
+        $(this).parent('.window__tab_group').find('a').removeClass('active');
+        $(this).addClass('active');
+        $(this).parents().eq(2).find('.tab-pane').removeClass('active show');
+        $(this).parents().eq(2).find('.tab-pane').addClass('fade');
+        $($(this).attr('href')).addClass('show active');
+        $('html, body').animate({scrollTop: ($($(this).attr('href')).offset().top-200)}, 100);
+    });
 </script>
 {% endblock %}
 
