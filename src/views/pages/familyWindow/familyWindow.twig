@@ -64,7 +64,7 @@
             <div class="col-12 pt-4 pb-3 pl-0" role="tablist">
                 <div class="font-weight-bold font-secondary pl-2 window__tab_group">
                     {% for tab in pane.tabs %}
-                    <a class="text-center d-inline-block text-dark nav-link h3 px-0 pb-0 {% if loop.first == true %}active{% endif %}" data-toggle="tab" href="#tab_window_{{loop_lvl_1}}_{{ loop.index }}" role="tab" id="tab_{{loop_lvl_1}}_{{ loop.index }}">
+                    <div class="align-top text-center d-inline-block text-dark nav-link h3 px-0 pb-0 {% if loop.first == true %}active{% endif %} cursor-pointer" data-toggle="tab" data-href="#tab_window_{{loop_lvl_1}}_{{ loop.index }}" role="tab" id="tab_{{loop_lvl_1}}_{{ loop.index }}">
                         <div class="text-center mx-2 border-dashed-black px-4 window__tab position-relative">
                             <div class="d-flex">
                                 <p class="m-auto">
@@ -72,7 +72,7 @@
                                 </p>
                             </div>
                         </div>
-                    </a>
+                    </div>
                     {% endfor %}
                 </div>
             </div>
@@ -229,18 +229,17 @@
             $(this).addClass("active"); 
         });
     });*/
-    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-        $(e.target).parent('.window__tab_group').find('a').removeClass('active');
+    $('.window__tab_group div[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        $(e.target).parent('.window__tab_group').find('div[data-toggle="tab"]').removeClass('active');
         $(e.target).addClass('active');
     })
 
-    $( "body" ).on( "click", 'a[data-toggle="tab"]', function() {
-        $(this).parent('.window__tab_group').find('a').removeClass('active');
+    $( "body" ).on( "click", '.window__tab_group div[data-toggle="tab"]', function() {
+        $(this).parent('.window__tab_group').find('div[data-toggle="tab"]').removeClass('active');
         $(this).addClass('active');
         $(this).parents().eq(2).find('.tab-pane').removeClass('active show');
         $(this).parents().eq(2).find('.tab-pane').addClass('fade');
-        $($(this).attr('href')).addClass('show active');
-        $('html, body').animate({scrollTop: ($($(this).attr('href')).offset().top-200)}, 100);
+        $($(this).attr('data-href')).addClass('show active');
     });
 </script>
 {% endblock %}

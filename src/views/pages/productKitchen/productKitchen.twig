@@ -3,7 +3,6 @@
 
 {#
 <div id="carouselKitchen" class="carousel slide m-auto overflow-hidden" data-ride="carousel" >
-
     <ol class="carousel-indicators d-lg-none">
         <li data-target="#carouselKitchen" data-slide-to="0" class="mx-2 active"></li>
         <li data-target="#carouselKitchen" data-slide-to="1" class="mx-2"></li>
@@ -125,20 +124,10 @@
         </div>
 
         <div class="row pt-5">
-            <div class="col-12 col-lg-6 offset-5 offset-xl-6 my-5 bg-cover h-600 d-none d-lg-block" style="background-image: url(http://res.cloudinary.com/dwkgy95ov/image/upload/v1519294393/nuancier.jpg);">
-            </div>
-            <div class="position-lg-absolute col-12 col-lg-6">
-                <div class="row">
-                    <div class="col-12 col-lg-6 offset-xl-1 pt-lg-5 pb-3">
-                        <p class="title_h1 text-uppercase pt-lg-5">
-                            S'adapte à vos envies
-                        </p>
-                    </div>
-                </div>
-                <div class="row mx-0 px-0">
-                    <div class="col-12  bg-white p-3 p-md-5">
-                        <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['longDescription2'] | raw }}</p>
-                    </div>
+            <div class="col-12 col-sm-8 col-xl-6 pt-md-5 offset-xl-1 p-0">
+                <p class="title_h1 text-uppercase col-12 col-sm-8 col-xl-8">S'adapte à vos envies</p>
+                <div class="bg-white p-3 p-md-4">
+                    <p class="px-2 px-sm-4 my-0">{{ categories[global.request.get('code')]['longDescription2'] | raw }}</p>
                 </div>
                 <div class="row mx-0 px-0">
                     <div class="p-3 bg-dark w-200 h-200 ml-auto">
@@ -150,11 +139,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 d-lg-none pt-4">
-                        <img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1519294393/nuancier.jpg" class="img-fluid">
-                    </div>
-                </div>
+            </div>
+            <div class="col-sm-4 col-xl-3 pl-0 pt-5 d-none d-sm-block">
+                <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1519395733/nuancier4.jpg" class="img-fluid"/>
             </div>
         </div>
 
