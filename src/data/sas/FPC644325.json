@@ -22,9 +22,18 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 4282
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -116,25 +125,6 @@
                         "content": "Crédence"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-EPAISSEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 9
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -376,8 +366,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-103",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -814,12 +804,51 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 275,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc mat"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 199,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Mélaminé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 11.82
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4282
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -830,6 +859,15 @@
                         "content": "Crédence"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 9
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -909,11 +947,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "M",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT M"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1161,25 +1199,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "I56",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris clair"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-EPAISSEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 9
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 240,
                     "attrIdentifier": "ATC-TYPE",
                     "valueString": {
@@ -1409,8 +1428,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-I56",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-I56",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Gris clair"
@@ -1847,12 +1866,51 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "I56",
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris clair"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "D66",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris clair mat"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 199,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Mélaminé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 13.82
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4282
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1863,6 +1921,15 @@
                         "content": "Crédence"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 9
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1942,11 +2009,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "M",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT M"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2194,25 +2261,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 296,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris anthracite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-EPAISSEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 9
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 240,
                     "attrIdentifier": "ATC-TYPE",
                     "valueString": {
@@ -2442,8 +2490,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-296",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-296",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Gris anthracite"
@@ -2880,12 +2928,51 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 296,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris anthracite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "DX5",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris anthracite mat"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 199,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Mélaminé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 13.82
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4282
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2896,6 +2983,15 @@
                         "content": "Crédence"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 9
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -2975,11 +3071,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "M",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT M"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3227,6 +3323,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Crédence en mélaminé - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "9 mm d'épaisseur, 50 cm de hauteur : la crédence en mélaminé est réalisée en panneau aggloméré recoupable. Elle est disponible en 3 finitions."
         },
         "urlKeyword": {
             "locale": "fr",

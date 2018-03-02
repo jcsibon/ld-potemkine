@@ -22,14 +22,23 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
+            "attrUsage": 1,
+            "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
             "attrUsage": 1,
             "attrSequence": 2
         },
         {
-            "attrIdentifier": "CCU0001-FAM-25-COULEUR",
-            "attrUsage": 1,
-            "attrSequence": 1
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1602
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -105,16 +114,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B16",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Ecran"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -139,16 +138,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "C"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 303,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Inox"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -409,23 +398,23 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-79.8",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 79.8
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-303",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-303",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Inox"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-79.8",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 79.8
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -803,6 +792,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HOTTE DECORATIVE ASPIRATION PERIMETRALE<BR/>ELECTROLUX EFV80465OX - INOX<BR/>LARGEUR : 80 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 MOTEUR / ECLAIRAGE HALOGENE<BR/>3 VITESSES D'ASPIRATION<BR/>DEBIT D'AIR : 625 m3/h  - 65 dB<BR/>EXISTE EN LARGEUR 55 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT:  H 53.4 x L 79.8 x P 33.7 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -845,6 +861,45 @@
                         "locale": "fr",
                         "content": 368.676
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B16",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Ecran"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1233,16 +1288,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B16",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Ecran"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1267,16 +1312,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "C"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 303,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Inox"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1546,23 +1581,23 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-54.8",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 54.8
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-303",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-303",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Inox"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-54.8",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 54.8
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1940,6 +1975,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HOTTE DECORATIVE ASPIRATION PERIMETRALE<BR/>ELECTROLUX EFV55465OX - INOX<BR/>LARGEUR : 55 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 MOTEUR / ECLAIRAGE HALOGENE<BR/>3 VITESSES D'ASPIRATION<BR/>DEBIT D'AIR : 625 m3/h  - 65 dB<BR/>EXISTE EN LARGEUR 80 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H 51.3 x L 55 x P 33.7 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1982,6 +2044,45 @@
                         "locale": "fr",
                         "content": 253.176
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B16",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Ecran"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2380,6 +2481,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Hotte décorative écran murale ELECTROLUX -  Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "La hotte décorative murale inox de la marque Electrolux séduit par son écran esthétique et ses commandes électroniques par touches. Modulez ses 3 vitesses d'apiration pour un débit maximum de 625m3/h."
         },
         "urlKeyword": {
             "locale": "fr",

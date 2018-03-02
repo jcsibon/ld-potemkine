@@ -22,9 +22,18 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1576
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -100,16 +109,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B22",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Visière"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -134,16 +133,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "F"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -413,8 +402,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-103",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -797,6 +786,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HOTTE CASQUETTE<BR/>BRANDT<BR/>AC 500 WF1  BLANC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- 2 MOTEURS 2 TURBINES<BR/>- 3 VITESSES D'ASPIRATION<BR/>- DEBIT D'AIR : 500 M3/H<BR/>- EXISTE EN NOIR OU INOX"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H14 x L60 x P48,4 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -842,12 +858,51 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 131
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B22",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Visière"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -928,7 +983,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "EXTENSION DE GARANTIE ! CODE 8 A LA FIN"
+                        "content": "RUPTURE / SWITCH CONSEILLE SUR 3042640"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -993,11 +1048,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1217,16 +1272,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B22",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Visière"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1251,16 +1296,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "F"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1521,8 +1556,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-105",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Noir"
@@ -1905,6 +1940,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HOTTE CASQUETTE<BR/>BRANDT<BR/>AC 500 BF1  NOIR"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- 2 MOTEURS 2 TURBINES<BR/>- 3 VITESSES D'ASPIRATION<BR/>- DEBIT D'AIR : 500 M3/H<BR/>- EXISTE EN BLANC OU INOX"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H 14 x L 60 x P 48,4 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1950,12 +2012,51 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 131
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B22",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Visière"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2036,7 +2137,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "EXTENSION DE GARANTIE ! CODE 8 A LA FIN"
+                        "content": "RUPTURE / SWITCH CONSEILLE SUR 3042650"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2101,11 +2202,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XXL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2334,16 +2435,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B22",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Visière"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2368,16 +2459,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "F"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 303,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Inox"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2638,8 +2719,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-303",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-303",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Inox"
@@ -3022,6 +3103,42 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HOTTE CASQUETTE<BR/>BRANDT<BR/>AC 500 XF1  INOX"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- 2 MOTEURS 2 TURBINES<BR/>- 3 VITESSES D'ASPIRATION<BR/>- DEBIT D'AIR : 500 M3/H<BR/>- EXISTE EN BLANC OU NOIR"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-7",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "XF 1<BR/>XF 1"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H 14 x L 60 x P 48,8 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3067,12 +3184,51 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 154
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B22",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Visière"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3153,7 +3309,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "EXTENSION DE GARANTIE ! CODE 8 A LA FIN"
+                        "content": "RUPTURE / SWITCH CONSEILLE SUR 3042660"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3218,11 +3374,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3455,6 +3611,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Hotte visière BRANDT - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Peu encombrante et disposant d'une puissance d'aspiration suffisante pour un budget très réduit, la hotte visière BRANDT s'adaptera à tout type de décor de cuisine."
         },
         "urlKeyword": {
             "locale": "fr",

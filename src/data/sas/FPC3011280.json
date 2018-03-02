@@ -22,14 +22,14 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-            "attrUsage": 1,
-            "attrSequence": 2
-        },
-        {
-            "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+            "attrUsage": 1,
+            "attrSequence": 2
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -105,16 +105,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B17",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Groupe"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -139,16 +129,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "C"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -409,23 +389,23 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-52.4",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 52.4
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-103",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-52.4",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 52.4
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -803,6 +783,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "GROUPE FILTRANT<BR/>ELECTROLUX EFG 50300 W  BLANC<BR/>2 LAMPES HALOGENE DE 20 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- 1 MOTEUR  / 65.5 et 74 DB(A) (BOOSTER)<BR/>- 4 VITTESSES D'ASPIRATION (1 INTENSIVE)<BR/>- DEBIT D'AIR: 550 et 810 M3/H (BOOSTER)<BR/>- EXISTE EN NOIR OU INOX"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H38,3 x L52.4 x P28,9 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -845,6 +852,36 @@
                         "locale": "fr",
                         "content": 58
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B17",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Groupe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1005,6 +1042,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "SUR DELAI COURT"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "C",
+                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "CREE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1223,16 +1270,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B17",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Groupe"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1257,16 +1294,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "C"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1527,23 +1554,23 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-52.4",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 52.4
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-105",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Noir"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-52.4",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 52.4
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1921,6 +1948,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "GROUPE FILTRANT<BR/>ELECTROLUX EFG 50300 K  NOIR<BR/>2 LAMPES HALOGENE DE 20 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- 1 MOTEUR  / 65.5 et 74 DB(A) (BOOSTER)<BR/>- 4 VITTESSES D'ASPIRATION (1 INTENSIVE)<BR/>- DEBIT D'AIR: 550 et 810 M3/H (BOOSTER)<BR/>- EXISTE EN BLANC OU INOX"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H38,3 x L52.4 x P28,9 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1963,6 +2017,36 @@
                         "locale": "fr",
                         "content": 58
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B17",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Groupe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2342,16 +2426,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B17",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Groupe"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2376,16 +2450,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "C"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 303,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Inox"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2655,23 +2719,23 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-52.4",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 52.4
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-303",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-303",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Inox"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-52.4",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 52.4
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -3049,6 +3113,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "GROUPE FILTRANT<BR/>ELECTROLUX EFG 50300 X  INOX<BR/>2 LAMPES HALOGENE DE 20 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- 1 MOTEUR  / 65.5 et 74 DB(A) (BOOSTER)<BR/>- 4 VITTESSES D'ASPIRATION (1 INTENSIVE)<BR/>- DEBIT D'AIR: 550 et 810 M3/H (BOOSTER)<BR/>- EXISTE EN BLANC OU NOIR"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H38,3 x L52.4 x P28,9 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3091,6 +3182,36 @@
                         "locale": "fr",
                         "content": 58
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B17",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Groupe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3246,11 +3367,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "SUR DELAI COURT"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3480,6 +3601,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Groupe filtant ELECTROLUX - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Le groupe filtrant ELECTROLUX assure, pour un budget très abordable, une filtration correcte de l'air et des graisses. Son design personnalisera votre cuisine."
         },
         "urlKeyword": {
             "locale": "fr",

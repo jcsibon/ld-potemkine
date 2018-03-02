@@ -22,7 +22,7 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-NAT-25-001-NB-FOYERS",
+            "attrIdentifier": "CCU0001-ATC-NB-FOYERS",
             "attrUsage": 1,
             "attrSequence": 1
         },
@@ -110,26 +110,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B11",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Sensitives"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-LARGEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -154,15 +134,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-NB-FOYERS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 4
                     },
                     "attrSequence": 0
                 },
@@ -431,8 +402,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-25-001-NB-FOYERS-4",
-                    "attrIdentifier": "CCU0001-NAT-25-001-NB-FOYERS",
+                    "valueIdentifier": "CCU0001-ATC-NB-FOYERS-4",
+                    "attrIdentifier": "CCU0001-ATC-NB-FOYERS",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -824,6 +795,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TABLE DE CUISSON VITROCERAMIQUE<BR/>BEKO HIC64502T - NOIR<BR/>4FOYERS HI-LIGHT/4 BOOSTERS/4 MINUTERIES"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- PUISSANCE TOTALE DE 6,7 Kw<BR/>- COMMANDES SENSITIVES<BR/>- 19 NIVEAUX DE PUISSANCE<BR/>- AFFICHAGE DIGITAL / SECURITE ENFANT"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : H4.3 x L56 x P49 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -869,6 +867,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -883,6 +901,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Table"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B11",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Sensitives"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -912,6 +940,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-25-001-NB-FOYERS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 4
                     },
                     "attrSequence": 0
                 },
@@ -1049,11 +1086,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1283,26 +1320,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B11",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Sensitives"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-LARGEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1327,15 +1344,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-NB-FOYERS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 3
                     },
                     "attrSequence": 0
                 },
@@ -1613,8 +1621,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-25-001-NB-FOYERS-3",
-                    "attrIdentifier": "CCU0001-NAT-25-001-NB-FOYERS",
+                    "valueIdentifier": "CCU0001-ATC-NB-FOYERS-3",
+                    "attrIdentifier": "CCU0001-ATC-NB-FOYERS",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -2006,6 +2014,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TABLE DE CUISSON VITROCERAMIQUE<BR/>BEKO HIC63501T - NOIR<BR/>3 FOYERS HI-LIGHT/3 BOOSTER/3 MINUTERIES"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "PUISSANCE TOTALE DE 5,7 Kw<BR/>- 19 NIVEAUX DE PUISSANCE<BR/>- ARRET AUTOMATIQUE/ANTI DEBORDEMENT<BR/>- FONCTION ECO TIMER ET STOP AND GO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : H00 x L56 x P49 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2051,6 +2086,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2065,6 +2120,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Table"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B11",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Sensitives"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2094,6 +2159,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-25-001-NB-FOYERS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3
                     },
                     "attrSequence": 0
                 },
@@ -2465,6 +2539,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Table de cuisson vitrocéramique BEKO - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Précision et rapidité de cuisson, esthétique réussie pour un prix très abordable : la table de cuisson vitrocéramique BEKO ne manque pas d'atouts pour vous convaincre."
         },
         "urlKeyword": {
             "locale": "fr",

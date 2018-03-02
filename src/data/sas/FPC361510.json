@@ -22,9 +22,18 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-NAT-25-001-NB-FOYERS",
+            "attrIdentifier": "CCU0001-ATC-NB-FOYERS",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1576
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -110,26 +119,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B10",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Manettes"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-HAUTEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -167,11 +156,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NB-FOYERS",
+                    "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 3
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -440,8 +429,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-25-001-NB-FOYERS-3",
-                    "attrIdentifier": "CCU0001-NAT-25-001-NB-FOYERS",
+                    "valueIdentifier": "CCU0001-ATC-NB-FOYERS-3",
+                    "attrIdentifier": "CCU0001-ATC-NB-FOYERS",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -824,6 +813,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TABLE 3 FOYERS GAZ<BR/>DE DIETRICH DTG1105X  NOIR PROFILE INOX<BR/>SURFACE VERRE / 1 FOYER 3.6 Kw"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- ALLUMAGE INTEGRE AUX MANETTES<BR/>- SECURITE THERMOCOUPLE<BR/>- GRILLES FONTE MONOFOYER<BR/>- EXISTE EN 4 FOYERS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : L56 x P49 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -869,11 +885,50 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "A78",
                     "attrIdentifier": "NAT-25-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Table"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B10",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Manettes"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -912,6 +967,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-25-001-NB-FOYERS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3
                     },
                     "attrSequence": 0
                 },
@@ -1283,26 +1347,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B10",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Manettes"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-HAUTEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1340,11 +1384,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NB-FOYERS",
+                    "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 4
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -1613,8 +1657,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-25-001-NB-FOYERS-4",
-                    "attrIdentifier": "CCU0001-NAT-25-001-NB-FOYERS",
+                    "valueIdentifier": "CCU0001-ATC-NB-FOYERS-4",
+                    "attrIdentifier": "CCU0001-ATC-NB-FOYERS",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1997,6 +2041,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TABLE 4 FOYERS GAZ<BR/>DE DIETRICH DTG1103X  NOIR PROFILE INOX<BR/>SURFACE VERRE / 1 FOYER 3.6 Kw"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- ALLUMAGE INTEGRE AUX MANETTES<BR/>- SECURITE THERMOCOUPLE<BR/>- GRILLES FONTE MONOFOYER<BR/>- EXISTE EN 3 FOYERS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : L56 x P49 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2042,11 +2113,50 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "A78",
                     "attrIdentifier": "NAT-25-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Table"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B10",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Manettes"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2085,6 +2195,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-25-001-NB-FOYERS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 4
                     },
                     "attrSequence": 0
                 },
@@ -2456,26 +2575,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B10",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Manettes"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-HAUTEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2509,15 +2608,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-NB-FOYERS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 4
                     },
                     "attrSequence": 0
                 },
@@ -2759,8 +2849,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-25-001-NB-FOYERS-4",
-                    "attrIdentifier": "CCU0001-NAT-25-001-NB-FOYERS",
+                    "valueIdentifier": "CCU0001-ATC-NB-FOYERS-4",
+                    "attrIdentifier": "CCU0001-ATC-NB-FOYERS",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -3143,6 +3233,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TABLE 4 FOYERS GAZ<BR/>DE DIETRICH DTG1102X  NOIR PROFILE INOX<BR/>SURFACE VERRE / 1 FOYER 3.1 kW"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ALLUMAGE INTEGRE AUX MANETTES<BR/>SECURITE THERMOCOUPLE<BR/>GRILLES FONTE MONOFOYER<BR/>EXISTE EN 3 FOYERS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : L 56 x P 49 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3188,11 +3305,50 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "A78",
                     "attrIdentifier": "NAT-25-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Table"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B10",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Manettes"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3231,6 +3387,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-25-001-NB-FOYERS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 4
                     },
                     "attrSequence": 0
                 },
@@ -3435,7 +3600,7 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 2,
+                    "valueIdentifier": 3,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
@@ -3602,26 +3767,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B10",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Manettes"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-HAUTEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3655,15 +3800,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-NB-FOYERS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 4
                     },
                     "attrSequence": 0
                 },
@@ -3923,8 +4059,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-25-001-NB-FOYERS-4",
-                    "attrIdentifier": "CCU0001-NAT-25-001-NB-FOYERS",
+                    "valueIdentifier": "CCU0001-ATC-NB-FOYERS-4",
+                    "attrIdentifier": "CCU0001-ATC-NB-FOYERS",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -4297,6 +4433,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TABLE 4 FOYERS GAZ<BR/>DE DIETRICH DPG7640B NOIR<BR/>SURFACE VERRE / 1 FOYER 3.1 kW"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ALLUMAGE INTEGRE AUX MANETTES<BR/>SECURITE THERMOCOUPLE<BR/>GRILLES FONTE MONOFOYER<BR/>EXISTE EN 3 FOYERS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : L 56 x P 49 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4342,6 +4505,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4351,11 +4534,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "A78",
                     "attrIdentifier": "NAT-25-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Table"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B10",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Manettes"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4394,6 +4596,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-25-001-NB-FOYERS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 4
                     },
                     "attrSequence": 0
                 },
@@ -4765,6 +4976,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Table de cuisson gaz DE DIETRICH en verre - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Le verre et la fonte stylisés par une grande marque, cela donne cette magnifique table de cuisson gaz encastrable. DE DIETRICH y associe puissance et sécurité, pour un budget raisonnable au regard de ses qualités."
         },
         "urlKeyword": {
             "locale": "fr",

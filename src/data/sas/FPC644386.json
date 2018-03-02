@@ -22,12 +22,12 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 1
         },
         {
-            "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+            "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
             "attrUsage": 1,
             "attrSequence": 2
         },
@@ -124,35 +124,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 86
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -168,16 +139,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Smc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 361,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -421,8 +382,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-103",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -431,8 +392,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-361",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-361",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac"
@@ -815,6 +776,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier SOLAIRE<BR/>Synthèse - Blanc<BR/>1 bac : 86 x 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB, 1.5B et 2B<BR/>Coloris dispo : Blanc, Noir et Béton<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -860,6 +848,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 372,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Smc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E29",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -880,11 +898,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 86
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 361,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -996,11 +1043,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "L",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT L"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1248,35 +1295,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 100
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -1292,16 +1310,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Smc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 364,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1545,8 +1553,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-103",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -1555,8 +1563,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-364",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-364",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 grand bac"
@@ -1939,6 +1947,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier SOLAIRE<BR/>Synthèse - Blanc<BR/>1 grand bac : 100 x 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB, 1.5B et 2B<BR/>Coloris dispo : Blanc, Noir et Béton<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1984,6 +2019,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 372,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Smc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E29",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -2004,11 +2069,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 364,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2120,11 +2214,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "L",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT L"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2372,35 +2466,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 100
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -2416,16 +2481,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Smc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 362,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2669,8 +2724,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-103",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -2679,8 +2734,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-362",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-362",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac 1/2"
@@ -3063,6 +3118,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier SOLAIRE<BR/>Synthèse - Blanc<BR/>1.5 bac : 98 x 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB, 1.5B et 2B<BR/>Coloris dispo : Blanc, Noir et Béton<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3108,6 +3190,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 372,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Smc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E29",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -3137,11 +3249,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 362,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3505,35 +3646,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 116
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -3549,16 +3661,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Smc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 363,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3802,8 +3904,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-103",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -3812,8 +3914,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-363",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-363",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "2 bacs"
@@ -4196,6 +4298,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier SOLAIRE<BR/>Synthèse - Blanc<BR/>2 bacs : 116 x 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB, 1.5B et 2B<BR/>Coloris dispo : Blanc, Noir et Béton<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4241,6 +4370,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 372,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Smc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E29",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -4270,11 +4429,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 116
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 363,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4638,35 +4826,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 86
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -4682,16 +4841,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Smc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 361,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4935,8 +5084,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-105",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Noir"
@@ -4945,8 +5094,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-361",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-361",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac"
@@ -5329,6 +5478,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier SOLAIRE<BR/>Synthèse - Noir<BR/>1 bac : 86 x 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB, 1.5B et 2B<BR/>Coloris dispo : Blanc, Noir et Béton<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -5374,6 +5550,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 372,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Smc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E29",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -5394,11 +5600,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 86
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 361,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5756,35 +5991,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 100
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -5800,16 +6006,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Smc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 364,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6053,8 +6249,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-105",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Noir"
@@ -6063,8 +6259,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-364",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-364",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 grand bac"
@@ -6447,6 +6643,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier SOLAIRE<BR/>Synthèse - Noir<BR/>1 grand bac : 100 x 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB, 1.5B et 2B<BR/>Coloris dispo : Blanc, Noir et Béton<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -6492,6 +6715,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 372,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Smc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E29",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -6512,11 +6765,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 364,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6628,11 +6910,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6880,35 +7162,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 100
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -6924,16 +7177,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Smc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 362,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7177,8 +7420,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-105",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Noir"
@@ -7187,8 +7430,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-362",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-362",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac 1/2"
@@ -7571,6 +7814,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier SOLAIRE<BR/>Synthèse - Noir<BR/>1.5 bac : 98 x 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB, 1.5B et 2B<BR/>Coloris dispo : Blanc, Noir et Béton<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -7616,6 +7886,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 372,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Smc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E29",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -7645,11 +7945,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 362,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8013,35 +8342,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 116
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -8057,16 +8357,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Smc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 363,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8310,8 +8600,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-105",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Noir"
@@ -8320,8 +8610,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-363",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-363",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "2 bacs"
@@ -8704,6 +8994,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier SOLAIRE<BR/>Synthèse - Noir<BR/>2 bacs : 116 x 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB, 1.5B et 2B<BR/>Coloris dispo : Blanc, Noir et Béton<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -8749,6 +9066,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 372,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Smc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E29",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -8778,11 +9125,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 116
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 363,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9146,35 +9522,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 272,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Béton"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 86
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -9190,16 +9537,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Smc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 361,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9443,8 +9780,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-272",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-272",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Béton"
@@ -9453,8 +9790,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-361",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-361",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac"
@@ -9837,6 +10174,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier SOLAIRE<BR/>Synthèse - Béton<BR/>1 bac : 86 x 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB, 1.5B et 2B<BR/>Coloris dispo : Blanc, Noir et Béton<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -9882,6 +10246,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 272,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Béton"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 272,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Béton"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 372,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Smc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E29",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -9902,11 +10296,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 86
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 361,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10270,35 +10693,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 272,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Béton"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 100
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -10314,16 +10708,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Smc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 364,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10567,8 +10951,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-272",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-272",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Béton"
@@ -10577,8 +10961,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-364",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-364",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 grand bac"
@@ -10961,6 +11345,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier SOLAIRE<BR/>Synthèse - Béton<BR/>1 grand bac : 100 x 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB, 1.5B et 2B<BR/>Coloris dispo : Blanc, Noir et Béton<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -11006,6 +11417,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 272,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Béton"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 272,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Béton"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 372,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Smc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E29",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -11026,11 +11467,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 364,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11394,35 +11864,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 272,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Béton"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 100
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -11438,16 +11879,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Smc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 362,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11700,8 +12131,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-272",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-272",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Béton"
@@ -11710,8 +12141,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-362",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-362",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac 1/2"
@@ -12094,6 +12525,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier SOLAIRE<BR/>Synthèse - Béton<BR/>1.5 bac : 98 x 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB, 1.5B et 2B<BR/>Coloris dispo : Blanc, Noir et Béton<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -12139,6 +12597,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 272,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Béton"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 272,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Béton"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 372,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Smc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E29",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -12168,11 +12656,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 362,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -12536,35 +13053,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 272,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Béton"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 116
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -12580,16 +13068,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Smc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 363,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -12833,8 +13311,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-272",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-272",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Béton"
@@ -12843,8 +13321,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-363",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-363",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "2 bacs"
@@ -13227,6 +13705,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier SOLAIRE<BR/>Synthèse - Béton<BR/>2 bacs : 116 x 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB, 1.5B et 2B<BR/>Coloris dispo : Blanc, Noir et Béton<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -13272,6 +13777,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 272,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Béton"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 272,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Béton"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 372,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Smc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E29",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -13301,11 +13836,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 116
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 363,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -13669,6 +14233,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Evier encastrable Solaire matériau de synthèse - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Une vraie élégance, une vraie modernité dans votre cuisine. Avec ses lignes pures et sa bande inox, l'évier Solaire LUISINA esrt réversible et disponible en 3 coloris et 4 formats. Il est réalisé en Naturalite (matériau de synthèse très résistant)."
         },
         "urlKeyword": {
             "locale": "fr",

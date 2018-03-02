@@ -22,12 +22,12 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 1
         },
         {
-            "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+            "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
             "attrUsage": 1,
             "attrSequence": 2
         },
@@ -124,35 +124,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 273,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc artic"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 94
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -168,16 +139,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Tectonite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 364,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -448,8 +409,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-273",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-273",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc artic"
@@ -458,8 +419,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-364",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-364",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 grand bac"
@@ -861,6 +822,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier TIENTO<BR/>Tectonite - Blanc artic<BR/>1 Grand bac : 94 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1GB, 1.5B et 2B<BR/>Coul : Blanc A, Café C, Titanium, Carbon<BR/>B = Bac / GB = Grand Bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -906,6 +894,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 273,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc artic"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 273,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc artic"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "Z12",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Tectonite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Z09",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -926,11 +944,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 94
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 364,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1042,11 +1089,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "SUR DELAI COURT"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1294,35 +1341,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 273,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc artic"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 100
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -1338,16 +1356,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Tectonite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 362,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1609,8 +1617,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-273",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-273",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc artic"
@@ -1619,8 +1627,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-362",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-362",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac 1/2"
@@ -2022,6 +2030,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier TIENTO<BR/>Tectonite - Blanc artic<BR/>1.5 bac : 100 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1GB, 1.5B et 2B<BR/>Coul : Blanc A, Café C, Titanium, Carbon<BR/>B = Bac / GB = Grand Bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2067,6 +2102,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 273,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc artic"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 273,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc artic"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "Z12",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Tectonite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Z09",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -2087,11 +2152,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 362,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2455,35 +2549,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 273,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc artic"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 116
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -2499,16 +2564,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Tectonite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 363,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2770,8 +2825,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-273",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-273",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc artic"
@@ -2780,8 +2835,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-363",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-363",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "2 bacs"
@@ -3183,6 +3238,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier TIENTO<BR/>Tectonite - Blanc artic<BR/>2 Bacs : 116 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1GB, 1.5B et 2B<BR/>Coul : Blanc A, Café C, Titanium, Carbon<BR/>B = Bac / GB = Grand Bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3228,6 +3310,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 273,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc artic"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 273,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc artic"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "Z12",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Tectonite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Z09",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -3248,11 +3360,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 116
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 363,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3616,25 +3757,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 279,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Café crème"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 94
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -3650,16 +3772,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Tectonite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 364,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3921,8 +4033,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-279",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-279",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Café crème"
@@ -3931,8 +4043,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-364",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-364",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 grand bac"
@@ -4334,6 +4446,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier TIENTO<BR/>Tectonite - Café crème<BR/>1 Grand bac : 94 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1GB, 1.5B et 2B<BR/>Coul : Blanc A, Café C, Titanium, Carbon<BR/>B = Bac / GB = Grand Bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4379,6 +4518,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "Z12",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Tectonite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Z09",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -4399,11 +4568,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 94
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 364,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4515,11 +4703,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "SUR DELAI COURT"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4767,35 +4955,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 279,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Café crème"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 100
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -4811,16 +4970,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Tectonite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 362,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5082,8 +5231,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-279",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-279",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Café crème"
@@ -5092,8 +5241,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-362",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-362",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac 1/2"
@@ -5495,6 +5644,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier TIENTO<BR/>Tectonite - Café crème<BR/>1.5 bac : 100 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1GB, 1.5B et 2B<BR/>Coul : Blanc A, Café C, Titanium, Carbon<BR/>B = Bac / GB = Grand Bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -5540,6 +5716,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "Z12",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Tectonite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Z09",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -5560,11 +5766,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 362,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5928,35 +6163,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 279,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Café crème"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 116
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -5972,16 +6178,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Tectonite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 363,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6243,8 +6439,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-279",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-279",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Café crème"
@@ -6253,8 +6449,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-363",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-363",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "2 bacs"
@@ -6656,6 +6852,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier TIENTO<BR/>Tectonite - Café crème<BR/>2 Bacs : 116 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1GB, 1.5B et 2B<BR/>Coul : Blanc A, Café C, Titanium, Carbon<BR/>B = Bac / GB = Grand Bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -6701,6 +6924,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "Z12",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Tectonite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Z09",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -6721,11 +6974,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 116
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 363,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6837,11 +7119,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "SUR DELAI COURT"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7089,35 +7371,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 337,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Titanium"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 94
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -7133,16 +7386,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Tectonite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 364,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7404,8 +7647,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-337",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-337",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Titanium"
@@ -7414,8 +7657,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-364",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-364",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 grand bac"
@@ -7817,6 +8060,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier TIENTO<BR/>Tectonite - Titanium<BR/>1 Grand bac : 94 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1GB, 1.5B et 2B<BR/>Coul : Blanc A, Café C, Titanium, Carbon<BR/>B = Bac / GB = Grand Bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -7862,6 +8132,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 337,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Titanium"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 337,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Titanium"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "Z12",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Tectonite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Z09",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -7882,11 +8182,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 94
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 364,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7998,11 +8327,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "SUR DELAI COURT"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8250,35 +8579,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 337,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Titanium"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 100
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -8294,16 +8594,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Tectonite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 362,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8565,8 +8855,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-337",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-337",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Titanium"
@@ -8575,8 +8865,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-362",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-362",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac 1/2"
@@ -8978,6 +9268,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier TIENTO<BR/>Tectonite - Titanium<BR/>1.5 bac : 100 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1GB, 1.5B et 2B<BR/>Coul : Blanc A, Café C, Titanium, Carbon<BR/>B = Bac / GB = Grand Bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -9023,6 +9340,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 337,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Titanium"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 337,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Titanium"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "Z12",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Tectonite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Z09",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -9043,11 +9390,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 362,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9411,35 +9787,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 337,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Titanium"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 116
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -9455,16 +9802,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Tectonite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 363,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9726,8 +10063,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-337",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-337",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Titanium"
@@ -9736,8 +10073,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-363",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-363",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "2 bacs"
@@ -10139,6 +10476,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier TIENTO<BR/>Tectonite - Titanium<BR/>2 Bacs : 116 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1GB, 1.5B et 2B<BR/>Coul : Blanc A, Café C, Titanium, Carbon<BR/>B = Bac / GB = Grand Bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -10184,6 +10548,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 337,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Titanium"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 337,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Titanium"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "Z12",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Tectonite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Z09",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -10204,11 +10598,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 116
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 363,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10572,35 +10995,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 280,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Carbone"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 94
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -10616,16 +11010,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Tectonite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 364,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10887,8 +11271,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-280",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-280",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Carbone"
@@ -10897,8 +11281,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-364",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-364",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 grand bac"
@@ -11300,6 +11684,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier TIENTO<BR/>Tectonite - Carbone<BR/>1 Grand bac : 94 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1GB, 1.5B et 2B<BR/>Coul : Blanc A, Café C, Titanium, Carbon<BR/>B = Bac / GB = Grand Bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -11345,6 +11756,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 280,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carbone"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 280,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carbone"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "Z12",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Tectonite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Z09",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -11365,11 +11806,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 94
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 364,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11481,11 +11951,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11733,35 +12203,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 280,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Carbone"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 100
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -11777,16 +12218,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Tectonite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 362,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -12048,8 +12479,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-280",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-280",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Carbone"
@@ -12058,8 +12489,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-362",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-362",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac 1/2"
@@ -12461,6 +12892,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier TIENTO<BR/>Tectonite - Carbone<BR/>1.5 bac : 100 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1GB, 1.5B et 2B<BR/>Coul : Blanc A, Café C, Titanium, Carbon<BR/>B = Bac / GB = Grand Bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -12506,6 +12964,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 280,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carbone"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 280,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carbone"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "Z12",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Tectonite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Z09",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -12526,11 +13014,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 362,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -12642,11 +13159,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "SUR DELAI COURT"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -12894,35 +13411,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 280,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Carbone"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 116
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -12938,16 +13426,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Tectonite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 363,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -13209,8 +13687,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-280",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-280",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Carbone"
@@ -13219,8 +13697,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-363",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-363",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "2 bacs"
@@ -13622,6 +14100,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier TIENTO<BR/>Tectonite - Carbone<BR/>2 Bacs : 116 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1GB, 1.5B et 2B<BR/>Coul : Blanc A, Café C, Titanium, Carbon<BR/>B = Bac / GB = Grand Bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage manuel fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -13667,6 +14172,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 280,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carbone"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 280,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carbone"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "Z12",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Tectonite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Z09",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -13687,11 +14222,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 116
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 363,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -14055,6 +14619,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Evier à encastrer Tiento matériau de synthèse - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Aussi splendide que simple dans son design, réalisé en tectonite, matériau de synthèse très résistant, l'évier Tiento FRANKE est réversible et disponible en 3 formats différents pour vous convenir. Son vidage manuel est fourni."
         },
         "urlKeyword": {
             "locale": "fr",

@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -64,28 +64,10 @@
             "attrSequence": 0
         },
         {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
                 "content": "Prix pour la puissance 740 W"
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-40",
-            "valueString": {
-                "locale": "fr",
-                "content": "-40%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -142,6 +124,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -303,7 +294,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -312,7 +303,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -784,6 +775,51 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "SERENITY<BR/>Radiateur sèche-serviette électrique<BR/>Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Existe en coloris Noir, Miroir et Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H 150 L 55 Ep 5,5 P 18,5 cm<BR/>Norme NF, Ce, CI2, IP 24<BR/>Verre Saint Gobain haute résistance 6 mm<BR/>Thermostat électronique,Commande tactile"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "740 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Design extra-plat<BR/>Chaleur douce<BR/>Touches sensitives à hauteur de main<BR/>Fabrication française"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -829,6 +865,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-32-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 317,
                     "attrIdentifier": "FAM-32-FINITION",
                     "valueString": {
@@ -859,20 +905,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "LAPEYRE-PROMO-ID",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 4268
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 992,
                     "attrIdentifier": "NAT-32-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Rayonnant"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "A16",
+                    "attrIdentifier": "NAT-32-001-PUISSANCE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "740 W"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -884,6 +931,16 @@
                         "locale": "fr",
                         "content": 0
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 360,
+                    "attrIdentifier": "NAT-32-001-VERSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Electrique"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1050,11 +1107,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1135,15 +1192,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "isSoldes",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1166,15 +1214,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Prix pour la puissance 740 W"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ribbonad-soldesRateValue-40",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "-40%"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1222,7 +1261,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -1258,6 +1297,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -1410,7 +1458,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1419,7 +1467,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1891,6 +1939,51 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "SERENITY<BR/>Radiateur sèche-serviette électrique<BR/>Miroir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Existe en coloris Noir, Miroir et Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H 150 L 55 Ep 5,5 P 18,5 cm<BR/>Norme NF, Ce, CI2, IP 24<BR/>Verre Saint Gobain haute résistance 6 mm<BR/>Thermostat électronique,Commande tactile"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "740 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Design extra-plat<BR/>Chaleur douce<BR/>Touches sensitives à hauteur de main<BR/>Fabrication française"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1937,6 +2030,16 @@
                 },
                 {
                     "valueIdentifier": 182,
+                    "attrIdentifier": "FAM-32-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Miroir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 182,
                     "attrIdentifier": "FAM-32-FINITION",
                     "valueString": {
                         "locale": "fr",
@@ -1966,20 +2069,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "LAPEYRE-PROMO-ID",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 4269
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 992,
                     "attrIdentifier": "NAT-32-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Rayonnant"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "A16",
+                    "attrIdentifier": "NAT-32-001-PUISSANCE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "740 W"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1991,6 +2095,16 @@
                         "locale": "fr",
                         "content": 0
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 360,
+                    "attrIdentifier": "NAT-32-001-VERSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Electrique"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2157,11 +2271,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2242,15 +2356,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "isSoldes",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2273,15 +2378,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Prix pour la puissance 740 W"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ribbonad-soldesRateValue-50",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "-50%"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2329,7 +2425,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -2360,11 +2456,29 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-FAB-EN-FRANCE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "ATC-GAIN-PLACE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -2517,7 +2631,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -2526,7 +2640,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -2998,6 +3112,51 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "SERENITY<BR/>Radiateur sèche-serviette électrique<BR/>Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Existe en coloris Noir, Miroir et Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H 150 L 55 Ep 5,5 P 18,5 cm<BR/>Norme NF, Ce, CI2, IP 24<BR/>Verre Saint Gobain haute résistance 6 mm<BR/>Thermostat électronique,Commande tactile"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "740 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Design extra-plat<BR/>Chaleur douce<BR/>Touches sensitives à hauteur de main<BR/>Fabrication française"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3043,6 +3202,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-32-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 274,
                     "attrIdentifier": "FAM-32-FINITION",
                     "valueString": {
@@ -3073,20 +3242,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "LAPEYRE-PROMO-ID",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 4270
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 992,
                     "attrIdentifier": "NAT-32-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Rayonnant"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "A16",
+                    "attrIdentifier": "NAT-32-001-PUISSANCE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "740 W"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3098,6 +3268,16 @@
                         "locale": "fr",
                         "content": 0
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 360,
+                    "attrIdentifier": "NAT-32-001-VERSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Electrique"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3264,11 +3444,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3349,15 +3529,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "isSoldes",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3380,15 +3551,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Prix pour la puissance 740 W"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ribbonad-soldesRateValue-60",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "-60%"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3436,7 +3598,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",

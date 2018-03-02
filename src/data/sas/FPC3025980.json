@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -21,6 +21,15 @@
     },
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1603
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
         {
             "attrIdentifier": "categorieGoogle",
             "valueString": {
@@ -54,24 +63,6 @@
             "valueString": {
                 "locale": "fr",
                 "content": 0
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-50",
-            "valueString": {
-                "locale": "fr",
-                "content": "-50%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -111,16 +102,6 @@
     "shortDesc": {"locale": "fr"},
     "itemList": {"item": {
         "attributeValueList": {"attributeValue": [
-            {
-                "valueIdentifier": "B23",
-                "attrIdentifier": "ATC-APPAREIL",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Full"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
             {
                 "valueIdentifier": "Y54",
                 "attrIdentifier": "ATC-CATEGORIE",
@@ -345,7 +326,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -354,7 +335,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -825,6 +806,33 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "LAVE LINGE FULL INTEGRABLE<BR/>BEKO WMI81441 BLANC<BR/>LABELS A++ / AB"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "CAPACITE DE LAVAGE : 8 KG<BR/>ESSORAGE : 1400 tr/min   50/68DB<BR/>NBR PROG. 16 / TOUCHE ANTI DEBORDEMENT<BR/>DEPART DIFFERE / SECURITE ENFANTS"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "ENCASTREMENT : H85 x L65 x P60 CM"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -882,7 +890,17 @@
                 "attrIdentifier": "LAPEYRE-PROMO-ID",
                 "valueString": {
                     "locale": "fr",
-                    "content": 4269
+                    "content": "NO_PROMO"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "B23",
+                "attrIdentifier": "NAT-25-001-APPAREIL",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Full"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1154,11 +1172,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
+                "valueIdentifier": 2,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1239,30 +1257,12 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "isSoldes",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "poids",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
                     "content": 73
                 },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ribbonad-soldesRateValue-50",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "-50%"
-                },
-                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -1308,7 +1308,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": true
+            "content": false
         },
         "label": {
             "locale": "fr",
@@ -1338,6 +1338,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Lave-linge BEKO - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Grande capacité, essorage puissant, le lave-linge full intégrable BEKO est d'un excellent rapport qualité/prix pour sa catégorie. Il est aussi très esthétique, avec son affichage LCD."
         },
         "urlKeyword": {
             "locale": "fr",

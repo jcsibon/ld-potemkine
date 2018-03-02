@@ -22,9 +22,18 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1576
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -100,16 +109,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B15",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Box"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -134,16 +133,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "B"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 303,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Inox"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -396,7 +385,7 @@
                 },
                 {
                     "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-60",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -769,6 +758,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HOTTE DECORATIVE BOX<BR/>BRANDT BHB6601X INOX<BR/>LARGEUR 60 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "DEBIT D'AIR : 603 M3/H   - 70 dB(A)<BR/>3 VITESSES D'ASPIRATION<BR/>ECLAIRAGE LED<BR/>FILTRE A CHARBON INCLUS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H 58/106 x L 60 x P 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -814,12 +830,51 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 224
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B15",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Box"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -966,11 +1021,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "M",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT M"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1190,16 +1245,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B15",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Box"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1224,16 +1269,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "B"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 303,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Inox"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1477,7 +1512,7 @@
                 },
                 {
                     "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-90",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1850,6 +1885,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HOTTE DECORATIVE BOX<BR/>BRANDT BHB6901X INOX<BR/>LARGEUR 90 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "DEBIT D'AIR : 617 M3/H   - 70 dB(A)<BR/>3 VITESSES D'ASPIRATION<BR/>ECLAIRAGE LED<BR/>FILTRE A CHARBON INCLUS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H 58/106 x L 90 x P 50 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1895,12 +1957,51 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 294
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B15",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Box"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2047,11 +2148,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "SUR DELAI COURT"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0

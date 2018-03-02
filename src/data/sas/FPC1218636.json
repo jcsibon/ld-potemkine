@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -21,6 +21,15 @@
     },
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1604
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
         {
             "attrIdentifier": "categorieGoogle",
             "valueString": {
@@ -59,28 +68,10 @@
             "attrSequence": 0
         },
         {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
                 "content": "Prix pour la dimension H 80,0 x L 60,0  x P 0,5 cm"
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-60",
-            "valueString": {
-                "locale": "fr",
-                "content": "-60%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -316,7 +307,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -325,7 +316,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -777,6 +768,24 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "VERSAILLES<BR/>Miroir décoratif<BR/>Pose horizontale ou verticale"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "L 60 x H 80 cm"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -845,7 +854,7 @@
                 "attrIdentifier": "LAPEYRE-PROMO-ID",
                 "valueString": {
                     "locale": "fr",
-                    "content": 4270
+                    "content": "NO_PROMO"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1032,11 +1041,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
+                "valueIdentifier": 2,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1126,15 +1135,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "isSoldes",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "poids",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -1157,15 +1157,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "Prix pour la dimension H 80,0 x L 60,0  x P 0,5 cm"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ribbonad-soldesRateValue-60",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "-60%"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1213,7 +1204,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": true
+            "content": false
         },
         "label": {
             "locale": "fr",
@@ -1243,6 +1234,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Miroir déco VERSAILLES - Salle de bains"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Un miroir de salle de bains sur cadre à bords polis Saint Gobain qui apporte une touche élégante et sobre dans votre salle de bains."
         },
         "urlKeyword": {
             "locale": "fr",

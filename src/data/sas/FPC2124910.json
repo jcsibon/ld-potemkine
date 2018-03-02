@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -21,6 +21,15 @@
     },
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1601
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
         {
             "attrIdentifier": "categorieGoogle",
             "valueString": {
@@ -68,28 +77,10 @@
             "attrSequence": 0
         },
         {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
                 "content": "Prix pour la dimension l 12,5 cm  x L 90,0 cm x E 14,0 mm"
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-70",
-            "valueString": {
-                "locale": "fr",
-                "content": "-70%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -222,6 +213,15 @@
                     "content": "4 chanfreins"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-NORME-FSC",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
                 "attrSequence": 0
             },
             {
@@ -988,7 +988,7 @@
                 "attrIdentifier": "LAPEYRE-PROMO-ID",
                 "valueString": {
                     "locale": "fr",
-                    "content": 4271
+                    "content": "NO_PROMO"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1281,11 +1281,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
+                "valueIdentifier": 2,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1384,15 +1384,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "isSoldes",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "poids",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -1415,15 +1406,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "Prix pour la dimension l 12,5 cm  x L 90,0 cm x E 14,0 mm"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ribbonad-soldesRateValue-70",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "-70%"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1471,7 +1453,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": true
+            "content": false
         },
         "label": {
             "locale": "fr",

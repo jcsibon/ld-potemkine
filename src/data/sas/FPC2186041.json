@@ -11,7 +11,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -117,6 +117,15 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
                     "valueString": {
@@ -152,6 +161,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -323,15 +341,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186001
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -776,6 +785,78 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "CLASSIC HIT PVC<BR/>Uw =1.4 W/m²°K - Eligible crédit d'impôt<BR/>Châssis 1VTL - Blanc 9016"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vitrages (deco, sécurité, acoustique...)<BR/>Volet roulant , grille de ventilation<BR/>Poignées"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Accessoires et guide de pose"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Standard et sur-mesure, nous consulter"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 15 ans, NF, Cekal, Acotherm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Double vitr. 24mm HIT gaz isolant Argon<BR/>Ouvrant 60mm à 3 chambres<BR/>Dormant 60 mm avec habillages clipsables"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H45xL40 cm tableau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Haute Isolation Thermique<BR/>Délai Express Garanti (voir conditions)<BR/>Fabriquée dans nos usines en France<BR/>S'adapte à tous types de configurations"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -795,6 +876,15 @@
                 },
                 {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -973,6 +1063,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "SCREEN-MESSAGE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 300,
                     "attrIdentifier": "SPEC-FAM-CHX",
                     "valueString": {
@@ -1033,11 +1132,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "M",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT M"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1263,7 +1362,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -1283,6 +1382,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -1319,6 +1427,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1490,15 +1607,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186011
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -1943,6 +2051,78 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "CLASSIC HIT PVC<BR/>Uw =1.4 W/m²°K - Eligible crédit d'impôt<BR/>Châssis 1 VTL OB - Blanc  9016"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vitrages (deco, sécurité, acoustique...)<BR/>Volet roulant , grille de ventilation<BR/>Poignées"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Poignée Atlanta (vendue à part)<BR/>Accessoires et guide de pose"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Standard et sur-mesure, nous consulter"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 15 ans, NF, Cekal, Acotherm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Double vitr. 24mm HIT gaz isolant Argon<BR/>Ouvrant 60mm à 3 chambres/dormant 60mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H60x40 cm tableau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Haute Isolation Thermique<BR/>Délai Express Garanti (voir conditions)<BR/>Fabriquée dans nos usines en France<BR/>S'adapte à tous types de configurations"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1966,6 +2146,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 9
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
                     },
                     "attrSequence": 0
                 },
@@ -2143,7 +2332,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2209,11 +2398,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "M",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT M"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2439,7 +2628,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -2459,6 +2648,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -2495,6 +2693,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -2666,15 +2873,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186021
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -3119,6 +3317,78 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "CLASSIC HIT PVC<BR/>Uw =1.4 W/m²°K - Eligible crédit d'impôt<BR/>Châssis 1VTL - Blanc 9016"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vitrages (deco, sécurité, acoustique...)<BR/>Volet roulant , grille de ventilation<BR/>Poignées"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Accessoires et guide de pose"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Standard et sur-mesure, nous consulter"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 15 ans, NF, Cekal, Acotherm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Double vitr. 24mm HIT gaz isolant Argon<BR/>Ouvrant 60mm à 3 chambres<BR/>Dormant 60 mm avec habillages clipsables"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H60xL50 cm tableau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Haute Isolation Thermique<BR/>Délai Express Garanti (voir conditions)<BR/>Fabriquée dans nos usines en France<BR/>S'adapte à tous types de configurations"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3142,6 +3412,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 10
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
                     },
                     "attrSequence": 0
                 },
@@ -3319,7 +3598,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3385,11 +3664,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3615,7 +3894,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -3635,6 +3914,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -3671,6 +3959,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -3842,15 +4139,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186031
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -4322,6 +4610,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4495,7 +4792,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4791,7 +5088,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -4811,6 +5108,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -4847,6 +5153,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -5018,15 +5333,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186041
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -5498,6 +5804,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -5671,7 +5986,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5737,11 +6052,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5967,7 +6282,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -5987,6 +6302,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -6023,6 +6347,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -6194,15 +6527,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186051
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -6647,6 +6971,78 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "CLASSIC HIT PVC<BR/>Uw =1.4 W/m²°K - Eligible crédit d'impôt<BR/>Châssis 1 VTL - Blanc 9016"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vitrages (deco, sécurité, acoustique...)<BR/>Volet roulant , grille de ventilation<BR/>Poignées"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Accessoires et guide de pose"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Standard et sur-mesure, nous consulter"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 15 ans, NF, Cekal, Acotherm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Double vitr. 24mm HIT gaz isolant Argon<BR/>Ouvrant 60mm à 3 chambres<BR/>Dormant 60 mm avec habillages clipsables"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H75xL50cm tableau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Haute Isolation Thermique<BR/>Délai Express Garanti (voir conditions)<BR/>Fabriquée dans nos usines en France<BR/>S'adapte à tous types de configurations"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -6670,6 +7066,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 12
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
                     },
                     "attrSequence": 0
                 },
@@ -6847,7 +7252,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7143,7 +7548,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -7163,6 +7568,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -7199,6 +7613,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -7370,15 +7793,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186061
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -7823,6 +8237,78 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "CLASSIC PVC HIT<BR/>Chassis 1 vantail<BR/>PVC sans plomb écologique"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Nombreuses options : petits bois à<BR/>coller, oscillo-battant\u2026"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Guide de pose"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Standard et sur-mesure, nous consulter"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Certificats NF, Acotherm, Cekal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Double vitrage 24mm gaz isolant Argon<BR/>Haute Isolation Thermique<BR/>Ouvrant 60 mm 3 chambres d'isolation<BR/>2 joints d'étanchéité"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H75 X L60 cm tableau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Uw=1,4 - éligible au crédit d'impôt<BR/>S'adapte à tous types de configurations<BR/>Garantie 15 ans - fabriqué en France<BR/>Délai Express Garanti, voir conditions"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -7846,6 +8332,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
                     },
                     "attrSequence": 0
                 },
@@ -8023,7 +8518,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8089,11 +8584,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "M",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT M"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8319,7 +8814,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -8339,6 +8834,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -8375,6 +8879,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -8546,15 +9059,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186071
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -9026,6 +9530,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -9199,7 +9712,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9495,7 +10008,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -9515,6 +10028,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -9551,6 +10073,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -9722,15 +10253,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186081
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -10202,6 +10724,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -10375,7 +10906,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10671,7 +11202,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -10691,6 +11222,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -10727,6 +11267,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -10898,15 +11447,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186091
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -11378,6 +11918,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -11551,7 +12100,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11847,7 +12396,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -11867,6 +12416,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -11903,6 +12461,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -12074,15 +12641,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186101
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -12554,6 +13112,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -12727,7 +13294,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -13023,7 +13590,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -13043,6 +13610,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -13079,6 +13655,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -13250,15 +13835,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186111
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -13703,6 +14279,78 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "CLASSIC HIT PVC<BR/>Uw =1.4 W/m²°K - Eligible crédit d'impôt<BR/>Châssis  - Blanc 9016"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vitrages (deco, sécurité, acoustique...)<BR/>Volet roulant , grille de ventilation<BR/>Poignées"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Poignée Verona (vendue à part)<BR/>Accessoires et guide de pose"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Standard et sur-mesure, nous consulter"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 15 ans, NF, Cekal, Acotherm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Double vitr. 24mm HIT gaz isolant Argon<BR/>Ouvrant 60mm à 3 chambres<BR/>Dormant 60 mm avec habillages clipsables"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H105x80 cm tableau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Haute Isolation Thermique<BR/>Délai Express Garanti (voir conditions)<BR/>Fabriquée dans nos usines en France<BR/>S'adapte à tous types de configurations"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -13726,6 +14374,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 26
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
                     },
                     "attrSequence": 0
                 },
@@ -13903,7 +14560,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -14199,7 +14856,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -14219,6 +14876,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -14255,6 +14921,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -14426,15 +15101,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186121
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -14906,6 +15572,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -15079,7 +15754,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -15375,7 +16050,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -15395,6 +16070,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -15431,6 +16115,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -15602,15 +16295,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186131
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -16082,6 +16766,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -16255,7 +16948,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -16551,7 +17244,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -16778,15 +17471,6 @@
                         "content": "G13/G122/G1080/G8432/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186141
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -17264,6 +17948,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 32.6
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -17958,15 +18651,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2186151
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -18441,6 +19125,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 37.8
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -18926,6 +19619,15 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
                     "valueString": {
@@ -18961,6 +19663,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -19132,15 +19843,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377581
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -19612,6 +20314,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -19775,7 +20486,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -20071,7 +20782,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -20091,6 +20802,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -20127,6 +20847,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -20307,15 +21036,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377591
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -20787,6 +21507,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -20950,7 +21679,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -21246,7 +21975,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -21473,15 +22202,6 @@
                         "content": "G13/G122/G1080/G8432/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377601
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -21963,6 +22683,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -22425,6 +23154,15 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
                     "valueString": {
@@ -22460,6 +23198,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -22631,15 +23378,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377611
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -23111,6 +23849,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -23274,7 +24021,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -23570,7 +24317,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -23590,6 +24337,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -23626,6 +24382,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -23797,15 +24562,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377621
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -24277,6 +25033,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -24440,7 +25205,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -24736,7 +25501,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -24756,6 +25521,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -24792,6 +25566,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -24963,15 +25746,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377631
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -25443,6 +26217,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -25606,7 +26389,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -25902,7 +26685,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -25922,6 +26705,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -25958,6 +26750,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -26129,15 +26930,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377641
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -26609,6 +27401,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -27068,7 +27869,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -27088,6 +27889,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
@@ -27124,6 +27934,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -27295,15 +28114,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377651
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -27775,6 +28585,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -27938,7 +28757,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -28234,7 +29053,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -28461,15 +29280,6 @@
                         "content": "G13/G122/G1080/G8432/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377661
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -28951,6 +29761,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -29413,6 +30232,15 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
                     "valueString": {
@@ -29448,6 +30276,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -29619,15 +30456,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377671
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -30099,6 +30927,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -30262,7 +31099,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -30558,7 +31395,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -30785,15 +31622,6 @@
                         "content": "G13/G122/G1080/G8432/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377681
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -31271,6 +32099,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 14.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -31946,15 +32783,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377691
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -32429,6 +33257,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 17.1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -33104,15 +33941,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377701
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -33587,6 +34415,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 25.9
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -34262,15 +35099,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377711
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -34745,6 +35573,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 15.1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -35420,15 +36257,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377721
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -35903,6 +36731,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 18.3
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -36578,15 +37415,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2377731
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -37061,6 +37889,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 27.7
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -37736,15 +38573,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437851
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -38219,6 +39047,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -38885,15 +39722,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437861
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -39368,6 +40196,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -40034,15 +40871,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437871
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -40517,6 +41345,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -41183,15 +42020,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437881
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -41666,6 +42494,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -42332,15 +43169,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437891
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -42815,6 +43643,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -43481,15 +44318,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437901
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -43964,6 +44792,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -44630,15 +45467,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437911
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -45113,6 +45941,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -45779,15 +46616,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437921
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -46262,6 +47090,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -46928,15 +47765,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437931
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -47411,6 +48239,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -48077,15 +48914,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437941
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -48560,6 +49388,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -49226,15 +50063,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437951
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -49709,6 +50537,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -50375,15 +51212,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437961
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -50858,6 +51686,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -51524,15 +52361,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437971
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -52007,6 +52835,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -52673,15 +53510,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437981
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -53156,6 +53984,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -53822,15 +54659,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2437991
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -54305,6 +55133,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -54971,15 +55808,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438001
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -55454,6 +56282,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -56120,15 +56957,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438011
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -56603,6 +57431,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -57269,15 +58106,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438021
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -57752,6 +58580,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -58418,15 +59255,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438031
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -58901,6 +59729,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -59567,15 +60404,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438041
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -60054,6 +60882,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -60507,6 +61344,15 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 117,
                     "attrIdentifier": "ATC-FORME",
                     "valueString": {
@@ -60542,6 +61388,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -60713,15 +61568,6 @@
                         "content": "G13/G122/G3856/G13057/G56940/G45146/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438051
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -61193,6 +62039,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 8
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -61634,7 +62489,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -61861,15 +62716,6 @@
                         "content": "G13/G122/G1080/G8432/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438061
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -62347,6 +63193,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -63013,15 +63868,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438071
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -63496,6 +64342,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 8
                     },
                     "attrSequence": 0
                 },
@@ -64153,15 +65008,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438081
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -64636,6 +65482,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -65302,15 +66157,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438091
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -65785,6 +66631,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -66451,15 +67306,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438111
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -66934,6 +67780,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -67600,15 +68455,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438161
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -68083,6 +68929,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -68749,15 +69604,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438171
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -69232,6 +70078,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -69898,15 +70753,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438181
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -70381,6 +71227,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -71047,15 +71902,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438191
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -71530,6 +72376,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -72196,15 +73051,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438201
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -72679,6 +73525,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -73345,15 +74200,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438221
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -73828,6 +74674,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -74494,15 +75349,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438231
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -74977,6 +75823,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -75643,15 +76498,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438241
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -76126,6 +76972,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -76792,15 +77647,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438251
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -77275,6 +78121,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -77941,15 +78796,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438261
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -78424,6 +79270,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -79090,15 +79945,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438271
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -79573,6 +80419,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -80239,15 +81094,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438281
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -80722,6 +81568,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -81388,15 +82243,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438291
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -81871,6 +82717,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -82537,15 +83392,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438301
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -83020,6 +83866,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -83686,15 +84541,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2438311
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -84169,6 +85015,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 8.2
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },
@@ -84835,15 +85690,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2442601
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -85328,6 +86174,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 9.3
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 6
                     },
                     "attrSequence": 0
                 },

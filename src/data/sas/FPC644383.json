@@ -22,14 +22,23 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 1
         },
         {
-            "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+            "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
             "attrUsage": 1,
             "attrSequence": 2
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 4276
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -124,50 +133,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 86
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 361,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -411,8 +381,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-103",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -421,8 +391,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-361",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-361",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac"
@@ -815,6 +785,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier ARCHITECTURA<BR/>Céramique - Blanc<BR/>1 bac : 86 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB et 2B<BR/>Coloris dispo : blanc et glossy black<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -860,6 +857,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 274,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc brillant"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "U46",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Grès"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "UZ5",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -879,6 +906,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4276
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 244,
                     "attrIdentifier": "NAT-50-001-CATEGORIE",
                     "valueString": {
@@ -889,11 +925,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 86
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 361,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1257,50 +1322,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 100
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 364,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1544,8 +1570,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-103",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -1554,8 +1580,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-364",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-364",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 grand bac"
@@ -1948,6 +1974,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier ARCHITECTURA<BR/>Céramique - Blanc<BR/>1 grand bac : 100 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB et 2B<BR/>Coloris dispo : blanc et glossy black<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1993,6 +2046,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 274,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc brillant"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "U46",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Grès"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "UZ5",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -2012,6 +2095,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4276
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 244,
                     "attrIdentifier": "NAT-50-001-CATEGORIE",
                     "valueString": {
@@ -2022,11 +2114,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 364,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2390,50 +2511,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 116
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 363,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2677,8 +2759,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-103",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -2687,8 +2769,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-363",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-363",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "2 bacs"
@@ -3081,6 +3163,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier ARCHITECTURA<BR/>Céramique - Blanc<BR/>2 bacs : 116 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB et 2B<BR/>Coloris dispo : blanc et glossy black<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3126,6 +3235,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 274,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc brillant"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "U46",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Grès"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "UZ5",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -3145,6 +3284,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4276
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 244,
                     "attrIdentifier": "NAT-50-001-CATEGORIE",
                     "valueString": {
@@ -3155,11 +3303,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 116
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 363,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3523,50 +3700,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "UZ8",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Glossy black"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 86
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 361,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3810,8 +3948,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-UZ8",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-UZ8",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Glossy black"
@@ -3820,8 +3958,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-361",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-361",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac"
@@ -4214,6 +4352,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier ARCHITECTURA<BR/>Céramique - Glossy black<BR/>1 bac : 86 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB et 2B<BR/>Coloris dispo : blanc et glossy black<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4259,6 +4424,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UZ8",
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Glossy black"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "VA5",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Glossy black brillant"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "U46",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Grès"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "UZ5",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -4278,6 +4473,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4276
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 244,
                     "attrIdentifier": "NAT-50-001-CATEGORIE",
                     "valueString": {
@@ -4288,11 +4492,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 86
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 361,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4656,50 +4889,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "UZ8",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Glossy black"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 100
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 364,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4952,8 +5146,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-UZ8",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-UZ8",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Glossy black"
@@ -4962,8 +5156,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-364",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-364",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 grand bac"
@@ -5356,6 +5550,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier ARCHITECTURA<BR/>Céramique - Glossy black<BR/>1 grand bac : 100 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB et 2B<BR/>Coloris dispo : blanc et glossy black<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -5401,6 +5622,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UZ8",
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Glossy black"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "VA5",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Glossy black brillant"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "U46",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Grès"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "UZ5",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -5420,6 +5671,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4276
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 244,
                     "attrIdentifier": "NAT-50-001-CATEGORIE",
                     "valueString": {
@@ -5430,11 +5690,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 364,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5798,50 +6087,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "UZ8",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Glossy black"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 116
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 363,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6085,8 +6335,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-UZ8",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-UZ8",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Glossy black"
@@ -6095,8 +6345,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-363",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-363",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "2 bacs"
@@ -6489,6 +6739,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier ARCHITECTURA<BR/>Céramique - Glossy black<BR/>2 bacs : 116 x 51 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Evier réversible<BR/>Versions dispo : 1B, 1 GB et 2B<BR/>Coloris dispo : blanc et glossy black<BR/>B = Bac / GB = grand bac"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -6534,6 +6811,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UZ8",
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Glossy black"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "VA5",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Glossy black brillant"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "U46",
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Grès"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "UZ5",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -6553,6 +6860,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4276
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 244,
                     "attrIdentifier": "NAT-50-001-CATEGORIE",
                     "valueString": {
@@ -6563,11 +6879,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 116
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 363,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6931,6 +7276,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Evier encastrable Architectura céramique - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Avec son matériau tendance très résistant, son design et ses coloris très réussis, l'évier à encastrer Architectura céramique VILLEROY & BOCH est proposé en 3 versions et 2 coloris. Réversible, avec vidage automatique. Il est fabriqué en France."
         },
         "urlKeyword": {
             "locale": "fr",

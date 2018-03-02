@@ -22,9 +22,18 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1576
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -110,26 +119,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B12",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Electronique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-HAUTEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -163,6 +152,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 45
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -333,7 +331,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -342,7 +340,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -440,8 +438,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-103",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -824,6 +822,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "MICRO-ONDES COMBINE ELECTRONIQUE<BR/>SAUTER SMC4470W - BLANC<BR/>40 LITRES - 1000 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- CHALEUR TOURNANTE<BR/>- GRIL : 1750 W<BR/>- 12 PROGRAMMES AUTOMATIQUES<BR/>- EXISTE EN NOIR OU INOX"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : H45 x L56 x P55 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -869,11 +894,50 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "A76",
                     "attrIdentifier": "NAT-25-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Micro-ondes combiné"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B12",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Electronique"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1115,11 +1179,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1251,7 +1315,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -1277,26 +1341,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Micro-ondes combiné"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B12",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Electronique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1335,6 +1379,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 45
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -1612,8 +1665,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-105",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Noir"
@@ -1996,6 +2049,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "MICRO-ONDES COMBINE ELECTRONIQUE<BR/>SAUTER SMC4470B - NOIR<BR/>40 LITRES - 1000 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- CHALEUR TOURNANTE<BR/>- GRIL : 1750 W<BR/>- 12 PROGRAMMES AUTOMATIQUES<BR/>- EXISTE EN BLANC OU INOX"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : H45 x L56 x P55 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2041,11 +2121,50 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "A76",
                     "attrIdentifier": "NAT-25-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Micro-ondes combiné"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B12",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Electronique"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2454,26 +2573,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B12",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Electronique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 303,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Inox"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-HAUTEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2507,6 +2606,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 45
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -2793,8 +2901,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-303",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-303",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Inox"
@@ -3177,6 +3285,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "MICRO-ONDES COMBINE ELECTRONIQUE<BR/>SAUTER SMC4470X - INOX<BR/>40 LITRES - 1000 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- CHALEUR TOURNANTE<BR/>- GRIL : 1750 W<BR/>- 12 PROGRAMMES AUTOMATIQUES<BR/>- EXISTE EN BLANC OU NOIR"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : H45 x L56 x P55 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3222,11 +3357,50 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "A76",
                     "attrIdentifier": "NAT-25-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Micro-ondes combiné"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B12",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Electronique"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3401,11 +3575,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "SUR DELAI COURT"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3635,6 +3809,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Four multifonction SAUTER 40L gain de place - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Performances de la chaleur tournante, praticité du micro-ondes : ce four « gain de place » SAUTER encastrable est de plus très séduisant avec sa finition « miroir »."
         },
         "urlKeyword": {
             "locale": "fr",

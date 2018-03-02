@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -22,9 +22,18 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1602
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -59,24 +68,6 @@
             "valueString": {
                 "locale": "fr",
                 "content": 0
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-60",
-            "valueString": {
-                "locale": "fr",
-                "content": "-60%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -123,16 +114,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pied"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 167,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Chromé"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -286,7 +267,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -295,7 +276,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -393,8 +374,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-167",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-167",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Chromé"
@@ -777,6 +758,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "PIED DE TABLE<BR/>CHROME<BR/>HAUTEUR : 70 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -822,6 +812,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 167,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Chromé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 167,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Chromé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 483,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Acier"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 457,
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -835,7 +855,7 @@
                     "attrIdentifier": "LAPEYRE-PROMO-ID",
                     "valueString": {
                         "locale": "fr",
-                        "content": 4270
+                        "content": "NO_PROMO"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -937,11 +957,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XXL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -980,7 +1000,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017020220
+                        "content": "06017020220"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1013,11 +1033,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1098,30 +1118,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "isSoldes",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 1.6
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ribbonad-soldesRateValue-60",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "-60%"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1167,7 +1169,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -1193,16 +1195,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pied"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 303,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Inox"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1454,8 +1446,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-303",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-303",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Inox"
@@ -1828,6 +1820,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "PIED DE TABLE<BR/>CHROME MAT<BR/>HAUTEUR : 70 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1873,6 +1874,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 483,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Acier"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 457,
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -1889,6 +1920,15 @@
                         "locale": "fr",
                         "content": 22.39
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1988,11 +2028,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "M",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT M"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2031,7 +2071,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017020220
+                        "content": "06017020220"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2158,15 +2198,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "isSoldes",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2218,7 +2249,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -2245,6 +2276,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Pieds de table rond - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Disponible en finition chromé ou inox, ce pied de table rond apportera une touche design à votre table ou à votre plan de travail."
         },
         "urlKeyword": {
             "locale": "fr",

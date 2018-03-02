@@ -22,12 +22,12 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 1
         },
         {
-            "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+            "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
             "attrUsage": 1,
             "attrSequence": 2
         },
@@ -124,35 +124,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "J76",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Onyx"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 78
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -168,16 +139,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pierre reconstituée"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 361,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -439,8 +400,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-J76",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-J76",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Onyx"
@@ -449,8 +410,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-361",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-361",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac"
@@ -852,6 +813,60 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "EVIER GAIA ONYX 1 BAC<BR/>Synthèse"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Encastrement : l.760xH.480 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique<BR/>Réversible<BR/>Diamètre de bonde 90 mm<BR/>Evier pré-percé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "780X500 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 10 ans"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -897,6 +912,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "J76",
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Onyx"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "J76",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Onyx"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 371,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pierre reconstituée"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "U77",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -926,11 +971,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 78
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 361,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1042,11 +1116,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "SUR DELAI COURT"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1294,35 +1368,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "J76",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Onyx"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 97
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -1338,16 +1383,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pierre reconstituée"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 364,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1609,8 +1644,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-J76",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-J76",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Onyx"
@@ -1619,8 +1654,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-364",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-364",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 grand bac"
@@ -2022,6 +2057,60 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "EVIER GAIA ONYX 1 GRAND BAC<BR/>Synthèse"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Encastrement : l.950xH.480 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique<BR/>Réversible<BR/>Diamètre de bonde 90 mm<BR/>Evier pré-percé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "970x500 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 10 ans"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2067,6 +2156,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "J76",
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Onyx"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "J76",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Onyx"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 371,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pierre reconstituée"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "U77",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -2096,11 +2215,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 97
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 364,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2464,35 +2612,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "J76",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Onyx"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 97
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -2508,16 +2627,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pierre reconstituée"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 362,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2779,8 +2888,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-J76",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-J76",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Onyx"
@@ -2789,8 +2898,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-362",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-362",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac 1/2"
@@ -3192,6 +3301,60 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "EVIER GAIA ONYX 1.5 BAC<BR/>Synthèse"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Encastrement : l.950xH.480 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique<BR/>Réversible<BR/>Diamètre de bonde 90 mm<BR/>Evier pré-percé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "970X500 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 10 ans"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3237,6 +3400,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "J76",
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Onyx"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "J76",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Onyx"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 371,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pierre reconstituée"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "U77",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -3266,11 +3459,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 97
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 362,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3634,35 +3856,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "J76",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Onyx"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 116
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -3678,16 +3871,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pierre reconstituée"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 363,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3949,8 +4132,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-J76",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-J76",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Onyx"
@@ -3959,8 +4142,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-363",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-363",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "2 bacs"
@@ -4362,6 +4545,60 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "EVIER GAIA ONYX 2 BACS<BR/>Synthèse"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Encastrement : l.1140xH.480 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique<BR/>Réversible<BR/>Diamètre de bonde 90 mm<BR/>Evier pré-percé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1160X500 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 10 ans"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4407,6 +4644,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "J76",
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Onyx"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "J76",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Onyx"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 371,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pierre reconstituée"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "U77",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -4436,11 +4703,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 116
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 363,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4804,35 +5100,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "TO3",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Vanilla"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 78
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -4848,16 +5115,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pierre reconstituée"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 361,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5128,8 +5385,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-TO3",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-TO3",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Vanilla"
@@ -5138,8 +5395,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-361",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-361",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac"
@@ -5541,6 +5798,60 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "EVIER GAIA VANILLA 1 BAC<BR/>Synthèse"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Encastrement : l.760xH.480 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique<BR/>Réversible<BR/>Diamètre de bonde 90 mm<BR/>Evier pré-percé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "780X500 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 10 ans"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -5586,6 +5897,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "TO3",
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vanilla"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "TO3",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vanilla"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 371,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pierre reconstituée"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "U77",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -5615,11 +5956,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 78
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 361,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5983,35 +6353,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "TO3",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Vanilla"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 97
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -6027,16 +6368,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pierre reconstituée"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 364,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6298,8 +6629,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-TO3",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-TO3",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Vanilla"
@@ -6308,8 +6639,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-364",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-364",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 grand bac"
@@ -6711,6 +7042,60 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "EVIER GAIA VANILLA 1 GRAND BAC<BR/>Synthèse"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Encastrement : l.950xH.480 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique<BR/>Réversible<BR/>Diamètre de bonde 90 mm<BR/>Evier pré-percé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "970x500 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 10 ans"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -6756,6 +7141,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "TO3",
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vanilla"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "TO3",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vanilla"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 371,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pierre reconstituée"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "U77",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -6785,11 +7200,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 97
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 364,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7153,35 +7597,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "TO3",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Vanilla"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 97
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -7197,16 +7612,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pierre reconstituée"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 362,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7468,8 +7873,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-TO3",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-TO3",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Vanilla"
@@ -7478,8 +7883,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-362",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-362",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac 1/2"
@@ -7881,6 +8286,60 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "EVIER GAIA VANILLA 1.5 BAC<BR/>Synthèse"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Encastrement : l.950xH.480 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique<BR/>Réversible<BR/>Diamètre de bonde 90 mm<BR/>Evier pré-percé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "970X500 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 10 ans"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -7926,6 +8385,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "TO3",
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vanilla"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "TO3",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vanilla"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 371,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pierre reconstituée"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "U77",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -7955,11 +8444,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 97
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 362,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8323,35 +8841,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "TO3",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Vanilla"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 116
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -8367,16 +8856,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pierre reconstituée"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 363,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8638,8 +9117,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-TO3",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-TO3",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Vanilla"
@@ -8648,8 +9127,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-363",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-363",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "2 bacs"
@@ -9051,6 +9530,60 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "EVIER GAIA VANILLA 2 BACS<BR/>Synthèse"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Encastrement : l.1140xH.480 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique<BR/>Réversible<BR/>Diamètre de bonde 90 mm<BR/>Evier pré-percé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1160X500 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 10 ans"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -9096,6 +9629,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "TO3",
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vanilla"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "TO3",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vanilla"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 371,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pierre reconstituée"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "U77",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -9125,11 +9688,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 116
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 363,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9493,35 +10085,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 279,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Café crème"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 78
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -9537,16 +10100,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pierre reconstituée"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 361,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9808,8 +10361,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-279",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-279",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Café crème"
@@ -9818,8 +10371,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-361",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-361",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac"
@@ -10211,6 +10764,60 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "EVIER GAIA CAFE CREME 1 BAC<BR/>Synthèse"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Encastrement : l.760xH.480 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique<BR/>Réversible<BR/>Diamètre de bonde 90 mm<BR/>Evier pré-percé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "780X500 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 10 ans"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -10256,6 +10863,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 371,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pierre reconstituée"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "U77",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -10285,11 +10922,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 78
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 361,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10653,35 +11319,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 279,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Café crème"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 97
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -10697,16 +11334,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pierre reconstituée"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 364,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10968,8 +11595,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-279",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-279",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Café crème"
@@ -10978,8 +11605,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-364",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-364",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 grand bac"
@@ -11371,6 +11998,60 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "EVIER GAIA CAFE CREME 1 GRAND BAC<BR/>Synthèse"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Encastrement : l.950xH.480 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique<BR/>Réversible<BR/>Diamètre de bonde 90 mm<BR/>Evier pré-percé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "970x500 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 10 ans"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -11416,6 +12097,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 371,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pierre reconstituée"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "U77",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -11445,11 +12156,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 97
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 364,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 grand bac"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11813,35 +12553,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 279,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Café crème"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 97
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -11857,16 +12568,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pierre reconstituée"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 362,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -12128,8 +12829,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-279",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-279",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Café crème"
@@ -12138,8 +12839,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-362",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-362",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "1 bac 1/2"
@@ -12531,6 +13232,60 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "EVIER GAIA CAFE CREME 1.5 BAC<BR/>Synthèse"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Encastrement : l.950xH.480 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique<BR/>Réversible<BR/>Diamètre de bonde 90 mm<BR/>Evier pré-percé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "970X500 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 10 ans"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -12576,6 +13331,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 371,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pierre reconstituée"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "U77",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -12605,11 +13390,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 97
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 362,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 bac 1/2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -12973,35 +13787,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 279,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Café crème"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "UA4",
-                    "attrIdentifier": "ATC-EGOUTTOIR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réversible"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 116
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "ATC-POSE",
                     "valueString": {
@@ -13017,16 +13802,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Pierre reconstituée"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 363,
-                    "attrIdentifier": "ATC-VERSION-CUISINETTE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -13288,8 +14063,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-50-COULEUR-279",
-                    "attrIdentifier": "CCU0001-FAM-50-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-279",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Café crème"
@@ -13298,8 +14073,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE-363",
-                    "attrIdentifier": "CCU0001-NAT-50-001-VERSION-CUISINETTE",
+                    "valueIdentifier": "CCU0001-ATC-VERSION-CUISINETTE-363",
+                    "attrIdentifier": "CCU0001-ATC-VERSION-CUISINETTE",
                     "valueString": {
                         "locale": "fr",
                         "content": "2 bacs"
@@ -13691,6 +14466,60 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "EVIER GAIA CAFE CREME 2 BACS<BR/>Synthèse"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique fourni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Encastrement : l.1140xH.480 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage automatique<BR/>Réversible<BR/>Diamètre de bonde 90 mm<BR/>Evier pré-percé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1160X500 mm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Garantie 10 ans"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -13736,6 +14565,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 279,
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Café crème"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 371,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pierre reconstituée"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "U77",
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -13765,11 +14624,40 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "UA4",
+                    "attrIdentifier": "NAT-50-001-EGOUTTOIR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Réversible"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 116
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 365,
                     "attrIdentifier": "NAT-50-001-POSE",
                     "valueString": {
                         "locale": "fr",
                         "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 363,
+                    "attrIdentifier": "NAT-50-001-VERSION-CUISINETTE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2 bacs"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -14129,6 +15017,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Evier à encastrer Gaïa matériau de synthèse - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Avec ses courbes et ses lignes magnifiques, l'évier Gaïa FRANKE, fabriqué en pierre reconstituée (quartz + résine) apportera douceur et harmonie dans votre cuisine. Disponible en 4 versions, il est pré-percé et équipé de son vidage automatique."
         },
         "urlKeyword": {
             "locale": "fr",

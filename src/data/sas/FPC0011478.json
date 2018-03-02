@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -21,6 +21,15 @@
     },
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1603
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
         {
             "attrIdentifier": "categorieGoogle",
             "valueString": {
@@ -54,24 +63,6 @@
             "valueString": {
                 "locale": "fr",
                 "content": 0
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-70",
-            "valueString": {
-                "locale": "fr",
-                "content": "-70%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -260,7 +251,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -269,7 +260,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -732,6 +723,51 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "SIPHON DE GROUPE<BR/>Pour groupe de sécurité"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "SIPHON POUR GROUPE<BR/>DE SECURITE"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "SIPHON POUR GROUPE DE SECURITE"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-7",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "SIPHON POUR GROUPE<BR/>DE SECURITE"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "<BR/>3325319100607"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -810,7 +846,7 @@
                 "attrIdentifier": "LAPEYRE-PROMO-ID",
                 "valueString": {
                     "locale": "fr",
-                    "content": 4271
+                    "content": "NO_PROMO"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -873,11 +909,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "XXL",
+                "valueIdentifier": "A",
                 "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                 "valueString": {
                     "locale": "fr",
-                    "content": "FORMAT XXL"
+                    "content": "EN STOCK SELON MAGASINS"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -930,11 +966,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
+                "valueIdentifier": 2,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1015,30 +1051,12 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "isSoldes",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "poids",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
                     "content": 1.5
                 },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ribbonad-soldesRateValue-70",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "-70%"
-                },
-                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -1084,7 +1102,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": true
+            "content": false
         },
         "label": {
             "locale": "fr",
@@ -1110,6 +1128,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Siphon de groupe 32 mm - Salle de bains"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "ce siphon 32mm est l'accessoire complémentaire indispensable au groupe de sécurité de votre chauffe-eau."
         },
         "urlKeyword": {
             "locale": "fr",

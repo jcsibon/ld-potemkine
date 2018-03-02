@@ -22,14 +22,23 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
+            "attrUsage": 1,
+            "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
             "attrUsage": 1,
             "attrSequence": 2
         },
         {
-            "attrIdentifier": "CCU0001-FAM-25-COULEUR",
-            "attrUsage": 1,
-            "attrSequence": 1
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1605
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -105,16 +114,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B20",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Verre galbé"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -139,16 +138,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "E"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 303,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Inox"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -418,23 +407,23 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-59.8",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 59.8
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-303",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-303",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Inox"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-59.8",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 59.8
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -821,6 +810,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HOTTE DECORATIVE GALBE<BR/>FRANKE FAR605XS - INOX VERRE<BR/>LARGEUR : 60 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- 1 MOTEUR 145W<BR/>- 3 VITESSES D'ASPIRATION / 65 DB<BR/>- DEBIT-D'AIR : 410 M3/H<BR/>- FILTES MET.LAVABLES/TOUCH SOFT TOUCH"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H72.5/100 x L59.8 x P47 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -863,6 +879,45 @@
                         "locale": "fr",
                         "content": 203.769
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B20",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Verre galbé"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1242,16 +1297,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B20",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Verre galbé"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1276,16 +1321,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "E"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 303,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Inox"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1546,23 +1581,23 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-89.8",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 89.8
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-303",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-303",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Inox"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-89.8",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 89.8
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1949,6 +1984,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HOTTE DECORATIVE GALBE<BR/>FRANKE FAR905XS - INOX VERRE<BR/>LARGEUR : 90 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- 1 MOTEUR 145W<BR/>- 3 VITESSES D'ASPIRATION / 65 DB<BR/>- DEBIT-D'AIR : 410 M3/H<BR/>- FILTES MET.LAVABLES/TOUCH SOFT TOUCH"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H72.5/100 x L89.8 x P47 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1991,6 +2053,45 @@
                         "locale": "fr",
                         "content": 305.994
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B20",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Verre galbé"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2370,16 +2471,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B20",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Verre galbé"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2404,16 +2495,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "D"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2674,23 +2755,23 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-59.8",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 59.8
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-105",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Noir"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-59.8",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 59.8
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -3077,6 +3158,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HOTTE DECORATIVE GALBE<BR/>FRANKE FGC625BKX - INOX VERRE NOIR<BR/>LARGEUR : 60 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 MOTEUR 250W/63 A 68DB + 1 INTENSIVE<BR/>3 VITESSES D'ASPIRATION + 1 INTENSIVE<BR/>DEBIT-D'AIR:545 A 660 M3/H + 1 INTENSIVE<BR/>FILTES MET.LAVABLES/TOUCH SOFT TOUCH"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H67/100 x L59.8 x P49 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3119,6 +3227,45 @@
                         "locale": "fr",
                         "content": 208.343
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B20",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Verre galbé"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3498,16 +3645,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B20",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Verre galbé"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3532,16 +3669,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "D"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3802,23 +3929,23 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-89.8",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 89.8
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-105",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Noir"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-89.8",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 89.8
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -4205,6 +4332,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HOTTE DECORATIVE GALBE<BR/>FRANKE FGC925BKX -  INOX VERRE NOIR<BR/>LARGEUR : 90 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1 MOTEUR 250W/63 A 68DB + 1 INTENSIVE<BR/>3 VITESSES D'ASPIRATION + 1 INTENSIVE<BR/>DEBIT-D'AIR:545 A 660 M3/H + 1 INTENSIVE<BR/>FILTES MET.LAVABLES/TOUCH SOFT TOUCH"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H67/100 x L89.8 x P49 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4247,6 +4401,45 @@
                         "locale": "fr",
                         "content": 312.863
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B20",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Verre galbé"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -4636,6 +4829,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Hotte décorative murale en verre galbé FRANKE -  Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Cette hotte décorative murale Franke au verre galbé, tout en inox et verre transparent ou noir, existe en 60 et 90 cm. Équipé de 4 vitesses d\u2019aspiration ce modèle neutralise toutes les odeurs."
         },
         "urlKeyword": {
             "locale": "fr",

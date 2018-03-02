@@ -1,14 +1,17 @@
 {"product": {
     "brandName": "Lapeyre",
     "brandPartnumber": 503,
-    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "baies-coulissantes-pvc-CCN688832"}},
+    "categoriesParentList": {"categoryParent": [
+        {"categoryIdentifier": "pvc-CCN688463"},
+        {"categoryIdentifier": "baies-coulissantes-pvc-CCN688832"}
+    ]},
     "imageFull": {
         "locale": "fr",
         "content": "/collMain/915/134/200915134.jpg"
     },
     "published": {
         "locale": "fr",
-        "content": false
+        "content": true
     },
     "label": {
         "locale": "fr",
@@ -54,6 +57,15 @@
             "valueString": {
                 "locale": "fr",
                 "content": "Prix pour la dimension H  x L"
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
+        {
+            "attrIdentifier": "ribbonad-promotionLabel",
+            "valueString": {
+                "locale": "fr",
+                "content": "Jusqu'à -25%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -111,6 +123,15 @@
                     "content": "Baie coulissante"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-NORME-NF",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
                 "attrSequence": 0
             },
             {
@@ -291,15 +312,6 @@
                     "content": "G13/G122/G1080/G8432/"
                 },
                 "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATS-CodeADA",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 2194570
-                },
                 "attrSequence": 0
             },
             {
@@ -897,7 +909,7 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "PVC",
+                "valueIdentifier": 258,
                 "attrIdentifier": "SPEC-FAM-NMA",
                 "valueString": {
                     "locale": "fr",
@@ -907,11 +919,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 0,
+                "valueIdentifier": "C",
                 "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                 "valueString": {
                     "locale": "fr",
-                    "content": "SANS OBJET"
+                    "content": "SUR DELAI LONG"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1077,6 +1089,15 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "ribbonad-promotionLabel",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Jusqu'à -25%"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "valueIdentifier": "UN",
                 "attrIdentifier": "uniteSecondaire",
                 "valueString": {
@@ -1119,7 +1140,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": false
+            "content": true
         },
         "label": {
             "locale": "fr",

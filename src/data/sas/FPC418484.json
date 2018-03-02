@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -22,9 +22,18 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1603
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -114,16 +123,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Séparateur"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -277,7 +276,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -286,7 +285,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -385,7 +384,7 @@
                 },
                 {
                     "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-36.8",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -823,11 +822,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 258,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pvc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "S20",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Eléments complémentaires"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -972,7 +990,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017050210
+                        "content": "06017050210"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1005,11 +1023,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1168,7 +1186,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -1194,16 +1212,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Séparateur"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1348,7 +1356,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1357,7 +1365,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1456,7 +1464,7 @@
                 },
                 {
                     "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-56.8",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1894,11 +1902,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 258,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pvc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "S20",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Eléments complémentaires"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2043,7 +2070,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017050220
+                        "content": "06017050220"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2076,11 +2103,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2239,7 +2266,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -2265,16 +2292,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Séparateur"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2419,7 +2436,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -2428,7 +2445,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -2527,7 +2544,7 @@
                 },
                 {
                     "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-76.8",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -2965,11 +2982,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 258,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pvc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "S20",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Eléments complémentaires"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3114,7 +3150,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017050220
+                        "content": "06017050220"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3147,11 +3183,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3310,7 +3346,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -3336,16 +3372,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Séparateur"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3490,7 +3516,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -3499,7 +3525,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -3598,7 +3624,7 @@
                 },
                 {
                     "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-96.8",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -4036,11 +4062,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 258,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pvc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "S20",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Eléments complémentaires"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4185,7 +4230,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017050230
+                        "content": "06017050230"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4218,11 +4263,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4381,7 +4426,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -4408,6 +4453,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Séparateurs casseroles modulables - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Grâce à ces séparateurs casseroles modulables, vous pouvez gérer facilement le contenu de vos tiroirs, en les compartimentant selon vos besoins. Différentes largeurs à votre disposition."
         },
         "urlKeyword": {
             "locale": "fr",

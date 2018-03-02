@@ -22,14 +22,14 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-            "attrUsage": 1,
-            "attrSequence": 2
-        },
-        {
-            "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+            "attrUsage": 1,
+            "attrSequence": 2
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -105,16 +105,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B18",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Ilôt"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -139,16 +129,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "C"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 303,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Inox"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -409,23 +389,23 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-40",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 40
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-303",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-303",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Inox"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-40",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 40
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -812,6 +792,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HOTTE DECORATIVE ILOT<BR/>FRANKE MERCURY 400 - INOX<BR/>LARGEUR 40 cm - CLASSE C"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- 1 MOTEUR / 73 dB EN VITESSE MAXIMALE<BR/>- 3 VITESSES D'ASPIRATION + 1 INTENSIVE<BR/>- DEBIT-D'AIR : 450 m3/h<BR/>- ECLAIRAGE LED 2 x 5 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H 103,1 x L 40 x P 40 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -857,12 +864,42 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 894
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B18",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Ilôt"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1233,16 +1270,6 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "B18",
-                    "attrIdentifier": "ATC-APPAREIL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Ilôt"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1267,16 +1294,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "C"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1546,23 +1563,23 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-40",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 40
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-105",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Noir"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-40",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 40
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1949,6 +1966,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HOTTE DECORATIVE ILOT<BR/>FRANKE MERCURY 400 - NOIR<BR/>LARGEUR 40 cm - CLASSE C"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- 1 MOTEUR / 73 dB EN VITESSE MAXIMALE<BR/>- 3 VITESSES D'ASPIRATION + 1 INTENSIVE<BR/>- DEBIT-D'AIR : 450 m3/h<BR/>- ECLAIRAGE LED 2 x 5 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS TOUT : H 103,1 x L 40 x P 40 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1994,12 +2038,42 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 894
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B18",
+                    "attrIdentifier": "NAT-25-001-APPAREIL",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Ilôt"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2389,6 +2463,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Hotte décorative îlot noir ou inox FRANKE - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Hautement décorative avec sa forme cubique, la hotte îlot noir ou inox FRANKE réalise une aspiration périphérique efficace en devenant un élément central de votre espace cuisine."
         },
         "urlKeyword": {
             "locale": "fr",

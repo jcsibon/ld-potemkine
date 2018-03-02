@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -59,28 +59,10 @@
             "attrSequence": 0
         },
         {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
                 "content": "Prix pour la dimension L 250,0 cm  x P 63,0 cm x Ep. 28,0 mm"
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-50",
-            "valueString": {
-                "locale": "fr",
-                "content": "-50%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -121,6 +103,15 @@
     "itemList": {"item": {
         "attributeValueList": {"attributeValue": [
             {
+                "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
                 "valueIdentifier": 325,
                 "attrIdentifier": "ATC-CATEGORIE",
                 "valueString": {
@@ -141,16 +132,6 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 302,
-                "attrIdentifier": "ATC-COULEUR",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Hêtre lamellé"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "valueIdentifier": 343,
                 "attrIdentifier": "ATC-DECOR",
                 "valueString": {
@@ -161,20 +142,11 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "ATC-EPAISSEUR",
+                "attrIdentifier": "ATC-NORME-PEFC",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 28
-                },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATC-LONGUEUR",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 250
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -327,7 +299,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -336,7 +308,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -853,20 +825,41 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 432,
-                "attrIdentifier": "FAM-50-MODELE",
+                "valueIdentifier": 302,
+                "attrIdentifier": "FAM-50-COULEUR",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Lamellé hêtre"
+                    "content": "Hêtre lamellé"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "LAPEYRE-PROMO-ID",
+                "valueIdentifier": "N66",
+                "attrIdentifier": "FAM-50-FINITION",
                 "valueString": {
                     "locale": "fr",
-                    "content": 4269
+                    "content": "Hêtre lamellé ton bois"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 261,
+                "attrIdentifier": "FAM-50-MATERIAU",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Stratifié"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 432,
+                "attrIdentifier": "FAM-50-MODELE",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Lamellé hêtre"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -879,6 +872,24 @@
                     "content": "Plan de travail"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "NAT-50-001-EPAISSEUR",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 28
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "NAT-50-001-LONGUEUR",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 250
+                },
                 "attrSequence": 0
             },
             {
@@ -948,11 +959,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "XL",
+                "valueIdentifier": "A",
                 "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                 "valueString": {
                     "locale": "fr",
-                    "content": "FORMAT XL"
+                    "content": "EN STOCK SELON MAGASINS"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -991,7 +1002,7 @@
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                 "valueString": {
                     "locale": "fr",
-                    "content": 6021010260
+                    "content": "06021010260"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1024,11 +1035,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
+                "valueIdentifier": 2,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1118,15 +1129,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "isSoldes",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "poids",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -1149,15 +1151,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "Prix pour la dimension L 250,0 cm  x P 63,0 cm x Ep. 28,0 mm"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ribbonad-soldesRateValue-50",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "-50%"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1205,7 +1198,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": true
+            "content": false
         },
         "label": {
             "locale": "fr",
@@ -1231,6 +1224,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Plan de travail Hêtre stratifié 28 mm - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Ravivez la luminosité au c?ur de votre cuisine grâce au décor clair du plan de travail Hêtre stratifié 28 mm. La longueur et la profondeur du plan de travail peuvent être recoupés dans nos ateliers."
         },
         "urlKeyword": {
             "locale": "fr",

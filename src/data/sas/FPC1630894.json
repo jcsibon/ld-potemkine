@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -21,6 +21,15 @@
     },
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1602
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
         {
             "attrIdentifier": "categorieGoogle",
             "valueString": {
@@ -59,28 +68,10 @@
             "attrSequence": 0
         },
         {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
                 "content": "Prix pour la dimension H 80,0 x L 65,0  x P 5,3 cm"
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-60",
-            "valueString": {
-                "locale": "fr",
-                "content": "-60%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -326,7 +317,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -335,7 +326,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -796,6 +787,33 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "TUBE<BR/>Miroir avec tubes fluorescents<BR/>2 bandes dépolies verticales de 57 cm"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Tubes Classe II IP 44"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "L 65 x H 80 cm"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -873,7 +891,7 @@
                 "attrIdentifier": "LAPEYRE-PROMO-ID",
                 "valueString": {
                     "locale": "fr",
-                    "content": 4270
+                    "content": "NO_PROMO"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -993,11 +1011,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "XL",
+                "valueIdentifier": "A",
                 "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                 "valueString": {
                     "locale": "fr",
-                    "content": "FORMAT XL"
+                    "content": "EN STOCK SELON MAGASINS"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1060,11 +1078,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
+                "valueIdentifier": 2,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1154,15 +1172,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "isSoldes",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "poids",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -1185,15 +1194,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "Prix pour la dimension H 80,0 x L 65,0  x P 5,3 cm"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ribbonad-soldesRateValue-60",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "-60%"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1241,7 +1241,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": true
+            "content": false
         },
         "label": {
             "locale": "fr",
@@ -1271,6 +1271,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Miroir lumineux TUBE - Salle de bains"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Ce miroir lumineux de salle de bains, à finition biseautée design et épurée, dispose de 2 bandes LED verticales sur bande dépolie pour un éclairage doux et bien orienté, idéal pour la toilette."
         },
         "urlKeyword": {
             "locale": "fr",

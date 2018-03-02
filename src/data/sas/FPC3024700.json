@@ -22,9 +22,18 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1576
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -110,26 +119,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B12",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Electronique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-HAUTEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -163,6 +152,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 38
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -440,8 +438,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-105",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Noir"
@@ -824,6 +822,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "MICRO-ONDES ELECTRONIQUE<BR/>SAUTER SMS4340B NOIR<BR/>26 LITRES - 900 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- 4 NIVEAUX DE PUISSANCE<BR/>- QUATTRO SYSTEM (DIFFU.OPTIMALE ONDES)<BR/>- KIT D'ENCASTREMENT FOURNI<BR/>- EXISTE EN BLANC ou INOX"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : H38 x L56 x P55 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -869,11 +894,50 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Y57",
                     "attrIdentifier": "NAT-25-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Micro-ondes"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B12",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Electronique"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1048,11 +1112,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "SUR DELAI COURT"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1282,26 +1346,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B12",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Electronique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-HAUTEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1335,6 +1379,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 38
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -1621,8 +1674,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-103",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -2005,6 +2058,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "MICRO-ONDES ELECTRONIQUE<BR/>SAUTER SMS4340W BLANC<BR/>26 LITRES - 900 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- 4 NIVEAUX DE PUISSANCE<BR/>- QUATTRO SYSTEM (DIFFU.OPTIMALE ONDES)<BR/>- KIT D'ENCASTREMENT FOURNI<BR/>- EXISTE EN NOIR ou INOX"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : H38 x L56 x P55 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2050,11 +2130,50 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Y57",
                     "attrIdentifier": "NAT-25-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Micro-ondes"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B12",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Electronique"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2234,6 +2353,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "SUR DELAI COURT"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "C",
+                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "CREE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2453,26 +2582,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B12",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Electronique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 303,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Inox"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-HAUTEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2506,6 +2615,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 38
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -2783,8 +2901,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-303",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-303",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Inox"
@@ -3167,6 +3285,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "MICRO-ONDES ELECTRONIQUE<BR/>SAUTER SMS4340X INOX<BR/>26 LITRES - 900 W"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- 4 NIVEAUX DE PUISSANCE<BR/>- QUATTRO SYSTEM (DIFFU.OPTIMALE ONDES)<BR/>- KIT D'ENCASTREMENT FOURNI<BR/>- EXISTE EN NOIR ou BLANC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : H38 x L56 x P55 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3212,11 +3357,50 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "Y57",
                     "attrIdentifier": "NAT-25-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Micro-ondes"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B12",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Electronique"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3625,6 +3809,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Micro-ondes H.38 cm SAUTER - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "C'est d'abord son allure très design qui vous séduira. Mais le four micro-ondes encastrable SAUTER dispose de bien d'autres atouts pour un budget médian : commandes électroniques, 5 niveaux de puissance, fonctions performantes..."
         },
         "urlKeyword": {
             "locale": "fr",

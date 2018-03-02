@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -21,6 +21,15 @@
     },
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1603
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
         {
             "attrIdentifier": "categorieGoogle",
             "valueString": {
@@ -59,28 +68,10 @@
             "attrSequence": 0
         },
         {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
                 "content": "Prix pour la dimension H 60,0 x L 36,0  x P 22,0 cm"
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-60",
-            "valueString": {
-                "locale": "fr",
-                "content": "-60%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -346,7 +337,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -355,7 +346,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -826,6 +817,33 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Anaïs L36<BR/>Armoire de toilette<BR/>Classe II IP 24"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "PP mélaminé Blanc 16 mm"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "H 60 x L36 x  P22 cm"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -872,6 +890,16 @@
             },
             {
                 "valueIdentifier": 103,
+                "attrIdentifier": "FAM-31-COULEUR",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Blanc"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 103,
                 "attrIdentifier": "FAM-31-FINITION",
                 "valueString": {
                     "locale": "fr",
@@ -904,7 +932,7 @@
                 "attrIdentifier": "LAPEYRE-PROMO-ID",
                 "valueString": {
                     "locale": "fr",
-                    "content": 4270
+                    "content": "NO_PROMO"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1141,11 +1169,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
+                "valueIdentifier": 2,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1235,15 +1263,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "isSoldes",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "poids",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -1266,15 +1285,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "Prix pour la dimension H 60,0 x L 36,0  x P 22,0 cm"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ribbonad-soldesRateValue-60",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "-60%"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1322,7 +1332,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": true
+            "content": false
         },
         "label": {
             "locale": "fr",
@@ -1352,6 +1362,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Armoire de toilette ANAÏS - Salle de bains"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Optimisez vos rangements muraux avec cette armoire de toilette à 1 porte miroir et 2 tablettes intérieures éclairée d'un spot intégré : une solution petit prix idéale pour les salle de bains et espaces toilette."
         },
         "urlKeyword": {
             "locale": "fr",

@@ -12,7 +12,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -25,6 +25,15 @@
     },
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1602
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
         {
             "attrIdentifier": "categorieGoogle",
             "valueString": {
@@ -72,28 +81,10 @@
             "attrSequence": 0
         },
         {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
                 "content": "Prix pour la dimension l 37,5 cm  x L 260,0 cm x E 8,0 mm"
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-50",
-            "valueString": {
-                "locale": "fr",
-                "content": "-50%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -149,6 +140,15 @@
                 "valueDecimal": {
                     "locale": "fr",
                     "content": 8
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-FAB-EN-FRANCE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -366,7 +366,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -375,7 +375,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -953,7 +953,7 @@
                 "attrIdentifier": "LAPEYRE-PROMO-ID",
                 "valueString": {
                     "locale": "fr",
-                    "content": 4269
+                    "content": "NO_PROMO"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1217,11 +1217,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
+                "valueIdentifier": 2,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1311,15 +1311,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "isSoldes",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "poids",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -1342,15 +1333,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "Prix pour la dimension l 37,5 cm  x L 260,0 cm x E 8,0 mm"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ribbonad-soldesRateValue-50",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "-50%"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1398,7 +1380,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": true
+            "content": false
         },
         "label": {
             "locale": "fr",
@@ -1424,6 +1406,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Lambris PVC Ever Wood chêne blanchi - Salle de bains"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Le lambris en PVC imitation bois Grosfillex pour pièces humides séduit par son petit prix et son coloris chêne blanchi. A visser, coller ou agrafer, sa pose comme son entretien sont faciles."
         },
         "urlKeyword": {
             "locale": "fr",

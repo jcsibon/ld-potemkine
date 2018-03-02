@@ -22,14 +22,14 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-            "attrUsage": 1,
-            "attrSequence": 1
-        },
-        {
-            "attrIdentifier": "CCU0001-NAT-50-001-EPAISSEUR",
+            "attrIdentifier": "CCU0001-ATC-EPAISSEUR",
             "attrUsage": 1,
             "attrSequence": 2
+        },
+        {
+            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+            "attrUsage": 1,
+            "attrSequence": 1
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -114,6 +114,15 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 325,
                     "attrIdentifier": "ATC-CATEGORIE",
                     "valueString": {
@@ -134,16 +143,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 275,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc mat"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 341,
                     "attrIdentifier": "ATC-DECOR",
                     "valueString": {
@@ -154,20 +153,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-EPAISSEUR",
+                    "attrIdentifier": "ATC-NORME-PEFC",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 38
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 200
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -418,22 +408,22 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-200",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 200
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-50-001-EPAISSEUR-38",
-                    "attrIdentifier": "CCU0001-NAT-50-001-EPAISSEUR",
+                    "valueIdentifier": "CCU0001-ATC-EPAISSEUR-38",
+                    "attrIdentifier": "CCU0001-ATC-EPAISSEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 38
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-200",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 200
                     },
                     "attrSequence": 0
                 },
@@ -857,6 +847,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 275,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc mat"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "F32",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc mat uni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 261,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Stratifié"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 103,
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -876,6 +896,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4282
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 325,
                     "attrIdentifier": "NAT-50-001-CATEGORIE",
                     "valueString": {
@@ -883,6 +912,24 @@
                         "content": "Plan de travail"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 38
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 200
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -952,11 +999,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "L",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT L"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -995,7 +1042,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6021010260
+                        "content": "06021010260"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1212,6 +1259,15 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 325,
                     "attrIdentifier": "ATC-CATEGORIE",
                     "valueString": {
@@ -1232,16 +1288,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 275,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc mat"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 341,
                     "attrIdentifier": "ATC-DECOR",
                     "valueString": {
@@ -1252,20 +1298,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-EPAISSEUR",
+                    "attrIdentifier": "ATC-NORME-PEFC",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 38
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 300
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -1516,22 +1553,22 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-300",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 300
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-50-001-EPAISSEUR-38",
-                    "attrIdentifier": "CCU0001-NAT-50-001-EPAISSEUR",
+                    "valueIdentifier": "CCU0001-ATC-EPAISSEUR-38",
+                    "attrIdentifier": "CCU0001-ATC-EPAISSEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 38
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-300",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 300
                     },
                     "attrSequence": 0
                 },
@@ -1945,6 +1982,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 275,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc mat"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "F32",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc mat uni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 261,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Stratifié"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 103,
                     "attrIdentifier": "FAM-50-MODELE",
                     "valueString": {
@@ -1964,6 +2031,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4282
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 325,
                     "attrIdentifier": "NAT-50-001-CATEGORIE",
                     "valueString": {
@@ -1971,6 +2047,24 @@
                         "content": "Plan de travail"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 38
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 300
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -2040,11 +2134,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "L",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT L"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2073,7 +2167,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6021010280
+                        "content": "06021010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2300,16 +2394,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 341,
                     "attrIdentifier": "ATC-DECOR",
                     "valueString": {
@@ -2320,20 +2404,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-EPAISSEUR",
+                    "attrIdentifier": "ATC-NORME-PEFC",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 28
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 180
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -2584,22 +2659,22 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-180",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                    "attrUsage": 1,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 180
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-50-001-EPAISSEUR-28",
-                    "attrIdentifier": "CCU0001-NAT-50-001-EPAISSEUR",
+                    "valueIdentifier": "CCU0001-ATC-EPAISSEUR-28",
+                    "attrIdentifier": "CCU0001-ATC-EPAISSEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 28
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-180",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 180
                     },
                     "attrSequence": 0
                 },
@@ -2987,6 +3062,42 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "PLAN STRAT.28MM CH.POSTFO.BLANC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Recoupable"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Plan stratifié blanc<BR/>Chant postformé<BR/>Epaisseur 28 mm<BR/>Contreface grise"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "180 x 60 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3032,6 +3143,36 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-50-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "G08",
+                    "attrIdentifier": "FAM-50-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc unis"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 261,
+                    "attrIdentifier": "FAM-50-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Stratifié"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 325,
                     "attrIdentifier": "NAT-50-001-CATEGORIE",
                     "valueString": {
@@ -3039,6 +3180,24 @@
                         "content": "Plan de travail"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 28
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-50-001-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 180
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -3108,11 +3267,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "M",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT M"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3151,7 +3310,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6021010250
+                        "content": "06021010250"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3374,6 +3533,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Plan de travail Blanc stratifié 28 mm - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Sa luminosité en fera le centre de votre cuisine : le plan de travail Blanc stratifié est robuste, hydrofuge, disponible en 4 versions. Longueur et profondeur peuvent être recoupés dans nos ateliers."
         },
         "urlKeyword": {
             "locale": "fr",

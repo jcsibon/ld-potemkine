@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -25,6 +25,15 @@
             "attrIdentifier": "CCU0002-ATC-FINITION",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1601
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -64,28 +73,10 @@
             "attrSequence": 0
         },
         {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
                 "content": "Prix pour la dimension H 106,3 x L 64,0 cm"
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-70",
-            "valueString": {
-                "locale": "fr",
-                "content": "-70%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -803,6 +794,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "BARRE DE DOUCHE EN T OU L<BR/>DESIGN 15<BR/>COLORIS BLANC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ALUMINIUM EPOXY<BR/>DISPONIBLE EN VERSION CHROME BRILLANT"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H.106 X L. 60 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -887,6 +905,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "NAT-30-001-ANTICALCAIRE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -901,6 +928,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Accessoire"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Non utilisé"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1183,15 +1219,6 @@
                 },
                 {
                     "attrIdentifier": "isLivraisonDirecte",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "isSoldes",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1494,7 +1521,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1503,7 +1530,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1975,6 +2002,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "BARRE DE DOUCHE EN T OU L<BR/>DESIGN 15<BR/>CHROME BRILLANT"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ALUMINIUM EPOXY<BR/>DISPONIBLE EN COLORIS BLANC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H.106 X L. 60 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2053,7 +2107,7 @@
                     "attrIdentifier": "LAPEYRE-PROMO-ID",
                     "valueString": {
                         "locale": "fr",
-                        "content": 4271
+                        "content": "NO_PROMO"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2073,6 +2127,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Accessoire"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Non utilisé"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2269,11 +2332,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2363,15 +2426,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "isSoldes",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2394,15 +2448,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Prix pour la dimension H 106,3 x L 64,0 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ribbonad-soldesRateValue-70",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "-70%"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2450,7 +2495,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",

@@ -1,7 +1,7 @@
 {"product": {
     "brandName": "Lapeyre",
     "brandPartnumber": 503,
-    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "modele-origine_CCN1013"}},
+    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "modele-origine-CCN1013"}},
     "imageFull": {
         "locale": "fr",
         "content": "/standardMain/411/465/201411465.jpg"
@@ -22,9 +22,18 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+            "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 4283
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -119,26 +128,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "D70",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Incolore"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F20",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -156,6 +145,15 @@
                         "content": "CC1P1P40"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -434,8 +432,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-103",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -846,6 +844,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -865,11 +873,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1044,7 +1071,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1271,26 +1298,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "D70",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Incolore"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F20",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -1308,6 +1315,15 @@
                         "content": "CC1P1P40"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1577,8 +1593,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-104",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-104",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Gris"
@@ -1989,6 +2005,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -2008,11 +2034,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 104,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2187,7 +2232,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2401,6 +2446,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Colonne de cuisine de rangement faible profondeur ORIGINE - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Réalisée en panneau haute densité mélaminé avec chants antichoc, la colonne faible profondeur 2 portes 6 tablettes ORIGINE vous ouvre un vaste espace de rangement... Disponible en 2 largeurs."
         },
         "urlKeyword": {
             "locale": "fr",

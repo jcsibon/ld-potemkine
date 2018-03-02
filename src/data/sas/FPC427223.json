@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -21,6 +21,15 @@
     },
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1602
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
         {
             "attrIdentifier": "categorieGoogle",
             "valueString": {
@@ -59,28 +68,10 @@
             "attrSequence": 0
         },
         {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
                 "content": "Prix pour la dimension H 86,0 x L 44,0  x P 40,0 cm"
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-60",
-            "valueString": {
-                "locale": "fr",
-                "content": "-60%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -126,16 +117,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "Chaise"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 105,
-                "attrIdentifier": "ATC-COULEUR",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Noir"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -289,7 +270,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -298,7 +279,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -780,6 +761,15 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "CHAISE BONNIE METAL NOIR<BR/>Chaise design<BR/>Assise et piètement noir mat"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -825,6 +815,36 @@
                 "attrSequence": 0
             },
             {
+                "valueIdentifier": 105,
+                "attrIdentifier": "FAM-50-COULEUR",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Noir"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 319,
+                "attrIdentifier": "FAM-50-FINITION",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Noir mat"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "014",
+                "attrIdentifier": "FAM-50-MATERIAU",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Métal"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "valueIdentifier": "TQ9",
                 "attrIdentifier": "FAM-50-MODELE",
                 "valueString": {
@@ -838,7 +858,7 @@
                 "attrIdentifier": "LAPEYRE-PROMO-ID",
                 "valueString": {
                     "locale": "fr",
-                    "content": 4270
+                    "content": "NO_PROMO"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -851,6 +871,15 @@
                     "content": "Chaise"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "NAT-50-001-LONGUEUR",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 40
+                },
                 "attrSequence": 0
             },
             {
@@ -1007,11 +1036,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
+                "valueIdentifier": 2,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1092,15 +1121,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "isSoldes",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "poids",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -1123,15 +1143,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "Prix pour la dimension H 86,0 x L 44,0  x P 40,0 cm"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ribbonad-soldesRateValue-60",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "-60%"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1179,7 +1190,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": true
+            "content": false
         },
         "label": {
             "locale": "fr",
@@ -1205,6 +1216,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Chaise Bonnie - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "La chaise Bonnie LUISINA, conçue toute en métal noir, possède une vraie personnalité qui apportera une touche déco à votre intérieur."
         },
         "urlKeyword": {
             "locale": "fr",

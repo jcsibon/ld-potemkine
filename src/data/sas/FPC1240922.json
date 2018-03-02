@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -27,9 +27,18 @@
             "attrSequence": 2
         },
         {
-            "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+            "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
             "attrUsage": 1,
             "attrSequence": 3
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1602
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -133,7 +142,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 393,
+                    "attrIdentifier": "ATC-FORME",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carré"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "ATC-NB-COLIS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -300,7 +328,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -309,7 +337,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -409,7 +437,7 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-80",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -791,6 +819,69 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NEXT<BR/>Receveur à carreler plat<BR/>Polystyrène expansé de haute densité"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage horizontale ou verticale<BR/>vendu séparemment (diam 50)<BR/>Débit 75 L/min"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "5 ML de bande d'étanchéité fournie"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "90/90, 120/80 et 160/90 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Recouvert d'un mortier colle spécial,<BR/>imperméable et d'un tissu de verre pour<BR/>la bonne tenue du carrelage<BR/>Vidage centré pour receveur carré"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 80  x H 80 x P 4.5 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fabriqué en FRANCE<BR/>Prix attractif"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -856,6 +947,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "NAT-30-001-ANTICALCAIRE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -870,6 +970,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Receveur"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "80X80"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1077,11 +1186,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1222,7 +1331,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -1271,7 +1380,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 393,
+                    "attrIdentifier": "ATC-FORME",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carré"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "ATC-NB-COLIS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1538,7 +1666,7 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-90",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1920,6 +2048,69 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NEXT<BR/>Receveur à carreler plat<BR/>Polystyrène expansé de haute densité"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage horizontale ou verticale<BR/>vendu séparemment (diam 50)<BR/>Débit 75 L/min"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "5 ML de bande d'étanchéité fournie"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "80/80, 120/80 et 160/90 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Recouvert d'un mortier colle spécial,<BR/>imperméable et d'un tissu de verre pour<BR/>la bonne tenue du carrelage<BR/>Vidage centré pour receveur carré"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 90 x H 90x P 4.5 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fabriqué en FRANCE<BR/>Prix attractif"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1985,6 +2176,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "NAT-30-001-ANTICALCAIRE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1999,6 +2199,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Receveur"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "90 X 90 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2351,7 +2560,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -2400,7 +2609,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "K57",
+                    "attrIdentifier": "ATC-FORME",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Rectangulaire"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "ATC-NB-COLIS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -2667,7 +2895,7 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-80",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -3049,6 +3277,69 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NEXT<BR/>Receveur à carreler plat<BR/>Polystyrène expansé de haute densité"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage horizontale ou verticale<BR/>vendu séparemment (diam 50)<BR/>Débit 75 L/min"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "5 ML de bande d'étanchéité fournie"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "80/80, 90/90 et 160/90 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Recouvert d'un mortier colle spécial,<BR/>imperméable et d'un tissu de verre pour<BR/>la bonne tenue du carrelage<BR/>Vidage excentré pour rec rectangle"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 120 x H 80 x P 4.5 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fabriqué en FRANCE<BR/>Prix attractif"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3123,6 +3414,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "NAT-30-001-ANTICALCAIRE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3137,6 +3437,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Receveur"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "120 X 80 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3277,11 +3586,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XXL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3489,7 +3798,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -3538,7 +3847,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "K57",
+                    "attrIdentifier": "ATC-FORME",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Rectangulaire"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "ATC-NB-COLIS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -3805,7 +4133,7 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-90",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -4187,6 +4515,69 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NEXT<BR/>Receveur à carreler plat<BR/>Polystyrène expansé de haute densité"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage horizontale ou verticale<BR/>vendu séparemment (diam 50)<BR/>Débit 75 L/min"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "5 ML de bande d'étanchéité fournie"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "80/80, 90/90 et 120/80 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Recouvert d'un mortier colle spécial,<BR/>imperméable et d'un tissu de verre pour<BR/>la bonne tenue du carrelage<BR/>Vidage excentré pour rec rectangle"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 160 x H 90 x P 4.5 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fabriqué en FRANCE<BR/>Prix attractif"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4252,6 +4643,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "NAT-30-001-ANTICALCAIRE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4266,6 +4666,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Receveur"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "160 X 90 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4406,11 +4815,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XXL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4618,7 +5027,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -4649,6 +5058,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Receveur à carreler NEXT - Salle de bains"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Ce receveur à carreler fabriqué en France se distingue par sa solide composition en polystyrène haute densité et mousse 100% imperméable. Disponible en 4 dimensions, il est idéal pour l'accessibilité."
         },
         "urlKeyword": {
             "locale": "fr",

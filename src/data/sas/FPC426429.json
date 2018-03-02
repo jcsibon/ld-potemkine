@@ -1,14 +1,14 @@
 {"product": {
     "brandName": "Lapeyre",
     "brandPartnumber": 503,
-    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "modele-origine_CCN1013"}},
+    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "modele-origine-CCN1013"}},
     "imageFull": {
         "locale": "fr",
         "content": "/standardMain/482/778/482778.jpg"
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -22,14 +22,14 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
+            "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
+            "attrUsage": 1,
+            "attrSequence": 2
+        },
+        {
             "attrIdentifier": "CCU0001-FAM-23-FINITION",
             "attrUsage": 1,
             "attrSequence": 1
-        },
-        {
-            "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
-            "attrUsage": 1,
-            "attrSequence": 2
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -124,26 +124,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "D70",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Incolore"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F33",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -161,6 +141,15 @@
                         "content": "B1PXREP60"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -332,7 +321,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -341,7 +330,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -439,21 +428,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DU5",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Bois incolore"
+                        "content": "Blanc"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-103",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DU5",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Blanc"
+                        "content": "Bois incolore"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -861,6 +850,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -885,6 +884,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1068,7 +1077,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1101,11 +1110,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1255,7 +1264,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -1286,26 +1295,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "D70",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Incolore"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F33",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -1323,6 +1312,15 @@
                         "content": "B1PXREP60"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1485,7 +1483,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1494,7 +1492,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1592,21 +1590,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DU5",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-104",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Bois incolore"
+                        "content": "Gris"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-104",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DU5",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Gris"
+                        "content": "Bois incolore"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -2014,6 +2012,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -2038,6 +2046,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 104,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2221,7 +2239,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2254,11 +2272,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2408,7 +2426,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -2439,26 +2457,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "A66",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Crème"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F33",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -2476,6 +2474,15 @@
                         "content": "B1PXREP60"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -2638,7 +2645,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -2647,7 +2654,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -2745,21 +2752,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX7",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Crème mat"
+                        "content": "Blanc"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-103",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX7",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Blanc"
+                        "content": "Crème mat"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -3177,6 +3184,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -3201,6 +3218,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3384,7 +3411,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3417,11 +3444,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3571,7 +3598,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -3602,26 +3629,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "A66",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Crème"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F33",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -3639,6 +3646,15 @@
                         "content": "B1PXREP60"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -3801,7 +3817,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -3810,7 +3826,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -3908,21 +3924,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX7",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-104",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Crème mat"
+                        "content": "Gris"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-104",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX7",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Gris"
+                        "content": "Crème mat"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -4340,6 +4356,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -4364,6 +4390,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 104,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4547,7 +4583,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4580,11 +4616,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4734,7 +4770,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -4765,26 +4801,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 296,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris anthracite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F33",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -4802,6 +4818,15 @@
                         "content": "B1PXREP60"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -4964,7 +4989,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -4973,7 +4998,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -5071,21 +5096,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX5",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Gris anthracite mat"
+                        "content": "Blanc"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-103",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX5",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Blanc"
+                        "content": "Gris anthracite mat"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -5503,6 +5528,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -5527,6 +5562,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5710,7 +5755,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5743,11 +5788,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5897,7 +5942,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -5928,26 +5973,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 296,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris anthracite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F33",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -5965,6 +5990,15 @@
                         "content": "B1PXREP60"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -6127,7 +6161,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -6136,7 +6170,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -6234,21 +6268,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX5",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-104",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Gris anthracite mat"
+                        "content": "Gris"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-104",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX5",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Gris"
+                        "content": "Gris anthracite mat"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -6666,6 +6700,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -6690,6 +6734,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 104,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6873,7 +6927,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6906,11 +6960,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7060,7 +7114,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -7087,6 +7141,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Meuble de cuisine bas repas ORIGINE - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Réalisé en panneau haute densité mélaminé avec chants antichoc, ce meuble 1 porte ORIGINE comporte 3 tiroirs permettant toutes sortes de rangements : couverts, casseroles, ustensiles. Il est réglable en hauteur."
         },
         "urlKeyword": {
             "locale": "fr",

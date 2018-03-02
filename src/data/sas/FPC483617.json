@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -45,15 +45,6 @@
             "valueString": {
                 "locale": "fr",
                 "content": 0
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "priceLabel",
-            "valueString": {
-                "locale": "fr",
-                "content": "Prix pour la dimension H 274,0 x L 85,0  x P 290,0 cm"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -114,21 +105,20 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 854,
-                "attrIdentifier": "ATC-FINITION",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Bois brut"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "ATC-HAUTEUR-TOTALE",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
                     "content": 274
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-NORME-PEFC",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -145,7 +135,7 @@
                 "attrIdentifier": "ATD-CategorieCDG",
                 "valueString": {
                     "locale": "fr",
-                    "content": "G703-ESCALIERS DROITS"
+                    "content": "G3990-A LA CARTE 2017"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -172,7 +162,7 @@
                 "attrIdentifier": "ATD-SousCategorieCDG",
                 "valueString": {
                     "locale": "fr",
-                    "content": "G3717-HETRE"
+                    "content": "G13428-HETRE"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -181,7 +171,7 @@
                 "attrIdentifier": "ATD-SousCategorieCDG2",
                 "valueString": {
                     "locale": "fr",
-                    "content": "G12586-A LA CARTE"
+                    "content": "G57877-STANDARD A OPTION"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -190,7 +180,7 @@
                 "attrIdentifier": "ATD-SousCategorieCDG3",
                 "valueString": {
                     "locale": "fr",
-                    "content": "G56460-STD A LA CARTE"
+                    "content": "G45549-DROIT"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -199,7 +189,7 @@
                 "attrIdentifier": "ATD-SousFamilleCDG",
                 "valueString": {
                     "locale": "fr",
-                    "content": "G860-CODES OBSO"
+                    "content": "G752-ESCALIERS DROITS ET QUARTS TOURNANTS"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -290,7 +280,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -299,7 +289,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -325,7 +315,7 @@
                 "attrIdentifier": "ATDProductPath",
                 "valueString": {
                     "locale": "fr",
-                    "content": "G2/G19/G860/G703/G3717/G12586/G56460/G41621/"
+                    "content": "G2/G19/G752/G3990/G13428/G57877/G45549/"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -372,26 +362,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "- Type d'element: Escalier<BR/>- Destination: Intérieur<BR/>- Type d'escalier: Droit<BR/>- Matériau: Bois hêtre<BR/>- Finition: Bois brut<BR/>- Nombre de marches: 13,0<BR/>- Rampe:Non utilisé<BR/>- Type de rampe:Non utilisé<BR/>- Reculement (cm):290,0 cm<BR/>- Hauteur: 274,0 cm X Profondeur: 290,0 cm<BR/>- Garantie Produit: 10 ans<BR/>- Poids:136,0 kg"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "A7884077",
-                "attrIdentifier": "ATSOwnerCOM",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "DELECOLLE Adeline"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "M6983199",
-                "attrIdentifier": "ATSOwnerMKT",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "LE BLANC Magalie"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1028,11 +998,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
+                "valueIdentifier": 2,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1113,24 +1083,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "priceLabel",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Prix pour la dimension H 274,0 x L 85,0  x P 290,0 cm"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "priceLabel",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Prix pour la dimension H 274,0 x L 85,0  x P 290,0 cm"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "valueIdentifier": "UN",
                 "attrIdentifier": "uniteSecondaire",
                 "valueString": {
@@ -1173,7 +1125,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": true
+            "content": false
         },
         "label": {
             "locale": "fr",
@@ -1199,6 +1151,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Escalier bois droit personnalisable - Escaliers"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Intégralement adaptable à votre intérieur, l'escalier bois droit personnalisable est disponible en de nombreuses options. Réalisé en sapin massif avec placages hêtre / chêne, il est pré-assemblé, et peut être installé par nos soins."
         },
         "urlKeyword": {
             "locale": "fr",

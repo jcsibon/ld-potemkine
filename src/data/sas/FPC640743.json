@@ -5,7 +5,7 @@
     "imageFull": {"locale": "fr"},
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -22,6 +22,15 @@
             "attrIdentifier": "CCU0003-ATC-FINITION",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1601
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "codeEan",
@@ -47,24 +56,6 @@
             "valueString": {
                 "locale": "fr",
                 "content": 0
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-60",
-            "valueString": {
-                "locale": "fr",
-                "content": "-60%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -264,7 +255,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -273,7 +264,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -302,15 +293,6 @@
                         "content": "G13/G462/G132/G7863/G56355/G45199/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2474730
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -772,6 +754,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -842,7 +833,7 @@
                     "attrIdentifier": "LAPEYRE-PROMO-ID",
                     "valueString": {
                         "locale": "fr",
-                        "content": 4270
+                        "content": "NO_PROMO"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1001,11 +992,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1077,30 +1068,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "isSoldes",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0.5
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ribbonad-soldesRateValue-60",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "-60%"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1143,7 +1116,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -1310,7 +1283,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1319,7 +1292,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1348,15 +1321,6 @@
                         "content": "G13/G462/G132/G7863/G56355/G45198/"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2474740
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -1818,6 +1782,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1888,7 +1861,7 @@
                     "attrIdentifier": "LAPEYRE-PROMO-ID",
                     "valueString": {
                         "locale": "fr",
-                        "content": 4270
+                        "content": "NO_PROMO"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2047,11 +2020,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2123,30 +2096,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "isSoldes",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0.5
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ribbonad-soldesRateValue-60",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "-60%"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2189,7 +2144,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",

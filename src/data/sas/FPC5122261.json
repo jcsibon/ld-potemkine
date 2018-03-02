@@ -1,7 +1,7 @@
 {"product": {
     "brandName": "Lapeyre",
     "brandPartnumber": 503,
-    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "modele-origine_CCN1013"}},
+    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "modele-origine-CCN1013"}},
     "imageFull": {
         "locale": "fr",
         "content": "/standardMain/det/@01/5122101@DET@01.jpg"
@@ -22,19 +22,28 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
+            "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
+            "attrUsage": 1,
+            "attrSequence": 2
+        },
+        {
+            "attrIdentifier": "CCU0001-ATC-SENS-OUVERTURE",
+            "attrUsage": 1,
+            "attrSequence": 3
+        },
+        {
             "attrIdentifier": "CCU0001-FAM-23-FINITION",
             "attrUsage": 1,
             "attrSequence": 1
         },
         {
-            "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
-            "attrUsage": 1,
-            "attrSequence": 2
-        },
-        {
-            "attrIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE",
-            "attrUsage": 1,
-            "attrSequence": 3
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 4283
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -129,26 +138,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "A66",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Crème"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F03",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -169,21 +158,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E83",
                     "attrIdentifier": "ATC-REVETEMENT",
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "S16",
-                    "attrIdentifier": "ATC-SENS-OUVERTURE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Charnière à gauche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -445,18 +433,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX7",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Crème mat"
-                    },
-                    "attrUsage": 1,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-103",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -465,11 +443,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE-S16",
-                    "attrIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE",
+                    "valueIdentifier": "CCU0001-ATC-SENS-OUVERTURE-S16",
+                    "attrIdentifier": "CCU0001-ATC-SENS-OUVERTURE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Charnière à gauche"
+                    },
+                    "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX7",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Crème mat"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -887,6 +875,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -906,11 +904,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -931,6 +948,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "S16",
+                    "attrIdentifier": "NAT-23-001-SENS-OUVERTURE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Charnière à gauche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1085,7 +1112,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1312,26 +1339,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "A66",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Crème"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F03",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -1352,21 +1359,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E83",
                     "attrIdentifier": "ATC-REVETEMENT",
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "S17",
-                    "attrIdentifier": "ATC-SENS-OUVERTURE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Charnière à droite"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1628,18 +1634,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX7",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Crème mat"
-                    },
-                    "attrUsage": 1,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-103",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -1648,11 +1644,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE-S17",
-                    "attrIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE",
+                    "valueIdentifier": "CCU0001-ATC-SENS-OUVERTURE-S17",
+                    "attrIdentifier": "CCU0001-ATC-SENS-OUVERTURE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Charnière à droite"
+                    },
+                    "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX7",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Crème mat"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -2070,6 +2076,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -2089,11 +2105,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2114,6 +2149,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "S17",
+                    "attrIdentifier": "NAT-23-001-SENS-OUVERTURE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Charnière à droite"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2268,7 +2313,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2486,26 +2531,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "A66",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Crème"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F03",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -2526,21 +2551,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E83",
                     "attrIdentifier": "ATC-REVETEMENT",
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "S16",
-                    "attrIdentifier": "ATC-SENS-OUVERTURE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Charnière à gauche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2802,18 +2826,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX7",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Crème mat"
-                    },
-                    "attrUsage": 1,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-104",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-104",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Gris"
@@ -2822,11 +2836,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE-S16",
-                    "attrIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE",
+                    "valueIdentifier": "CCU0001-ATC-SENS-OUVERTURE-S16",
+                    "attrIdentifier": "CCU0001-ATC-SENS-OUVERTURE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Charnière à gauche"
+                    },
+                    "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX7",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Crème mat"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -3244,6 +3268,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -3263,11 +3297,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 104,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3288,6 +3341,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "S16",
+                    "attrIdentifier": "NAT-23-001-SENS-OUVERTURE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Charnière à gauche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3442,7 +3505,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3660,26 +3723,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "A66",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Crème"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F03",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -3700,21 +3743,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E83",
                     "attrIdentifier": "ATC-REVETEMENT",
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "S17",
-                    "attrIdentifier": "ATC-SENS-OUVERTURE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Charnière à droite"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3976,18 +4018,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX7",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Crème mat"
-                    },
-                    "attrUsage": 1,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-104",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-104",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Gris"
@@ -3996,11 +4028,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE-S17",
-                    "attrIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE",
+                    "valueIdentifier": "CCU0001-ATC-SENS-OUVERTURE-S17",
+                    "attrIdentifier": "CCU0001-ATC-SENS-OUVERTURE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Charnière à droite"
+                    },
+                    "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX7",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Crème mat"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -4418,6 +4460,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -4437,11 +4489,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 104,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4462,6 +4533,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "S17",
+                    "attrIdentifier": "NAT-23-001-SENS-OUVERTURE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Charnière à droite"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4616,7 +4697,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4834,26 +4915,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 296,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris anthracite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F03",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -4874,21 +4935,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E83",
                     "attrIdentifier": "ATC-REVETEMENT",
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "S16",
-                    "attrIdentifier": "ATC-SENS-OUVERTURE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Charnière à gauche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5150,18 +5210,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX5",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris anthracite mat"
-                    },
-                    "attrUsage": 1,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-103",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -5170,11 +5220,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE-S16",
-                    "attrIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE",
+                    "valueIdentifier": "CCU0001-ATC-SENS-OUVERTURE-S16",
+                    "attrIdentifier": "CCU0001-ATC-SENS-OUVERTURE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Charnière à gauche"
+                    },
+                    "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX5",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris anthracite mat"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -5592,6 +5652,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -5611,11 +5681,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5636,6 +5725,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "S16",
+                    "attrIdentifier": "NAT-23-001-SENS-OUVERTURE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Charnière à gauche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5790,7 +5889,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6008,26 +6107,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 296,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris anthracite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F03",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -6048,21 +6127,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E83",
                     "attrIdentifier": "ATC-REVETEMENT",
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "S17",
-                    "attrIdentifier": "ATC-SENS-OUVERTURE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Charnière à droite"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6324,18 +6402,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX5",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris anthracite mat"
-                    },
-                    "attrUsage": 1,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-103",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -6344,11 +6412,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE-S17",
-                    "attrIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE",
+                    "valueIdentifier": "CCU0001-ATC-SENS-OUVERTURE-S17",
+                    "attrIdentifier": "CCU0001-ATC-SENS-OUVERTURE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Charnière à droite"
+                    },
+                    "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX5",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris anthracite mat"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -6766,6 +6844,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -6785,11 +6873,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6810,6 +6917,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "S17",
+                    "attrIdentifier": "NAT-23-001-SENS-OUVERTURE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Charnière à droite"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6964,7 +7081,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7182,26 +7299,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 296,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris anthracite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F03",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -7222,21 +7319,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E83",
                     "attrIdentifier": "ATC-REVETEMENT",
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "S16",
-                    "attrIdentifier": "ATC-SENS-OUVERTURE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Charnière à gauche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7498,18 +7594,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX5",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris anthracite mat"
-                    },
-                    "attrUsage": 1,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-104",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-104",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Gris"
@@ -7518,11 +7604,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE-S16",
-                    "attrIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE",
+                    "valueIdentifier": "CCU0001-ATC-SENS-OUVERTURE-S16",
+                    "attrIdentifier": "CCU0001-ATC-SENS-OUVERTURE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Charnière à gauche"
+                    },
+                    "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX5",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris anthracite mat"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -7940,6 +8036,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -7959,11 +8065,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 104,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7984,6 +8109,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "S16",
+                    "attrIdentifier": "NAT-23-001-SENS-OUVERTURE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Charnière à gauche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8138,7 +8273,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8356,26 +8491,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 296,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris anthracite"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F03",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -8396,21 +8511,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E83",
                     "attrIdentifier": "ATC-REVETEMENT",
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "S17",
-                    "attrIdentifier": "ATC-SENS-OUVERTURE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Charnière à droite"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8672,18 +8786,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX5",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris anthracite mat"
-                    },
-                    "attrUsage": 1,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-104",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-104",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Gris"
@@ -8692,11 +8796,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE-S17",
-                    "attrIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE",
+                    "valueIdentifier": "CCU0001-ATC-SENS-OUVERTURE-S17",
+                    "attrIdentifier": "CCU0001-ATC-SENS-OUVERTURE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Charnière à droite"
+                    },
+                    "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DX5",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris anthracite mat"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -9114,6 +9228,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -9133,11 +9257,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 104,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9158,6 +9301,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Laqué"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "S17",
+                    "attrIdentifier": "NAT-23-001-SENS-OUVERTURE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Charnière à droite"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9312,7 +9465,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9530,26 +9683,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "D70",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Incolore"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F03",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -9570,21 +9703,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E87",
                     "attrIdentifier": "ATC-REVETEMENT",
                     "valueString": {
                         "locale": "fr",
                         "content": "Verni"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "S16",
-                    "attrIdentifier": "ATC-SENS-OUVERTURE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Charnière à gauche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9855,18 +9987,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DU5",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois incolore"
-                    },
-                    "attrUsage": 1,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-103",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -9875,11 +9997,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE-S16",
-                    "attrIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE",
+                    "valueIdentifier": "CCU0001-ATC-SENS-OUVERTURE-S16",
+                    "attrIdentifier": "CCU0001-ATC-SENS-OUVERTURE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Charnière à gauche"
+                    },
+                    "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DU5",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois incolore"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -10287,6 +10419,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -10306,11 +10448,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10331,6 +10492,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Verni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "S16",
+                    "attrIdentifier": "NAT-23-001-SENS-OUVERTURE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Charnière à gauche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10485,7 +10656,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10712,26 +10883,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "D70",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Incolore"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F03",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -10752,21 +10903,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E87",
                     "attrIdentifier": "ATC-REVETEMENT",
                     "valueString": {
                         "locale": "fr",
                         "content": "Verni"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "S17",
-                    "attrIdentifier": "ATC-SENS-OUVERTURE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Charnière à droite"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11028,18 +11178,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DU5",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois incolore"
-                    },
-                    "attrUsage": 1,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-103",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -11048,11 +11188,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE-S17",
-                    "attrIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE",
+                    "valueIdentifier": "CCU0001-ATC-SENS-OUVERTURE-S17",
+                    "attrIdentifier": "CCU0001-ATC-SENS-OUVERTURE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Charnière à droite"
+                    },
+                    "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DU5",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois incolore"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -11460,6 +11610,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -11479,11 +11639,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11504,6 +11683,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Verni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "S17",
+                    "attrIdentifier": "NAT-23-001-SENS-OUVERTURE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Charnière à droite"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11658,7 +11847,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11876,26 +12065,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "D70",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Incolore"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F03",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -11916,21 +12085,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E87",
                     "attrIdentifier": "ATC-REVETEMENT",
                     "valueString": {
                         "locale": "fr",
                         "content": "Verni"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "S16",
-                    "attrIdentifier": "ATC-SENS-OUVERTURE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Charnière à gauche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -12192,18 +12360,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DU5",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois incolore"
-                    },
-                    "attrUsage": 1,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-104",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-104",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Gris"
@@ -12212,11 +12370,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE-S16",
-                    "attrIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE",
+                    "valueIdentifier": "CCU0001-ATC-SENS-OUVERTURE-S16",
+                    "attrIdentifier": "CCU0001-ATC-SENS-OUVERTURE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Charnière à gauche"
+                    },
+                    "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DU5",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois incolore"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -12624,6 +12792,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -12643,11 +12821,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 104,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -12668,6 +12865,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Verni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "S16",
+                    "attrIdentifier": "NAT-23-001-SENS-OUVERTURE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Charnière à gauche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -12822,7 +13029,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -13040,26 +13247,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "D70",
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Incolore"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR-CAISSON",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "F03",
                     "attrIdentifier": "ATC-DESTINATION",
                     "valueString": {
@@ -13080,21 +13267,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "E87",
                     "attrIdentifier": "ATC-REVETEMENT",
                     "valueString": {
                         "locale": "fr",
                         "content": "Verni"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "S17",
-                    "attrIdentifier": "ATC-SENS-OUVERTURE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Charnière à droite"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -13356,18 +13542,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DU5",
-                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois incolore"
-                    },
-                    "attrUsage": 1,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON-104",
-                    "attrIdentifier": "CCU0001-NAT-23-001-COULEUR-CAISSON",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-CAISSON-104",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR-CAISSON",
                     "valueString": {
                         "locale": "fr",
                         "content": "Gris"
@@ -13376,11 +13552,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE-S17",
-                    "attrIdentifier": "CCU0001-NAT-23-001-SENS-OUVERTURE",
+                    "valueIdentifier": "CCU0001-ATC-SENS-OUVERTURE-S17",
+                    "attrIdentifier": "CCU0001-ATC-SENS-OUVERTURE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Charnière à droite"
+                    },
+                    "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0001-FAM-23-FINITION-DU5",
+                    "attrIdentifier": "CCU0001-FAM-23-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois incolore"
                     },
                     "attrUsage": 1,
                     "attrSequence": 0
@@ -13788,6 +13974,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 278,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bouleau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "C92",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
@@ -13807,11 +14003,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4283
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "G20",
                     "attrIdentifier": "NAT-23-001-COLLECTION",
                     "valueString": {
                         "locale": "fr",
                         "content": "Access"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 104,
+                    "attrIdentifier": "NAT-23-001-COULEUR-CAISSON",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -13832,6 +14047,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Verni"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "S17",
+                    "attrIdentifier": "NAT-23-001-SENS-OUVERTURE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Charnière à droite"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -13986,7 +14211,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017010280
+                        "content": "06017010280"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -14204,6 +14429,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Meuble de cuisine d'angle bas Twister ORIGINE - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Réalisé en panneau haute densité mélaminé avec chants antichoc, le meuble d'angle bas Twister ORIGINE optimise votre capacité de rangement. Il est équipé de 2 paniers courbes montés sur porte-casseroles."
         },
         "urlKeyword": {
             "locale": "fr",

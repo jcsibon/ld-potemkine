@@ -59,15 +59,6 @@
             "attrSequence": 0
         },
         {
-            "attrIdentifier": "ribbonad-promotionLabel",
-            "valueString": {
-                "locale": "fr",
-                "content": "-15%"
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
             "valueIdentifier": "UN",
             "attrIdentifier": "uniteSecondaire",
             "valueString": {
@@ -102,6 +93,24 @@
     "shortDesc": {"locale": "fr"},
     "itemList": {"item": {
         "attributeValueList": {"attributeValue": [
+            {
+                "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-COULEUR-CARTE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
             {
                 "valueIdentifier": "E33",
                 "attrIdentifier": "ATC-REMPLISSAGE",
@@ -309,15 +318,6 @@
                     "content": "G1/G14/G130/G1119/G7420/G52049/"
                 },
                 "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATS-CodeADA",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 3580
-                },
                 "attrSequence": 0
             },
             {
@@ -723,6 +723,42 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Volet persienné<BR/>PVC"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "VOLET PVC ASPECT PERSIENNE S/MESURE"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "SUPPRIME"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "SUR MESURE"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-VOLUME",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -877,11 +913,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 0,
+                "valueIdentifier": "C",
                 "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                 "valueString": {
                     "locale": "fr",
-                    "content": "SANS OBJET"
+                    "content": "SUR DELAI LONG"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1023,15 +1059,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "Prix pour la dimension H  x L"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ribbonad-promotionLabel",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "-15%"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0

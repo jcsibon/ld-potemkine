@@ -1,14 +1,17 @@
 {"product": {
     "brandName": "Lapeyre",
     "brandPartnumber": 503,
-    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "pvc-CCN688129"}},
+    "categoriesParentList": {"categoryParent": [
+        {"categoryIdentifier": "pvc-CCN688129"},
+        {"categoryIdentifier": "pvc-CCN688463"}
+    ]},
     "imageFull": {
         "locale": "fr",
         "content": "/standardMain/824/325/201824325.jpg"
     },
     "published": {
         "locale": "fr",
-        "content": false
+        "content": true
     },
     "label": {
         "locale": "fr",
@@ -72,7 +75,7 @@
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
-                "content": "Prix pour la dimension H 106,0 x L 100,0 cm"
+                "content": "Prix pour la dimension H 75,0 x L 100,0 cm"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -324,15 +327,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2515460
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -364,18 +358,18 @@
                     "attrIdentifier": "ATS0009",
                     "valueString": {
                         "locale": "fr",
-                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 93,8 cm <BR/>- Largeur totale: 105,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 106,0 cm x Largeur: 100,0 cm<BR/>- Poids: 38,0 kg<BR/>- Garantie Produit: 10 ans"
+                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 93,8 cm <BR/>- Largeur totale: 105,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 75,0 cm x Largeur: 100,0 cm<BR/>- Poids: 38,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-106",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-75",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 106
+                        "content": 75
                     },
                     "attrSequence": 0
                 },
@@ -502,6 +496,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Réseau France"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 90
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -758,7 +761,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 106
+                        "content": 111
                     },
                     "attrSequence": 0
                 },
@@ -767,7 +770,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 100
+                        "content": 107
                     },
                     "attrSequence": 0
                 },
@@ -777,6 +780,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 38
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
                     },
                     "attrSequence": 0
                 },
@@ -993,11 +1005,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XXL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1166,7 +1178,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 106,0 x L 100,0 cm"
+                        "content": "Prix pour la dimension H 75,0 x L 100,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1175,7 +1187,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 106,0 x L 100,0 cm"
+                        "content": "Prix pour la dimension H 75,0 x L 100,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1223,7 +1235,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -1445,15 +1457,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2515470
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -1485,28 +1488,28 @@
                     "attrIdentifier": "ATS0009",
                     "valueString": {
                         "locale": "fr",
-                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 113,8 cm <BR/>- Largeur totale: 105,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 114,0 cm x Largeur: 106,0 cm<BR/>- Poids: 44,0 kg<BR/>- Garantie Produit: 10 ans"
+                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 113,8 cm <BR/>- Largeur totale: 105,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 95,0 cm x Largeur: 100,0 cm<BR/>- Poids: 44,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-114",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-95",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 114
+                        "content": 95
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-106",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-100",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 106
+                        "content": 100
                     },
                     "attrSequence": 0
                 },
@@ -1623,6 +1626,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Réseau France"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 71
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1879,7 +1891,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 114
+                        "content": 131
                     },
                     "attrSequence": 0
                 },
@@ -1888,7 +1900,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 106
+                        "content": 127
                     },
                     "attrSequence": 0
                 },
@@ -1898,6 +1910,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 44
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
                     },
                     "attrSequence": 0
                 },
@@ -2287,7 +2308,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 114,0 x L 106,0 cm"
+                        "content": "Prix pour la dimension H 95,0 x L 100,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2296,7 +2317,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 114,0 x L 106,0 cm"
+                        "content": "Prix pour la dimension H 95,0 x L 100,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2344,7 +2365,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -2566,15 +2587,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2515480
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -2606,28 +2618,28 @@
                     "attrIdentifier": "ATS0009",
                     "valueString": {
                         "locale": "fr",
-                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 113,8 cm <BR/>- Largeur totale: 125,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 114,0 cm x Largeur: 126,0 cm<BR/>- Poids: 51,0 kg<BR/>- Garantie Produit: 10 ans"
+                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 113,8 cm <BR/>- Largeur totale: 125,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 95,0 cm x Largeur: 120,0 cm<BR/>- Poids: 51,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-114",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-95",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 114
+                        "content": 95
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-126",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-120",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 126
+                        "content": 120
                     },
                     "attrSequence": 0
                 },
@@ -2744,6 +2756,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Réseau France"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 96
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3000,7 +3021,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 114
+                        "content": 131
                     },
                     "attrSequence": 0
                 },
@@ -3009,7 +3030,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 126
+                        "content": 107
                     },
                     "attrSequence": 0
                 },
@@ -3019,6 +3040,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 51
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
                     },
                     "attrSequence": 0
                 },
@@ -3408,7 +3438,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 114,0 x L 126,0 cm"
+                        "content": "Prix pour la dimension H 95,0 x L 120,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3417,7 +3447,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 114,0 x L 126,0 cm"
+                        "content": "Prix pour la dimension H 95,0 x L 120,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3465,7 +3495,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -3687,15 +3717,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2515490
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -3727,28 +3748,28 @@
                     "attrIdentifier": "ATS0009",
                     "valueString": {
                         "locale": "fr",
-                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 123,8 cm <BR/>- Largeur totale: 105,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 124,0 cm x Largeur: 106,0 cm<BR/>- Poids: 47,0 kg<BR/>- Garantie Produit: 10 ans"
+                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 123,8 cm <BR/>- Largeur totale: 105,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 105,0 cm x Largeur: 100,0 cm<BR/>- Poids: 47,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-124",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-105",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 124
+                        "content": 105
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-106",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-100",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 106
+                        "content": 100
                     },
                     "attrSequence": 0
                 },
@@ -3865,6 +3886,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Réseau France"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 57
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4121,7 +4151,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 124
+                        "content": 141
                     },
                     "attrSequence": 0
                 },
@@ -4130,7 +4160,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 106
+                        "content": 127
                     },
                     "attrSequence": 0
                 },
@@ -4140,6 +4170,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 47
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
                     },
                     "attrSequence": 0
                 },
@@ -4529,7 +4568,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 124,0 x L 106,0 cm"
+                        "content": "Prix pour la dimension H 105,0 x L 100,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4538,7 +4577,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 124,0 x L 106,0 cm"
+                        "content": "Prix pour la dimension H 105,0 x L 100,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4586,7 +4625,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -4808,15 +4847,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2515500
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -4848,28 +4878,28 @@
                     "attrIdentifier": "ATS0009",
                     "valueString": {
                         "locale": "fr",
-                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 123,8 cm <BR/>- Largeur totale: 125,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 124,0 cm x Largeur: 126,0 cm<BR/>- Poids: 55,0 kg<BR/>- Garantie Produit: 10 ans"
+                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 123,8 cm <BR/>- Largeur totale: 125,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 105,0 cm x Largeur: 120,0 cm<BR/>- Poids: 55,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-124",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-105",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 124
+                        "content": 105
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-126",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-120",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 126
+                        "content": 120
                     },
                     "attrSequence": 0
                 },
@@ -4986,6 +5016,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Réseau France"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 72
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5242,7 +5281,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 124
+                        "content": 141
                     },
                     "attrSequence": 0
                 },
@@ -5251,7 +5290,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 126
+                        "content": 107
                     },
                     "attrSequence": 0
                 },
@@ -5261,6 +5300,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 55
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
                     },
                     "attrSequence": 0
                 },
@@ -5650,7 +5698,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 124,0 x L 126,0 cm"
+                        "content": "Prix pour la dimension H 105,0 x L 120,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5659,7 +5707,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 124,0 x L 126,0 cm"
+                        "content": "Prix pour la dimension H 105,0 x L 120,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5707,7 +5755,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -5929,15 +5977,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2515510
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -5969,28 +6008,28 @@
                     "attrIdentifier": "ATS0009",
                     "valueString": {
                         "locale": "fr",
-                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 133,8 cm <BR/>- Largeur totale: 105,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 134,0 cm x Largeur: 106,0 cm<BR/>- Poids: 50,0 kg<BR/>- Garantie Produit: 10 ans"
+                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 133,8 cm <BR/>- Largeur totale: 105,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 115,0 cm x Largeur: 100,0 cm<BR/>- Poids: 50,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-134",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-115",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 134
+                        "content": 115
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-106",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-100",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 106
+                        "content": 100
                     },
                     "attrSequence": 0
                 },
@@ -6107,6 +6146,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Réseau France"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 102
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6363,7 +6411,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 134
+                        "content": 151
                     },
                     "attrSequence": 0
                 },
@@ -6372,7 +6420,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 106
+                        "content": 127
                     },
                     "attrSequence": 0
                 },
@@ -6382,6 +6430,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 50
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
                     },
                     "attrSequence": 0
                 },
@@ -6598,11 +6655,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XXL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6771,7 +6828,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 134,0 x L 106,0 cm"
+                        "content": "Prix pour la dimension H 115,0 x L 100,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6780,7 +6837,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 134,0 x L 106,0 cm"
+                        "content": "Prix pour la dimension H 115,0 x L 100,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6828,7 +6885,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -7050,15 +7107,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2515520
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -7090,28 +7138,28 @@
                     "attrIdentifier": "ATS0009",
                     "valueString": {
                         "locale": "fr",
-                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 133,8 cm <BR/>- Largeur totale: 125,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 134,0 cm x Largeur: 126,0 cm<BR/>- Poids: 60,0 kg<BR/>- Garantie Produit: 10 ans"
+                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 133,8 cm <BR/>- Largeur totale: 125,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 115,0 cm x Largeur: 120,0 cm<BR/>- Poids: 60,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-134",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-115",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 134
+                        "content": 115
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-126",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-120",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 126
+                        "content": 120
                     },
                     "attrSequence": 0
                 },
@@ -7228,6 +7276,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Réseau France"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 129
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7484,7 +7541,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 134
+                        "content": 151
                     },
                     "attrSequence": 0
                 },
@@ -7493,7 +7550,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 126
+                        "content": 107
                     },
                     "attrSequence": 0
                 },
@@ -7503,6 +7560,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 60
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
                     },
                     "attrSequence": 0
                 },
@@ -7719,11 +7785,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XXL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7892,7 +7958,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 134,0 x L 126,0 cm"
+                        "content": "Prix pour la dimension H 115,0 x L 120,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7901,7 +7967,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 134,0 x L 126,0 cm"
+                        "content": "Prix pour la dimension H 115,0 x L 120,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7949,7 +8015,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -8171,15 +8237,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2515530
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -8211,28 +8268,28 @@
                     "attrIdentifier": "ATS0009",
                     "valueString": {
                         "locale": "fr",
-                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 143,8 cm <BR/>- Largeur totale: 105,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 144,0 cm x Largeur: 106,0 cm<BR/>- Poids: 55,0 kg<BR/>- Garantie Produit: 10 ans"
+                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 143,8 cm <BR/>- Largeur totale: 105,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 125,0 cm x Largeur: 100,0 cm<BR/>- Poids: 55,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-144",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-125",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 144
+                        "content": 125
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-106",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-100",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 106
+                        "content": 100
                     },
                     "attrSequence": 0
                 },
@@ -8349,6 +8406,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Réseau France"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 122
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8605,7 +8671,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 144
+                        "content": 161
                     },
                     "attrSequence": 0
                 },
@@ -8614,7 +8680,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 106
+                        "content": 127
                     },
                     "attrSequence": 0
                 },
@@ -8624,6 +8690,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 55
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
                     },
                     "attrSequence": 0
                 },
@@ -8840,11 +8915,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XXL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9013,7 +9088,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 144,0 x L 106,0 cm"
+                        "content": "Prix pour la dimension H 125,0 x L 100,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9022,7 +9097,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 144,0 x L 106,0 cm"
+                        "content": "Prix pour la dimension H 125,0 x L 100,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9070,7 +9145,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -9292,15 +9367,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2515540
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -9332,28 +9398,28 @@
                     "attrIdentifier": "ATS0009",
                     "valueString": {
                         "locale": "fr",
-                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 143,8 cm <BR/>- Largeur totale: 125,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 144,0 cm x Largeur: 126,0 cm<BR/>- Poids: 64,0 kg<BR/>- Garantie Produit: 10 ans"
+                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 143,8 cm <BR/>- Largeur totale: 125,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 125,0 cm x Largeur: 120,0 cm<BR/>- Poids: 64,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-144",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-125",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 144
+                        "content": 125
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-126",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-120",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 126
+                        "content": 120
                     },
                     "attrSequence": 0
                 },
@@ -9470,6 +9536,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Réseau France"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 119
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9726,7 +9801,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 144
+                        "content": 161
                     },
                     "attrSequence": 0
                 },
@@ -9735,7 +9810,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 126
+                        "content": 127
                     },
                     "attrSequence": 0
                 },
@@ -9745,6 +9820,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 64
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
                     },
                     "attrSequence": 0
                 },
@@ -9961,11 +10045,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XXL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10134,7 +10218,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 144,0 x L 126,0 cm"
+                        "content": "Prix pour la dimension H 125,0 x L 120,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10143,7 +10227,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 144,0 x L 126,0 cm"
+                        "content": "Prix pour la dimension H 125,0 x L 120,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10191,7 +10275,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -10413,15 +10497,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2515550
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -10453,28 +10528,28 @@
                     "attrIdentifier": "ATS0009",
                     "valueString": {
                         "locale": "fr",
-                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 153,8 cm <BR/>- Largeur totale: 125,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 154,0 cm x Largeur: 126,0 cm<BR/>- Poids: 67,0 kg<BR/>- Garantie Produit: 10 ans"
+                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 153,8 cm <BR/>- Largeur totale: 125,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 135,0 cm x Largeur: 120,0 cm<BR/>- Poids: 67,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-154",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-135",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 154
+                        "content": 135
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-126",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-120",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 126
+                        "content": 120
                     },
                     "attrSequence": 0
                 },
@@ -10591,6 +10666,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Réseau France"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 152
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10847,7 +10931,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 154
+                        "content": 171
                     },
                     "attrSequence": 0
                 },
@@ -10856,7 +10940,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 126
+                        "content": 147
                     },
                     "attrSequence": 0
                 },
@@ -10866,6 +10950,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 67
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
                     },
                     "attrSequence": 0
                 },
@@ -11082,11 +11175,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XXL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11255,7 +11348,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 154,0 x L 126,0 cm"
+                        "content": "Prix pour la dimension H 135,0 x L 120,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11264,7 +11357,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 154,0 x L 126,0 cm"
+                        "content": "Prix pour la dimension H 135,0 x L 120,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11312,7 +11405,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -11534,15 +11627,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2515560
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -11574,28 +11658,28 @@
                     "attrIdentifier": "ATS0009",
                     "valueString": {
                         "locale": "fr",
-                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 153,8 cm <BR/>- Largeur totale: 145,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 154,0 cm x Largeur: 146,0 cm<BR/>- Poids: 76,0 kg<BR/>- Garantie Produit: 10 ans"
+                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 153,8 cm <BR/>- Largeur totale: 145,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 135,0 cm x Largeur: 140,0 cm<BR/>- Poids: 76,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-154",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-135",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 154
+                        "content": 135
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-146",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-140",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 146
+                        "content": 140
                     },
                     "attrSequence": 0
                 },
@@ -11712,6 +11796,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Réseau France"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 106
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11968,7 +12061,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 154
+                        "content": 171
                     },
                     "attrSequence": 0
                 },
@@ -11977,7 +12070,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 146
+                        "content": 107
                     },
                     "attrSequence": 0
                 },
@@ -11987,6 +12080,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 76
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
                     },
                     "attrSequence": 0
                 },
@@ -12203,11 +12305,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XXL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -12376,7 +12478,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 154,0 x L 146,0 cm"
+                        "content": "Prix pour la dimension H 135,0 x L 140,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -12385,7 +12487,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 154,0 x L 146,0 cm"
+                        "content": "Prix pour la dimension H 135,0 x L 140,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -12433,7 +12535,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -12655,15 +12757,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2515570
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
@@ -12695,28 +12788,28 @@
                     "attrIdentifier": "ATS0009",
                     "valueString": {
                         "locale": "fr",
-                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 193,8 cm <BR/>- Largeur totale: 105,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 194,0 cm x Largeur: 106,0 cm<BR/>- Poids: 70,0 kg<BR/>- Garantie Produit: 10 ans"
+                        "content": "- Type de menuiserie: Fenêtre 2 vantaux<BR/>- Matériau: Pvc<BR/>- Modèle: Pria<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 193,8 cm <BR/>- Largeur totale: 105,8 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 175,0 cm x Largeur: 100,0 cm<BR/>- Poids: 70,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-194",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR-175",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 194
+                        "content": 175
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-106",
+                    "valueIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR-100",
                     "attrIdentifier": "CCU0003-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 106
+                        "content": 100
                     },
                     "attrSequence": 0
                 },
@@ -12833,6 +12926,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Réseau France"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 27
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -13089,7 +13191,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 194
+                        "content": 211
                     },
                     "attrSequence": 0
                 },
@@ -13098,7 +13200,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 106
+                        "content": 87
                     },
                     "attrSequence": 0
                 },
@@ -13108,6 +13210,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 70
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
                     },
                     "attrSequence": 0
                 },
@@ -13497,7 +13608,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 194,0 x L 106,0 cm"
+                        "content": "Prix pour la dimension H 175,0 x L 100,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -13506,7 +13617,7 @@
                     "attrIdentifier": "priceLabel",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Prix pour la dimension H 194,0 x L 106,0 cm"
+                        "content": "Prix pour la dimension H 175,0 x L 100,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -13554,7 +13665,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",

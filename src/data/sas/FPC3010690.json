@@ -22,9 +22,18 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+            "attrIdentifier": "CCU0001-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1576
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -110,26 +119,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B11",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Sensitives"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 105,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Noir"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-HAUTEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -167,11 +156,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NB-FOYERS",
+                    "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 3
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -449,8 +438,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-105",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Noir"
@@ -843,6 +832,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TABLE INDUCTION<BR/>SAUTER SPI4360B  NOIR<BR/>3 FOYERS INDUCTION DONT 1 DOUBLE ZONE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- COMMANDES SENSITIVES FRONTALES<BR/>- 3 MINUTERIES / 3 BOOSTERS<BR/>- PACK: 10 SECURITES/ 1 FOYER 28 CM - 3.<BR/>- EXISTE EN NOIR CADRE INOX"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : H6.4 x L56 x P49 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -888,6 +904,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 105,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -897,11 +933,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "A78",
                     "attrIdentifier": "NAT-25-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Table"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B11",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Sensitives"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -940,6 +995,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-25-001-NB-FOYERS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3
                     },
                     "attrSequence": 0
                 },
@@ -1077,11 +1141,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
+                    "valueIdentifier": "A",
                     "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": "FORMAT XXL"
+                        "content": "EN STOCK SELON MAGASINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1311,26 +1375,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B11",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Sensitives"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 303,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Inox"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-HAUTEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1368,11 +1412,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NB-FOYERS",
+                    "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 3
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -1641,8 +1685,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-303",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-303",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Inox"
@@ -2025,6 +2069,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TABLE INDUCTION<BR/>SAUTER SPI4360X  NOIR CADRE INOX<BR/>3 FOYERS INDUCTION DONT 1 DOUBLE ZONE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- COMMANDES SENSITIVES FRONTALES<BR/>- 3 MINUTERIES / 3 BOOSTERS<BR/>- PACK: 10 SECURITES/ 1 FOYER 28 CM - 3.<BR/>- EXISTE EN NOIR"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : H6.4 x L56 x P49 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2070,6 +2141,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 303,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Inox"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2079,11 +2170,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "A78",
                     "attrIdentifier": "NAT-25-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Table"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B11",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Sensitives"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2122,6 +2232,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-25-001-NB-FOYERS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3
                     },
                     "attrSequence": 0
                 },
@@ -2493,26 +2612,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B11",
-                    "attrIdentifier": "ATC-COMMANDES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Sensitives"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-HAUTEUR-ENCASTREMENT",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2550,11 +2649,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NB-FOYERS",
+                    "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 3
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -2823,8 +2922,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0001-FAM-25-COULEUR-103",
-                    "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                    "valueIdentifier": "CCU0001-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0001-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -3207,6 +3306,33 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TABLE INDUCTION<BR/>SAUTER SPI4360W BLANC<BR/>3 FOYERS INDUCTION DONT 1 DOUBLE ZONE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "- COMMANDES SENSITIVES FRONTALES<BR/>- 3 MINUTERIES / 3 BOOSTERS<BR/>- PACK: 10 SECURITES/ 1 FOYER 28 CM<BR/>- EXISTE EN NOIR ET NOIR CADRE INOX"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ENCASTREMENT : H6.4 x L56 x P49 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3252,6 +3378,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-25-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 103,
+                    "attrIdentifier": "FAM-25-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "FUTURE-SELLING-PRICE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3261,11 +3407,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 1576
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "A78",
                     "attrIdentifier": "NAT-25-001-CATEGORIE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Table"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "B11",
+                    "attrIdentifier": "NAT-25-001-COMMANDES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Sensitives"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3304,6 +3469,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-25-001-NB-FOYERS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3
                     },
                     "attrSequence": 0
                 },
@@ -3675,6 +3849,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Table de cuisson induction SAUTER - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "La table de cuisson encastrable à induction SAUTER assure un niveau de performances et de confort que son prix justifie. Son design épuré permet son intégration dans toute décoration de cuisine."
         },
         "urlKeyword": {
             "locale": "fr",
