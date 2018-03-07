@@ -34,7 +34,10 @@
                                     <p class="h4 d-md-none">
                                         <a data-toggle="collapse" class="text-dark" href="#collapse{{ categories[subuniverse]['identifier'] }}" aria-expanded="false" aria-controls="collapse{{ categories[subuniverse]['identifier'] }}">{{ categories[subuniverse]['shortDesc']['content'] }}</a>
                                     </p>
-                                    <p class="d-none d-md-block">{{ categories[subuniverse]['longDesc']['content'] }}</p>
+                                    <p class="d-none d-md-block">{% if categories[subuniverse]['longDesc']['content'] is defined %}
+                                    {{ categories[subuniverse]['longDesc']['content'] }}
+                                    {% endif %}
+                                    </p>
                                 </div>
                                 <div class="col-2 d-md-none pr-0">
                                     <a data-toggle="collapse" class="text-dark" href="#collapse{{ categories[subuniverse]['identifier'] }}" aria-expanded="false" aria-controls="collapse{{ categories[subuniverse]['identifier'] }}">
