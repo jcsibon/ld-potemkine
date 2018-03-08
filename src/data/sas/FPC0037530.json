@@ -140,6 +140,15 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "ATC-NORME-NF",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "ATD-CategorieCDG",
                 "valueString": {
                     "locale": "fr",
@@ -396,7 +405,7 @@
             },
             {
                 "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-10",
-                "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-FIX",
+                "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
@@ -416,7 +425,7 @@
             },
             {
                 "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-80",
-                "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
@@ -784,8 +793,35 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 139
+                    "content": 129
                 },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "PASSY<BR/>Receveur à poser en grès émaillé<BR/>Coloris blanc"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Bonde : 90 mm<BR/>Norme NF"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "120x 80 cm épaisseur 10 cm"
+                },
+                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -874,15 +910,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "FUTURE-SELLING-PRICE",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 129
-                },
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "NAT-28-001-DIMENSION",
                 "valueString": {
                     "locale": "fr",
@@ -924,6 +951,16 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "A poser"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "U08",
+                "attrIdentifier": "NAT-28-001-TYPOLOGIE-PRODUIT",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Grande dimension"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1025,11 +1062,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "XXL",
+                "valueIdentifier": "A",
                 "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                 "valueString": {
                     "locale": "fr",
-                    "content": "FORMAT XXL"
+                    "content": "EN STOCK SELON MAGASINS"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0

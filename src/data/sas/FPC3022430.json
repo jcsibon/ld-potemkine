@@ -94,16 +94,6 @@
     "itemList": {"item": {
         "attributeValueList": {"attributeValue": [
             {
-                "valueIdentifier": "B20",
-                "attrIdentifier": "ATC-APPAREIL",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Verre galbé"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -128,16 +118,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "D"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 303,
-                "attrIdentifier": "ATC-COULEUR",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Inox"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -407,23 +387,23 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-90",
-                "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 90
-                },
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "CCU0001-FAM-25-COULEUR-303",
-                "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                "valueIdentifier": "CCU0001-ATC-COULEUR-303",
+                "attrIdentifier": "CCU0001-ATC-COULEUR",
                 "valueString": {
                     "locale": "fr",
                     "content": "Inox"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-90",
+                "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 90
+                },
                 "attrSequence": 0
             },
             {
@@ -805,8 +785,35 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 246.7
+                    "content": 276.7
                 },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "HOTTE DECORATIVE GALBE<BR/>FAURE FHC9754X - INOX VERRE<BR/>LARGEUR : 90 CM"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "- 1 MOTEUR DOUBLE TURBINE<BR/>- 3 VITESSES D'ASPIRATION / 71 DB<BR/>- DEBIT-D'AIR : 515 M3/H<BR/>COMMANDES PAR TOUCHES"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "HORS TOUT : H60.3/113 x L90 x P45 CM"
+                },
+                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -855,12 +862,33 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "FUTURE-SELLING-PRICE",
-                "attrUsage": 2,
-                "valueDecimal": {
+                "valueIdentifier": 303,
+                "attrIdentifier": "FAM-25-COULEUR",
+                "valueString": {
                     "locale": "fr",
-                    "content": 276.7
+                    "content": "Inox"
                 },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 303,
+                "attrIdentifier": "FAM-25-FINITION",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Inox"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "B20",
+                "attrIdentifier": "NAT-25-001-APPAREIL",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Verre galbé"
+                },
+                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -1016,11 +1044,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "B",
+                "valueIdentifier": "A",
                 "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
                 "valueString": {
                     "locale": "fr",
-                    "content": "SUR DELAI COURT"
+                    "content": "EN STOCK SELON MAGASINS"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1249,6 +1277,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Hotte décorative murale en verre galbé FAURE - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Design remarquable associant verre et inox pour un budget raisonnable... la hotte décorative murale en verre galbé FAURE se distingue aussi par ses performances. Indispensable."
         },
         "urlKeyword": {
             "locale": "fr",
