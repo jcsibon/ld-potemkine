@@ -94,16 +94,6 @@
     "itemList": {"item": {
         "attributeValueList": {"attributeValue": [
             {
-                "valueIdentifier": "B15",
-                "attrIdentifier": "ATC-APPAREIL",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Box"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "ATC-CAPACITE-ASPIRATION",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -128,16 +118,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "B"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 303,
-                "attrIdentifier": "ATC-COULEUR",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Inox"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -407,23 +387,23 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-90",
-                "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 90
-                },
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "CCU0001-FAM-25-COULEUR-303",
-                "attrIdentifier": "CCU0001-FAM-25-COULEUR",
+                "valueIdentifier": "CCU0001-ATC-COULEUR-303",
+                "attrIdentifier": "CCU0001-ATC-COULEUR",
                 "valueString": {
                     "locale": "fr",
                     "content": "Inox"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-90",
+                "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 90
+                },
                 "attrSequence": 0
             },
             {
@@ -810,6 +790,33 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "HOTTE DECORATIVE<BR/>FALMEC IRIDE - INOX<BR/>LARGEUR : 90 CM"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "- 1 MOTEUR  / 44 à 60 DB(A)<BR/>- 3 VITESSES + INTENSIVE<BR/>- DEBIT D'AIR : 800 M3/H<BR/>- ECLAIRAGE  PAR NEON"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "HORS TOUT : H60 x 90x P50,9 CM"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -855,12 +862,42 @@
                 "attrSequence": 0
             },
             {
+                "valueIdentifier": 303,
+                "attrIdentifier": "FAM-25-COULEUR",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Inox"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 303,
+                "attrIdentifier": "FAM-25-FINITION",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Inox"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "FUTURE-SELLING-PRICE",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
                     "content": 894
                 },
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "B15",
+                "attrIdentifier": "NAT-25-001-APPAREIL",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Box"
+                },
+                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -929,11 +966,29 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-REUNION",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
                     "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-SUISSE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -1249,6 +1304,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Hotte décorative murale box FALMEC - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Magnifique avec son design futuriste et minimaliste, la hotte décorative murale box FALMEC embellit et assainit votre cuisine dans un silence que vous apprécierez énormément au quotidien."
         },
         "urlKeyword": {
             "locale": "fr",
