@@ -2,7 +2,7 @@
   "name": "lapeyre-potemkine",
   "version": "master",
   "scripts": {
-    "build": "svg-sprite --config sprite-config.json src/images/svg/*.svg && grunt css && php build.php",
+    "postinstall": "echo 'hello postinstall' && svg-sprite --config sprite-config.json src/images/svg/*.svg && grunt css && php build.php",
     "sprites": "svg-sprite --config sprite-config.json src/images/svg/*.svg"
   },
   "dependencies": {
