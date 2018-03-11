@@ -12,20 +12,23 @@ foreach (glob("src/data/sas/*") as $file)
 		{
 			foreach($fileContent['category'] as $row)
 			{
-				$row['url'] = str_replace("_", "-", $row['identifier']);
-				$row['identifier'] = preg_replace('/([\S\s]*)(CCN|CCU|SCU)([0-9]+)/', '$2$3', $row['identifier']);
-
-
-				if(isset($row['parentIdentifier']))
+				if($row['published']['content'])
 				{
-					$row['parentIdentifier'] = array(preg_replace('/([\S\s]*)(CCN|CCU|SCU)([0-9]+)/', '$2$3', $row['parentIdentifier']));
-				}
-				if(isset($row['imageFull']['content']))
-					$row['imageFull']['content'] = "https://statics.lapeyre.fr/img/catalogue/" . $row['imageFull']['content'];
-				if(isset($row['imageThumbnail']['content']))
-					$row['imageThumbnail']['content'] = "https://statics.lapeyre.fr/img/catalogue/" . $row['imageThumbnail']['content'];
+					$row['url'] = str_replace("_", "-", $row['identifier']);
+					$row['identifier'] = preg_replace('/([\S\s]*)(CCN|CCU|SCU)([0-9]+)/', '$2$3', $row['identifier']);
 
-				$catalog[$row['identifier']] = $row;
+
+					if(isset($row['parentIdentifier']))
+					{
+						$row['parentIdentifier'] = array(preg_replace('/([\S\s]*)(CCN|CCU|SCU)([0-9]+)/', '$2$3', $row['parentIdentifier']));
+					}
+					if(isset($row['imageFull']['content']))
+						$row['imageFull']['content'] = "https://statics.lapeyre.fr/img/catalogue/" . $row['imageFull']['content'];
+					if(isset($row['imageThumbnail']['content']))
+						$row['imageThumbnail']['content'] = "https://statics.lapeyre.fr/img/catalogue/" . $row['imageThumbnail']['content'];
+
+					$catalog[$row['identifier']] = $row;
+				}
 			}
 		}					
 	}
@@ -33,7 +36,8 @@ foreach (glob("src/data/sas/*") as $file)
 	{
 		echo $file.PHP_EOL;
 		$fileContent = json_decode(utf8_encode(file_get_contents($file)),1);
-		if($fileContent)
+		
+		if($fileContent && $fileContent["product"]["published"]["content"])
 		{
 			$row = array(
 				"identifier"		=> $fileContent["product"]["partnumber"],
