@@ -28,7 +28,7 @@ foreach (glob("src/data/sas/*") as $file)
 					if(isset($row['imageThumbnail']['content']))
 						$row['imageThumbnail']['content'] = "https://statics.lapeyre.fr/img/catalogue/" . $row['imageThumbnail']['content'];
 
-					$catalog[$row['identifier']] = $row;
+					$categories[$row['identifier']] = $row;
 				}
 			}
 		}				
@@ -69,8 +69,79 @@ foreach (glob("src/data/sas/*") as $file)
 			if(isset($row['imageThumbnail']['content']))
 				$row['imageThumbnail']['content'] = "https://statics.lapeyre.fr/img/catalogue/" . $row['imageThumbnail']['content'];
 
-			$catalog[$row['identifier']] = $row;
+			$categories[$row['identifier']] = $row;
 		}
 	}
 }
-file_put_contents("src/data/log/creating-catalog.json", json_encode($catalog),JSON_PRETTY_PRINT);
+foreach (glob("src/data/log/*") as $file) {
+	echo $file.PHP_EOL;
+	$fileContent = json_decode(file_get_contents($file),1);
+
+	if($fileContent)
+	{
+		foreach($fileContent as $row)
+		{
+			if(isset($row['identifier']))
+			{
+				foreach($row as $key => $value)
+				{
+					$categories[$row['identifier']][$key] = $value;			
+				}
+			}
+		}		
+	}
+	else
+	{
+		die("Le fichier $file est vide.");
+	}
+}
+foreach($categories as $row)
+{
+	if(isset($row['parentIdentifier']))
+	{
+		foreach($row['parentIdentifier'] as $parent)
+		{
+			$childrens[$parent][] = $row['identifier'];
+			$parents[$row['identifier']][] = $parent;
+		}
+	}
+	else
+	{
+		$tree[$row['identifier']] = array();
+		foreach($categories as $row2)
+		{
+			if(isset($row2['parentIdentifier']))
+			{
+				if(in_array($row['identifier'],$row2['parentIdentifier']))
+				{
+					$tree[$row['identifier']][$row2['identifier']] = array();
+					foreach($categories as $row3)
+					{
+						if(isset($row3['parentIdentifier']))
+						{					
+							if(in_array($row2['identifier'],$row3['parentIdentifier']))
+							{
+								$tree[$row['identifier']][$row2['identifier']][$row3['identifier']] = array();
+								foreach($categories as $row4)
+								{
+									if(isset($row4['parentIdentifier']))
+									{
+										if(in_array($row3['identifier'],$row4['parentIdentifier']))
+										{
+											$tree[$row['identifier']][$row2['identifier']][$row3['identifier']][$row4['identifier']] = array();
+										}								
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+file_put_contents("src/data/categories.json", json_encode($categories),JSON_PRETTY_PRINT);
+file_put_contents("src/data/tree.json", json_encode($tree),JSON_PRETTY_PRINT);
+file_put_contents("src/data/childrens.json", json_encode($childrens),JSON_PRETTY_PRINT);
+file_put_contents("src/data/parents.json", json_encode($parents),JSON_PRETTY_PRINT);
