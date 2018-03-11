@@ -7,13 +7,14 @@ foreach (glob("src/data/sas/*") as $file)
 {
 	if($file == "src/data/sas/categories.json")
 	{
-		$fileContent = json_decode(file_get_contents($file),1);
+		$fileContent = json_decode(utf8_encode(file_get_contents($file)),1);
 		if($fileContent)
 		{
 			foreach($fileContent['category'] as $row)
 			{
 				if($row['published']['content'])
 				{
+					echo $row['identifier'].PHP_EOL;
 					$row['url'] = str_replace("_", "-", $row['identifier']);
 					$row['identifier'] = preg_replace('/([\S\s]*)(CCN|CCU|SCU)([0-9]+)/', '$2$3', $row['identifier']);
 
@@ -30,7 +31,7 @@ foreach (glob("src/data/sas/*") as $file)
 					$catalog[$row['identifier']] = $row;
 				}
 			}
-		}					
+		}				
 	}
 	else
 	{
