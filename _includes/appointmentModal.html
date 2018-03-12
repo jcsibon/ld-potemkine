@@ -1,0 +1,16 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modalAppointment">
+    <div class="modal-dialog modal-lg mx-4 mx-sm-auto">
+        <div class="modal-content py-5 border-0 bg-transparent">
+            <div class="col-12 appointmentModal__close">
+                <div class="text-white text-uppercase bg-primary pl-3 pr-4 py-2 d-table position-relative cursor-pointer" data-dismiss="modal" aria-label="Close">
+                    <span>&times;</span> Fermer
+                </div>
+                <div class="d-flex">
+                    <div class="bg-primary breadcrumb__angle d-inline-block"></div>
+                </div>
+            </div>
+            {% include appointment.html %}
+            {% comment %} with 'modal': 'true' {% endcomment %}
+        </div>
+    </div>
+</div>

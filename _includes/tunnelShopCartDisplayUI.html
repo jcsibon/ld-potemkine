@@ -1,0 +1,54 @@
+<!-- BEGIN tunnelShopCartDisplayUI -->
+<div class="container">
+    <div class="card mb-4">
+        <div class="card-body">
+            {% if site.session.cart.articles|length > 0 %}
+            <h2>Mon panier</h2>
+            <br>
+            <div class="alert alert-warning">
+                <svg width="15" height="15"><use xlink:href="#info-circle"/></svg>&nbsp;Remise immédiate de 50€ à partir de 500 € d'achat
+            </div>
+            <ul class="list-group">
+                {% for article in site.session.cart.articles %}
+                {% include orderItemDetail.html %}
+                {% endfor %}
+            </ul>
+            <br>
+            <div class="row">
+                <div class="ml-auto col-md-8 col-lg-5 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p><svg width="20" height="20"><use xlink:href="#cadeau"/></svg>&nbsp;Code avantage ?</p>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Votre code" aria-label="Votre code">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">Appliquer</button>
+                                </span>
+                            </div>
+                            <br>
+                            <div class="alert alert-danger">
+                                <svg width="15" height="15"><use xlink:href="#info-circle"/></svg>&nbsp;Code coupon invalide
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    {% include orderSummaryViewUI.html %}
+                    <br>
+                    <p class="text-center"><strong>Moyens de paiement accept&eacute;s</strong></p>
+                    <div class="text-center">
+                        <svg width="50" height="50"><use xlink:href="#card-c"/></svg>&nbsp;
+                        <svg width="50" height="50"><use xlink:href="#card-m"/></svg>&nbsp;
+                        <svg width="50" height="50"><use xlink:href="#card-v"/></svg>&nbsp;
+                        <svg width="50" height="50"><use xlink:href="#card-a"/></svg>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="alert alert-warning">
+                Votre panier est vide
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!-- END tunnelShopCartDisplayUI -->

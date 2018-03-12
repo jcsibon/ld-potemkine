@@ -1,0 +1,16 @@
+---
+layout: null
+---
+[
+  {% for post in site.houses %}
+    {
+			"title"      : "{{ post.title | escape }}",
+			"excerpt"    : "{{ post.data.contenu[0].text }}",
+      "category"   : "{{ post.category }}",
+      "tags"       : "{{ post.tags | join: ', ' }}",
+      "url"        : "{{ site.baseurl }}{{ post.url }}",
+      "date"       : "{{ post.date }}",
+      "collection" : "{{ post.relative_path | split: '/' | first | replace: "_", "" }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

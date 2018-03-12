@@ -1,0 +1,60 @@
+{% include tunnelShopHero.html %}
+<div class="container">
+    <div class="row">
+        
+        <div class="col-lg-7 col-xl-8">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2>Merci pour votre commande</h2>
+                    {% if site.session.cart.delivery and site.session.cart.delivery == 1 %}
+                    <p class="text-justify">
+                        Votre commande <span class="text-muted">#WEB2376832</span> a bien été enregistrée. Le magasin <strong>Lapeyre Aubervilliers</strong> prépare votre commande et prendra contact avec vous pour convenir des détails liés à la livraison, prévue à partir du lundi 24 mars 2017.
+                    </p>
+                    {% else %}
+                    <p class="text-justify">
+                        Votre commande <span class="text-muted">#WEB2376832</span> a bien été enregistrée. Le magasin <strong>Lapeyre Aubervilliers</strong> prépare votre commande, disponible à partir du lundi 24 mars 2017 à 17h.
+                    </p>
+                    <div class="alert alert-info">
+                        <svg width="15" height="15"><use xlink:href="#question-circle-o"/></svg>&nbsp; Lorsque vous venez récuperer votre commande, n'oubliez pas de vous munir de votre email de confirmation de commande et d'une pièce d'identité
+                    </div>
+                    <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/map.png" class="img-fluid">
+                    {% endif %}
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2>Vos informations</h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    <h5>Adresse de livraison</h5>
+                                    {% comment %} {% include blocAdresseUI.html %} {% endcomment %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    <h5>Adresse de facturation</h5>
+                                    {% comment %} {% include blocAdresseUI.html %} {% endcomment %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <svg width="15" height="15"><use xlink:href="#arrow-right"/></svg>&nbsp; <span>Une question ?</span>&nbsp;Contactez notre <a href="/c/nous-contacter">service client</a>.
+                </div>
+            </div>
+           <p class="text-center">
+                <a href="/"><svg width="15" height="15"><use xlink:href="#arrow-right"/></svg>&nbsp;Retour à l'accueil</a>
+            </p>
+        </div>
+        <div class="col-lg-5 col-xl-4">
+            {% include tunnelRecapPanier.html %}
+        </div>
+    </div>
+</div>

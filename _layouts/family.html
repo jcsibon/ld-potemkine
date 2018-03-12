@@ -1,0 +1,112 @@
+---
+layout: default
+---
+
+
+{% include jumbotron.html %}
+
+{% include breadcrumb.html %}
+<!--
+{% include description.html %}
+-->
+<div class="container pb-5" id="product_list_top">
+    <div class="row pt-4">
+        <div class="col-12 col-xl-3 pr-md-5">
+            <div class="row">
+                <div class="col-12 border border-bottom-0 p-4 d-none d-xl-block">
+                    <p><a href="" class="text-dark">< Portes</a></p>
+                    <ul class="list-unstyled pl-4 mb-0">
+                        <li>
+                            <a href="" class="text-dark">Acier</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-dark">Aluminium</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-dark">PVC</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-dark">Bois</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 border border-top-0 bg-light p-4 d-none d-xl-block">
+                    <div class="bg-white p-3">
+                        <p class="text-uppercase">Prix</p>
+                   </div>
+                </div>
+                <div class="col-12 pt-4 px-2">
+                    <p>Porte d'entrée en aluminium, en acier, en bois ou en PVC, porte pleine ou vitrée, rectangulaire ou ceintrée, système de sécurité… Les portes d'entrée Lapeyre sont choisies pour leur résistance et leur esthétique. Et avec le service express, les portes d'entrée sur mesure sont disponibles en 15 jours.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xl-9">
+            <div class="row px-2 px-md-0">
+                <p class="h2">Portes d'entrée <span class="small text-muted"><small>(59 produits)</small></span></p>
+            </div>
+            <div class="d-none d-md-block">
+                <div class="row bg-light px-4 pb-2 pt-4 mt-3">
+                    {% for object in ['CCN688049','CCN688050','CCN688051','CCN688052'] %}
+                    <div class="col-md-3">
+                        {% include thumbnailFamily.html %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="row flex-row-reverse pt-3">
+                
+                <a href="" class="btn border text-dark d-lg-none my-1 px-4 mx-2">Filtrer</a>
+                
+                <select id="pageSize_5_-1011_7306" name="pageSize" onchange="javaScript:setCurrentId('pageSize_5_-1011_7306');SearchBasedNavigationDisplayJS.setPageSize(this.value)" class="mx-2 my-1 custom-select d-none d-md-block">
+                    <option value="12">
+                        12 par page
+                    </option>
+                    <option selected="selected" value="24">
+                        24 par page
+                    </option>
+                    <option value="48">
+                        48 par page
+                    </option>
+                </select>
+               <select id="orderBy_5_-1011_7306" class="mx-2 my-1 custom-select" onchange="javaScript:sortBySelectHandler(this);">
+                    <option value="0">Pertinence</option>
+                    <option value="2">Nom</option>
+                    <option value="5">Meilleures ventes</option>
+                    <option value="4">Prix décroissant</option>
+                    <option value="3">Prix croissant</option>
+                    <option selected="selected" value="6">Trier par : Popularité</option>
+                </select>
+            </div>
+            <div class="row pb-4">
+                {% comment %}
+                {% for family in childrens[global.request.get('code')] %}
+                <div class="col-6 col-md-4 col-lg-3 px-1 py-3 px-sm-3">
+                    {% include thumbnailProduct.html %}
+                </div>
+                {% endfor %}
+                {% endcomment %}
+                {% for i in 0..23 %}
+                <div class="col-6 col-md-4 col-lg-3 px-1 py-3 px-sm-3">
+                    {% include thumbnailProduct.html %}
+                </div>
+                {% endfor %}
+            </div>
+            <div class="row border border-left-0 border-right-0 border-bottom-0 pb-4 pt-4">
+                <div class="col-6 col-md-4">
+                    <a href="#product_list_top" class="text-dark">&uarr; Retour en haut</a>
+                </div>
+                <div class="col-6 col-md-8">
+                    <div class="row flex-row-reverse">
+                        <div>
+                            <span class="btn py-2 px-3 mx-1 d-none d-md-inline-block">1</span>
+                            <a href="" class="btn bg-light rounded py-2 px-3 cursor-pointer mx-1 d-none d-md-inline-block text-dark">2</a>
+                            <a href="" class="btn bg-light rounded py-2 px-3 cursor-pointer mx-1 d-none d-md-inline-block text-dark">3</a>
+                            <a href="" class="btn btn-primary text-white rounded py-2 px-3 cursor-pointer mx-1">Page suivante</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

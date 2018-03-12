@@ -1,0 +1,80 @@
+<!-- BEGIN tunnelRetraitMagasinTabUI -->
+
+<div class="card mb-4">
+    <div class="card-body">
+        <h2>
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#retrait" aria-expanded="false" aria-controls="retrait">
+                <svg width="35" height="35"><use xlink:href="#home"/></svg>&nbsp;Je souhaite retirer ma commande en magasin
+            </a>
+        </h2>
+        <p class="text-muted m-0">Auprès de l’un de nos magasins</p>
+        <div id="retrait" class="collapse show" role="tabpanel" aria-labelledby="retrait">
+            <hr>
+            <div id="retrait-step1">
+                <h4>Sélectionnez votre magasin</h4>
+                <div class="input-group">
+                  <input type="number" class="form-control" aria-label="Entrez votre code postal" placeholder="Entrez votre code postal"  value="{% if site.session.postcode %}{{ site.session.postcode }}{% endif %}">
+                   <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">OK</button>
+                  </span>
+                </div>
+                <ul class="row list-unstyled">
+                    {% for shop in data.store.shops %}
+                    <li class="col-12 col-md-6 col-xl-4 d-flex">
+                        {% if loop.index0 == 0 %}
+                        {% assign active = 1 %}
+                        {% else %}
+                        {% assign active = 0 %}
+                        {% endif %}
+                        {% include nearestShopsDisplay.html %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <div class="alert alert-warning">
+                    Votre code postal n'est pas reconnu. Nous vous invitons à prendre contact avec le service client.
+                </div>
+            </div>
+            <hr>
+            <div id="retrait-step2">
+                {% include driveScheduleWidgetUI.html %} 
+            </div>
+            <hr>
+            <div id="retrait-step3">
+                <h4>Entrez votre adresse de facturation</h4>
+                {% if site.session.logged == 1 and site.session.addresses|length > 0 %}
+                <ul class="row list-unstyled">
+                    {% for address in site.session.addresses %}
+                    <li class="col-12 col-md-6 col-xl-4 d-flex">
+                        {% assign livraison = 0 %}
+                        {% if loop.index0 == 0 %}
+                        {% assign active = 1 %}
+                        {% else %}
+                        {% assign active = 0 %}
+                        {% endif %}
+                        {% include blocAdresseUI.html %}
+                    </li>
+                    {% endfor %}
+                    <li class="col-12 col-md-6 col-xl-4 d-flex">
+                        <div class="card my-3 is-new col-12">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <p class="small">Vous avez besoin d’être facturé à une autre adresse ?</p>
+                                    <svg width="30" height="30"><use xlink:href="#plus-circle"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>                    
+                {% else %}
+                {% include addressFormUI.html %}
+                {% endif %}
+            </div>
+            <div class="row">
+                <div class="ml-sm-auto col-sm-6 col-xl-4">
+                    <button class="btn btn-primary btn-block">Valider et payer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END tunnelRetraitMagasinTabUI -->

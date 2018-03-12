@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-12 d-none d-lg-block breadcrumb__container">
+                <div class="text-white text-uppercase bg-primary px-4 py-2 d-table position-relative">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="d-flex">
+                    <div class="bg-primary breadcrumb__angle d-inline-block"></div>
+                    <ul class="d-inline-block small list-inline my-auto breadcrumb__list pl-3">
+                        <li class="list-inline-item">
+                            <a href="/" class="text-dark">Accueil</a>
+                        </li>
+                        {% for step in breadcrumb %}
+                        <li class="list-inline-item {% if loop.last %}breadcrumb__active{% endif %}">
+                            {% if loop.last == false %}<a href="/{{ categories[step]['seo']['urlKeyword']['content'] }}" class="text-dark">{% endif %}
+                                {{ categories[step]['label']['content'] }}
+                            {% if loop.last == false %}</a>{% endif %}
+                        </li>
+                        {% endfor %}                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% comment %}
+<div class="container breadcrumb">
+    <nav> <a href="/javascript:history.back()"><strong>&lt; Retour </strong></a><span>|</span> <a href="/https://www.lapeyre.fr">Accueil</a> 
+        {% if global.request.get('universeUrlcode') %}
+        <span>></span> <a href="/{{ global.request.get('universeUrlcode') }}-CCU0000/">{{ catalog[global.request.get('universeUrlcode')]['universeTitle'] }}</a>&nbsp;
+        {% if global.request.get('subuniverseUrlcode') %}
+        <span>></span> <a href="/{{ global.request.get('universeUrlcode') }}-CCU0000/">{{ catalog[global.request.get('universeUrlcode')]['subuniverses'][global.request.get('subuniverseUrlcode')]['subuniverseTitle'] }}</a>&nbsp;
+        {% if global.request.get('familyUrlname') %}
+        <span>></span> <a href="/{{ global.request.get('universeUrlcode') }}-CCU0000/{{ global.request.get('subuniverseUrlcode') }}-CCN0000/{{ global.request.get('familyUrlname') }}-CCN0000">{{ catalog[global.request.get('universeUrlcode')]['subuniverses'][global.request.get('subuniverseUrlcode')]['families'][global.request.get("familyUrlname")]['familyTitle'] }}</a>&nbsp;
+        {% if global.request.get('subfamilyUrlname') %}
+        <span>></span> <a href="/{{ global.request.get('universeUrlcode') }}-CCU0000/{{ global.request.get('subuniverseUrlcode') }}-CCN0000/{{ global.request.get('familyUrlname') }}-CCN0000/{{ global.request.get('subfamilyUrlname') }}-CCN0000">{{ catalog[global.request.get('universeUrlcode')]['subuniverses'][global.request.get('subuniverseUrlcode')]['families'][global.request.get("familyUrlname")]['familyTitle'] }}</a>&nbsp;
+        {% endif %}
+        {% endif %}
+        {% endif %}
+        {% endif %}
+    </nav>
+</div>
+{% endcomment %}

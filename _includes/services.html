@@ -1,0 +1,52 @@
+<div class="bg-light">
+    <div class="container py-5 services">
+        <div class="row py-5">
+            <div class="col-12 col-xl-8 px-5">
+                <div class="row">
+                    <p class="h2 text-uppercase pb-3">On vous accompagne</p>
+                </div>
+                <div class="row text-center d-flex">
+                    <div class="m-auto">
+                            <div class="text-left bg-dark text-white p-4 services__bloc float-sm-left">
+                                <div class="my-auto">
+                                    <p class="text-uppercase services__tiny_title">
+                                        Découvrez toutes nos <span class="text-white">expertises</span>
+                                    </p>
+                                    <p>
+                                        <a class="text-light" href="/c/services/">&gt; En savoir plus</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bg-white services__bloc p-3 pt-4 float-sm-left">
+                                <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/pose.png" />
+                                <p class="small pt-2">L'installation est faite sur-mesure par des artisans qualifiés.</p>
+                            </div>
+                            <div class="bg-white services__bloc p-3 pt-4 float-sm-left">
+                                <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/livraison.png" />
+                                <p class="small pt-2">Nous assurons la livraison de nos produits chez vous.</p>
+                            </div>
+                            <div class="bg-white services__bloc p-3 pt-4 float-sm-left">
+                                <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/atelier.png" />
+                                <p class="small pt-2">Nos menuisiers sont à votre écoute pour réaliser vos projets sur-mesure.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-4 pl-5 d-none d-xl-block">
+                <div class="row">
+                    <p class="h2 text-uppercase pb-3">Le magazine</p>
+                </div>
+                <div class="row services__magazine">
+                    {% for article in categories[breadcrumb[0]]['articles']|slice(0,4) %}
+                    <div class="col-12 py-2">
+                        <div class="row">
+                            <div class="col-3 py-3 services__articleContainerImage" style="background-image: url('{% if  articles[article]['visuelMea']['url'] %}{{ articles[article]['visuelMea']['url'] }}{% endif %}')"></div>
+                            <div class="col-9"><a href="{{ articles[article]['url'] }}" class="text-dark small">{{ articles[article]['titre'] }}</a></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

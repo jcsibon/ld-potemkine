@@ -1,8 +1,0 @@
-<a href="/{% if categories[object]['url']is defined %}{{ categories[object]['url']|replace({' ':'%20'}) }}{% else %}#{% endif %}">
-    <div class="p-0 position-relative">
-        <div class="d-flex thumbnailFamily rounded" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}); {% if thumbHeight is defined %} height: {{thumbHeight}}px {% endif %}">
-            <p class="h2 m-auto text-white text-center text-uppercase">{{ categories[object]['shortDesc']['content'] }}</p>
-        </div>
-    </div>
-</a>
-<br>

@@ -1,0 +1,141 @@
+# Site informations
+name: 'Lapeyre'
+title: Lapeyre
+email: hello@Lapeyre.fr
+description: Prismic usage with Jekyll example
+subject: Histoire de gestion de contenu, générateur de site internet statique et autres
+
+# Site settings
+baseurl: ""
+permalink: /:year/:month/:day/:title/
+url: "http://localhost:4000/"
+lang: fr
+timezone: Europe/Paris
+mainColor: '#000000'
+incremental: true
+profile: true
+encoding: utf-8
+
+robot: index,follow
+
+session:
+  user:
+    firstname: marylise
+
+
+cloudinary:
+  cloud_name: xxxxx
+  verbose: true
+  presets:
+    default:
+      min_width: 320
+      max_width: 1600
+      fallback_max_width: 800
+      steps: 5
+      sizes: "(min-width:40em) 40em, 90vw"
+
+ # seo-tag
+author: Lapeyre
+logo: /assets/bertrandkeller.png
+image:
+  path: /assets/bertrandkeller.png
+  height: 200
+  width: 200
+twitter:
+  username: Lapeyrefr
+social:
+  type: personn
+  name: Bertrand Keller
+  links:
+    - https://facebook.com/LapeyreFrance
+    - https://github.com/bertrandkeller
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+collections:
+  houses:
+    output: true
+  exports:
+    output: true
+  singles:
+    output: true
+
+
+defaults:
+  -
+    scope:
+      path: "_houses"
+    values:
+      layout: "house"
+  -
+    scope:
+      path: "_singles"
+    values:
+      layout: "house"
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+sass:
+    load_paths:
+        - _sass
+        - node_modules
+    style: compressed
+
+
+
+feed:
+  path: feed
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-tidy
+
+include:
+  - _redirects
+  - _headers
+
+exclude:
+  - .cache
+  - .editorconfig
+  - .gitattributes
+  - .gitignore
+  - .ruby-version
+  - .travis.yml
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - Procfile
+  - Rakefile
+  - Makefile
+  - script
+  - vendor
+  - gems
+  - tmp
+  - LICENSE.md
+  - README.md
+  - LICENSE
+  - node_modules
+
+jekyll_tidy:
+  compress_html: false
+  exclude: ["sw.js","404.html","offline.md"]
+
+assets:
+  autoprefixer:
+    browsers: ["last 2 versions","> 5%","IE 9"]
+  compress:
+    css:  sass
+    js:   uglifier
+sources:
+  - assets/js
+  - assets/css

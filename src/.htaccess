@@ -1,8 +1,0 @@
-# AuthType Basic
-# AuthName "Restricted access"
-# AuthUserFile "/app/src/.htpasswd"
-# Require valid-user
-
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.php [QSA,L]

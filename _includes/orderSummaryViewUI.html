@@ -1,0 +1,46 @@
+{% if site.session.cart.promotion %}
+<div class="row">
+    <div class="col-7">
+         <p class="pl-3 my-1 text-primary">{{ site.session.cart.promotion.title }}</p>
+     </div>
+     <div class="col-5">
+         <p class="pr-3 my-1 text-primary text-right">{{ site.session.cart.promotion.amount|number_format(2, '.') }} €</p>
+     </div>
+</div>
+{% endif %}
+{% if site.session.cart.coupon %}
+<div class="row">
+    <div class="col-7">
+         <p class="pl-3 my-1 text-primary">{{ site.session.cart.coupon.title }}</p>
+     </div>
+     <div class="col-5">
+         <p class="pr-3 my-1 text-primary text-right">{{ site.session.cart.coupon.amount|number_format(2, '.') }} €</p>
+     </div>
+</div>
+{% endif %}
+<div class="row">
+    <div class="col-7">
+        <p class="pl-3 my-1">Sous-total TTC</p>
+   </div>
+    <div class="col-5">
+        <p class="pr-3 my-1 text-right"><strong>{{ site.session.cart.subtotal|number_format(2, '.') }} €</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-7">
+        <p class="pl-3 my-1 small text-muted">dont TVA</p>
+   </div>
+    <div class="col-5">
+        <p class="pr-3 my-1 text-right small text-muted"><strong>{{ site.session.cart.vat|number_format(2, '.') }} €</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-7">
+        <p class="pl-3 my-1 small text-muted">dont Eco-Particpation</p>
+    </div>
+    <div class="col-5">
+        <p class="pr-3 my-1 text-right small text-muted"><strong>0,00 €</strong></p>
+    </div>
+</div>
+<br>
+<button class="btn btn-block btn-primary"><svg width="15" height="15"><use xlink:href="#lock"/></svg> Valider ma commande</button>

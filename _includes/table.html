@@ -1,0 +1,37 @@
+<div class="table-responsive">
+  <table class="window__table_global table table-striped table-bordered small font-weight-bold bg-white">
+    <thead>
+      <tr class="window__table text-white">
+        <th class="text-center">Largeur</th>
+        {% for width in object['columns'] %}
+        <th class="text-center align-middle" rowspan="2">{{ width }}</th>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th class="text-center">Hauteur</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% comment %}
+      {% for height,row in object['items'] %}
+      <tr>
+        <td class="text-center">
+          {{ height }}
+        </td>
+        {% for width in object['columns'] %}
+        <td class="text-center">
+          {% if object['items'][height][width]['price'] and object['items'][height][width]['price'] != 0 %}
+          <a target="_blank" href="https://www.lapeyre.fr/{{ object['items'][height][width]['url']|replace(' ','%20') }}" class="text-secondary">
+            {{ object['items'][height][width]['price'] }} €
+          </a>
+          {% else %}
+          
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+      {% endcomment %}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,65 @@
+<li class="list-group-item">
+    <div class="row">
+        <div class="col-sm-6 col-lg-7 col-xl-8">
+            <div class="row">
+                <div class="col-3 align-self-center">
+                    <img src="{{ article.img }}" class="img-fluid">
+                </div>
+                <div class="col-9 align-self-center">
+                    <p><small class="text-muted">Réf. {{ article.id }}</small></p>
+                    <h3>{{ article.productName }}</h3>
+                    <p><small><span class="text-muted">{{ article.articleName }}</span>
+                    {% if article.packaging %}
+                    <br><span class="text-muted">{{ article.packaging }}</span>
+                    {% endif %}
+                    {% if article.promotion %}
+                    <br><span class="text-primary">{{ article.promotionName }}</span>
+                    {% endif %}
+                    </small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-5 col-xl-4 align-self-center">
+            <br>
+            <div class="row">
+                <div class="col-4 align-self-center">
+                        {% if article.promotion %}
+                        <p class="text-right small">
+                            <span class="text-muted"><del>{{ article.price|number_format(2, '.') }} €<del></span>
+                            <br>        
+                            <span class="text-primary">{{ article.promotion|number_format(2, '.') }} €</span>
+                            <br>
+                            <span class="text-muted">{{ (article.price + article.promotion) |number_format(2, '.') }} €</span>
+                        </p>
+                        {% else %}
+                        <p class="text-right small">
+                            <span class="text-muted">{{ article.price|number_format(2, '.') }} €</span>
+                        </p>
+                        {% endif %}
+                </div>
+                <div class="col-5 align-self-center pt-4">
+                    <div class="form-inline">
+                        <div class="input-group">
+                           <span class="input-group-btn d-none d-md-inline">
+                            <button class="btn btn-light" type="button">-</button>
+                          </span>
+                          <input type="number" class="form-control text-primary text-center" aria-label="Quantité" value="{{  article.quantity }}">
+                           <span class="input-group-btn d-none d-md-inline">
+                            <button class="btn btn-light" type="button">+</button>
+                          </span>
+                        </div>
+                    </div>
+                    <p class="text-center"><small><a class="text-muted" href="#">Supprimer</a></small></p>
+                </div>
+                <div class="col-3 align-self-center">
+                    <p class="text-right">
+                        {% if article.promotion %}
+                            {{ ((article.price + article.promotion) * article.quantity)|number_format(2, '.') }} €
+                        {% else %}
+                            {{ (article.price * article.quantity)|number_format(2, '.') }} €
+                        {% endif %}
+                    </p>
+            </div>
+        </div>
+    </div>
+</li>

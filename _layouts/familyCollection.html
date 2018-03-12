@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+
+{% include jumbotron.html %}
+
+{% include breadcrumb.html %}
+
+{% include description.html %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-10 offset-1">
+            <div class="row">
+				{% for object in childrens[global.request.get('code')] %}
+					<div class="col-12 col-lg-4 px-1 py-3 px-sm-3">
+		            	{% include thumbnailCollection.html %}
+		            </div>
+			    {% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% include appointment.html %}
+
+{% include services.html %}
+
+
