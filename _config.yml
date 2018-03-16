@@ -21,6 +21,7 @@ robot: index,follow
 session:
   user:
     firstname: marylise
+    pro: 0
 
 
 cloudinary:
@@ -56,6 +57,10 @@ kramdown:
   input: GFM
 
 collections:
+  posts:
+    output: true
+  products:
+    output: true
   houses:
     output: true
   exports:
@@ -67,9 +72,14 @@ collections:
 defaults:
   -
     scope:
-      path: "_houses"
+      path: "posts"
     values:
-      layout: "house"
+      layout: "post"
+  -
+    scope:
+      path: "_products"
+    values:
+      layout: "product"
   -
     scope:
       path: "_singles"

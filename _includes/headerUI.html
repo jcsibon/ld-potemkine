@@ -1,5 +1,4 @@
 <!-- BEGIN headerUI -->
-
 <header>
     <div class="container-fluid">
         <div class="row d-flex d-block d-xl-none flex-nowrap wrapper">
@@ -570,10 +569,11 @@
             <div class="row">
                 <div class="col-8 header__main-nav pl-0">
                     <ul class="nav">
-                        {% for universe in ['CCU0003','CCU0004','CCU0001','CCU0002','CCU0005','CCU0006','CCU0007','CCU0008'] %}
+                        {% assign universes = "CCU0003|CCU0004|CCU0001|CCU0002|CCU0005|CCU0006|CCU0007|CCU0008" | split: "|" %}
+                        {% for object in universes %}
                         <li class="nav-item py-1 px-0 mt-1 dropdown">
-                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="/{{ categories[universe]['url']|replace(' ','%20') }}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href='/{{ categories[universe]['url']|replace(' ','%20') }}'">
-                                {{ categories[universe]['label']['content'] }}
+                            <a class="nav-link dropdown-toggle text-dark text-uppercase px-2 header__font-secondary" href="/{{ categories[object]['url']|replace(' ','%20') }}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href='/{{ categories[object]['url']|replace(' ','%20') }}'">
+                                {{ categories[object]['label']['content'] }}
                             </a>
                             <div class="dropdown-menu bg-light p-4 header__mega-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <div class="row">
@@ -581,7 +581,7 @@
                                         <div class="row">
                                        </div>
                                         <p class="pt-3">
-                                            <a href="/{{ categories[universe]['url']|replace(' ','%20') }}" class="text-dark small font-weight-bold">> Voir l'univers</a>
+                                            <a href="/{{ categories[object]['url']|replace(' ','%20') }}" class="text-dark small font-weight-bold">> Voir l'univers</a>
                                         </p>
                                     </div>
                                     <div class="col-3 header__mag px-5">

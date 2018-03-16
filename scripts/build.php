@@ -1,11 +1,14 @@
 <?php
 
+require 'vendor/autoload.php';
+use Symfony\Component\Yaml\Yaml;
+
 ini_set("memory_limit", "-1");
 set_time_limit(0);
 
-foreach (glob("src/data/sas/*") as $file) 
+foreach (glob("data/sas/*") as $file) 
 {
-	if($file == "src/data/sas/categories.json")
+	if($file == "data/sas/categories.json")
 	{
 		$fileContent = json_decode(utf8_encode(file_get_contents($file)),1);
 		if($fileContent)
@@ -28,6 +31,9 @@ foreach (glob("src/data/sas/*") as $file)
 					if(isset($row['imageThumbnail']['content']))
 						$row['imageThumbnail']['content'] = "https://statics.lapeyre.fr/img/catalogue/" . $row['imageThumbnail']['content'];
 
+					$row['type'] = "universe";
+					$row['layout'] = "universe";
+
 					$categories[$row['identifier']] = $row;
 				}
 			}
@@ -35,6 +41,7 @@ foreach (glob("src/data/sas/*") as $file)
 	}
 	else
 	{
+		/*
 		echo $file.PHP_EOL;
 		$fileContent = json_decode(utf8_encode(file_get_contents($file)),1);
 		
@@ -71,9 +78,10 @@ foreach (glob("src/data/sas/*") as $file)
 
 			$categories[$row['identifier']] = $row;
 		}
+		*/
 	}
 }
-foreach (glob("src/data/log/*") as $file) {
+foreach (glob("data/log/*") as $file) {
 	echo $file.PHP_EOL;
 	$fileContent = json_decode(file_get_contents($file),1);
 
@@ -139,12 +147,13 @@ foreach($categories as $row)
 			}
 		}
 	}
+	file_put_contents("_products/".$row['identifier'].".md",Yaml::dump($row));
 }
 
-file_put_contents("src/data/categories.json", json_encode($categories),JSON_PRETTY_PRINT);
-file_put_contents("src/data/tree.json", json_encode($tree),JSON_PRETTY_PRINT);
-file_put_contents("src/data/childrens.json", json_encode($childrens),JSON_PRETTY_PRINT);
-file_put_contents("src/data/parents.json", json_encode($parents),JSON_PRETTY_PRINT);
+file_put_contents("data/categories.json", json_encode($categories),JSON_PRETTY_PRINT);
+file_put_contents("data/tree.json", json_encode($tree),JSON_PRETTY_PRINT);
+file_put_contents("data/childrens.json", json_encode($childrens),JSON_PRETTY_PRINT);
+file_put_contents("data/parents.json", json_encode($parents),JSON_PRETTY_PRINT);
 
 
 
