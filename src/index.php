@@ -20,93 +20,46 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 		'twig.path' => __DIR__.'/views',
 ));
 
-foreach (glob("data/log/*") as $file) {
-	$fileContent = json_decode(file_get_contents($file),1);
 
-	if($fileContent)
-	{
-		foreach($fileContent as $row)
-		{
-			if(isset($row['identifier']))
-			{
-				foreach($row as $key => $value)
-				{
-					$categories[$row['identifier']][$key] = $value;			
-				}
-			}
-		}		
-	}
-	else
-	{
-		die("Le fichier $file est vide.");
-	}
-}
+$articles = json_decode(file_get_contents("data/articles.json"),1);
+$app['twig']->addGlobal('articles', $articles);
 
-
-foreach($categories as $row)
-{
-	foreach($row['parentIdentifier'] as $parent)
-	{
-		$childrens[$parent][] = $row['identifier'];
-		$parents[$row['identifier']][] = $parent;
-	}
-
-	if(!isset($row['parentIdentifier']))
-	{
-		$tree[$row['identifier']] = array();
-		foreach($categories as $row2)
-		{
-			if(in_array($row['identifier'],$row2['parentIdentifier']))
-			{
-				$tree[$row['identifier']][$row2['identifier']] = array();
-				foreach($categories as $row3)
-				{
-					if(in_array($row2['identifier'],$row3['parentIdentifier']))
-					{
-						$tree[$row['identifier']][$row2['identifier']][$row3['identifier']] = array();
-						foreach($categories as $row4)
-						{
-							if(in_array($row3['identifier'],$row4['parentIdentifier']))
-							{
-								$tree[$row['identifier']][$row2['identifier']][$row3['identifier']][$row4['identifier']] = array();
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
+$categories = json_decode(file_get_contents("data/categories.json"),1);
 $app['twig']->addGlobal('categories', $categories);
-$app['twig']->addGlobal('tree', $tree);
-$app['twig']->addGlobal('childrens', $childrens);
-$app['twig']->addGlobal('parents', $parents);
-
-
 $app->get('/categories', function() use($app, $categories) {
 	header('Content-Type: application/json');
 	die(json_encode($categories));
 	return true;
 });
 
+$tree = json_decode(file_get_contents("data/tree.json"),1);
+$app['twig']->addGlobal('tree', $tree);
 $app->get('/tree', function() use($app, $tree) {
 	header('Content-Type: application/json');
 	die(json_encode($tree));
 	return true;
 });
 
+$childrens = json_decode(file_get_contents("data/childrens.json"),1);
+$app['twig']->addGlobal('childrens', $childrens);
 $app->get('/childrens', function() use($app, $childrens) {
 	header('Content-Type: application/json');
 	die(json_encode($childrens));
 	return true;
 });
 
-$articles = json_decode(file_get_contents("data/articles.json"),1);
-$app['twig']->addGlobal('articles', $articles);
+$parents = json_decode(file_get_contents("data/parents.json"),1);
+$app['twig']->addGlobal('parents', $parents);
+
+
+
+
+
+
 
 $app['twig']->addGlobal("uri", strtok(trim($_SERVER["REQUEST_URI"],"/"),'?'));
-//die(json_encode($_GET));
+
+
 $clients = json_decode(file_get_contents("data/clients.json"));
 if(isset($_GET['client']) && isset($clients->{$_GET['client']}))
 	$data['session'] = $clients->{$_GET['client']};
@@ -187,8 +140,6 @@ $app->get('/{urlname}-{code}/', function($code) use($app, $categories, $parents)
 	}
 
 	$breadcrumb = array_reverse($breadcrumb);
-//	header('Content-Type: application/json');
-//	die(json_encode($breadcrumb));
 	$app['twig']->addGlobal('breadcrumb', $breadcrumb);
 
 	if(isset($categories[$code]['dimensionsPanes']))
@@ -203,9 +154,6 @@ $app->get('/{urlname}-{code}/', function($code) use($app, $categories, $parents)
 		    	$beezup[(int)$line[0]] = array_combine($keys, $line);
 			}
 		}
-
-//		header('Content-Type: application/json');
-//		die(json_encode($beezup));
 
 		foreach ($categories[$code]['dimensionsPanes'] as $keypane => $pane) {
 			foreach ($pane['tabs'] as $keytab => $tab) {

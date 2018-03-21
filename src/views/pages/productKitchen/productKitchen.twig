@@ -28,7 +28,7 @@
                     <div class="row">
                         <div class="col-12 col-sm-8 pt-4 pt-sm-0">
                             <h2 class="mb-0">{{ categories[global.request.get('code')]['label']['content'] }}</h2>
-                            <p class="small">Fabrication Française - Garantie 10 ans</p>
+                            <p class="small">Fabrication Française - Garantie {{ categories[global.request.get('code')]['warantyDuration'] }}</p>
                         </div>
                         <div class="col-12 col-sm-4 pl-4">
                             <p class="small mb-0">à partir de</p>
