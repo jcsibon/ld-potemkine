@@ -61,6 +61,7 @@
 </div>
 {% endif %} 
 <script>
+
     $('#rdv_dom_result').hide();
     $('#rdv_mag_result').hide();
     $('.rdv-mag-hideFirst').hide();
@@ -130,11 +131,29 @@
 
         $('#rdv_dom_result').fadeIn();
         var cp = $('#rdv_dom_cp').val();
-        if (!(cp>999 && cp<100000)) { $('#rdv_dom_result').html('Merci de renseigner un code postal valide.'); return; }
+        if (!(cp>999 && cp<100000)) 
+        { 
+            $('#rdv_dom_result').html('Merci de renseigner un code postal valide.'); 
+            window.dataLayer.push({ "event": "erreur_formulaire_rdv_domicile"});
+            return;
+        }
 
-        if (allCp.indexOf(cp)>-1) $('#rdv_dom_result').html($('.cad-cp-'+cp).html());
-        else $('#rdv_dom_result').html('Patience, ce service sera bientôt disponible chez vous !');
+        if (allCp.indexOf(cp)>-1) 
+        {
+            $('#rdv_dom_result').html($('.cad-cp-'+cp).html());
+            window.dataLayer.push({ "event": "succes_formulaire_rdv_domicile"});
+        }
+        else 
+        {
+            $('#rdv_dom_result').html('Patience, ce service sera bientôt disponible chez vous !');
+            window.dataLayer.push({ "event": "Service non disponible_formulaire_rdv_domicile"})
+        }
     }
+
+
+
+
+
 
     function cadChoiceAction(idCad, idMag) {
 
@@ -194,11 +213,13 @@
             console.log(data);
 
             $('#rdv_mag_result').html('Votre demande a bien été prise en compte, un conseiller vous rappellera rapidement pour fixer avec vous un rendez-vous en magasin.');
+            window.dataLayer.push({ "event": "erreur_formulaire_rdv_magasin"});
         })
             .fail(function(jqXHR, textStatus, errorThrown) {
             console.log("HTTP Request Failed");
 
             $('#rdv_mag_result').html('Une erreur est survenue. Veuillez nous en excuser.');
+            window.dataLayer.push({ "event": "erreur_formulaire_rdv_magasin"});
         });
     });
 
