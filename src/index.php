@@ -160,7 +160,7 @@ $app->get('/{urlname}-{code}/', function($code) use($app, $categories, $parents)
 				$table[$tab['product']] = array("columns"=>[],"items"=>[]);
 				foreach(json_decode(utf8_encode(file_get_contents("data/sas/".$tab['product'].".json")),1)['product']['itemList']['item'] as $item)
 				{
-					preg_match('/[\S\s]*(?:direction\s(?P<Tirant>[G|D]*))?[\S\s]*(?:Tableau|Tabl.|TabL.)[\s]*H[\.]*(?P<H>[0-9]+)[\s]*x[\s]*[l]*[\.]*(?P<l>[0-9]+)/', $item['label']['content'], $matches);
+					preg_match('/[\S\s]*(?:direction\s(?P<Tirant>[G|D]*))?[\S\s]*(?:Tab.|Tabl.|TabL.|Tableau)[\s]*H[\.]*(?P<H>[0-9]+)[\s]*x[\s]*[l]*[\.]*(?P<l>[0-9]+)/', $item['label']['content'], $matches);
 					// die("https://www.lapeyre.fr/wcs/resources/store/10101/productview/".$item['sku']);
 					// die(json_encode($matches,1));
 					$row = array(
@@ -170,6 +170,9 @@ $app->get('/{urlname}-{code}/', function($code) use($app, $categories, $parents)
 						"price" => number_format($beezup[$item['sku']]['PRICE'], 0, ',', '' ),
 						"content" => $item['label']['content']
 					);
+					if($tab['product']=='FPC2308151')
+						print_r($matches);
+
 					$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['items'][(int)$matches["H"]][(int)$matches["l"]] = $row;
 					if(!in_array((int)$matches["l"], $categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns']))
 						$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns'][] = (int)$matches["l"];
