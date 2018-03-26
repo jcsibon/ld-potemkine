@@ -170,9 +170,6 @@ $app->get('/{urlname}-{code}/', function($code) use($app, $categories, $parents)
 						"price" => number_format($beezup[$item['sku']]['PRICE'], 0, ',', '' ),
 						"content" => $item['label']['content']
 					);
-					if($tab['product']=='FPC2308151')
-						print_r($matches);
-
 					$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['items'][(int)$matches["H"]][(int)$matches["l"]] = $row;
 					if(!in_array((int)$matches["l"], $categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns']))
 						$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns'][] = (int)$matches["l"];
