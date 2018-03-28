@@ -170,7 +170,8 @@
         $('.rdv-mag-hideFirst').fadeIn();
     });
 
-    $( "#rdv_mag_button" ).click(function() {
+    $( "#rdv_mag_button" ).one('click', function (event) {  
+        event.preventDefault();
 
         $('.rdv-mag-hideFirst').fadeIn();
         $('#rdv_mag_result').fadeIn();
