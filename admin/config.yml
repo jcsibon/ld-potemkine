@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (master by default)
+  site_domain: http://localhost:4000/jekyll-netlify-cms/admin/#/
+
 
 media_folder: "img/uploads" # Folder where user uploaded files should go
 
@@ -34,3 +36,149 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Categories", name: "categories", widget: "string"}
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+  - name: "faq" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "FAQ" # Used in the UI
+    folder: "_faqs"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Question", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Answer", name: "body", widget: "markdown"}
+
+  - name: "settings"
+    label: "Settings"
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Site Settings"
+        file: "_data/settings.json"
+        description: "General Site Settings"
+        fields:
+          - {label: "Global title", name: "site_title", widget: "string"}
+          - label: "Post Settings"
+            name: posts
+            widget: "object"
+            fields:
+              - {label: "Number of posts on frontpage", name: front_limit, widget: number}
+              - {label: "Default Author", name: author, widget: string}
+              - {label: "Default Thumbnail", name: thumb, widget: image, class: "thumb"}
+
+      - name: "authors"
+        label: "Authors"
+        file: "_data/authors.yml"
+        description: "Author descriptions"
+        fields:
+          - name: authors
+            label: Authors
+            label_singular: "Author"
+            widget: list
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "markdown"}
+
+  - name: "kitchenSink" # all the things in one entry, for documentation and quick testing
+    label: "Kitchen Sink"
+    folder: "_sink"
+    create: true
+    fields:
+      - label: "Related Post"
+        name: "post"
+        widget: "relationKitchenSinkPost"
+        collection: "posts"
+        searchFields: ["title", "body"]
+        valueField: "title"
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Boolean", name: "boolean", widget: "boolean", default: true}
+      - {label: "Text", name: "text", widget: "text"}
+      - {label: "Number", name: "number", widget: "number"}
+      - {label: "Markdown", name: "markdown", widget: "markdown"}
+      - {label: "Datetime", name: "datetime", widget: "datetime"}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "File", name: "file", widget: "file"}
+      - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
+      - {label: "Hidden", name: "hidden", widget: "hidden", default: "hidden"}
+      - label: "Object"
+        name: "object"
+        widget: "object"
+        fields:
+          - label: "Related Post"
+            name: "post"
+            widget: "relationKitchenSinkPost"
+            collection: "posts"
+            searchFields: ["title", "body"]
+            valueField: "title"
+          - {label: "String", name: "string", widget: "string"}
+          - {label: "Boolean", name: "boolean", widget: "boolean", default: false}
+          - {label: "Text", name: "text", widget: "text"}
+          - {label: "Number", name: "number", widget: "number"}
+          - {label: "Markdown", name: "markdown", widget: "markdown"}
+          - {label: "Datetime", name: "datetime", widget: "datetime"}
+          - {label: "Date", name: "date", widget: "date"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "File", name: "file", widget: "file"}
+          - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
+      - label: "List"
+        name: "list"
+        widget: "list"
+        fields:
+          - {label: "String", name: "string", widget: "string"}
+          - {label: "Boolean", name: "boolean", widget: "boolean"}
+          - {label: "Text", name: "text", widget: "text"}
+          - {label: "Number", name: "number", widget: "number"}
+          - {label: "Markdown", name: "markdown", widget: "markdown"}
+          - {label: "Datetime", name: "datetime", widget: "datetime"}
+          - {label: "Date", name: "date", widget: "date"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "File", name: "file", widget: "file"}
+          - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
+          - label: "Object"
+            name: "object"
+            widget: "object"
+            fields:
+              - {label: "String", name: "string", widget: "string"}
+              - {label: "Boolean", name: "boolean", widget: "boolean"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Number", name: "number", widget: "number"}
+              - {label: "Markdown", name: "markdown", widget: "markdown"}
+              - {label: "Datetime", name: "datetime", widget: "datetime"}
+              - {label: "Date", name: "date", widget: "date"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "File", name: "file", widget: "file"}
+              - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
+              - label: "List"
+                name: "list"
+                widget: "list"
+                fields:
+                  - label: "Related Post"
+                    name: "post"
+                    widget: "relationKitchenSinkPost"
+                    collection: "posts"
+                    searchFields: ["title", "body"]
+                    valueField: "title"
+                  - {label: "String", name: "string", widget: "string"}
+                  - {label: "Boolean", name: "boolean", widget: "boolean"}
+                  - {label: "Text", name: "text", widget: "text"}
+                  - {label: "Number", name: "number", widget: "number"}
+                  - {label: "Markdown", name: "markdown", widget: "markdown"}
+                  - {label: "Datetime", name: "datetime", widget: "datetime"}
+                  - {label: "Date", name: "date", widget: "date"}
+                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "File", name: "file", widget: "file"}
+                  - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
+                  - {label: "Hidden", name: "hidden", widget: "hidden", default: "hidden"}
+                  - label: "Object"
+                    name: "object"
+                    widget: "object"
+                    fields:
+                      - {label: "String", name: "string", widget: "string"}
+                      - {label: "Boolean", name: "boolean", widget: "boolean"}
+                      - {label: "Text", name: "text", widget: "text"}
+                      - {label: "Number", name: "number", widget: "number"}
+                      - {label: "Markdown", name: "markdown", widget: "markdown"}
+                      - {label: "Datetime", name: "datetime", widget: "datetime"}
+                      - {label: "Date", name: "date", widget: "date"}
+                      - {label: "Image", name: "image", widget: "image"}
+                      - {label: "File", name: "file", widget: "file"}
+                      - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
