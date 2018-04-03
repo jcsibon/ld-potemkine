@@ -101,7 +101,10 @@ foreach($categories as $row)
 	{
 		foreach($row['parentIdentifier'] as $parent)
 		{
-			$childrens[$parent][] = $row['identifier'];
+			if(isset($row['sequence']))
+				$childrens[$parent][$row['sequence']] = $row['identifier'];
+			else
+				$childrens[$parent][] = $row['identifier'];
 			$parents[$row['identifier']][] = $parent;
 		}
 	}
@@ -141,6 +144,11 @@ foreach($categories as $row)
 	}
 }
 
+foreach($childrens as $key => $keychildrens)
+{
+	ksort($keychildrens);
+	$childrens[$key] = $keychildrens;
+}
 file_put_contents("src/data/categories.json", json_encode($categories),JSON_PRETTY_PRINT);
 file_put_contents("src/data/tree.json", json_encode($tree),JSON_PRETTY_PRINT);
 file_put_contents("src/data/childrens.json", json_encode($childrens),JSON_PRETTY_PRINT);
