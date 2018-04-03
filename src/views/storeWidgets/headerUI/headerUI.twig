@@ -1,5 +1,4 @@
 <!-- BEGIN headerUI -->
-
 <header>
     <div class="container-fluid">
         <div class="row d-flex d-block d-xl-none flex-nowrap wrapper">
@@ -618,13 +617,13 @@
                                 <div class="row">
                                     <div class="col-9 px-5">
                                         <div class="row">
-                                            {% for subuniverse,subuniverseContent in tree[universe] %}
+                                            {% for subuniverse in childrens[universe] %}
                                                 {% if categories[subuniverse]['hiddenHeader'] == false %}
                                                 <div class="col-3">
                                                     <p class="text-dark text-uppercase header__font-secondary">
                                                         {{ categories[subuniverse]['label']['content'] }}
                                                     </p>
-                                                    {% for family,familyContent in subuniverseContent %}
+                                                    {% for family in childrens[subuniverse] %}
                                                         {% if categories[family]['hiddenHeader'] == false %}
                                                         <p class="p-0 m-0 small">
                                                             <a class="dropdown-item" href="/{{ categories[family]['url']|replace({' ':'%20'}) }}">{{ categories[family]['shortDesc']['content'] }}</a>
