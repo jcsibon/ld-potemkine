@@ -1,7 +1,10 @@
 {"product": {
     "brandName": "",
     "brandPartnumber": "",
-    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "acier-CCN688181"}},
+    "categoriesParentList": {"categoryParent": [
+        {"categoryIdentifier": "travees-CCN688022"},
+        {"categoryIdentifier": "acier-CCN688181"}
+    ]},
     "imageFull": {
         "locale": "fr",
         "content": "/standardMain/115/533/200115533.jpg"
@@ -114,6 +117,15 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 536,
                     "attrIdentifier": "ATC-DETAIL-CATEGORIE",
                     "valueString": {
@@ -224,51 +236,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -284,15 +251,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 2
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -328,33 +286,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "La tradition de l'acier se marie avec l'élégance des barreaux fantaisie sur cette travée acier Azur très stylée, à assortir avec un portail Azur coulissant ou battant."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Hauteur 1m03.<BR/>- Largeurs proposées 1m00, 1m50 et 2m00.<BR/>- Assemblage par simple emboîtement au poteau.<BR/>- Version anticorrosion en option.<BR/>- Peut être utilisé comme travée avec le portail Azur."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Catégorie:Clôture<BR/>- Type d'ouverture: Non utilisé<BR/>- Matériau: Acier<BR/>- Modèle:Azur<BR/>- Hauteur: 103,0 cm<BR/>- Largeur: 100,0 cm<BR/>- Forme du portail:Non utilisé<BR/>- Esthétique: Non utilisé<BR/>- Couleur:Noir<BR/>- Motorisation: Non utilisé<BR/>- Garantie Produit: 2 ans<BR/>- Poids:12,98 kg"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -410,90 +341,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "050",
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES & JARDIN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EXTERIEUR"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 7643,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES DE PORTAILS FER"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -512,26 +365,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "COMPOSITION DE VENTE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 99,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -556,73 +389,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "SO",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 99,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G15",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES & JARDIN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -638,16 +404,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 730890980,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CONSTRUCTION ET PARTIE EN FER"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -672,15 +428,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -755,12 +502,48 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 68
+                        "content": "Azur<BR/>Travée<BR/>Fer"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "3 largeurs de disponible.Voir ctalaogue"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TRAVEE AZUR A/TUBE 103X100 L 100 H 100 c"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 100 H 100 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fixation sur les montants<BR/>par simple emboitage"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -822,15 +605,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 68
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 518,
                     "attrIdentifier": "NAT-15-001-CATEGORIE",
                     "valueString": {
@@ -870,11 +644,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -957,36 +731,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -1015,20 +759,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NON"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
+                    "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A l'offre"
+                        "content": "A Surveiller (Pre Su)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1136,15 +871,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 103,0 x L 100,0 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -1207,6 +933,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 536,
                     "attrIdentifier": "ATC-DETAIL-CATEGORIE",
@@ -1318,51 +1053,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1378,15 +1068,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 2
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1422,33 +1103,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "La tradition de l'acier se marie avec l'élégance des barreaux fantaisie sur cette travée acier Azur très stylée, à assortir avec un portail Azur coulissant ou battant."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Hauteur 1m03.<BR/>- Largeurs proposées 1m00, 1m50 et 2m00.<BR/>- Assemblage par simple emboîtement au poteau.<BR/>- Version anticorrosion en option.<BR/>- Peut être utilisé comme travée avec le portail Azur."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Catégorie:Clôture<BR/>- Type d'ouverture: Non utilisé<BR/>- Matériau: Acier<BR/>- Modèle:Azur<BR/>- Hauteur: 103,0 cm<BR/>- Largeur: 150,0 cm<BR/>- Forme du portail:Non utilisé<BR/>- Esthétique: Non utilisé<BR/>- Couleur:Noir<BR/>- Motorisation: Non utilisé<BR/>- Garantie Produit: 2 ans<BR/>- Poids:20,02 kg"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1504,90 +1158,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "050",
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES & JARDIN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EXTERIEUR"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 7643,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES DE PORTAILS FER"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1606,26 +1182,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "COMPOSITION DE VENTE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 99,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1650,73 +1206,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "SO",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 99,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G15",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES & JARDIN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -1732,16 +1221,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 730890980,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CONSTRUCTION ET PARTIE EN FER"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1766,15 +1245,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1849,12 +1319,48 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 99
+                        "content": "Azur<BR/>Travée<BR/>Fer"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "3 largeurs de disponible.Voir ctalaogue"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TRAVEE AZUR A/TUBE 103X150 L 150 H 100 c"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 150 H 100 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fixation sur les montants<BR/>par simple emboitage"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1916,15 +1422,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 99
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 518,
                     "attrIdentifier": "NAT-15-001-CATEGORIE",
                     "valueString": {
@@ -1964,11 +1461,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -2051,36 +1548,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -2109,20 +1576,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NON"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
+                    "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A l'offre"
+                        "content": "A Surveiller (Pre Su)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2230,15 +1688,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 103,0 x L 150,0 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -2301,6 +1750,15 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 536,
                     "attrIdentifier": "ATC-DETAIL-CATEGORIE",
@@ -2412,60 +1870,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0055",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AMO0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2481,15 +1885,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 2
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2525,33 +1920,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "La tradition de l'acier se marie avec l'élégance des barreaux fantaisie sur cette travée acier Azur très stylée, à assortir avec un portail Azur coulissant ou battant."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Hauteur 1m03.<BR/>- Largeurs proposées 1m00, 1m50 et 2m00.<BR/>- Assemblage par simple emboîtement au poteau.<BR/>- Version anticorrosion en option.<BR/>- Peut être utilisé comme travée avec le portail Azur."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Catégorie:Clôture<BR/>- Type d'ouverture: Non utilisé<BR/>- Matériau: Acier<BR/>- Modèle:Azur<BR/>- Hauteur: 103,0 cm<BR/>- Largeur: 200,0 cm<BR/>- Forme du portail:Non utilisé<BR/>- Esthétique: Non utilisé<BR/>- Couleur:Noir<BR/>- Motorisation: Non utilisé<BR/>- Garantie Produit: 2 ans<BR/>- Poids:27,06 kg"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2607,90 +1975,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "050",
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES & JARDIN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EXTERIEUR"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 7643,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES DE PORTAILS FER"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2709,26 +1999,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "COMPOSITION DE VENTE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 99,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2753,73 +2023,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "SO",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 99,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G15",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES & JARDIN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -2835,16 +2038,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 730890980,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CONSTRUCTION ET PARTIE EN FER"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2869,15 +2062,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -2952,12 +2136,48 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 154
+                        "content": "Azur<BR/>Travée<BR/>Fer"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "3 largeurs de disponible.Voir ctalaogue"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TRAVEE AZUR A/TUBE 103X200 L 200 H 100 c"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 200 H 100 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fixation sur les montants<BR/>par simple emboitage"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3019,15 +2239,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 154
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 518,
                     "attrIdentifier": "NAT-15-001-CATEGORIE",
                     "valueString": {
@@ -3067,11 +2278,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -3154,36 +2365,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -3212,20 +2393,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NON"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
+                    "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A l'offre"
+                        "content": "A Surveiller (Pre Su)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3333,15 +2505,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 103,0 x L 200,0 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -3404,6 +2567,24 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-COULEUR-CARTE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 536,
                     "attrIdentifier": "ATC-DETAIL-CATEGORIE",
@@ -3515,51 +2696,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3575,15 +2711,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 2
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3619,33 +2746,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "La tradition de l'acier se marie avec l'élégance des barreaux fantaisie sur cette travée acier Azur très stylée, à assortir avec un portail Azur coulissant ou battant."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Hauteur 1m03.<BR/>- Largeurs proposées 1m00, 1m50 et 2m00.<BR/>- Assemblage par simple emboîtement au poteau.<BR/>- Version anticorrosion en option.<BR/>- Peut être utilisé comme travée avec le portail Azur."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Catégorie:Clôture<BR/>- Type d'ouverture: Non utilisé<BR/>- Matériau: Acier anticorrosion<BR/>- Modèle:Azur<BR/>- Hauteur: 103,0 cm<BR/>- Largeur: 100,0 cm<BR/>- Forme du portail:Non utilisé<BR/>- Esthétique: Non utilisé<BR/>- Couleur:Gris<BR/>- Motorisation: Non utilisé<BR/>- Garantie Produit: 10 ans<BR/>- Poids:12,98 kg"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3691,90 +2791,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "050",
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES & JARDIN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EXTERIEUR"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "764B",
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES DE PORTAILS FER ANTICORROSION"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3793,26 +2815,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "COMPOSITION DE VENTE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 99,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3837,73 +2839,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "SO",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 99,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G15",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES & JARDIN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -3919,16 +2854,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 730890980,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CONSTRUCTION ET PARTIE EN FER"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3953,15 +2878,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -4036,12 +2952,48 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 156
+                        "content": "Azur<BR/>Travée<BR/>Fer anti corrosion"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "3 largeurs de disponible.Voir catalogue"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TRAVEE AZUR GALVANISEE A/TUBE L.100 L 10"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 100 H 100 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fixation sur les montants<BR/>par simple emboitage"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -4103,15 +3055,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 156
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 518,
                     "attrIdentifier": "NAT-15-001-CATEGORIE",
                     "valueString": {
@@ -4151,11 +3094,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -4238,36 +3181,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -4296,20 +3209,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NON"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
+                    "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A l'offre"
+                        "content": "A Surveiller (Pre Su)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4417,15 +3321,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 103,0 x L 100,0 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -4488,6 +3383,24 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-COULEUR-CARTE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 536,
                     "attrIdentifier": "ATC-DETAIL-CATEGORIE",
@@ -4599,51 +3512,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4659,15 +3527,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 2
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -4703,33 +3562,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "La tradition de l'acier se marie avec l'élégance des barreaux fantaisie sur cette travée acier Azur très stylée, à assortir avec un portail Azur coulissant ou battant."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Hauteur 1m03.<BR/>- Largeurs proposées 1m00, 1m50 et 2m00.<BR/>- Assemblage par simple emboîtement au poteau.<BR/>- Version anticorrosion en option.<BR/>- Peut être utilisé comme travée avec le portail Azur."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Catégorie:Clôture<BR/>- Type d'ouverture: Non utilisé<BR/>- Matériau: Acier anticorrosion<BR/>- Modèle:Azur<BR/>- Hauteur: 103,0 cm<BR/>- Largeur: 150,0 cm<BR/>- Forme du portail:Non utilisé<BR/>- Esthétique: Non utilisé<BR/>- Couleur:Gris<BR/>- Motorisation: Non utilisé<BR/>- Garantie Produit: 10 ans<BR/>- Poids:20,02 kg"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4775,90 +3607,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "050",
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES & JARDIN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EXTERIEUR"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "764B",
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES DE PORTAILS FER ANTICORROSION"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -4877,26 +3631,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "COMPOSITION DE VENTE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 99,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4921,73 +3655,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "SO",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 99,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G15",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES & JARDIN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -5003,16 +3670,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 730890980,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CONSTRUCTION ET PARTIE EN FER"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5037,15 +3694,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -5120,12 +3768,30 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 220
+                        "content": "AZUR<BR/>FER"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TRAVEE AZUR GALVANISEE A/TUBE L.150 L 15"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 150 H 100 cm"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -5187,15 +3853,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 220
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 518,
                     "attrIdentifier": "NAT-15-001-CATEGORIE",
                     "valueString": {
@@ -5235,11 +3892,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -5322,36 +3979,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -5380,20 +4007,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NON"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
+                    "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A l'offre"
+                        "content": "A Surveiller (Pre Su)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5501,15 +4119,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 103,0 x L 150,0 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -5572,6 +4181,24 @@
         },
         {
             "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-COULEUR-CARTE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
                 {
                     "valueIdentifier": 536,
                     "attrIdentifier": "ATC-DETAIL-CATEGORIE",
@@ -5683,51 +4310,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC0829470"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -5743,15 +4325,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 2
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -5787,33 +4360,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "La tradition de l'acier se marie avec l'élégance des barreaux fantaisie sur cette travée acier Azur très stylée, à assortir avec un portail Azur coulissant ou battant."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Hauteur 1m03.<BR/>- Largeurs proposées 1m00, 1m50 et 2m00.<BR/>- Assemblage par simple emboîtement au poteau.<BR/>- Version anticorrosion en option.<BR/>- Peut être utilisé comme travée avec le portail Azur."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Catégorie:Clôture<BR/>- Type d'ouverture: Non utilisé<BR/>- Matériau: Acier anticorrosion<BR/>- Modèle:Azur<BR/>- Hauteur: 103,0 cm<BR/>- Largeur: 200,0 cm<BR/>- Forme du portail:Non utilisé<BR/>- Esthétique: Non utilisé<BR/>- Couleur:Gris<BR/>- Motorisation: Non utilisé<BR/>- Garantie Produit: 10 ans<BR/>- Poids:27,06 kg"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5859,90 +4405,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "050",
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES & JARDIN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EXTERIEUR"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "764B",
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES DE PORTAILS FER ANTICORROSION"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -5961,26 +4429,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "COMPOSITION DE VENTE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 99,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6005,73 +4453,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "SO",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 99,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G15",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CLOTURES & JARDIN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -6087,16 +4468,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 730890980,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CONSTRUCTION ET PARTIE EN FER"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6121,15 +4492,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -6204,12 +4566,30 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 280
+                        "content": "AZUR<BR/>FER"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TRAVEE AZUR GALVANISEE A/TUBE L.200 L 20"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 200 H 100 cm"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -6271,15 +4651,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 280
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 518,
                     "attrIdentifier": "NAT-15-001-CATEGORIE",
                     "valueString": {
@@ -6319,11 +4690,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -6406,36 +4777,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANS OBJET"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -6464,20 +4805,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NON"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
+                    "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A l'offre"
+                        "content": "A Surveiller (Pre Su)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6573,15 +4905,6 @@
                         "locale": "fr",
                         "content": 27.06
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 103,0 x L 200,0 cm"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {

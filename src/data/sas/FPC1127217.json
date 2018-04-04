@@ -22,7 +22,7 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-FIX",
+            "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
             "attrUsage": 1,
             "attrSequence": 1
         },
@@ -32,7 +32,7 @@
             "attrSequence": 2
         },
         {
-            "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+            "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
             "attrUsage": 1,
             "attrSequence": 3
         },
@@ -156,6 +156,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "ATD-CategorieCDG",
                     "valueString": {
                         "locale": "fr",
@@ -246,51 +255,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE1127217"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1127217"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1127217"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -306,15 +270,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -355,33 +310,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Un receveur de douche en grés émaillé blanc, ultra résistant et traité antiglisse pour sécuriser votre espace douche dans la salle de bains. Existe également en format \"grand espace\" et angle sur ce site."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Blanc, 70 x 70 cm ép : 10.5 cm.<BR/>- Existe en 80 x 80 ép : 10.5 cm et 90 x 90 cm.<BR/>- Dessins de fond : (voir vue en situation) <BR/>- Bonde :<BR/>* Ø 60 mm sur 70x70 et 80x80<BR/>* Ø 90 mm sur 90x90<BR/>- Norme NF."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Typologie de produit: Receveur<BR/>- Modèle:Passy<BR/>- Forme:Carré<BR/>- Matériau: Grès<BR/>- Couleur: Blanc<BR/>- Hauteur:10,5 cm<BR/>- Largeur:80,0 cm<BR/>- Profondeur:80,0 cm<BR/>- <BR/>- Type de vidage: Non utilisé<BR/>- Garantie Produit: 2 ans<BR/>- Poids: 31,0 kg"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "V9359015",
                     "attrIdentifier": "ATSOwnerCOM",
                     "valueString": {
@@ -403,7 +331,7 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-10.5",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -423,30 +351,11 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-80",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 80
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 2,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -457,65 +366,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 820,
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANITAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SALLE DE BAINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4525,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "RECEVEURS GRES"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -534,26 +384,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 52,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLATEFORMES NEGOCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -578,73 +408,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NORMAL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G28",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANITAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "APX",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -660,16 +423,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 691090000,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EVIER, LAV.COL.BID.RESERV.CERAMIQUE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -694,15 +447,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -787,12 +531,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 51.9
+                        "content": "PASSY<BR/>Bac à douche  en grés émaillé, blanc<BR/>A poser"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L80 x l80 x h 10.5 cm"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -881,15 +634,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 49.9
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "NAT-28-001-DIMENSION",
                     "valueString": {
                         "locale": "fr",
@@ -936,6 +680,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 393,
+                    "attrIdentifier": "NAT-28-001-TYPOLOGIE-PRODUIT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carré"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-ANTILLES",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -945,11 +699,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1032,36 +786,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XL",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FORMAT XL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 3,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -1087,15 +811,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1220,15 +935,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 10,5 x L 80,0  x P 80,0 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -1329,6 +1035,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "ATD-CategorieCDG",
                     "valueString": {
                         "locale": "fr",
@@ -1419,60 +1134,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE1127217"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1127217"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1127217"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0055",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AMO1127217"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1488,15 +1149,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1537,33 +1189,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Un receveur de douche en grés émaillé blanc, ultra résistant et traité antiglisse pour sécuriser votre espace douche dans la salle de bains. Existe également en format \"grand espace\" et angle sur ce site."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Blanc, 70 x 70 cm ép : 10.5 cm.<BR/>- Existe en 80 x 80 ép : 10.5 cm et 90 x 90 cm.<BR/>- Dessins de fond : (voir vue en situation) <BR/>- Bonde :<BR/>* Ø 60 mm sur 70x70 et 80x80<BR/>* Ø 90 mm sur 90x90<BR/>- Norme NF."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Typologie de produit: Receveur<BR/>- Modèle:Passy<BR/>- Forme:Carré<BR/>- Matériau: Grès<BR/>- Couleur: Blanc<BR/>- Hauteur:10,5 cm<BR/>- Largeur:70,0 cm<BR/>- Profondeur:70,0 cm<BR/>- <BR/>- Type de vidage: Non utilisé<BR/>- Garantie Produit: 2 ans<BR/>- Poids: 24,0 kg"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "V9359015",
                     "attrIdentifier": "ATSOwnerCOM",
                     "valueString": {
@@ -1585,7 +1210,7 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-10.5",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1605,30 +1230,11 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-70",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 70
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 2,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -1639,55 +1245,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 820,
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANITAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SALLE DE BAINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4525,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "RECEVEURS GRES"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1706,26 +1263,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 52,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLATEFORMES NEGOCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1750,73 +1287,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NORMAL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G28",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANITAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "APX",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -1832,16 +1302,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 392210000,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "BAIGNOIRE,DOUCHE,LAVABO MAT.PLASTIQUE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1866,15 +1326,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1959,12 +1410,30 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 44.9
+                        "content": "PASSY<BR/>Receveur à poser en grès émaillé<BR/>Coloris blanc"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bonde : 60 mm<BR/>Norme NF"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "70 x 70 cm épaisseur 10,5 cm"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2053,15 +1522,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 42.9
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "NAT-28-001-DIMENSION",
                     "valueString": {
                         "locale": "fr",
@@ -2108,6 +1568,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 393,
+                    "attrIdentifier": "NAT-28-001-TYPOLOGIE-PRODUIT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carré"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-ANTILLES",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2117,11 +1587,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -2204,26 +1674,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FORMAT XXL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 3,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -2249,15 +1699,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2382,15 +1823,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 10,5 x L 70,0  x P 70,0 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -2491,6 +1923,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "ATD-CategorieCDG",
                     "valueString": {
                         "locale": "fr",
@@ -2581,51 +2022,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE1127217"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1127217"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1127217"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2641,15 +2037,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2690,33 +2077,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Un receveur de douche en grés émaillé blanc, ultra résistant et traité antiglisse pour sécuriser votre espace douche dans la salle de bains. Existe également en format \"grand espace\" et angle sur ce site."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Blanc, 70 x 70 cm ép : 10.5 cm.<BR/>- Existe en 80 x 80 ép : 10.5 cm et 90 x 90 cm.<BR/>- Dessins de fond : (voir vue en situation) <BR/>- Bonde :<BR/>* Ø 60 mm sur 70x70 et 80x80<BR/>* Ø 90 mm sur 90x90<BR/>- Norme NF."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Typologie de produit: Receveur<BR/>- Modèle:Passy<BR/>- Forme:Carré<BR/>- Matériau: Grès<BR/>- Couleur: Blanc<BR/>- Hauteur:10,0 cm<BR/>- Largeur:90,0 cm<BR/>- Profondeur:90,0 cm<BR/>- <BR/>- Type de vidage: Non utilisé<BR/>- Garantie Produit: 2 ans<BR/>- Poids: 44,0 kg"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "V9359015",
                     "attrIdentifier": "ATSOwnerCOM",
                     "valueString": {
@@ -2738,7 +2098,7 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-10",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
@@ -2758,30 +2118,11 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-90",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 90
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 2,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -2792,65 +2133,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 820,
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANITAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SALLE DE BAINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4525,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "RECEVEURS GRES"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2869,26 +2151,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 52,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLATEFORMES NEGOCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2913,73 +2175,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NORMAL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G28",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SANITAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "APX",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -2995,16 +2190,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 392210000,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "BAIGNOIRE,DOUCHE,LAVABO MAT.PLASTIQUE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3029,15 +2214,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -3122,12 +2298,30 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 76.9
+                        "content": "PASSY<BR/>Receveur à poser en grès émaillé<BR/>Coloris blanc"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bonde : 90 mm<BR/>Norme NF"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "90 x 90 cm épaisseur 10 cm"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3216,15 +2410,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 74.9
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "NAT-28-001-DIMENSION",
                     "valueString": {
                         "locale": "fr",
@@ -3271,6 +2456,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 393,
+                    "attrIdentifier": "NAT-28-001-TYPOLOGIE-PRODUIT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carré"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-ANTILLES",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3280,11 +2475,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -3367,36 +2562,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "A",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EN STOCK SELON MAGASINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 3,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -3422,15 +2587,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3543,15 +2699,6 @@
                         "locale": "fr",
                         "content": 44
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 10,0 x L 90,0  x P 90,0 cm"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {

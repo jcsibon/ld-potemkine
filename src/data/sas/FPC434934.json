@@ -1,14 +1,17 @@
 {"product": {
     "brandName": "",
     "brandPartnumber": "",
-    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "sieges-barres-maintien_CCN0117"}},
+    "categoriesParentList": {"categoryParent": [
+        {"categoryIdentifier": "sieges-barres-maintien_CCN0117"},
+        {"categoryIdentifier": "accessoires-baignoire-CCN688045"}
+    ]},
     "imageFull": {
         "locale": "fr",
         "content": "/standardMain/_bl/anc/Banc DESIGN blanc.jpg"
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -25,6 +28,15 @@
             "attrIdentifier": "CCU0002-ATC-FINITION",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1601
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -64,28 +76,10 @@
             "attrSequence": 0
         },
         {
-            "attrIdentifier": "isSoldes",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
                 "content": "Prix pour la dimension H 58,0 x L 52,6 cm"
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "ribbonad-soldesRateValue-70",
-            "valueString": {
-                "locale": "fr",
-                "content": "-70%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -273,56 +267,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE434936"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC434934"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC434934"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -331,17 +280,8 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
                         "content": 0
                     },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -368,33 +308,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Avec assise ABS, ce banc de douche au design esthétique disponible en 3 finitions sécurise l'accès douche pour les personnes à mobilité réduite et peut supporter jusque 150 kg. Gamme complète Design sur ce site."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Banc de douche<BR/>- Design<BR/>- Tube elliptique H.38 x P. 25 cm aluminium (garantie totale contre tout risque de corrosion)<BR/>- Assise en ABS<BR/>- Hauteur assise : 50 cm<BR/>- Largeur assise : 52 cm <BR/>- Profondeur assise : 46 cm<BR/>- Poids maxi : 150 kg<BR/>- Disponible en 3 finitons"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Catégorie:Accessoire<BR/>- Forme:Non utilisé<BR/>- Type d'ouverture:Non utilisé<BR/>- Matériau:Pvc<BR/>- Epaisseur:0,0 mm<BR/>- Anticalcaire:NON<BR/>- Largeur:52,6 cm X Longueur: 46,1 cm  X Hauteur:58,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -430,90 +343,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 2,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 822,
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SALLE DE BAINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "D",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF DESCRIPTIF"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4671,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACCESSOIRES SDB"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -532,26 +367,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 52,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLATEFORMES NEGOCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -585,73 +400,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NORMAL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G30",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -667,16 +415,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Sans Objet"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 848180990,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ART.ROBINETTERIE/ORGANE DE TUYAUTERIE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -701,15 +439,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -794,12 +523,30 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 214.75
+                        "content": "BANC DE DOUCHE<BR/>DESIGN 15<BR/>PIEDS GRIS /ASSISE ANTHRACITE"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "PROF. ASSISE 46 CM<BR/>POIDS MAXI : 150 Kilos<BR/>EXISTE PIEDS CHROME/ASSISE BLANCHE<BR/>ET PIEDS BLANCS/ASSISE BLANCHE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H.50XL.52 CM"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -881,7 +628,7 @@
                     "attrIdentifier": "LAPEYRE-PROMO-ID",
                     "valueString": {
                         "locale": "fr",
-                        "content": 4271
+                        "content": "NO_PROMO"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -901,6 +648,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Accessoire"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Non utilisé"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -953,11 +709,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1030,36 +786,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SUR DELAI COURT"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "D",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF DESCRIPTIF"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 4,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -1073,7 +799,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 9001050000
+                        "content": "09001050000"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1097,20 +823,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1200,15 +917,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "isSoldes",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1222,24 +930,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Prix pour la dimension H 58,0 x L 52,6 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 58,0 x L 52,6 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ribbonad-soldesRateValue-70",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "-70%"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1287,7 +977,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -1454,65 +1144,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE434936"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC434934"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC434934"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0055",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AMO434935"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1521,17 +1157,8 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
                         "content": 0
                     },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1558,33 +1185,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Avec assise ABS, ce banc de douche au design esthétique disponible en 3 finitions sécurise l'accès douche pour les personnes à mobilité réduite et peut supporter jusque 150 kg. Gamme complète Design sur ce site."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Banc de douche<BR/>- Design<BR/>- Tube elliptique H.38 x P. 25 cm aluminium (garantie totale contre tout risque de corrosion)<BR/>- Assise en ABS<BR/>- Hauteur assise : 50 cm<BR/>- Largeur assise : 52 cm <BR/>- Profondeur assise : 46 cm<BR/>- Poids maxi : 150 kg<BR/>- Disponible en 3 finitons"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Catégorie:Accessoire<BR/>- Forme:Non utilisé<BR/>- Type d'ouverture:Non utilisé<BR/>- Matériau:Pvc<BR/>- Epaisseur:0,0 mm<BR/>- Anticalcaire:NON<BR/>- Largeur:52,6 cm X Longueur: 46,1 cm  X Hauteur:58,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1620,90 +1220,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 2,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 822,
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SALLE DE BAINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "D",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF DESCRIPTIF"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4671,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACCESSOIRES SDB"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1722,26 +1244,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 52,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLATEFORMES NEGOCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1775,73 +1277,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NORMAL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G30",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -1857,16 +1292,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Sans Objet"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 848180990,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ART.ROBINETTERIE/ORGANE DE TUYAUTERIE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1891,15 +1316,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1984,12 +1400,30 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 194.75
+                        "content": "BANC DE DOUCHE<BR/>DESIGN 15<BR/>PIEDS BLANCS/ASSISE BLANCHE"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "PROF. ASSISE 46 CM<BR/>POIDS MAXI : 150 Kilos<BR/>EXISTE PIEDS CHROME/ASSISE BLANCHE<BR/>ET PIEDS GRIS/ASSISE ANTHRACITE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H.50XL.52 CM"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2071,7 +1505,7 @@
                     "attrIdentifier": "LAPEYRE-PROMO-ID",
                     "valueString": {
                         "locale": "fr",
-                        "content": 4271
+                        "content": "NO_PROMO"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2091,6 +1525,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Accessoire"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Non utilisé"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2143,11 +1586,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -2220,36 +1663,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "A",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EN STOCK SELON MAGASINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "D",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF DESCRIPTIF"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 4,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -2263,7 +1676,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 9001050000
+                        "content": "09001050000"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2287,20 +1700,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2390,15 +1794,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "isSoldes",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2412,24 +1807,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Prix pour la dimension H 58,0 x L 52,6 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 58,0 x L 52,6 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ribbonad-soldesRateValue-70",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "-70%"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2477,7 +1854,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -2644,51 +2021,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE434936"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC434934"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC434934"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2704,15 +2036,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2739,33 +2062,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Avec assise ABS, ce banc de douche au design esthétique disponible en 3 finitions sécurise l'accès douche pour les personnes à mobilité réduite et peut supporter jusque 150 kg. Gamme complète Design sur ce site."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Banc de douche<BR/>- Design<BR/>- Tube elliptique H.38 x P. 25 cm aluminium (garantie totale contre tout risque de corrosion)<BR/>- Assise en ABS<BR/>- Hauteur assise : 50 cm<BR/>- Largeur assise : 52 cm <BR/>- Profondeur assise : 46 cm<BR/>- Poids maxi : 150 kg<BR/>- Disponible en 3 finitons"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Catégorie:Accessoire<BR/>- Forme:Non utilisé<BR/>- Type d'ouverture:Non utilisé<BR/>- Matériau:Pvc<BR/>- Epaisseur:0,0 mm<BR/>- Anticalcaire:NON<BR/>- Largeur:52,6 cm X Longueur: 46,1 cm  X Hauteur:58,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2801,90 +2097,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 2,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 822,
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SALLE DE BAINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "D",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF DESCRIPTIF"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4671,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACCESSOIRES SDB"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2903,26 +2121,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 52,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLATEFORMES NEGOCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2956,73 +2154,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NORMAL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G30",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -3038,16 +2169,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Sans Objet"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 848180990,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ART.ROBINETTERIE/ORGANE DE TUYAUTERIE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3072,15 +2193,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -3165,12 +2277,30 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 274.75
+                        "content": "BANC DE DOUCHE<BR/>DESIGN 15<BR/>PIEDS CHROME/ASSISE BLANCHE"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "PROF. ASSISE 46 CM<BR/>POIDS MAXI : 150 Kilos<BR/>EXISTE PIEDS BLANCS/ASSISE BLANCHE<BR/>ET PIEDS GRIS/ASSISE ANTHRACITE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H.50XL.52 CM"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3249,6 +2379,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "NAT-30-001-ANTICALCAIRE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3263,6 +2402,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Accessoire"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Non utilisé"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3315,11 +2463,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -3392,36 +2540,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SUR DELAI COURT"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "D",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF DESCRIPTIF"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 4,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -3435,7 +2553,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 9001050000
+                        "content": "09001050000"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3456,15 +2574,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3562,30 +2671,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "isSoldes",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 4.8
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 58,0 x L 52,6 cm"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {

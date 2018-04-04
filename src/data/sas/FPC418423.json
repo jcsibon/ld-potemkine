@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -22,9 +22,18 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+            "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
             "attrUsage": 1,
             "attrSequence": 1
+        },
+        {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1603
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
         },
         {
             "attrIdentifier": "categorieGoogle",
@@ -119,16 +128,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATD-CategorieCDG",
                     "valueString": {
                         "locale": "fr",
@@ -141,7 +140,7 @@
                     "attrIdentifier": "ATD-FamilleCDG",
                     "valueString": {
                         "locale": "fr",
-                        "content": "G23-MEUBLES DE CUISINE"
+                        "content": "G23-ANCIENNE GAMMES MEUBLES"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -219,56 +218,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE418425"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC418423"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC418423"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -277,17 +231,8 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
                         "content": 0
                     },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -319,33 +264,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réalisé en matière plastique, ce range-couverts s'adapte aux dimensions de vos tiroirs grâce à ses diviseurs réglables."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Range couverts plastique<BR/>Diviseurs réglables<BR/>Coloris : gris argenté"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- <BR/>- <BR/>- Modèle: Eléments complémentaires<BR/>- Couleur: Gris<BR/>- Hauteur: 6,3 cm<BR/>- Largeur: 40,0 cm  <BR/>- Profondeur: 46,8 cm<BR/>- <BR/>- Matériau:Pvc<BR/>- <BR/>- <BR/>- Poids:0,36 kg<BR/>- Garantie Produit: 2 ans"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "L2285625",
                     "attrIdentifier": "ATSOwnerCOM",
                     "valueString": {
@@ -367,30 +285,11 @@
                 },
                 {
                     "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-40",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 40
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -401,65 +300,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "035",
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "MEUBLES DE CUISINE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 3,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CUISINE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "D",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF DESCRIPTIF"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "K511",
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AMENAGEMENTS INTERIEURS"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -478,26 +318,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 3,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "MENUISERIES DU CENTRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -522,73 +342,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CATALOGUE PRO"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G23",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "MEUBLES DE CUISINE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "ACC",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Accessoire"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "SO",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -604,16 +357,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Sans Objet"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 940390300,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PARTIE DE MEUBLE EN BOIS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -638,15 +381,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -741,15 +475,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 15
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -805,11 +530,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 258,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pvc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "S20",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Eléments complémentaires"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -824,11 +568,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -911,36 +655,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "L",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FORMAT L"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "D",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF DESCRIPTIF"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -954,7 +668,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017050200
+                        "content": "06017050200"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -978,20 +692,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1099,15 +804,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 6,3 x L 40,0  x P 46,8 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -1150,7 +846,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -1181,16 +877,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 104,
-                    "attrIdentifier": "ATC-COULEUR",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATD-CategorieCDG",
                     "valueString": {
                         "locale": "fr",
@@ -1203,7 +889,7 @@
                     "attrIdentifier": "ATD-FamilleCDG",
                     "valueString": {
                         "locale": "fr",
-                        "content": "G23-MEUBLES DE CUISINE"
+                        "content": "G23-ANCIENNE GAMMES MEUBLES"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1281,65 +967,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE418425"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC418423"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC418423"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0055",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AMO418424"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1348,17 +980,8 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
                         "content": 0
                     },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1390,33 +1013,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réalisé en matière plastique, ce range-couverts s'adapte aux dimensions de vos tiroirs grâce à ses diviseurs réglables."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Range couverts plastique<BR/>Diviseurs réglables<BR/>Coloris : gris argenté"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- <BR/>- <BR/>- Modèle: Eléments complémentaires<BR/>- Couleur: Gris<BR/>- Hauteur: 6,3 cm<BR/>- Largeur: 60,0 cm  <BR/>- Profondeur: 46,8 cm<BR/>- <BR/>- Matériau:Pvc<BR/>- <BR/>- <BR/>- Poids:1,14 kg<BR/>- Garantie Produit: 2 ans"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "L2285625",
                     "attrIdentifier": "ATSOwnerCOM",
                     "valueString": {
@@ -1438,30 +1034,11 @@
                 },
                 {
                     "valueIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-60",
-                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+                    "attrIdentifier": "CCU0001-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 60
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -1472,65 +1049,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "035",
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "MEUBLES DE CUISINE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 3,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CUISINE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "D",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF DESCRIPTIF"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "K511",
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AMENAGEMENTS INTERIEURS"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1549,26 +1067,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 3,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "MENUISERIES DU CENTRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1593,73 +1091,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CATALOGUE PRO"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G23",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "MEUBLES DE CUISINE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "ACC",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Accessoire"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "SO",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -1675,16 +1106,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Sans Objet"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 940390300,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PARTIE DE MEUBLE EN BOIS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1709,15 +1130,6 @@
                 },
                 {
                     "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1812,15 +1224,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 18
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1876,11 +1279,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 258,
+                    "attrIdentifier": "FAM-23-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Pvc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "S20",
                     "attrIdentifier": "FAM-23-MODELE",
                     "valueString": {
                         "locale": "fr",
                         "content": "Eléments complémentaires"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1895,11 +1317,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1982,36 +1404,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "L",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FORMAT L"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "D",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF DESCRIPTIF"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -2025,7 +1417,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CDE-DECLA",
                     "valueString": {
                         "locale": "fr",
-                        "content": 6017050220
+                        "content": "06017050220"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2049,20 +1441,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2170,15 +1553,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 6,3 x L 60,0  x P 46,8 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -2221,7 +1595,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -2248,6 +1622,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Range couverts en plastique - Cuisine"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Réalisé en matière plastique, ce range-couverts s'adapte aux dimensions de vos tiroirs grâce à ses diviseurs réglables."
         },
         "urlKeyword": {
             "locale": "fr",

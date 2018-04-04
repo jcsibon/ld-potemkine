@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -45,15 +45,6 @@
             "valueString": {
                 "locale": "fr",
                 "content": 0
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "priceLabel",
-            "valueString": {
-                "locale": "fr",
-                "content": "Prix pour la dimension H 274,0 x L 85,0  x P 280,0 cm"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -114,21 +105,20 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "D27",
-                "attrIdentifier": "ATC-FINITION",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Bois clair"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "ATC-HAUTEUR-TOTALE",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
                     "content": 274
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-NORME-PEFC",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -145,7 +135,7 @@
                 "attrIdentifier": "ATD-CategorieCDG",
                 "valueString": {
                     "locale": "fr",
-                    "content": "G426-ESCALIERS 1 QT"
+                    "content": "G3990-A LA CARTE 2017"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -172,7 +162,7 @@
                 "attrIdentifier": "ATD-SousCategorieCDG",
                 "valueString": {
                     "locale": "fr",
-                    "content": "G3705-HETRE"
+                    "content": "G13428-HETRE"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -181,7 +171,7 @@
                 "attrIdentifier": "ATD-SousCategorieCDG2",
                 "valueString": {
                     "locale": "fr",
-                    "content": "G12630-A LA CARTE"
+                    "content": "G57877-STANDARD A OPTION"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -190,7 +180,7 @@
                 "attrIdentifier": "ATD-SousCategorieCDG3",
                 "valueString": {
                     "locale": "fr",
-                    "content": "G41634-QT HAUT A LA CARTE"
+                    "content": "G45554-1 QT HAUT"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -199,7 +189,7 @@
                 "attrIdentifier": "ATD-SousFamilleCDG",
                 "valueString": {
                     "locale": "fr",
-                    "content": "G860-CODES OBSO"
+                    "content": "G752-ESCALIERS DROITS ET QUARTS TOURNANTS"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -290,7 +280,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -299,7 +289,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -325,7 +315,7 @@
                 "attrIdentifier": "ATDProductPath",
                 "valueString": {
                     "locale": "fr",
-                    "content": "G2/G19/G860/G426/G3705/G12630/G41634/G56432/"
+                    "content": "G2/G19/G752/G3990/G13428/G57877/G45554/"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -372,26 +362,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "- Type d'element: Escalier<BR/>- Destination: Intérieur<BR/>- Type d'escalier: Quart tournant<BR/>- Matériau: Bois hêtre<BR/>- Finition: Bois clair<BR/>- Nombre de marches: 13,0<BR/>- Rampe:Sans rampe<BR/>- Type de rampe:Non utilisé<BR/>- Reculement (cm):85,0 cm<BR/>- Hauteur: 274,0 cm X Profondeur: 280,0 cm<BR/>- Garantie Produit: 10 ans<BR/>- Poids:140,0 kg"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "A7884077",
-                "attrIdentifier": "ATSOwnerCOM",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "DELECOLLE Adeline"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "M6983199",
-                "attrIdentifier": "ATSOwnerMKT",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "LE BLANC Magalie"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1048,11 +1018,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
+                "valueIdentifier": 2,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1133,24 +1103,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "priceLabel",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Prix pour la dimension H 274,0 x L 85,0  x P 280,0 cm"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "priceLabel",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Prix pour la dimension H 274,0 x L 85,0  x P 280,0 cm"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "valueIdentifier": "UN",
                 "attrIdentifier": "uniteSecondaire",
                 "valueString": {
@@ -1193,7 +1145,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": true
+            "content": false
         },
         "label": {
             "locale": "fr",
@@ -1223,6 +1175,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Escalier bois 1 QT haut personnalisable - Escaliers"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "L'escalier bois quart tournant haut personnalisable optimise votre aménagement intérieur et libère votre espace de rangement. Réalisable sur mesure par nos soins, il vous offre le choix du bois massif, des placages et des finitions."
         },
         "urlKeyword": {
             "locale": "fr",

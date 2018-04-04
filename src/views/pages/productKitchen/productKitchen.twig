@@ -27,8 +27,8 @@
                 <div class="col-12 col-lg-6 offset-lg-3 col-xl-5 offset-xl-5 bg-white p-4 pb-5 kitchen__bloc_title">
                     <div class="row">
                         <div class="col-12 col-sm-8 pt-4 pt-sm-0">
-                            <h2 class="mb-0">{{ categories[global.request.get('code')]['label']['content'] }}</h2>
-                            <p class="small">Fabrication Française - Garantie 10 ans</p>
+                            <h1 class="mb-0">{{ categories[global.request.get('code')]['label']['content'] }}</h1>
+                            <p class="small">Fabrication Française - Garantie {{ categories[global.request.get('code')]['warantyDuration'] }}</p>
                         </div>
                         <div class="col-12 col-sm-4 pl-4">
                             <p class="small mb-0">à partir de</p>
@@ -141,7 +141,7 @@
                 </div>
             </div>
             <div class="col-sm-4 col-xl-3 pl-0 pt-5 d-none d-sm-block">
-                <img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1519395733/nuancier4.jpg" class="img-fluid"/>
+                <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1519395733/nuancier4.jpg" class="img-fluid"/>
             </div>
         </div>
 

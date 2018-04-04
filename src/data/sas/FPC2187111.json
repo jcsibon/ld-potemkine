@@ -11,7 +11,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -47,7 +47,7 @@
             "attrIdentifier": "codeEan",
             "valueString": {
                 "locale": "fr",
-                "content": 3552130746602
+                "content": 3552130746589
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -75,7 +75,7 @@
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
-                "content": "Prix pour la dimension H 75,0 x L 60,0 cm"
+                "content": "Prix pour la dimension H 60,0 x L 40,0 cm"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -117,7 +117,16 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": 117,
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "D",
                     "attrIdentifier": "ATC-FORME",
                     "valueString": {
                         "locale": "fr",
@@ -152,6 +161,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -245,56 +263,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -303,17 +276,8 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
                         "content": 0
                     },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -326,47 +290,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2187102
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Fenêtre sur châssis oscillo-battant Classic standard PVC blanc, qui séduit par son double vitrage isolant, son ouverture sécurisée et sa robustesse. Fabriquée dans nos usines françaises."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- PVC sans plomb Blanc RAL 9016.<BR/>- Ouverture oscillo-battante.<BR/>- Epaisseurs: ouvrant et dormant 60mm, à 3 chambres d\u2019isolation thermique.<BR/>- Double vitrage: 24mm Énergie STAR® intercalaire noir traité faible émissivité avec gaz argon.<BR/>- Uw 1,4.<BR/>- Haute Isolation Thermique: Ug = 1.1 et Haute Isolation Acoustique: AC1 (RA ; tr = 28dB).<BR/>- Etanchéité: A*3 E*7B V*A3<BR/>- Double joint d\u2019isolation thermique et acoustique.<BR/>- 180 dimensions standard (abattant, châssis, fenêtre, porte-fenêtre et baie coulissante).<BR/>- Les dimensions indiquées sont les hauteurs et largeurs tableau (dimensions entre murs exprimées en centimètre).<BR/>- Dimensions totales:<BR/>* Hauteur totale = hauteur tableau +2cm.<BR/>* Largeur totale = largeur tableau +7cm.<BR/>- Adaptations dimensionnelles possible : alèses, impostes, tapées d'isolation, pièces d'appui et habillages.<BR/>- Tous types de pose.<BR/>- Labels de qualité: Origine France garantie, CSTB, Acotherm et CEKAL.<BR/>- Guide de pose fourni.<BR/>- Poignée non fournie.<BR/><BR/>- En option disponible en magasin uniquement :<BR/>* Sur mesure.<BR/>* Vitrages: isolation acoustique, contrôle solaire, décors et sécurité des personnes.<BR/>* Personnalisation: petits bois intégrés ou collés, crémones décoratives, grilles de ventilation, alarme intégrée, et volets roulants intégrés.<BR/><BR/>- Délai Express Garanti: <BR/>*Votre fenêtre sur mesure disponible en express dans votre magasin partout en France en 7 jours maximum, consultez nos conseillers-experts en magasins."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Type de menuiserie: Châssis<BR/>- Matériau: Pvc<BR/>- Modèle: Classic<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 62,0 cm <BR/>- Largeur totale: 47,0 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 60,0 cm x Largeur: 40,0 cm<BR/>- Poids: 10,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -402,90 +330,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "020",
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EXTERIEUR"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "T",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF PRIX"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 3507,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES ET PORTES-FENETRES PVC"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -504,26 +354,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 52,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLATEFORMES NEGOCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -548,73 +378,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CATALOGUE PRO"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G122",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES PVC"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -630,16 +393,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 392520000,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FEN/PF/PTE ENTREE PVC"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -679,15 +432,6 @@
                         "content": "Lisse"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -767,15 +511,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 89
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -799,6 +534,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 10
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
                     },
                     "attrSequence": 0
                 },
@@ -861,15 +605,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 89
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "NAT-13-001-EPAISSEUR",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -879,7 +614,7 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 117,
+                    "valueIdentifier": "D",
                     "attrIdentifier": "NAT-13-001-FORME",
                     "valueString": {
                         "locale": "fr",
@@ -936,11 +671,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -966,7 +701,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1032,36 +767,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XL",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FORMAT XL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "T",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF PRIX"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -1090,20 +795,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1202,15 +898,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 60,0 x L 40,0 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -1241,7 +928,7 @@
                     "attrSequence": 0
                 }
             ]},
-            "isDefault": false,
+            "isDefault": true,
             "seoItem": {"urlKeyword": {
                 "locale": "fr",
                 "content": "chassis-classic-pvc-oscillo-battant-tirant-d-h-62x-l-47-p-tableau-h-60x-l-40-2187102"
@@ -1253,7 +940,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -1274,7 +961,16 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": 117,
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "D",
                     "attrIdentifier": "ATC-FORME",
                     "valueString": {
                         "locale": "fr",
@@ -1309,6 +1005,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1402,65 +1107,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0055",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AMO2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1469,17 +1120,8 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
                         "content": 0
                     },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1492,47 +1134,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2187112
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Fenêtre sur châssis oscillo-battant Classic standard PVC blanc, qui séduit par son double vitrage isolant, son ouverture sécurisée et sa robustesse. Fabriquée dans nos usines françaises."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- PVC sans plomb Blanc RAL 9016.<BR/>- Ouverture oscillo-battante.<BR/>- Epaisseurs: ouvrant et dormant 60mm, à 3 chambres d\u2019isolation thermique.<BR/>- Double vitrage: 24mm Énergie STAR® intercalaire noir traité faible émissivité avec gaz argon.<BR/>- Uw 1,4.<BR/>- Haute Isolation Thermique: Ug = 1.1 et Haute Isolation Acoustique: AC1 (RA ; tr = 28dB).<BR/>- Etanchéité: A*3 E*7B V*A3<BR/>- Double joint d\u2019isolation thermique et acoustique.<BR/>- 180 dimensions standard (abattant, châssis, fenêtre, porte-fenêtre et baie coulissante).<BR/>- Les dimensions indiquées sont les hauteurs et largeurs tableau (dimensions entre murs exprimées en centimètre).<BR/>- Dimensions totales:<BR/>* Hauteur totale = hauteur tableau +2cm.<BR/>* Largeur totale = largeur tableau +7cm.<BR/>- Adaptations dimensionnelles possible : alèses, impostes, tapées d'isolation, pièces d'appui et habillages.<BR/>- Tous types de pose.<BR/>- Labels de qualité: Origine France garantie, CSTB, Acotherm et CEKAL.<BR/>- Guide de pose fourni.<BR/>- Poignée non fournie.<BR/><BR/>- En option disponible en magasin uniquement :<BR/>* Sur mesure.<BR/>* Vitrages: isolation acoustique, contrôle solaire, décors et sécurité des personnes.<BR/>* Personnalisation: petits bois intégrés ou collés, crémones décoratives, grilles de ventilation, alarme intégrée, et volets roulants intégrés.<BR/><BR/>- Délai Express Garanti: <BR/>*Votre fenêtre sur mesure disponible en express dans votre magasin partout en France en 7 jours maximum, consultez nos conseillers-experts en magasins."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Type de menuiserie: Châssis<BR/>- Matériau: Pvc<BR/>- Modèle: Classic<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 77,0 cm <BR/>- Largeur totale: 67,0 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 75,0 cm x Largeur: 60,0 cm<BR/>- Poids: 15,4 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1568,90 +1174,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "020",
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EXTERIEUR"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 3507,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES ET PORTES-FENETRES PVC"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1670,26 +1198,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 52,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLATEFORMES NEGOCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1714,73 +1222,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CATALOGUE PRO"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G122",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES PVC"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -1796,16 +1237,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 392520000,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FEN/PF/PTE ENTREE PVC"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1845,15 +1276,6 @@
                         "content": "Lisse"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -1933,15 +1355,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 72
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1965,6 +1378,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 15.4
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
                     },
                     "attrSequence": 0
                 },
@@ -2027,15 +1449,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 72
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "NAT-13-001-EPAISSEUR",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2045,7 +1458,7 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 117,
+                    "valueIdentifier": "D",
                     "attrIdentifier": "NAT-13-001-FORME",
                     "valueString": {
                         "locale": "fr",
@@ -2102,11 +1515,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -2132,7 +1545,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2198,36 +1611,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "L",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FORMAT L"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -2256,20 +1639,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2368,15 +1742,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 75,0 x L 60,0 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -2407,7 +1772,7 @@
                     "attrSequence": 0
                 }
             ]},
-            "isDefault": true,
+            "isDefault": false,
             "seoItem": {"urlKeyword": {
                 "locale": "fr",
                 "content": "chassis-classic-pvc-oscillo-battant-tirant-d-h-77x-l-67-p-tableau-h-75x-l-60-2187112"
@@ -2419,7 +1784,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -2440,7 +1805,16 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": 117,
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "D",
                     "attrIdentifier": "ATC-FORME",
                     "valueString": {
                         "locale": "fr",
@@ -2475,6 +1849,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -2568,51 +1951,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2631,15 +1969,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDProductPath",
                     "valueString": {
                         "locale": "fr",
@@ -2649,47 +1978,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2187122
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Fenêtre sur châssis oscillo-battant Classic standard PVC blanc, qui séduit par son double vitrage isolant, son ouverture sécurisée et sa robustesse. Fabriquée dans nos usines françaises."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- PVC sans plomb Blanc RAL 9016.<BR/>- Ouverture oscillo-battante.<BR/>- Epaisseurs: ouvrant et dormant 60mm, à 3 chambres d\u2019isolation thermique.<BR/>- Double vitrage: 24mm Énergie STAR® intercalaire noir traité faible émissivité avec gaz argon.<BR/>- Uw 1,4.<BR/>- Haute Isolation Thermique: Ug = 1.1 et Haute Isolation Acoustique: AC1 (RA ; tr = 28dB).<BR/>- Etanchéité: A*3 E*7B V*A3<BR/>- Double joint d\u2019isolation thermique et acoustique.<BR/>- 180 dimensions standard (abattant, châssis, fenêtre, porte-fenêtre et baie coulissante).<BR/>- Les dimensions indiquées sont les hauteurs et largeurs tableau (dimensions entre murs exprimées en centimètre).<BR/>- Dimensions totales:<BR/>* Hauteur totale = hauteur tableau +2cm.<BR/>* Largeur totale = largeur tableau +7cm.<BR/>- Adaptations dimensionnelles possible : alèses, impostes, tapées d'isolation, pièces d'appui et habillages.<BR/>- Tous types de pose.<BR/>- Labels de qualité: Origine France garantie, CSTB, Acotherm et CEKAL.<BR/>- Guide de pose fourni.<BR/>- Poignée non fournie.<BR/><BR/>- En option disponible en magasin uniquement :<BR/>* Sur mesure.<BR/>* Vitrages: isolation acoustique, contrôle solaire, décors et sécurité des personnes.<BR/>* Personnalisation: petits bois intégrés ou collés, crémones décoratives, grilles de ventilation, alarme intégrée, et volets roulants intégrés.<BR/><BR/>- Délai Express Garanti: <BR/>*Votre fenêtre sur mesure disponible en express dans votre magasin partout en France en 7 jours maximum, consultez nos conseillers-experts en magasins."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Type de menuiserie: Châssis<BR/>- Matériau: Pvc<BR/>- Modèle: Classic<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 77,0 cm <BR/>- Largeur totale: 87,0 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 75,0 cm x Largeur: 80,0 cm<BR/>- Poids: 22,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2725,90 +2018,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "020",
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EXTERIEUR"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "T",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF PRIX"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 3507,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES ET PORTES-FENETRES PVC"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2827,26 +2042,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 52,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLATEFORMES NEGOCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2871,73 +2066,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NORMAL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G122",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES PVC"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -2953,16 +2081,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 392520000,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FEN/PF/PTE ENTREE PVC"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3002,15 +2120,6 @@
                         "content": "Lisse"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -3090,12 +2199,75 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 114
+                        "content": "CLASSIC PVC HIT<BR/>Chassis 1 vantail oscillo-battant<BR/>PVC sans plomb écologique"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Nombreuses options : petits carreaux<BR/>intégrés au vitrage, petits bois à<BR/>coller, vitrages, volets roulant, etc..."
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Guide de pose"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Standard et sur-mesure, nous consulter"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-5",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Certificats NF, Acotherm, Cekal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Double vitrage 24mm gaz isolant Argon<BR/>Haute Isolation Thermique<BR/>Ouvrant 60 mm 3 chambres d'isolation<BR/>2 joints d'étanchéité"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "H 75 X L 80 cm tableau"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Uw=1,4 - éligible au crédit d'impôt<BR/>S'adapte à tous types de configurations<BR/>Garantie 15 ans - fabriqué en France<BR/>Délai Express Garanti, voir conditions"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3122,6 +2294,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 22
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
                     },
                     "attrSequence": 0
                 },
@@ -3184,15 +2365,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 114
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "NAT-13-001-EPAISSEUR",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3202,7 +2374,7 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 117,
+                    "valueIdentifier": "D",
                     "attrIdentifier": "NAT-13-001-FORME",
                     "valueString": {
                         "locale": "fr",
@@ -3259,11 +2431,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -3289,7 +2461,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3355,36 +2527,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SUR DELAI COURT"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "T",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF PRIX"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -3410,15 +2552,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3525,15 +2658,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 75,0 x L 80,0 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -3576,7 +2700,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -3597,7 +2721,16 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": 117,
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "D",
                     "attrIdentifier": "ATC-FORME",
                     "valueString": {
                         "locale": "fr",
@@ -3632,6 +2765,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -3725,56 +2867,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -3783,17 +2880,8 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
                         "content": 0
                     },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3806,47 +2894,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2187132
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Fenêtre sur châssis oscillo-battant Classic standard PVC blanc, qui séduit par son double vitrage isolant, son ouverture sécurisée et sa robustesse. Fabriquée dans nos usines françaises."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- PVC sans plomb Blanc RAL 9016.<BR/>- Ouverture oscillo-battante.<BR/>- Epaisseurs: ouvrant et dormant 60mm, à 3 chambres d\u2019isolation thermique.<BR/>- Double vitrage: 24mm Énergie STAR® intercalaire noir traité faible émissivité avec gaz argon.<BR/>- Uw 1,4.<BR/>- Haute Isolation Thermique: Ug = 1.1 et Haute Isolation Acoustique: AC1 (RA ; tr = 28dB).<BR/>- Etanchéité: A*3 E*7B V*A3<BR/>- Double joint d\u2019isolation thermique et acoustique.<BR/>- 180 dimensions standard (abattant, châssis, fenêtre, porte-fenêtre et baie coulissante).<BR/>- Les dimensions indiquées sont les hauteurs et largeurs tableau (dimensions entre murs exprimées en centimètre).<BR/>- Dimensions totales:<BR/>* Hauteur totale = hauteur tableau +2cm.<BR/>* Largeur totale = largeur tableau +7cm.<BR/>- Adaptations dimensionnelles possible : alèses, impostes, tapées d'isolation, pièces d'appui et habillages.<BR/>- Tous types de pose.<BR/>- Labels de qualité: Origine France garantie, CSTB, Acotherm et CEKAL.<BR/>- Guide de pose fourni.<BR/>- Poignée non fournie.<BR/><BR/>- En option disponible en magasin uniquement :<BR/>* Sur mesure.<BR/>* Vitrages: isolation acoustique, contrôle solaire, décors et sécurité des personnes.<BR/>* Personnalisation: petits bois intégrés ou collés, crémones décoratives, grilles de ventilation, alarme intégrée, et volets roulants intégrés.<BR/><BR/>- Délai Express Garanti: <BR/>*Votre fenêtre sur mesure disponible en express dans votre magasin partout en France en 7 jours maximum, consultez nos conseillers-experts en magasins."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Type de menuiserie: Châssis<BR/>- Matériau: Pvc<BR/>- Modèle: Classic<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 97,0 cm <BR/>- Largeur totale: 67,0 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 95,0 cm x Largeur: 60,0 cm<BR/>- Poids: 19,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3882,90 +2934,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "020",
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EXTERIEUR"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "T",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF PRIX"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 3507,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES ET PORTES-FENETRES PVC"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3984,26 +2958,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 52,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLATEFORMES NEGOCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4028,73 +2982,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CATALOGUE PRO"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G122",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES PVC"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -4110,16 +2997,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 392520000,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FEN/PF/PTE ENTREE PVC"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4159,15 +3036,6 @@
                         "content": "Lisse"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -4247,15 +3115,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 80
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4279,6 +3138,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 19
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
                     },
                     "attrSequence": 0
                 },
@@ -4341,15 +3209,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 80
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "NAT-13-001-EPAISSEUR",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4359,7 +3218,7 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 117,
+                    "valueIdentifier": "D",
                     "attrIdentifier": "NAT-13-001-FORME",
                     "valueString": {
                         "locale": "fr",
@@ -4416,11 +3275,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -4446,7 +3305,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4512,36 +3371,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XL",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FORMAT XL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "T",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF PRIX"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -4570,20 +3399,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4682,15 +3502,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 95,0 x L 60,0 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -4733,7 +3544,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -4754,7 +3565,16 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": 117,
+                    "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "D",
                     "attrIdentifier": "ATC-FORME",
                     "valueString": {
                         "locale": "fr",
@@ -4789,6 +3609,15 @@
                         "content": "Châssis"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -4882,56 +3711,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC2187111"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -4940,17 +3724,8 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
                         "content": 0
                     },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -4963,47 +3738,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATS-CodeADA",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 2187142
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "FRA-fr",
                     "attrIdentifier": "ATS-CurrentContextID",
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Fenêtre sur châssis oscillo-battant Classic standard PVC blanc, qui séduit par son double vitrage isolant, son ouverture sécurisée et sa robustesse. Fabriquée dans nos usines françaises."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- PVC sans plomb Blanc RAL 9016.<BR/>- Ouverture oscillo-battante.<BR/>- Epaisseurs: ouvrant et dormant 60mm, à 3 chambres d\u2019isolation thermique.<BR/>- Double vitrage: 24mm Énergie STAR® intercalaire noir traité faible émissivité avec gaz argon.<BR/>- Uw 1,4.<BR/>- Haute Isolation Thermique: Ug = 1.1 et Haute Isolation Acoustique: AC1 (RA ; tr = 28dB).<BR/>- Etanchéité: A*3 E*7B V*A3<BR/>- Double joint d\u2019isolation thermique et acoustique.<BR/>- 180 dimensions standard (abattant, châssis, fenêtre, porte-fenêtre et baie coulissante).<BR/>- Les dimensions indiquées sont les hauteurs et largeurs tableau (dimensions entre murs exprimées en centimètre).<BR/>- Dimensions totales:<BR/>* Hauteur totale = hauteur tableau +2cm.<BR/>* Largeur totale = largeur tableau +7cm.<BR/>- Adaptations dimensionnelles possible : alèses, impostes, tapées d'isolation, pièces d'appui et habillages.<BR/>- Tous types de pose.<BR/>- Labels de qualité: Origine France garantie, CSTB, Acotherm et CEKAL.<BR/>- Guide de pose fourni.<BR/>- Poignée non fournie.<BR/><BR/>- En option disponible en magasin uniquement :<BR/>* Sur mesure.<BR/>* Vitrages: isolation acoustique, contrôle solaire, décors et sécurité des personnes.<BR/>* Personnalisation: petits bois intégrés ou collés, crémones décoratives, grilles de ventilation, alarme intégrée, et volets roulants intégrés.<BR/><BR/>- Délai Express Garanti: <BR/>*Votre fenêtre sur mesure disponible en express dans votre magasin partout en France en 7 jours maximum, consultez nos conseillers-experts en magasins."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Type de menuiserie: Châssis<BR/>- Matériau: Pvc<BR/>- Modèle: Classic<BR/>- Couleur: Blanc 9016<BR/>- Hauteur totale: 97,0 cm <BR/>- Largeur totale: 87,0 cm<BR/>- Type d'ouverture: Oscillo battant<BR/>- Sens d'ouverture: Non utilisé<BR/>- Hauteur: 95,0 cm x Largeur: 80,0 cm<BR/>- Poids: 26,0 kg<BR/>- Garantie Produit: 10 ans"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5039,90 +3778,12 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "020",
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EXTERIEUR"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "LAPEYRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "T",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF PRIX"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 3507,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES ET PORTES-FENETRES PVC"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -5141,26 +3802,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 52,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLATEFORMES NEGOCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5185,73 +3826,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CATALOGUE PRO"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G122",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FENETRES PVC"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "CDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -5267,16 +3841,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Authentique"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 392520000,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FEN/PF/PTE ENTREE PVC"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5316,15 +3880,6 @@
                         "content": "Lisse"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -5404,15 +3959,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 125
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -5436,6 +3982,15 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 26
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7
                     },
                     "attrSequence": 0
                 },
@@ -5498,15 +4053,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 125
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "NAT-13-001-EPAISSEUR",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -5516,7 +4062,7 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 117,
+                    "valueIdentifier": "D",
                     "attrIdentifier": "NAT-13-001-FORME",
                     "valueString": {
                         "locale": "fr",
@@ -5573,11 +4119,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -5603,7 +4149,7 @@
                     "attrIdentifier": "SCREEN-MESSAGE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PROPOSEZ OPTION CONFORT/PERSONNALISATION"
+                        "content": "COMMANDER IMPERATIVEMENT LE NOUVEAU CODE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5669,36 +4215,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XL",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FORMAT XL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "T",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE SAUF PRIX"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 1,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -5727,20 +4243,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5839,15 +4346,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "priceLabel",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Prix pour la dimension H 95,0 x L 80,0 cm"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
@@ -5890,7 +4388,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",

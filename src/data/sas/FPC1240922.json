@@ -27,7 +27,7 @@
             "attrSequence": 2
         },
         {
-            "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+            "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
             "attrUsage": 1,
             "attrSequence": 3
         },
@@ -44,7 +44,7 @@
             "attrIdentifier": "codeEan",
             "valueString": {
                 "locale": "fr",
-                "content": 3550125341016
+                "content": 3550125331239
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -133,7 +133,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 393,
+                    "attrIdentifier": "ATC-FORME",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carré"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "ATC-NB-COLIS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -242,65 +261,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE1240922"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1240922"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1240922"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0055",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AMO1240922"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -309,17 +274,8 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
                         "content": 0
                     },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -346,33 +302,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Ce receveur à carreler fabriqué en France se distingue par sa solide composition en polystyrène haute densité et mousse 100% imperméable. Disponible en 4 dimensions, il est idéal pour l'accessibilité."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Pente préformée. <BR/>- Dimensions :                                                           <BR/>* L. 80 x 80 x Ep. 4 cm.                                                   <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm.                                                           <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Catégorie:Receveur<BR/>- Forme:Carré<BR/>- Type d'ouverture:Non utilisé<BR/>- Matériau:Polystyrène<BR/>- Epaisseur:45,0 mm<BR/>- Anticalcaire:NON<BR/>- Largeur:80,0 cm X Longueur: 80,0 cm  X Hauteur:4,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -409,30 +338,11 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-80",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 80
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 2,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -443,65 +353,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 822,
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SALLE DE BAINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C381",
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ELMTS DE CONSTRUCTIONS SOUS CARRELAGE"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -520,26 +371,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 11,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NEGOCE FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -573,73 +404,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NORMAL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G30",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "EDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -655,16 +419,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Sans Objet"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 680919000,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLAQUE,PANNEAU,ARTICLE SIMILAIRE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -704,15 +458,6 @@
                         "content": "Incontournable"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -782,12 +527,66 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 159
+                        "content": "NEXT<BR/>Receveur à carreler plat<BR/>Polystyrène expansé de haute densité"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage horizontale ou verticale<BR/>vendu séparemment (diam 50)<BR/>Débit 75 L/min"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "5 ML de bande d'étanchéité fournie"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "90/90, 120/80 et 160/90 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Recouvert d'un mortier colle spécial,<BR/>imperméable et d'un tissu de verre pour<BR/>la bonne tenue du carrelage<BR/>Vidage centré pour receveur carré"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 80  x H 80 x P 4.5 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fabriqué en FRANCE<BR/>Prix attractif"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -875,6 +674,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "80X80"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "NAT-30-001-EPAISSEUR",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -923,11 +731,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -1010,36 +818,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "A",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EN STOCK SELON MAGASINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 3,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -1068,20 +846,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 2,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A Surveiller (Pre Su)"
+                        "content": "Supprime  6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1210,7 +979,7 @@
                     "attrSequence": 0
                 }
             ]},
-            "isDefault": true,
+            "isDefault": false,
             "seoItem": {"urlKeyword": {
                 "locale": "fr",
                 "content": "receveur-a-carreler-next-h-4-x-l-80-x-p-80-1240922"
@@ -1222,7 +991,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": true
+                "content": false
             },
             "label": {
                 "locale": "fr",
@@ -1232,7 +1001,7 @@
             "additionalDesc1": {"locale": "fr"},
             "longDesc": {
                 "locale": "fr",
-                "content": "- Pente préformée. <BR/>- Dimensions :                                                           <BR/>* L. 80 x 80 x Ep. 4 cm.                                                   <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm.                                                           <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
+                "content": "- Pente préformée. <BR/>- Dimensions :                                                                                                            <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm. <BR/>* L. 200 x 100 x 4,5 cm.                                                          <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
             },
             "additionalDesc2": {"locale": "fr"},
             "imageThumbnail": {
@@ -1271,7 +1040,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 393,
+                    "attrIdentifier": "ATC-FORME",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carré"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "ATC-NB-COLIS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1380,51 +1168,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE1240922"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1240922"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1240922"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1440,15 +1183,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1475,33 +1209,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Ce receveur à carreler fabriqué en France se distingue par sa solide composition en polystyrène haute densité et mousse 100% imperméable. Disponible en 4 dimensions, il est idéal pour l'accessibilité."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Pente préformée. <BR/>- Dimensions :                                                           <BR/>* L. 80 x 80 x Ep. 4 cm.                                                   <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm.                                                           <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Catégorie:Receveur<BR/>- Forme:Carré<BR/>- Type d'ouverture:Non utilisé<BR/>- Matériau:Polystyrène<BR/>- Epaisseur:45,0 mm<BR/>- Anticalcaire:NON<BR/>- Largeur:90,0 cm X Longueur: 90,0 cm  X Hauteur:4,0 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1538,30 +1245,11 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-90",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 90
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 2,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -1572,65 +1260,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 822,
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SALLE DE BAINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C381",
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ELMTS DE CONSTRUCTIONS SOUS CARRELAGE"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1649,26 +1278,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 11,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NEGOCE FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1702,73 +1311,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NORMAL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G30",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "EDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -1784,16 +1326,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Sans Objet"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 680919000,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLAQUE,PANNEAU,ARTICLE SIMILAIRE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1833,15 +1365,6 @@
                         "content": "Facultatif"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -1911,12 +1434,66 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 169
+                        "content": "NEXT<BR/>Receveur à carreler plat<BR/>Polystyrène expansé de haute densité"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage horizontale ou verticale<BR/>vendu séparemment (diam 50)<BR/>Débit 75 L/min"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "5 ML de bande d'étanchéité fournie"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "80/80, 120/80 et 160/90 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Recouvert d'un mortier colle spécial,<BR/>imperméable et d'un tissu de verre pour<BR/>la bonne tenue du carrelage<BR/>Vidage centré pour receveur carré"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 90 x H 90x P 4.5 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fabriqué en FRANCE<BR/>Prix attractif"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2004,6 +1581,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "90 X 90 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "NAT-30-001-EPAISSEUR",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2052,11 +1638,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -2139,36 +1725,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "A",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "EN STOCK SELON MAGASINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 3,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -2194,15 +1750,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2339,7 +1886,7 @@
                     "attrSequence": 0
                 }
             ]},
-            "isDefault": false,
+            "isDefault": true,
             "seoItem": {"urlKeyword": {
                 "locale": "fr",
                 "content": "receveur-a-carreler-next-h-4-x-l-90-x-p-90-1240923"
@@ -2361,7 +1908,7 @@
             "additionalDesc1": {"locale": "fr"},
             "longDesc": {
                 "locale": "fr",
-                "content": "- Pente préformée. <BR/>- Dimensions :                                                           <BR/>* L. 80 x 80 x Ep. 4 cm.                                                   <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm.                                                           <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
+                "content": "- Pente préformée. <BR/>- Dimensions :                                                                                                            <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm. <BR/>* L. 200 x 100 x 4,5 cm.                                                          <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
             },
             "additionalDesc2": {"locale": "fr"},
             "imageThumbnail": {
@@ -2400,7 +1947,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "K57",
+                    "attrIdentifier": "ATC-FORME",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Rectangulaire"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "ATC-NB-COLIS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -2509,51 +2075,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE1240922"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1240922"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1240922"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2569,15 +2090,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2604,33 +2116,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Ce receveur à carreler fabriqué en France se distingue par sa solide composition en polystyrène haute densité et mousse 100% imperméable. Disponible en 4 dimensions, il est idéal pour l'accessibilité."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Pente préformée. <BR/>- Dimensions :                                                           <BR/>* L. 80 x 80 x Ep. 4 cm.                                                   <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm.                                                           <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Catégorie:Receveur<BR/>- Forme:Rectangulaire<BR/>- Type d'ouverture:Non utilisé<BR/>- Matériau:Polystyrène<BR/>- Epaisseur:45,0 mm<BR/>- Anticalcaire:NON<BR/>- Largeur:120,0 cm X Longueur: 80,0 cm  X Hauteur:4,5 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2667,30 +2152,11 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-80",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 80
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 2,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -2701,65 +2167,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 822,
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SALLE DE BAINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C381",
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ELMTS DE CONSTRUCTIONS SOUS CARRELAGE"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2778,26 +2185,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 11,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NEGOCE FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2831,73 +2218,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NORMAL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G30",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "EDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -2913,16 +2233,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Sans Objet"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 680919000,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLAQUE,PANNEAU,ARTICLE SIMILAIRE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2962,15 +2272,6 @@
                         "content": "Facultatif"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -3040,12 +2341,66 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 199
+                        "content": "NEXT<BR/>Receveur à carreler plat<BR/>Polystyrène expansé de haute densité"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage horizontale ou verticale<BR/>vendu séparemment (diam 50)<BR/>Débit 75 L/min"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "5 ML de bande d'étanchéité fournie"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "80/80, 90/90 et 160/90 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Recouvert d'un mortier colle spécial,<BR/>imperméable et d'un tissu de verre pour<BR/>la bonne tenue du carrelage<BR/>Vidage excentré pour rec rectangle"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 120 x H 80 x P 4.5 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fabriqué en FRANCE<BR/>Prix attractif"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3114,15 +2469,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "FUTURE-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 239
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "NAT-30-001-ANTICALCAIRE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3137,6 +2483,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Receveur"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "120 X 80 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3190,11 +2545,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -3277,36 +2632,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FORMAT XXL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 3,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -3332,15 +2657,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3499,7 +2815,7 @@
             "additionalDesc1": {"locale": "fr"},
             "longDesc": {
                 "locale": "fr",
-                "content": "- Pente préformée. <BR/>- Dimensions :                                                           <BR/>* L. 80 x 80 x Ep. 4 cm.                                                   <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm.                                                           <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
+                "content": "- Pente préformée. <BR/>- Dimensions :                                                                                                            <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm. <BR/>* L. 200 x 100 x 4,5 cm.                                                          <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
             },
             "additionalDesc2": {"locale": "fr"},
             "imageThumbnail": {
@@ -3538,7 +2854,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "K57",
+                    "attrIdentifier": "ATC-FORME",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Rectangulaire"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "ATC-NB-COLIS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -3647,51 +2982,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATD0029",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPE1240922"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0030",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1240922"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0040",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0054",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FPC1240922"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATD0056",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3707,15 +2997,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATDNoticeGuideCount",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3742,33 +3023,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "RESEAU_FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0005",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Ce receveur à carreler fabriqué en France se distingue par sa solide composition en polystyrène haute densité et mousse 100% imperméable. Disponible en 4 dimensions, il est idéal pour l'accessibilité."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0008",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Pente préformée. <BR/>- Dimensions :                                                           <BR/>* L. 80 x 80 x Ep. 4 cm.                                                   <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm.                                                           <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATS0009",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "- Catégorie:Receveur<BR/>- Forme:Rectangulaire<BR/>- Type d'ouverture:Non utilisé<BR/>- Matériau:Polystyrène<BR/>- Epaisseur:45,0 mm<BR/>- Anticalcaire:NON<BR/>- Largeur:160,0 cm X Longueur: 90,0 cm  X Hauteur:4,5 cm"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3805,30 +3059,11 @@
                 },
                 {
                     "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-90",
-                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 90
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 2,
-                    "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "TAUX GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -3839,65 +3074,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 822,
-                    "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 4,
-                    "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "SALLE DE BAINS"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "GME"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C381",
-                    "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ELMTS DE CONSTRUCTIONS SOUS CARRELAGE"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3916,26 +3092,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "ORDINAIRE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 11,
-                    "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NEGOCE FRANCE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Réseau France"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3969,73 +3125,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "NORMAL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "B",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "ACHETE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "G30",
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "DOUCHES"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "PRI",
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Principal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "EDG",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
@@ -4051,16 +3140,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Sans Objet"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 680919000,
-                    "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "PLAQUE,PANNEAU,ARTICLE SIMILAIRE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4100,15 +3179,6 @@
                         "content": "Facultatif"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -4178,12 +3248,66 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "CURRENT-SELLING-PRICE",
-                    "attrUsage": 2,
-                    "valueDecimal": {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
                         "locale": "fr",
-                        "content": 289
+                        "content": "NEXT<BR/>Receveur à carreler plat<BR/>Polystyrène expansé de haute densité"
                     },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Vidage horizontale ou verticale<BR/>vendu séparemment (diam 50)<BR/>Débit 75 L/min"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "5 ML de bande d'étanchéité fournie"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-4",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "80/80, 90/90 et 120/80 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-6",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Recouvert d'un mortier colle spécial,<BR/>imperméable et d'un tissu de verre pour<BR/>la bonne tenue du carrelage<BR/>Vidage excentré pour rec rectangle"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "L 160 x H 90 x P 4.5 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-9",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fabriqué en FRANCE<BR/>Prix attractif"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -4271,6 +3395,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "160 X 90 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "NAT-30-001-EPAISSEUR",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4319,11 +3452,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -4406,36 +3539,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "XXL",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "FORMAT XXL"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "C",
-                    "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "CREE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 0,
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "AUTORISE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": 3,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
@@ -4461,15 +3564,6 @@
                         "locale": "fr",
                         "content": 1
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -4628,13 +3722,825 @@
             "additionalDesc1": {"locale": "fr"},
             "longDesc": {
                 "locale": "fr",
-                "content": "- Pente préformée. <BR/>- Dimensions :                                                           <BR/>* L. 80 x 80 x Ep. 4 cm.                                                   <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm.                                                           <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
+                "content": "- Pente préformée. <BR/>- Dimensions :                                                                                                            <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm. <BR/>* L. 200 x 100 x 4,5 cm.                                                          <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
             },
             "additionalDesc2": {"locale": "fr"},
             "imageThumbnail": {
                 "locale": "fr",
                 "content": "/thumbnail/412/236/201412236.jpg"
             }
+        },
+        {
+            "attributeValueList": {"attributeValue": [
+                {
+                    "attrIdentifier": "ATC-ANTICALCAIRE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "K54",
+                    "attrIdentifier": "ATC-CATEGORIE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Receveur"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 45
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "K57",
+                    "attrIdentifier": "ATC-FORME",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Rectangulaire"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NB-COLIS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "K55",
+                    "attrIdentifier": "ATC-PRODUIT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Receveur à carreler"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-CategorieCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G2849-SOLUTIONS A CARRELER"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-FamilleCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G30-DOUCHES"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-LibelleCommercial",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Receveur à carreler NEXT H.4.5 x l.200 x P.100"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-SousCategorieCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G7221-RECEVEURS A CARRELER"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-SousCategorieCDG2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G55373-NEXT"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-SousCategorieCDG3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G44295-160 X 90 CM"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-SousFamilleCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G585-PRODUITS TECHNIQUES DOUCHE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-UniverCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G4-SALLE DE BAINS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATDDiffusionWebLive",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATDDiffusionWebWork",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATDProductPath",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G4/G30/G585/G2849/G7221/G55373/G44295/"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATS-CodeADA",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1244555
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "FRA-fr",
+                    "attrIdentifier": "ATS-CurrentContextID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "RESEAU_FRANCE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "V9359015",
+                    "attrIdentifier": "ATSOwnerCOM",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "BRUNET Vanessa"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "C7086457",
+                    "attrIdentifier": "ATSOwnerMKT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "PREVOST Christian"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-LARGEUR-200",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 200
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-100",
+                    "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "ART",
+                    "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "PRIX DEFINI"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "ORD",
+                    "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ORDINAIRE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 200
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "SO",
+                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-DUREE-VIE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "SANS OBJET"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-INFLAMMABLE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "EDG",
+                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Entrée De Gamme"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "SO",
+                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-STYLE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Sans Objet"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-ACHAT-LOCAL",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-ADAP-DIM",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "O20",
+                    "attrIdentifier": "COMMUNES-3-COMM-CHARTE-EXPO",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Facultatif"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-DIFFUSION-WEB",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-GARANTIE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2 ans"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "WW7",
+                    "attrIdentifier": "COMMUNES-3-COMM-MARQUE-COM",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Lazer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-RENO-PLUS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "004",
+                    "attrIdentifier": "COMMUNES-3-COMM-STD-SM-STDOPT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Standard"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "G59",
+                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Autre"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "001",
+                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Principal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 47
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-LARGEUR-EMB",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 102
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 16.3
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 202
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-VOLUME",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 28800
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "K23",
+                    "attrIdentifier": "FAM-30-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Polystyrène"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "P66",
+                    "attrIdentifier": "FAM-30-MODELE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Next"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-30-001-ANTICALCAIRE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "K54",
+                    "attrIdentifier": "NAT-30-001-CATEGORIE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Receveur"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-30-001-DIMENSION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "200 X 100 cm"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "NAT-30-001-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 45
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "K57",
+                    "attrIdentifier": "NAT-30-001-FORME",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Rectangulaire"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 365,
+                    "attrIdentifier": "NAT-30-001-POSE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "A encastrer"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "K55",
+                    "attrIdentifier": "NAT-30-001-PRODUIT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Receveur à carreler"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-ANTILLES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-REUNION",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-SUISSE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "SSC",
+                    "attrIdentifier": "SPEC-FAM-CHX",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "SOLUTIONS A CARRELER"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "NO",
+                    "attrIdentifier": "SPEC-FAM-CMA",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "APPAREILS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "LTA",
+                    "attrIdentifier": "SPEC-FAM-DET",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "PLAT"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "TDD",
+                    "attrIdentifier": "SPEC-FAM-GAM",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "PRODUITS TECHNIQUES DOUCHE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "ECO",
+                    "attrIdentifier": "SPEC-FAM-MDE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "ECONOMIQUE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "04",
+                    "attrIdentifier": "SPEC-FAM-NMA",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "RECEVEUR"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 3,
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "SALLE DE BAINS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-DEG",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ENV-DEPOT",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 0,
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "A l'offre"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-REMISE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 1,
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-TVA",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "20 %"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 3,
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-TVA2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "10% (Pose)"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "categorieGoogle",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4728
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "codeEan",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 3550125321940
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "colissimo",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 0,
+                    "attrIdentifier": "contrainteColisage",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "isLivraisonDirecte",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "poids",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 16.8
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "UN",
+                    "attrIdentifier": "uniteSecondaire",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "UN"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "UN",
+                    "attrIdentifier": "uniteVente",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "UN"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "UN",
+                    "attrIdentifier": "uniteVenteLegale",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "UN"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                }
+            ]},
+            "isDefault": false,
+            "seoItem": {"urlKeyword": {
+                "locale": "fr",
+                "content": "receveur-a-carreler-next-h-4-5-x-l-200-x-p-100-1244555"
+            }},
+            "imageFull": {"locale": "fr"},
+            "shortDesc": {"locale": "fr"},
+            "published": {
+                "locale": "fr",
+                "content": true
+            },
+            "label": {
+                "locale": "fr",
+                "content": "Receveur à carreler NEXT H.4.5 x l.200 x P.100"
+            },
+            "sku": 1244555,
+            "additionalDesc1": {"locale": "fr"},
+            "longDesc": {
+                "locale": "fr",
+                "content": "- Pente préformée. <BR/>- Dimensions :                                                                                                            <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm. <BR/>* L. 200 x 100 x 4,5 cm.                                                          <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
+            },
+            "additionalDesc2": {"locale": "fr"},
+            "imageThumbnail": {"locale": "fr"}
         }
     ]},
     "keyword": {
@@ -4650,6 +4556,10 @@
             "locale": "fr",
             "content": "Receveur à carreler NEXT - Salle de bains"
         },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Ce receveur à carreler fabriqué en France se distingue par sa solide composition en polystyrène haute densité et mousse 100% imperméable. Disponible en 4 dimensions, il est idéal pour l'accessibilité."
+        },
         "urlKeyword": {
             "locale": "fr",
             "content": "receveur-a-carreler-next-FPC1240922"
@@ -4662,7 +4572,7 @@
     "partnumber": "FPC1240922",
     "longDesc": {
         "locale": "fr",
-        "content": "- Pente préformée. <BR/>- Dimensions :                                                           <BR/>* L. 80 x 80 x Ep. 4 cm.                                                   <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm.                                                           <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
+        "content": "- Pente préformée. <BR/>- Dimensions :                                                                                                            <BR/>* L. 90 x 90 x Ep. 4 cm.                                                          <BR/>* L. 120 x 80 x Ep. 4,5 cm.                                                          <BR/>* L. 160 x 90 x Ep. 4,5 cm. <BR/>* L. 200 x 100 x 4,5 cm.                                                          <BR/>- Vidage (horizontal ou vertical) et bande d'étanchéité vendus séparément.             <BR/>- Convient aux personnes à mobilité réduite."
     },
     "imageThumbnail": {
         "locale": "fr",
