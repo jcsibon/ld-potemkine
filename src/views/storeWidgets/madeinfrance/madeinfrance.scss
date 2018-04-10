@@ -1,0 +1,12 @@
+@include media-breakpoint-up(md) {
+    .frenchFlag::before {
+        content: "";
+        background-image: url(https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/french-flag.svg);
+        background-repeat: no-repeat;
+        width: 45px;
+        height: 88px;
+        top: 0px;
+        left: -45px;
+        position: absolute;
+    }
+}
