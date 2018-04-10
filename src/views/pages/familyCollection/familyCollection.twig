@@ -10,14 +10,14 @@
 <div class="container">
     <div id="family_collection_promo" class="col-12 text-center d-lg-none py-3 px-0 px-lg-3">
         <a href="#">
-            <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1523316820/promo.png" class="img-fluid" />
+            <img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1523366080/promo.png" class="img-fluid" />
         </a>
     </div>
     <div id="family_collection_edito" class="col-12 d-flex d-lg-none px-0 px-lg-5 py-3">
         <div class="m-auto">
             <p class="h1 py-lg-3 font-secondary text-uppercase text-brown-light line-height-normal">Lapeyre, Cuisiniste & Distributeur.</p>
             <p class="py-lg-5">
-                L'ensemble des cuisines Lapeyre sont réalisées dans nos usines françaises et constituées des meilleurs matériaux!
+                Découvrez tout le savoir bien faire de Lapeyre avec des cuisines venues de notre usine située dans le Cantal.
             </p>
             <p class="text-center py-lg-3">
                 <a href="/c/magazine/autour-de-lapeyre/usines"><button class="btn btn-primary px-5 py-2 cursor-pointer">Découvrir</button></a>
@@ -41,6 +41,10 @@
     $('<div class="col-12 d-none d-lg-block"><div class="row"><div class="col-8" id="family_collection_promo_container"><div class="row"></div></div><div class="col-4 d-flex" id="family_collection_edito_container"></div></div></div>').insertAfter('#thumb_family_collection3');
     $('#thumb_family_collection4, #thumb_family_collection5').addClass('d-lg-none');
     $('#family_collection_promo_container .row').append($('#family_collection_promo').clone(),$('#thumb_family_collection4').clone(),$('#thumb_family_collection5').clone());
+    $('#carouselProduct4').attr('id','carouselProduct4' + 'bis');
+    $('#carouselProduct5').attr('id','carouselProduct5' + 'bis');
+    $('#carouselProduct4bis .carousel-control-prev, #carouselProduct4bis .carousel-control-next').attr('href','#carouselProduct4' + 'bis');
+    $('#carouselProduct5bis .carousel-control-prev, #carouselProduct5bis .carousel-control-next').attr('href','#carouselProduct5' + 'bis');
     $('#family_collection_edito_container').append($('#family_collection_edito').clone());
     $('#family_collection_promo_container #family_collection_promo, #family_collection_edito_container #family_collection_edito').removeClass('d-lg-none');
     $('#family_collection_promo_container #thumb_family_collection4, #family_collection_promo_container #thumb_family_collection5').removeClass('col-lg-4, d-lg-none');

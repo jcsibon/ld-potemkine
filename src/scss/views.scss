@@ -1127,6 +1127,131 @@ p{
     top: -72px;
 }
 
+.crossselCollection .thumb_collection .thumb_product__square {
+    width: 100%;
+}
+
+.crossselCollection .carousel-inner .cloneditem-1,
+.crossselCollection .carousel-inner .cloneditem-2 {
+    display: none;
+}
+
+@media all and (min-width: 576px) {
+    .crossselCollection .carousel-inner > .carousel-item.active.carousel-item-left,
+    .crossselCollection .carousel-inner > .carousel-item-prev {
+        left: -100%;
+    }
+    .crossselCollection .carousel-inner > .carousel-item.active.carousel-item-right,
+    .crossselCollection .carousel-inner > .carousel-item-next {
+        left: 100%;
+    }
+    .crossselCollection .carousel-inner > .carousel-item-left,
+    .crossselCollection .carousel-inner > .carousel-item-prev.carousel-item-right,
+    .crossselCollection .carousel-inner > .carousel-item.active {
+        left: 0;
+    }
+}
+@media all and (min-width: 576px) and (transform-3d), all and (min-width: 576px) and (-webkit-transform-3d) {
+    .crossselCollection .carousel-inner > .carousel-item.active.carousel-item-right,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-next {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        left: 0;
+    }
+    .crossselCollection .carousel-inner > .carousel-item.active.carousel-item-left,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-prev {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        left: 0;
+    }
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-left,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-prev.carousel-item-right,
+    .crossselCollection .carousel-inner > .carousel-item.active {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0;
+    }
+}
+@media all and (min-width: 768px) {
+    .crossselCollection .carousel-inner > .carousel-item.active.carousel-item-left,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-prev {
+        left: -50%;
+    }
+    .crossselCollection .carousel-inner > .carousel-item.active.carousel-item-right,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-next {
+        left: 50%;
+    }
+    .crossselCollection .carousel-inner > .carousel-item-left,
+    .crossselCollection .carousel-inner > .carousel-item-prev.carousel-item-right,
+    .crossselCollection .carousel-inner > .active {
+        left: 0;
+    }
+    .crossselCollection .carousel-inner .cloneditem-1 {
+        display: flex;
+    }
+}
+@media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
+    .crossselCollection .carousel-inner > .carousel-item.active.carousel-item-right,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-next {
+        -webkit-transform: translate3d(50%, 0, 0);
+        transform: translate3d(50%, 0, 0);
+        left: 0;
+    }
+    .crossselCollection .carousel-inner > .carousel-item.active.carousel-item-left,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-prev {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+        left: 0;
+    }
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-left,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-prev.carousel-item-right,
+    .crossselCollection .carousel-inner > .carousel-item.active {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0;
+    }
+}
+@media all and (min-width: 992px) {
+    .crossselCollection .carousel-inner > .carousel-item.active.carousel-item-left,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-prev {
+        left: -33.333%;
+    }
+    .crossselCollection .carousel-inner > .carousel-item.active.carousel-item-right,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-next {
+        left: 33.333%;
+    }
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-left,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-prev.carousel-item-right,
+    .crossselCollection .carousel-inner > .carousel-item.active {
+        left: 0;
+    }
+    .crossselCollection .carousel-inner .cloneditem-1,
+    .crossselCollection .carousel-inner .cloneditem-2,
+    .crossselCollection .carousel-inner .cloneditem-3  {
+        display: flex;
+    }
+}
+@media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {
+    .crossselCollection .carousel-inner > .carousel-item.active.carousel-item-right,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-next {
+        -webkit-transform: translate3d(33.333%, 0, 0);
+        transform: translate3d(33.333%, 0, 0);
+        left: 0;
+    }
+    .crossselCollection .carousel-inner > .carousel-item.active.carousel-item-left,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-prev {
+        -webkit-transform: translate3d(-33.333%, 0, 0);
+        transform: translate3d(-33.333%, 0, 0);
+        left: 0;
+    }
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-left,
+    .crossselCollection .carousel-inner > .carousel-item.carousel-item-prev.carousel-item-right,
+    .crossselCollection .carousel-inner > .carousel-item.active {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0;
+    }
+}
 .description__title {
     line-height: 1.5em;
     font-weight: 400;
@@ -1612,44 +1737,53 @@ table{
 .window__table_global th, .window__table_global td {
     white-space: nowrap;
 }
-
-.thumb_collection .carousel-inner::after {
-    width: 100%; 
-    padding-top: 100%; 
-    content: "";
-    top: 0;
-    position: absolute;
-    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 49%, rgba(0,0,0,0.75) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 49%,rgba(0,0,0,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 49%,rgba(0,0,0,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bf000000',GradientType=0 ); /* IE6-9 */
-}
-
+/*
 .thumb_collection_btn {
-    bottom: 15px;
-    right: -200px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+bottom: 15px;
+right: -200px;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
 }
 
 .thumb_collection_price {
-    opacity:1;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+opacity:1;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
 }
 
 @media screen and (min-width: 1200px) {
-    div[id^="carouselProduct"]:hover .thumb_collection_btn {
-        right: 0;
-    }
+div[id^="carouselProduct"]:hover .thumb_collection_btn {
+right: 0;
+}
 
-    div[id^="carouselProduct"]:hover .thumb_collection_price {
-        opacity:0;
-    }
+div[id^="carouselProduct"]:hover .thumb_collection_price {
+opacity:0;
+}
+}
+*/
+
+.thumb_collection__price {
+    font-size: 34px;
+}
+.thumb_collection__image {
+    height: 234px;
+}
+.crossselCollection div[id^=thumb_family_collection] > a {
+    width: 100%;
+}
+.crossselCollection .carousel-control-prev {
+    left: -15px;
+}
+.crossselCollection .carousel-control-next {
+    right: -15px;
+}
+
+.thumb_collection .carousel-control-prev, .thumb_collection .carousel-control-next {
+    margin-top: -70px;
 }
 
 @include media-breakpoint-down(md) {
@@ -1739,19 +1873,22 @@ div[id^="carouselProduct"] .carousel-item {
 .thumb_product__square {
     padding-top: 100% !important;
 }
-div[id^="carouselProduct"] a[class^="carousel-control"] {
+
+div[id^="carouselProduct"] a[class^="carousel-control"], .crossselCollection a[class^="carousel-control"] {
     visibility: hidden;
+}
+div[id^="carouselProduct"] a[class^="carousel-control"] {
     width: inherit;
 }
-div[id^="carouselProduct"] a[class^="carousel-control"]>div {
+div[id^="carouselProduct"] a[class^="carousel-control"]>div, .crossselCollection a[class^="carousel-control"]>div {
     width: 40px;
     height: 40px;
 }
-div[id^="carouselProduct"] .carousel-control-next, div[id^="carouselProduct"] .carousel-control-prev {
+div[id^="carouselProduct"] .carousel-control-next, div[id^="carouselProduct"] .carousel-control-prev, .crossselCollection .carousel-control-next, .crossselCollection .carousel-control-prev {
     opacity: inherit;
 }
 
-div[id^="carouselProduct"] .carousel-control-next:hover > div, div[id^="carouselProduct"] .carousel-control-prev:hover > div {
+div[id^="carouselProduct"] .carousel-control-next:hover > div, div[id^="carouselProduct"] .carousel-control-prev:hover > div, .crossselCollection .carousel-control-next:hover > div, .crossselCollection .carousel-control-prev:hover > div {
     background-color: $red-secondary !important;
 }
 
@@ -1765,6 +1902,11 @@ div[id^="carouselProduct"] .carousel-indicators>li {
 
 div[id^="carouselProduct"] .carousel-indicators>li.active {
     background: $red;
+}
+
+.crossselCollection:hover a[class^="carousel-control"] {
+    visibility: visible;
+    width: initial;
 }
 
 @media screen and (max-width: 1200px) {
