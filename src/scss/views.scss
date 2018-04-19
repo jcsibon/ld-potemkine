@@ -733,6 +733,10 @@ div.home__large_block_left {
     right: -4%;
 }
 
+#carouselFPCKitchen .carousel-control-next, #carouselFPCKitchen .carousel-control-prev {
+    width: 5%;
+}
+
 .blockquote::after {
     content: "”";
     color: $font-light;
@@ -768,9 +772,32 @@ div.home__large_block_left {
         background: -webkit-linear-gradient(top, $white 40%,$white 85%,$gray-300 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, $white 40%,$white 85%,$gray-300 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$white', endColorstr='$gray-300',GradientType=0 ); /* IE6-9 */
+        right: 10%;
     }
 }
 
+@media screen and (min-width: 1400px) {
+    .kitchen__bloc_title {
+        left: 50%;
+    }
+}
+.stair__display_thumbnails {
+    top:35%;
+}
+#carouselStair img {
+    cursor: pointer;
+}
+.stair__display_thumb > div > div:nth-child(1)  {
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    cursor: pointer;
+}
+.stair__display_thumb > div > div:nth-child(2)  {
+    opacity: 0.5;
+}
 
 .worktop__price {
     font-size: 40px;
@@ -1251,6 +1278,29 @@ p{
         transform: translate3d(0, 0, 0);
         left: 0;
     }
+}
+.thumb_crosssellKitchen {
+    padding-top: 80%;
+}
+.thumb_crosssellKitchen p {
+    font-size: 32px;
+}
+.thumb_crosssellKitchen>div {
+    width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+}
+.thumb_crosssellKitchen::after {
+    content: " ";
+    position: absolute;
+    background: #000;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .description__title {
     line-height: 1.5em;

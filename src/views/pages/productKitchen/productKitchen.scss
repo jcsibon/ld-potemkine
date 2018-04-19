@@ -55,6 +55,10 @@
     right: -4%;
 }
 
+#carouselFPCKitchen .carousel-control-next, #carouselFPCKitchen .carousel-control-prev {
+    width: 5%;
+}
+
 .blockquote::after {
     content: "”";
     color: $font-light;
@@ -90,5 +94,12 @@
         background: -webkit-linear-gradient(top, $white 40%,$white 85%,$gray-300 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, $white 40%,$white 85%,$gray-300 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$white', endColorstr='$gray-300',GradientType=0 ); /* IE6-9 */
+        right: 10%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .kitchen__bloc_title {
+        left: 50%;
     }
 }
