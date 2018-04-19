@@ -2,9 +2,9 @@
 {% block content %}
 
 
-<div style="background-image: url({% if categories[global.request.get('code')]['imageFull']['content'] is defined %}{{ categories[global.request.get('code')]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %})" class="bg-cover worktop__container position-relative h-600 m-auto">
+<div style="background-image: url({% if categories[global.request.get('code')]['imageFull']['content'][0] is defined %}{{ categories[global.request.get('code')]['imageFull']['content'][0]|replace({' ':'%20'}) }}{% endif %})" class="bg-cover worktop__container position-relative h-600 m-auto">
     <div class="d-lg-none">
-        <img src="{% if categories[global.request.get('code')]['imageFull']['content'] is defined %}{{ categories[global.request.get('code')]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}" class="img-fluid" />
+        <img src="{% if categories[global.request.get('code')]['imageFull']['content'][0] is defined %}{{ categories[global.request.get('code')]['imageFull']['content'][0]|replace({' ':'%20'}) }}{% endif %}" class="img-fluid" />
     </div>
     <div class="container">
         <div class="col-12 col-lg-6 offset-lg-3 col-xl-5 offset-xl-5 bg-white p-4 pb-5 kitchen__bloc_title">
@@ -17,14 +17,7 @@
                     <p class="small mb-0">à partir de</p>
                     <p class="kitchen__price">{{ categories[global.request.get('code')]['price'] |number_format(2, '.', ' ') }}€</p>
                 </div>
-                <div class="col-4 col-sm-2">
-                    <div class="bg-dark rounded d-flex h-45">
-                        <a id="addToShoppingList_89106" href="#" onclick="wishList.goLogin('https://www.lapeyre.fr/amenagement-panama-decor-chene-blanchi-2490390','wishlist'); return false;" class="d-flex m-auto" role="button">
-                            <svg width="20" height="20" class="m-auto"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart-o-white"></use></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-8 col-sm-10 pl-0">
+                <div class="col-10 pl-0 offset-1">
                     <a href="#rdv-mag-cad" class="btn btn-primary col-12 h-45 rounded d-flex">
                         <div class="m-auto">
                             Prendre RDV
@@ -146,9 +139,12 @@
     <div class="container">
         {% include 'storeWidgets/appointment/appointment.twig' %}
     </div>
+    <div class="container">
+        {% include 'storeWidgets/crosssellKitchen/crosssellKitchen.twig' %}
+    </div>
     <div class="bg-white">
         <div class="container">
-            {% include 'storeWidgets/crossselCollection/crossselCollection.twig' %}
+            {% include 'storeWidgets/crosssellCollection/crosssellCollection.twig' %}
         </div>
     </div>
     <div class="container">
