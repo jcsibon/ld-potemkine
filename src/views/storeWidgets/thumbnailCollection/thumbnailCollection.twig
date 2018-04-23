@@ -1,22 +1,17 @@
 <a href="/{% if categories[object]['url']is defined %}{{ categories[object]['url']|replace({' ':'%20'}) }}{% else %}#{% endif %}">
     <div class="thumb_collection thumb_product border">
-        <div id="carouselProduct{{loopIndex}}" class="position-relative {% if disableCarousel is not defined %}carousel slide {% endif %} overflow-hidden m-auto">
-            {#
-            <ol class="carousel-indicators d-lg-none mb-1">
-                <li data-target="#carouselProduct{{loopIndex}}" data-slide-to="0" class="mx-2 active"></li>
-                <li data-target="#carouselProduct{{loopIndex}}" data-slide-to="1" class="mx-2"></li>
-                <li data-target="#carouselProduct{{loopIndex}}" data-slide-to="2" class="mx-2"></li>
-            </ol>
-            #}  
-            {% if disableCarousel is not defined and categories[object]['imageFull']['content']|length>1 %}
+        <div id="carouselProduct{{loopIndex}}" class="position-relative {% if disableCarousel is not defined %}carousel slide {% endif %} overflow-hidden m-auto"> 
+            {% if disableCarousel is not defined and categories[object]['imageFull2']|length>1 %}
             <div class="carousel-inner overflow-visible" role="listbox">
-                {% for thumb in categories[object]['imageFull']['content'] %}
-                <div class="carousel-item {% if loop.index0==0 %}active{% endif %} bg-cover thumb_product__large" style="background-image: url({{ categories[object]['imageFull']['content'][loop.index0]|replace({' ':'%20'}) }}); ">
-                </div>
+                <div class="carousel-item active bg-cover thumb_product__large" style="background-image: url({{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}); "></div>
+                {% for i in 2..10 %}
+                {% if categories[object]['imageFull' ~ i]|length>1 %} 
+                <div class="carousel-item bg-cover thumb_product__large" style="background-image: url({{ categories[object]['imageFull' ~ i]|replace({' ':'%20'}) }}); "></div>
+                {% endif %}
                 {% endfor %}
             </div>
             {% else %}
-            <div class="thumb_product__large bg-cover" style="background-image: url({% if categories[object]['imageFull']['content'][0] is defined %}{{ categories[object]['imageFull']['content'][0]|replace({' ':'%20'}) }}{% endif %}) ">
+            <div class="thumb_product__large bg-cover" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}) ">
             </div>
             {% endif %}
             <div class="col-12 bg-white thumb_collection__bottom">
@@ -60,7 +55,7 @@
                 </div>
             </div>
             #} 
-            {% if disableCarousel is not defined and categories[object]['imageFull']['content']|length>1 %}
+            {% if disableCarousel is not defined and categories[object]['imageFull2']|length>1 %}
             <a class="carousel-control-prev" href="#carouselProduct{{loopIndex}}" role="button" data-slide="prev">
                 <div class="bg-primary d-flex">
                     <svg width="20" height="20" class="m-auto"><use xlink:href="#arrow-point-to-left"/></svg>

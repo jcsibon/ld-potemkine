@@ -5,11 +5,14 @@
 
     <div id="carouselFPCKitchen" class="carousel slide m-auto worktop__container d-none d-lg-block" >
         <div class="carousel-inner h-600" role="listbox">
-            <div style="background-image: url({% if categories[global.request.get('code')]['imageFull']['content'][0] is defined %}{{ categories[global.request.get('code')]['imageFull']['content'][0]|replace({' ':'%20'}) }}{% endif %})" class="carousel-item active bg-cover h-600"></div>
-            <div style="background-image: url({% if categories[global.request.get('code')]['imageFull']['content'][0] is defined %}{{ categories[global.request.get('code')]['imageFull']['content'][0]|replace({' ':'%20'}) }}{% endif %})" class="carousel-item bg-cover h-600"></div>
-            <div style="background-image: url({% if categories[global.request.get('code')]['imageFull']['content'][0] is defined %}{{ categories[global.request.get('code')]['imageFull']['content'][0]|replace({' ':'%20'}) }}{% endif %})" class="carousel-item bg-cover h-600"></div>
+            <div style="background-image: url({% if categories[global.request.get('code')]['imageFull']['content'] is defined %}{{ categories[global.request.get('code')]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %})" class="carousel-item active bg-cover h-600"></div>
+            {% for i in 2..10 %}
+            {% if categories[global.request.get('code')]['imageFull' ~ i]|length>1 %} 
+            <div style="background-image: url({% if categories[global.request.get('code')]['imageFull' ~ i] is defined %}{{ categories[global.request.get('code')]['imageFull' ~ i]|replace({' ':'%20'}) }}{% endif %})" class="carousel-item bg-cover h-600"></div>
+            {% endif %}
+            {% endfor %}
         </div>
-        {% if categories[global.request.get('code')]['imageFull']['content']|length>1 %}
+        {% if categories[global.request.get('code')]['imageFull2']|length>0 %}
         <a class="carousel-control-prev" href="#carouselFPCKitchen" role="button" data-slide="prev">
             <div class="d-flex">
                 <svg width="40" height="40" class="m-auto"><use xlink:href="#back"/></svg>
@@ -28,16 +31,17 @@
     <div id="carouselFPCKitchen_mob" class="carousel slide d-lg-none" >
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <img src="{% if categories[global.request.get('code')]['imageFull']['content'][0] is defined %}{{ categories[global.request.get('code')]['imageFull']['content'][0]|replace({' ':'%20'}) }}{% endif %}" class="img-fluid" />
+                <img src="{% if categories[global.request.get('code')]['imageFull']['content'] is defined %}{{ categories[global.request.get('code')]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}" class="img-fluid" />
             </div>
+            {% for i in 2..10 %}
+            {% if categories[global.request.get('code')]['imageFull' ~ i]|length>1 %} 
             <div class="carousel-item">
-                <img src="{% if categories[global.request.get('code')]['imageFull']['content'][0] is defined %}{{ categories[global.request.get('code')]['imageFull']['content'][0]|replace({' ':'%20'}) }}{% endif %}" class="img-fluid" />
+                <img src="{% if categories[global.request.get('code')]['imageFull' ~ i] is defined %}{{ categories[global.request.get('code')]['imageFull' ~ i]|replace({' ':'%20'}) }}{% endif %}" class="img-fluid" />
             </div>
-            <div class="carousel-item">
-                <img src="{% if categories[global.request.get('code')]['imageFull']['content'][0] is defined %}{{ categories[global.request.get('code')]['imageFull']['content'][0]|replace({' ':'%20'}) }}{% endif %}" class="img-fluid" />
-            </div>
+            {% endif %}
+            {% endfor %}
         </div>
-        {% if categories[global.request.get('code')]['imageFull']['content']|length>1 %}
+        {% if categories[global.request.get('code')]['imageFull2']|length>0 %}
         <a class="carousel-control-prev" href="#carouselFPCKitchen_mob" role="button" data-slide="prev">
             <div class="d-flex">
                 <svg width="40" height="40" class="m-auto"><use xlink:href="#back"/></svg>

@@ -1,8 +1,8 @@
 <div class="row py-5 mb-3">
     <div class="col-12 col-lg-10 offset-lg-1">
-        <div class="row">
+        <div class="text-center white-space-nowrap">
             {% for object in categories[global.request.get('code')]['crosssell'] %}
-            <div class="col-12 col-md-{{12/loop.length}} pb-4">
+            <div class="col-12 col-md-{{12/loop.length}} col-xl-4 pb-4 d-md-inline-block white-space-normal">
                 <a href="{{ object.crosssellBloc.url }}">
                     <div class="col-12 d-flex mb-0 bg-cover thumb_crosssellKitchen" style="background-image: url({{ object.crosssellBloc.image }})">
                         <div class="position-absolute d-flex">
