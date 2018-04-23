@@ -1,0 +1,22 @@
+<div class="row py-5 mb-3">
+    <div class="col-12 col-lg-10 offset-lg-1">
+        <div class="row">
+            {% for object in categories[global.request.get('code')]['crosssell'] %}
+            <div class="col-12 col-md-{{12/loop.length}} pb-4">
+                <a href="{{ object.crosssellBloc.url }}">
+                    <div class="col-12 d-flex mb-0 bg-cover thumb_crosssellKitchen" style="background-image: url({{ object.crosssellBloc.image }})">
+                        <div class="position-absolute d-flex">
+                            <p class="m-auto text-white text-uppercase font-secondary text-center px-2 line-height-normal">{{ object.crosssellBloc.title }}</p>
+                        </div>
+                    </div>
+                </a>
+                {% if object.crosssellBloc.description|length > 0 %}
+                    <div class="col-12 text-center bg-white p-4">
+                        {{ object.crosssellBloc.description }}
+                    </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

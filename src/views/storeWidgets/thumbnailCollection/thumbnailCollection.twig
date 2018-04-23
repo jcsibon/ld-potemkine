@@ -8,32 +8,18 @@
                 <li data-target="#carouselProduct{{loopIndex}}" data-slide-to="2" class="mx-2"></li>
             </ol>
             #}  
-            {% if disableCarousel is not defined %}
+            {% if disableCarousel is not defined and categories[object]['imageFull']['content']|length>1 %}
             <div class="carousel-inner overflow-visible" role="listbox">
-                <div class="carousel-item active bg-cover thumb_product__large" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}); ">
+                {% for thumb in categories[object]['imageFull']['content'] %}
+                <div class="carousel-item {% if loop.index0==0 %}active{% endif %} bg-cover thumb_product__large" style="background-image: url({{ categories[object]['imageFull']['content'][loop.index0]|replace({' ':'%20'}) }}); ">
                 </div>
-                <div class="carousel-item bg-cover thumb_product__large" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}); ">
-                </div>
-                <div class="carousel-item bg-cover thumb_product__large" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}); ">
-                </div>
-            </div> 
-            <a class="carousel-control-prev" href="#carouselProduct{{loopIndex}}" role="button" data-slide="prev">
-                <div class="bg-primary d-flex">
-                    <svg width="20" height="20" class="m-auto"><use xlink:href="#arrow-point-to-left"/></svg>
-                    <span class="sr-only">Previous</span>
-                </div>
-            </a>
-            <a class="carousel-control-next" href="#carouselProduct{{loopIndex}}" role="button" data-slide="next">
-                <div class="bg-primary d-flex">
-                    <svg width="20" height="20" class="m-auto"><use xlink:href="#arrow-point-to-right"/></svg>
-                    <span class="sr-only">Next</span>
-                </div>
-            </a>
+                {% endfor %}
+            </div>
             {% else %}
-            <div class="thumb_collection__image bg-cover" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}) ">
+            <div class="thumb_product__large bg-cover" style="background-image: url({% if categories[object]['imageFull']['content'][0] is defined %}{{ categories[object]['imageFull']['content'][0]|replace({' ':'%20'}) }}{% endif %}) ">
             </div>
             {% endif %}
-            <div class="col-12 bg-white">
+            <div class="col-12 bg-white thumb_collection__bottom">
                 <div class="d-flex">
                     <div class="col-7 col-lg-8 pl-0 py-2" >
                         <div class="text-left">
@@ -73,7 +59,21 @@
                     </span>
                 </div>
             </div>
-            #}
+            #} 
+            {% if disableCarousel is not defined and categories[object]['imageFull']['content']|length>1 %}
+            <a class="carousel-control-prev" href="#carouselProduct{{loopIndex}}" role="button" data-slide="prev">
+                <div class="bg-primary d-flex">
+                    <svg width="20" height="20" class="m-auto"><use xlink:href="#arrow-point-to-left"/></svg>
+                    <span class="sr-only">Previous</span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#carouselProduct{{loopIndex}}" role="button" data-slide="next">
+                <div class="bg-primary d-flex">
+                    <svg width="20" height="20" class="m-auto"><use xlink:href="#arrow-point-to-right"/></svg>
+                    <span class="sr-only">Next</span>
+                </div>
+            </a>
+            {% endif %}
         </div>
     </div>
 </a>
