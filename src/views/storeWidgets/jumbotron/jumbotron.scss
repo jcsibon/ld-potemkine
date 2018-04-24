@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    max-width: 1920px;
 }
 .jumbotron .h1 {
     font-family: $font-family-1;
@@ -11,9 +12,9 @@
 
 @include media-breakpoint-down(lg) {
     .jumbotron .h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .jumbotron {
-        height: 300px;
+        height: 320px;
     }
 }

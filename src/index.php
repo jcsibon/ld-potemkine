@@ -1,5 +1,9 @@
 <?php
 
+ini_set("memory_limit", "-1");
+set_time_limit(0);
+error_reporting(E_ALL);
+
 require('../vendor/autoload.php');
 
 $app = new Silex\Application();
@@ -16,96 +20,46 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 		'twig.path' => __DIR__.'/views',
 ));
 
-$categories = json_decode(file_get_contents("data/sas/categories copie.json"),1)["category"];
 
-foreach($categories as $row)
-{
-	$row['url'] = str_replace("_", "-", $row['identifier']);
-	$row['identifier'] = preg_replace('/([\S\s]*)(CCN|CCU|SCU)([0-9]+)/', '$2$3', $row['identifier']);
+$articles = json_decode(file_get_contents("data/articles.json"),1);
+$app['twig']->addGlobal('articles', $articles);
 
-
-	if(isset($row['parentIdentifier']))
-	{
-		$row['parentIdentifier'] = preg_replace('/([\S\s]*)(CCN|CCU|SCU)([0-9]+)/', '$2$3', $row['parentIdentifier']);
-	}
-	if(isset($row['imageFull']['content']))
-		$row['imageFull']['content'] = "https://statics.lapeyre.fr/img/catalogue/" . $row['imageFull']['content'];
-	if(isset($row['imageThumbnail']['content']))
-		$row['imageThumbnail']['content'] = "https://statics.lapeyre.fr/img/catalogue/" . $row['imageThumbnail']['content'];
-
-	$categories[$row['identifier']] = $row;
-}
-
-foreach (glob("data/log/*") as $file) {
-	foreach(json_decode(file_get_contents($file),1) as $row)
-	{
-		if(isset($row['identifier']))
-		{
-			foreach($row as $key => $value)
-			{
-				$categories[$row['identifier']][$key] = $value;			
-			}
-		}
-	}
-}
-
-
-
-foreach($categories as $row)
-{
-	$childrens[$row['parentIdentifier']][] = $row['identifier'];
-	$parents[$row['identifier']]=$row['parentIdentifier'];
-
-	if(!isset($row['parentIdentifier']))
-	{
-		$tree[$row['identifier']] = array();
-		foreach($categories as $row2)
-		{
-			if($row['identifier'] === $row2['parentIdentifier'])
-			{
-				$tree[$row['identifier']][$row2['identifier']] = array();
-				foreach($categories as $row3)
-				{
-					if($row2['identifier'] === $row3['parentIdentifier'])
-					{
-						$tree[$row['identifier']][$row2['identifier']][$row3['identifier']] = array();
-						foreach($categories as $row4)
-						{
-							if($row3['identifier'] === $row4['parentIdentifier'])
-							{
-								$tree[$row['identifier']][$row2['identifier']][$row3['identifier']][$row4['identifier']] = array();
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-
-
+$categories = json_decode(file_get_contents("data/categories.json"),1);
 $app['twig']->addGlobal('categories', $categories);
-$app['twig']->addGlobal('tree', $tree);
-$app['twig']->addGlobal('childrens', $childrens);
-$app['twig']->addGlobal('parents', $parents);
-
-
 $app->get('/categories', function() use($app, $categories) {
 	header('Content-Type: application/json');
 	die(json_encode($categories));
 	return true;
 });
 
+$tree = json_decode(file_get_contents("data/tree.json"),1);
+$app['twig']->addGlobal('tree', $tree);
 $app->get('/tree', function() use($app, $tree) {
 	header('Content-Type: application/json');
 	die(json_encode($tree));
 	return true;
 });
 
+$childrens = json_decode(file_get_contents("data/childrens.json"),1);
+$app['twig']->addGlobal('childrens', $childrens);
+$app->get('/childrens', function() use($app, $childrens) {
+	header('Content-Type: application/json');
+	die(json_encode($childrens));
+	return true;
+});
+
+$parents = json_decode(file_get_contents("data/parents.json"),1);
+$app['twig']->addGlobal('parents', $parents);
+
+
+
+
+
+
 
 $app['twig']->addGlobal("uri", strtok(trim($_SERVER["REQUEST_URI"],"/"),'?'));
-//die(json_encode($_GET));
+
+
 $clients = json_decode(file_get_contents("data/clients.json"));
 if(isset($_GET['client']) && isset($clients->{$_GET['client']}))
 	$data['session'] = $clients->{$_GET['client']};
@@ -161,77 +115,99 @@ $app->get('/', function() use($app) {
 });
 
 /* CATALOGUE */
-$app->get('/{urlname}-{code}/', function($code) use($app, $categories) {
-	// die("FPC");
-	if(file_exists('views/contents/'.$code.".twig"))
-	{
-		return $app['twig']->render("contents/".$code.".twig",array("content"=>$content));
-	}
-	else
-	{
-		if(isset($categories[$code]["template"]))
-		{
-			return $app['twig']->render("pages/".$categories[$code]["template"]."/".$categories[$code]["template"].".twig",array("content"=>$content));
-		}
-		else
-		{
-		$template = "";
-			switch (substr($code, 0, 3)) {
-				case "CCU":
-					return $app['twig']->render('pages/universe/universe.twig',array("content"=>$content));
-				break;
-				case "CCN":
-					return $app['twig']->render('pages/family/family.twig',array("content"=>$content));
-				break;
-				case "FPC":
-					return $app['twig']->render('pages/product/product.twig',array("content"=>$content));
-				break;
-				default:
-					return $app['twig']->render('pages/article/article.twig',array("template"=>$template));      
-			}
-		}
-	}
-	/*
+$app->get('/{urlname}-{code}/', function($code) use($app, $categories, $parents) {
 
-	$content = array();
-	if(file_exists('data/radar/'.$code.".json"))
+	$breadcrumb = array($code);
+	if($parents[$code][0] != "")
 	{
-		$content = json_decode(file_get_contents("data/radar/".$code.".json"),1);
+		$breadcrumb[] = $parents[$code][0];
+		if($parents[$parents[$code][0]][0] !="")
+		{
+			$breadcrumb[] = $parents[$parents[$code][0]][0];
+			if($parents[$parents[$parents[$code][0]][0]][0] !="")
+			{
+				$breadcrumb[] = $parents[$parents[$parents[$code][0]][0]][0];
+				if($parents[$parents[$parents[$parents[$code][0]][0]][0]][0] !="")
+				{
+					$breadcrumb[] = $parents[$parents[$parents[$parents[$code][0]][0]][0]][0];
+					if($parents[$parents[$parents[$parents[$parents[$code][0]][0]][0]][0]][0] !="")
+					{
+						$breadcrumb[] = $parents[$parents[$parents[$parents[$parents[$code][0]][0]][0]][0]][0];
+					}
+				}
+			}
+		}
 	}
-	if(file_exists('data/layer/'.$code.".json"))
+
+	$breadcrumb = array_reverse($breadcrumb);
+	$app['twig']->addGlobal('breadcrumb', $breadcrumb);
+
+	if(isset($categories[$code]['dimensionsPanes']))
 	{
-		foreach(json_decode(file_get_contents("data/layer/".$code.".json"),1) as $row=>$field)
-			$content[$row]=$field;
+		$lines = explode(PHP_EOL, file_get_contents("http://export.beezup.com/Lapeyre/Target2sell_FRA/84b2e910-4e02-4477-af42-225e7d0705e6"));
+		$keys = str_getcsv($lines[0],"|");
+		array_shift($lines);
+
+		foreach ($lines as $line) {
+			$line = str_getcsv($line,"|");
+			if((int)$line[0]) {
+		    	$beezup[(int)$line[0]] = array_combine($keys, $line);
+			}
+		}
+
+		foreach ($categories[$code]['dimensionsPanes'] as $keypane => $pane) {
+			foreach ($pane['tabs'] as $keytab => $tab) {
+				$table[$tab['product']] = array("columns"=>[],"items"=>[]);
+				foreach(json_decode(utf8_encode(file_get_contents("data/sas/".$tab['product'].".json")),1)['product']['itemList']['item'] as $item)
+				{
+					preg_match('/[\S\s]*(?:direction\s(?P<Tirant>[G|D]*))?[\S\s]*(?:Tab.|Tabl.|TabL.|Tableau)[\s]*H[\.]*(?P<H>[0-9]+)[\s]*x[\s]*[l]*[\.]*(?P<l>[0-9]+)/', $item['label']['content'], $matches);
+					// die("https://www.lapeyre.fr/wcs/resources/store/10101/productview/".$item['sku']);
+					// die(json_encode($matches,1));
+					$row = array(
+						"url" => $item['seoItem']['urlKeyword']['content'],
+						"sku" => $item['sku'], 
+						// "price" => number_format(json_decode(file_get_contents("https://www.lapeyre.fr/wcs/resources/store/10101/productview/".$item['sku']),1)['CatalogEntryView'][0]['Price'][0]['priceValue'], 0, ',', '' ),
+						"price" => number_format($beezup[$item['sku']]['PRICE'], 0, ',', '' ),
+						"content" => $item['label']['content']
+					);
+					$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['items'][(int)$matches["H"]][(int)$matches["l"]] = $row;
+					if(!in_array((int)$matches["l"], $categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns']))
+						$categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns'][] = (int)$matches["l"];
+				}
+				asort($categories[$code]['dimensionsPanes'][$keypane]['tabs'][$keytab]["table"]['columns']);
+			}
+		}
+//		header('Content-Type: application/json');
+//		die(json_encode($categories[$code]));
+		$app['twig']->addGlobal('categories', $categories);
 	}
-	if(file_exists('views/contents/'.$code.".twig"))
+	if(file_exists('views/contents/'.$code.'/'.$code.".twig"))
 	{
-		return $app['twig']->render("contents/".$code.".twig",array("content"=>$content));
+		return $app['twig']->render("contents/".$code.'/'.$code.".twig");
 	}
 	else
 	{
 		if(isset($categories[$code]["template"]))
 		{
-			return $app['twig']->render("pages/".$categories[$code]["template"]."/".$categories[$code]["template"].".twig",array("content"=>$content));
+			return $app['twig']->render("pages/".$categories[$code]["template"]."/".$categories[$code]["template"].".twig");
 		}
 		else
 		{
-		$template = "";
 			switch (substr($code, 0, 3)) {
 				case "CCU":
-					return $app['twig']->render('pages/universe/universe.twig',array("content"=>$content));
+					return $app['twig']->render('pages/universe/universe.twig');
 				break;
 				case "CCN":
-					return $app['twig']->render('pages/family/family.twig',array("content"=>$content));
+					return $app['twig']->render('pages/family/family.twig');
 				break;
 				case "FPC":
-					return $app['twig']->render('pages/product/product.twig',array("content"=>$content));
+					return $app['twig']->render('pages/product/product.twig');
 				break;
 				default:
-					return $app['twig']->render('pages/article/article.twig',array("template"=>$template));      
+					return $app['twig']->render('pages/article/article.twig');
 			}
 		}
 	}
-	*/
 })->assert('urlname', '[a-z\-]+')->assert('code', '(CCU|SCU|CCN|FPC)[0-9\-]+');
 
 $app->get('/SearchDisplay', function() use($app) {
@@ -258,5 +234,8 @@ $app->get('/TunnelCommandPaymentView', function() use($app) {
 });
 $app->get('/TunnelCommandConfirmation', function() use($app) {
 	return $app['twig']->render('pages/TunnelCommandConfirmation/TunnelCommandConfirmation.twig');
+});
+$app->get('/exampleProduct', function() use($app) {
+	return $app['twig']->render('pages/family/exampleProduct.twig');
 });
 $app->run();

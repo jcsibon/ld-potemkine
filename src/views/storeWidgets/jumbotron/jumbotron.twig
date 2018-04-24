@@ -1,5 +1,5 @@
-<div class="jumbotron d-flex" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('{% if categories[global.request.get('code')]['imageFull']['content'] is defined %}{{ categories[global.request.get('code')]['imageFull']['content'] }}{% endif %}');">
-    <p class="h1 text-center text-white d-flex m-auto text-uppercase">
+<div class="jumbotron d-flex mx-auto" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('{% if categories[global.request.get('code')]['imageFull']['content'] is defined %}{{ categories[global.request.get('code')]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}');">
+    <h1 class="h1 text-center text-white d-flex m-auto text-uppercase">
         {{ categories[global.request.get('code')]['label']['content'] }}
-    </p>
+    </h1>
 </div>

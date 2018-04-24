@@ -1,0 +1,105 @@
+.kitchen__price {
+    font-size: 40px; 
+    font-family: $font-family-1; 
+    line-height: 1em;
+}
+
+#carouselKitchen .carousel-indicators>li {
+    background: $gray-300;
+    width: 12px;
+    height: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#carouselKitchen .carousel-indicators>li.active {
+    background: $red;
+}
+
+#carouselKitchen .carousel-indicators {
+    bottom: 190px;
+}
+
+#carouselKitchen {
+    max-width: 1980px;
+}
+
+.kitchen__tiny-block img {
+    height: 230px;
+}
+
+.kitchen__tiny_title {
+    font-family: $font-family-1;
+    color: $font-light;
+    line-height: 1.1em;
+    font-size: 25px;
+}
+
+.kitchen__blockquote p {
+    padding-top: 80px
+}
+
+#carouselKitchen .carousel-control-next, #carouselKitchen .carousel-control-prev {
+    opacity: inherit;
+}
+
+#carouselKitchen .carousel-control-next:hover > div, #carouselKitchen .carousel-control-prev:hover > div {
+    background-color: $red-secondary !important;
+}
+
+#carouselKitchen .carousel-control-prev {
+    left: -4%;
+}
+
+#carouselKitchen .carousel-control-next {
+    right: -4%;
+}
+
+#carouselFPCKitchen .carousel-control-next, #carouselFPCKitchen .carousel-control-prev {
+    width: 5%;
+}
+
+.blockquote::after {
+    content: "”";
+    color: $font-light;
+    opacity: 0.3;
+    font-size: 130px;
+    position: absolute;
+    line-height: 111px;
+    right: 40px;
+}
+
+@include media-breakpoint-down(xs) {
+    #carouselKitchen .carousel-indicators {
+        bottom: 225px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .kitchen__pictos {
+        position: absolute;
+        top: -90px;
+        right: 0;
+    }
+    .kitchen__pictureDesc {  
+        position:absolute;
+        bottom: 0;
+    }
+    .kitchen__bloc_title {
+        position:absolute;
+        bottom: 0;
+        max-width: 660px;
+        background: $white; /* Old browsers */
+        background: -moz-linear-gradient(top, $white 40%, $white 85%, $gray-300 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, $white 40%,$white 85%,$gray-300 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, $white 40%,$white 85%,$gray-300 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$white', endColorstr='$gray-300',GradientType=0 ); /* IE6-9 */
+        right: 10%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .kitchen__bloc_title {
+        left: 50%;
+    }
+}

@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Lapeyre</title>
         <link href="/css/style.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
@@ -14,10 +16,162 @@
     <body>
         {% include 'sprite/sprite.svg' %}
     	{% include 'storeWidgets/headerUI/headerUI.twig' %}
+        
     	{# {% include 'storeWidgets/nav.twig' %} #}
 
     	{% block content %}
     	{% endblock %}
+        
+    	{% include 'storeWidgets/appointmentModal/appointmentModal.twig' %}
+        
+        <script> /* BEGIN js for appointment */
+            
+            $('#rdv_dom_result').hide();
+            $('#rdv_mag_result').hide();
+            $('.rdv-mag-hideFirst').hide();
+
+            /* -- CAD -- */
+
+            $.ajaxPrefilter( function (options) {
+                if (options.crossDomain && jQuery.support.cors) {
+                    var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
+                    options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
+                }
+            });
+            var allCp=[];
+            $.getJSON('https://www.lapeyre.fr/img/contrib/data/cad.json', function(data) {
+                var i=0;
+                $.each(data['cad'], function(key1, val1) {
+
+                    if (typeof(data['cad'][key1]['magUrl']) !== 'undefined') {
+
+                        $('body').append('<div id="cad-'+i+'" class="cad-bloc">Demandez votre rendez-vous de conseil à domicile auprès de <a href="'+data['cad'][key1]['magUrl']+'" target=_blank>Lapeyre '+data['cad'][key1]['magVille']+'</a><br /><br />Par téléphone : '+data['cad'][key1]['cadTel']+'<br />Par email : <a href="mailto:'+data['cad'][key1]['cadMail']+'">'+data['cad'][key1]['cadMail']+'</a></div>');
+                    }
+                    else if (typeof(data['cad'][key1]['mags']) !== 'undefined') {
+
+                        var preparePrint='<div id="cad-'+i+'" class="cad-bloc">Demandez votre rendez-vous de conseil à domicile auprès de l\'un de ces magasins :<br />';
+
+                        var y=0;
+
+                        $.each(data['cad'][key1]['mags'], function(key2, val2) {
+
+                            if (y>0) preparePrint+=' - ';
+                            preparePrint+='<a onclick="cadChoiceAction('+i+','+y+');">Lapeyre '+data['cad'][key1]['mags'][key2]['magVille']+'</a>';
+
+                            y++;
+                        });
+
+                        preparePrint+='<br /><br />';
+
+                        var y=0;
+
+                        $.each(data['cad'][key1]['mags'], function(key2, val2) {
+
+                            preparePrint+='<div id="cad-'+i+'-magChoice-'+y+'" class="cad-magChoice-bloc"><a href="'+data['cad'][key1]['mags'][key2]['magUrl']+'" target=_blank>Lapeyre '+data['cad'][key1]['mags'][key2]['magVille']+'</a><br /><br />Téléphone : '+data['cad'][key1]['mags'][key2]['cadTel']+'<br />Email : <a href="mailto:'+data['cad'][key1]['mags'][key2]['cadMail']+'">'+data['cad'][key1]['mags'][key2]['cadMail']+'</a></div>';
+
+                            y++;
+                        });
+
+                        $('body').append(preparePrint+'</div>');
+                    }
+                    var cpList=data['cad'][key1]['cp'].split(',');
+                    cpList.forEach(function(cpItem) {
+                        $('#cad-'+i).addClass('cad-cp-'+cpItem);
+                        allCp.push(cpItem);
+                    });
+
+                    i++;
+                });
+                $('.cad-bloc').hide();
+            });
+
+            function cadAction() {
+
+                $('.cad-magChoice-bloc').hide();
+
+                $('#rdv_dom_result').fadeIn();
+                var cp = $('#rdv_dom_cp').val();
+                if (!(cp>999 && cp<100000)) 
+                { 
+                    $('#rdv_dom_result').html('Merci de renseigner un code postal valide.'); 
+                    window.dataLayer.push({ "event": "erreur_formulaire_rdv_domicile"});
+                    return;
+                }
+
+                if (allCp.indexOf(cp)>-1) 
+                {
+                    $('#rdv_dom_result').html($('.cad-cp-'+cp).html());
+                    window.dataLayer.push({ "event": "succes_formulaire_rdv_domicile"});
+                }
+                else 
+                {
+                    $('#rdv_dom_result').html('Patience, ce service sera bientôt disponible chez vous !');
+                    window.dataLayer.push({ "event": "Service non disponible_formulaire_rdv_domicile"})
+                }
+            }
+
+            function cadChoiceAction(idCad, idMag) {
+
+                $('.cad-magChoice-bloc').hide();
+
+                $('#cad-'+idCad+'-magChoice-'+idMag).fadeIn();
+            }
+
+            /* -- RDV magasin -- */
+
+            $( "#rdv_mag_tel" ).click(function() {
+
+                $('.rdv-mag-hideFirst').fadeIn();
+            });
+
+            $( "#rdv_mag_button" ).click(function() {
+
+                $('.rdv-mag-hideFirst').fadeIn();
+                $('#rdv_mag_result').fadeIn();
+
+                var nom=$('#rdv_mag_nom').val();
+                var prenom=$('#rdv_mag_prenom').val();
+                var email=$('#rdv_mag_email').val();
+                var tel=$('#rdv_mag_tel').val();
+                var cp=$('#rdv_mag_cp').val();
+                var codeMag=$('#rdv_mag_codeMag').val();
+
+                while(codeMag.length < 4){
+                    codeMag="0"+codeMag;
+                }
+
+                if (nom=='' || prenom=='' || email=='' || tel=='') { $('#rdv_mag_result').html('Merci de renseigner tous les champs ci-dessus.'); return; }
+                if (!(cp>999 && cp<100000)) { $('#rdv_mag_result').html('Merci de renseigner un code postal valide.'); return; }
+
+                $('#rdv_mag_result').html('Nous envoyons votre demande...');
+
+                $.ajax({
+                    url: "https://www.lapeyre.fr/RDVService",
+                    type: "POST",
+                    contentType: "application/x-www-form-urlencoded",
+                    data: {
+                        "codeMag": codeMag,
+                        "nom" : nom,
+                        "prenom" : prenom,
+                        "telephone" : tel,
+                        "email" : email,
+                        "currentUrl" : window.location.href,
+                        "comment" : "Code postal : "+cp
+                    },
+                })
+                    .done(function(data, textStatus, jqXHR) {
+
+                    $('#rdv_mag_result').html('Votre demande a bien été prise en compte, un conseiller vous rappellera rapidement pour fixer avec vous un rendez-vous en magasin.');
+                    window.dataLayer.push({ "event": "succes_formulaire_rdv_magasin"});
+                })
+                    .fail(function(jqXHR, textStatus, errorThrown) {
+
+                    $('#rdv_mag_result').html('Une erreur est survenue. Veuillez nous en excuser.');
+                    window.dataLayer.push({ "event": "erreur_formulaire_rdv_magasin"});
+                });
+            });
+
+        /* END js for appointment */ </script>
 
     	{% include 'storeWidgets/footer/footer.twig' %}
     </body>

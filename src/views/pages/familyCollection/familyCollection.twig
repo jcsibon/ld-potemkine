@@ -8,21 +8,49 @@
 
 
 <div class="container">
-	<div class="row">
-		{% for family in childrens[global.request.get('code')] %}
-	        {% set familySize = 'col-12 col-md-8' %}
-	        {% set familyImageSize = 'zoom1' %}
-	        <div class="col-6 col-md-4 p-3" >
-	            <a href="/{{ categories[family]['url'] }}">
-	                <div class="bg-dark d-flex universe__familyBloc rounded p-4" style="background-image: url('{% if categories[family]['imageFull']['content'] is defined %}{{ categories[family]['imageFull']['content'] }}{% endif %}')">   
-	                    <p class="h2 m-auto text-white text-center text-uppercase">{{ categories[family]['shortDesc']['content'] }}</p>
-	                </div>
-	            </a>
-	        </div>
-	    {% endfor %}
-	</div>
+    <div id="family_collection_promo" class="col-12 text-center d-lg-none py-3 px-0 px-lg-3">
+        <a href="/c/services/installation-lapeyre">
+            <img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1524477574/1428x480-poseCuisine.jpg" class="img-fluid d-none d-lg-block" />
+            <img src="http://res.cloudinary.com/dwkgy95ov/image/upload/v1524477573/714x240-poseCuisine.jpg" class="img-fluid d-lg-none" />
+        </a>
+    </div>
+    <div id="family_collection_edito" class="col-12 d-flex d-lg-none px-0 px-lg-5 py-3">
+        <div class="m-auto">
+            <p class="h1 py-lg-3 font-secondary text-uppercase text-brown-light line-height-normal">Lapeyre, Cuisiniste & Distributeur.</p>
+            <p class="py-lg-5">
+                Découvrez tout le savoir bien faire de Lapeyre avec des cuisines venues de notre usine située dans le Cantal.
+            </p>
+            <p class="text-center py-lg-3">
+                <a href="/c/magazine/autour-de-lapeyre/usines"><button class="btn btn-primary px-5 py-2 cursor-pointer">Découvrir</button></a>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-xl-10 offset-xl-1 pb-5">
+            <div class="row">
+                {% for object in childrens[global.request.get('code')] %}
+                <div class="col-12 col-md-6 col-lg-4 px-1 py-3 px-sm-3" id="thumb_family_collection{{loop.index}}">
+                    {% include 'storeWidgets/thumbnailCollection/thumbnailCollection.twig' with {'loopIndex': loop.index} %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 </div>
 
+<script>
+    $('<div class="col-12 d-none d-lg-block"><div class="row"><div class="col-8" id="family_collection_promo_container"><div class="row"></div></div><div class="col-4 d-flex" id="family_collection_edito_container"></div></div></div>').insertAfter('#thumb_family_collection3');
+    $('#thumb_family_collection4, #thumb_family_collection5').addClass('d-lg-none');
+    $('#family_collection_promo_container .row').append($('#family_collection_promo').clone(),$('#thumb_family_collection4').clone(),$('#thumb_family_collection5').clone());
+    $('#carouselProduct4').attr('id','carouselProduct4' + 'bis');
+    $('#carouselProduct5').attr('id','carouselProduct5' + 'bis');
+    $('#carouselProduct4bis .carousel-control-prev, #carouselProduct4bis .carousel-control-next').attr('href','#carouselProduct4' + 'bis');
+    $('#carouselProduct5bis .carousel-control-prev, #carouselProduct5bis .carousel-control-next').attr('href','#carouselProduct5' + 'bis');
+    $('#family_collection_edito_container').append($('#family_collection_edito').clone());
+    $('#family_collection_promo_container #family_collection_promo, #family_collection_edito_container #family_collection_edito').removeClass('d-lg-none');
+    $('#family_collection_promo_container #thumb_family_collection4, #family_collection_promo_container #thumb_family_collection5').removeClass('col-lg-4, d-lg-none');
+    $('#family_collection_promo_container #thumb_family_collection4, #family_collection_promo_container #thumb_family_collection5').addClass('col-lg-6');
+</script>
 
 {% include 'storeWidgets/appointment/appointment.twig' %}
 

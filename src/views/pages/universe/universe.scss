@@ -4,29 +4,6 @@
 .universe__anchor {
     bottom: -25px;
 }
-.universe__familyBloc {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 190px;
-}
-.universe__familyBloc p {
-    font-family: $font-family-1;
-    z-index: 1;
-}
-.universe__familyBloc::after {
-    background: rgba(0,0,0,0.30); 
-    width: calc(100% - 32px);
-    position: absolute;
-    height: calc(100% - 32px);
-    content: " ";
-    border-radius: 3px;
-    top: 16px;
-    left: 16px;
-}
-.universe__familyBloc:hover::after {
-    background: rgba(234, 0, 40, 0.5);
-}
 .universe__family:nth-child(1) {
     padding-top: 40px;
 }

@@ -1,0 +1,81 @@
+.worktop__price {
+    font-size: 40px;
+    font-family: $font-family-1;
+    line-height: 1em;
+}
+.h-45 {
+    height: 45px;
+}
+.w-90 {
+    width: 90px !important;
+}
+.w-200 {
+    width: 200px;
+}
+.h-200 {
+    height: 200px;
+}
+.title_h1 {
+    color: $font-light;
+    line-height: 1em;
+    opacity: .3;
+    font-size: 85px;
+    font-family: $font-family-1;
+}
+.h-600 {
+    height: 600px
+}
+.h-500 {
+    height: 500px
+}
+.bg-cover {
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+}
+
+.title_h2 {
+    opacity: .3;
+    font-family: $font-family-1;
+    color: $font-light;
+}
+
+.worktop__desc_image {
+    max-height: 400px;
+    height: 73vw;
+}
+
+.worktop__container {
+    max-width: 1920px;
+}
+
+@include media-breakpoint-down(sm) {
+    .margin-fix {
+        margin:0;
+    }
+    .worktop__container {
+        height: 500px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .position-lg-absolute {
+        position: absolute;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .title_h1 {
+        font-size: 50px;
+    } 
+    .worktop__container {
+        background-image: none !important;
+        height: inherit;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .worktop__bloc_title {  
+        max-width: 530px;
+    }
+}

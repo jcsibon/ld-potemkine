@@ -1,0 +1,135 @@
+.thumb_product {
+    cursor: pointer;
+}
+
+.thumb_product:hover .thumb_product__fav {
+    display: flex !important;
+}
+
+.thumb_product__price {
+    font-family: $font-family-1;
+    font-size: 35px;
+}
+
+.thumb_product__price small {
+    font-size: 18px;
+    line-height: 1em;
+}
+.thumb_product__bloc_price {
+    height: 55px;
+}
+.thumb_product__bloc_price p {
+    line-height: 1em;
+}
+
+.thumb_product__subTitle {
+    line-height: 1.1em;
+}
+
+.thumb_product__more {
+    width: 100%;
+    height: 0px;
+    overflow:hidden;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    margin-top:60px;
+}
+.thumb_product:hover .thumb_product__more, .thumb_product__more:hover {
+    margin-top:0;
+    height:60px;
+}
+div[id^="carouselProduct"] .carousel-item {
+    width: 100%;
+    padding-top: 95%;
+}
+.thumb_product__high {
+    padding-top: 140% !important;
+}
+.thumb_product__large {
+    padding-top: 75% !important;
+}
+.thumb_product__square {
+    padding-top: 100% !important;
+}
+
+div[id^="carouselProduct"] a[class^="carousel-control"], .crossselCollection a[class^="carousel-control"] {
+    visibility: hidden;
+}
+div[id^="carouselProduct"] a[class^="carousel-control"] {
+    width: inherit;
+}
+div[id^="carouselProduct"] a[class^="carousel-control"]>div, .crossselCollection a[class^="carousel-control"]>div {
+    width: 40px;
+    height: 40px;
+}
+div[id^="carouselProduct"] .carousel-control-next, div[id^="carouselProduct"] .carousel-control-prev, .crossselCollection .carousel-control-next, .crossselCollection .carousel-control-prev {
+    opacity: inherit;
+}
+
+div[id^="carouselProduct"] .carousel-control-next:hover > div, div[id^="carouselProduct"] .carousel-control-prev:hover > div, .crossselCollection .carousel-control-next:hover > div, .crossselCollection .carousel-control-prev:hover > div {
+    background-color: $red-secondary !important;
+}
+
+div[id^="carouselProduct"] .carousel-indicators>li {
+    background: $gray-300;
+    width: 12px;
+    height: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+div[id^="carouselProduct"] .carousel-indicators>li.active {
+    background: $red;
+}
+
+.crossselCollection:hover a[class^="carousel-control"] {
+    visibility: visible;
+    width: initial;
+}
+
+@media screen and (max-width: 1200px) {
+    .thumb_product__title {
+        font-size: 1rem;
+    }
+
+    .thumb_product__subTitle {
+        font-size: .7rem;
+    }
+
+    .thumb_product__bottomBloc {
+        height: 70px;
+    }
+    .thumb_product__promo, .thumb_product__fav {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .thumb_product:hover .thumb_product__fav {
+        visibility: hidden;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .thumb_product:hover a[class^="carousel-control"] {
+        visibility: visible;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .thumb_product__title {
+        font-size: 0.8rem;
+    }
+    .thumb_product__price {
+        font-size: 1.4rem;
+    }
+    .thumb_product__bloc_price {
+        height: 40px;
+    }
+    .thumb_product__bloc_price .small {
+        font-size: 0.6rem;
+    }
+}
