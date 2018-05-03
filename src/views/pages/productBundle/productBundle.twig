@@ -1,0 +1,805 @@
+{% extends"layouts/default.html" %}
+{% block content %}
+
+<style>
+    .progressBundle {
+        height: 3px;
+    }
+
+    .progressBundle .progress-bar {
+        -webkit-transition: all 0.6s ease-in;
+        -moz-transition: all 0.6s ease-in;
+        transition: all 0.6s ease-in;
+    }
+</style>
+
+<div id="container_${pageDesign.layoutId}" class="container fp__container">
+    <div class="row m-0">
+        <div id="widget_breadcrumb" class="col-12 py-2 px-5 small fp__breadcrumb d-none d-lg-block">
+            <a href="javascript:window.history.back();" class="text-dark font-weight-bold">&lsaquo; Retour</a>
+            <span class="px-2">|</span>
+            <a id="WC_BreadCrumb_Link_1_${widgetSuffix}" href="" class="text-dark">Accueil</a>
+            <span class="px-2">&rsaquo;</span>
+            <a id="WC_BreadCrumb_Link_2_${widgetSuffix}" href="" class="text-dark">Salles de bains</a>
+            <span class="px-2">&rsaquo;</span>
+            <a id="WC_BreadCrumb_Link_3_${widgetSuffix}" href="" class="text-dark">Meubles de salle de bains</a>
+            <span class="px-2">&rsaquo;</span>
+            <a id="WC_BreadCrumb_Link_4_${widgetSuffix}" href="" class="text-dark">Ytrac</a>
+            <span class="px-2">&rsaquo;</span>
+            <span class="font-weight-bold">Meuble sous vasque Ytrac</span>
+        </div>
+    </div>
+    <div id="ficheProduitHead" class="row m-0">
+        <div class="col-12 col-xl-10 offset-xl-1 pt-4 pb-0">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row"> 
+                                <div class="col-12 p-3 position-relative text-center" id="fp__main_image">
+                                    {% if data.session.promo is defined and data.session.promo == 1 %}
+                                    <div class="position-absolute d-flex bg-secondary px-3 py-4 products__list_promo">
+                                        <span class="m-auto text-white small">Promo</span>
+                                    </div>
+                                    {% endif %}
+                                    <div class="d-none d-md-block image_container">
+                                        <div id="fullImageMainContainer">
+                                            <div id="fullImageVideoContainer" class="hidden">
+                                                <iframe src="" title="YouTube video player" allowfullscreen="1" id="youtubePlayer" frameborder="0" height="360" style="width:100%;"></iframe>
+                                            </div>
+                                            <div id="fullImageImageContainer">										
+                                                <img src="https://statics.lapeyre.fr/img/catalogue/zoom1/722/969/201722969.jpg" class="img-fluid d-none d-md-block" data-toggle="modal" data-target="#imageModal">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 pl-lg-5">
+                    <div id="ficheProduitStandardficheAside" class="row">
+                        <div class="col-12 pt-5 pt-md-4 pb-0 py-xl-4 px-3 px-lg-5 fp__product_bloc"> 
+                            <div class="row">
+                                <div class="col-12 px-2">
+                                    <h1 class="h3 font-weight-bold">Meuble sous vasque Ytrac </h1>
+                                </div>
+                                <div class="col-12 px-2">
+                                    <p class="text-muted">
+                                        2 éléments et 4 options à configurer
+                                    </p>   
+                                </div>
+                                <div class="col-12 pb-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="progress progressBundle">
+                                                <div class="progress-bar bg-primary" style="width: 0" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="bundle_product_1">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 pt-2 pb-4 d-flex">
+                                                <span>
+                                                    <strong>Etape&nbsp;&nbsp;1/6&nbsp;&nbsp;&#8226;&nbsp;&nbsp;</strong>
+                                                </span>
+                                                <span>
+                                                    Sélectionner :  <strong>Meuble Sous vasque</strong>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://statics.lapeyre.fr/img/catalogue/zoom1/722/969/201722969.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-12 p-2">
+                                                        <label class="text-muted d-block" id="swatch_selection_label_entitledItem_73111_CCU0002-FAM-32-COULEUR">Couleur</label>
+                                                        <div>
+                                                            <a id="swatch_link_entitledItem_73111_CCU0002-FAM-32-COULEUR_CCU0002-FAM-32-COULEUR-271" href=''>
+                                                                <span id="swatchSpanDisable_entitledItem_73111_CCU0002-FAM-32-COULEUR_CCU0002-FAM-32-COULEUR-271"></span>
+                                                                <img src="https://statics.lapeyre.fr/img/catalogue/nuancier/20-/862/NUA-couleur20-862.jpg" class="img-fluid fp__color m-1 border fp__selected" data-image-md-url="standardMain/649/564/649564.jpg" data-image-hd-url="zoom1/649/564/649564.jpg" />
+                                                                <span class="spanacce">Beige</span>
+                                                            </a>
+                                                            <a id="swatch_link_entitledItem_73111_CCU0002-FAM-32-COULEUR_CCU0002-FAM-32-COULEUR-G22" href=''>
+                                                                <span id="swatchSpanDisable_entitledItem_73111_CCU0002-FAM-32-COULEUR_CCU0002-FAM-32-COULEUR-G22"></span>
+                                                                <img id="swatch_entitledItem_73111_CCU0002-FAM-32-COULEUR_CCU0002-FAM-32-COULEUR-G22" src="https://statics.lapeyre.fr/img/catalogue/nuancier/20-/s02/NUA-couleur20-S02.jpg" class="img-fluid fp__color m-1 border" data-image-md-url="standardMain/721/459/201721459.jpg" data-image-hd-url="zoom1/721/459/201721459.jpg" /> 
+                                                                <span class="spanacce">Marron grisé</span>
+                                                            </a>
+                                                            <a id="swatch_link_entitledItem_73111_CCU0002-FAM-32-COULEUR_CCU0002-FAM-32-COULEUR-105" href=''>
+                                                                <span id="swatchSpanDisable_entitledItem_73111_CCU0002-FAM-32-COULEUR_CCU0002-FAM-32-COULEUR-105"></span>										
+                                                                <img src="https://statics.lapeyre.fr/img/catalogue/nuancier/20-/s02/NUA-couleur20-S02.jpg" class="img-fluid fp__color m-1 border" data-image-md-url="standardMain/721/459/201721459.jpg" data-image-hd-url="zoom1/721/459/201721459.jpg" /> 
+                                                                <span class="spanacce">Noir</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-6 p-2">
+                                                        <label class="text-muted d-block" id="swatch_selection_label_entitledItem_45698_CCU0004-DIMENSIONS-COMMUNES-DIM-HAUTEUR">Hauteur</label>
+                                                        <select class="form-control">
+                                                            <option>7.5</option>
+                                                            <option>9.5</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-xl-6 p-2">
+                                                        <label class="text-muted d-block" id="swatch_selection_label_entitledItem_45698_CCU0004-DIMENSIONS-COMMUNES-DIM-PROFONDEUR">Profondeur</label>
+                                                        <select class="form-control">
+                                                            <option>7.5</option>
+                                                            <option>9.5</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 p-2">
+                                                        <label class="text-muted d-block" id="swatch_selection_label_entitledItem_45698_CCU0004-NAT-18-001-FINITION">Finition</label>
+                                                        <select class="form-control">
+                                                            <option>Beige naturel</option>
+                                                            <option>Gris clair</option>
+                                                            <option>Gris foncé</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-2">
+                                        <p class="small">
+                                            <a href="#description" class="font-weight-bold text-dark"><u>Détails produit</u></a>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 p-2">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <label for="quantity_45571" class="text-muted d-block">Quantité</label>
+                                                <div class="row m-0">
+                                                    <div class="col-12 border fp__quantity_block p-2">
+                                                        <div class="row">
+                                                            <div class="col-4 text-right pr-0">
+                                                                <span class="text-muted font-weight-bold" id="qtyLeftBtn">-</span>
+                                                            </div>
+                                                            <div class="col-4 text-center px-0">
+                                                                <input onpaste="return false;" id="quantity_45571" type="text" class="border-0 text-center font-weight-bold" value="1" size="2" maxlength="4" >
+                                                            </div>
+                                                            <div class="col-4 text-left pl-0">
+                                                                <span class="" id="qtyRightBtn">+</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>      
+                                            <div class="col-7 mt-4">
+                                                <div class="row">
+                                                    <div class="col-12 text-right" id="price_display_45571">
+                                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                        <p class="small m-0"><s id="listPrice_viewPage_45571">219,00 € {% if data.session.pro is defined and data.session.pro == 1 %}HT{% endif %}</s></p>
+                                                        {% endif %}
+                                                        <p id="blockOfferPrice_viewPage_45571" class="h2 font-weight-bold fp__price mb-0{% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %}">
+                                                            <span id="offerPrice_viewPage_45571">159,00 €</span>
+                                                            {% if data.session.pro is defined and data.session.pro == 1 %}<sup id="supHTPriceProductPage_viewPage_45571" class="small font-weight-normal fp__pro_small">HT</sup>{% endif %}
+                                                            {% if data.session.promo is defined and data.session.promo == 1 %}<sup id="asterix_viewPage_45571" class="small font-weight-normal fp__promo_small">*</sup>{% endif %}
+                                                        </p> 
+                                                    </div>
+                                                    <div class="col-12 text-right">
+                                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                        <p id="cguDisplayContainer_viewPage_73111" class="small m-0"><a href="javascript:void(0);" class="text-muted text-dark" onclick="javascript:window.open('/c/conditions-generales-de-vente?omitHeader=1', '_blank', 'toolbar=yes, scrollbars=yes, resizable=yes, width=820, height=600'); return false;">* voir les conditions</a></p>
+                                                        {% endif %}
+                                                    </div>
+                                                    <div dojotype="wc.widget.RefreshArea" id="shopperActionsRefreshArea" class="col-12 text-right" style="padding: 0px;">
+                                                        <div id="ecoPartContainer_73113" style="display: block;">
+                                                            <p class="m-0 text-muted small">Dont éco-part : <span>5,20 €</span> {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <div class="row">
+                                            <div class="col-9 col-xl-8 offset-xl-4">
+                                                <div class="col s12 m12 l9 p-0">
+                                                    <a id="add2CartBtn" href="#" class="btn btn-primary col-12 rounded py-2" onclick="javascript:setCurrentId('add2CartBtn');productDisplayJS.Add2ShopCartAjax('entitledItem_89104',document.getElementById('quantity_89104').value, false)" wairole="button" role="button" title="Ajouter au panier" onkeypress="javascript:MessageHelper.setFocusElement('add2CartBtn');">
+                                                        <div id="productPageAdd2Cart">
+                                                            Ajouter et continuer
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="bundle_product_2" class="d-none">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 pt-2 pb-4 d-flex">
+                                                <span>
+                                                    <strong>Etape&nbsp;&nbsp;2/6&nbsp;&nbsp;&#8226;&nbsp;&nbsp;</strong>
+                                                </span>
+                                                <span>
+                                                    Sélectionner :  <strong>Plan en résine pour meuble de salle de bains Ytrac</strong>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://statics.lapeyre.fr/img/catalogue/zoom1/722/969/201722969.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-12 col-xl-6 p-2">
+                                                        <label class="text-muted d-block" id="swatch_selection_label_entitledItem_45698_CCU0004-DIMENSIONS-COMMUNES-DIM-HAUTEUR">Largeur</label>
+                                                        <select class="form-control">
+                                                            <option>60.4</option>
+                                                            <option>90.4</option>
+                                                            <option>120.4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-2">
+                                        <p class="small">
+                                            <a href="#description" class="font-weight-bold text-dark"><u>Détails produit</u></a>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 p-2">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <label for="quantity_45571" class="text-muted d-block">Quantité</label>
+                                                <div class="row m-0">
+                                                    <div class="col-12 border fp__quantity_block p-2">
+                                                        <div class="row">
+                                                            <div class="col-4 text-right pr-0">
+                                                                <span class="text-muted font-weight-bold" id="qtyLeftBtn">-</span>
+                                                            </div>
+                                                            <div class="col-4 text-center px-0">
+                                                                <input onpaste="return false;" id="quantity_45571" type="text" class="border-0 text-center font-weight-bold" value="1" size="2" maxlength="4" >
+                                                            </div>
+                                                            <div class="col-4 text-left pl-0">
+                                                                <span class="" id="qtyRightBtn">+</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>      
+                                            <div class="col-7 mt-4">
+                                                <div class="row">
+                                                    <div class="col-12 text-right" id="price_display_45571">
+                                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                        <p class="small m-0"><s id="listPrice_viewPage_45571">219,00 € {% if data.session.pro is defined and data.session.pro == 1 %}HT{% endif %}</s></p>
+                                                        {% endif %}
+                                                        <p id="blockOfferPrice_viewPage_45571" class="h2 font-weight-bold fp__price mb-0{% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %}">
+                                                            <span id="offerPrice_viewPage_45571">80,00 €</span>
+                                                            {% if data.session.pro is defined and data.session.pro == 1 %}<sup id="supHTPriceProductPage_viewPage_45571" class="small font-weight-normal fp__pro_small">HT</sup>{% endif %}
+                                                            {% if data.session.promo is defined and data.session.promo == 1 %}<sup id="asterix_viewPage_45571" class="small font-weight-normal fp__promo_small">*</sup>{% endif %}
+                                                        </p> 
+                                                    </div>
+                                                    <div class="col-12 text-right">
+                                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                        <p id="cguDisplayContainer_viewPage_73111" class="small m-0"><a href="javascript:void(0);" class="text-muted text-dark" onclick="javascript:window.open('/c/conditions-generales-de-vente?omitHeader=1', '_blank', 'toolbar=yes, scrollbars=yes, resizable=yes, width=820, height=600'); return false;">* voir les conditions</a></p>
+                                                        {% endif %}
+                                                    </div>
+                                                    <div dojotype="wc.widget.RefreshArea" id="shopperActionsRefreshArea" class="col-12 text-right" style="padding: 0px;">
+                                                        <div id="ecoPartContainer_73113" style="display: block;">
+                                                            <p class="m-0 text-muted small">Dont éco-part : <span>5,20 €</span> {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <div class="row">
+                                            <div class="col-9 col-xl-8 offset-xl-4">
+                                                <div class="col s12 m12 l9 p-0">
+                                                    <a id="add2CartBtn" href="#" class="btn btn-primary col-12 rounded py-2" onclick="javascript:setCurrentId('add2CartBtn');productDisplayJS.Add2ShopCartAjax('entitledItem_89104',document.getElementById('quantity_89104').value, false)" wairole="button" role="button" title="Ajouter au panier" onkeypress="javascript:MessageHelper.setFocusElement('add2CartBtn');">
+                                                        <div id="productPageAdd2Cart">
+                                                            Ajouter et continuer
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="bundle_product_3" class="d-none">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 pt-2 pb-4 d-flex">
+                                                <span>
+                                                    <strong>Etape&nbsp;&nbsp;3/6&nbsp;&nbsp;&#8226;&nbsp;&nbsp;</strong>
+                                                </span>
+                                                <span>
+                                                    Sélectionner :  <strong>Pieds pour meubles Ytrac et Edda</strong>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://statics.lapeyre.fr/img/catalogue/zoom1/721/986/201721986.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-6">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-2">
+                                        <p class="small">
+                                            <a href="#description" class="font-weight-bold text-dark"><u>Détails produit</u></a>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 p-2">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <label for="quantity_45571" class="text-muted d-block">Quantité</label>
+                                                <div class="row m-0">
+                                                    <div class="col-12 border fp__quantity_block p-2">
+                                                        <div class="row">
+                                                            <div class="col-4 text-right pr-0">
+                                                                <span class="text-muted font-weight-bold" id="qtyLeftBtn">-</span>
+                                                            </div>
+                                                            <div class="col-4 text-center px-0">
+                                                                <input onpaste="return false;" id="quantity_45571" type="text" class="border-0 text-center font-weight-bold" value="1" size="2" maxlength="4" >
+                                                            </div>
+                                                            <div class="col-4 text-left pl-0">
+                                                                <span class="" id="qtyRightBtn">+</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>      
+                                            <div class="col-7 mt-4">
+                                                <div class="row">
+                                                    <div class="col-12 text-right" id="price_display_45571">
+                                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                        <p class="small m-0"><s id="listPrice_viewPage_45571">219,00 € {% if data.session.pro is defined and data.session.pro == 1 %}HT{% endif %}</s></p>
+                                                        {% endif %}
+                                                        <p id="blockOfferPrice_viewPage_45571" class="h2 font-weight-bold fp__price mb-0{% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %}">
+                                                            <span id="offerPrice_viewPage_45571">49,00 €</span>
+                                                            {% if data.session.pro is defined and data.session.pro == 1 %}<sup id="supHTPriceProductPage_viewPage_45571" class="small font-weight-normal fp__pro_small">HT</sup>{% endif %}
+                                                            {% if data.session.promo is defined and data.session.promo == 1 %}<sup id="asterix_viewPage_45571" class="small font-weight-normal fp__promo_small">*</sup>{% endif %}
+                                                        </p> 
+                                                    </div>
+                                                    <div class="col-12 text-right">
+                                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                        <p id="cguDisplayContainer_viewPage_73111" class="small m-0"><a href="javascript:void(0);" class="text-muted text-dark" onclick="javascript:window.open('/c/conditions-generales-de-vente?omitHeader=1', '_blank', 'toolbar=yes, scrollbars=yes, resizable=yes, width=820, height=600'); return false;">* voir les conditions</a></p>
+                                                        {% endif %}
+                                                    </div>
+                                                    <div dojotype="wc.widget.RefreshArea" id="shopperActionsRefreshArea" class="col-12 text-right" style="padding: 0px;">
+                                                        <div id="ecoPartContainer_73113" style="display: block;">
+                                                            <p class="m-0 text-muted small">Dont éco-part : <span>5,20 €</span> {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <div class="row">
+                                            <div class="col-9 col-xl-8 offset-xl-4">
+                                                <div class="col s12 m12 l9 p-0">
+                                                    <a id="add2CartBtn" href="#" class="btn btn-primary col-12 rounded py-2" onclick="javascript:setCurrentId('add2CartBtn');productDisplayJS.Add2ShopCartAjax('entitledItem_89104',document.getElementById('quantity_89104').value, false)" wairole="button" role="button" title="Ajouter au panier" onkeypress="javascript:MessageHelper.setFocusElement('add2CartBtn');">
+                                                        <div id="productPageAdd2Cart">
+                                                            Ajouter et continuer
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <p class="text-right py-2">
+                                                    <a href="#" class="text-muted" id="escOption"><u>Je ne souhaite pas ajouter cette option</u></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="bundle_product_4" class="d-none">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 pt-2 pb-4 d-flex">
+                                                <span>
+                                                    <strong>Etape&nbsp;&nbsp;4/6&nbsp;&nbsp;&#8226;&nbsp;&nbsp;</strong>
+                                                </span>
+                                                <span>
+                                                    Sélectionner :  <strong>Boîtes de rangement</strong>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://statics.lapeyre.fr/img/catalogue/zoom1/722/181/201722181.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-12 col-xl-6 p-2">
+                                                        <label class="text-muted d-block" id="swatch_selection_label_entitledItem_45698_CCU0004-DIMENSIONS-COMMUNES-DIM-HAUTEUR">Largeur</label>
+                                                        <select class="form-control">
+                                                            <option>60.4</option>
+                                                            <option>90.4</option>
+                                                            <option>120.4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-2">
+                                        <p class="small">
+                                            <a href="#description" class="font-weight-bold text-dark"><u>Détails produit</u></a>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 p-2">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <label for="quantity_45571" class="text-muted d-block">Quantité</label>
+                                                <div class="row m-0">
+                                                    <div class="col-12 border fp__quantity_block p-2">
+                                                        <div class="row">
+                                                            <div class="col-4 text-right pr-0">
+                                                                <span class="text-muted font-weight-bold" id="qtyLeftBtn">-</span>
+                                                            </div>
+                                                            <div class="col-4 text-center px-0">
+                                                                <input onpaste="return false;" id="quantity_45571" type="text" class="border-0 text-center font-weight-bold" value="1" size="2" maxlength="4" >
+                                                            </div>
+                                                            <div class="col-4 text-left pl-0">
+                                                                <span class="" id="qtyRightBtn">+</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>      
+                                            <div class="col-7 mt-4">
+                                                <div class="row">
+                                                    <div class="col-12 text-right" id="price_display_45571">
+                                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                        <p class="small m-0"><s id="listPrice_viewPage_45571">219,00 € {% if data.session.pro is defined and data.session.pro == 1 %}HT{% endif %}</s></p>
+                                                        {% endif %}
+                                                        <p id="blockOfferPrice_viewPage_45571" class="h2 font-weight-bold fp__price mb-0{% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %}">
+                                                            <span id="offerPrice_viewPage_45571">19,00 €</span>
+                                                            {% if data.session.pro is defined and data.session.pro == 1 %}<sup id="supHTPriceProductPage_viewPage_45571" class="small font-weight-normal fp__pro_small">HT</sup>{% endif %}
+                                                            {% if data.session.promo is defined and data.session.promo == 1 %}<sup id="asterix_viewPage_45571" class="small font-weight-normal fp__promo_small">*</sup>{% endif %}
+                                                        </p> 
+                                                    </div>
+                                                    <div class="col-12 text-right">
+                                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                        <p id="cguDisplayContainer_viewPage_73111" class="small m-0"><a href="javascript:void(0);" class="text-muted text-dark" onclick="javascript:window.open('/c/conditions-generales-de-vente?omitHeader=1', '_blank', 'toolbar=yes, scrollbars=yes, resizable=yes, width=820, height=600'); return false;">* voir les conditions</a></p>
+                                                        {% endif %}
+                                                    </div>
+                                                    <div dojotype="wc.widget.RefreshArea" id="shopperActionsRefreshArea" class="col-12 text-right" style="padding: 0px;">
+                                                        <div id="ecoPartContainer_73113" style="display: block;">
+                                                            <p class="m-0 text-muted small">Dont éco-part : <span>5,20 €</span> {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <div class="row">
+                                            <div class="col-9 col-xl-8 offset-xl-4">
+                                                <div class="col s12 m12 l9 p-0">
+                                                    <a id="add2CartBtn" href="#" class="btn btn-primary col-12 rounded py-2" onclick="javascript:setCurrentId('add2CartBtn');productDisplayJS.Add2ShopCartAjax('entitledItem_89104',document.getElementById('quantity_89104').value, false)" wairole="button" role="button" title="Ajouter au panier" onkeypress="javascript:MessageHelper.setFocusElement('add2CartBtn');">
+                                                        <div id="productPageAdd2Cart">
+                                                            Ajouter et continuer
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <p class="text-right py-2">
+                                                    <a href="#" class="text-muted" id="escOption"><u>Je ne souhaite pas ajouter cette option</u></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="bundle_product_5" class="d-none">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 pt-2 pb-4 d-flex">
+                                                <span>
+                                                    <strong>Etape&nbsp;&nbsp;5/6&nbsp;&nbsp;&#8226;&nbsp;&nbsp;</strong>
+                                                </span>
+                                                <span>
+                                                    Sélectionner :  <strong>Séparateur de tiroir</strong>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://statics.lapeyre.fr/img/catalogue/zoom1/722/180/201722180.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-2">
+                                        <p class="small">
+                                            <a href="#description" class="font-weight-bold text-dark"><u>Détails produit</u></a>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 p-2">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <label for="quantity_45571" class="text-muted d-block">Quantité</label>
+                                                <div class="row m-0">
+                                                    <div class="col-12 border fp__quantity_block p-2">
+                                                        <div class="row">
+                                                            <div class="col-4 text-right pr-0">
+                                                                <span class="text-muted font-weight-bold" id="qtyLeftBtn">-</span>
+                                                            </div>
+                                                            <div class="col-4 text-center px-0">
+                                                                <input onpaste="return false;" id="quantity_45571" type="text" class="border-0 text-center font-weight-bold" value="1" size="2" maxlength="4" >
+                                                            </div>
+                                                            <div class="col-4 text-left pl-0">
+                                                                <span class="" id="qtyRightBtn">+</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>      
+                                            <div class="col-7 mt-4">
+                                                <div class="row">
+                                                    <div class="col-12 text-right" id="price_display_45571">
+                                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                        <p class="small m-0"><s id="listPrice_viewPage_45571">219,00 € {% if data.session.pro is defined and data.session.pro == 1 %}HT{% endif %}</s></p>
+                                                        {% endif %}
+                                                        <p id="blockOfferPrice_viewPage_45571" class="h2 font-weight-bold fp__price mb-0{% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %}">
+                                                            <span id="offerPrice_viewPage_45571">15,00 €</span>
+                                                            {% if data.session.pro is defined and data.session.pro == 1 %}<sup id="supHTPriceProductPage_viewPage_45571" class="small font-weight-normal fp__pro_small">HT</sup>{% endif %}
+                                                            {% if data.session.promo is defined and data.session.promo == 1 %}<sup id="asterix_viewPage_45571" class="small font-weight-normal fp__promo_small">*</sup>{% endif %}
+                                                        </p> 
+                                                    </div>
+                                                    <div class="col-12 text-right">
+                                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                        <p id="cguDisplayContainer_viewPage_73111" class="small m-0"><a href="javascript:void(0);" class="text-muted text-dark" onclick="javascript:window.open('/c/conditions-generales-de-vente?omitHeader=1', '_blank', 'toolbar=yes, scrollbars=yes, resizable=yes, width=820, height=600'); return false;">* voir les conditions</a></p>
+                                                        {% endif %}
+                                                    </div>
+                                                    <div dojotype="wc.widget.RefreshArea" id="shopperActionsRefreshArea" class="col-12 text-right" style="padding: 0px;">
+                                                        <div id="ecoPartContainer_73113" style="display: block;">
+                                                            <p class="m-0 text-muted small">Dont éco-part : <span>5,20 €</span> {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <div class="row">
+                                            <div class="col-9 col-xl-8 offset-xl-4">
+                                                <div class="col s12 m12 l9 p-0">
+                                                    <a id="add2CartBtn" href="#" class="btn btn-primary col-12 rounded py-2" onclick="javascript:setCurrentId('add2CartBtn');productDisplayJS.Add2ShopCartAjax('entitledItem_89104',document.getElementById('quantity_89104').value, false)" wairole="button" role="button" title="Ajouter au panier" onkeypress="javascript:MessageHelper.setFocusElement('add2CartBtn');">
+                                                        <div id="productPageAdd2Cart">
+                                                            Ajouter et continuer
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <p class="text-right py-2">
+                                                    <a href="#" class="text-muted" id="escOption"><u>Je ne souhaite pas ajouter cette option</u></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="bundle_product_6" class="d-none">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 pt-2 pb-4 d-flex">
+                                                <span>
+                                                    <strong>Etape&nbsp;&nbsp;6/6&nbsp;&nbsp;&#8226;&nbsp;&nbsp;</strong>
+                                                </span>
+                                                <span>
+                                                    Sélectionner :  <strong>Organiseur de tiroir</strong>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://statics.lapeyre.fr/img/catalogue/zoom1/722/182/201722182.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-2">
+                                        <p class="small">
+                                            <a href="#description" class="font-weight-bold text-dark"><u>Détails produit</u></a>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 p-2">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <label for="quantity_45571" class="text-muted d-block">Quantité</label>
+                                                <div class="row m-0">
+                                                    <div class="col-12 border fp__quantity_block p-2">
+                                                        <div class="row">
+                                                            <div class="col-4 text-right pr-0">
+                                                                <span class="text-muted font-weight-bold" id="qtyLeftBtn">-</span>
+                                                            </div>
+                                                            <div class="col-4 text-center px-0">
+                                                                <input onpaste="return false;" id="quantity_45571" type="text" class="border-0 text-center font-weight-bold" value="1" size="2" maxlength="4" >
+                                                            </div>
+                                                            <div class="col-4 text-left pl-0">
+                                                                <span class="" id="qtyRightBtn">+</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>      
+                                            <div class="col-7 mt-4">
+                                                <div class="row">
+                                                    <div class="col-12 text-right" id="price_display_45571">
+                                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                        <p class="small m-0"><s id="listPrice_viewPage_45571">219,00 € {% if data.session.pro is defined and data.session.pro == 1 %}HT{% endif %}</s></p>
+                                                        {% endif %}
+                                                        <p id="blockOfferPrice_viewPage_45571" class="h2 font-weight-bold fp__price mb-0{% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %}">
+                                                            <span id="offerPrice_viewPage_45571">7,00 €</span>
+                                                            {% if data.session.pro is defined and data.session.pro == 1 %}<sup id="supHTPriceProductPage_viewPage_45571" class="small font-weight-normal fp__pro_small">HT</sup>{% endif %}
+                                                            {% if data.session.promo is defined and data.session.promo == 1 %}<sup id="asterix_viewPage_45571" class="small font-weight-normal fp__promo_small">*</sup>{% endif %}
+                                                        </p> 
+                                                    </div>
+                                                    <div class="col-12 text-right">
+                                                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                                                        <p id="cguDisplayContainer_viewPage_73111" class="small m-0"><a href="javascript:void(0);" class="text-muted text-dark" onclick="javascript:window.open('/c/conditions-generales-de-vente?omitHeader=1', '_blank', 'toolbar=yes, scrollbars=yes, resizable=yes, width=820, height=600'); return false;">* voir les conditions</a></p>
+                                                        {% endif %}
+                                                    </div>
+                                                    <div dojotype="wc.widget.RefreshArea" id="shopperActionsRefreshArea" class="col-12 text-right" style="padding: 0px;">
+                                                        <div id="ecoPartContainer_73113" style="display: block;">
+                                                            <p class="m-0 text-muted small">Dont éco-part : <span>5,20 €</span> {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <div class="row">
+                                            <div class="col-9 col-xl-8 offset-xl-4">
+                                                <div class="col s12 m12 l9 p-0">
+                                                    <a id="add2CartBtn" href="#" class="btn btn-primary col-12 rounded py-2" onclick="javascript:setCurrentId('add2CartBtn');productDisplayJS.Add2ShopCartAjax('entitledItem_89104',document.getElementById('quantity_89104').value, false)" wairole="button" role="button" title="Ajouter au panier" onkeypress="javascript:MessageHelper.setFocusElement('add2CartBtn');">
+                                                        <div id="productPageAdd2Cart">
+                                                            Ajouter et continuer
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <p class="text-right py-2">
+                                                    <a href="#" class="text-muted" id="escOption"><u>Je ne souhaite pas ajouter cette option</u></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ficheProduitBody" data-slot-id="3">
+    <div class="bg-light my-4" id="description">
+        <div class="container fp__container mt-5">
+            <div class="row">
+                <div class="col-12 col-xl-10 offset-xl-1 pb-4">
+                    <div class="row">
+                        <div class="col-12 py-4 h3 text-center font-weight-bold">
+                            Détails pack
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="availabilityPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+        <div class="dijitDialogPaneContent modal-dialog" style="width: auto; height: auto;">
+            <div class="widget_site_popup modal-content">
+                <div id="availabilityPopupTitle" class="modal-header px-4">
+                    <h5 class="modal-title" id="exampleModalLabel">Disponibilité</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-4" id="availability_widget_ui">
+                    <div class="row">
+                        <div class="col-12">
+                            <form id="setDefaultStoreForm">
+                                <div class="form-group">
+                                    <label for="exampleSelect1">Sélectionner :  magasin :</label>
+                                    <div class="col-12 text-center">
+                                        <select class="form-control" id="shopSelect">
+                                            <option>Choisir dans la liste</option>
+                                            {% for shop in data.store.shops %}
+                                            <option>
+                                                {{ shop.adresse.codePostal }} - Lapeyre {{ shop.adresse.ville }}
+                                            </option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                    <p class="text-center pt-4">
+                                        <button id="submitSelectNewStore" type="submit" class="btn btn-primary px-5">Valider</button>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="sharePopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div>
+        <div class="modal-dialog" role="document">
+            <div class="widget_site_popup modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title" id="exampleModalLabel">Partager ce produit</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-2 offset-1">
+                            <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#facebook"/></svg></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#pinterest"/></svg></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#twitter"/></svg></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#envelope"/></svg></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#instagram"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="popupPhotoZoom" class="fade dijitDialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="dijitDialogPaneContent">
+        <div class="widget_site_popup modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://statics.lapeyre.fr/img/catalogue/zoom1/721/458/201721458.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function updateProgressBundle() {
+        var progress = 100/$("div[id^='bundle_product_']").length;
+        $("div[id^='bundle_product_']").each(function(i) {
+            if (!$(this).hasClass("d-none")) progress = progress * (i+1);
+        });
+        $('.progressBundle .progress-bar').attr('style','width:'+progress+'%');
+        $('.progressBundle .progress-bar').attr('aria-valuenow',progress);
+    }
+    $("div[id^='bundle_product_'] #add2CartBtn, div[id^='bundle_product_'] #escOption").click(function() {
+        $(this).parents("div[id^='bundle_product_']").addClass('d-none');
+        $(this).parents("div[id^='bundle_product_']").next("div[id^='bundle_product_']").removeClass('d-none');
+        updateProgressBundle();
+    });
+
+    $( document ).ready(function() {
+        updateProgressBundle();
+    });
+</script>
+
+{% if data.session.preprod is defined %}
+<style>
+    .fp__product_bloc .spanacce, #fullImageVideoContainer {
+        display: none;
+    }
+</style>
+{% endif %}
+
+
+{% endblock %}
