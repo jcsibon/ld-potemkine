@@ -35,6 +35,10 @@
     font-size: 25px;
 }
 
+.kitchen__blockquote p {
+    padding-top: 80px
+}
+
 #carouselKitchen .carousel-control-next, #carouselKitchen .carousel-control-prev {
     opacity: inherit;
 }
@@ -49,6 +53,10 @@
 
 #carouselKitchen .carousel-control-next {
     right: -4%;
+}
+
+#carouselFPCKitchen .carousel-control-next, #carouselFPCKitchen .carousel-control-prev {
+    width: 5%;
 }
 
 .blockquote::after {
@@ -86,18 +94,12 @@
         background: -webkit-linear-gradient(top, $white 40%,$white 85%,$gray-300 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, $white 40%,$white 85%,$gray-300 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$white', endColorstr='$gray-300',GradientType=0 ); /* IE6-9 */
+        right: 10%;
     }
 }
 
-@include media-breakpoint-up(md) {
-    .frenchFlag::before {
-        content: "";
-        background-image: url(https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/french-flag.svg);
-        background-repeat: no-repeat;
-        width: 45px;
-        height: 88px;
-        bottom: 57px;
-        left: -30px;
-        position: absolute;
+@media screen and (min-width: 1400px) {
+    .kitchen__bloc_title {
+        left: 50%;
     }
 }

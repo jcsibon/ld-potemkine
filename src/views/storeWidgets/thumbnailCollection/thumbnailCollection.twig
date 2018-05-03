@@ -1,39 +1,74 @@
 <a href="/{% if categories[object]['url']is defined %}{{ categories[object]['url']|replace({' ':'%20'}) }}{% else %}#{% endif %}">
-	<div class="border bg-white thumb_product">
-		<div class="position-relative carousel slide m-auto overflow-hidden">
-			<div class="carousel-inner overflow-visible" role="listbox">
-				<div class="carousel-item active bg-cover  thumb_product__large" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}); ">
-				</div>
-				<div class="carousel-item bg-cover  thumb_product__large" style="background-image: url(); ">
-				</div>
-				<div class="carousel-item bg-cover  thumb_product__large" style="background-image: url(); ">
-				</div>
-			</div> 
-			{#
-			<div class="position-absolute d-flex top-0 right-0">
-				<div class="d-none bg-dark thumb_product__fav w-70 h-70">
-					<span class="m-auto text-white small">
-						<svg width="25" height="25" class="m-auto"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart-o-white"></use></svg>
-					</span>
-				</div>
-			</div>
-			#}
-		</div>  
-		<div class="text-center px-1 d-flex thumb_product__bottomBloc h-85">
-			<div class="m-auto">
-				{% if categories[object]['shortDesc']['content'] is defined %}
-				<p class="small pt-2 mb-1 text-dark thumb_product__subTitle">{{ categories[object]['shortDesc']['content'] }}</p>
-				{% endif %}
-				<p class="h5 font-weight-bold text-dark thumb_product__title">{{ categories[object]['label']['content'] }}</p>
-			</div>
-		</div>
-		{#
-		<div class=" bg-light   d-flex thumb_product__bloc_price">
-			<div class="m-auto text-center text-dark">
-				<p class="small mb-0"> </p>
-				<p class="h5 thumb_product__price font-weight-bold mb-0">1250,00 € </p>
-			</div>
-		</div>
-		#}
-	</div>
+    <div class="thumb_collection thumb_product border">
+        <div id="carouselProduct{{loopIndex}}" class="position-relative {% if disableCarousel is not defined %}carousel slide {% endif %} overflow-hidden m-auto"> 
+            {% if disableCarousel is not defined and categories[object]['imageFull2']|length>1 %}
+            <div class="carousel-inner overflow-visible" role="listbox">
+                <div class="carousel-item active bg-cover thumb_product__large" style="background-image: url({{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}); "></div>
+                {% for i in 2..10 %}
+                {% if categories[object]['imageFull' ~ i]|length>1 %} 
+                <div class="carousel-item bg-cover thumb_product__large" style="background-image: url({{ categories[object]['imageFull' ~ i]|replace({' ':'%20'}) }}); "></div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="thumb_product__large bg-cover" style="background-image: url({% if categories[object]['imageFull']['content'] is defined %}{{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}{% endif %}) ">
+            </div>
+            {% endif %}
+            <div class="col-12 bg-white thumb_collection__bottom">
+                <div class="d-flex">
+                    <div class="col-7 col-lg-8 pl-0 py-2" >
+                        <div class="text-left">
+                            <p class="h5 font-weight-bold text-dark mb-1">{{ categories[object]['label']['content'] }}</p>
+                            {% if categories[object]['shortDesc']['content'] is defined %}
+                            <p class="small text-dark line-height-normal mb-0">{{ categories[object]['shortDesc']['content'] }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-5 col-lg-4 px-0 py-1 text-dark mt-auto text-right thumb_collection_price">
+                        <p class="small pt-1 mb-0 line-height-normal">
+                            à partir de {% if data.session.promo is defined and data.session.promo == 1 %}<s>100€</s>{% endif %}
+                        </p>
+                        <p class="thumb_collection__price font-secondary mb-1 line-height-normal {% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %}">
+                            {{ categories[object]['price'] }}€{% if data.session.pro is defined and data.session.pro == 1 %}<sup><small>HT</small></sup>{% endif %}
+                        </p>
+                    </div>
+                    {#
+                    <div class="position-absolute thumb_collection_btn">
+                        <button class="btn btn-primary px-3 py-2 cursor-pointer">Découvrir</button>
+                    </div>
+                    #}
+                </div>
+            </div>
+            {% if data.session.promo is defined and data.session.promo == 1 %}
+            <div class="position-absolute d-flex top-0 right-0">
+                <div class="d-flex bg-secondary w-70 h-70 thumb_product__promo">
+                    <span class="m-auto text-white small">Promo</span>
+                </div>
+            </div>
+            {% endif %}
+            {#
+            <div class="position-absolute d-flex top-0 right-0">
+                <div class="d-none bg-dark thumb_product__fav w-70 h-70">
+                    <span class="m-auto text-white small">
+                        <svg width="25" height="25" class="m-auto"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart-o-white"></use></svg>
+                    </span>
+                </div>
+            </div>
+            #} 
+            {% if disableCarousel is not defined and categories[object]['imageFull2']|length>1 %}
+            <a class="carousel-control-prev" href="#carouselProduct{{loopIndex}}" role="button" data-slide="prev">
+                <div class="bg-primary d-flex">
+                    <svg width="20" height="20" class="m-auto"><use xlink:href="#arrow-point-to-left"/></svg>
+                    <span class="sr-only">Previous</span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#carouselProduct{{loopIndex}}" role="button" data-slide="next">
+                <div class="bg-primary d-flex">
+                    <svg width="20" height="20" class="m-auto"><use xlink:href="#arrow-point-to-right"/></svg>
+                    <span class="sr-only">Next</span>
+                </div>
+            </a>
+            {% endif %}
+        </div>
+    </div>
 </a>

@@ -8,6 +8,8 @@ require('../vendor/autoload.php');
 
 $app = new Silex\Application();
 
+$app['debug'] = false;
+
 // Register the monolog logging service
 $app->register(new Silex\Provider\MonologServiceProvider(), array(
 	'monolog.logfile' => 'php://stderr',
@@ -48,7 +50,6 @@ $app->get('/childrens', function() use($app, $childrens) {
 
 $parents = json_decode(file_get_contents("data/parents.json"),1);
 $app['twig']->addGlobal('parents', $parents);
-
 
 
 
@@ -100,6 +101,7 @@ if (isset($_GET['search'])) $data['session']->search = $_GET['search'];
 if (isset($_GET['promo'])) $data['session']->promo = $_GET['promo'];
 if (isset($_GET['colisage'])) $data['session']->colisage = $_GET['colisage'];
 if (isset($_GET['stock'])) $data['session']->stock = $_GET['stock'];
+if (strpos($_SERVER['SERVER_NAME'], '.test') > 0 || strpos($_SERVER['SERVER_NAME'], 'herokuapp') > 0) $data['session']->preprod = 'true';
 $app['twig']->addGlobal('data', $data);
 
 $app->get('/session', function() use($app) {
@@ -233,7 +235,11 @@ $app->get('/TunnelCommandPaymentView', function() use($app) {
 $app->get('/TunnelCommandConfirmation', function() use($app) {
 	return $app['twig']->render('pages/TunnelCommandConfirmation/TunnelCommandConfirmation.twig');
 });
+
 $app->get('/exampleProduct', function() use($app) {
 	return $app['twig']->render('pages/family/exampleProduct.twig');
+});
+$app->get('/exampleBundle', function() use($app) {
+	return $app['twig']->render('pages/productBundle/productBundle.twig');
 });
 $app->run();

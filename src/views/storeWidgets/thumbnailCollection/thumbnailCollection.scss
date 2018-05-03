@@ -1,0 +1,58 @@
+/*
+.thumb_collection_btn {
+bottom: 15px;
+right: -200px;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+.thumb_collection_price {
+opacity:1;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 1200px) {
+div[id^="carouselProduct"]:hover .thumb_collection_btn {
+right: 0;
+}
+
+div[id^="carouselProduct"]:hover .thumb_collection_price {
+opacity:0;
+}
+}
+*/
+
+.thumb_collection__price {
+    font-size: 34px;
+}
+.thumb_collection__image {
+    height: 234px;
+}
+.crossselCollection div[id^=thumb_family_collection] > a {
+    width: 100%;
+}
+.crossselCollection .carousel-control-prev {
+    left: -15px;
+}
+.crossselCollection .carousel-control-next {
+    right: -15px;
+}
+
+.thumb_collection .carousel-control-prev, .thumb_collection .carousel-control-next {
+    margin-top: -70px;
+}
+
+.thumb_collection__bottom {
+    min-height: 75px;
+}
+
+@include media-breakpoint-down(md) {
+    .thumb_collection .carousel-control-prev, .thumb_collection .carousel-control-next {
+        visibility: visible !important;
+    }
+}
