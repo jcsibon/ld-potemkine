@@ -8,7 +8,7 @@ require('../vendor/autoload.php');
 
 $app = new Silex\Application();
 
-$app['debug'] = true;
+$app['debug'] = false;
 
 
 // Register the monolog logging service
