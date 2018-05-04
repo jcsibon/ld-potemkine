@@ -306,7 +306,7 @@
                                         <div class="row">
                                             <div class="col-12 col-md-4">
                                                 <div class="col-12 p-0 pb-2">
-                                                    <a id="backCartBtn" href="#" class="btn btn-light col-12 rounded py-2" >
+                                                    <a id="backCartBtn" href="#" class="btn btn-font-light col-12 text-white rounded py-2" >
                                                         <div id="">
                                                             Précédent
                                                         </div>
@@ -399,7 +399,7 @@
                                         <div class="row">
                                             <div class="col-12 col-md-4">
                                                 <div class="col-12 p-0 pb-2">
-                                                    <a id="backCartBtn" href="#" class="btn btn-light col-12 rounded py-2" >
+                                                    <a id="backCartBtn" href="#" class="btn btn-font-light text-white col-12 rounded py-2" >
                                                         <div id="">
                                                             Précédent
                                                         </div>
@@ -413,12 +413,10 @@
                                                             Ajouter et continuer
                                                         </div>
                                                     </a>
+                                                    <a id="add2CartBtn" href="#" class="btn btn-primary col-12 rounded py-2 mt-2 escOption white-space-normal" >
+                                                            Je ne souhaite pas ajouter cette option
+                                                    </a>
                                                 </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <p class="text-right pt-2">
-                                                    <a href="#" class="text-muted escOption"><u>Je ne souhaite pas ajouter cette option</u></a>
-                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -509,7 +507,7 @@
                                         <div class="row">
                                             <div class="col-12 col-md-4">
                                                 <div class="col-12 p-0 pb-2">
-                                                    <a id="backCartBtn" href="#" class="btn btn-light col-12 rounded py-2" >
+                                                    <a id="backCartBtn" href="#" class="btn btn-font-light text-white col-12 rounded py-2" >
                                                         <div id="">
                                                             Précédent
                                                         </div>
@@ -523,12 +521,10 @@
                                                             Ajouter et continuer
                                                         </div>
                                                     </a>
+                                                    <a id="add2CartBtn" href="#" class="btn btn-primary col-12 rounded py-2 mt-2 escOption white-space-normal" >
+                                                            Je ne souhaite pas ajouter cette option
+                                                    </a>
                                                 </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <p class="text-right pt-2">
-                                                    <a href="#" class="text-muted escOption"><u>Je ne souhaite pas ajouter cette option</u></a>
-                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -607,7 +603,7 @@
                                         <div class="row">
                                             <div class="col-12 col-md-4">
                                                 <div class="col-12 p-0 pb-2">
-                                                    <a id="backCartBtn" href="#" class="btn btn-light col-12 rounded py-2" >
+                                                    <a id="backCartBtn" href="#" class="btn btn-font-light text-white col-12 rounded py-2" >
                                                         <div id="">
                                                             Précédent
                                                         </div>
@@ -621,12 +617,10 @@
                                                             Ajouter et continuer
                                                         </div>
                                                     </a>
+                                                    <a id="add2CartBtn" href="#" class="btn btn-primary col-12 rounded py-2 mt-2 escOption white-space-normal" >
+                                                            Je ne souhaite pas ajouter cette option
+                                                    </a>
                                                 </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <p class="text-right pt-2">
-                                                    <a href="#" class="text-muted escOption"><u>Je ne souhaite pas ajouter cette option</u></a>
-                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -705,7 +699,7 @@
                                         <div class="row">
                                             <div class="col-12 col-md-4">
                                                 <div class="col-12 p-0 pb-2">
-                                                    <a id="backCartBtn" href="#" class="btn btn-light col-12 rounded py-2" >
+                                                    <a id="backCartBtn" href="#" class="btn btn-font-light text-white col-12 rounded py-2" >
                                                         <div id="">
                                                             Précédent
                                                         </div>
@@ -719,12 +713,10 @@
                                                             Ajouter et continuer
                                                         </div>
                                                     </a>
+                                                    <a id="add2CartBtn" href="#" class="btn btn-primary col-12 rounded py-2 mt-2 escOption white-space-normal" >
+                                                            Je ne souhaite pas ajouter cette option
+                                                    </a>
                                                 </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <p class="text-right pt-2">
-                                                    <a href="#" class="text-muted escOption"><u>Je ne souhaite pas ajouter cette option</u></a>
-                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -757,7 +749,7 @@
                                         <div class="row">
                                             <div class="col-12 col-md-4">
                                                 <div class="col-12 p-0 pb-2">
-                                                    <a id="backCartBtn" href="#" class="btn btn-light col-12 rounded py-2" >
+                                                    <a id="backCartBtn" href="#" class="btn btn-font-light text-white col-12 rounded py-2" >
                                                         <div id="">
                                                             Précédent
                                                         </div>
@@ -816,7 +808,7 @@
                 {% if data.session.promo is defined and data.session.promo == 1 %}
                 promoPrice = '<s class="small text-muted">' + $(this).find("s[id^='listPrice_viewPage_']").html() + '</s><br>';
                  {% endif %}
-                 $('#bundleConfig').append('<div class="row pb-2 pb-md-2"><div class="col-7 col-md-9 line-height-normal">' + $(this).find('.productBundleTitle').text() + ' <br><span class="small text-muted">Réf.' + $(this).find('.productBundleRef').text() + '</span></div><div class="col-5 col-md-3 text-right line-height-normal">' + promoPrice + $(this).find("input[id^='quantity_']").val() + ' x ' + $(this).find("p[id^='blockOfferPrice_viewPage_']").html() + '</div></div>');
+                 $('#bundleConfig').append('<div class="row pb-2 pb-md-2"><div class="col-7 col-md-9 line-height-normal">' + $(this).find('.productBundleTitle').text() + ' <br><span class="small text-muted">Réf.' + $(this).find('.productBundleRef').text() + '</span></div><div class="col-5 col-md-3 text-right line-height-normal"><span class="small">' + promoPrice + $(this).find("input[id^='quantity_']").val() + ' x</span> ' + $(this).find("p[id^='blockOfferPrice_viewPage_']").html() + '</div></div>');
                  }
                 });
                 $('.progressBundle .progress-bar').attr('style','width:'+progress+'%');
@@ -836,6 +828,7 @@
             $("div[id^='bundle_product_'] #backCartBtn").click(function() {
                 $(this).parents("div[id^='bundle_product_']").addClass('d-none');
                 $(this).parents("div[id^='bundle_product_']").prev("div[id^='bundle_product_']").removeClass('d-none');
+                $(this).parents("div[id^='bundle_product_']").prev("div[id^='bundle_product_']").find("input[id^='quantity_']").val('1');
                 updateProgressBundle();
             });
 
