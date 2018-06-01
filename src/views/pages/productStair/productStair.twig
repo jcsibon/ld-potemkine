@@ -305,7 +305,7 @@
         $('.stair__display_thumb_image').removeClass('fp__selected');
         $('.stair__display_thumb_desc').hide();
         $(this).addClass('fp__selected');
-        $(this).next('.stair__display_thumb_desc').show();
+        $(this).next('.stair__display_thumb_desc').fadeIn();
         $(this).attr('data-image-hd-url');
         $('#imageModal img').attr('src', $(this).attr('data-image-hd-url'));
     });

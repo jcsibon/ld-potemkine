@@ -242,4 +242,7 @@ $app->get('/exampleProduct', function() use($app) {
 $app->get('/exampleBundle', function() use($app) {
 	return $app['twig']->render('pages/productBundle/productBundle.twig');
 });
+$app->get('/exampleStair', function() use($app) {
+	return $app['twig']->render('pages/productStair/productStair.twig');
+});
 $app->run();
