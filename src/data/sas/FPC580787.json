@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": false
+        "content": true
     },
     "label": {
         "locale": "fr",
@@ -22,7 +22,7 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU0007-FAM-34-COULEUR",
+            "attrIdentifier": "CCU0007-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 1
         },
@@ -63,6 +63,7 @@
             "attrSequence": 0
         },
         {
+            "valueIdentifier": 1,
             "attrIdentifier": "contrainteColisage",
             "valueString": {
                 "locale": "fr",
@@ -72,6 +73,7 @@
             "attrSequence": 0
         },
         {
+            "valueIdentifier": "UN",
             "attrIdentifier": "uniteSecondaire",
             "valueString": {
                 "locale": "fr",
@@ -81,6 +83,7 @@
             "attrSequence": 0
         },
         {
+            "valueIdentifier": "M2",
             "attrIdentifier": "uniteVente",
             "valueString": {
                 "locale": "fr",
@@ -90,6 +93,7 @@
             "attrSequence": 0
         },
         {
+            "valueIdentifier": "M2",
             "attrIdentifier": "uniteVenteLegale",
             "valueString": {
                 "locale": "fr",
@@ -105,38 +109,25 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "CCU0007-COMMUNES-3-COMM-ASPECT-162",
-                    "attrIdentifier": "CCU0007-COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Naturel"
-                    },
+                    "attrIdentifier": "ATC-AFFECTATION-BAC-A-D",
                     "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-COMMUNES-3-COMM-TYPE-MATERIAU-W90",
-                    "attrIdentifier": "CCU0007-COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Carrelage"
-                    },
+                    "attrIdentifier": "ATC-AFFECTATION-BOUTIQUE",
                     "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-COMMUNES-3-COULEUR-MACRO-104",
-                    "attrIdentifier": "CCU0007-COMMUNES-3-COULEUR-MACRO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Gris"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-HAUTEUR-1",
-                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-HAUTEUR-FIX",
+                    "attrIdentifier": "ATC-AFFECTATION-CHAMBRE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -145,8 +136,136 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-LARGEUR-60",
-                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+                    "attrIdentifier": "ATC-AFFECTATION-CUISINE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-AFFECTATION-ENTREE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-AFFECTATION-MUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-AFFECTATION-PLAN-TRA",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-AFFECTATION-SDB",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-AFFECTATION-SEJOUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-DESTINATION-CUISINE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-DESTINATION-EXT",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-DESTINATION-SDB",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-DESTINATION-SOL",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 10
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 162,
+                    "attrIdentifier": "ATC-FINITION-SURFACE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Naturel"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "BD2",
+                    "attrIdentifier": "ATC-FORMAT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "60X60"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "BD2",
+                    "attrIdentifier": "ATC-FORMAT-STD",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "60X60"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-LONGUEUR",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -155,28 +274,174 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS-25",
-                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "valueIdentifier": "W53",
+                    "attrIdentifier": "ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Grès cérame émaillé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-CategorieCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G659-SOLS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-FamilleCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G5-CARRELAGE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-LibelleCommercial",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carrelage BIGBANG gris 60x60 rectifié G4 le m2"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-SousCategorieCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G3523-SOL INT"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-SousCategorieCDG2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G9876-SU"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-SousCategorieCDG3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1238213-BIGBANG GRIS 60X60 RECT G4 LE M2"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-SousFamilleCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G34-M2"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-UniverCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G8-REVETEMENTS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-Vue360",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "http://www.lapeyre.fr/carrelage-bigbang-gris-60x60-rectifie-g4-le-m2-1238213"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-Vue360Asset",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "http://www.lapeyre.fr/img/catalogue/standardMain/580/840/580840.jpg"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 25
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-60",
-                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                    "attrIdentifier": "ATDDiffusionWebWork",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 60
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-FAM-34-COULEUR-104",
-                    "attrIdentifier": "CCU0007-FAM-34-COULEUR",
+                    "attrIdentifier": "ATDProductPath",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G8/G5/G34/G659/G3523/G9876/"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATS-CodeADA",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1238213
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "FRA-fr",
+                    "attrIdentifier": "ATS-CurrentContextID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "RESEAU_FRANCE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "A7884077",
+                    "attrIdentifier": "ATSOwnerCOM",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "DELECOLLE Adeline"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "J4302321",
+                    "attrIdentifier": "ATSOwnerMKT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TROCME Jean-Marc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-COULEUR-104",
+                    "attrIdentifier": "CCU0007-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Gris"
@@ -185,41 +450,153 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-FAM-34-FINITION-104",
-                    "attrIdentifier": "CCU0007-FAM-34-FINITION",
+                    "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "ART",
+                    "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Gris"
+                        "content": "PRIX DEFINI"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "COMMUNE-COMM-ART-CRE-DATE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "20111024 00:00:00"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
+                    "valueIdentifier": "ORD",
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "004"
+                        "content": "ORDINAIRE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "SL",
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 12000
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "SO",
+                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-DUREE-VIE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "SANS OBJET"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-INFLAMMABLE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "APX",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Série Limitée"
+                        "content": "Point rouge"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "SO",
+                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-STYLE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Sans Objet"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-ACHAT-LOCAL",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-ADAP-DIM",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 162,
+                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Naturel"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-DIFFUSION-WEB",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-GARANTIE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "999 - Non utilisé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-RENO-PLUS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -228,6 +605,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Standard"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "W90",
+                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carrelage"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -243,7 +630,35 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-LARGEUREmballe",
+                    "valueIdentifier": 104,
+                    "attrIdentifier": "COMMUNES-3-COULEUR-MACRO",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "BIGBANG<BR/>60x60cm rectifié - Gris Ep.10mm - G4-R9A<BR/>Grès cérame émaillé - Boîte de 1.08 m²"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Unité de vente :  M²"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-LARGEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -261,35 +676,16 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BD2",
-                    "attrIdentifier": "NAT-34-001-FORMAT-STD",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "60X60"
-                    },
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-ANTILLES",
                     "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-FRANCE-COMM-DAT-COMM",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "20120208 00:00:00"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "SPECIF-RESO-FRANCE-COMM-FIN-COMMER",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "20491231 00:00:00"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "achatLocal",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -298,11 +694,126 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "articleExpo",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-REUNION",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-SUISSE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CMA",
+                    "attrIdentifier": "SPEC-FAM-DET",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "CREME"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 40,
+                    "attrIdentifier": "SPEC-FAM-GAM",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "UNIS SOL"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 115,
+                    "attrIdentifier": "SPEC-FAM-MDE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "STANDARD"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 0,
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS CATALOGUE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-DEG",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ENV-DEPOT",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 0,
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "A l'offre"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-REMISE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 1,
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-TVA",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "20 %"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 3,
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-TVA2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "10% (Pose)"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "atoutPrix",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -325,24 +836,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "codeObsolescence",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "codeObsolescence-DATE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "20140821 00:00:00"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "coeffConversionQuantite",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -361,6 +854,7 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 1,
                     "attrIdentifier": "contrainteColisage",
                     "valueString": {
                         "locale": "fr",
@@ -370,43 +864,7 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "diffusionWeb",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "isRemisable",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "libelleCatalogue",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "HORS CATALOGUE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "offreDeg",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "offrePro",
+                    "attrIdentifier": "isLivraisonDirecte",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -424,15 +882,7 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "renoPlus",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
+                    "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
                         "locale": "fr",
@@ -442,15 +892,7 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "uniteSecondaireLibelle",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "UN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
+                    "valueIdentifier": "M2",
                     "attrIdentifier": "uniteVente",
                     "valueString": {
                         "locale": "fr",
@@ -460,25 +902,8 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "M2",
                     "attrIdentifier": "uniteVenteLegale",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "M2"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "uniteVenteLegaleLibelle",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "M2"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "uniteVenteLibelle",
                     "valueString": {
                         "locale": "fr",
                         "content": "M2"
@@ -499,7 +924,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -520,38 +945,25 @@
         {
             "attributeValueList": {"attributeValue": [
                 {
-                    "valueIdentifier": "CCU0007-COMMUNES-3-COMM-ASPECT-162",
-                    "attrIdentifier": "CCU0007-COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Naturel"
-                    },
+                    "attrIdentifier": "ATC-AFFECTATION-BAC-A-D",
                     "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-COMMUNES-3-COMM-TYPE-MATERIAU-W90",
-                    "attrIdentifier": "CCU0007-COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Carrelage"
-                    },
+                    "attrIdentifier": "ATC-AFFECTATION-BOUTIQUE",
                     "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-COMMUNES-3-COULEUR-MACRO-271",
-                    "attrIdentifier": "CCU0007-COMMUNES-3-COULEUR-MACRO",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Beige"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-HAUTEUR-1",
-                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-HAUTEUR-FIX",
+                    "attrIdentifier": "ATC-AFFECTATION-CHAMBRE",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -560,8 +972,136 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-LARGEUR-60",
-                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-LARGEUR-FIX",
+                    "attrIdentifier": "ATC-AFFECTATION-CUISINE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-AFFECTATION-ENTREE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-AFFECTATION-MUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-AFFECTATION-PLAN-TRA",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-AFFECTATION-SDB",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-AFFECTATION-SEJOUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-DESTINATION-CUISINE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-DESTINATION-EXT",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-DESTINATION-SDB",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-DESTINATION-SOL",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 10
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 162,
+                    "attrIdentifier": "ATC-FINITION-SURFACE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Naturel"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "BD2",
+                    "attrIdentifier": "ATC-FORMAT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "60X60"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "BD2",
+                    "attrIdentifier": "ATC-FORMAT-STD",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "60X60"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-LONGUEUR",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -570,28 +1110,174 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS-25",
-                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "valueIdentifier": "W53",
+                    "attrIdentifier": "ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Grès cérame émaillé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-CategorieCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G659-SOLS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-FamilleCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G5-CARRELAGE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-LibelleCommercial",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carrelage BIGBANG crème 60x60 rectifié G4 le m2"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-SousCategorieCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G3523-SOL INT"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-SousCategorieCDG2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G9876-SU"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-SousCategorieCDG3",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "1238214-BIGBANG CREME 60X60 RECT G4 LE M2"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-SousFamilleCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G34-M2"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-UniverCDG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G8-REVETEMENTS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-Vue360",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "http://www.lapeyre.fr/carrelage-bigbang-creme-60x60-rectifie-g4-le-m2-1238214"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATD-Vue360Asset",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "http://www.lapeyre.fr/img/catalogue/standardMain/580/839/580839.jpg"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATDDiffusionWebLive",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 25
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-60",
-                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                    "attrIdentifier": "ATDDiffusionWebWork",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 60
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-FAM-34-COULEUR-271",
-                    "attrIdentifier": "CCU0007-FAM-34-COULEUR",
+                    "attrIdentifier": "ATDProductPath",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "G8/G5/G34/G659/G3523/G9876/"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATS-CodeADA",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1238214
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "FRA-fr",
+                    "attrIdentifier": "ATS-CurrentContextID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "RESEAU_FRANCE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "A7884077",
+                    "attrIdentifier": "ATSOwnerCOM",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "DELECOLLE Adeline"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "J4302321",
+                    "attrIdentifier": "ATSOwnerMKT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "TROCME Jean-Marc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-COULEUR-271",
+                    "attrIdentifier": "CCU0007-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Beige"
@@ -600,41 +1286,153 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU0007-FAM-34-FINITION-271",
-                    "attrIdentifier": "CCU0007-FAM-34-FINITION",
+                    "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "ART",
+                    "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Beige"
+                        "content": "PRIX DEFINI"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "COMMUNE-COMM-ART-CRE-DATE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "20111024 00:00:00"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
+                    "valueIdentifier": "ORD",
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "004"
+                        "content": "ORDINAIRE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "SL",
+                    "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 15000
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "SO",
+                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-DUREE-VIE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "SANS OBJET"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNE-SUITE-COMM-ART-INFLAMMABLE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "APX",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Série Limitée"
+                        "content": "Point rouge"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "SO",
+                    "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-STYLE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Sans Objet"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-ACHAT-LOCAL",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-ADAP-DIM",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 162,
+                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Naturel"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-DIFFUSION-WEB",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-GARANTIE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "999 - Non utilisé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "COMMUNES-3-COMM-RENO-PLUS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -643,6 +1441,16 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Standard"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "W90",
+                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carrelage"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -658,7 +1466,35 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-LARGEUREmballe",
+                    "valueIdentifier": 271,
+                    "attrIdentifier": "COMMUNES-3-COULEUR-MACRO",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Beige"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "BIGBANG<BR/>60x60cm rectifié Ep.10mm - Crème -G4-R9A<BR/>Grès cérame émaillé - Boîte de 1.08 m²"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-8",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Unité de vente : m²"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-LARGEUR-EMB",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -676,35 +1512,16 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BD2",
-                    "attrIdentifier": "NAT-34-001-FORMAT-STD",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "60X60"
-                    },
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-ANTILLES",
                     "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "SPECIF-RESO-FRANCE-COMM-DAT-COMM",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "20120208 00:00:00"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "SPECIF-RESO-FRANCE-COMM-FIN-COMMER",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "20491231 00:00:00"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "achatLocal",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -713,11 +1530,126 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "articleExpo",
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-REUNION",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-SUISSE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "GRI",
+                    "attrIdentifier": "SPEC-FAM-DET",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "GRIS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 40,
+                    "attrIdentifier": "SPEC-FAM-GAM",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "UNIS SOL"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 115,
+                    "attrIdentifier": "SPEC-FAM-MDE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "STANDARD"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 0,
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "HORS CATALOGUE"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-DEG",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ENV-DEPOT",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 0,
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "A l'offre"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-REMISE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 1,
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-TVA",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "20 %"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": 3,
+                    "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-TVA2",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "10% (Pose)"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "atoutPrix",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -740,24 +1672,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "codeObsolescence",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "codeObsolescence-DATE",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "20140821 00:00:00"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "coeffConversionQuantite",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -776,6 +1690,7 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": 1,
                     "attrIdentifier": "contrainteColisage",
                     "valueString": {
                         "locale": "fr",
@@ -785,43 +1700,7 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "diffusionWeb",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "isRemisable",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "libelleCatalogue",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "HORS CATALOGUE"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "offreDeg",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "offrePro",
+                    "attrIdentifier": "isLivraisonDirecte",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -839,15 +1718,7 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "renoPlus",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
+                    "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
                         "locale": "fr",
@@ -857,15 +1728,7 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "uniteSecondaireLibelle",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "UN"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
+                    "valueIdentifier": "M2",
                     "attrIdentifier": "uniteVente",
                     "valueString": {
                         "locale": "fr",
@@ -875,25 +1738,8 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "M2",
                     "attrIdentifier": "uniteVenteLegale",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "M2"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "uniteVenteLegaleLibelle",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "M2"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "uniteVenteLibelle",
                     "valueString": {
                         "locale": "fr",
                         "content": "M2"
@@ -914,7 +1760,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -941,6 +1787,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Carrelage BIGBANG 60 x 60 cm - Sols & murs"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Un carrelage de sols en grés cérame émaillé, sur un format carré moyen format qui se marie facilement avec tous les styles de vos pièces à vivre."
         },
         "urlKeyword": {
             "locale": "fr",
