@@ -172,41 +172,6 @@
             });
 
             /* END js for appointment */ 
-
-            /* -- Carousel Corss Sell Produit -- */
-            $(document).ready(function(){ 
-                $('.carousel-showmanymoveone .carousel-item').each(function(){
-                    var itemToClone = $(this);
-                    for (var i=1;i<$('.carousel-showmanymoveone .carousel-item').length;i++) {
-                        itemToClone = itemToClone.next();
-
-                        if (!itemToClone.length) {
-                            itemToClone = $(this).siblings(':first');
-                        }
-                        itemToClone.find('.row>div:nth-of-type(1)').clone()
-                            .addClass("cloneditem-"+(i))
-                            .appendTo($(this).children('.row'));
-                    }
-                });
-                if ($('.carousel-showmanymoveone .carousel-item').length>4) $('.carousel-showmanymoveone .slider-control').show();
-            })
-            function carouselRefresh() {
-                carouselRefreshInterval = setInterval(function(){ 
-                    $('.carouselCrossSell').css('height',($('#carouselCrossSell .carousel-inner .col-6').height()+40) + 'px');
-                }, 1000);
-
-                if ($('.carousel-showmanymoveone .carousel-item').length>$(".carouselCrossSell .carousel-showmanymoveone .carousel-item .col-6:visible").length) {
-                    $('.carouselCrossSell .slider-control').show(); 
-                } else {
-                    $('.carouselCrossSell .slider-control').hide();
-                }
-            }
-            $( window ).on( "load", function() {
-                carouselRefresh();
-            });
-            $( window ).resize(function() {
-                carouselRefresh();
-            });
         </script>
 
         {% include 'storeWidgets/footer/footer.twig' %}

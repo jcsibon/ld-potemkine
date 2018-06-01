@@ -53,236 +53,177 @@
             </div>
         </div>
         <div class="col-5">
-            <div class="col-12 pt-5 pt-md-4 pb-0 py-xl-4 px-3 px-lg-5 stair__product_bloc"> 
+            <div class="col-12 pt-5 pt-md-4 pb-0 py-xl-4 px-3 px-lg-5 stair__product_bloc">
                 <div class="row">
                     <div class="col-12 px-2">
-                        <p class="text-dark small">Réf #2490390</p>
+                        <p class="text-muted small"><output id="product_SKU_73111">Réf. de l'article : 2490390</output></p>
                     </div>
                     <div class="col-12 px-2">
-                        <h1 class="h2 font-weight-bold">Escalier {{ content.shortName }} <sup class="text-primary">&#9679</sup></h1>
+                        <h1 class="h3 font-weight-bold">Escalier Primo <sup class="text-primary">&#9679</sup></h1>
                     </div>
-                    <div class="col-12 px-2 py-3">
-                        <p class="d-inline-block">
-                            <a href="#description" class="font-weight-bold text-dark"><u>Détails produit</u></a>
-                        </p>
-                        <p class="text-muted d-inline-block pl-5">
-                            (Avis clients)
-                        </p>
+                    <div class="col-12 p-2">
+                        <div class="row">
+                            <div class="col-12 col-sm-5">
+                                <p class="pt-1 pt-lg-0">
+                                    <a href="#description" class="font-weight-bold text-dark"><u>Détails produit</u></a>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-7 px-sm-0">
+                                <a href="#avis_clients" class="text-dark">
+                                    <div class="d-inline-flex">
+                                        <div class="stars-row pr-2">
+                                            <span class="bg-stars">★ ★ ★ ★ ★</span>
+                                            <span class="stars d-block position-relative text-left" style="width: 85.3%">★ ★ ★ ★ ★</span>
+                                        </div>
+                                        <div>4.0/5 (7 avis)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 px-2 py-2">
-                        <label class="text-dark d-block">Essence & couleur</label>
+                    <div class="col-12 p-2">
+                        <label class="text-muted d-block">Essence & couleur</label>
                         <select class="form-control">
                             <option>Sapin - Brut</option>
                         </select>
                     </div>
-                    <div class="col-12 px-2 py-2">
-                        <label class="text-dark d-block">Forme</label>
+                    <div class="col-12 p-2">
+                        <label class="text-muted d-block">Forme</label>
                         <select class="form-control">
                             <option>Droit</option>
                             <option>Quart tournant</option>
                         </select>
                     </div>
-                    <div class="col-6 px-2 py-2">
-                        <label class="text-dark d-block">Rampe</label>
+                    <div class="col-12 col-xl-6 p-2">
+                        <label class="text-muted d-block" id="swatch_selection_label_entitledItem_45698_CCU0004-DIMENSIONS-COMMUNES-DIM-PROFONDEUR">Rampe</label>
                         <select class="form-control">
                             <option>Non</option>
                             <option>Oui</option>
                         </select>
                     </div>
-                    <div class="col-6 px-2 py-2">
-                        <label class="text-dark d-block">Sens</label>
+                    <div class="col-12 col-xl-6 p-2">
+                        <label class="text-muted d-block" id="swatch_selection_label_entitledItem_45698_CCU0004-NAT-18-001-FINITION">Sens</label>
                         <select class="form-control">
                             <option>/</option>
                         </select>
                     </div>
-                    <div class="col-12 px-2 py-2">
-                        <label class="text-dark d-block">Contremarche</label>
+                    <div class="col-12 p-2">
+                        <label class="text-muted d-block">Contremarche</label>
                         <select class="form-control">
                             <option>274 x 76 x 242 - 13 marches</option>
                         </select>
                     </div>
-                    <div class="col-12 px-2 py-2">
+                    <div class="col-12 p-2">
                         <div class="row">
-                            <div class="col-5 d-none">
-                                <label class="text-dark d-block">Quantité</label>
-                                <div class="row m-0">
-                                    <div class="col-12 border fp__quantity_block p-2">
-                                        <div class="row">
-                                            <div class="col-4 text-right pr-0">
-                                                <span class="text-dark font-weight-bold" id="qtyLeftBtn">-</span>
-                                            </div>
-                                            <div class="col-4 text-center px-0">
-                                                <input onpaste="return false;" id="fp__quantity" type="text" class="border-0 text-center font-weight-bold" value="1" size="2" maxlength="4" >
-                                            </div>
-                                            <div class="col-4 text-left pl-0">
-                                                <span class="" id="qtyRightBtn">+</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-5">
                             </div>      
-                            <div class="col-12 mt-4">
+                            <div class="col-7 mt-4">
                                 <div class="row">
-                                    <div class="col-12 text-right">
+                                    <div class="col-12 text-right" id="price_display_45571">
                                         {% if data.session.promo is defined and data.session.promo == 1 %}
-                                        <p class="small m-0"><s>219,00 € {% if data.session.pro is defined and data.session.pro == 1 %}HT{% endif %}</s></p>
+                                        <p class="small m-0"><s id="listPrice_viewPage_45571">219,00 € {% if data.session.pro is defined and data.session.pro == 1 %}HT{% endif %}</s></p>
                                         {% endif %}
-                                        <p class="h2 font-weight-bold fp__price mb-0 {% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %}" style="font-size: 40px; font-family: 'DinCondensed', sans-serif; line-height: 1em;">159,00 € {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small font-weight-normal fp__pro_small">HT</sup>{% endif %}{% if data.session.colisage is defined and data.session.colisage == 1 %}<span class="small font-weight-bold fp__area_small">le m²</span>{% endif %}{% if data.session.promo is defined and data.session.promo == 1 %}<sup class="small font-weight-normal fp__promo_small">*</sup>{% endif %}</p> 
+                                        <p id="blockOfferPrice_viewPage_45571" class="h1 font-weight-bold fp__price mb-0 font-secondary {% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %}">
+                                            <span id="offerPrice_viewPage_45571">159,00 €</span>
+                                            {% if data.session.pro is defined and data.session.pro == 1 %}<sup id="supHTPriceProductPage_viewPage_45571" class="small font-weight-normal fp__pro_small">HT</sup>{% endif %}
+                                            {% if data.session.colisage is defined and data.session.colisage == 1 %}<span id="uniteVenteLabel_45571" class="small font-weight-bold fp__area_small">le m²</span>{% endif %}
+                                            {% if data.session.promo is defined and data.session.promo == 1 %}<sup id="asterix_viewPage_45571" class="small font-weight-normal fp__promo_small">*</sup>{% endif %}
+                                        </p> 
                                     </div>
                                     <div class="col-12 text-right">
                                         {% if data.session.colisage is defined and data.session.colisage == 1 %}
-                                        <p class="m-0 text-dark small">Soit 17,94 € {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %} la boite de 1,38 m²</p>
-                                        {% endif %}
-                                        {% if data.session.colisage is not defined %}
-                                        <p class="m-0 text-dark small">Dont éco-part : 5,20 € {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %}</p>
+                                        <p id="coeffArea_45571" class="m-0 text-muted small">Soit 17,94 € {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %} la boite de 1,38 m²</p>
                                         {% endif %}
                                         {% if data.session.promo is defined and data.session.promo == 1 %}
-                                        <p class="small m-0"><a href="javascript:void(0);" class="text-dark" onclick="javascript:window.open('/c/conditions-generales-de-vente?omitHeader=1', '_blank', 'toolbar=yes, scrollbars=yes, resizable=yes, width=820, height=600'); return false;">* voir les conditions</a></p>
+                                        <p class="small m-0 text-muted">-15% sur sélection de produits</p>
+                                        <p id="cguDisplayContainer_viewPage_73111" class="small m-0"><a href="javascript:void(0);" class="text-muted text-dark" onclick="javascript:window.open('/c/conditions-generales-de-vente?omitHeader=1', '_blank', 'toolbar=yes, scrollbars=yes, resizable=yes, width=820, height=600'); return false;">* voir les conditions</a></p>
                                         {% endif %}
                                     </div>
+                                    {% if data.session.colisage is not defined %}
+                                    <div dojotype="wc.widget.RefreshArea" id="shopperActionsRefreshArea" class="col-12 text-right">
+                                        <div id="ecoPartContainer_73113" class="d-block">
+                                            <p class="m-0 text-muted small">Dont éco-part : <span>5,20 €</span> {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %}</p>
+                                        </div>
+                                    </div>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 pt-3">
                         <div class="row">
-                            <div class="col-2">
-                                <div class="bg-dark">
-                                    <a id="addToShoppingList_89106" href="#" onclick="wishList.goLogin('https://www.lapeyre.fr/amenagement-panama-decor-chene-blanchi-2490390','wishlist'); return false;" class="d-flex px-2 py-3" role="button">
-                                        <svg width="26" height="26" class="m-auto"><use xlink:href="#heart-o-white"/></svg>
-                                    </a>
-                                </div>
+                            <div class="col-6">
+                                <a href="#" class="btn btn-light col-12 py-2">
+                                    <div id="productPageAdd2Cart">
+                                        RDV Magasin
+                                    </div>
+                                </a>
                             </div>
-                            <div class="col-10 col-xl-5 pl-0">
-                                <div class="col s12 m12 l9 p-0">
-                                    <a class="btn btn-light col-12 py-3">
-                                        <div id="" class="">
-                                            RDV Magasin
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-10 col-xl-5 pl-0">
-                                <div class="col s12 m12 l9 p-0">
-                                    <a id="add2CartBtn" href="#" class="btn btn-primary col-12 py-3" onclick="javascript:setCurrentId('add2CartBtn');productDisplayJS.Add2ShopCartAjax('entitledItem_89104',document.getElementById('quantity_89104').value, false)" wairole="button" role="button" title="Ajouter au panier" onkeypress="javascript:MessageHelper.setFocusElement('add2CartBtn');">
-                                        <div id="productPageAdd2Cart">
-                                            Ajouter au panier
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="col-6">
+                                <a id="add2CartBtn" href="#" class="btn btn-primary col-12 py-2" onclick="javascript:setCurrentId('add2CartBtn');productDisplayJS.Add2ShopCartAjax('entitledItem_89104',document.getElementById('quantity_89104').value, false)" wairole="button" role="button" title="Ajouter au panier" onkeypress="javascript:MessageHelper.setFocusElement('add2CartBtn');" data-toggle="modal" >
+                                    <div id="productPageAdd2Cart">
+                                        Ajouter au panier
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 pt-4 text-right">
-                        {% if data.session.stock is defined and data.session.stock == 'dispo' %}
+                    <div class="col-12 pt-4">
+                        <div dojotype="wc.widget.RefreshArea" id="itemAvailabilityRefreshAreaPopup">
+                            <p id="firstDefaultShop_standardUI">
+                                {% if data.session.stock is defined and data.session.stock == 'dispo' %}							
+                                <span id="dispoCircle" class="text-warning fp__font-130">&#9679</span> Commandez aujourd’hui pour que le produit soit disponible à <a id="shopName_6_standardUI" href="" class="text-warning">Lapeyre Montluçon</a><span id="shopDateDispo_6_standardUI"> le 26/12/2017</span>
+                                {% endif %}
+                                {% if data.session.stock is defined and data.session.stock == 'stock' %}
+                                <span id="dispoCircle" class="text-success fp__font-130">&#9679</span> <span id="6_standardUI" class="text-success">En stock</span> à <a id="shopName_6_standardUI" href="">Lapeyre Pointe de Gournay</a> <span id="shopDateDispo_6_standardUI"> à partir du 14/12/2017</span>
+                                {% endif %}
+                                {% if data.session.stock is defined and data.session.stock == 'indispo' %}
+                                <span id="dispoCircle" class="text-danger fp__font-130">&#9679</span> <span id="6_standardUI" class="text-danger">Indisponible</span> à <a id="shopName_6_standardUI" href="">Lapeyre Caen</a>
+                                {% endif %}
+                            </p>
+                        </div>
                         <p>
-                            <span class="text-warning fp__font-130">&#9679</span> Disponible à <a href="" class="text-warning">Lapeyre Montluçon</a> seulement le 26/12/2017
-                        </p>
-                        {% endif %}
-                        {% if data.session.stock is defined and data.session.stock == 'stock' %}
-                        <p>
-                            <span class="text-success fp__font-130">&#9679</span> <span class="text-success">En stock</span> à <a href="">Lapeyre Pointe de Gournay</a> à partir du 14/12/2017
-                        </p>
-                        {% endif %}
-                        {% if data.session.stock is defined and data.session.stock == 'indispo' %}
-                        <p>
-                            <span class="text-danger fp__font-130">&#9679</span> <span class="text-danger">Indisponible</span> à <a href="">Lapeyre Caen</a>
-                        </p>
-                        {% endif %}
-                        {% if data.session.stock is defined %}
-                        <p>
-                            <a href="#" class="text-dark" data-toggle="modal" data-target="#availabilityModal"><u>Voir la disponibilité dans d'autres magasins</u></a>
-                        </p>
-                        {% endif %}
-                        {% if data.session.stock is not defined %}
-                        <p>
-                            <a href="#" class="text-dark" data-toggle="modal" data-target="#availabilityModal"><u>Voir la disponibilité en magasin</u></a>
-                        </p>
-                        {% endif %}
+                            {% if data.session.stock is defined %}
+                            <a id="availabilityPopupClick" href="#" class="text-muted" data-toggle="modal" data-target="#availabilityModal"><u>Voir la disponibilité dans d'autres magasins</u></a>
+                            {% endif %}
+                            {% if data.session.stock is not defined %}
+                            <a id="availabilityPopupClick" href="#" class="text-muted" data-toggle="modal" data-target="#availabilityModal"><u>Voir la disponibilité en magasin</u></a>
+                            {% endif %}
+                        </p>									
                     </div>
-                </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-12">
+                <p class="h5 description__title text-center my-4 pt-lg-5 pb-lg-4 px-xl-5 mx-xl-5 d-none d-sm-block">
+                    L’escalier Primo en hêtre ou sapin offre un excellent rapport qualité-prix. Limons, main courante et contremarches sont revêtus d’un placage en bois. Recoupe et ajout de socle sont possibles.
+                </p>
+                <p class="text-center">
+                    <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/picto_pefc.png" class="p-2 w-90">
+                    <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/picto_made_in_france.png" class="p-2 w-90">
+                    <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/picto_made_by_lapeyre.png" class="p-2 w-90">
+                </p>
             </div>
         </div>
     </div>
 </div>
 
+<div class="container">
+    {% include 'storeWidgets/customersOpinion/customersOpinion.twig' %}
+</div>
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-
-<div class="modal fade" id="availabilityModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header px-4">
-                <h5 class="modal-title" id="exampleModalLabel">Disponibilité</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body px-4">
-                <div class="row">
-                    <div class="col-12">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleSelect1">Choisissez votre magasin :</label>
-                                <div class="col-12 text-center">
-                                    <select class="form-control" id="">
-                                        <option>Choisir dans la liste</option>
-                                        {% for shop in data.store.shops %}
-                                        <option>
-                                            {{ shop.adresse.codePostal }} - Lapeyre {{ shop.adresse.ville }}
-                                        </option>
-                                        {% endfor %}
-                                    </select>
-                                </div>
-                                <p class="text-center pt-4">
-                                    <button type="submit" class="btn btn-primary px-5">Valider</button>
-                                </p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="bg-light">
+    <div class="container">
+        {% include 'storeWidgets/appointment/appointment.twig' %}
     </div>
 </div>
 
-<div class="modal fade" id="sharingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header px-4">
-                <h5 class="modal-title" id="exampleModalLabel">Partager ce produit</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body p-4">
-                <div class="row">
-                    <div class="col-2 offset-1">
-                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#facebook"/></svg></a>
-                    </div>
-                    <div class="col-2">
-                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#pinterest"/></svg></a>
-                    </div>
-                    <div class="col-2">
-                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#twitter"/></svg></a>
-                    </div>
-                    <div class="col-2">
-                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#envelope"/></svg></a>
-                    </div>
-                    <div class="col-2">
-                        <a href="" target="blank"><svg width="30" height="30"><use xlink:href="#instagram"/></svg></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{% include 'storeWidgets/availabilityModal/availabilityModal.twig' %}
 
 <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">

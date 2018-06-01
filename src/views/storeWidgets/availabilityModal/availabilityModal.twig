@@ -1,0 +1,38 @@
+<div class="modal fade" id="availabilityModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+        <div class="dijitDialogPaneContent modal-dialog" style="width: auto; height: auto;">
+            <div class="widget_site_popup modal-content">
+                <div id="availabilityModalTitle" class="modal-header px-4">
+                    <h5 class="modal-title" id="exampleModalLabel">Disponibilité</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-4" id="availability_widget_ui">
+                    <div class="row">
+                        <div class="col-12">
+                            <form id="setDefaultStoreForm">
+                                <div class="form-group">
+                                    <label for="exampleSelect1">Choisissez votre magasin :</label>
+                                    <div class="col-12 text-center">
+                                        <select class="form-control" id="shopSelect">
+                                            <option>Choisir dans la liste</option>
+                                            {% for shop in data.store.shops %}
+                                            <option>
+                                                {{ shop.adresse.codePostal }} - Lapeyre {{ shop.adresse.ville }}
+                                            </option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                    <p class="text-center pt-4">
+                                        <button id="submitSelectNewStore" type="submit" class="btn btn-primary px-5">Valider</button>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

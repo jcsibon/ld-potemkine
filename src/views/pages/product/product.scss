@@ -98,33 +98,6 @@
     opacity: .3;
 }
 
-#ficheProduitStandardficheAside .stars-row .bg-stars, #ficheProduitStandardficheAside .stars-row .stars {
-    font-size: 16px;
-    top: -24px;
-    height: 25px;
-}
-
-#avis_clients .stars-row .bg-stars, #avis_clients .stars-row .stars {
-    font-size: 28px;
-    top: -33px;
-    height: 28px;
-}
-
-.stars-row .stars {
-    color: $red-secondary;
-    overflow: hidden;
-    z-index: 1;
-    white-space: nowrap;
-}
-
-#avis_clients .blockquote {
-    font-size: inherit;
-}
-
-#avis_clients .blockquote::after {
-    display: none;
-}
-
 body.modal-open {
     overflow-y: auto !important;
     padding-right: 0 !important;
@@ -133,22 +106,6 @@ body.modal-open {
 .modal-scrollbar-measure {
 
     overflow: hidden;
-}
-
-#avis_clients .carousel-control-prev {
-    left: 0px;
-}
-
-#avis_clients .carousel-control-next {
-    right: 0px;
-}
-
-#avis_clients .carousel-control-next, #avis_clients .carousel-control-prev {
-    width: inherit;
-}
-
-#avis_clients .viewMoreMobile {
-    display: none;
 }
 
 .fp__display_thumbnails_container1 {
@@ -196,12 +153,6 @@ body.modal-open {
 
 #addCartModal .carouselCrossSell {
     height: 390px !important;
-}
-
-@media only screen and (min-width: 768px) {
-    #avis_clients .carousel-item {
-        display: block;
-    }
 }
 
 @media only screen and (min-width: 992px) {
