@@ -321,25 +321,24 @@ div.home__large_block_left {
     }
 }
 
-@media all and (min-width: 576px) {
-    .carousel-showmanymoveone .carousel-inner > .carousel-item.active.carousel-item-left,
-    .carousel-showmanymoveone .carousel-inner > .carousel-item-prev {
-        left: -50%;
-    }
-    .carousel-showmanymoveone .carousel-inner > .carousel-item.active.carousel-item-right,
-    .carousel-showmanymoveone .carousel-inner > .carousel-item-next {
-        left: 50%;
-    }
-    .carousel-showmanymoveone .carousel-inner > .carousel-item-left,
-    .carousel-showmanymoveone .carousel-inner > .carousel-item-prev.carousel-item-right,
-    .carousel-showmanymoveone .carousel-inner > .carousel-item.active {
-        left: 0;
-    }
-    .carousel-showmanymoveone .carousel-inner .cloneditem-1 {
-        display: flex;
-    }
+.carousel-showmanymoveone .carousel-inner > .carousel-item.active.carousel-item-left,
+.carousel-showmanymoveone .carousel-inner > .carousel-item-prev {
+    left: -50%;
 }
-@media all and (min-width: 576px) and (transform-3d), all and (min-width: 576px) and (-webkit-transform-3d) {
+.carousel-showmanymoveone .carousel-inner > .carousel-item.active.carousel-item-right,
+.carousel-showmanymoveone .carousel-inner > .carousel-item-next {
+    left: 50%;
+}
+.carousel-showmanymoveone .carousel-inner > .carousel-item-left,
+.carousel-showmanymoveone .carousel-inner > .carousel-item-prev.carousel-item-right,
+.carousel-showmanymoveone .carousel-inner > .carousel-item.active {
+    left: 0;
+}
+.carousel-showmanymoveone .carousel-inner .cloneditem-1 {
+    display: flex;
+}
+
+@media all and (transform-3d), all and (-webkit-transform-3d) {
     .carousel-showmanymoveone .carousel-inner > .carousel-item.active.carousel-item-right,
     .carousel-showmanymoveone .carousel-inner > .carousel-item.carousel-item-next {
         -webkit-transform: translate3d(50%, 0, 0);
