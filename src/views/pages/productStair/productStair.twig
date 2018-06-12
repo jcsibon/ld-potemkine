@@ -1,26 +1,68 @@
 {% extends"layouts/default.html" %}
 {% block content %}
 
-<div class="container">
+<div class="container productStair position-relative">
     <div class="row">
-        <div class="col-7">
-            <div id="carouselStair" class="carousel slide m-auto order-xl-2 overflow-hidden" >
+        <div class="col-12 col-md-7">
+            <div class="col-12 col-xl-9 order-xl-2 d-md-none">
+                <div class="row"> 
+                    <div class="col-12 p-3 position-relative text-center" id="fp__main_image">
+                        {% if data.session.promo is defined and data.session.promo == 1 %}
+                        <div class="position-absolute d-flex bg-secondary px-3 py-4 products__list_promo">
+                            <span class="m-auto text-white small">Promo</span>
+                        </div>
+                        {% endif %}
+                        <div class="d-none d-md-block image_container">
+                            <div id="fullImageMainContainer">
+                                <div id="fullImageVideoContainer" class="hidden">
+                                    <iframe src="" title="YouTube video player" allowfullscreen="1" id="youtubePlayer" frameborder="0" height="360" class="w-100"></iframe>
+                                </div>
+                                <div id="fullImageImageContainer">										
+                                    <img src="https://statics.lapeyre.fr/img/catalogue/standardMain/721/458/201721458.jpg" class="img-fluid d-none d-md-block" data-toggle="modal" data-target="#popupPhotoZoom">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="carouselFpIndicators" class="carousel slide d-block d-md-none" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselFpIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselFpIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselFpIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img id="WC_CachedProductOnlyDisplay_images_1_0" class="d-block img-fluid" src="{{ categories[global.request.get('code')]['imageFull']['content'] }}">
+                                </div>
+                                <div class="carousel-item">
+                                    <img id="WC_CachedProductOnlyDisplay_images_1_1" class="d-block img-fluid" src="{{ categories[global.request.get('code')]['imageFull']['content'] }}">
+                                </div>
+                                <div class="carousel-item">
+                                    <img id="WC_CachedProductOnlyDisplay_images_1_2" class="d-block img-fluid" src="{{ categories[global.request.get('code')]['imageFull']['content'] }}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-12 d-none d-lg-block text-right">
+                        <img src="https://statics.lapeyre.fr/img/catalogue/picto/_an/s_q/Garantie_02_ans_Q.jpg" alt="Garantie Lapeyre 2 ans" class="fp__picto m-2" />
+                        <img src="https://statics.lapeyre.fr/img/catalogue/picto/iqu/e_q/Isolation_thermique_Q.jpg" alt="Isolation thermique" class="fp__picto m-2" />
+                    </div>
+                </div>
+            </div>
+            <div id="carouselStair" class="carousel slide m-auto order-xl-2 overflow-hidden d-none d-md-block" >
                 <div class="carousel-inner overflow-visible" role="listbox">
-                    <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/primo.jpg" alt="" data-toggle="modal" data-target="#imageModal">
+                    <div class="carousel-item cursor-pointer bg-cover active" data-toggle="modal" data-target="#imageModal" style="background-image: url('{{ categories[global.request.get('code')]['imageFull']['content'] }}');">
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/primo.jpg" alt="" data-toggle="modal" data-target="#imageModal">
+                    <div class="carousel-item cursor-pointer bg-cover" data-toggle="modal" data-target="#imageModal" style="background-image: url('{{ categories[global.request.get('code')]['imageFull']['content'] }}');">
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/primo.jpg" alt="" data-toggle="modal" data-target="#imageModal">
+                    <div class="carousel-item cursor-pointer bg-cover" data-toggle="modal" data-target="#imageModal" style="background-image: url('{{ categories[global.request.get('code')]['imageFull']['content'] }}');">
                     </div>
-                    <div class="col-6 offset pl-4 d-none d-md-block position-absolute stair__display_thumbnails">
+                    <div class="col-12 col-lg-8 col-xl-6 pl-4 pb-2 d-none d-md-block stair__display_thumbnails">
                         <div class="row">
                             <div class="stair__display_thumb position-relative my-2 mx-1 mx-xl-2 d-block col-12" data-target="#carouselStair" data-slide-to="0" class="img-fluid">
                                 <div class="row">
-                                    <div style="background-image: url('https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/primo.jpg')" data-image-hd-url="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/primo.jpg" class="col-2 fp__selected stair__display_thumb_image border"></div>
-                                    <div class="col-10 bg-dark px-2 stair__display_thumb_desc">
+                                    <div style="background-image: url('{{ categories[global.request.get('code')]['imageFull']['content'] }}')" data-image-hd-url="{{ categories[global.request.get('code')]['imageFull']['content'] }}" class="col-2 fp__selected stair__display_thumb_image border bg-cover cursor-pointer"></div>
+                                    <div class="col-10 bg-dark px-2 stair__display_thumb_desc d-none d-xl-block">
                                         <p class="small m-0 text-white">Visuel 1/3 : </p>
                                         <p class="small m-0 text-white">Escalier droit en hêtre noir de 274cm de hauteur, sans rampe avec contremarches.
                                         </p>
@@ -29,8 +71,8 @@
                             </div>
                             <div class="stair__display_thumb position-relative my-2 mx-1 mx-xl-2 d-block col-12" data-target="#carouselStair" data-slide-to="1" class="img-fluid">
                                 <div class="row">
-                                    <div style="background-image: url('https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/primo.jpg')" data-image-hd-url="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/primo.jpg" class="col-2 stair__display_thumb_image border"></div>
-                                    <div class="col-10 bg-dark px-2 stair__display_thumb_desc" style="display: none;">
+                                    <div style="background-image: url('{{ categories[global.request.get('code')]['imageFull']['content'] }}')" data-image-hd-url="{{ categories[global.request.get('code')]['imageFull']['content'] }}" class="col-2 stair__display_thumb_image border bg-cover cursor-pointer"></div>
+                                    <div class="col-10 bg-dark px-2 stair__display_thumb_desc d-none d-xl-block">
                                         <p class="small m-0 text-white">Visuel 2/3 : </p>
                                         <p class="small m-0 text-white">Escalier droit en hêtre noir de 274cm de hauteur, sans rampe avec contremarches.
                                         </p>
@@ -39,8 +81,8 @@
                             </div>
                             <div class="stair__display_thumb position-relative my-2 mx-1 mx-xl-2 d-block col-12" data-target="#carouselStair" data-slide-to="2" class="img-fluid">
                                 <div class="row">
-                                    <div style="background-image: url('https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/primo.jpg')" data-image-hd-url="https://res.cloudinary.com/dwkgy95ov/image/upload/v1518736707/primo.jpg" class="col-2 stair__display_thumb_image border" ></div>
-                                    <div class="col-10 bg-dark px-2 stair__display_thumb_desc" style="display: none;">
+                                    <div style="background-image: url('{{ categories[global.request.get('code')]['imageFull']['content'] }}')" data-image-hd-url="{{ categories[global.request.get('code')]['imageFull']['content'] }}" class="col-2 stair__display_thumb_image border bg-cover cursor-pointer" ></div>
+                                    <div class="col-10 bg-dark px-2 stair__display_thumb_desc d-none d-xl-block">
                                         <p class="small m-0 text-white">Visuel 3/3 : </p>
                                         <p class="small m-0 text-white">Escalier droit en hêtre noir de 274cm de hauteur, sans rampe avec contremarches.
                                         </p>
@@ -52,23 +94,23 @@
                 </div>
             </div>
         </div>
-        <div class="col-5">
+        <div class="col-12 col-md-5 stair__product_right">
             <div class="col-12 pt-5 pt-md-4 pb-0 py-xl-4 px-3 px-lg-5 stair__product_bloc">
                 <div class="row">
-                    <div class="col-12 px-2">
+                    <div class="col-12 px-2 pt-0 pt-md-4 pt-xl-0">
                         <p class="text-muted small"><output id="product_SKU_73111">Réf. de l'article : 2490390</output></p>
                     </div>
                     <div class="col-12 px-2">
-                        <h1 class="h3 font-weight-bold">Escalier Primo <sup class="text-primary">&#9679</sup></h1>
+                        <h1 class="h3 font-weight-bold">{{ categories[global.request.get('code')]['label']['content'] }}<sup class="text-primary">&#9679</sup></h1>
                     </div>
                     <div class="col-12 p-2">
                         <div class="row">
-                            <div class="col-12 col-sm-5">
+                            <div class="col-12 col-lg-5">
                                 <p class="pt-1 pt-lg-0">
                                     <a href="#description" class="font-weight-bold text-dark"><u>Détails produit</u></a>
                                 </p>
                             </div>
-                            <div class="col-12 col-sm-7 px-sm-0">
+                            <div class="col-12 col-lg-7 px-lg-0">
                                 <a href="#avis_clients" class="text-dark">
                                     <div class="d-inline-flex">
                                         <div class="stars-row pr-2">
@@ -115,9 +157,10 @@
                     </div>
                     <div class="col-12 p-2">
                         <div class="row">
-                            <div class="col-5">
+                            <div class="col-12 col-xl-7 d-flex">
+                                <p class="font-weight-bold my-auto">Cette configuration est disponible uniquement en magasin</p>
                             </div>      
-                            <div class="col-7 mt-4">
+                            <div class="col-12 col-xl-5 mt-4">
                                 <div class="row">
                                     <div class="col-12 text-right" id="price_display_45571">
                                         {% if data.session.promo is defined and data.session.promo == 1 %}
@@ -152,14 +195,25 @@
                     </div>
                     <div class="col-12 pt-3">
                         <div class="row">
-                            <div class="col-6">
-                                <a href="#" class="btn btn-light col-12 py-2">
-                                    <div id="productPageAdd2Cart">
+                            <div class="col-12 pb-2">
+                                <a href="#rdv-mag-cad" class="btn btn-light col-12 py-2">
+                                    <div>
                                         RDV Magasin
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-6">
+                        </div>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 pb-2">
+                                <a href="#rdv-mag-cad" class="btn btn-light col-12 py-2">
+                                    <div>
+                                        RDV Magasin
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-6">
                                 <a id="add2CartBtn" href="#" class="btn btn-primary col-12 py-2" onclick="javascript:setCurrentId('add2CartBtn');productDisplayJS.Add2ShopCartAjax('entitledItem_89104',document.getElementById('quantity_89104').value, false)" wairole="button" role="button" title="Ajouter au panier" onkeypress="javascript:MessageHelper.setFocusElement('add2CartBtn');" data-toggle="modal" >
                                     <div id="productPageAdd2Cart">
                                         Ajouter au panier
@@ -168,7 +222,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 pt-4">
+                    <div class="col-12">
                         <div dojotype="wc.widget.RefreshArea" id="itemAvailabilityRefreshAreaPopup">
                             <p id="firstDefaultShop_standardUI">
                                 {% if data.session.stock is defined and data.session.stock == 'dispo' %}							
@@ -196,10 +250,11 @@
         </div>
     </div>
 </div>
-<div class="bg-light">
+
+<div class="bg-light productStair overflow-hidden">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 offset-lg-2 col-12">
+            <div class="col-12 col-lg-8 offset-lg-2">
                 <p class="h5 description__title text-center my-4 pt-lg-5 pb-lg-4 px-xl-5 mx-xl-5 d-none d-sm-block">
                     L’escalier Primo en hêtre ou sapin offre un excellent rapport qualité-prix. Limons, main courante et contremarches sont revêtus d’un placage en bois. Recoupe et ajout de socle sont possibles.
                 </p>
@@ -210,17 +265,146 @@
                 </p>
             </div>
         </div>
+        <div class="row pt-5">
+            <div class="col-12 col-lg-7 offset-5 offset-xl-5 my-5 bg-cover h-600 d-none d-lg-block" style="background-image: url({{ categories[global.request.get('code')]['longDescriptionImg1']['content'] }});">
+            </div>
+            <div class="position-lg-absolute">
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-xl-1 pb-3 px-4">
+                        <p class="title_h1 text-uppercase pt-lg-5">
+                            {{ categories[global.request.get('code')]['longDescriptionTitle1']['content'] }}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-11 offset-xl-1 bg-white p-3 p-md-5 max-width-600">
+                        <p class="px-3 px-sm-4 my-0">{{ categories[global.request.get('code')]['longDescription1']['content']|raw }}</p>
+                        <p class="text-center mt-4">
+                            <a href="#rdv-mag-cad" class="btn btn-light px-2 px-md-5 py-2 mx-0 mx-md-3">
+                                Prendre rendez-vous en magasin
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-lg-none pt-4">
+                        <img src="{{ categories[global.request.get('code')]['longDescriptionImg1']['content'] }}" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% if categories[global.request.get('code')]['videoTitle']['content']|length > 0 %}
+        <div class="row py-5 py-xl-0 px-2">
+            <div class="col-12 col-lg-9 col-xl-5 offset-xl-1 p-xl-5" id="detail">
+                <p class="title_h1 text-uppercase h2 pt-5 pt-lg-0">
+                    {{ categories[global.request.get('code')]['videoTitle']['content'] }}
+                </p>
+                {{ categories[global.request.get('code')]['videoDesc']['content'] }}
+            </div>
+            <div class="col-12 col-lg-9 offset-lg-3 offset-xl-0 col-xl-5 p-xl-5">
+                <div class="col-12 my-4 px-0 bg-red-shift">
+                    <div class="bg-cover h-300 d-flex cursor-pointer" style="background-image: url({{ categories[global.request.get('code')]['videoImg']['content'] }})" data-toggle="modal" data-target="#videoModal">
+                        <div class="m-auto">
+                            <p class="text-center mb-1"><svg width="60" height="60"><use xlink:href="#play-icon"/></svg></p>
+                            <p class="text-white text-center mb-0">Voir la vidéo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        {% include 'storeWidgets/madeinfrance/madeinfrance.twig' with {'bloc': '<div class="p-3 bg-dark w-200 h-200 ml-auto"><p class="kitchen__tiny_title">Formes possibles</p><p class="text-uppercase kitchen__tiny_title d-flex"><img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1528556831/picto_stair_madeFranec.png" class="img-fluid m-auto h-110" /></p></div>'} %}
+
+        <div class="row py-lg-5" id="description">
+            <div class="col-12 col-lg-7 offset-5 offset-xl-5 bg-cover h-800 d-none d-lg-block" style="background-image: url({{ categories[global.request.get('code')]['longDescriptionImg2']['content'] }});">
+            </div>
+            <div class="position-lg-absolute my-auto pt-md-5">
+                <div class="row pt-5 px-4 px-md-5 px-lg-0">
+                    <div class="col-12 col-lg-11 offset-xl-1 bg-white p-0 max-width-600">
+                        <div class="position-relative">
+                            <div class="bg-skew position-absolute bg-dark"></div>
+                            <p class="h1 text-white font-secondary bg-dark position-relative pt-5 px-5 pb-3 z-index-1">En détail</p>
+                        </div>
+                        <div class="px-3 px-md-5 pt-5 pb-2 pb-md-5">
+                            <div class="h-300 w-100 scrollbar">
+                                {{ categories[global.request.get('code')]['longDesc']['content']|raw }}
+                            </div>
+                            <p class="mt-3 mt-md-4 text-center">
+                                <a href="#" class="btn btn-light px-5 py-2 mx-3">
+                                    Aide au montage
+                                </a>
+                            </p>
+                            <p class="mt-3 text-center">
+                                <a href="#" class="btn btn-light px-1 px-md-5 py-2 mx-0 mx-md-3">
+                                    Tableau des dimensions disponibles
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col-7 col-xl-5 offset-1 offset-xl-2 bg-cover img-fluid w-100 h-400 d-none d-lg-block" style="background: url('https://res.cloudinary.com/dwkgy95ov/image/upload/v1528133172/pose-lapeyre.png')">
+            </div>
+            <div class="col-2 p-0 d-none d-lg-block">
+                <div class="p-3 bg-dark w-200 h-200 position-absolute bottom-0">
+                    <p class="text-uppercase kitchen__tiny_title pt-3">
+                        La pose
+                    </p>
+                    <p class="text-white">
+                        <a class="text-light" href="/c/magazine/autour-de-lapeyre/usines"> &gt; En savoir plus</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="container">
-    {% include 'storeWidgets/customersOpinion/customersOpinion.twig' %}
+<div class="bg-white">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-xl-10 offset-xl-1 col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="h1 font-secondary text-center">Votre projet escalier en 4 grandes étapes</p>
+                    </div>
+                </div>
+                {% include 'storeWidgets/stairSteps/stairSteps.twig' %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light">
+    <div class="container">  
+        <div class="row pt-5">
+            <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 p-lg-5 mb-5 pt-5 pt-lg-0">
+                <p class="title_h1 text-uppercase">
+                    {{ categories[global.request.get('code')]['testimonialTitle']['content'] }}
+                </p>
+                <blockquote class="blockquote position-relative kitchen__blockquote">
+                    <p class="mb-0 small"><em>{{ categories[global.request.get('code')]['testimonial']['content'] }}</em></p>
+                    <footer class="blockquote-footer text-dark pt-2">{{ categories[global.request.get('code')]['testimonialAuthor']['content'] }}</footer>
+                </blockquote>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-5 p-lg-5 pb-5">
+                <img src="{{ categories[global.request.get('code')]['testimonialImg']['content'] }}" class="img-fluid" />
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="bg-light">
     <div class="container">
         {% include 'storeWidgets/appointment/appointment.twig' %}
     </div>
+</div>
+
+<div class="container">
+    {% include 'storeWidgets/customersOpinion/customersOpinion.twig' %}
 </div>
 
 {% include 'storeWidgets/availabilityModal/availabilityModal.twig' %}
@@ -240,13 +424,29 @@
     </div>
 </div>
 
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <iframe width="100%" height="400" src="{{ categories[global.request.get('code')]['videoUrl']['content'] }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'storeWidgets/addToCart/addToCart.twig' %}
 
 <script>
     $('.stair__display_thumb_image').click(function() {
         $('.stair__display_thumb_image').removeClass('fp__selected');
-        $('.stair__display_thumb_desc').hide();
+        $('.stair__display_thumb_desc').css('opacity','0');
         $(this).addClass('fp__selected');
-        $(this).next('.stair__display_thumb_desc').fadeIn();
+        $(this).next('.stair__display_thumb_desc').css('opacity','.7');
         $(this).attr('data-image-hd-url');
         $('#imageModal img').attr('src', $(this).attr('data-image-hd-url'));
     });
@@ -267,6 +467,57 @@
         $("#fp__quantity").val(parseInt($("#fp__quantity").val())+1);
         refresh_packing_qty();
     });
+
+
+    /* Sticky - Start */
+
+    function refresh_sticky () {
+        var e = $('.stair__product_right'); 
+        var f = $('.stair__product_bloc'); 
+        var g = $('#carouselStair').outerHeight()+$('#carouselStair').offset().top;
+        var h = $('.stair__display_thumbnails');
+
+        if($(document).scrollTop()>$('#header__nav').height() && g >= f.offset().top+f.outerHeight()-20) {
+            e.addClass('stair__product_right_stickyTop');
+            e.css('left',stair_left+'px');
+            f.css('width',stair_width+'px');
+            f.removeClass('stair__product_bloc_stickyBottom');
+        } else {
+            e.removeClass('stair__product_right_stickyTop');
+            e.css('left','0px');
+        } 
+
+        if (g < f.offset().top+f.outerHeight()) {
+            e.removeClass('stair__product_right_stickyTop');
+            e.css('left','0px');
+            f.addClass('stair__product_bloc_stickyBottom');
+            f.css('max-width',stair_width+'px');
+        } else {
+            f.removeClass('stair__product_bloc_stickyBottom');
+        }
+
+        if (h.offset().top + g + $('#carouselStair').outerHeight()) {
+            h.addClass('stair__display_thumbnails_unstick');
+        } 
+        if ($(document).scrollTop() < stair_shift) {
+            h.removeClass('stair__display_thumbnails_unstick');
+        }
+    }
+
+    var stair_left = $('.stair__product_right').offset().left;
+    var stair_width = $('.stair__product_bloc').outerWidth();
+    var stair_shift = $('#carouselStair').offset().top + $('#carouselStair').height()-$('.stair__display_thumbnails').offset().top-$('.stair__display_thumbnails').height()+$(document).scrollTop();
+
+    $('document').ready(function() {
+        refresh_sticky();
+        $('.stair__display_thumbnails').css('opacity','1');
+    })
+
+    $(window).scroll(function () {
+        refresh_sticky();
+    });
+
+    /* Sticky - End */
 
 </script>
 

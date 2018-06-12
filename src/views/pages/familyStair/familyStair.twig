@@ -1,0 +1,89 @@
+{% extends"layouts/default.html" %}
+{% block content %}
+{% include 'storeWidgets/jumbotron/jumbotron.twig' %}
+
+{% include 'storeWidgets/breadcrumb/breadcrumb.twig' %}
+
+{% include 'storeWidgets/description/description.twig' %}
+
+<div class="container">
+    {% if childrens[global.request.get('code')]|length > 0 %}
+    {% for object in childrens[global.request.get('code')] %}
+    {% if(categories[object]['identifier']|slice(0, 3)=='CCN') %}
+    {% if(loop.first) %}
+    <div class="row">
+        <div class="col-12 text-center py-3 font-secondary text-uppercase px-0">
+            {% endif %}      
+            <a href="/{{ categories[object]['url'] }}">
+                <div class="family_stair__btn text-center text-dark d-inline-flex py-3 my-2 px-1 px-sm-5 border cursor-pointer mx-1 mx-sm-3">
+                    <span class="my-auto">{{ categories[object]['label']['content'] }}</span> <span class="ml-4 my-auto position-relative"><img src="{{ categories[object]['pictoLabel']['content'] }}" /></span>
+                </div>
+            </a>
+            {% if(loop.last) %}
+        </div>
+    </div>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+
+
+    <div class="row">
+        <div class="col-12 col-xl-10 offset-xl-1 pb-5">
+            <div class="row">
+                {% for object in childrens[global.request.get('code')] %}
+                {% set loop1 = loop.index %}
+                {% if(categories[object]['identifier']|slice(0, 3)=='CCN') %}
+                {% for object in childrens[categories[object]['identifier']] %}
+                <div class="col-6 col-md-4 col-lg-4 px-1 py-3 px-sm-3" id="thumb_carouselProduct{{loop1}}{{loop.index}}">
+                    {% include 'storeWidgets/thumbnailStair/thumbnailStair.twig' with {'loopIndex': loop1 ~ loop.index} %}
+                </div>
+                {% endfor %}
+                {% else %}
+                <div class="col-6 col-md-4 col-lg-4 px-1 py-3 px-sm-3" id="thumb_carouselProduct{{loop1}}{{loop.index}}">
+                    {% include 'storeWidgets/thumbnailStair/thumbnailStair.twig' with {'loopIndex': loop1 ~ loop.index} %}
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('<div class="col-6 col-md-4 col-lg-4 px-1 py-3 px-sm-3"><img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1528464357/promoStair_1.jpg" class="img-fluid" /></div>').insertAfter('div[id^="thumb_carouselProduct"]:nth-of-type(5)');
+    $('<div class="col-12 col-md-4 col-lg-4 px-1 py-3 px-4 px-lg-0" id="family_collection_edito_container"><div id="family_collection_edito" class="col-12 d-flex px-0 px-lg-5 py-3"><div class="m-auto"><p class="h1 py-lg-3 font-secondary text-uppercase text-brown-light line-height-normal">Lapeyre distributeur d\'escaliers</p><p class="py-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada arcu a mi vestibulum, in ipsum dolor sit amet.</p><p class="text-center pt-3"><a href="/c/magazine/autour-de-lapeyre/usines"><button class="btn btn-primary px-5 py-2 cursor-pointer">Découvrir</button></a></p></div></div></div>').insertAfter('div[id^="thumb_carouselProduct"]:nth-of-type(4)');
+</script>
+
+<div class="bg-light familyStair overflow-hidden">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12">
+                <p class="text-center h1 font-secondary universeStair__teaser">
+                    Votre projet escalier en 4 grandes étapes
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex">
+                <div class="text-center m-auto px-5">
+                    <p>
+                        <span class="bg-secondary text-white text-uppercase px-3 h3 py-1 font-secondary font-weight-bold">Faites vous accompagner!</span>
+                    </p>
+                    <p>Conseil, simulation 3D, pose à domicile...<br/>Lapeyre vous accompagne de A à Z dans ce projet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-xl-10 offset-xl-1">
+                {% include 'storeWidgets/stairSteps/stairSteps.twig' %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'storeWidgets/appointment/appointment.twig' %}
+
+{% include 'storeWidgets/services/services.twig' %}
+
+{% endblock %}

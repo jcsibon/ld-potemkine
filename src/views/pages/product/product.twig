@@ -495,76 +495,6 @@
 
 {% include 'storeWidgets/availabilityModal/availabilityModal.twig' %}
 
-<div class="modal fade" id="addCartModal" tabindex="-1" role="dialog" aria-labelledby="Ajout au panier" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header border-bottom-0">
-                <h5 class="modal-title d-flex pl-3 pt-2" id="addCartModalLabel">
-                    <svg width="30" height="30" class="m-auto"><use xlink:href="#check-circle-o"/></svg>
-                    <p class="my-auto pl-2 h5">Produit ajouté au panier</p>
-                </h5>
-                <button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body pb-0">
-                <div class="px-5">
-                    <div class="row border">
-                        <div class="col-4 p-0">
-                            <img src="https://statics.lapeyre.fr/img/catalogue/standardMain/721/458/201721458.jpg" class="img-fluid p-4" />
-                        </div>
-                        <div class="col-8 p-4">
-                            <p class="text-muted small mb-0">Réf. de l'article : 2490390</p>
-                            <p class="h5 font-weight-bold">Aménagement Panama</p>
-                            <p class="text-muted small">
-                                Quantité : 1
-                                <br/> - Couleur : Chêne blanchi
-                            </p>
-                            <div class="position-absolute p-4 bottom-0 right-0">
-                                <p class="text-right mb-0">
-                                    {% if data.session.promo is defined and data.session.promo == 1 %}
-                                    <s>219,00 € {% if data.session.pro is defined and data.session.pro == 1 %}HT{% endif %}</s>
-                                </p>
-                                {% endif %}
-                                <p class="text-right mb-0 font-secondary font-weight-bold h2 {% if data.session.promo is defined and data.session.promo == 1 %}text-secondary{% endif %}">
-                                    159,00 €
-                                    {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small font-weight-normal fp__pro_small">HT</sup>{% endif %}
-                                </p> 
-                                <p class="text-right mb-0">
-                                    {% if data.session.colisage is defined and data.session.colisage == 1 %}
-                                <p class="text-right m-0 text-muted small">Soit 9,96 m²</p>
-                                {% endif %}
-                                </p>
-                            {% if data.session.colisage is not defined %}
-                            <p class="text-right text-muted small mb-0">
-                                Dont éco-part : <span>5,20 €</span> {% if data.session.pro is defined and data.session.pro == 1 %}<sup class="small fp__pro_small">HT</sup>{% endif %}
-                            </p>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row px-0 py-3 px-5">
-                <div class="col-6 d-flex">
-                    <a id="continueShoppingButton" href="javascript:dijit.byId('MiniShopCartProductAdded').hide();deleteWidgetAssociationInPopin();" class="text-dark my-auto" data-dismiss="modal"><svg width="20" height="20" class="m-auto"><use xlink:href="#arrow-circle-left-grey"/></svg> <u>Continuer mes achats</u></a>
-                </div>
-                <div class="col-4 offset-2 text-right">
-                    <a id="product_popin_goToCart" href="#" class="btn btn-primary px-5" data-dismiss="modal"> Voir mon panier</a>
-                </div>
-            </div>
-            <div class="row bg-light py-4">
-                <div class="col-12 text-center">
-                    <p class="h3">N'oubliez pas</p>
-                </div>
-                <div class="col-12 px-5 carousel3products">
-                    {% include 'storeWidgets/crosssell/crosssell.twig' %}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
 <div id="popupPhotoZoom" class="modal fade dijitDialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="dijitDialogPaneContent">
         <div class="widget_site_popup modal-dialog modal-lg">
@@ -597,6 +527,8 @@
         </div>
     </div>
 </div>
+
+{% include 'storeWidgets/addToCart/addToCart.twig' %}
 
 <script>
     $('.fp__display_thumbnails_container2>div').click(function() {
@@ -746,12 +678,6 @@
     });
     //Carousel vertical miniatures - End
 
-    $('#add2CartBtn').click(function(){
-        if (!$('.header__nav-menu').is(":visible")) {
-            $('#addCartModal').modal();
-            carouselRefresh();
-        }
-    });
 </script>
 
 {% if data.session.preprod is defined %}

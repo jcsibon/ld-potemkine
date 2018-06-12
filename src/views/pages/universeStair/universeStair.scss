@@ -1,0 +1,129 @@
+#carouselStair.carousel h2 {
+    color: $font-light;
+    font-family: $font-family-1;
+    font-size: 55px;
+    line-height: 1em;
+}
+#carouselStair .carousel-indicators > li {
+    background: $gray-300;
+    width: 12px;
+    height: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#carouselStair .carousel-indicators {
+    bottom: -15px;
+}
+
+.universeStair .thumbnailFamily {
+    border: 7px solid $white;
+}
+
+.universeStair__teaser {
+    font-size: 50px;
+}
+
+#carouselStair .carousel-item > div:nth-of-type(1) {
+    top: 30%;
+    left: 10%;
+}
+
+#carouselStair .carousel-indicators > li.active {
+    background: $red;
+}
+
+.universeStair__table {
+    min-width: 660px;
+}
+
+.universeStair__table .row:nth-of-type(1) {
+    border-top: 1px dashed $red-secondary;
+}
+
+.universeStair__table .row {
+    border-bottom: 1px dashed $red-secondary;
+    width: fit-content;
+}
+
+.universeStair__table > div > div:nth-of-type(1) {
+    border-left: 1px dashed $red-secondary;
+}
+
+.universeStair__table > div > div {
+    border-right: 1px dashed $red-secondary;
+    width: 220px;
+    height: 200px;
+}
+
+.universeStair__table div {
+    border-image: url("https://res.cloudinary.com/dwkgy95ov/image/upload/v1518721326/dash_red.png") 1 round;
+}
+
+@media screen and (max-width: 1200px) {
+    #carouselStair.carousel h2 {
+        font-size: 34px;
+    }
+    #carouselStair.carousel h4 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #carouselStair .carousel-item > div:nth-of-type(1) {
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .thumbnailFamily.h-md-700 {
+        height: 700px !important;
+    }
+
+    .thumbnailFamily.h_50 {
+        height: 50%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    #carouselStair .carousel-item > div:nth-of-type(1) {
+        top: 250px !important;
+        max-width: 90%;
+        margin: 0 5% !important;
+    }
+    #carouselStair.carousel {
+        height: 500px;
+    }
+    #carouselStair.carousel h2 {
+        font-size: 22px;
+    }
+    #carouselStair.carousel h4 {
+        font-size: 12px;
+    }
+
+    .carouselStair_visual {
+        position: absolute;
+        top:-230px
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #carouselStair.carousel button a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #carouselStair .carousel-item > div {
+        top: -100px !important;
+    }
+    #carouselStair .carousel-item > div:nth-of-type(1) {
+        top: 180px !important;
+    }
+    #carouselStair.carousel {
+        height: 425px;
+    }
+    #carouselStair.carousel h4 {
+        display: none;
+    }
+}

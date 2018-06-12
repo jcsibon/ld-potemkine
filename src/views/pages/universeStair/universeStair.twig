@@ -1,0 +1,241 @@
+{% extends"layouts/default.html" %}
+{% block content %}
+
+{% include 'storeWidgets/jumbotron/jumbotron.twig' %}
+
+{% include 'storeWidgets/breadcrumb/breadcrumb.twig' %}
+
+{% include 'storeWidgets/description/description.twig' %}
+
+<div class="container px-xl-3">
+    <div class="col-12 d-flex py-4 px-0">
+        <div id="carouselStair" class="carousel slide m-auto pb-5 overflow-hidden w-100" data-ride="ccarousel" >
+            <ol class="carousel-indicators">
+                <li data-target="#carouselStair" data-slide-to="0" class="mx-2 active"></li>
+                <li data-target="#carouselStair" data-slide-to="1" class="mx-2"></li>
+                <li data-target="#carouselStair" data-slide-to="2" class="mx-2"></li>
+            </ol>
+            <div class="carousel-inner overflow-visible" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-5 col-lg-4 bg-dark position-absolute pb-2 pt-4 pr-4 pl-4 m-5 d-table z-index-1">
+                        <div class="p-0 p-lg-3">
+                            <h2 class="text-uppercase">L'escalier Jazz</h2>
+                            <p class="text-white py-2 col-12 col-lg-8">En hêtre ou en chêne, optez pour la qualité. Lorem ipsum dolor sit amet consegur.</p>
+                            <p class="text-center pt-3">
+                                <button class="btn btn-secondary rounded px-5 py-2" type="button"><a href="" class="text-white">Découvrir</a></button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 offset-md-5 carouselStair_visual px-0">
+                        <img class="d-block img-fluid" src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1528371004/escalierJazz.jpg" alt="L'escalier Jazz">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-5 col-lg-4 bg-dark position-absolute pb-2 pt-4 pr-4 pl-4 m-5 d-table z-index-1">
+                        <div class="p-0 p-lg-3">
+                            <h2 class="text-uppercase">L'escalier Jazz</h2>
+                            <p class="text-white py-2 col-12 col-lg-8">En hêtre ou en chêne, optez pour la qualité. Lorem ipsum dolor sit amet consegur.</p>
+                            <p class="text-center pt-3">
+                                <button class="btn btn-secondary rounded px-5 py-2" type="button"><a href="" class="text-white">Découvrir</a></button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 offset-md-5 carouselStair_visual px-0">
+                        <img class="d-block img-fluid" src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1528371004/escalierJazz.jpg" alt="L'escalier Jazz">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-5 col-lg-4 bg-dark position-absolute pb-2 pt-4 pr-4 pl-4 m-5 d-table z-index-1">
+                        <div class="p-0 p-lg-3">
+                            <h2 class="text-uppercase">L'escalier Jazz</h2>
+                            <p class="text-white py-2 col-12 col-lg-8">En hêtre ou en chêne, optez pour la qualité. Lorem ipsum dolor sit amet consegur.</p>
+                            <p class="text-center pt-3">
+                                <button class="btn btn-secondary rounded px-5 py-2" type="button"><a href="" class="text-white">Découvrir</a></button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 offset-md-5 carouselStair_visual px-0">
+                        <img class="d-block img-fluid" src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1528371004/escalierJazz.jpg" alt="L'escalier Jazz">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-5 universeStair">
+    <div class="row">
+        <div class="col-12">
+            <p class="text-center h1 font-secondary universeStair__teaser">
+                Découvrez tous nos types d'escaliers,<br>à partir de 99€
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-xl-10 offset-xl-1 pt-5 pb-3 px-4 px-md-5">
+            <div class="row">
+                <div class="col-12 col-md-4 bg-cover rounded h-md-700 d-flex thumbnailFamily cursor-pointer px-0" style="background-image: url('https://res.cloudinary.com/dwkgy95ov/image/upload/v1528373105/universeStair_1.jpg');">
+                    <a href="/gains-place-CCN688078" class="z-index-1 h_100 w-100 d-flex">
+                        <h1 class="text-uppercase text-white text-center m-auto font-secondary">Gain<br/>d'espace</h1>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 h-md-700 px-0">
+                    <div class="col-12 bg-cover rounded h_50 d-flex thumbnailFamily cursor-pointer px-0" style="background-image: url('https://res.cloudinary.com/dwkgy95ov/image/upload/v1528452998/universeStair_3.jpg');">
+                        <a href="/produits-pose-accessoires-CCN0070" class="z-index-1 h_100 w-100 d-flex">
+                            <h1 class="text-uppercase text-white text-center m-auto font-secondary">Accessoires</h1>
+                        </a>
+                    </div>
+                    <div class="col-12 bg-cover rounded h_50 d-flex thumbnailFamily cursor-pointer px-0" style="background-image: url('https://res.cloudinary.com/dwkgy95ov/image/upload/v1528373105/universeStair_4.jpg');">
+                        <a href="/escaliers-exterieurs-CCN0065" class="z-index-1 h_100 w-100 d-flex">
+                            <h1 class="text-uppercase text-white text-center m-auto font-secondary">Escaliers<br/>d'extérieur</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 bg-cover rounded h-md-700 d-flex thumbnailFamily cursor-pointer px-0" style="background-image: url('https://res.cloudinary.com/dwkgy95ov/image/upload/v1528452998/universeStair_2.jpg');">
+                    <a href="/escaliers-interieur-CCN0227" class="z-index-1 h_100 w-100 d-flex">
+                        <h1 class="text-uppercase text-white text-center m-auto font-secondary">Escaliers<br/>intérieurs</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-light universeStair overflow-hidden">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12">
+                <p class="text-center h1 font-secondary universeStair__teaser">
+                    Lapeyre, expert escalier
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex">
+                <div class="text-center m-auto px-5">
+                    <p>
+                        <span class="bg-secondary text-white text-uppercase px-3 h3 py-1 font-secondary font-weight-bold">Faites vous accompagner!</span>
+                    </p>
+                    <p>Conseil, simulation 3D, pose à domicile...<br/>Lapeyre vous accompagne de A à Z dans ce projet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-xl-10 offset-xl-1">
+                {% include 'storeWidgets/stairSteps/stairSteps.twig' %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'storeWidgets/appointment/appointment.twig' %}
+
+<div class="bg-light">
+    <div class="container">
+        <div class="row position-relative">
+            <div class="col-12 col-md-10 offset-md-1 pb-5">
+                <div class="row">
+                    <div class="col-12 col-lg-10 col-xl-7 offset-xl-1 my-5 bg-cover h-400 d-none d-lg-block" style="background-image: url(https://res.cloudinary.com/dwkgy95ov/image/upload/v1528380657/universeStair_5.jpg);">
+                    </div>
+                    <div class="position-lg-absolute">
+                        <div class="row m-0">
+                            <div class="col-12 col-lg-8 col-xl-7 offset-lg-4 offset-xl-6 d-flex pt-lg-5 order-lg-first">
+                                <div class="row mr-xl-4 mt-4">
+                                    <div class="p-3 bg-dark h-200 w-200 ml-auto order-lg-2">
+                                        <p class="text-uppercase kitchen__tiny_title pt-3">
+                                            Nous fabriquons <span class="text-white d-block">de nombreuses formes</span>
+                                        </p>
+                                    </div>
+                                    <p class="bg-white p-3 p-md-5 position-relative mb-0 h-200 d-flex order-lg-1">
+                                        <img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1528381500/universeStair_6.png" class="m-auto img-fluid"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container universeStair pb-5">
+    <div class="row py-5">
+        <div class="col-12">
+            <p class="text-center h1 font-secondary universeStair__teaser">
+                Comment bien choisir votre escalier
+            </p>
+        </div>
+    </div>
+    <div class="row pb-5">
+        <div class="col-12 d-flex overflow-x-auto">
+            <div class="universeStair__table m-auto pb-4">
+                <div class="row m-0">
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="bg-secondary text-white d-flex text-center">
+                        <div class="m-auto p-3">
+                            Nous vous conseillons à titre indicatif de prendre en compte ces 5 critères lors
+                            du choix de votre futur escalier.
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div>
+                    </div>
+                    <div class="bg-light d-flex text-center">
+                        <div class="m-auto p-3">
+                            <p class="text-uppercase font-secondary h3">Usage</p>
+                            Comment allez-vous utiliser cet escalier ? Seule ou à plusieurs ?
+                        </div>
+                    </div>
+                    <div class="bg-light d-flex text-center">
+                        <div class="m-auto p-3">
+                            <p class="text-uppercase font-secondary h3">Confort & Sécurité</p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel tincidunt.
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="bg-light d-flex text-center">
+                        <div class="m-auto p-3">
+                            <p class="text-uppercase font-secondary h3">Esthétique</p>
+                            Il s'agit du style de votre escalier, du plus simple au plus travaillé.
+                        </div>
+                    </div>
+                    <div class="bg-light d-flex text-center">
+                        <div class="m-auto p-3">
+                            <p class="text-uppercase font-secondary h3">Contraintes d'espace</p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel tincidunt.
+                        </div>
+                    </div>
+                    <div class="bg-light d-flex text-center">
+                        <div class="m-auto p-3">
+                            <p class="text-uppercase font-secondary h3">prix</p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{#
+{% include 'storeWidgets/contents/contents.twig' %}
+#}
+
+
+
+{% include 'storeWidgets/services/services.twig' %}
+
+
+<script>
+    function animationScroll(destination) {
+        $('html, body').animate({
+            scrollTop: $( destination ).offset().top-170
+        }, 500);
+    }
+</script>
+
+{% endblock %}

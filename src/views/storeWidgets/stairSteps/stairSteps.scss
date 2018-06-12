@@ -1,0 +1,67 @@
+.stairSteps > div {
+    min-width: 900px;
+}
+
+.stairSteps__breadcrumb-skew {
+    -moz-transform: skew(0deg, -10deg);
+    -webkit-transform: skew(0deg, -10deg);
+    -o-transform: skew(0deg, -10deg);
+    -ms-transform: skew(0deg, -10deg);
+    transform: skew(0deg, -10deg);
+    height: 80px;
+    width: 70px;
+}
+
+.stairSteps__breadcrumb-skew p {
+    -moz-transform: skew(0deg, 10deg);
+    -webkit-transform: skew(0deg, 10deg);
+    -o-transform: skew(0deg, 10deg);
+    -ms-transform: skew(0deg, 10deg);
+    transform: skew(0deg, 10deg);
+}
+
+.stairSteps__breadcrumb::after {
+    border:1px dashed $red-secondary;
+    -o-border-image:url(https://res.cloudinary.com/dwkgy95ov/image/upload/v1518721326/dash_red.png) 1 round;
+    border-image:url(https://res.cloudinary.com/dwkgy95ov/image/upload/v1518721326/dash_red.png) 1 round;
+    content: " ";
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 89px;
+}
+
+.stairSteps__breadcrumb>div:first-of-type .stairSteps__breadcrumb-skew::before {
+    background: $white;
+    content: " ";
+    width: 200px;
+    position: absolute;
+    left: -200px;
+    height: 100%;
+    -moz-transform: skew(0deg, 10deg);
+    -webkit-transform: skew(0deg, 10deg);
+    -o-transform: skew(0deg, 10deg);
+    -ms-transform: skew(0deg, 10deg);
+    transform: skew(0deg, 10deg);
+}
+
+.stairSteps__breadcrumb>div:last-of-type .stairSteps__breadcrumb-skew::before {
+    background: $white;
+    content: " ";
+    width: 200px;
+    position: absolute;
+    right: -200px;
+    height: 100%;
+    -moz-transform: skew(0deg, 10deg);
+    -webkit-transform: skew(0deg, 10deg);
+    -o-transform: skew(0deg, 10deg);
+    -ms-transform: skew(0deg, 10deg);
+    transform: skew(0deg, 10deg);
+}
+
+.bg-light .stairSteps__breadcrumb>div:first-of-type .stairSteps__breadcrumb-skew::before, .bg-light .stairSteps__breadcrumb>div:last-of-type .stairSteps__breadcrumb-skew::before {
+    background: $gray-light;
+}

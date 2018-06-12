@@ -6,6 +6,9 @@
             <div class="row m-0">
                 <div class="col-12 col-lg-6 col-xl-5 offset-lg-1 offset-xl-3 d-flex pt-lg-5 order-lg-first">
                     <div class="row mr-xl-4 mt-4">
+                        {% if bloc is defined %}
+                        {{ bloc|raw }}
+                        {% else %}
                         <div class="p-3 bg-dark w-200 h-200 ml-auto">
                             <p class="text-uppercase kitchen__tiny_title pt-3">
                                 Découvrez <span class="text-white d-block">nos engagements</span>
@@ -14,6 +17,7 @@
                                 <a class="text-light" href="/c/magazine/autour-de-lapeyre/usines"> &gt; En savoir plus</a>
                             </p>
                         </div>
+                        {% endif %}
                         <p class="bg-white p-3 p-md-5 frenchFlag position-relative">L’essentiel de nos produits est fabriqué en France. Grâce à ses dix usines françaises, Lapeyre contrôle toute la chaîne de production afin de garantir des produits d’une QUALITÉ et d’une FIABILITÉ irréprochables.</p>
                     </div>
                 </div>

@@ -51,11 +51,6 @@ $app->get('/childrens', function() use($app, $childrens) {
 $parents = json_decode(file_get_contents("data/parents.json"),1);
 $app['twig']->addGlobal('parents', $parents);
 
-
-
-
-
-
 $app['twig']->addGlobal("uri", strtok(trim($_SERVER["REQUEST_URI"],"/"),'?'));
 
 
@@ -113,6 +108,9 @@ $app->get('/session', function() use($app) {
 $app->get('/', function() use($app) {
 	return $app['twig']->render('pages/index/index.twig');
 });
+
+/* Debug */
+// print_r($categories);
 
 /* CATALOGUE */
 $app->get('/{urlname}-{code}/', function($code) use($app, $categories, $parents) {
@@ -241,8 +239,5 @@ $app->get('/exampleProduct', function() use($app) {
 });
 $app->get('/exampleBundle', function() use($app) {
 	return $app['twig']->render('pages/productBundle/productBundle.twig');
-});
-$app->get('/exampleStair', function() use($app) {
-	return $app['twig']->render('pages/productStair/productStair.twig');
 });
 $app->run();
