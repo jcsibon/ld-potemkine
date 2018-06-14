@@ -1,0 +1,12 @@
+.family_stair__btn.active, .family_stair__btn:hover {
+    color: $red-secondary !important;
+    border-color: $red-secondary !important;
+}
+
+.family_stair__btn span:nth-of-type(2) {
+    background: $gray-dark;
+}
+
+.family_stair__btn.active > span:nth-of-type(2), .family_stair__btn:hover > span:nth-of-type(2) {
+    background: $red-secondary;
+}

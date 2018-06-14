@@ -54,21 +54,21 @@ div[id^="carouselProduct"] .carousel-item {
     padding-top: 100% !important;
 }
 
-div[id^="carouselProduct"] a[class^="carousel-control"], .crossselCollection a[class^="carousel-control"] {
+div[id^="carouselProduct"] a[class^="carousel-control"], .crossselProduct a[class^="carousel-control"], .crossselCollection a[class^="carousel-control"] {
     visibility: hidden;
 }
 div[id^="carouselProduct"] a[class^="carousel-control"] {
     width: inherit;
 }
-div[id^="carouselProduct"] a[class^="carousel-control"]>div, .crossselCollection a[class^="carousel-control"]>div {
+div[id^="carouselProduct"] a[class^="carousel-control"]>div, .crossselProduct a[class^="carousel-control"]>div, .crossselCollection a[class^="carousel-control"]>div {
     width: 40px;
     height: 40px;
 }
-div[id^="carouselProduct"] .carousel-control-next, div[id^="carouselProduct"] .carousel-control-prev, .crossselCollection .carousel-control-next, .crossselCollection .carousel-control-prev {
+div[id^="carouselProduct"] .carousel-control-next, div[id^="carouselProduct"] .carousel-control-prev, .crossselProduct .carousel-control-next, .crossselProduct .carousel-control-prev, .crossselCollection .carousel-control-next, .crossselCollection .carousel-control-prev {
     opacity: inherit;
 }
 
-div[id^="carouselProduct"] .carousel-control-next:hover > div, div[id^="carouselProduct"] .carousel-control-prev:hover > div, .crossselCollection .carousel-control-next:hover > div, .crossselCollection .carousel-control-prev:hover > div {
+div[id^="carouselProduct"] .carousel-control-next:hover > div, div[id^="carouselProduct"] .carousel-control-prev:hover > div, .crossselProduct .carousel-control-next:hover > div, .crossselProduct .carousel-control-prev:hover > div, .crossselCollection .carousel-control-next:hover > div, .crossselCollection .carousel-control-prev:hover > div {
     background-color: $red-secondary !important;
 }
 
@@ -84,7 +84,7 @@ div[id^="carouselProduct"] .carousel-indicators>li.active {
     background: $red;
 }
 
-.crossselCollection:hover a[class^="carousel-control"] {
+.crossselProduct:hover a[class^="carousel-control"], .crossselCollection:hover a[class^="carousel-control"] {
     visibility: visible;
     width: initial;
 }
@@ -116,6 +116,9 @@ div[id^="carouselProduct"] .carousel-indicators>li.active {
 @include media-breakpoint-up(lg) {
     .thumb_product:hover a[class^="carousel-control"] {
         visibility: visible;
+    }
+    .thumb_product__bottomBloc .h5 {
+        font-size: 17px;
     }
 }
 
