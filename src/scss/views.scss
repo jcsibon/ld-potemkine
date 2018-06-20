@@ -12,6 +12,11 @@
 }
 
 
+.family_stair__btn {
+    width: 40%; 
+    max-width: 450px;
+}
+
 .family_stair__btn.active, .family_stair__btn:hover {
     color: $red-secondary !important;
     border-color: $red-secondary !important;
@@ -21,7 +26,7 @@
     background: $gray-dark;
 }
 
-.family_stair__btn.active > span:nth-of-type(2), .family_stair__btn:hover > span:nth-of-type(2) {
+.family_stair__btn.active > div > span:nth-of-type(2), .family_stair__btn:hover > div > span:nth-of-type(2) {
     background: $red-secondary;
 }
 .border-dashed-black {
@@ -87,6 +92,9 @@
 }
 .w-70 {
     width: 70px;
+}
+.h-60 {
+    height: 60px;
 }
 .h-110 {
     height: 110px;
@@ -1391,6 +1399,16 @@ p{
     border-image: url("https://res.cloudinary.com/dwkgy95ov/image/upload/v1518721326/dash_red.png") 1 round;
 }
 
+.stair_form_picto:hover > div {
+    display: block;
+}
+.stair_form_picto div {
+    display: none;
+    top: -17px;
+    left: -10px;
+    box-shadow: 0px 0px 4px $gray-600;
+}
+
 @media screen and (max-width: 1200px) {
     #carouselStair.carousel h2 {
         font-size: 34px;
@@ -2646,6 +2664,12 @@ div[id^="carouselProduct"] .carousel-indicators>li.active {
         font-size: 0.6rem;
     }
 }
+@include media-breakpoint-down(sm) {
+    .thumb_product_stair .thumb_product__bottomBloc {
+        height: 40px;
+    }
+}
+
 @include media-breakpoint-up(md) {
     .thumb_product__bloc_price .h6 {
         font-size: 20px;

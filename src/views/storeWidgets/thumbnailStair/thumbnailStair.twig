@@ -1,5 +1,5 @@
 <a href="/{{ categories[object]['seo']['urlKeyword']['content'] }}">
-    <div class="border bg-white thumb_product">
+    <div class="border bg-white thumb_product thumb_product_stair">
         <div id="carouselProduct{{loopIndex}}" class="position-relative carousel slide m-auto overflow-hidden">
             {% if categories[object]['imageFull2']['content']|length>1 %}
             <ol class="carousel-indicators d-lg-none mb-1">
@@ -47,10 +47,9 @@
             </div>
         </div>  
 
-        <div class="text-center px-1 d-flex thumb_product__bottomBloc h-85">
+        <div class="text-center px-1 d-flex thumb_product__bottomBloc h-60">
             <div class="m-auto">
-                <p class="small pt-2 mb-1 text-dark thumb_product__subTitle">Lorem ipsum dolor sit amet</p>
-                <p class="h5 font-weight-bold text-dark thumb_product__title">{{ categories[object]['label']['content'] }}</p>
+                <p class="h5 font-weight-bold text-dark thumb_product__title mb-0">{{ categories[object]['label']['content'] }}</p>
             </div>
         </div>
 
@@ -70,5 +69,4 @@
         </div>
         {% endif %}
     </div>
-
 </a>
