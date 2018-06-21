@@ -18,26 +18,32 @@
                                     <iframe src="" title="YouTube video player" allowfullscreen="1" id="youtubePlayer" frameborder="0" height="360" class="w-100"></iframe>
                                 </div>
                                 <div id="fullImageImageContainer">										
-                                    <img src="https://statics.lapeyre.fr/img/catalogue/standardMain/721/458/201721458.jpg" class="img-fluid d-none d-md-block" data-toggle="modal" data-target="#popupPhotoZoom">
+                                    <img src="" class="img-fluid d-none d-md-block" data-toggle="modal" data-target="#popupPhotoZoom">
                                 </div>
                             </div>
                         </div>
                         <div id="carouselFpIndicators" class="carousel slide d-block d-md-none" data-ride="carousel">
+                            {% if categories[global.request.get('code')]['imageFull2']['content']|length>1 %}
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselFpIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselFpIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselFpIndicators" data-slide-to="2"></li>
+                                {% for i in 2..10 %}
+                                {% if categories[global.request.get('code')]['imageFull' ~ i]['content']|length>1 %} 
+                                <li data-target="#carouselFpIndicators" data-slide-to="{{i-1}}"></li>
+                                {% endif %}
+                                {% endfor %}
                             </ol>
+                            {% endif %}
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
                                     <img id="WC_CachedProductOnlyDisplay_images_1_0" class="d-block img-fluid" src="{{ categories[global.request.get('code')]['imageFull']['content'] }}">
                                 </div>
+                                {% for i in 2..10 %}
+                                {% if categories[global.request.get('code')]['imageFull' ~ i]['content']|length>1 %} 
                                 <div class="carousel-item">
-                                    <img id="WC_CachedProductOnlyDisplay_images_1_1" class="d-block img-fluid" src="{{ categories[global.request.get('code')]['imageFull']['content'] }}">
+                                    <img id="WC_CachedProductOnlyDisplay_images_1_{{i}}" class="d-block img-fluid" src="{{ categories[global.request.get('code')]['imageFull' ~ i]['content']|replace({' ':'%20'}) }}">
                                 </div>
-                                <div class="carousel-item">
-                                    <img id="WC_CachedProductOnlyDisplay_images_1_2" class="d-block img-fluid" src="{{ categories[global.request.get('code')]['imageFull']['content'] }}">
-                                </div>
+                                {% endif %}
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
@@ -53,42 +59,42 @@
                 <div class="carousel-inner overflow-visible" role="listbox">
                     <div class="carousel-item cursor-pointer bg-cover active" data-toggle="modal" data-target="#imageModal" style="background-image: url('{{ categories[global.request.get('code')]['imageFull']['content'] }}');">
                     </div>
-                    <div class="carousel-item cursor-pointer bg-cover" data-toggle="modal" data-target="#imageModal" style="background-image: url('{{ categories[global.request.get('code')]['imageFull']['content'] }}');">
+                    {% set thumbLength = 1 %}
+                    {% for i in 2..10 %}
+                    {% if categories[global.request.get('code')]['imageFull' ~ i]['content']|length>1 %} 
+                    <div class="carousel-item cursor-pointer bg-cover" data-toggle="modal" data-target="#imageModal" style="background-image: url('{{ categories[global.request.get('code')]['imageFull' ~ i]['content']|replace({' ':'%20'}) }}');">
                     </div>
-                    <div class="carousel-item cursor-pointer bg-cover" data-toggle="modal" data-target="#imageModal" style="background-image: url('{{ categories[global.request.get('code')]['imageFull']['content'] }}');">
-                    </div>
+                    {% set thumbLength = thumbLength + 1 %}
+                    {% endif %}
+                    {% endfor %}
                     <div class="col-12 col-lg-8 col-xl-6 pl-4 pb-2 d-none d-md-block stair__display_thumbnails">
                         <div class="row">
+                            {% if categories[global.request.get('code')]['imageFull2']['content']|length>1 %}
                             <div class="stair__display_thumb position-relative my-2 mx-1 mx-xl-2 d-block col-12" data-target="#carouselStair" data-slide-to="0" class="img-fluid">
                                 <div class="row">
                                     <div style="background-image: url('{{ categories[global.request.get('code')]['imageFull']['content'] }}')" data-image-hd-url="{{ categories[global.request.get('code')]['imageFull']['content'] }}" class="col-2 fp__selected stair__display_thumb_image border bg-cover cursor-pointer"></div>
                                     <div class="col-10 bg-dark px-2 stair__display_thumb_desc d-none d-xl-block">
-                                        <p class="small m-0 text-white">Visuel 1/3 : </p>
-                                        <p class="small m-0 text-white">Escalier droit en hêtre noir de 274cm de hauteur, sans rampe avec contremarches.
+                                        <p class="small m-0 text-white">Visuel 1/{{ thumbLength }} : </p>
+                                        <p class="small m-0 text-white">{{ categories[global.request.get('code')]['imageFull']['detail'] }}
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="stair__display_thumb position-relative my-2 mx-1 mx-xl-2 d-block col-12" data-target="#carouselStair" data-slide-to="1" class="img-fluid">
+                            {% endif %}
+                            {% for i in 2..10 %}
+                            {% if categories[global.request.get('code')]['imageFull' ~ i]['content']|length>1 %} 
+                            <div class="stair__display_thumb position-relative my-2 mx-1 mx-xl-2 d-block col-12" data-target="#carouselStair" data-slide-to="{{i-1}}" class="img-fluid">
                                 <div class="row">
-                                    <div style="background-image: url('{{ categories[global.request.get('code')]['imageFull']['content'] }}')" data-image-hd-url="{{ categories[global.request.get('code')]['imageFull']['content'] }}" class="col-2 stair__display_thumb_image border bg-cover cursor-pointer"></div>
+                                    <div style="background-image: url('{{ categories[global.request.get('code')]['imageFull' ~ i]['content']|replace({' ':'%20'}) }}')" data-image-hd-url="{{ categories[global.request.get('code')]['imageFull' ~ i]['content']|replace({' ':'%20'}) }}" class="col-2 stair__display_thumb_image border bg-cover cursor-pointer"></div>
                                     <div class="col-10 bg-dark px-2 stair__display_thumb_desc d-none d-xl-block">
-                                        <p class="small m-0 text-white">Visuel 2/3 : </p>
-                                        <p class="small m-0 text-white">Escalier droit en hêtre noir de 274cm de hauteur, sans rampe avec contremarches.
+                                        <p class="small m-0 text-white">Visuel {{i}}/{{ thumbLength }} : </p>
+                                        <p class="small m-0 text-white">{{ categories[global.request.get('code')]['imageFull' ~ i]['detail'] }}
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="stair__display_thumb position-relative my-2 mx-1 mx-xl-2 d-block col-12" data-target="#carouselStair" data-slide-to="2" class="img-fluid">
-                                <div class="row">
-                                    <div style="background-image: url('{{ categories[global.request.get('code')]['imageFull']['content'] }}')" data-image-hd-url="{{ categories[global.request.get('code')]['imageFull']['content'] }}" class="col-2 stair__display_thumb_image border bg-cover cursor-pointer" ></div>
-                                    <div class="col-10 bg-dark px-2 stair__display_thumb_desc d-none d-xl-block">
-                                        <p class="small m-0 text-white">Visuel 3/3 : </p>
-                                        <p class="small m-0 text-white">Escalier droit en hêtre noir de 274cm de hauteur, sans rampe avec contremarches.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endif %}
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -327,20 +333,26 @@
                             <div class="bg-skew position-absolute bg-dark"></div>
                             <p class="h1 text-white font-secondary bg-dark position-relative pt-5 px-5 pb-3 z-index-1">En détail</p>
                         </div>
-                        <div class="px-3 px-md-5 pt-5 pb-2 pb-md-5">
+                        <div class="px-3 px-md-5 pt-5 pb-2 pb-md-3">
                             <div class="h-300 w-100 scrollbar">
                                 {{ categories[global.request.get('code')]['longDesc']['content']|raw }}
                             </div>
+                            {% if categories[global.request.get('code')]['notice_fixture']|length > 0 %}
                             <p class="mt-3 mt-md-4 text-center">
-                                <a href="#" class="btn btn-light px-5 py-2 mx-3">
-                                    Aide au montage
+                            {% for notice in categories[global.request.get('code')]['notice_fixture'] %}
+                                <a href="{{notice}}" target="_blank" class="btn btn-light px-4 py-2 mt-1 d-inline-block">
+                                    Aide au montage {% if loop.length>1 %}n°{{loop.index}}{% endif %}
                                 </a>
+                            {% endfor %}
                             </p>
+                            {% endif %}
+                            {% if categories[global.request.get('code')]['notice_sizes']|length > 0 %}
                             <p class="mt-3 text-center">
-                                <a href="#" class="btn btn-light px-1 px-md-5 py-2 mx-0 mx-md-3">
+                                <a href="{{categories[global.request.get('code')]['notice_sizes']}}" target="_blank" class="btn btn-light px-1 px-md-4 py-2 mx-0 mx-md-3">
                                     Tableau des dimensions disponibles
                                 </a>
                             </p>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -413,7 +425,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>

@@ -1,3 +1,8 @@
+.family_stair__btn {
+    width: 40%; 
+    max-width: 450px;
+}
+
 .family_stair__btn.active, .family_stair__btn:hover {
     color: $red-secondary !important;
     border-color: $red-secondary !important;
@@ -7,6 +12,6 @@
     background: $gray-dark;
 }
 
-.family_stair__btn.active > span:nth-of-type(2), .family_stair__btn:hover > span:nth-of-type(2) {
+.family_stair__btn.active > div > span:nth-of-type(2), .family_stair__btn:hover > div > span:nth-of-type(2) {
     background: $red-secondary;
 }

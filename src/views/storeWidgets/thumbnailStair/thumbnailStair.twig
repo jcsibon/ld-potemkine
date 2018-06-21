@@ -1,19 +1,25 @@
 <a href="/{{ categories[object]['seo']['urlKeyword']['content'] }}">
-    <div class="border bg-white thumb_product">
+    <div class="border bg-white thumb_product thumb_product_stair">
         <div id="carouselProduct{{loopIndex}}" class="position-relative carousel slide m-auto overflow-hidden">
+            {% if categories[object]['imageFull2']['content']|length>1 %}
             <ol class="carousel-indicators d-lg-none mb-1">
                 <li data-target="#carouselProduct{{loopIndex}}" data-slide-to="0" class="mx-2 active"></li>
-                <li data-target="#carouselProduct{{loopIndex}}" data-slide-to="1" class="mx-2"></li>
-                <li data-target="#carouselProduct{{loopIndex}}" data-slide-to="2" class="mx-2"></li>
+                {% for i in 2..10 %}
+                {% if categories[object]['imageFull' ~ i]['content']|length>1 %} 
+                <li data-target="#carouselProduct{{loopIndex}}" data-slide-to="{{i-1}}" class="mx-2"></li>
+                {% endif %}
+                {% endfor %}
             </ol>
+            {% endif %}
             <div class="carousel-inner overflow-visible" role="listbox">
-                <div class="carousel-item bg-cover thumb_product__high active" style="background-image: url({{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}); ">
-                </div>
-                <div class="carousel-item bg-cover thumb_product__high" style="background-image: url({{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}); ">
-                </div>
-                <div class="carousel-item bg-cover thumb_product__high" style="background-image: url({{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}); ">
-                </div>
+                <div class="carousel-item bg-cover thumb_product__high active" style="background-image: url({{ categories[object]['imageFull']['content']|replace({' ':'%20'}) }}); "></div>
+                {% for i in 2..10 %}
+                {% if categories[object]['imageFull' ~ i]['content']|length>1 %} 
+                <div class="carousel-item bg-cover thumb_product__high" style="background-image: url({{ categories[object]['imageFull' ~ i]['content']|replace({' ':'%20'}) }}); "></div>
+                {% endif %}
+                {% endfor %}
             </div> 
+            {% if categories[object]['imageFull2']['content']|length>1 %}
             <a class="carousel-control-prev left-0" href="#carouselProduct{{loopIndex}}" role="button" data-slide="prev">
                 <div class="bg-primary d-flex">
                     <svg width="20" height="20" class="m-auto"><use xlink:href="#arrow-point-to-left"></use></svg>
@@ -26,7 +32,7 @@
                     <span class="sr-only">Next</span>
                 </div>
             </a>
-
+            {% endif %}
             <div class="position-absolute d-flex top-0 right-0">
                 {% if data.session.promo is defined and data.session.promo == 1 %}
                 <div class="d-flex bg-secondary w-70 h-70 thumb_product__promo">
@@ -41,10 +47,9 @@
             </div>
         </div>  
 
-        <div class="text-center px-1 d-flex thumb_product__bottomBloc h-85">
+        <div class="text-center px-1 d-flex thumb_product__bottomBloc h-60">
             <div class="m-auto">
-                <p class="small pt-2 mb-1 text-dark thumb_product__subTitle">Lorem ipsum dolor sit amet</p>
-                <p class="h5 font-weight-bold text-dark thumb_product__title">{{ categories[object]['label']['content'] }}</p>
+                <p class="h5 font-weight-bold text-dark thumb_product__title mb-0">{{ categories[object]['label']['content'] }}</p>
             </div>
         </div>
 
@@ -64,5 +69,4 @@
         </div>
         {% endif %}
     </div>
-
 </a>

@@ -15,8 +15,10 @@
         <div class="col-12 text-center py-3 font-secondary text-uppercase px-0">
             {% endif %}      
             <a href="/{{ categories[object]['url'] }}">
-                <div class="family_stair__btn text-center text-dark d-inline-flex py-3 my-2 px-1 px-sm-5 border cursor-pointer mx-1 mx-sm-3">
-                    <span class="my-auto">{{ categories[object]['label']['content'] }}</span> <span class="ml-4 my-auto position-relative"><img src="{{ categories[object]['pictoLabel']['content'] }}" /></span>
+                <div class="family_stair__btn text-center text-dark d-inline-flex py-3 my-2 px-1 border cursor-pointer mx-1 mx-sm-3 {% if loop.first %} active{% endif %}">
+                    <div class="d-flex mx-auto">
+                        <span class="my-auto">{{ categories[object]['label']['content'] }}</span> <span class="d-none d-lg-block ml-4 my-auto position-relative"><img src="{{ categories[object]['pictoLabel']['content'] }}" /></span>
+                    </div>
                 </div>
             </a>
             {% if(loop.last) %}
@@ -26,19 +28,43 @@
     {% endif %}
     {% endfor %}
     {% endif %}
-
-
+    
+    
+    {% if parents[global.request.get('code')][0]|slice(0, 3)=='CCN' %}
+    {% for object in childrens[parents[global.request.get('code')][0]] %}
+    {% if(categories[object]['identifier']|slice(0, 3)=='CCN') %}
+    {% if(loop.first) %}
+    <div class="row">
+        <div class="col-12 text-center py-3 font-secondary text-uppercase px-0">
+            {% endif %}      
+            <a href="/{{ categories[object]['url'] }}">
+                <div class="family_stair__btn text-center text-dark d-inline-flex py-3 my-2 px-1 border cursor-pointer mx-1 mx-sm-3 {% if global.request.get('code')==categories[object]['identifier'] %} active{% endif %}">
+                    <div class="d-flex mx-auto">
+                        <span class="my-auto">{{ categories[object]['label']['content'] }}</span> <span class="d-none d-lg-block ml-4 my-auto position-relative"><img src="{{ categories[object]['pictoLabel']['content'] }}" /></span>
+                    </div>
+                </div>
+            </a>
+            {% if(loop.last) %}
+        </div>
+    </div>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    
     <div class="row">
         <div class="col-12 col-xl-10 offset-xl-1 pb-5">
             <div class="row">
                 {% for object in childrens[global.request.get('code')] %}
                 {% set loop1 = loop.index %}
                 {% if(categories[object]['identifier']|slice(0, 3)=='CCN') %}
+                {% if(loop.first) %}
                 {% for object in childrens[categories[object]['identifier']] %}
                 <div class="col-6 col-md-4 col-lg-4 px-1 py-3 px-sm-3" id="thumb_carouselProduct{{loop1}}{{loop.index}}">
                     {% include 'storeWidgets/thumbnailStair/thumbnailStair.twig' with {'loopIndex': loop1 ~ loop.index} %}
                 </div>
                 {% endfor %}
+                {% endif %}
                 {% else %}
                 <div class="col-6 col-md-4 col-lg-4 px-1 py-3 px-sm-3" id="thumb_carouselProduct{{loop1}}{{loop.index}}">
                     {% include 'storeWidgets/thumbnailStair/thumbnailStair.twig' with {'loopIndex': loop1 ~ loop.index} %}
@@ -51,8 +77,9 @@
 </div>
 
 <script>
-    $('<div class="col-6 col-md-4 col-lg-4 px-1 py-3 px-sm-3"><img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1528464357/promoStair_1.jpg" class="img-fluid" /></div>').insertAfter('div[id^="thumb_carouselProduct"]:nth-of-type(5)');
-    $('<div class="col-12 col-md-4 col-lg-4 px-1 py-3 px-4 px-lg-0" id="family_collection_edito_container"><div id="family_collection_edito" class="col-12 d-flex px-0 px-lg-5 py-3"><div class="m-auto"><p class="h1 py-lg-3 font-secondary text-uppercase text-brown-light line-height-normal">Lapeyre distributeur d\'escaliers</p><p class="py-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada arcu a mi vestibulum, in ipsum dolor sit amet.</p><p class="text-center pt-3"><a href="/c/magazine/autour-de-lapeyre/usines"><button class="btn btn-primary px-5 py-2 cursor-pointer">Découvrir</button></a></p></div></div></div>').insertAfter('div[id^="thumb_carouselProduct"]:nth-of-type(4)');
+    $('<div class="col-6 col-md-4 col-lg-4 px-1 py-3 px-sm-3"><img src="https://res.cloudinary.com/dwkgy95ov/image/upload/v1529491275/promoStair.png" class="img-fluid" /></div>').insertAfter('div[id^="thumb_carouselProduct"]:nth-of-type(5)');
+    $('<div class="d-none d-md-block col-12 col-md-4 col-lg-4 px-1 py-3 px-4 px-lg-0" id="family_collection_edito_container"><div id="family_collection_edito" class="col-12 d-flex px-0 px-lg-5 py-3"><div class="m-auto"><p class="h1 py-lg-3 font-secondary text-uppercase text-brown-light line-height-normal">Fabrication française</p><p class="py-lg-5">Nos escaliers proviennent de notre usine Cordier, située en Champagne.</p><p class="text-center pt-3"><a href="https://www.youtube.com/watch?v=G0VUeXqsLjg" target="_blank"><button class="btn btn-primary px-5 py-2 cursor-pointer">Découvrir</button></a></p></div></div></div>').insertAfter('div[id^="thumb_carouselProduct"]:nth-of-type(5)');
+    $('<div class="d-md-none col-12 col-md-4 col-lg-4 px-1 py-3 px-4 px-lg-0" id="family_collection_edito_container"><div id="family_collection_edito" class="col-12 d-flex px-0 px-lg-5 py-3"><div class="m-auto"><p class="h1 py-lg-3 font-secondary text-uppercase text-brown-light line-height-normal">Fabrication française</p><p class="py-lg-5">Nos escaliers proviennent de notre usine Cordier, située en Champagne.</p><p class="text-center pt-3"><a href="https://www.youtube.com/watch?v=G0VUeXqsLjg" target="_blank"><button class="btn btn-primary px-5 py-2 cursor-pointer">Découvrir</button></a></p></div></div></div>').insertAfter('div[id^="thumb_carouselProduct"]:nth-of-type(4');
 </script>
 
 <div class="bg-light familyStair overflow-hidden">

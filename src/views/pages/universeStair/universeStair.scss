@@ -59,6 +59,16 @@
     border-image: url("https://res.cloudinary.com/dwkgy95ov/image/upload/v1518721326/dash_red.png") 1 round;
 }
 
+.stair_form_picto:hover > div {
+    display: block;
+}
+.stair_form_picto div {
+    display: none;
+    top: -17px;
+    left: -10px;
+    box-shadow: 0px 0px 4px $gray-600;
+}
+
 @media screen and (max-width: 1200px) {
     #carouselStair.carousel h2 {
         font-size: 34px;
