@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": false
+        "content": true
     },
     "label": {
         "locale": "fr",
@@ -21,15 +21,6 @@
     },
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
-        {
-            "attrIdentifier": "LAPEYRE-PROMO-ID",
-            "valueString": {
-                "locale": "fr",
-                "content": 1603
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
         {
             "attrIdentifier": "categorieGoogle",
             "valueString": {
@@ -63,6 +54,24 @@
             "valueString": {
                 "locale": "fr",
                 "content": 0
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
+        {
+            "attrIdentifier": "isSoldes",
+            "attrUsage": 2,
+            "valueDecimal": {
+                "locale": "fr",
+                "content": 1
+            },
+            "attrSequence": 0
+        },
+        {
+            "attrIdentifier": "ribbonad-soldesRateValue-50",
+            "valueString": {
+                "locale": "fr",
+                "content": "-50%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -248,15 +257,6 @@
                     "locale": "fr",
                     "content": 1
                 },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATDNoticeGuideRef",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "AST611362 - IDEA COLONNE DE DOUCHE robinetterie sdb NOTICE|"
-                },
-                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -570,90 +570,10 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 167,
-                "attrIdentifier": "FAM-29-COULEUR",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Chromé"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 167,
-                "attrIdentifier": "FAM-29-FINITION",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Chromé"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "099",
-                "attrIdentifier": "FAM-29-MATERIAU",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Laiton"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "P21",
-                "attrIdentifier": "FAM-29-MODELE",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Idea"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "LAPEYRE-PROMO-ID",
                 "valueString": {
                     "locale": "fr",
-                    "content": "NO_PROMO"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "H47",
-                "attrIdentifier": "NAT-29-001-CATEGORIE-PRODUIT",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Colonne de douche non hydro"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "I68",
-                "attrIdentifier": "NAT-29-001-DESTINATION",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Hydrothérapie"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "H90",
-                "attrIdentifier": "NAT-29-001-ECONOMIE",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Economie d'eau"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "L25",
-                "attrIdentifier": "NAT-29-001-FONCTIONNEMENT",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Thermostatique"
+                    "content": 4307
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -783,11 +703,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
+                "valueIdentifier": 2,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -826,6 +746,16 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "10% (Pose)"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 1,
+                "attrIdentifier": "TEMP-INV",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "OUI"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -877,12 +807,30 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "isSoldes",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "poids",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
                     "content": 11
                 },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ribbonad-soldesRateValue-50",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "-50%"
+                },
+                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -928,7 +876,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": false
+            "content": true
         },
         "label": {
             "locale": "fr",
