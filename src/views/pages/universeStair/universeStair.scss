@@ -69,6 +69,14 @@
     box-shadow: 0px 0px 4px $gray-600;
 }
 
+.universeStair__bloc_video {
+    background-repeat: no-repeat
+}
+
+.universeStair__tiny-block {
+    margin-top: -100px
+}
+
 @media screen and (max-width: 1200px) {
     #carouselStair.carousel h2 {
         font-size: 34px;
@@ -81,6 +89,9 @@
 @media screen and (max-width: 992px) {
     #carouselStair .carousel-item > div:nth-of-type(1) {
         left: 0;
+    }
+    .universeStair__bloc_video {
+        background: none !important;
     }
 }
 
