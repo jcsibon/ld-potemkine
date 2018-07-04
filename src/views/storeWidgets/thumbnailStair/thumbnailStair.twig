@@ -47,20 +47,20 @@
             </div>
         </div>  
 
-        <div class="text-center px-1 d-flex thumb_product__bottomBloc h-60">
+        <div class="text-center px-1 d-flex thumb_product__bottomBloc h-60 flex-direction-column">
             <div class="m-auto">
                 <p class="h5 font-weight-bold text-dark thumb_product__title mb-0">{{ categories[object]['label']['content'] }}</p>
             </div>
         </div>
 
         {% if categories[object]['type']=='SUR_MESURE' %}
-        <div class="bg-dark text-white d-flex thumb_product__bloc_price">
+        <div class="bg-dark text-white d-flex thumb_product__bloc_price flex-direction-column">
             <div class="m-auto text-center">
                 <p class="h6 font-weight-normal mb-0">Découvrir</p>
             </div>
         </div>
         {% else %}
-        <div class="bg-light d-flex thumb_product__bloc_price">
+        <div class="bg-light d-flex thumb_product__bloc_price flex-direction-column">
             <div class="m-auto text-center">
                 {% if data.session.promo is defined and data.session.promo == 1 %}
                 <p class="small mb-0">à partir de <del>1490,00 €</del></p>{% endif %}
