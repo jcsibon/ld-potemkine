@@ -19,23 +19,23 @@
             </div>
             <div id="bar_chart" class="col-12 col-md-6 col-xl-3 text-center">
                 <div class="row px-1 px-sm-5 d-flex">
-                    <div class="bar col-2 mt-auto px-1 offset-1" onclick="AvisJS.selectedRate = 1;" onmouseover="AvisJS.selectRate(1);" onmouseout="AvisJS.selectRate(null);">
+                    <div class="bar col-2 mt-auto px-1 offset-1 align-self-flex-end" onclick="AvisJS.selectedRate = 1;" onmouseover="AvisJS.selectRate(1);" onmouseout="AvisJS.selectRate(null);">
                         <div class="bg-secondary" style="height: 17.4px"></div>
                         <div>1★</div>
                     </div>
-                    <div class="bar col-2 mt-auto px-1" onclick="AvisJS.selectedRate = 2;" onmouseover="AvisJS.selectRate(2);" onmouseout="AvisJS.selectRate(null);">
+                    <div class="bar col-2 mt-auto px-1 align-self-flex-end" onclick="AvisJS.selectedRate = 2;" onmouseover="AvisJS.selectRate(2);" onmouseout="AvisJS.selectRate(null);">
                         <div class="bg-secondary" style="height: 17.4px"></div>
                         <div>2★</div>
                     </div>
-                    <div class="bar col-2 mt-auto px-1" onclick="AvisJS.selectedRate = 3;" onmouseover="AvisJS.selectRate(3);" onmouseout="AvisJS.selectRate(null);">
+                    <div class="bar col-2 mt-auto px-1 align-self-flex-end" onclick="AvisJS.selectedRate = 3;" onmouseover="AvisJS.selectRate(3);" onmouseout="AvisJS.selectRate(null);">
                         <div class="bg-secondary" style="height: 2px"></div>
                         <div>3★</div>
                     </div>
-                    <div class="bar col-2 mt-auto px-1" onclick="AvisJS.selectedRate = 4;" onmouseover="AvisJS.selectRate(4);" onmouseout="AvisJS.selectRate(null);">
+                    <div class="bar col-2 mt-auto px-1 align-self-flex-end" onclick="AvisJS.selectedRate = 4;" onmouseover="AvisJS.selectRate(4);" onmouseout="AvisJS.selectRate(null);">
                         <div class="bg-secondary" style="height: 2px"></div>
                         <div>4★</div>
                     </div>
-                    <div class="bar col-2 mt-auto px-1" onclick="AvisJS.selectedRate = 5;" onmouseover="AvisJS.selectRate(5);" onmouseout="AvisJS.selectRate(null);">
+                    <div class="bar col-2 mt-auto px-1 align-self-flex-end" onclick="AvisJS.selectedRate = 5;" onmouseover="AvisJS.selectRate(5);" onmouseout="AvisJS.selectRate(null);">
                         <div class="bg-secondary" style="height: 87px"></div>
                         <div>5★</div>
                     </div>
@@ -60,205 +60,189 @@
                 </div>
             </div>
         </div>
-		<div class="row pt-3">
+        <div class="row pt-3">
             <div class="col-xl-10 offset-xl-1 px-xl-5 py-3">
-				<div id="rate_filter_div" class="row" style="display: block;">
-					Affichage des avis <span>4</span>★ uniquement.
-					<a onclick="AvisJS.resetFilter();">Consulter tous les avis</a>
-				</div>
-			</div>
-		</div>
+                <div id="rate_filter_div" class="row" style="display: block;">
+                    Affichage des avis <span>4</span>★ uniquement.
+                    <a onclick="AvisJS.resetFilter();">Consulter tous les avis</a>
+                </div>
+            </div>
+        </div>
         <div id="reviews_container" class="row">
-            <div class="col-xl-10 offset-xl-1 px-xl-5 pb-5">
-                <div class="row position-relative">
-                    <div id="carouselReviews" class="carousel slide" data-interval="false">
-                        <div class="carousel-inner row m-0">                        
-                            <div id="64f0bda8-ed3a-9c44-9542-836615cd07cd" class="col-12 col-md-6 py-2 py-lg-3 px-0 px-md-2 px-lg-3 carousel-item active">
-                                <div class="border pt-5 pb-3 pb-lg-5 px-5">
-                                    <p class="blockquote pt-3">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                    <div class="d-flex h3 mb-0">
-                                        <div class="stars-row pr-2 m-auto">
-                                            <span class="bg-stars">★ ★ ★ ★ ★</span>
-                                            <span class="stars d-block position-relative text-left" style="width: 85.3%">★ ★ ★ ★ ★</span>
-                                        </div>
+            <div class="col-xl-10 offset-xl-1 px-xl-5 position-relative">
+                <div id="carouselReviews" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner row m-0">                        
+                        <div id="64f0bda8-ed3a-9c44-9542-836615cd07cd" class="col-12 col-md-6 py-2 py-lg-3 px-0 px-md-2 px-lg-3 carousel-item active">
+                            <div class="border pt-5 pb-3 px-5">
+                                <p class="blockquote pt-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <div class="d-flex h3 mb-0">
+                                    <div class="stars-row pr-2 m-auto">
+                                        <span class="bg-stars">★ ★ ★ ★ ★</span>
+                                        <span class="stars d-block position-relative text-left" style="width: 85.3%">★ ★ ★ ★ ★</span>
                                     </div>
-                                    <p>
-                                        Avis déposé le 15/01/2018 par Sophie R
-                                    </p>
-                                    <p class="text-muted mb-0">
-                                        Suite à un achat le 15/01/2018 de Paroi de douche LINE PRESTIGE grand espace
-                                    </p>
-									<p class="row">
-										<p>						
-											Cet avis vous a t-il été utile ?&nbsp;
-											<a class="boxed-light selected" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', 1);">Oui&nbsp;(<span class="usefulCount">1</span>)</a>
-											<a class="boxed-light" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', -1);" style="margin-right: -40px;">Non&nbsp;(<span class="uselessCount">1</span>)</a>
-										</p>
-									</p>
                                 </div>
+                                <p>
+                                    Avis déposé le 15/01/2018 par Sophie R
+                                </p>
+                                <p class="text-muted mb-0">
+                                    Suite à un achat le 15/01/2018 de Paroi de douche LINE PRESTIGE grand espace
+                                </p>
+                                <p class="mt-3 line-height-2_5">			
+                                    Cet avis vous a t-il été utile ?&nbsp;
+                                    <a class="boxed-light selected" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', 1);">Oui&nbsp;(<span class="usefulCount">1</span>)</a>
+                                    <a class="boxed-light" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', -1);" style="margin-right: -40px;">Non&nbsp;(<span class="uselessCount">1</span>)</a>
+                                </p>
                             </div>
-                            <div class="col-12 col-md-6 py-2 py-lg-3 px-0 px-md-2 px-lg-3 carousel-item">
-                                <div class="border pt-5 pb-3 pb-lg-5 px-5">
-                                    <p class="blockquote pt-3">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                    <div class="d-flex h3 mb-0">
-                                        <div class="stars-row pr-2 m-auto">
-                                            <span class="bg-stars">★ ★ ★ ★ ★</span>
-                                            <span class="stars d-block position-relative text-left" style="width: 85.3%">★ ★ ★ ★ ★</span>
-                                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 py-2 py-lg-3 px-0 px-md-2 px-lg-3 carousel-item">
+                            <div class="border pt-5 pb-3 px-5">
+                                <p class="blockquote pt-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <div class="d-flex h3 mb-0">
+                                    <div class="stars-row pr-2 m-auto">
+                                        <span class="bg-stars">★ ★ ★ ★ ★</span>
+                                        <span class="stars d-block position-relative text-left" style="width: 85.3%">★ ★ ★ ★ ★</span>
                                     </div>
-                                    <p>
-                                        Avis déposé le 15/01/2018 par Sophie R
-                                    </p>
-                                    <p class="text-muted mb-0">
-                                        Suite à un achat le 15/01/2018 de Paroi de douche LINE PRESTIGE grand espace
-                                    </p>
-									<p class="row">
-										<p>						
-											Cet avis vous a t-il été utile ?&nbsp;
-											<a class="boxed-light selected" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', 1);">Oui&nbsp;(<span class="usefulCount">1</span>)</a>
-											<a class="boxed-light" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', -1);" style="margin-right: -40px;">Non&nbsp;(<span class="uselessCount">1</span>)</a>
-										</p>
-									</p>
                                 </div>
+                                <p>
+                                    Avis déposé le 15/01/2018 par Sophie R
+                                </p>
+                                <p class="text-muted mb-0">
+                                    Suite à un achat le 15/01/2018 de Paroi de douche LINE PRESTIGE grand espace
+                                </p>
+                                <p class="mt-3 line-height-2_5">	
+                                    Cet avis vous a t-il été utile ?&nbsp;
+                                    <a class="boxed-light selected" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', 1);">Oui&nbsp;(<span class="usefulCount">1</span>)</a>
+                                    <a class="boxed-light" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', -1);" style="margin-right: -40px;">Non&nbsp;(<span class="uselessCount">1</span>)</a>
+                                </p>
                             </div>
-                            <div class="col-12 col-md-6 py-2 py-lg-3 px-0 px-md-2 px-lg-3 carousel-item">
-                                <div class="border pt-5 pb-3 pb-lg-5 px-5">
-                                    <p class="blockquote pt-3">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                    <div class="d-flex h3 mb-0">
-                                        <div class="stars-row pr-2 m-auto">
-                                            <span class="bg-stars">★ ★ ★ ★ ★</span>
-                                            <span class="stars d-block position-relative text-left" style="width: 85.3%">★ ★ ★ ★ ★</span>
-                                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 py-2 py-lg-3 px-0 px-md-2 px-lg-3 carousel-item">
+                            <div class="border pt-5 pb-3 px-5">
+                                <p class="blockquote pt-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <div class="d-flex h3 mb-0">
+                                    <div class="stars-row pr-2 m-auto">
+                                        <span class="bg-stars">★ ★ ★ ★ ★</span>
+                                        <span class="stars d-block position-relative text-left" style="width: 85.3%">★ ★ ★ ★ ★</span>
                                     </div>
-                                    <p>
-                                        Avis déposé le 15/01/2018 par Sophie R
-                                    </p>
-                                    <p class="text-muted mb-0">
-                                        Suite à un achat le 15/01/2018 de Paroi de douche LINE PRESTIGE grand espace
-                                    </p>
-									<p class="row">
-										<p>						
-											Cet avis vous a t-il été utile ?&nbsp;
-											<a class="boxed-light selected" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', 1);">Oui&nbsp;(<span class="usefulCount">1</span>)</a>
-											<a class="boxed-light" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', -1);" style="margin-right: -40px;">Non&nbsp;(<span class="uselessCount">1</span>)</a>
-										</p>
-									</p>
                                 </div>
+                                <p>
+                                    Avis déposé le 15/01/2018 par Sophie R
+                                </p>
+                                <p class="text-muted mb-0">
+                                    Suite à un achat le 15/01/2018 de Paroi de douche LINE PRESTIGE grand espace
+                                </p>
+                                <p class="mt-3 line-height-2_5">
+                                    Cet avis vous a t-il été utile ?&nbsp;
+                                    <a class="boxed-light selected" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', 1);">Oui&nbsp;(<span class="usefulCount">1</span>)</a>
+                                    <a class="boxed-light" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', -1);" style="margin-right: -40px;">Non&nbsp;(<span class="uselessCount">1</span>)</a>
+                                </p>
                             </div>
-                            <div class="col-12 col-md-6 py-2 py-lg-3 px-0 px-md-2 px-lg-3 carousel-item">
-                                <div class="border pt-5 pb-3 pb-lg-5 px-5">
-                                    <p class="blockquote pt-3">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                    <div class="d-flex h3 mb-0">
-                                        <div class="stars-row pr-2 m-auto">
-                                            <span class="bg-stars">★ ★ ★ ★ ★</span>
-                                            <span class="stars d-block position-relative text-left" style="width: 85.3%">★ ★ ★ ★ ★</span>
-                                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 py-2 py-lg-3 px-0 px-md-2 px-lg-3 carousel-item">
+                            <div class="border pt-5 pb-3 px-5">
+                                <p class="blockquote pt-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <div class="d-flex h3 mb-0">
+                                    <div class="stars-row pr-2 m-auto">
+                                        <span class="bg-stars">★ ★ ★ ★ ★</span>
+                                        <span class="stars d-block position-relative text-left" style="width: 85.3%">★ ★ ★ ★ ★</span>
                                     </div>
-                                    <p>
-                                        Avis déposé le 15/01/2018 par Sophie R
-                                    </p>
-                                    <p class="text-muted mb-0">
-                                        Suite à un achat le 15/01/2018 de Paroi de douche LINE PRESTIGE grand espace
-                                    </p>
-									<p class="row">
-										<p>						
-											Cet avis vous a t-il été utile ?&nbsp;
-											<a class="boxed-light selected" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', 1);">Oui&nbsp;(<span class="usefulCount">1</span>)</a>
-											<a class="boxed-light" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', -1);" style="margin-right: -40px;">Non&nbsp;(<span class="uselessCount">1</span>)</a>
-										</p>
-									</p>
                                 </div>
+                                <p>
+                                    Avis déposé le 15/01/2018 par Sophie R
+                                </p>
+                                <p class="text-muted mb-0">
+                                    Suite à un achat le 15/01/2018 de Paroi de douche LINE PRESTIGE grand espace
+                                </p>
+                                <p class="mt-3 line-height-2_5">					
+                                    Cet avis vous a t-il été utile ?&nbsp;
+                                    <a class="boxed-light selected" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', 1);">Oui&nbsp;(<span class="usefulCount">1</span>)</a>
+                                    <a class="boxed-light" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', -1);" style="margin-right: -40px;">Non&nbsp;(<span class="uselessCount">1</span>)</a>
+                                </p>
                             </div>
-                            <div class="col-12 col-md-6 py-2 py-lg-3 px-0 px-md-2 px-lg-3 carousel-item">
-                                <div class="border pt-5 pb-3 pb-lg-5 px-5">
-                                    <p class="blockquote pt-3">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                    <div class="d-flex h3 mb-0">
-                                        <div class="stars-row pr-2 m-auto">
-                                            <span class="bg-stars">★ ★ ★ ★ ★</span>
-                                            <span class="stars d-block position-relative text-left" style="width: 85.3%">★ ★ ★ ★ ★</span>
-                                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 py-2 py-lg-3 px-0 px-md-2 px-lg-3 carousel-item">
+                            <div class="border pt-5 pb-3 px-5">
+                                <p class="blockquote pt-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <div class="d-flex h3 mb-0">
+                                    <div class="stars-row pr-2 m-auto">
+                                        <span class="bg-stars">★ ★ ★ ★ ★</span>
+                                        <span class="stars d-block position-relative text-left" style="width: 85.3%">★ ★ ★ ★ ★</span>
                                     </div>
-                                    <p>
-                                        Avis déposé le 15/01/2018 par Sophie R
-                                    </p>
-                                    <p class="text-muted mb-0">
-                                        Suite à un achat le 15/01/2018 de Paroi de douche LINE PRESTIGE grand espace
-                                    </p>
-									<p class="row">
-										<p>						
-											Cet avis vous a t-il été utile ?&nbsp;
-											<a class="boxed-light selected" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', 1);">Oui&nbsp;(<span class="usefulCount">1</span>)</a>
-											<a class="boxed-light" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', -1);" style="margin-right: -40px;">Non&nbsp;(<span class="uselessCount">1</span>)</a>
-										</p>
-									</p>
                                 </div>
+                                <p>
+                                    Avis déposé le 15/01/2018 par Sophie R
+                                </p>
+                                <p class="text-muted mb-0">
+                                    Suite à un achat le 15/01/2018 de Paroi de douche LINE PRESTIGE grand espace
+                                </p>
+                                <p class="mt-3 line-height-2_5">				
+                                    Cet avis vous a t-il été utile ?&nbsp;
+                                    <a class="boxed-light selected" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', 1);">Oui&nbsp;(<span class="usefulCount">1</span>)</a>
+                                    <a class="boxed-light" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', -1);" style="margin-right: -40px;">Non&nbsp;(<span class="uselessCount">1</span>)</a>
+                                </p>
                             </div>
-                            <div class="col-12 col-md-6 py-2 py-lg-3 px-0 px-md-2 px-lg-3 carousel-item">
-                                <div class="border pt-5 pb-3 pb-lg-5 px-5">
-                                    <p class="blockquote pt-3">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                    <div class="d-flex h3 mb-0">
-                                        <div class="stars-row pr-2 m-auto">
-                                            <span class="bg-stars">★ ★ ★ ★ ★</span>
-                                            <span class="stars d-block position-relative text-left" style="width: 85.3%">★ ★ ★ ★ ★</span>
-                                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 py-2 py-lg-3 px-0 px-md-2 px-lg-3 carousel-item">
+                            <div class="border pt-5 pb-3 px-5">
+                                <p class="blockquote pt-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <div class="d-flex h3 mb-0">
+                                    <div class="stars-row pr-2 m-auto">
+                                        <span class="bg-stars">★ ★ ★ ★ ★</span>
+                                        <span class="stars d-block position-relative text-left" style="width: 85.3%">★ ★ ★ ★ ★</span>
                                     </div>
-                                    <p>
-                                        Avis déposé le 15/01/2018 par Sophie R
-                                    </p>
-                                    <p class="text-muted mb-0">
-                                        Suite à un achat le 15/01/2018 de Paroi de douche LINE PRESTIGE grand espace
-                                    </p>
-									<p class="row">
-										<p>						
-											Cet avis vous a t-il été utile ?&nbsp;
-											<a class="boxed-light selected" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', 1);">Oui&nbsp;(<span class="usefulCount">1</span>)</a>
-											<a class="boxed-light" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', -1);" style="margin-right: -40px;">Non&nbsp;(<span class="uselessCount">1</span>)</a>
-										</p>
-									</p>
                                 </div>
+                                <p>
+                                    Avis déposé le 15/01/2018 par Sophie R
+                                </p>
+                                <p class="text-muted mb-0">
+                                    Suite à un achat le 15/01/2018 de Paroi de douche LINE PRESTIGE grand espace
+                                </p>
+                                <p class="mt-3 line-height-2_5">					
+                                    Cet avis vous a t-il été utile ?&nbsp;
+                                    <a class="boxed-light selected" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', 1);">Oui&nbsp;(<span class="usefulCount">1</span>)</a>
+                                    <a class="boxed-light" onclick="AvisJS.setUseful('64f0bda8-ed3a-9c44-9542-836615cd07cd', -1);" style="margin-right: -40px;">Non&nbsp;(<span class="uselessCount">1</span>)</a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev d-md-none" href="#carouselReviews" role="button" data-slide="prev">
-                        <div class="text-dark d-flex">
-                            <svg width="40" height="40" class="m-auto"><use xlink:href="#back"/></svg>
-                            <span class="sr-only">Previous</span>
-                        </div>
-                    </a>
-                    <a class="carousel-control-next d-md-none" href="#carouselReviews" role="button" data-slide="next">
+                </div>
+                <a class="carousel-control-prev d-md-none" href="#carouselReviews" role="button" data-slide="prev">
+                    <div class="text-dark d-flex">
+                        <svg width="40" height="40" class="m-auto"><use xlink:href="#back"/></svg>
+                        <span class="sr-only">Previous</span>
+                    </div>
+                </a>
+                <a class="carousel-control-next d-md-none" href="#carouselReviews" role="button" data-slide="next">
+                    <div class="text-dark d-flex">
+                        <svg width="40" height="40" class="m-auto"><use xlink:href="#next"/></svg>
+                        <span class="sr-only">Next</span>
+                    </div>
+                </a>
+                <div class="position-absolute right-0 bottom-0 top-0 viewMoreMobile d-md-none">
+                    <!-- Bouton Mobile pour voir plus d'avis -->
+                    <a class="m-auto" id="viewMoreBtn" href="#carouselReviews" onclick="AvisJS.viewMore();">
                         <div class="text-dark d-flex">
                             <svg width="40" height="40" class="m-auto"><use xlink:href="#next"/></svg>
                             <span class="sr-only">Next</span>
                         </div>
                     </a>
-                    <div class="position-absolute right-0 bottom-0 top-0 viewMoreMobile d-md-none">
-                        <!-- Bouton Mobile pour voir plus d'avis -->
-                        <a class="m-auto" id="viewMoreBtn" href="#carouselReviews" onclick="AvisJS.viewMore();">
-                            <div class="text-dark d-flex">
-                                <svg width="40" height="40" class="m-auto"><use xlink:href="#next"/></svg>
-                                <span class="sr-only">Next</span>
-                            </div>
-                        </a>
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 p-4 d-none d-md-flex">
-                        <button id="viewMoreBtn" class="btn btn-primary px-5 m-auto cursor-pointer" onclick="AvisJS.viewMore();">Voir plus d'avis</button>
-                    </div>
-                </div>
+            </div>
+            <div class="col-12 p-4 d-none d-md-flex pb-5">
+                <button id="viewMoreBtn" class="btn btn-primary px-5 m-auto cursor-pointer" onclick="AvisJS.viewMore();">Voir plus d'avis</button>
             </div>
         </div>
     </div>
@@ -266,171 +250,171 @@
 
 <script>
 
-AvisJS = {	
-	
-		count: "",
-		urlAvisUtilesCount: "",
-		
-		ratesCounts: [1,1,0,0,5],
-		boxesCount: 4,
-		selectedRate: "",
-		rateFilter: "",
-		
-		selectRate:function(barIndex){
-			var chart = document.getElementById("bar_chart");
-			var bars = chart.getElementsByClassName("bar");
-			
-			if(AvisJS.selectedRate !== "" && AvisJS.ratesCounts[AvisJS.selectedRate-1] === 0)
-				 return;
-			
-			if(barIndex === null) {
-				//reset all but selected rate
-				for(var i = 0; i < bars.length; i++) {
-					bars[i].classList.add('deselected');
-					if(AvisJS.selectedRate === "" || (AvisJS.selectedRate !== "" && i === AvisJS.selectedRate-1))
-						bars[i].classList.remove('deselected');
-				}
-			}
-			else {
-				if(AvisJS.ratesCounts[barIndex-1] !== 0) {
-					for(var j = 0; j < bars.length; j++) {
-						//reset first
-						bars[j].classList.remove('deselected');
-						if(j !== barIndex-1) {
-							bars[j].classList.add('deselected');
-						}
-					}
-				}
-			}
-			
-			//display the reset filter label and update the context only if needed
-			if(AvisJS.selectedRate !== ""
-				&& (AvisJS.ratesCounts[AvisJS.selectedRate-1] !== 0)
-				&& (AvisJS.selectedRate !== AvisJS.rateFilter)) {
-				
-				document.getElementById("rate_filter_div").style.display = 'block';
-				document.getElementById("rate_filter_div").getElementsByTagName("span")[0].innerText = AvisJS.selectedRate;
-				
-				//document.getElementById('reviews_container').innerHTML = "";
-				document.getElementById('sorting').value = "reverse";
-				AvisJS.boxesCount = 0;
-				rateFilter = AvisJS.selectedRate;
-			}
-		},
-		
-	resetFilter:function(){
-		AvisJS.selectedRate = "";
-		AvisJS.selectRate(null);
-		document.getElementById("rate_filter_div").style.display = 'none';
-		
-		//document.getElementById('reviews_container').innerHTML = "";
-		AvisJS.boxesCount = 0;
-		AvisJS.rateFilter = 0;
-	},
-	
-	displayUseful:function(reviewId, useful){
-		var review = document.getElementById(reviewId);
-		var btn;
-		
-		if(review !== null){
-			if(useful === 1){
-				btn = review.getElementsByClassName('usefulCount')[0].parentElement;				
-			}
-			else if(useful === -1){
-				btn = review.getElementsByClassName('uselessCount')[0].parentElement;
-			}
-			else {
-				//reset
-				review.getElementsByClassName('usefulCount')[0].parentElement.classList.remove('selected');
-				review.getElementsByClassName('uselessCount')[0].parentElement.classList.remove('selected');
-			}				
-			
-			if(btn !== null && btn !== undefined){
-				btn.classList.add('selected');
-			}
-		}
-	},
-	
-	setUseful:function(reviewId, useful){
-		
-		//1.	add or subtract 1
-		
-		var review = document.getElementById(reviewId);
-		var usefulCountEl = review.getElementsByClassName('usefulCount')[0];
-		var uselessCountEl = review.getElementsByClassName('uselessCount')[0];
-		var count = 0;
-		var postUseful = 0;
-		var postUseless = 0;
-		
-		if(useful === 1){
-			if(!usefulCountEl.parentElement.classList.contains('selected')){
-				//"useful" not already selected
-				
-				count = parseInt(usefulCountEl.innerText, 10);
-				usefulCountEl.innerText = count+1;
-				postUseful = 1;
-				
-				if(uselessCountEl.parentElement.classList.contains('selected')){
-					count = parseInt(uselessCountEl.innerText, 10);
-					uselessCountEl.innerText = (count === 0) ? '0' : count-1;
-					postUseless = -1;
-				}
-			}
-			else{
-				//"useful" already selected
-				count = parseInt(usefulCountEl.innerText, 10);
-				usefulCountEl.innerText = (count === 0) ? '0' : count-1;
-				postUseful = -1;
-				useful = 0;
-			}
-		}
-		else if(useful === -1){
-			if(!uselessCountEl.parentElement.classList.contains('selected')){
-				//"useless" not already selected
-				
-				count = parseInt(uselessCountEl.innerText, 10);
-				uselessCountEl.innerText = count+1;
-				postUseless = 1;
-				
-				if(usefulCountEl.parentElement.classList.contains('selected')){
-					count = parseInt(usefulCountEl.innerText, 10);
-					usefulCountEl.innerText = (count === 0) ? '0' : count-1;
-					postUseful = -1;
-				}
-			}
-			else{
-				//"useless" already selected
-				count = parseInt(uselessCountEl.innerText, 10);
-				uselessCountEl.innerText = (count === 0) ? '0' : count-1;
-				postUseless = -1;
-				useful = 0;				
-			}
-		}
-		
-		//2.	change style
-		
-		if(useful === 1 && !usefulCountEl.parentElement.classList.contains('selected')){
-			AvisJS.displayUseful(reviewId, 0);			
-			AvisJS.displayUseful(reviewId, 1);
-		}
-		else if(useful === -1 && !uselessCountEl.parentElement.classList.contains('selected')){
-			AvisJS.displayUseful(reviewId, 0);			
-			AvisJS.displayUseful(reviewId, -1);
-		}
-		else{
-			AvisJS.displayUseful(reviewId, 0);
-		}
-		
-		//3.	save changes in database
-		 
-		var params = [];
-		params['function'] = 'set';
-		params['reviewId'] = reviewId;
-		params['useful'] = useful;
-		params['postUseful'] = postUseful;
-		params['postUseless'] = postUseless;
-		//wc.service.invoke("AjaxAvisUtilePourUtilisateur", params);
-	}
-};
-	
+    AvisJS = {	
+
+        count: "",
+        urlAvisUtilesCount: "",
+
+        ratesCounts: [1,1,0,0,5],
+        boxesCount: 4,
+        selectedRate: "",
+        rateFilter: "",
+
+        selectRate:function(barIndex){
+            var chart = document.getElementById("bar_chart");
+            var bars = chart.getElementsByClassName("bar");
+
+            if(AvisJS.selectedRate !== "" && AvisJS.ratesCounts[AvisJS.selectedRate-1] === 0)
+                return;
+
+            if(barIndex === null) {
+                //reset all but selected rate
+                for(var i = 0; i < bars.length; i++) {
+                    bars[i].classList.add('deselected');
+                    if(AvisJS.selectedRate === "" || (AvisJS.selectedRate !== "" && i === AvisJS.selectedRate-1))
+                        bars[i].classList.remove('deselected');
+                }
+            }
+            else {
+                if(AvisJS.ratesCounts[barIndex-1] !== 0) {
+                    for(var j = 0; j < bars.length; j++) {
+                        //reset first
+                        bars[j].classList.remove('deselected');
+                        if(j !== barIndex-1) {
+                            bars[j].classList.add('deselected');
+                        }
+                    }
+                }
+            }
+
+            //display the reset filter label and update the context only if needed
+            if(AvisJS.selectedRate !== ""
+               && (AvisJS.ratesCounts[AvisJS.selectedRate-1] !== 0)
+               && (AvisJS.selectedRate !== AvisJS.rateFilter)) {
+
+                document.getElementById("rate_filter_div").style.display = 'block';
+                document.getElementById("rate_filter_div").getElementsByTagName("span")[0].innerText = AvisJS.selectedRate;
+
+                //document.getElementById('reviews_container').innerHTML = "";
+                document.getElementById('sorting').value = "reverse";
+                AvisJS.boxesCount = 0;
+                rateFilter = AvisJS.selectedRate;
+            }
+        },
+
+        resetFilter:function(){
+            AvisJS.selectedRate = "";
+            AvisJS.selectRate(null);
+            document.getElementById("rate_filter_div").style.display = 'none';
+
+            //document.getElementById('reviews_container').innerHTML = "";
+            AvisJS.boxesCount = 0;
+            AvisJS.rateFilter = 0;
+        },
+
+        displayUseful:function(reviewId, useful){
+            var review = document.getElementById(reviewId);
+            var btn;
+
+            if(review !== null){
+                if(useful === 1){
+                    btn = review.getElementsByClassName('usefulCount')[0].parentElement;				
+                }
+                else if(useful === -1){
+                    btn = review.getElementsByClassName('uselessCount')[0].parentElement;
+                }
+                else {
+                    //reset
+                    review.getElementsByClassName('usefulCount')[0].parentElement.classList.remove('selected');
+                    review.getElementsByClassName('uselessCount')[0].parentElement.classList.remove('selected');
+                }				
+
+                if(btn !== null && btn !== undefined){
+                    btn.classList.add('selected');
+                }
+            }
+        },
+
+        setUseful:function(reviewId, useful){
+
+            //1.	add or subtract 1
+
+            var review = document.getElementById(reviewId);
+            var usefulCountEl = review.getElementsByClassName('usefulCount')[0];
+            var uselessCountEl = review.getElementsByClassName('uselessCount')[0];
+            var count = 0;
+            var postUseful = 0;
+            var postUseless = 0;
+
+            if(useful === 1){
+                if(!usefulCountEl.parentElement.classList.contains('selected')){
+                    //"useful" not already selected
+
+                    count = parseInt(usefulCountEl.innerText, 10);
+                    usefulCountEl.innerText = count+1;
+                    postUseful = 1;
+
+                    if(uselessCountEl.parentElement.classList.contains('selected')){
+                        count = parseInt(uselessCountEl.innerText, 10);
+                        uselessCountEl.innerText = (count === 0) ? '0' : count-1;
+                        postUseless = -1;
+                    }
+                }
+                else{
+                    //"useful" already selected
+                    count = parseInt(usefulCountEl.innerText, 10);
+                    usefulCountEl.innerText = (count === 0) ? '0' : count-1;
+                    postUseful = -1;
+                    useful = 0;
+                }
+            }
+            else if(useful === -1){
+                if(!uselessCountEl.parentElement.classList.contains('selected')){
+                    //"useless" not already selected
+
+                    count = parseInt(uselessCountEl.innerText, 10);
+                    uselessCountEl.innerText = count+1;
+                    postUseless = 1;
+
+                    if(usefulCountEl.parentElement.classList.contains('selected')){
+                        count = parseInt(usefulCountEl.innerText, 10);
+                        usefulCountEl.innerText = (count === 0) ? '0' : count-1;
+                        postUseful = -1;
+                    }
+                }
+                else{
+                    //"useless" already selected
+                    count = parseInt(uselessCountEl.innerText, 10);
+                    uselessCountEl.innerText = (count === 0) ? '0' : count-1;
+                    postUseless = -1;
+                    useful = 0;				
+                }
+            }
+
+            //2.	change style
+
+            if(useful === 1 && !usefulCountEl.parentElement.classList.contains('selected')){
+                AvisJS.displayUseful(reviewId, 0);			
+                AvisJS.displayUseful(reviewId, 1);
+            }
+            else if(useful === -1 && !uselessCountEl.parentElement.classList.contains('selected')){
+                AvisJS.displayUseful(reviewId, 0);			
+                AvisJS.displayUseful(reviewId, -1);
+            }
+            else{
+                AvisJS.displayUseful(reviewId, 0);
+            }
+
+            //3.	save changes in database
+
+            var params = [];
+            params['function'] = 'set';
+            params['reviewId'] = reviewId;
+            params['useful'] = useful;
+            params['postUseful'] = postUseful;
+            params['postUseless'] = postUseless;
+            //wc.service.invoke("AjaxAvisUtilePourUtilisateur", params);
+        }
+    };
+
 </script>
