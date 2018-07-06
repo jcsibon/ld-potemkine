@@ -1,14 +1,14 @@
 {"product": {
     "brandName": "Lapeyre",
     "brandPartnumber": 503,
-    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "operations-speciales-CCN510311"}},
+    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "infiny_CCN259111"}},
     "imageFull": {
         "locale": "fr",
         "content": "/standardMain/105/183/201105183.jpg"
     },
     "published": {
         "locale": "fr",
-        "content": false
+        "content": true
     },
     "label": {
         "locale": "fr",
@@ -59,10 +59,28 @@
             "attrSequence": 0
         },
         {
+            "attrIdentifier": "isSoldes",
+            "attrUsage": 2,
+            "valueDecimal": {
+                "locale": "fr",
+                "content": 1
+            },
+            "attrSequence": 0
+        },
+        {
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
                 "content": "Prix pour la dimension H 30,0 x L 4,0  x P 12,1 cm"
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
+        {
+            "attrIdentifier": "ribbonad-soldesRateValue-40",
+            "valueString": {
+                "locale": "fr",
+                "content": "-40%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -158,16 +176,6 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "G14",
-                "attrIdentifier": "ATC-MATERIAU",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Abs"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "ATC-NORME-FSC",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -192,16 +200,6 @@
                     "locale": "fr",
                     "content": 0
                 },
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 242,
-                "attrIdentifier": "ATC-TYPOLOGIE-PRODUIT",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Pied"
-                },
-                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -465,16 +463,6 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "BD9",
-                "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Brillant"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -610,8 +598,17 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1.452
+                    "content": 1.45
                 },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "LAPEYRE-PROMO-ID",
+                "valueString": {
+                    "locale": "fr",
+                    "content": 4306
+                },
+                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -776,16 +773,6 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
-                "attrIdentifier": "TEMP-INV",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "OUI"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "categorieGoogle",
                 "valueString": {
                     "locale": "fr",
@@ -832,6 +819,15 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "isSoldes",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "poids",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -845,6 +841,15 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "Prix pour la dimension H 30,0 x L 4,0  x P 12,1 cm"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ribbonad-soldesRateValue-40",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "-40%"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -892,7 +897,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": false
+            "content": true
         },
         "label": {
             "locale": "fr",

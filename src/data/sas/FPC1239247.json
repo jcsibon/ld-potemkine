@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": false
+        "content": true
     },
     "label": {
         "locale": "fr",
@@ -21,15 +21,6 @@
     },
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
-        {
-            "attrIdentifier": "LAPEYRE-PROMO-ID",
-            "valueString": {
-                "locale": "fr",
-                "content": 1601
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
         {
             "attrIdentifier": "categorieGoogle",
             "valueString": {
@@ -63,6 +54,24 @@
             "valueString": {
                 "locale": "fr",
                 "content": 0
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
+        {
+            "attrIdentifier": "isSoldes",
+            "attrUsage": 2,
+            "valueDecimal": {
+                "locale": "fr",
+                "content": 1
+            },
+            "attrSequence": 0
+        },
+        {
+            "attrIdentifier": "ribbonad-soldesRateValue-80",
+            "valueString": {
+                "locale": "fr",
+                "content": "-80%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -102,6 +111,42 @@
     "shortDesc": {"locale": "fr"},
     "itemList": {"item": {
         "attributeValueList": {"attributeValue": [
+            {
+                "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-FAB-EN-FRANCE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-FAB-PAR-LAPEYRE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-NORME-FSC",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
             {
                 "attrIdentifier": "ATD-CategorieCDG",
                 "valueString": {
@@ -485,30 +530,10 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "014",
-                "attrIdentifier": "FAM-19-FINITION",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Métal"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 303,
-                "attrIdentifier": "FAM-19-MATERIAU",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Inox"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "LAPEYRE-PROMO-ID",
                 "valueString": {
                     "locale": "fr",
-                    "content": "NO_PROMO"
+                    "content": 4310
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -673,12 +698,30 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "isSoldes",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "poids",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
                     "content": 1.54
                 },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ribbonad-soldesRateValue-80",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "-80%"
+                },
+                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -724,7 +767,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": false
+            "content": true
         },
         "label": {
             "locale": "fr",

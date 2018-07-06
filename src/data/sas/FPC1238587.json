@@ -1,11 +1,14 @@
 {"product": {
     "brandName": "Deltacalor",
     "brandPartnumber": 988,
-    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "operations-speciales-CCN510311"}},
-    "imageFull": {"locale": "fr"},
+    "categoriesParentList": {"categoryParent": {"categoryIdentifier": "electriques-CCN688916"}},
+    "imageFull": {
+        "locale": "fr",
+        "content": "/standardMain/308/851/201308851.jpg"
+    },
     "published": {
         "locale": "fr",
-        "content": false
+        "content": true
     },
     "label": {
         "locale": "fr",
@@ -19,12 +22,12 @@
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
-            "attrIdentifier": "CCU510310-ATC-COULEUR",
+            "attrIdentifier": "CCU0002-ATC-COULEUR",
             "attrUsage": 1,
             "attrSequence": 2
         },
         {
-            "attrIdentifier": "CCU510310-ATC-PUISSANCE",
+            "attrIdentifier": "CCU0002-ATC-PUISSANCE",
             "attrUsage": 1,
             "attrSequence": 1
         },
@@ -41,7 +44,7 @@
             "attrIdentifier": "codeEan",
             "valueString": {
                 "locale": "fr",
-                "content": 8032749899081
+                "content": 8032749897001
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -66,10 +69,28 @@
             "attrSequence": 0
         },
         {
+            "attrIdentifier": "isSoldes",
+            "attrUsage": 2,
+            "valueDecimal": {
+                "locale": "fr",
+                "content": 1
+            },
+            "attrSequence": 0
+        },
+        {
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
                 "content": "Prix pour la puissance N/A"
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
+        {
+            "attrIdentifier": "ribbonad-soldesRateValue-30",
+            "valueString": {
+                "locale": "fr",
+                "content": "-30%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -148,16 +169,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "012",
-                    "attrIdentifier": "ATC-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Métal acier"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -173,16 +184,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 360,
-                    "attrIdentifier": "ATC-VERSION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Electrique"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -280,7 +281,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 0
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -289,7 +290,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 0
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -342,8 +343,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU510310-ATC-COULEUR-103",
-                    "attrIdentifier": "CCU510310-ATC-COULEUR",
+                    "valueIdentifier": "CCU0002-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0002-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -352,8 +353,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU510310-ATC-PUISSANCE-A08",
-                    "attrIdentifier": "CCU510310-ATC-PUISSANCE",
+                    "valueIdentifier": "CCU0002-ATC-PUISSANCE-A08",
+                    "attrIdentifier": "CCU0002-ATC-PUISSANCE",
                     "valueString": {
                         "locale": "fr",
                         "content": "500 W"
@@ -410,11 +411,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "APX",
+                    "valueIdentifier": "SO",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Point rouge"
+                        "content": "Sans Objet"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -454,16 +455,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "BD9",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brillant"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -683,6 +674,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4305
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-ANTILLES",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -830,7 +830,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 0
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -852,25 +852,6 @@
                         "content": "10% (Pose)"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "TEMP-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "atoutPrix",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -920,6 +901,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "isSoldes",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -933,6 +923,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Prix pour la puissance N/A"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ribbonad-soldesRateValue-30",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "-30%"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -968,7 +967,7 @@
                     "attrSequence": 0
                 }
             ]},
-            "isDefault": false,
+            "isDefault": true,
             "seoItem": {"urlKeyword": {
                 "locale": "fr",
                 "content": "seche-serviettes-electrique-stendino-500w-blanc-h-117-4-x-l-50-1242436"
@@ -980,7 +979,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
@@ -1038,16 +1037,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "012",
-                    "attrIdentifier": "ATC-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Métal acier"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1063,16 +1052,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 360,
-                    "attrIdentifier": "ATC-VERSION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Electrique"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1232,8 +1211,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU510310-ATC-COULEUR-167",
-                    "attrIdentifier": "CCU510310-ATC-COULEUR",
+                    "valueIdentifier": "CCU0002-ATC-COULEUR-167",
+                    "attrIdentifier": "CCU0002-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Chromé"
@@ -1242,8 +1221,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU510310-ATC-PUISSANCE-A08",
-                    "attrIdentifier": "CCU510310-ATC-PUISSANCE",
+                    "valueIdentifier": "CCU0002-ATC-PUISSANCE-A08",
+                    "attrIdentifier": "CCU0002-ATC-PUISSANCE",
                     "valueString": {
                         "locale": "fr",
                         "content": "500 W"
@@ -1344,16 +1323,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "BD9",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brillant"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1697,16 +1666,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "TEMP-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "categorieGoogle",
                     "valueString": {
                         "locale": "fr",
@@ -1745,6 +1704,15 @@
                 },
                 {
                     "attrIdentifier": "isLivraisonDirecte",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "isSoldes",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1865,16 +1833,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "012",
-                    "attrIdentifier": "ATC-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Métal acier"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1890,16 +1848,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 360,
-                    "attrIdentifier": "ATC-VERSION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Electrique"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2059,8 +2007,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU510310-ATC-COULEUR-103",
-                    "attrIdentifier": "CCU510310-ATC-COULEUR",
+                    "valueIdentifier": "CCU0002-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0002-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -2069,8 +2017,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU510310-ATC-PUISSANCE-A19",
-                    "attrIdentifier": "CCU510310-ATC-PUISSANCE",
+                    "valueIdentifier": "CCU0002-ATC-PUISSANCE-A19",
+                    "attrIdentifier": "CCU0002-ATC-PUISSANCE",
                     "valueString": {
                         "locale": "fr",
                         "content": "750 W"
@@ -2127,11 +2075,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "APX",
+                    "valueIdentifier": "SO",
                     "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Point rouge"
+                        "content": "Sans Objet"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2171,16 +2119,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "BD9",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brillant"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2547,7 +2485,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 0
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -2569,25 +2507,6 @@
                         "content": "10% (Pose)"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "TEMP-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "atoutPrix",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -2629,6 +2548,15 @@
                 },
                 {
                     "attrIdentifier": "isLivraisonDirecte",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "isSoldes",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -2749,16 +2677,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "012",
-                    "attrIdentifier": "ATC-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Métal acier"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2774,16 +2692,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 360,
-                    "attrIdentifier": "ATC-VERSION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Electrique"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2863,7 +2771,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -2872,7 +2780,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -2925,8 +2833,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU510310-ATC-COULEUR-103",
-                    "attrIdentifier": "CCU510310-ATC-COULEUR",
+                    "valueIdentifier": "CCU0002-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0002-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -2935,8 +2843,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU510310-ATC-PUISSANCE-A08",
-                    "attrIdentifier": "CCU510310-ATC-PUISSANCE",
+                    "valueIdentifier": "CCU0002-ATC-PUISSANCE-A08",
+                    "attrIdentifier": "CCU0002-ATC-PUISSANCE",
                     "valueString": {
                         "locale": "fr",
                         "content": "500 W"
@@ -3046,16 +2954,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3390,16 +3288,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "TEMP-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "atoutPrix",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3447,6 +3335,15 @@
                 },
                 {
                     "attrIdentifier": "isLivraisonDirecte",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "isSoldes",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -3503,7 +3400,7 @@
                     "attrSequence": 0
                 }
             ]},
-            "isDefault": true,
+            "isDefault": false,
             "seoItem": {"urlKeyword": {
                 "locale": "fr",
                 "content": "seche-serviettes-electrique-stendino-500w-blanc-h-117-4-x-l-50-1244364"
@@ -3567,16 +3464,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "012",
-                    "attrIdentifier": "ATC-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Métal acier"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3592,16 +3479,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 360,
-                    "attrIdentifier": "ATC-VERSION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Electrique"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3681,7 +3558,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -3690,7 +3567,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -3743,8 +3620,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU510310-ATC-COULEUR-103",
-                    "attrIdentifier": "CCU510310-ATC-COULEUR",
+                    "valueIdentifier": "CCU0002-ATC-COULEUR-103",
+                    "attrIdentifier": "CCU0002-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Blanc"
@@ -3753,8 +3630,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU510310-ATC-PUISSANCE-A19",
-                    "attrIdentifier": "CCU510310-ATC-PUISSANCE",
+                    "valueIdentifier": "CCU0002-ATC-PUISSANCE-A19",
+                    "attrIdentifier": "CCU0002-ATC-PUISSANCE",
                     "valueString": {
                         "locale": "fr",
                         "content": "750 W"
@@ -3864,16 +3741,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 103,
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Blanc"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -4208,16 +4075,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "TEMP-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "atoutPrix",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4265,6 +4122,15 @@
                 },
                 {
                     "attrIdentifier": "isLivraisonDirecte",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "isSoldes",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -4385,16 +4251,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "012",
-                    "attrIdentifier": "ATC-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Métal acier"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-ORIGINE-FR-GARANTIE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4410,16 +4266,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 360,
-                    "attrIdentifier": "ATC-VERSION",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Electrique"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -4499,7 +4345,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -4508,7 +4354,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
+                        "content": 0
                     },
                     "attrSequence": 0
                 },
@@ -4561,8 +4407,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU510310-ATC-COULEUR-167",
-                    "attrIdentifier": "CCU510310-ATC-COULEUR",
+                    "valueIdentifier": "CCU0002-ATC-COULEUR-167",
+                    "attrIdentifier": "CCU0002-ATC-COULEUR",
                     "valueString": {
                         "locale": "fr",
                         "content": "Chromé"
@@ -4571,8 +4417,8 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CCU510310-ATC-PUISSANCE-A08",
-                    "attrIdentifier": "CCU510310-ATC-PUISSANCE",
+                    "valueIdentifier": "CCU0002-ATC-PUISSANCE-A08",
+                    "attrIdentifier": "CCU0002-ATC-PUISSANCE",
                     "valueString": {
                         "locale": "fr",
                         "content": "500 W"
@@ -4682,16 +4528,6 @@
                         "locale": "fr",
                         "content": 0
                     },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": 167,
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Chromé"
-                    },
-                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -5026,16 +4862,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
-                    "attrIdentifier": "TEMP-INV",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "OUI"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "atoutPrix",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -5083,6 +4909,15 @@
                 },
                 {
                     "attrIdentifier": "isLivraisonDirecte",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "isSoldes",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -5195,5 +5030,8 @@
         "locale": "fr",
         "content": "- Radiateur à fluide, tubes ronds droits acier.<BR/>- Boîtier bas avec sélecteur de puissance.<BR/>- Marche forcée 2 h.     <BR/>- Fil pilote.<BR/>- Fonction sèche-linge intégrée.     <BR/>- Electrique IP44.<BR/><BR/>Coloris blanc:<BR/>- 500 W: H. 117,4 x L. 50 x P. 8,5. <BR/>- 750 W: H. 142 x L. 50 x P. 8,5.<BR/><BR/>Coloris chromé:<BR/>- 500 W: H142,3 x L50 x P8,5.<BR/><BR/>- Fabriqué en Europe."
     },
-    "imageThumbnail": {"locale": "fr"}
+    "imageThumbnail": {
+        "locale": "fr",
+        "content": "/thumbnail/308/851/201308851.jpg"
+    }
 }}
