@@ -12,10 +12,10 @@
     {% if(categories[object]['identifier']|slice(0, 3)=='CCN') %}
     {% if(loop.first) %}
     <div class="row">
-        <div class="col-12 text-center py-3 font-secondary text-uppercase px-0">
+        <div class="col-12 text-center pt-4 pb-3 font-secondary text-uppercase px-0">
             {% endif %}      
             <a href="/{{ categories[object]['url'] }}">
-                <div class="family_stair__btn text-center text-dark d-inline-flex py-3 my-2 px-1 border cursor-pointer mx-1 mx-sm-3 {% if loop.first %} active{% endif %}">
+                <div class="family_stair__btn text-center text-dark d-inline-flex py-3 my-2 px-1 border cursor-pointer mx-1 mx-sm-3 {% if loop.first %} active{% endif %}" style="width:{{ 100/(loop.length+1) }}%">
                     <div class="d-flex mx-auto">
                         <span class="my-auto">{{ categories[object]['label']['content'] }}</span> <span class="d-none d-lg-block ml-4 my-auto position-relative"><img src="{{ categories[object]['pictoLabel']['content'] }}" /></span>
                     </div>
@@ -35,10 +35,32 @@
     {% if(categories[object]['identifier']|slice(0, 3)=='CCN') %}
     {% if(loop.first) %}
     <div class="row">
-        <div class="col-12 text-center py-3 font-secondary text-uppercase px-0">
+        <div class="col-12 text-center pt-4 pb-3 font-secondary text-uppercase px-0">
             {% endif %}      
             <a href="/{{ categories[object]['url'] }}">
-                <div class="family_stair__btn text-center text-dark d-inline-flex py-3 my-2 px-1 border cursor-pointer mx-1 mx-sm-3 {% if global.request.get('code')==categories[object]['identifier'] %} active{% endif %}">
+                <div class="family_stair__btn text-center text-dark d-inline-flex py-3 my-2 px-1 border cursor-pointer mx-1 mx-sm-3 {% if global.request.get('code')==categories[object]['identifier'] %} active{% endif %}" style="width:{{ 100/(loop.length+1) }}%">
+                    <div class="d-flex mx-auto">
+                        <span class="my-auto">{{ categories[object]['label']['content'] }}</span> <span class="d-none d-lg-block ml-4 my-auto position-relative"><img src="{{ categories[object]['pictoLabel']['content'] }}" /></span>
+                    </div>
+                </div>
+            </a>
+            {% if(loop.last) %}
+        </div>
+    </div>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {% if parents[global.request.get('code')][0]|slice(0, 3)=='SCU' and categories[parents[global.request.get('code')][0]]['displayTab']=='true' %}
+    {% for object in childrens[parents[global.request.get('code')][0]] %}
+    {% if(categories[object]['identifier']|slice(0, 3)=='CCN') %}
+    {% if(loop.first) %}
+    <div class="row">
+        <div class="col-12 text-center pt-4 pb-3 font-secondary text-uppercase px-0">
+            {% endif %}      
+            <a href="/{{ categories[object]['url'] }}">
+                <div class="family_stair__btn text-center text-dark d-inline-flex py-3 my-2 px-1 border cursor-pointer mx-1 mx-sm-3 {% if global.request.get('code')==categories[object]['identifier'] %} active{% endif %}" style="width:{{ 100/(loop.length+1) }}%">
                     <div class="d-flex mx-auto">
                         <span class="my-auto">{{ categories[object]['label']['content'] }}</span> <span class="d-none d-lg-block ml-4 my-auto position-relative"><img src="{{ categories[object]['pictoLabel']['content'] }}" /></span>
                     </div>
