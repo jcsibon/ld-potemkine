@@ -1,11 +1,11 @@
+{% if categories[global.request.get('code')]['longDesc']['content'] is defined %}
 <div class="container">
     <div class="row">
         <div class="col-lg-8 offset-lg-2 col-12">
             <p class="h5 description__title text-center my-4 pt-lg-5 pb-lg-4 px-xl-5 mx-xl-5 d-none d-sm-block">
-                {% if categories[global.request.get('code')]['longDesc']['content'] is defined %}
-                    {{ categories[global.request.get('code')]['longDesc']['content'] }}
-                {% endif %}
+                {{ categories[global.request.get('code')]['longDesc']['content'] }}
             </p>
         </div>
     </div>
 </div>
+{% endif %}

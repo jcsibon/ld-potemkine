@@ -54,9 +54,9 @@
         </div>
 
         {% if categories[object]['type']=='SUR_MESURE' %}
-        <div class="bg-dark text-white d-flex thumb_product__bloc_price flex-direction-column">
+        <div class="bg-light text-white d-flex thumb_product__bloc_price flex-direction-column">
             <div class="m-auto text-center">
-                <p class="h6 font-weight-normal mb-0">Découvrir</p>
+                <p class="h6 font-weight-bold mb-0 text-primary">Découvrir</p>
             </div>
         </div>
         {% else %}
@@ -64,7 +64,7 @@
             <div class="m-auto text-center">
                 {% if data.session.promo is defined and data.session.promo == 1 %}
                 <p class="small mb-0">à partir de <del>1490,00 €</del></p>{% endif %}
-                <p class="h5 thumb_product__price font-weight-bold mb-0">1250,00 € </p>
+                <p class="h5 thumb_product__price font-weight-bold mb-0">1250,00 € {% if data.session.pro is defined and data.session.pro == 1 %}<sup><small>HT</small></sup>{% endif %}</p>
             </div>
         </div>
         {% endif %}
