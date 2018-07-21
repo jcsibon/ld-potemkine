@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": false
+        "content": true
     },
     "label": {
         "locale": "fr",
@@ -44,7 +44,7 @@
             "attrIdentifier": "codeEan",
             "valueString": {
                 "locale": "fr",
-                "content": 3700338206224
+                "content": 3700338203100
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -64,6 +64,24 @@
             "valueString": {
                 "locale": "fr",
                 "content": 0
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
+        {
+            "attrIdentifier": "isSoldes",
+            "attrUsage": 2,
+            "valueDecimal": {
+                "locale": "fr",
+                "content": 1
+            },
+            "attrSequence": 0
+        },
+        {
+            "attrIdentifier": "ribbonad-soldesRateValue-30",
+            "valueString": {
+                "locale": "fr",
+                "content": "-30%"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -818,6 +836,15 @@
                 },
                 {
                     "attrIdentifier": "isShippingAllowed",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "isSoldes",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
@@ -1619,6 +1646,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "isSoldes",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1658,7 +1694,7 @@
                     "attrSequence": 0
                 }
             ]},
-            "isDefault": true,
+            "isDefault": false,
             "seoItem": {"urlKeyword": {
                 "locale": "fr",
                 "content": "hotte-ilot-inox-verre-blanc-falmec-pharo2282-l-65-3033500"
@@ -1841,7 +1877,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 0
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -1850,7 +1886,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 0
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -2171,8 +2207,17 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 514.8
+                        "content": 431.613
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 4305
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2412,12 +2457,30 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "isSoldes",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "poids",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 28
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ribbonad-soldesRateValue-30",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "-30%"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2451,7 +2514,7 @@
                     "attrSequence": 0
                 }
             ]},
-            "isDefault": false,
+            "isDefault": true,
             "seoItem": {"urlKeyword": {
                 "locale": "fr",
                 "content": "hotte-ilot-inox-verre-blanc-falmec-pharo2481-l-85-3033510"
@@ -2463,7 +2526,7 @@
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
-                "content": false
+                "content": true
             },
             "label": {
                 "locale": "fr",
