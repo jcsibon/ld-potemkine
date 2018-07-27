@@ -240,4 +240,11 @@ $app->get('/exampleProduct', function() use($app) {
 $app->get('/exampleBundle', function() use($app) {
 	return $app['twig']->render('pages/productBundle/productBundle.twig');
 });
+$app->get('/exampleShop', function() use($app) {
+	return $app['twig']->render('pages/shop/shop.twig');
+});
+
 $app->run();
+
+
+

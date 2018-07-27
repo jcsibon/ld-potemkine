@@ -1,0 +1,233 @@
+.magasin-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  @include media-breakpoint-up(xl) {
+    width: 135px;
+    height: 135px;
+  }
+  &.small {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+.star-wrapper {
+  .mini & {
+    width: 10px;
+    height: 10px;
+    background-size: 10px;
+    position: relative;
+    top: -2px;
+    .star {
+      background-size: 10px;
+    }
+  }
+  width: 14px;
+  height: 14px;
+  background: url(#{$image-path}star-gray.svg) no-repeat left center;
+  display: inline-block;
+  vertical-align: text-bottom;
+  position: relative;
+  overflow: hidden;
+  .star {
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url(#{$image-path}star.svg) no-repeat left center;
+  }
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  border-radius: 11px;
+}
+
+.schedule {
+  line-height: 1em;
+  &.active {
+    color: $dark;
+    small {
+      @include media-breakpoint-up(xl) {
+        border-bottom: 5px solid $red;
+        display: inline-block;
+        padding-bottom: $spacer/2;
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .schedule--day {
+      min-width: 80px;
+      display: inline-block;
+    }
+    .schedule--content {
+      min-width: 120px;
+      display: inline-block;
+    }
+    .schedule--content-element {
+      min-width: 60px;
+      display: inline-block;
+    }
+  }
+}
+
+.bus {
+  font-size: .7em;
+  border: 1px solid $dark;
+  display: inline-block;
+  padding: 1px $spacer/4 0;
+  line-height: 1.3;
+  position: relative;
+  top: -2px;
+}
+
+.metro {
+  position: relative;
+  top: -1px;
+  font-size: .8em;
+  width: 16px;
+  height: 16px;
+  line-height: 18px;
+  border-radius: 16px;
+  background: #ccc;
+  text-align: center;
+  display: inline-block;
+}
+
+$metros: (
+  1: #ffcd00,
+  2: #003ca6,
+  3: #837902,
+  3bis:  #6ec4e8,
+  4: #be418d,
+  5: #ff7e2e,
+  6: #6eca97,
+  7: #fa9aba,
+  7bis:  #6eca97,
+  8: #e19bdf,
+  9: #b6bd00,
+  10:  #c9910d,
+  11:  #704b1c,
+  12:  #007852,
+  13:  #6ec4e8,
+  14:  #62259d,
+  15:  #a60f31,
+  16:  #427b7b,
+  17:  #ec7cae,
+  18:  #95bf32
+);
+
+@each $metro-key, $metro-value in $metros {
+  .metro-#{$metro-key} {
+    background-color: $metro-value;
+    @if (lightness($metro-value) > 50) {
+      color: $dark;
+    } @else {
+      color: white;
+    }
+  }
+}
+
+.service {
+  font-size: .9em;
+  img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+  }
+}
+
+.avis {
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    content:'';
+    background: url(#{$image-path}quote.svg) no-repeat 0 0;
+    background-size: contain;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    opacity: .3;
+  }
+  @include media-breakpoint-down(md) {
+    .stars-wrapper {
+      position: absolute;
+      top: 0;
+      right: $spacer;
+    }
+  }
+}
+
+.projet {
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    width: auto;
+  }
+  img {
+    width: 65px;
+    height: 47px;
+    object-fit: contain;
+  }
+}
+
+.btn-opening-closures {
+  .icon-arrow-down {
+    position: relative;
+    top: 1px;
+    transition: all .4s ease;
+  }
+  &.open {
+    .icon-arrow-down {
+      transform: rotate(180deg);
+    }
+  }
+}
+.opening-closures-wrapper {
+  display: none;
+  @include media-breakpoint-up(md) {
+    > .row {
+      > .col-md-6:first-child {
+        border-right: 1px solid darken($light, 10%);
+      }
+    }
+  }
+}
+
+.slide {
+  .slide--img {
+    position: relative;
+    .arrow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12%;
+      height: 100%;
+      text-align: center;
+      background: url(#{$image-path}slider-arrow-left.svg) no-repeat center rgba(white, .5);
+      background-size: 60% 100%;
+      cursor: pointer;
+      transition: all .2s ease;
+      &:hover {
+        background-color: rgba(white, .6);
+      }
+      &.arrow__next {
+        background-image: url(#{$image-path}slider-arrow-right.svg);
+
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+  .slide--title {
+    font-size: 1.2em;
+    span {
+      font-size: 1.3em;
+    }
+  }
+}
