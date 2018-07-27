@@ -1,3 +1,111 @@
+
+// Breadcrumbs
+
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+
+// $breadcrumb-margin-bottom:          1rem !default;
+
+$breadcrumb-bg: none;
+$breadcrumb-divider-color: white;
+$breadcrumb-active-color: white;
+$breadcrumb-divider: '>';
+
+$image-path: "/images/magasins/";
+
+/*create icon classes*/
+.icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  &.icon-small {
+  width: 13px;
+  height: 13px;
+  }
+}
+$icons:
+  arrow-down
+  car
+  tel
+  map
+  metro
+;
+@each $icon in $icons {
+  .icon-#{$icon} { background-image: url(#{$image-path}icons/#{$icon}.svg) }
+}
+
+body {
+  background-color: #fcfcfc;
+  color: #313131;
+}
+
+$page-head-height: 280px;
+.page-head {
+  height: $page-head-height;
+  background-size: cover;
+}
+
+.breadcrumb {
+  a {
+    color: white;
+  }
+}
+
+.left-col {
+  margin-top: $page-head-height*-.5 - 50px;
+  .card {
+    .btn {
+      font-size: .8em;
+      @include media-breakpoint-up(xl) {
+        font-size: 1em;
+      }
+    }
+  }
+  .nav {
+    .nav-item {
+      .nav-link {
+        padding: $spacer/4 $spacer;
+        font-size: 1.1em;
+        border-radius: 0;
+        border-left: 5px solid darken($light, 10%);
+        color: $dark;
+        &:hover,
+        &.active {
+          color: $dark;
+          border-color: $red;
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+.card {
+  box-shadow: 0px 1px 7px rgba(black, .1);
+  .card-title {
+    font-size: 1.1em;
+    @include media-breakpoint-up(md) {
+      font-size: 1.5em;
+    }
+  }
+}
+
+/* Alternative font: DIN */
+.font-alt {
+  font-family: $font-family-1;
+}
+
+img.circle {
+  border-radius: 1000px;
+}
+
+
+
+
+
 .magasin-logo {
   width: 70px;
   height: 70px;
@@ -231,3 +339,4 @@ $metros: (
     }
   }
 }
+
