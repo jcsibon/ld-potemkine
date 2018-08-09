@@ -151,18 +151,32 @@ body.modal-open {
     border-bottom: 7px solid $gray-700;
 }
 
+.slides-nav a.semi-transparent, .slides-nav a:not([href]):not([tabindex]).semi-transparent {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.slides-nav a, .slides-nav a:not([href]):not([tabindex]), .slides-nav a.semi-transparent:hover, .slides-nav a:not([href]):not([tabindex]).semi-transparent:hover {
+    top: calc(50% - 40px);
+    width: 40px;
+    padding: 10px;
+    background: $red-secondary;
+    user-select: none;
+}
+
 #addCartModal .carouselCrossSell {
     height: 390px !important;
+}
+
+@media only screen and (min-width: 1200px) {
+    #collapseBrand, #collapseDescription, #collapseNotice{
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .fp__product_bloc {
         box-shadow: 0 3px 15px 2px $gray-200;
         border: 1px solid $gray-200;
-    }
-
-    #collapseBrand, #collapseDescription {
-        display: block;
     }
 }
 
