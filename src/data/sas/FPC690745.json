@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": false
+        "content": true
     },
     "label": {
         "locale": "fr",
@@ -159,6 +159,15 @@
             },
             {
                 "attrIdentifier": "ATC-NORME-FSC",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-NORME-PEFC",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
@@ -558,6 +567,15 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "DOCUMENT-MESSAGE",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "ERRATUM : NOTICE V1.1 DU SPOT A FOURNIR"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-ANTILLES",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -597,7 +615,7 @@
                 "attrIdentifier": "SCREEN-MESSAGE",
                 "valueString": {
                     "locale": "fr",
-                    "content": "PROBLEME QUALITE"
+                    "content": "ERRATUM : NOTICE V1.1 DU SPOT A FOURNIR"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -826,7 +844,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": false
+            "content": true
         },
         "label": {
             "locale": "fr",
