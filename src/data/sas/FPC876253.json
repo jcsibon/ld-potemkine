@@ -14,7 +14,7 @@
         "locale": "fr",
         "content": "Escalier Modulo"
     },
-    "type": "STANDARD",
+    "type": "ESC_STANDARD",
     "additionalDesc1": {
         "locale": "fr",
         "content": "Escalier Modulo, recoupable pour s'adapter à votre pièce."
@@ -302,6 +302,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-ESCALIER-WI6",
                     "attrIdentifier": "CCU0006-ATC-ESCALIER",
                     "valueString": {
@@ -309,6 +319,26 @@
                         "content": "Quart tournant intermédiaire"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-007",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois sapin"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -329,6 +359,66 @@
                         "content": "Gauche"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-WY2",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "-"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-3150",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3150
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-76",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 76
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-86",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 86
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -427,16 +517,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -483,16 +563,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -527,15 +597,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 79
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 86
                     },
                     "attrSequence": 0
                 },
@@ -820,10 +881,7 @@
                 "locale": "fr",
                 "content": "modulo-qt-intermediaire-sapin-h-315-x-l-76-gauche-sans-rampe-non-monte-2504761"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/164/201825164.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -840,10 +898,7 @@
                 "content": "- <B>Destination <\/B>: intérieure<BR/>- <B>Modèle <\/B>: Modulo<BR/>- <B>Formes <\/B>: quart tournant bas, quart tournant intermédiaire, quart tournant haut, double quart tournant intermédiair<BR/>- <B>Contremarches <\/B>: non<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : sapin<BR/>* Essence des limons  (de la structure) :  sapin<BR/><BR/>- <B>Rampe <\/B>: disponible avec ou sans rampe pour une installation entre deux murs <BR/>* Essence de la rampe : bois<BR/><BR/><B>- Dimensions (en cm) : <\/B><BR/>* Version droite : L. 76 x H. 315 maxi<BR/>* Version quart tournant haut : L. 76 x H. 295 maxi<BR/>* Version quart tournant intermédiaire : L. 76 x H. 315 maxi<BR/>* Version double quart tournant : L. 76 x H. 315 maxi<BR/><BR/><B>- Adaptable :<\/B> en hauteur par recoupe<BR/> <BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Non<BR/>* Eléments optionnels : balustrade"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/164/201825164.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -1031,6 +1086,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-ESCALIER-WI6",
                     "attrIdentifier": "CCU0006-ATC-ESCALIER",
                     "valueString": {
@@ -1038,6 +1103,26 @@
                         "content": "Quart tournant intermédiaire"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-007",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois sapin"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1058,6 +1143,66 @@
                         "content": "Droite"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-WY2",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "-"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-3150",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3150
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-76",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 76
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-86",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 86
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1156,16 +1301,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1212,16 +1347,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -1256,15 +1381,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 79
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 86
                     },
                     "attrSequence": 0
                 },
@@ -1760,6 +1876,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-ESCALIER-WI6",
                     "attrIdentifier": "CCU0006-ATC-ESCALIER",
                     "valueString": {
@@ -1767,6 +1893,26 @@
                         "content": "Quart tournant intermédiaire"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-007",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois sapin"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1787,6 +1933,66 @@
                         "content": "Gauche"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-3150",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3150
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-76",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 76
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-157",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 157
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1885,16 +2091,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1941,16 +2137,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -1985,15 +2171,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 79
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 157
                     },
                     "attrSequence": 0
                 },
@@ -2278,10 +2455,7 @@
                 "locale": "fr",
                 "content": "modulo-qt-intermediaire-sapin-h-315-x-l-76-gauche-avec-rampe-non-monte-2504771"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/162/201825162.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -2298,10 +2472,7 @@
                 "content": "- <B>Destination <\/B>: intérieure<BR/>- <B>Modèle <\/B>: Modulo<BR/>- <B>Formes <\/B>: quart tournant bas, quart tournant intermédiaire, quart tournant haut, double quart tournant intermédiair<BR/>- <B>Contremarches <\/B>: non<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : sapin<BR/>* Essence des limons  (de la structure) :  sapin<BR/><BR/>- <B>Rampe <\/B>: disponible avec ou sans rampe pour une installation entre deux murs <BR/>* Essence de la rampe : bois<BR/><BR/><B>- Dimensions (en cm) : <\/B><BR/>* Version droite : L. 76 x H. 315 maxi<BR/>* Version quart tournant haut : L. 76 x H. 295 maxi<BR/>* Version quart tournant intermédiaire : L. 76 x H. 315 maxi<BR/>* Version double quart tournant : L. 76 x H. 315 maxi<BR/><BR/><B>- Adaptable :<\/B> en hauteur par recoupe<BR/> <BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Non<BR/>* Eléments optionnels : balustrade"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/162/201825162.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -2489,6 +2660,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-ESCALIER-WI6",
                     "attrIdentifier": "CCU0006-ATC-ESCALIER",
                     "valueString": {
@@ -2496,6 +2677,26 @@
                         "content": "Quart tournant intermédiaire"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-007",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois sapin"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2516,6 +2717,66 @@
                         "content": "Droite"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-3150",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3150
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-76",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 76
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-127",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 127
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -2614,16 +2875,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2670,16 +2921,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -2714,15 +2955,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 79
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 127
                     },
                     "attrSequence": 0
                 },
@@ -3007,10 +3239,7 @@
                 "locale": "fr",
                 "content": "modulo-qt-intermediaire-sapin-h-315-x-l-76-droit-avec-rampe-non-monte-2504772"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/163/201825163.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -3027,10 +3256,7 @@
                 "content": "- <B>Destination <\/B>: intérieure<BR/>- <B>Modèle <\/B>: Modulo<BR/>- <B>Formes <\/B>: quart tournant bas, quart tournant intermédiaire, quart tournant haut, double quart tournant intermédiair<BR/>- <B>Contremarches <\/B>: non<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : sapin<BR/>* Essence des limons  (de la structure) :  sapin<BR/><BR/>- <B>Rampe <\/B>: disponible avec ou sans rampe pour une installation entre deux murs <BR/>* Essence de la rampe : bois<BR/><BR/><B>- Dimensions (en cm) : <\/B><BR/>* Version droite : L. 76 x H. 315 maxi<BR/>* Version quart tournant haut : L. 76 x H. 295 maxi<BR/>* Version quart tournant intermédiaire : L. 76 x H. 315 maxi<BR/>* Version double quart tournant : L. 76 x H. 315 maxi<BR/><BR/><B>- Adaptable :<\/B> en hauteur par recoupe<BR/> <BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Non<BR/>* Eléments optionnels : balustrade"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/163/201825163.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -3218,6 +3444,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-ESCALIER-116",
                     "attrIdentifier": "CCU0006-ATC-ESCALIER",
                     "valueString": {
@@ -3225,6 +3461,26 @@
                         "content": "2 quart tournant"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-007",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois sapin"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3245,6 +3501,66 @@
                         "content": "Gauche"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-WY2",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "-"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-3150",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3150
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-76",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 76
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-195",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 195
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -3343,16 +3659,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3399,16 +3705,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -3443,15 +3739,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 79
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 195
                     },
                     "attrSequence": 0
                 },
@@ -3736,10 +4023,7 @@
                 "locale": "fr",
                 "content": "modulo-double-qt-sapin-h-315-x-l-76-gauche-sans-rampe-non-monte-2504781"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/167/201825167.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -3756,10 +4040,7 @@
                 "content": "- <B>Destination <\/B>: intérieure<BR/>- <B>Modèle <\/B>: Modulo<BR/>- <B>Formes <\/B>: quart tournant bas, quart tournant intermédiaire, quart tournant haut, double quart tournant intermédiair<BR/>- <B>Contremarches <\/B>: non<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : sapin<BR/>* Essence des limons  (de la structure) :  sapin<BR/><BR/>- <B>Rampe <\/B>: disponible avec ou sans rampe pour une installation entre deux murs <BR/>* Essence de la rampe : bois<BR/><BR/><B>- Dimensions (en cm) : <\/B><BR/>* Version droite : L. 76 x H. 315 maxi<BR/>* Version quart tournant haut : L. 76 x H. 295 maxi<BR/>* Version quart tournant intermédiaire : L. 76 x H. 315 maxi<BR/>* Version double quart tournant : L. 76 x H. 315 maxi<BR/><BR/><B>- Adaptable :<\/B> en hauteur par recoupe<BR/> <BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Non<BR/>* Eléments optionnels : balustrade"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/167/201825167.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -3947,6 +4228,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-ESCALIER-116",
                     "attrIdentifier": "CCU0006-ATC-ESCALIER",
                     "valueString": {
@@ -3954,6 +4245,26 @@
                         "content": "2 quart tournant"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-007",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois sapin"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3974,6 +4285,66 @@
                         "content": "Droite"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-WY2",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "-"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-3150",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3150
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-76",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 76
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-165",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 165
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -4072,16 +4443,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4128,16 +4489,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -4172,15 +4523,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 79
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 165
                     },
                     "attrSequence": 0
                 },
@@ -4465,10 +4807,7 @@
                 "locale": "fr",
                 "content": "modulo-double-qt-sapin-h-315-x-l-76-droit-sans-rampe-non-monte-2504782"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/168/201825168.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -4485,10 +4824,7 @@
                 "content": "- <B>Destination <\/B>: intérieure<BR/>- <B>Modèle <\/B>: Modulo<BR/>- <B>Formes <\/B>: quart tournant bas, quart tournant intermédiaire, quart tournant haut, double quart tournant intermédiair<BR/>- <B>Contremarches <\/B>: non<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : sapin<BR/>* Essence des limons  (de la structure) :  sapin<BR/><BR/>- <B>Rampe <\/B>: disponible avec ou sans rampe pour une installation entre deux murs <BR/>* Essence de la rampe : bois<BR/><BR/><B>- Dimensions (en cm) : <\/B><BR/>* Version droite : L. 76 x H. 315 maxi<BR/>* Version quart tournant haut : L. 76 x H. 295 maxi<BR/>* Version quart tournant intermédiaire : L. 76 x H. 315 maxi<BR/>* Version double quart tournant : L. 76 x H. 315 maxi<BR/><BR/><B>- Adaptable :<\/B> en hauteur par recoupe<BR/> <BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Non<BR/>* Eléments optionnels : balustrade"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/168/201825168.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -4676,6 +5012,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-ESCALIER-116",
                     "attrIdentifier": "CCU0006-ATC-ESCALIER",
                     "valueString": {
@@ -4683,6 +5029,26 @@
                         "content": "2 quart tournant"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-007",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois sapin"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -4703,6 +5069,66 @@
                         "content": "Gauche"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-3150",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3150
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-76",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 76
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-265",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 265
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -4801,16 +5227,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -4857,16 +5273,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -4901,15 +5307,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 79
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 265
                     },
                     "attrSequence": 0
                 },
@@ -5194,10 +5591,7 @@
                 "locale": "fr",
                 "content": "modulo-double-qt-sapin-h-315-x-l-76-gauche-avec-rampe-non-monte-2504791"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/010/201825010.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -5214,10 +5608,7 @@
                 "content": "- <B>Destination <\/B>: intérieure<BR/>- <B>Modèle <\/B>: Modulo<BR/>- <B>Formes <\/B>: quart tournant bas, quart tournant intermédiaire, quart tournant haut, double quart tournant intermédiair<BR/>- <B>Contremarches <\/B>: non<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : sapin<BR/>* Essence des limons  (de la structure) :  sapin<BR/><BR/>- <B>Rampe <\/B>: disponible avec ou sans rampe pour une installation entre deux murs <BR/>* Essence de la rampe : bois<BR/><BR/><B>- Dimensions (en cm) : <\/B><BR/>* Version droite : L. 76 x H. 315 maxi<BR/>* Version quart tournant haut : L. 76 x H. 295 maxi<BR/>* Version quart tournant intermédiaire : L. 76 x H. 315 maxi<BR/>* Version double quart tournant : L. 76 x H. 315 maxi<BR/><BR/><B>- Adaptable :<\/B> en hauteur par recoupe<BR/> <BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Non<BR/>* Eléments optionnels : balustrade"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/010/201825010.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -5405,6 +5796,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-ESCALIER-116",
                     "attrIdentifier": "CCU0006-ATC-ESCALIER",
                     "valueString": {
@@ -5412,6 +5813,26 @@
                         "content": "2 quart tournant"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-007",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois sapin"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -5432,6 +5853,66 @@
                         "content": "Droite"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-3150",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3150
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-76",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 76
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-205",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 205
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -5530,16 +6011,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -5586,16 +6057,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -5630,15 +6091,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 79
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 205
                     },
                     "attrSequence": 0
                 },
@@ -5923,10 +6375,7 @@
                 "locale": "fr",
                 "content": "modulo-double-qt-sapin-h-315-x-l-76-droit-avec-rampe-non-monte-2504792"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/166/201825166.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -5943,10 +6392,7 @@
                 "content": "- <B>Destination <\/B>: intérieure<BR/>- <B>Modèle <\/B>: Modulo<BR/>- <B>Formes <\/B>: quart tournant bas, quart tournant intermédiaire, quart tournant haut, double quart tournant intermédiair<BR/>- <B>Contremarches <\/B>: non<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : sapin<BR/>* Essence des limons  (de la structure) :  sapin<BR/><BR/>- <B>Rampe <\/B>: disponible avec ou sans rampe pour une installation entre deux murs <BR/>* Essence de la rampe : bois<BR/><BR/><B>- Dimensions (en cm) : <\/B><BR/>* Version droite : L. 76 x H. 315 maxi<BR/>* Version quart tournant haut : L. 76 x H. 295 maxi<BR/>* Version quart tournant intermédiaire : L. 76 x H. 315 maxi<BR/>* Version double quart tournant : L. 76 x H. 315 maxi<BR/><BR/><B>- Adaptable :<\/B> en hauteur par recoupe<BR/> <BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Non<BR/>* Eléments optionnels : balustrade"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/166/201825166.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -6134,6 +6580,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-ESCALIER-WI3",
                     "attrIdentifier": "CCU0006-ATC-ESCALIER",
                     "valueString": {
@@ -6141,6 +6597,26 @@
                         "content": "Quart tournant bas"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-007",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois sapin"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -6161,6 +6637,66 @@
                         "content": "Gauche"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-WY2",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "-"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-3150",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3150
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-76",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 76
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-81",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 81
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -6259,16 +6795,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -6315,16 +6841,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -6359,15 +6875,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 79
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 81
                     },
                     "attrSequence": 0
                 },
@@ -6652,10 +7159,7 @@
                 "locale": "fr",
                 "content": "modulo-qtbas-sapin-h-315-x-l-76-gauche-sans-rampe-non-monte-2504801"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/156/201825156.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -6672,10 +7176,7 @@
                 "content": "- <B>Destination <\/B>: intérieure<BR/>- <B>Modèle <\/B>: Modulo<BR/>- <B>Formes <\/B>: quart tournant bas, quart tournant intermédiaire, quart tournant haut, double quart tournant intermédiair<BR/>- <B>Contremarches <\/B>: non<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : sapin<BR/>* Essence des limons  (de la structure) :  sapin<BR/><BR/>- <B>Rampe <\/B>: disponible avec ou sans rampe pour une installation entre deux murs <BR/>* Essence de la rampe : bois<BR/><BR/><B>- Dimensions (en cm) : <\/B><BR/>* Version droite : L. 76 x H. 315 maxi<BR/>* Version quart tournant haut : L. 76 x H. 295 maxi<BR/>* Version quart tournant intermédiaire : L. 76 x H. 315 maxi<BR/>* Version double quart tournant : L. 76 x H. 315 maxi<BR/><BR/><B>- Adaptable :<\/B> en hauteur par recoupe<BR/> <BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Non<BR/>* Eléments optionnels : balustrade"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/156/201825156.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -6863,6 +7364,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-ESCALIER-WI3",
                     "attrIdentifier": "CCU0006-ATC-ESCALIER",
                     "valueString": {
@@ -6870,6 +7381,26 @@
                         "content": "Quart tournant bas"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-007",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois sapin"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -6890,6 +7421,66 @@
                         "content": "Droite"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-WY2",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "-"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-3150",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3150
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-76",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 76
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-81",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 81
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -6988,16 +7579,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -7044,16 +7625,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -7088,15 +7659,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 79
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 81
                     },
                     "attrSequence": 0
                 },
@@ -7381,10 +7943,7 @@
                 "locale": "fr",
                 "content": "modulo-qtbas-sapin-h-315-x-l-76-droit-sans-rampe-non-monte-2504802"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/157/201825157.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -7401,10 +7960,7 @@
                 "content": "- <B>Destination <\/B>: intérieure<BR/>- <B>Modèle <\/B>: Modulo<BR/>- <B>Formes <\/B>: quart tournant bas, quart tournant intermédiaire, quart tournant haut, double quart tournant intermédiair<BR/>- <B>Contremarches <\/B>: non<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : sapin<BR/>* Essence des limons  (de la structure) :  sapin<BR/><BR/>- <B>Rampe <\/B>: disponible avec ou sans rampe pour une installation entre deux murs <BR/>* Essence de la rampe : bois<BR/><BR/><B>- Dimensions (en cm) : <\/B><BR/>* Version droite : L. 76 x H. 315 maxi<BR/>* Version quart tournant haut : L. 76 x H. 295 maxi<BR/>* Version quart tournant intermédiaire : L. 76 x H. 315 maxi<BR/>* Version double quart tournant : L. 76 x H. 315 maxi<BR/><BR/><B>- Adaptable :<\/B> en hauteur par recoupe<BR/> <BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Non<BR/>* Eléments optionnels : balustrade"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/157/201825157.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -7592,6 +8148,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-ESCALIER-WI3",
                     "attrIdentifier": "CCU0006-ATC-ESCALIER",
                     "valueString": {
@@ -7599,6 +8165,26 @@
                         "content": "Quart tournant bas"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-007",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois sapin"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -7619,6 +8205,76 @@
                         "content": "Gauche"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-W20",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fuseaux actuels"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-3150",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3150
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-76",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 76
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-98",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 98
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -7717,16 +8373,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -7773,16 +8419,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -7817,15 +8453,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 79
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 98
                     },
                     "attrSequence": 0
                 },
@@ -8110,10 +8737,7 @@
                 "locale": "fr",
                 "content": "modulo-qtbas-sapin-h-315-x-l-76-gauche-avec-rampe-fuseau-non-monte-2508001"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/154/201825154.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -8130,10 +8754,7 @@
                 "content": "- <B>Destination <\/B>: intérieure<BR/>- <B>Modèle <\/B>: Modulo<BR/>- <B>Formes <\/B>: quart tournant bas, quart tournant intermédiaire, quart tournant haut, double quart tournant intermédiair<BR/>- <B>Contremarches <\/B>: non<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : sapin<BR/>* Essence des limons  (de la structure) :  sapin<BR/><BR/>- <B>Rampe <\/B>: disponible avec ou sans rampe pour une installation entre deux murs <BR/>* Essence de la rampe : bois<BR/><BR/><B>- Dimensions (en cm) : <\/B><BR/>* Version droite : L. 76 x H. 315 maxi<BR/>* Version quart tournant haut : L. 76 x H. 295 maxi<BR/>* Version quart tournant intermédiaire : L. 76 x H. 315 maxi<BR/>* Version double quart tournant : L. 76 x H. 315 maxi<BR/><BR/><B>- Adaptable :<\/B> en hauteur par recoupe<BR/> <BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Non<BR/>* Eléments optionnels : balustrade"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/154/201825154.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -8321,6 +8942,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-ESCALIER-WI3",
                     "attrIdentifier": "CCU0006-ATC-ESCALIER",
                     "valueString": {
@@ -8328,6 +8959,26 @@
                         "content": "Quart tournant bas"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-007",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois sapin"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -8348,6 +8999,76 @@
                         "content": "Droite"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-W20",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fuseaux actuels"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-3150",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 3150
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-76",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 76
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-98",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 98
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -8446,16 +9167,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -8502,16 +9213,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -8546,15 +9247,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 79
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 98
                     },
                     "attrSequence": 0
                 },
@@ -8839,10 +9531,7 @@
                 "locale": "fr",
                 "content": "modulo-qtbas-sapin-h-315-x-l-76-droit-avec-rampe-fuseau-non-monte-2508002"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/155/201825155.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -8859,10 +9548,7 @@
                 "content": "- <B>Destination <\/B>: intérieure<BR/>- <B>Modèle <\/B>: Modulo<BR/>- <B>Formes <\/B>: quart tournant bas, quart tournant intermédiaire, quart tournant haut, double quart tournant intermédiair<BR/>- <B>Contremarches <\/B>: non<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : sapin<BR/>* Essence des limons  (de la structure) :  sapin<BR/><BR/>- <B>Rampe <\/B>: disponible avec ou sans rampe pour une installation entre deux murs <BR/>* Essence de la rampe : bois<BR/><BR/><B>- Dimensions (en cm) : <\/B><BR/>* Version droite : L. 76 x H. 315 maxi<BR/>* Version quart tournant haut : L. 76 x H. 295 maxi<BR/>* Version quart tournant intermédiaire : L. 76 x H. 315 maxi<BR/>* Version double quart tournant : L. 76 x H. 315 maxi<BR/><BR/><B>- Adaptable :<\/B> en hauteur par recoupe<BR/> <BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Non<BR/>* Eléments optionnels : balustrade"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/155/201825155.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         }
     ]},
     "keyword": {

@@ -14,7 +14,7 @@
         "locale": "fr",
         "content": "Escalier Jazz"
     },
-    "type": "STANDARD",
+    "type": "ESC_STANDARD",
     "additionalDesc1": {
         "locale": "fr",
         "content": "Escalier Jazz, disponible en 3 finitions de bois et métal. Plusieurs possibilités de personnalisations disponibles en magasin."
@@ -335,6 +335,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-X78",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -342,6 +352,26 @@
                         "content": "Hêtre et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-13",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 13
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -355,12 +385,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-273",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 273
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-167",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 167
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-264",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 264
                     },
                     "attrSequence": 0
                 },
@@ -526,16 +616,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -560,15 +640,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 167
                     },
                     "attrSequence": 0
                 },
@@ -1092,6 +1163,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-X78",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -1099,6 +1180,26 @@
                         "content": "Hêtre et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-13",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 13
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1112,12 +1213,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-273",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 273
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-167",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 167
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-264",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 264
                     },
                     "attrSequence": 0
                 },
@@ -1283,16 +1444,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -1317,15 +1468,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 167
                     },
                     "attrSequence": 0
                 },
@@ -1610,10 +1752,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-droit-metal-std-marches-hetre-brut-rampe-fera-fer-plat-h-273-d-2522752"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -1630,10 +1769,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -1849,6 +1985,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-X78",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -1856,6 +2002,26 @@
                         "content": "Hêtre et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1869,12 +2035,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-286",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 286
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-167",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 167
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-261",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 261
                     },
                     "attrSequence": 0
                 },
@@ -2040,16 +2266,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -2074,15 +2290,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 167
                     },
                     "attrSequence": 0
                 },
@@ -2367,10 +2574,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-droit-metal-std-marches-hetre-brut-rampe-fera-h-286-g-2522761"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -2387,10 +2591,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -2606,6 +2807,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-X78",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -2613,6 +2824,26 @@
                         "content": "Hêtre et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2626,12 +2857,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-286",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 286
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-168",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 168
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-261",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 261
                     },
                     "attrSequence": 0
                 },
@@ -2797,16 +3088,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -2831,15 +3112,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 168
                     },
                     "attrSequence": 0
                 },
@@ -3124,10 +3396,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-droit-metal-std-marches-hetre-brut-rampe-fera-h-286-d-2522762"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -3144,10 +3413,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -3372,6 +3638,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-WX5",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -3379,6 +3655,26 @@
                         "content": "Chêne et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-13",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 13
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -3392,12 +3688,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-273",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 273
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-196",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 196
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-264",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 264
                     },
                     "attrSequence": 0
                 },
@@ -3563,16 +3919,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -3597,15 +3943,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 196
                     },
                     "attrSequence": 0
                 },
@@ -3890,10 +4227,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-droit-metal-std-marches-chene-brut-rampe-fera-fer-plat-h-273-g-2522771"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -3910,10 +4244,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -4138,6 +4469,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-WX5",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -4145,6 +4486,26 @@
                         "content": "Chêne et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-13",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 13
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -4158,12 +4519,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-273",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 273
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-196",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 196
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-264",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 264
                     },
                     "attrSequence": 0
                 },
@@ -4329,16 +4750,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -4363,15 +4774,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 196
                     },
                     "attrSequence": 0
                 },
@@ -4656,10 +5058,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-droit-metal-std-marches-chene-brut-rampe-fera-fer-plat-h-273-d-2522772"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -4676,10 +5075,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -4904,6 +5300,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-WX5",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -4911,6 +5317,26 @@
                         "content": "Chêne et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -4924,12 +5350,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-286",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 286
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-197",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 197
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-261",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 261
                     },
                     "attrSequence": 0
                 },
@@ -5095,16 +5581,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -5129,15 +5605,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 197
                     },
                     "attrSequence": 0
                 },
@@ -5422,10 +5889,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-droit-metal-std-marches-chene-brut-rampe-fera-h-286-g-2522781"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -5442,10 +5906,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -5670,6 +6131,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-WX5",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -5677,6 +6148,26 @@
                         "content": "Chêne et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -5690,12 +6181,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-286",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 286
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-197",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 197
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-261",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 261
                     },
                     "attrSequence": 0
                 },
@@ -5861,16 +6412,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -5895,15 +6436,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 197
                     },
                     "attrSequence": 0
                 },
@@ -6188,10 +6720,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-droit-metal-std-marches-chene-brut-rampe-fera-h-286-d-2522782"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -6208,10 +6737,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -6427,6 +6953,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-X78",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -6434,6 +6970,26 @@
                         "content": "Hêtre et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-13",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 13
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -6447,12 +7003,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-273",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 273
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-165",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 165
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-280",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 280
                     },
                     "attrSequence": 0
                 },
@@ -6618,16 +7234,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -6652,15 +7258,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 165
                     },
                     "attrSequence": 0
                 },
@@ -6945,10 +7542,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-bas-metal-std-marches-hetre-brut-rampe-fera-fer-plat-h-273-g-2522791"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/618/518/Escalier Jazz QT bas201618518.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -6965,10 +7559,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/618/518/Escalier Jazz QT bas201618518.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -7184,6 +7775,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-X78",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -7191,6 +7792,26 @@
                         "content": "Hêtre et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-13",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 13
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -7204,12 +7825,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-273",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 273
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-165",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 165
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-280",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 280
                     },
                     "attrSequence": 0
                 },
@@ -7375,16 +8056,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -7409,15 +8080,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 165
                     },
                     "attrSequence": 0
                 },
@@ -7702,10 +8364,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-bas-metal-std-marches-hetre-brut-rampe-fera-fer-plat-h-273-d-2522792"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/618/518/Escalier Jazz QT bas201618518.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -7722,10 +8381,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/618/518/Escalier Jazz QT bas201618518.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -7941,6 +8597,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-X78",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -7948,6 +8614,26 @@
                         "content": "Hêtre et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -7961,12 +8647,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-286",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 286
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-165",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 165
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-280",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 280
                     },
                     "attrSequence": 0
                 },
@@ -8132,16 +8878,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -8166,15 +8902,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 165
                     },
                     "attrSequence": 0
                 },
@@ -8459,10 +9186,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-bas-metal-std-marches-hetre-brut-rampe-fera-h-286-g-2522801"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/618/518/Escalier Jazz QT bas201618518.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -8479,10 +9203,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/618/518/Escalier Jazz QT bas201618518.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -8698,6 +9419,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-X78",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -8705,6 +9436,26 @@
                         "content": "Hêtre et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -8718,12 +9469,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-286",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 286
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-165",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 165
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-280",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 280
                     },
                     "attrSequence": 0
                 },
@@ -8889,16 +9700,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -8923,15 +9724,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 165
                     },
                     "attrSequence": 0
                 },
@@ -9216,10 +10008,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-bas-metal-std-marches-hetre-brut-rampe-fera-h-286-d-2522802"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/618/518/Escalier Jazz QT bas201618518.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -9236,10 +10025,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/618/518/Escalier Jazz QT bas201618518.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -9464,6 +10250,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-WX5",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -9471,6 +10267,26 @@
                         "content": "Chêne et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-13",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 13
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -9484,12 +10300,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-273",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 273
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-196",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 196
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-280",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 280
                     },
                     "attrSequence": 0
                 },
@@ -9655,16 +10531,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -9689,15 +10555,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 196
                     },
                     "attrSequence": 0
                 },
@@ -9982,10 +10839,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-bas-metal-std-marches-chene-brut-rampe-fera-fer-plat-h-273-g-2522811"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/618/518/201618518.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -10002,10 +10856,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/618/518/201618518.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -10230,6 +11081,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-WX5",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -10237,6 +11098,26 @@
                         "content": "Chêne et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-13",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 13
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -10250,12 +11131,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-273",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 273
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-196",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 196
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-280",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 280
                     },
                     "attrSequence": 0
                 },
@@ -10421,16 +11362,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -10455,15 +11386,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 196
                     },
                     "attrSequence": 0
                 },
@@ -10748,10 +11670,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-bas-metal-std-marches-chene-brut-rampe-fera-fer-plat-h-273-d-2522812"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/618/518/201618518.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -10768,10 +11687,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/618/518/201618518.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -10996,6 +11912,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-WX5",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -11003,6 +11929,26 @@
                         "content": "Chêne et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -11016,12 +11962,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-286",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 286
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-198",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 198
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-280",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 280
                     },
                     "attrSequence": 0
                 },
@@ -11187,16 +12193,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -11221,15 +12217,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 198
                     },
                     "attrSequence": 0
                 },
@@ -11514,10 +12501,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-bas-metal-std-marches-chene-brut-rampe-fera-h-286-g-2522821"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/618/518/201618518.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -11534,10 +12518,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/618/518/201618518.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -11762,6 +12743,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-WX5",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -11769,6 +12760,26 @@
                         "content": "Chêne et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -11782,12 +12793,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-286",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 286
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-71",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 71
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-198",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 198
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-280",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 280
                     },
                     "attrSequence": 0
                 },
@@ -11953,16 +13024,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -11987,15 +13048,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 198
                     },
                     "attrSequence": 0
                 },
@@ -12280,10 +13332,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-bas-metal-std-marches-chene-brut-rampe-fera-h-286-d-2522822"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/618/518/201618518.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -12300,10 +13349,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/618/518/201618518.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -12519,6 +13565,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-X78",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -12526,6 +13582,26 @@
                         "content": "Hêtre et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -12539,12 +13615,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-274",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 274
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-80",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 80
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-207",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 207
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-300",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 300
                     },
                     "attrSequence": 0
                 },
@@ -12710,16 +13846,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -12744,15 +13870,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 207
                     },
                     "attrSequence": 0
                 },
@@ -13037,10 +14154,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-palier-metal-std-marches-hetre-brut-rampe-fera-h-274-g-2522831"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -13057,10 +14171,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -13276,6 +14387,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-X78",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -13283,6 +14404,26 @@
                         "content": "Hêtre et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -13296,12 +14437,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-274",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 274
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-80",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 80
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-207",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 207
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-300",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 300
                     },
                     "attrSequence": 0
                 },
@@ -13467,16 +14668,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -13501,15 +14692,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 207
                     },
                     "attrSequence": 0
                 },
@@ -13794,10 +14976,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-palier-metal-std-marches-hetre-brut-rampe-fera-h-274-d-2522832"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -13814,10 +14993,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -14033,6 +15209,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-X78",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -14040,6 +15226,26 @@
                         "content": "Hêtre et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -14053,12 +15259,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-286",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 286
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-80",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 80
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-207",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 207
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-300",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 300
                     },
                     "attrSequence": 0
                 },
@@ -14224,16 +15490,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -14258,15 +15514,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 207
                     },
                     "attrSequence": 0
                 },
@@ -14551,10 +15798,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-palier-metal-std-marches-hetre-brut-rampe-fera-h-286-g-2522841"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -14571,10 +15815,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -14790,6 +16031,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-X78",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -14797,6 +16048,26 @@
                         "content": "Hêtre et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -14810,12 +16081,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-286",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 286
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-80",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 80
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-207",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 207
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-300",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 300
                     },
                     "attrSequence": 0
                 },
@@ -14981,16 +16312,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -15015,15 +16336,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 207
                     },
                     "attrSequence": 0
                 },
@@ -15308,10 +16620,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-palier-metal-std-marches-hetre-brut-rampe-fera-h-286-d-2522842"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -15328,10 +16637,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -15556,6 +16862,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-WX5",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -15563,6 +16879,26 @@
                         "content": "Chêne et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -15576,12 +16912,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-274",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 274
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-80",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 80
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-207",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 207
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-300",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 300
                     },
                     "attrSequence": 0
                 },
@@ -15747,16 +17143,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -15781,15 +17167,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 207
                     },
                     "attrSequence": 0
                 },
@@ -16074,10 +17451,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-palier-metal-std-marches-chene-brut-rampe-fera-h-274-g-2522851"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -16094,10 +17468,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -16322,6 +17693,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-WX5",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -16329,6 +17710,26 @@
                         "content": "Chêne et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -16342,12 +17743,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-274",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 274
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-80",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 80
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-207",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 207
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-300",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 300
                     },
                     "attrSequence": 0
                 },
@@ -16513,16 +17974,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -16547,15 +17998,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 207
                     },
                     "attrSequence": 0
                 },
@@ -16840,10 +18282,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-palier-metal-std-marches-chene-brut-rampe-fera-h-274-d-2522852"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -16860,10 +18299,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -17088,6 +18524,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-WX5",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -17095,6 +18541,26 @@
                         "content": "Chêne et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -17108,12 +18574,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-286",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 286
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-80",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 80
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-207",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 207
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-300",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 300
                     },
                     "attrSequence": 0
                 },
@@ -17279,16 +18805,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -17313,15 +18829,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 207
                     },
                     "attrSequence": 0
                 },
@@ -17606,10 +19113,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-palier-metal-std-marches-chene-brut-rampe-fera-h-286-g-2522861"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -17626,10 +19130,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -17854,6 +19355,16 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-B74",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-MATERIAU-WX5",
                     "attrIdentifier": "CCU0006-ATC-MATERIAU",
                     "valueString": {
@@ -17861,6 +19372,26 @@
                         "content": "Chêne et métal"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-14",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 14
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -17874,12 +19405,72 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-TYPE-RAMPE-TT5",
+                    "attrIdentifier": "CCU0006-ATC-TYPE-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fera"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-BEM",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-286",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                     "attrUsage": 1,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 286
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-80",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 80
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-207",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 207
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-300",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 300
                     },
                     "attrSequence": 0
                 },
@@ -18045,16 +19636,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BEM",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois et métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -18079,15 +19660,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 83
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 207
                     },
                     "attrSequence": 0
                 },
@@ -18372,10 +19944,7 @@
                 "locale": "fr",
                 "content": "escalier-jazz-qt-palier-metal-std-marches-chene-brut-rampe-fera-h-286-d-2522862"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/825/031/201825031.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -18392,10 +19961,7 @@
                 "content": "- <B>Destination <\/B>: Intérieure<BR/>- <B>Modèle <\/B>: Jazz<BR/>- <B>Formes <\/B>: droit, quart tournant bas et quart tournant avec palier. <BR/><B>- Contremarches <\/B>: Oui<BR/><BR/>- <B>Matériaux de l'escalier<\/B><BR/>* Essence des marches : hêtre et chêne<BR/>* Essence des limons  (de la structure) : Acier<BR/><BR/>- <B>Rampe <\/B>: Fournie, modèle Fera fer plat<BR/>* Essence de la rampe : Métal<BR/><BR/><B>- Dimensions de la version droite (en cm)<\/B><BR/>* Hauteur : 273 ou 286<BR/>* Reculement d'arrivée (encombrement au sol) : 264 (H. 273 cm) ou 260.3 (H. 286 cm)<BR/>* Largeur de volée (largeur de passage de l'escalier) : 80 <BR/>* Chevêtre mini (largeur totale disponible : largeur de volée + largeur des potaux/rampes + passage de main) : 243 x 85 <BR/>* Nombre de marches : 13 (H. 273 cm) ou 14 (H. 286 cm) <BR/><BR/><B>Retrouvez l'ensemble des dimensions de l'escalier Jazz en notice de montage. <\/B><BR/><BR/><B>- Options disponibles en magasin :<\/B><BR/>* Sur-mesure possible : Oui<BR/>* Finitions bois (marches et contremarches) : naturel, moyen, foncé, gris clair, gris anthracite, noir, blanchi, hêtre blanc* (*seulement pour la finition hêtre)<BR/>* Finitions métal (limon et rampe) : blanc, gris clair, gris anthracite, taupe, noir<BR/>* Rampes : modèle Fera main rectangle métal<BR/>* Autres éléments optionnels : balustrade coordonnée"
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/825/031/201825031.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         }
     ]},
     "keyword": {

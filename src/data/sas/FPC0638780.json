@@ -14,7 +14,7 @@
         "locale": "fr",
         "content": "Socle Chambord"
     },
-    "type": "STANDARD",
+    "type": "ESC_STANDARD",
     "additionalDesc1": {
         "locale": "fr",
         "content": "Recoupable lors de la pose, le socle en chêne Chambord permet l'adaptation en hauteur de votre escalier standard, tout en y ajoutant indéniablement une plus-value esthétique."
@@ -261,6 +261,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-LONGUEUR-100",
                     "attrIdentifier": "CCU0006-ATC-LONGUEUR",
                     "attrUsage": 1,
@@ -278,6 +298,66 @@
                         "content": "Bois exotique"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-21",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 21
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-100",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 100
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-23",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 23
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-40",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 40
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -376,16 +456,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -432,16 +502,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "002",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -449,15 +509,6 @@
                         "content": "Accessoire"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 23
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -722,10 +773,7 @@
                 "locale": "fr",
                 "content": "socle-tauari-chambord-1-arrondi-l-100-0638500"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/det/@01/638780@DET@01.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -742,10 +790,7 @@
                 "content": "Modèle présenté :<BR/>- Socle en  chêne modèle Chambord.<BR/>- Permet une adaptation en hauteur de votre escalier standard.<BR/>- A recouper lors de la pose de l'escalier.<BR/>- Socle avec 1 arrondi.<BR/>- Dimensions : L. 100 x P. 40 x H. 21 cm.<BR/><BR/>- Proposé aussi avec 2 arrondis : L. 120 x P. 40 x H. 21 cm."
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/det/@01/638780@DET@01.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -906,6 +951,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-LONGUEUR-120",
                     "attrIdentifier": "CCU0006-ATC-LONGUEUR",
                     "attrUsage": 1,
@@ -923,6 +988,66 @@
                         "content": "Bois exotique"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-21",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 21
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-120",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 120
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-25",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 25
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-40",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 40
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1021,16 +1146,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1077,16 +1192,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "002",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -1094,15 +1199,6 @@
                         "content": "Accessoire"
                     },
                     "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 25
-                    },
                     "attrSequence": 0
                 },
                 {
@@ -1367,10 +1463,7 @@
                 "locale": "fr",
                 "content": "socle-tauari-chambord-2-arrondis-l-120-0638510"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/det/@01/638780@DET@01.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -1387,10 +1480,7 @@
                 "content": "Modèle présenté :<BR/>- Socle en  chêne modèle Chambord.<BR/>- Permet une adaptation en hauteur de votre escalier standard.<BR/>- A recouper lors de la pose de l'escalier.<BR/>- Socle avec 1 arrondi.<BR/>- Dimensions : L. 100 x P. 40 x H. 21 cm.<BR/><BR/>- Proposé aussi avec 2 arrondis : L. 120 x P. 40 x H. 21 cm."
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/det/@01/638780@DET@01.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -1625,6 +1715,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-LONGUEUR-100",
                     "attrIdentifier": "CCU0006-ATC-LONGUEUR",
                     "attrUsage": 1,
@@ -1642,6 +1752,66 @@
                         "content": "Chêne"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-20",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-49",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 49
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-23",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 23
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-40",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 40
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1750,16 +1920,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1801,16 +1961,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Standard"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1904,15 +2054,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 40
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 23
                     },
                     "attrSequence": 0
                 },
@@ -2445,6 +2586,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-015",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-854",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-LONGUEUR-120",
                     "attrIdentifier": "CCU0006-ATC-LONGUEUR",
                     "attrUsage": 1,
@@ -2462,6 +2623,66 @@
                         "content": "Chêne"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-B74",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brut"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-015",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-20",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 20
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-49",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 49
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-26",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 26
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-40",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 40
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -2570,16 +2791,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "B74",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brut"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2626,16 +2837,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "015",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Bois"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "002",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -2670,15 +2871,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 40
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 26
                     },
                     "attrSequence": 0
                 },
@@ -2953,10 +3145,7 @@
                 "locale": "fr",
                 "content": "socle-chambord-2-arrondis-chene-l-120-0638790"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/det/@01/638780@DET@01.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -2973,10 +3162,7 @@
                 "content": "Modèle présenté :<BR/>- Socle en  chêne modèle Chambord.<BR/>- Permet une adaptation en hauteur de votre escalier standard.<BR/>- A recouper lors de la pose de l'escalier.<BR/>- Socle avec 1 arrondi.<BR/>- Dimensions : L. 100 x P. 40 x H. 21 cm.<BR/><BR/>- Proposé aussi avec 2 arrondis : L. 120 x P. 40 x H. 21 cm."
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/det/@01/638780@DET@01.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         }
     ]},
     "seo": {

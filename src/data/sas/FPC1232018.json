@@ -29,6 +29,15 @@
             "attrSequence": 1
         },
         {
+            "attrIdentifier": "LAPEYRE-PROMO-ID",
+            "valueString": {
+                "locale": "fr",
+                "content": 1800
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
+        {
             "attrIdentifier": "categorieGoogle",
             "valueString": {
                 "locale": "fr",
@@ -219,15 +228,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-EPAISSEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 7.5
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-FAB-EN-FRANCE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -262,25 +262,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "30X60"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 60
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "W52",
-                    "attrIdentifier": "ATC-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Faïence pâte blanche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -451,6 +432,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0007-ATC-COULEUR-271",
+                    "attrIdentifier": "CCU0007-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Beige"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-EPAISSEUR-7.5",
+                    "attrIdentifier": "CCU0007-ATC-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7.5
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0007-ATC-FINITION-U26",
                     "attrIdentifier": "CCU0007-ATC-FINITION",
                     "valueString": {
@@ -458,6 +459,66 @@
                         "content": "Beige brillant"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-LONGUEUR-60",
+                    "attrIdentifier": "CCU0007-ATC-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 60
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-MATERIAU-W52",
+                    "attrIdentifier": "CCU0007-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Faïence pâte blanche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-COMMUNES-3-COMM-ASPECT-BD9",
+                    "attrIdentifier": "CCU0007-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brillant"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-COMMUNES-3-COMM-TYPE-MATERIAU-W90",
+                    "attrIdentifier": "CCU0007-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carrelage"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-LARGEUR-33",
+                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 33
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS-16.97",
+                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 16.97
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -565,16 +626,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BD9",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brillant"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -616,16 +667,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Standard"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "W90",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Carrelage"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -675,6 +716,15 @@
                         "locale": "fr",
                         "content": 0
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1070,15 +1120,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-EPAISSEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 7.5
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-FAB-EN-FRANCE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1113,25 +1154,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "30X60"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 60
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "W52",
-                    "attrIdentifier": "ATC-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Faïence pâte blanche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1302,6 +1324,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0007-ATC-COULEUR-TA4",
+                    "attrIdentifier": "CCU0007-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Beige foncé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-EPAISSEUR-7.5",
+                    "attrIdentifier": "CCU0007-ATC-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7.5
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0007-ATC-FINITION-TE6",
                     "attrIdentifier": "CCU0007-ATC-FINITION",
                     "valueString": {
@@ -1309,6 +1351,66 @@
                         "content": "Beige foncé brillant"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-LONGUEUR-60",
+                    "attrIdentifier": "CCU0007-ATC-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 60
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-MATERIAU-W52",
+                    "attrIdentifier": "CCU0007-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Faïence pâte blanche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-COMMUNES-3-COMM-ASPECT-BD9",
+                    "attrIdentifier": "CCU0007-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brillant"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-COMMUNES-3-COMM-TYPE-MATERIAU-W90",
+                    "attrIdentifier": "CCU0007-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carrelage"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-LARGEUR-33",
+                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 33
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS-16.97",
+                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 16.97
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1416,16 +1518,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BD9",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brillant"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1467,16 +1559,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Standard"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "W90",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Carrelage"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1526,6 +1608,15 @@
                         "locale": "fr",
                         "content": 0
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -1921,15 +2012,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-EPAISSEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 7.5
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-FAB-EN-FRANCE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1964,25 +2046,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "30X60"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 60
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "W52",
-                    "attrIdentifier": "ATC-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Faïence pâte blanche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2153,6 +2216,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0007-ATC-COULEUR-104",
+                    "attrIdentifier": "CCU0007-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-EPAISSEUR-7.5",
+                    "attrIdentifier": "CCU0007-ATC-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7.5
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0007-ATC-FINITION-298",
                     "attrIdentifier": "CCU0007-ATC-FINITION",
                     "valueString": {
@@ -2160,6 +2243,66 @@
                         "content": "Gris brillant"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-LONGUEUR-60",
+                    "attrIdentifier": "CCU0007-ATC-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 60
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-MATERIAU-W52",
+                    "attrIdentifier": "CCU0007-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Faïence pâte blanche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-COMMUNES-3-COMM-ASPECT-BD9",
+                    "attrIdentifier": "CCU0007-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brillant"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-COMMUNES-3-COMM-TYPE-MATERIAU-W90",
+                    "attrIdentifier": "CCU0007-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carrelage"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-LARGEUR-33",
+                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 33
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS-16.97",
+                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 16.97
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -2267,16 +2410,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BD9",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brillant"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2318,16 +2451,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Standard"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "W90",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Carrelage"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2377,6 +2500,15 @@
                         "locale": "fr",
                         "content": 0
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
@@ -2778,15 +2910,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-EPAISSEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 7.5
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-FAB-EN-FRANCE",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2821,25 +2944,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "30X60"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "ATC-LONGUEUR",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 60
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "W52",
-                    "attrIdentifier": "ATC-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Faïence pâte blanche"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3010,6 +3114,26 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0007-ATC-COULEUR-296",
+                    "attrIdentifier": "CCU0007-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gris anthracite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-EPAISSEUR-7.5",
+                    "attrIdentifier": "CCU0007-ATC-EPAISSEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 7.5
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0007-ATC-FINITION-U24",
                     "attrIdentifier": "CCU0007-ATC-FINITION",
                     "valueString": {
@@ -3017,6 +3141,66 @@
                         "content": "Anthracite brillant"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-LONGUEUR-60",
+                    "attrIdentifier": "CCU0007-ATC-LONGUEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 60
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-ATC-MATERIAU-W52",
+                    "attrIdentifier": "CCU0007-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Faïence pâte blanche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-COMMUNES-3-COMM-ASPECT-BD9",
+                    "attrIdentifier": "CCU0007-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Brillant"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-COMMUNES-3-COMM-TYPE-MATERIAU-W90",
+                    "attrIdentifier": "CCU0007-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Carrelage"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-LARGEUR-33",
+                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 33
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS-16.97",
+                    "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 16.97
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -3124,16 +3308,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "BD9",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Brillant"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3175,16 +3349,6 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "Standard"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
-                    "valueIdentifier": "W90",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Carrelage"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3234,6 +3398,15 @@
                         "locale": "fr",
                         "content": 0
                     },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "LAPEYRE-PROMO-ID",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "NO_PROMO"
+                    },
+                    "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {

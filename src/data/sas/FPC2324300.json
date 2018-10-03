@@ -14,7 +14,7 @@
         "locale": "fr",
         "content": "Escalier extérieur spirale Spiro en acier galvanisé"
     },
-    "type": "STANDARD",
+    "type": "ESC_STANDARD",
     "additionalDesc1": {
         "locale": "fr",
         "content": "Ajustable en hauteur grâce à un système de bagues, l'escalier extérieur spirale Spiro en acier galvanisé résiste au temps et aux intempéries. Moderne et élégant, il est fourni avec rampe palière et palier d'arrivée, et peut être installé par nos soins."
@@ -339,9 +339,129 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-014",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-DIAMETRE-120",
+                    "attrIdentifier": "CCU0006-ATC-DIAMETRE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 120
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-ESCALIER-112",
+                    "attrIdentifier": "CCU0006-ATC-ESCALIER",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Spiral"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-151",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Métal galvanisé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-CV5",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Acier galvanisé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-13",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 13
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-CV9",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Galvanisé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-014",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-405",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 405
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-120",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 120
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-140",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 140
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-120",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 120
@@ -444,16 +564,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CV9",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Galvanisé"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -500,16 +610,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "014",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -544,15 +644,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 58
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 140
                     },
                     "attrSequence": 0
                 },
@@ -855,10 +946,7 @@
                 "locale": "fr",
                 "content": "escalier-spiro-galvanise-13-marches-d-120-2324300"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/det/@01/2324300@DET@01.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -875,10 +963,7 @@
                 "content": "- Hauteur variable de 252 à 305 cm.<BR/>- Ajustable grâce à un système de bagues sur les marches.<BR/>- Nombre de marches : 12.<BR/>- Diamètre : 120 cm.<BR/>- Chevêtre conseillé : 130 x 130 cm. pour le diamètre 120 cm, 150 x 150 cm pour le diamètre 140 cm et 170 x 170 cm pour le diamètre 160 cm.<BR/>- Fourni avec rampe palière et palier d'arrivée.<BR/>- Garantie : 2 ans.<BR/>- Pose extérieur de -20°C jusqu\u2019à +50°C, hors bord de mer.<BR/><BR/>- Balustrade en option.<BR/>- La vidéo de montage illustre seulement le montage, pas les options disponibles."
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/det/@01/2324300@DET@01.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -1113,9 +1198,129 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-014",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-DIAMETRE-140",
+                    "attrIdentifier": "CCU0006-ATC-DIAMETRE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 140
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-ESCALIER-112",
+                    "attrIdentifier": "CCU0006-ATC-ESCALIER",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Spiral"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-151",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Métal galvanisé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-CV5",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Acier galvanisé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-13",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 13
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-CV9",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Galvanisé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-014",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-405",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 405
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-140",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 140
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-175",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 175
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-140",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 140
@@ -1218,16 +1423,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CV9",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Galvanisé"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1274,16 +1469,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "014",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -1318,15 +1503,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 58
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 175
                     },
                     "attrSequence": 0
                 },
@@ -1887,9 +2063,129 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-014",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-DIAMETRE-160",
+                    "attrIdentifier": "CCU0006-ATC-DIAMETRE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 160
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-ESCALIER-112",
+                    "attrIdentifier": "CCU0006-ATC-ESCALIER",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Spiral"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-151",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Métal galvanisé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-CV5",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Acier galvanisé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-13",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 13
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT-CV9",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-ASPECT",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Galvanisé"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-014",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-405",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 405
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-160",
                     "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
                     "attrUsage": 1,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 160
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-215",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 215
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-160",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 160
@@ -1992,16 +2288,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CV9",
-                    "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Galvanisé"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2048,16 +2334,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "014",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -2092,15 +2368,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 58
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 215
                     },
                     "attrSequence": 0
                 },
@@ -2403,10 +2670,7 @@
                 "locale": "fr",
                 "content": "escalier-spiro-galvanise-13-marches-d-160-2324320"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/det/@01/2324300@DET@01.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -2423,10 +2687,7 @@
                 "content": "- Hauteur variable de 252 à 305 cm.<BR/>- Ajustable grâce à un système de bagues sur les marches.<BR/>- Nombre de marches : 12.<BR/>- Diamètre : 120 cm.<BR/>- Chevêtre conseillé : 130 x 130 cm. pour le diamètre 120 cm, 150 x 150 cm pour le diamètre 140 cm et 170 x 170 cm pour le diamètre 160 cm.<BR/>- Fourni avec rampe palière et palier d'arrivée.<BR/>- Garantie : 2 ans.<BR/>- Pose extérieur de -20°C jusqu\u2019à +50°C, hors bord de mer.<BR/><BR/>- Balustrade en option.<BR/>- La vidéo de montage illustre seulement le montage, pas les options disponibles."
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/det/@01/2324300@DET@01.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         }
     ]},
     "keyword": {

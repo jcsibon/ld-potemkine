@@ -14,7 +14,7 @@
         "locale": "fr",
         "content": "Escalier en spirale Mezzo standard"
     },
-    "type": "STANDARD",
+    "type": "ESC_STANDARD",
     "additionalDesc1": {
         "locale": "fr",
         "content": "Il vous fait gagner de l'espace, c'est un élément de décoration à part entière, mais ce n'est pas tout. L'escalier en spirale Mezzo standard, dont les marches sont réglables en hauteur, vous apportera un confort d'utilisation optimal."
@@ -319,6 +319,76 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-DIAMETRE-135",
+                    "attrIdentifier": "CCU0006-ATC-DIAMETRE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 135
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-ESCALIER-112",
+                    "attrIdentifier": "CCU0006-ATC-ESCALIER",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Spiral"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-105",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-008",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-13",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 13
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-SENS-G",
                     "attrIdentifier": "CCU0006-ATC-SENS",
                     "valueString": {
@@ -326,6 +396,66 @@
                         "content": "Gauche"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-G",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Gauche"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-014",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-299",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 299
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-65",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 65
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-140",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 140
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-145",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 145
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -470,16 +600,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "014",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -514,15 +634,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 80
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 140
                     },
                     "attrSequence": 0
                 },
@@ -1054,6 +1165,76 @@
                     "attrSequence": 0
                 },
                 {
+                    "valueIdentifier": "CCU0006-ATC-COULEUR-105",
+                    "attrIdentifier": "CCU0006-ATC-COULEUR",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-DIAMETRE-135",
+                    "attrIdentifier": "CCU0006-ATC-DIAMETRE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 135
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-ESCALIER-112",
+                    "attrIdentifier": "CCU0006-ATC-ESCALIER",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Spiral"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-FINITION-105",
+                    "attrIdentifier": "CCU0006-ATC-FINITION",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Noir"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-MATERIAU-008",
+                    "attrIdentifier": "CCU0006-ATC-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Bois et métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-NB-MARCHES-13",
+                    "attrIdentifier": "CCU0006-ATC-NB-MARCHES",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 13
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-RAMPE-V59",
+                    "attrIdentifier": "CCU0006-ATC-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Avec rampe"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": "CCU0006-ATC-SENS-D",
                     "attrIdentifier": "CCU0006-ATC-SENS",
                     "valueString": {
@@ -1061,6 +1242,66 @@
                         "content": "Droite"
                     },
                     "attrUsage": 1,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-ATC-SENS-RAMPE-D",
+                    "attrIdentifier": "CCU0006-ATC-SENS-RAMPE",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Droite"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU-014",
+                    "attrIdentifier": "CCU0006-COMMUNES-3-COMM-TYPE-MATERIAU",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Métal"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR-299",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 299
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR-65",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 65
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS-140",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-POIDS",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 140
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "valueIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-145",
+                    "attrIdentifier": "CCU0006-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 145
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1205,16 +1446,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "014",
-                    "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                    "valueString": {
-                        "locale": "fr",
-                        "content": "Métal"
-                    },
-                    "attrUsage": 2,
-                    "attrSequence": 0
-                },
-                {
                     "valueIdentifier": "001",
                     "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                     "valueString": {
@@ -1249,15 +1480,6 @@
                     "valueDecimal": {
                         "locale": "fr",
                         "content": 80
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 140
                     },
                     "attrSequence": 0
                 },
@@ -1542,10 +1764,7 @@
                 "locale": "fr",
                 "content": "escalier-mezzo-d-140-noir-13-marches-hetre-aboute-avec-rampe-metal-2468952"
             }},
-            "imageFull": {
-                "locale": "fr",
-                "content": "/standardMain/618/458/Escalier Mezzo201618458.jpg"
-            },
+            "imageFull": {"locale": "fr"},
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -1562,10 +1781,7 @@
                 "content": "- 13 marches avec possibilité d'enlever une marche et de régler la hauteur de toutes les marches.<BR/>- H. mini 12 marches : 258 cm ; H. maxi 12 marches : 282 cm.<BR/>- H. mini 13 marches : 279,5 cm ; H. maxi 13 marches : 305,5 cm.<BR/>- Diamètre : 140 cm.<BR/>- Marches en hêtre lamellé collé brut, noyau et rampe métalliques noir grainé RAL 9005.<BR/>- Main courante ronde en bois brut.<BR/>- Fourni avec palier d'arrivée carré et rampe palière.<BR/>- Elément optionnel : balustrade."
             },
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {
-                "locale": "fr",
-                "content": "/thumbnail/618/458/Escalier Mezzo201618458.jpg"
-            }
+            "imageThumbnail": {"locale": "fr"}
         }
     ]},
     "keyword": {
