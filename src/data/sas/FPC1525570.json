@@ -11,8 +11,11 @@
         "locale": "fr",
         "content": "Sol vinyle déco Chêne LIVYN RIGIDE à clipser"
     },
-    "type": "STANDARD",
-    "additionalDesc1": {"locale": "fr"},
+    "type": "CATALOGUE_PAPIER",
+    "additionalDesc1": {
+        "locale": "fr",
+        "content": "Un vinyle rigide, nouvelle génération, avec un aspect véritablement authentique. Couche décorative en vinyle a impression fine pour un rendu très réaliste et naturel. Adapté à une pose sur un ancien carrelage ou autres supports irréguliers. Ce vynile est la solution pour s\u2019affranchir des irrégularités supports, sonorité faible, sensation douce, peu de poinçonnement et une résistance élevé aux chocs."
+    },
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
         {
@@ -25,20 +28,20 @@
             "attrSequence": 0
         },
         {
-            "attrIdentifier": "codeEan",
-            "valueString": {
-                "locale": "fr",
-                "content": 5415125989256
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
-        {
             "attrIdentifier": "coeffConversionPrix",
             "attrUsage": 2,
             "valueDecimal": {
                 "locale": "fr",
-                "content": 0.4662
+                "content": 1
+            },
+            "attrSequence": 0
+        },
+        {
+            "attrIdentifier": "coeffConversionQuantite",
+            "attrUsage": 2,
+            "valueDecimal": {
+                "locale": "fr",
+                "content": 1
             },
             "attrSequence": 0
         },
@@ -52,11 +55,11 @@
             "attrSequence": 0
         },
         {
-            "valueIdentifier": 0,
+            "valueIdentifier": 9,
             "attrIdentifier": "contrainteColisage",
             "valueString": {
                 "locale": "fr",
-                "content": 0
+                "content": 9
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -65,27 +68,27 @@
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
-                "content": "Prix pour la dimension l 19,1 cm  x L 125,1 cm x E 5 mm"
+                "content": "Prix pour la dimension l 19,1 cm  x L 125,1 cm x E"
             },
             "attrUsage": 2,
             "attrSequence": 0
         },
         {
-            "valueIdentifier": "UN",
+            "valueIdentifier": "M2",
             "attrIdentifier": "uniteSecondaire",
             "valueString": {
                 "locale": "fr",
-                "content": "UN"
+                "content": "M2"
             },
             "attrUsage": 2,
             "attrSequence": 0
         },
         {
-            "valueIdentifier": "UN",
+            "valueIdentifier": "M2",
             "attrIdentifier": "uniteVente",
             "valueString": {
                 "locale": "fr",
-                "content": "UN"
+                "content": "M2"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -117,24 +120,6 @@
             },
             {
                 "attrIdentifier": "ATC-COUCHE-D-USURE",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 0
-                },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATC-EPAISSEUR-SS-COUCHE",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 0
-                },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATC-FAB-EN-FRANCE",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
@@ -190,15 +175,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "ATC-SURFACE-BOTTE",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 2.145
-                },
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "ATD-CategorieCDG",
                 "valueString": {
                     "locale": "fr",
@@ -220,7 +196,7 @@
                 "attrIdentifier": "ATD-LibelleCommercial",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Sol Livyn Rigide décor chêne flotté beige 2,145 m²"
+                    "content": "Sol Livyn Rigide décor chêne flotté beige le m²"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -238,7 +214,7 @@
                 "attrIdentifier": "ATD-SousCategorieCDG2",
                 "valueString": {
                     "locale": "fr",
-                    "content": "2546060-LIVYN RIGIDE CHÊNE FLOTTÉ BEIGE 2,145 M2"
+                    "content": "2546066-LIVYN RIGIDE CH FLOTTÉ BEIGE LE M2"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -271,20 +247,11 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "ATDDecomposition",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "2546066;39,9;A l'offre ;---; 2,145;0;;2018-11-12;"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "ATDDiffusionWebLive",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -293,7 +260,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -311,7 +278,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 2546060
+                    "content": 2546066
                 },
                 "attrSequence": 0
             },
@@ -363,16 +330,6 @@
                     "content": "Chêne"
                 },
                 "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "CCU0007-ATC-EPAISSEUR-5",
-                "attrIdentifier": "CCU0007-ATC-EPAISSEUR",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 5
-                },
                 "attrSequence": 0
             },
             {
@@ -485,21 +442,21 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "DEC",
+                "valueIdentifier": "ART",
                 "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                 "valueString": {
                     "locale": "fr",
-                    "content": "PRIX AVEC DECOMPOSITION"
+                    "content": "PRIX DEFINI"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "ORD",
+                "valueIdentifier": "CAT",
                 "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                 "valueString": {
                     "locale": "fr",
-                    "content": "ORDINAIRE"
+                    "content": "CODE CATALOGUE"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -571,21 +528,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "N75",
-                "attrIdentifier": "COMMUNES-3-COMM-CHARTE-EXPO",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Incontournable"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 2.145
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -594,7 +541,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -689,6 +636,15 @@
                 "valueDecimal": {
                     "locale": "fr",
                     "content": 11.947
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "FUTURE-SELLING-PRICE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 39.9
                 },
                 "attrSequence": 0
             },
@@ -854,20 +810,20 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "codeEan",
-                "valueString": {
-                    "locale": "fr",
-                    "content": 5415125989256
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "coeffConversionPrix",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0.4662
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "coeffConversionQuantite",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -881,11 +837,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 0,
+                "valueIdentifier": 9,
                 "attrIdentifier": "contrainteColisage",
                 "valueString": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 9
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -912,27 +868,27 @@
                 "attrIdentifier": "priceLabel",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Prix pour la dimension l 19,1 cm  x L 125,1 cm x E 5 mm"
+                    "content": "Prix pour la dimension l 19,1 cm  x L 125,1 cm x E"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "UN",
+                "valueIdentifier": "M2",
                 "attrIdentifier": "uniteSecondaire",
                 "valueString": {
                     "locale": "fr",
-                    "content": "UN"
+                    "content": "M2"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "UN",
+                "valueIdentifier": "M2",
                 "attrIdentifier": "uniteVente",
                 "valueString": {
                     "locale": "fr",
-                    "content": "UN"
+                    "content": "M2"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -951,7 +907,7 @@
         "isDefault": true,
         "seoItem": {"urlKeyword": {
             "locale": "fr",
-            "content": "sol-livyn-rigide-decor-chene-flotte-beige-2-145-m--2546060"
+            "content": "sol-livyn-rigide-decor-chene-flotte-beige-le-m--2546066"
         }},
         "imageFull": {"locale": "fr"},
         "shortDesc": {"locale": "fr"},
@@ -961,11 +917,14 @@
         },
         "label": {
             "locale": "fr",
-            "content": "Sol Livyn Rigide décor chêne flotté beige 2,145 m²"
+            "content": "Sol Livyn Rigide décor chêne flotté beige le m²"
         },
-        "sku": 2546060,
+        "sku": 2546066,
         "additionalDesc1": {"locale": "fr"},
-        "longDesc": {"locale": "fr"},
+        "longDesc": {
+            "locale": "fr",
+            "content": "- Épaisseur 5 mm.<BR/>- Longueur 125,1 cm.<BR/>- Largeur 19,1 cm.<BR/>- Botte de 2,145 m².<BR/><BR/>- Monolame.<BR/>- Décor chêne flotté beige.<BR/>- finition mate<BR/>- 4 chanfreins.<BR/>- couche d'usure : 0,3 mm<BR/>- Pose flottante clipsée."
+        },
         "additionalDesc2": {"locale": "fr"},
         "imageThumbnail": {"locale": "fr"}
     }},
@@ -978,12 +937,19 @@
             "locale": "fr",
             "content": "Sol vinyle déco Chêne LIVYN RIGIDE à clipser - Sols et murs - Lapeyre"
         },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Un vinyle rigide, nouvelle génération, avec un aspect véritablement authentique. Couche décorative en vinyle a impression fine pour un rendu très réaliste et naturel. Adapté à une pose sur un ancien carrelage ou autres supports irréguliers. Ce vynile est la solution pour s\u2019affranchir des irrégularités supports, sonorité faible, sensation douce, peu de poinçonnement et une résistance élevé aux chocs."
+        },
         "urlKeyword": {
             "locale": "fr",
             "content": "sol-vinyle-deco-chene-livyn-rigide-clipser-FPC1525570"
         }
     },
     "partnumber": "FPC1525570",
-    "longDesc": {"locale": "fr"},
+    "longDesc": {
+        "locale": "fr",
+        "content": "- Épaisseur 5 mm.<BR/>- Longueur 125,1 cm.<BR/>- Largeur 19,1 cm.<BR/>- Botte de 2,145 m².<BR/><BR/>- Monolame.<BR/>- Décor chêne flotté beige.<BR/>- finition mate<BR/>- 4 chanfreins.<BR/>- couche d'usure : 0,3 mm<BR/>- Pose flottante clipsée."
+    },
     "imageThumbnail": {"locale": "fr"}
 }}
