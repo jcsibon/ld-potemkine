@@ -11,7 +11,7 @@
         "locale": "fr",
         "content": "Sol vinyle décor gris clair KIMO DALLE"
     },
-    "type": "CATALOGUE_PAPIER",
+    "type": "STANDARD",
     "additionalDesc1": {
         "locale": "fr",
         "content": "Passage modéré<BR/>Facile à poser<BR/>Compatible pièce humide<BR/>Effet bois en format lame ou  béton ciré en format dalle"
@@ -28,20 +28,20 @@
             "attrSequence": 0
         },
         {
+            "attrIdentifier": "codeEan",
+            "valueString": {
+                "locale": "fr",
+                "content": 3306940878165
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
+        {
             "attrIdentifier": "coeffConversionPrix",
             "attrUsage": 2,
             "valueDecimal": {
                 "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "coeffConversionQuantite",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
+                "content": 0.5373
             },
             "attrSequence": 0
         },
@@ -55,11 +55,11 @@
             "attrSequence": 0
         },
         {
-            "valueIdentifier": 9,
+            "valueIdentifier": 0,
             "attrIdentifier": "contrainteColisage",
             "valueString": {
                 "locale": "fr",
-                "content": 9
+                "content": 0
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -74,21 +74,21 @@
             "attrSequence": 0
         },
         {
-            "valueIdentifier": "M2",
+            "valueIdentifier": "UN",
             "attrIdentifier": "uniteSecondaire",
             "valueString": {
                 "locale": "fr",
-                "content": "M2"
+                "content": "UN"
             },
             "attrUsage": 2,
             "attrSequence": 0
         },
         {
-            "valueIdentifier": "M2",
+            "valueIdentifier": "UN",
             "attrIdentifier": "uniteVente",
             "valueString": {
                 "locale": "fr",
-                "content": "M2"
+                "content": "UN"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -124,6 +124,15 @@
                 "valueDecimal": {
                     "locale": "fr",
                     "content": 0.3
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-EPAISSEUR-SS-COUCHE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -193,6 +202,15 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "ATC-SURFACE-BOTTE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1.861
+                },
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "ATD-CategorieCDG",
                 "valueString": {
                     "locale": "fr",
@@ -214,7 +232,7 @@
                 "attrIdentifier": "ATD-LibelleCommercial",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Sol vinyle KIMO DALLE GRIS CLAIR LE M2"
+                    "content": "Sol vinyle KIMO DALLE GRIS CLAIR botte de 1.861 M2"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -232,7 +250,7 @@
                 "attrIdentifier": "ATD-SousCategorieCDG2",
                 "valueString": {
                     "locale": "fr",
-                    "content": "2553576-KIMO DALLE GRIS CLAIR LE M2"
+                    "content": "2553570-KIMO DALLE GRIS CLAIR 1.861 M2"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -265,11 +283,20 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "ATDDecomposition",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "2553576;19,9;A l'offre ;---; 1,861;0;;2018-11-12;"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "ATDDiffusionWebLive",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -278,7 +305,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -296,7 +323,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 2553576
+                    "content": 2553570
                 },
                 "attrSequence": 0
             },
@@ -480,21 +507,21 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "ART",
+                "valueIdentifier": "DEC",
                 "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                 "valueString": {
                     "locale": "fr",
-                    "content": "PRIX DEFINI"
+                    "content": "PRIX AVEC DECOMPOSITION"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "CAT",
+                "valueIdentifier": "ORD",
                 "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                 "valueString": {
                     "locale": "fr",
-                    "content": "CODE CATALOGUE"
+                    "content": "ORDINAIRE"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -566,11 +593,21 @@
                 "attrSequence": 0
             },
             {
+                "valueIdentifier": "N82",
+                "attrIdentifier": "COMMUNES-3-COMM-CHARTE-EXPO",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Secondaire"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1.861
                 },
                 "attrSequence": 0
             },
@@ -579,7 +616,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -838,20 +875,20 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "codeEan",
+                "valueString": {
+                    "locale": "fr",
+                    "content": 3306940878165
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "coeffConversionPrix",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "coeffConversionQuantite",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
+                    "content": 0.5373
                 },
                 "attrSequence": 0
             },
@@ -865,11 +902,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 9,
+                "valueIdentifier": 0,
                 "attrIdentifier": "contrainteColisage",
                 "valueString": {
                     "locale": "fr",
-                    "content": 9
+                    "content": 0
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -902,21 +939,21 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "M2",
+                "valueIdentifier": "UN",
                 "attrIdentifier": "uniteSecondaire",
                 "valueString": {
                     "locale": "fr",
-                    "content": "M2"
+                    "content": "UN"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "M2",
+                "valueIdentifier": "UN",
                 "attrIdentifier": "uniteVente",
                 "valueString": {
                     "locale": "fr",
-                    "content": "M2"
+                    "content": "UN"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -935,7 +972,7 @@
         "isDefault": true,
         "seoItem": {"urlKeyword": {
             "locale": "fr",
-            "content": "sol-vinyle-kimo-dalle-gris-clair-le-m2-2553576"
+            "content": "sol-vinyle-kimo-dalle-gris-clair-botte-de-1-861-m2-2553570"
         }},
         "imageFull": {"locale": "fr"},
         "shortDesc": {"locale": "fr"},
@@ -945,9 +982,9 @@
         },
         "label": {
             "locale": "fr",
-            "content": "Sol vinyle KIMO DALLE GRIS CLAIR LE M2"
+            "content": "Sol vinyle KIMO DALLE GRIS CLAIR botte de 1.861 M2"
         },
-        "sku": 2553576,
+        "sku": 2553570,
         "additionalDesc1": {"locale": "fr"},
         "longDesc": {
             "locale": "fr",
