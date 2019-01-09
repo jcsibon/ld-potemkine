@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": false
+        "content": true
     },
     "label": {
         "locale": "fr",
@@ -49,6 +49,7 @@
             "attrSequence": 0
         },
         {
+            "valueIdentifier": 0,
             "attrIdentifier": "contrainteColisage",
             "valueString": {
                 "locale": "fr",
@@ -67,6 +68,7 @@
             "attrSequence": 0
         },
         {
+            "valueIdentifier": "UN",
             "attrIdentifier": "uniteSecondaire",
             "valueString": {
                 "locale": "fr",
@@ -76,6 +78,7 @@
             "attrSequence": 0
         },
         {
+            "valueIdentifier": "UN",
             "attrIdentifier": "uniteVente",
             "valueString": {
                 "locale": "fr",
@@ -85,6 +88,7 @@
             "attrSequence": 0
         },
         {
+            "valueIdentifier": "UN",
             "attrIdentifier": "uniteVenteLegale",
             "valueString": {
                 "locale": "fr",
@@ -98,6 +102,250 @@
     "shortDesc": {"locale": "fr"},
     "itemList": {"item": {
         "attributeValueList": {"attributeValue": [
+            {
+                "valueIdentifier": 180,
+                "attrIdentifier": "ATC-CATEGORIE-PDT",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Eclairage"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-LUMINEUX",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-REVERSIBLE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 358,
+                "attrIdentifier": "ATC-TYPOLOGIE-ECLAIRAGE",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Led"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 349,
+                "attrIdentifier": "ATC-TYPOLOGIE-LUMINAIRE",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Spot"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATD-CategorieCDG",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "G504-LUMINAIRES"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATD-FamilleCDG",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "G31-MEUBLES DE SDB"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATD-LibelleCommercial",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Spot FLASH led classe 2 ip44"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATD-SousCategorieCDG",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "G3798-ANCIENS LUMINAIRES"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATD-SousCategorieCDG2",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "G13038-FLASH"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATD-SousCategorieCDG3",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "1239624-SPOT FLASH"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATD-SousFamilleCDG",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "G541-ENVIRONNEMENT MEUBLES SDB"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATD-UniverCDG",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "G4-SALLE DE BAINS"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATD-Vue360",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "http://www.lapeyre.fr/spot-flash-led-classe-2-ip44-1239624"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATD-Vue360Asset",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "http://www.lapeyre.fr/img/catalogue/standardMain/412/420/201412420.jpg"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATDDiffusionWebLive",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATDDiffusionWebWork",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATDProductPath",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "G4/G31/G541/G504/G3798/G13038/"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATS-CodeADA",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1239624
+                },
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "FRA-fr",
+                "attrIdentifier": "ATS-CurrentContextID",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "RESEAU_FRANCE"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "V9359015",
+                "attrIdentifier": "ATSOwnerCOM",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "BRUNET, Vanessa (vanessa.brunet@lapeyre.fr)"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "N5316618",
+                "attrIdentifier": "ATSOwnerMKT",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "LAROCHE, Nadege (nadege.laroche@lapeyre.fr)"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0002-ATC-COULEUR-167",
+                "attrIdentifier": "CCU0002-ATC-COULEUR",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Chromé"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0002-ATC-FINITION-D43",
+                "attrIdentifier": "CCU0002-ATC-FINITION",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Chrome brillant"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0002-ATC-MATERIAU-CW6",
+                "attrIdentifier": "CCU0002-ATC-MATERIAU",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Chrome/Verre"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0002-ATC-TYPOLOGIE-PRODUIT-J16",
+                "attrIdentifier": "CCU0002-ATC-TYPOLOGIE-PRODUIT",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Luminaire"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
             {
                 "valueIdentifier": "CCU0002-COMMUNES-3-COMM-ASPECT-BD9",
                 "attrIdentifier": "CCU0002-COMMUNES-3-COMM-ASPECT",
@@ -119,18 +367,8 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "CCU0002-COMMUNES-3-COULEUR-MACRO-014",
-                "attrIdentifier": "CCU0002-COMMUNES-3-COULEUR-MACRO",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Métal"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-2.5",
-                "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-FIX",
+                "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
@@ -160,7 +398,7 @@
             },
             {
                 "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-11.2",
-                "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-FIX",
+                "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
@@ -169,51 +407,51 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "CCU0002-FAM-31-COULEUR-167",
-                "attrIdentifier": "CCU0002-FAM-31-COULEUR",
+                "attrIdentifier": "COMMUNE-COMM-ART-ETQ-LS",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "ART",
+                "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Chromé"
+                    "content": "PRIX DEFINI"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "CCU0002-FAM-31-MATERIAU-CW6",
-                "attrIdentifier": "CCU0002-FAM-31-MATERIAU",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Chrome/Verre"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "CCU0002-NAT-31-001-TYPOLOGIE-ECLAIRAGE-358",
-                "attrIdentifier": "CCU0002-NAT-31-001-TYPOLOGIE-ECLAIRAGE",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Led"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "COMMUNE-COMM-ART-CRE-DATE",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "20130923 00:00:00"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
+                "valueIdentifier": "ORD",
                 "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                 "valueString": {
                     "locale": "fr",
-                    "content": "004"
+                    "content": "ORDINAIRE"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "SO",
+                "attrIdentifier": "COMMUNE-SUITE-COMM-ART-DUREE-VIE",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "SANS OBJET"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "COMMUNE-SUITE-COMM-ART-INFLAMMABLE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
                 "attrSequence": 0
             },
             {
@@ -224,6 +462,79 @@
                     "content": "Haut De Gamme"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CTP",
+                "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-STYLE",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Contemporain"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "COMMUNES-3-ACHAT-LOCAL",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "COMMUNES-3-COMM-ADAP-DIM",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "COMMUNES-3-COMM-DIFFUSION-WEB",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "COMMUNES-3-COMM-GARANTIE",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "2 ans"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "COMMUNES-3-COMM-RENO-PLUS",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
                 "attrSequence": 0
             },
             {
@@ -247,7 +558,35 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-LARGEUREmballe",
+                "valueIdentifier": "014",
+                "attrIdentifier": "COMMUNES-3-COULEUR-MACRO",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Métal"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "SPOT FLASH<BR/>Classe II IP 44<BR/>Led 10 W"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-HAUTEUR-EMB",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 3.5
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-LARGEUR-EMB",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
@@ -256,7 +595,7 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUREmballe",
+                "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
@@ -269,41 +608,21 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0.653
+                    "content": 0.784
                 },
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-hauteuremballe",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 3.5
-                },
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "D43",
-                "attrIdentifier": "FAM-31-FINITION",
+                "attrIdentifier": "IS-ELIGIBLE-PROMO-SIMPLE",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Chrome brillant"
+                    "content": "NON"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "P00",
-                "attrIdentifier": "FAM-31-MODELE",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Flash"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "NAT-31-001-LUMINEUX",
+                "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-ANTILLES",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
@@ -312,35 +631,7 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "J16",
-                "attrIdentifier": "NAT-31-001-TYPOLOGIE-PRODUIT",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Luminaire"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "SPECIF-RESO-FRANCE-COMM-DAT-COMM",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "20140301 00:00:00"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "SPECIF-RESO-FRANCE-COMM-FIN-COMMER",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "20171220 00:00:00"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "achatLocal",
+                "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
@@ -349,12 +640,137 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "articleExpo",
+                "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-REUNION",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-SUISSE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "NA3",
+                "attrIdentifier": "SPEC-FAM-CHX",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "SPOTS"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "085",
+                "attrIdentifier": "SPEC-FAM-GAM",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "ENVIRONNEMENT"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 115,
+                "attrIdentifier": "SPEC-FAM-MDE",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "STANDARD"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "ZJ",
+                "attrIdentifier": "SPEC-FAM-NMA",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "LUMINEUX"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 3,
+                "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "SALLE DE BAINS"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-DEG",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
                     "content": 0
                 },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ENV-DEPOT",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 3,
+                "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Supprime  6 Mois"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-PGT-NUM",
+                "valueString": {
+                    "locale": "fr",
+                    "content": 73
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-REMISE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 1,
+                "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-TVA",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "20 %"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": 3,
+                "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-TVA2",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "10% (Pose)"
+                },
+                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -376,24 +792,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "codeObsolescence",
-                "valueString": {
-                    "locale": "fr",
-                    "content": 1
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "codeObsolescence-DATE",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "20170707 00:00:00"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "colissimo",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -403,6 +801,7 @@
                 "attrSequence": 0
             },
             {
+                "valueIdentifier": 0,
                 "attrIdentifier": "contrainteColisage",
                 "valueString": {
                     "locale": "fr",
@@ -412,43 +811,7 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "diffusionWeb",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "isRemisable",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "libelleCatalogue",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "SALLE DE BAINS"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "offreDeg",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 0
-                },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "offrePro",
+                "attrIdentifier": "isLivraisonDirecte",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
@@ -475,15 +838,7 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "renoPlus",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 0
-                },
-                "attrSequence": 0
-            },
-            {
+                "valueIdentifier": "UN",
                 "attrIdentifier": "uniteSecondaire",
                 "valueString": {
                     "locale": "fr",
@@ -493,15 +848,7 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "uniteSecondaireLibelle",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "UN"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
+                "valueIdentifier": "UN",
                 "attrIdentifier": "uniteVente",
                 "valueString": {
                     "locale": "fr",
@@ -511,25 +858,8 @@
                 "attrSequence": 0
             },
             {
+                "valueIdentifier": "UN",
                 "attrIdentifier": "uniteVenteLegale",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "UN"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "uniteVenteLegaleLibelle",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "UN"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "uniteVenteLibelle",
                 "valueString": {
                     "locale": "fr",
                     "content": "UN"
@@ -550,7 +880,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": false
+            "content": true
         },
         "label": {
             "locale": "fr",
@@ -576,6 +906,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Spot pour miroir de salle de bain FLASH - Salle de bains"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Flash, un éclairage LED contemporain et discret pour la note lumineuse dans votre salle de bains"
         },
         "urlKeyword": {
             "locale": "fr",

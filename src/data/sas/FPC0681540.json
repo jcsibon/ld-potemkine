@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": false
+        "content": true
     },
     "label": {
         "locale": "fr",
@@ -101,6 +101,51 @@
                     "content": "Poignée"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-COULEUR-CARTE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-FAB-EN-FRANCE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-FAB-PAR-LAPEYRE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-NORME-FSC",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
                 "attrSequence": 0
             },
             {
@@ -204,65 +249,11 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "ATD0029",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "FPE0681540"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATD0030",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "FPC0681540"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATD0040",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 0
-                },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATD0054",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "FPC0681540"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATD0055",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "AMO0681540"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATD0056",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "OUI"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "ATDDiffusionWebLive",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -271,17 +262,8 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1
                 },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATDNoticeGuideCount",
-                "valueString": {
-                    "locale": "fr",
-                    "content": 0
-                },
-                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -313,38 +295,11 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "ATS0005",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Avec un design moderne et minimaliste la poignée pour porte d'intérieur ROBIN en nickel chromé donnera une touche de pep's à votre intérieur."
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATS0008",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "- Finition nickel chromé<BR/>- L'ensemble comprend 2 béquilles et 2 rosaces. <BR/>- Carré de 7 mm. <BR/>- A clé.<BR/>- Supplément pour condamnation toilettes ou salles de bains."
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATS0009",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "- <BR/>- Modèle: Robin<BR/>- <BR/>- Matériau: Métal<BR/>- Finition: Nickel satiné<BR/>- Hauteur: 19,5 cm<BR/>- Largeur: 19,5 cm<BR/>- <BR/>- <BR/>- Garantie Produit: 2 ans <BR/>- Poids:4,0 kg"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "valueIdentifier": "M9504263",
                 "attrIdentifier": "ATSOwnerCOM",
                 "valueString": {
                     "locale": "fr",
-                    "content": "PETIT Melissa"
+                    "content": "PETIT, Melissa"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -360,21 +315,92 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
-                "attrIdentifier": "COMMUNE-COMM-ART-COMMI",
+                "valueIdentifier": "CCU0004-ATC-COULEUR-C89",
+                "attrIdentifier": "CCU0004-ATC-COULEUR",
                 "valueString": {
                     "locale": "fr",
-                    "content": "TAUX LAPEYRE"
+                    "content": "Nickel"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "COMMUNE-COMM-ART-ETIQ",
+                "valueIdentifier": "CCU0004-ATC-FINITION-BO1",
+                "attrIdentifier": "CCU0004-ATC-FINITION",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Nickel satiné"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0004-ATC-MATERIAU-014",
+                "attrIdentifier": "CCU0004-ATC-MATERIAU",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Métal"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0004-COMMUNES-3-COMM-ASPECT-332",
+                "attrIdentifier": "CCU0004-COMMUNES-3-COMM-ASPECT",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Satiné"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0004-COMMUNES-3-COMM-TYPE-MATERIAU-G59",
+                "attrIdentifier": "CCU0004-COMMUNES-3-COMM-TYPE-MATERIAU",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Autre"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0004-DIMENSIONS-COMMUNES-DIM-HAUTEUR-19.5",
+                "attrIdentifier": "CCU0004-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 19.5
+                },
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0004-DIMENSIONS-COMMUNES-DIM-LARGEUR-19.5",
+                "attrIdentifier": "CCU0004-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 19.5
+                },
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0004-DIMENSIONS-COMMUNES-DIM-POIDS-4",
+                "attrIdentifier": "CCU0004-DIMENSIONS-COMMUNES-DIM-POIDS",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 4
+                },
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0004-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-27",
+                "attrIdentifier": "CCU0004-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 27
                 },
                 "attrSequence": 0
             },
@@ -385,65 +411,6 @@
                     "locale": "fr",
                     "content": 1
                 },
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "045",
-                "attrIdentifier": "COMMUNE-COMM-ART-FAM-PROGRES",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "PORTES INTERIEURES"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 2,
-                "attrIdentifier": "COMMUNE-COMM-ART-GFAM-PROGRES",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "INTERIEUR"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "COMMUNE-COMM-ART-SECUR",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 0
-                },
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 0,
-                "attrIdentifier": "COMMUNE-COMM-ART-SOCAPP",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "LAPEYRE"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "C",
-                "attrIdentifier": "COMMUNE-COMM-ART-STATUT",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "CREE"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "904U",
-                "attrIdentifier": "COMMUNE-COMM-ART-SWW",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "BEQUILLES/POIGNEES DIVERS"
-                },
-                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -462,26 +429,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "ORDINAIRE"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 8,
-                "attrIdentifier": "COMMUNE-COMM-PRV-CODE",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "LAGRANGE"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 1,
-                "attrIdentifier": "COMMUNE-COMM-RESO-PROPRIO",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Réseau France"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -506,73 +453,6 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 0,
-                "attrIdentifier": "COMMUNE-SUITE-COMM-ART-LOCAL",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "NORMAL"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "COMMUNE-SUITE-COMM-ART-PEREMPTION",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 0
-                },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SECURITE",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 0
-                },
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "B",
-                "attrIdentifier": "COMMUNE-SUITE-COMM-ART-SOURCING",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "ACHETE"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "G17",
-                "attrIdentifier": "COMMUNE-SUITE-COMM-FAM-GESTION",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "PORTES INTERIEURES"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "COMMUNE-SUITE-COMM-GELIF",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 0
-                },
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "ACC",
-                "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-HIERARCHIE",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Accessoire"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "valueIdentifier": "SO",
                 "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                 "valueString": {
@@ -588,16 +468,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "Sans Objet"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 830249000,
-                "attrIdentifier": "COMMUNE-SUITE-SPEC-RESO-DOUANE",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "GARNITURE/FERRURE/ART.SIMILAIRE"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -622,25 +492,6 @@
             },
             {
                 "attrIdentifier": "COMMUNES-3-COMM-ART-EXCLUS-VERI",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 0
-                },
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 332,
-                "attrIdentifier": "COMMUNES-3-COMM-ASPECT",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Satiné"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "COMMUNES-3-COMM-CODE-EXPO",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
@@ -695,16 +546,6 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "G59",
-                "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Autre"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "valueIdentifier": "002",
                 "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                 "valueString": {
@@ -725,21 +566,12 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "CURRENT-SELLING-PRICE",
-                "attrUsage": 2,
-                "valueDecimal": {
+                "attrIdentifier": "DATASIGNALETIQUE-DESCR-TEXT-1",
+                "valueString": {
                     "locale": "fr",
-                    "content": 40
+                    "content": "ROBIN<BR/>Finition Nickel Chromé<BR/>Ensemble A/rosace et A/clé"
                 },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
                 "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 4
-                },
                 "attrSequence": 0
             },
             {
@@ -756,36 +588,15 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 10.266
+                    "content": 10.267
                 },
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "C89",
-                "attrIdentifier": "FAM-17-COULEUR",
+                "attrIdentifier": "IS-ELIGIBLE-PROMO-SIMPLE",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Nickel"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "014",
-                "attrIdentifier": "FAM-17-MATERIAU",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Métal"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "BJ9",
-                "attrIdentifier": "FAM-17-MODELE",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Robin"
+                    "content": "NON"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -800,11 +611,11 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-FRANCE",
+                "attrIdentifier": "RESEAU-DISTRIBUTION-RESEAU-PLATEFORME",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -857,36 +668,6 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "XXL",
-                "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-COU-CLA",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "FORMAT XXL"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "C",
-                "attrIdentifier": "SPECIF-RESO-XXX-COMM-ART-STATUT",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "CREE"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 0,
-                "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-ADV",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "AUTORISE"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "valueIdentifier": 1,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                 "valueString": {
@@ -915,20 +696,11 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-INV",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "OUI"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 1,
+                "valueIdentifier": 3,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1069,7 +841,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": false
+            "content": true
         },
         "label": {
             "locale": "fr",
@@ -1095,6 +867,10 @@
         "pageTitle": {
             "locale": "fr",
             "content": "Poignée ROBIN à rosace à clé - Portes"
+        },
+        "metaDesc": {
+            "locale": "fr",
+            "content": "Avec un design moderne et minimaliste la poignée pour porte d'intérieur ROBIN en nickel chromé donnera une touche de pep's à votre intérieur."
         },
         "urlKeyword": {
             "locale": "fr",

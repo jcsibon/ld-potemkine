@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": false
+        "content": true
     },
     "label": {
         "locale": "fr",
@@ -21,15 +21,6 @@
     },
     "additionalDesc2": {"locale": "fr"},
     "attributeValueList": {"attributeValue": [
-        {
-            "attrIdentifier": "LAPEYRE-PROMO-ID",
-            "valueString": {
-                "locale": "fr",
-                "content": 1602
-            },
-            "attrUsage": 2,
-            "attrSequence": 0
-        },
         {
             "attrIdentifier": "categorieGoogle",
             "valueString": {
@@ -120,6 +111,24 @@
                     "content": "Hydrothérapie"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-ECONOMIE-EAU",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-ECONOMIE-ENERGIE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
                 "attrSequence": 0
             },
             {
@@ -227,7 +236,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -236,17 +245,8 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1
                 },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "ATDNoticeGuideRef",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "AST635254 - EUPHORIA robinetterie sdb NOTICE|"
-                },
-                "attrUsage": 2,
                 "attrSequence": 0
             },
             {
@@ -282,7 +282,7 @@
                 "attrIdentifier": "ATSOwnerCOM",
                 "valueString": {
                     "locale": "fr",
-                    "content": "BRUNET Vanessa"
+                    "content": "BRUNET, Vanessa (vanessa.brunet@lapeyre.fr)"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -295,6 +295,86 @@
                     "content": "LE LABOURIER Aline"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0002-ATC-COULEUR-167",
+                "attrIdentifier": "CCU0002-ATC-COULEUR",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Chromé"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0002-ATC-FINITION-167",
+                "attrIdentifier": "CCU0002-ATC-FINITION",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Chromé"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0002-ATC-MATERIAU-099",
+                "attrIdentifier": "CCU0002-ATC-MATERIAU",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Laiton"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0002-COMMUNES-3-COMM-TYPE-MATERIAU-G59",
+                "attrIdentifier": "CCU0002-COMMUNES-3-COMM-TYPE-MATERIAU",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Autre"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-126",
+                "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 126
+                },
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-LARGEUR-35",
+                "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-LARGEUR",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 35
+                },
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-POIDS-5",
+                "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-POIDS",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 5
+                },
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-21",
+                "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 21
+                },
                 "attrSequence": 0
             },
             {
@@ -322,15 +402,6 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "ORDINAIRE"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "COMMUNE-COMM-VEN-PREV",
-                "valueString": {
-                    "locale": "fr",
-                    "content": 1000
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -458,16 +529,6 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "G59",
-                "attrIdentifier": "COMMUNES-3-COMM-TYPE-MATERIAU",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Autre"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
                 "valueIdentifier": "001",
                 "attrIdentifier": "COMMUNES-3-COMM-TYPE-PDT",
                 "valueString": {
@@ -533,15 +594,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-POIDS",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 5
-                },
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "DIMENSIONS-COMMUNES-DIM-PROFONDEUR-EMB",
                 "attrUsage": 2,
                 "valueDecimal": {
@@ -560,80 +612,10 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 167,
-                "attrIdentifier": "FAM-29-COULEUR",
+                "attrIdentifier": "IS-ELIGIBLE-PROMO-SIMPLE",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Chromé"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": 167,
-                "attrIdentifier": "FAM-29-FINITION",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Chromé"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "099",
-                "attrIdentifier": "FAM-29-MATERIAU",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Laiton"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "O88",
-                "attrIdentifier": "FAM-29-MODELE",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Euphoria"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "LAPEYRE-PROMO-ID",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "NO_PROMO"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "H47",
-                "attrIdentifier": "NAT-29-001-CATEGORIE-PRODUIT",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Colonne de douche non hydro"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "I68",
-                "attrIdentifier": "NAT-29-001-DESTINATION",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Hydrothérapie"
-                },
-                "attrUsage": 2,
-                "attrSequence": 0
-            },
-            {
-                "valueIdentifier": "L25",
-                "attrIdentifier": "NAT-29-001-FONCTIONNEMENT",
-                "valueString": {
-                    "locale": "fr",
-                    "content": "Thermostatique"
+                    "content": "NON"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -753,7 +735,7 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 2,
+                "valueIdentifier": 3,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
@@ -898,7 +880,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": false
+            "content": true
         },
         "label": {
             "locale": "fr",
