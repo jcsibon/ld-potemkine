@@ -8,7 +8,7 @@
     },
     "published": {
         "locale": "fr",
-        "content": true
+        "content": false
     },
     "label": {
         "locale": "fr",
@@ -203,6 +203,15 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "ATD-DiffusionSI",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "ATD-FamilleCDG",
                 "valueString": {
                     "locale": "fr",
@@ -287,7 +296,7 @@
                 "attrIdentifier": "ATDDecomposition",
                 "valueString": {
                     "locale": "fr",
-                    "content": "2005782;16;A l'offre ;---; 1,0;1,0;40;2015-11-27;<BR/>2008290;108;A Surveiller (Pre Su) ;---; 1,0;1,0;10;2015-11-27;<BR/>2135770;108;A Surveiller (Pre Su) ;---; 1,0;1,0;20;2015-11-27;<BR/>2160300;13;A l'offre ;---; 1,0;1,0;30;2015-11-27;"
+                    "content": "2005782;16;A l'offre ;---; 1,0;1,0;40;2015-11-27;<BR/>2008290;108;Supprime  6 Mois ;---; 1,0;1,0;10;2015-11-27;<BR/>2135770;108;Supprime  6 Mois ;---; 1,0;1,0;20;2015-11-27;<BR/>2160300;13;A l'offre ;---; 1,0;1,0;30;2015-11-27;"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -297,7 +306,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -306,7 +315,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
@@ -890,11 +899,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 1,
+                "valueIdentifier": 2,
                 "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                 "valueString": {
                     "locale": "fr",
-                    "content": "A Surveiller (Pre Su)"
+                    "content": "Supprime  6 Mois"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1034,7 +1043,7 @@
         "shortDesc": {"locale": "fr"},
         "published": {
             "locale": "fr",
-            "content": true
+            "content": false
         },
         "label": {
             "locale": "fr",

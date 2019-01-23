@@ -11,7 +11,7 @@
         "locale": "fr",
         "content": "Sol vinyle décor Chêne ORION naturel à clipser"
     },
-    "type": "CATALOGUE_PAPIER",
+    "type": "STANDARD",
     "additionalDesc1": {
         "locale": "fr",
         "content": "Ultra résistant et lavable à l'eau, ce sol vinyle décor chêne naturel est l'atout déco pour toutes les pièces de vie et pièces humides. Sans chanfreins, il s'installe en pose flottante clipsée."
@@ -28,11 +28,20 @@
             "attrSequence": 0
         },
         {
+            "attrIdentifier": "codeEan",
+            "valueString": {
+                "locale": "fr",
+                "content": 3306940713657
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
+        {
             "attrIdentifier": "coeffConversionPrix",
             "attrUsage": 2,
             "valueDecimal": {
                 "locale": "fr",
-                "content": 1
+                "content": 0.5855
             },
             "attrSequence": 0
         },
@@ -46,11 +55,11 @@
             "attrSequence": 0
         },
         {
-            "valueIdentifier": 9,
+            "valueIdentifier": 0,
             "attrIdentifier": "contrainteColisage",
             "valueString": {
                 "locale": "fr",
-                "content": 9
+                "content": 0
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -75,11 +84,11 @@
             "attrSequence": 0
         },
         {
-            "valueIdentifier": "M2",
+            "valueIdentifier": "UN",
             "attrIdentifier": "uniteVente",
             "valueString": {
                 "locale": "fr",
-                "content": "M2"
+                "content": "UN"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -119,6 +128,15 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "ATC-FAB-EN-FRANCE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
                 "valueIdentifier": 535,
                 "attrIdentifier": "ATC-LAME",
                 "valueString": {
@@ -145,6 +163,15 @@
                     "content": "Sans chanfrein"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-NORME-PEFC",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
                 "attrSequence": 0
             },
             {
@@ -184,6 +211,15 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "ATD-DiffusionSI",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "ATD-FamilleCDG",
                 "valueString": {
                     "locale": "fr",
@@ -196,7 +232,7 @@
                 "attrIdentifier": "ATD-LibelleCommercial",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Sol vinyle ORION bois naturel Ep.5mm le m2"
+                    "content": "Sol vinyle ORION bois naturel Ep.5mm botte de 1,708m²"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -214,7 +250,7 @@
                 "attrIdentifier": "ATD-SousCategorieCDG2",
                 "valueString": {
                     "locale": "fr",
-                    "content": "2550486-ORION (HYPNOS) NATUREL LE M2"
+                    "content": "2550480-ORION (HYPNOS) NATUREL 1.708M2"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -247,11 +283,20 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "ATDDecomposition",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "2550486;25,9;A l'offre ;---; 1,708;0;;2018-11-12;"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "ATDDiffusionWebLive",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -260,7 +305,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -404,7 +449,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 2550486
+                    "content": 2550480
                 },
                 "attrSequence": 0
             },
@@ -559,12 +604,12 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS-17.2",
+                "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS-29.24",
                 "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 17.2
+                    "content": 29.24
                 },
                 "attrSequence": 0
             },
@@ -588,21 +633,21 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "ART",
+                "valueIdentifier": "DEC",
                 "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                 "valueString": {
                     "locale": "fr",
-                    "content": "PRIX DEFINI"
+                    "content": "PRIX AVEC DECOMPOSITION"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "CAT",
+                "valueIdentifier": "ORD",
                 "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                 "valueString": {
                     "locale": "fr",
-                    "content": "CODE CATALOGUE"
+                    "content": "ORDINAIRE"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -674,11 +719,21 @@
                 "attrSequence": 0
             },
             {
+                "valueIdentifier": "N82",
+                "attrIdentifier": "COMMUNES-3-COMM-CHARTE-EXPO",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Secondaire"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1.708
                 },
                 "attrSequence": 0
             },
@@ -687,7 +742,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -821,11 +876,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 982,
+                "valueIdentifier": "TP4",
                 "attrIdentifier": "SPEC-FAM-CHX",
                 "valueString": {
                     "locale": "fr",
-                    "content": "STRATIFIE"
+                    "content": "VINYLE"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -937,11 +992,20 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "codeEan",
+                "valueString": {
+                    "locale": "fr",
+                    "content": 3306940713657
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "coeffConversionPrix",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0.5855
                 },
                 "attrSequence": 0
             },
@@ -955,11 +1019,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 9,
+                "valueIdentifier": 0,
                 "attrIdentifier": "contrainteColisage",
                 "valueString": {
                     "locale": "fr",
-                    "content": 9
+                    "content": 0
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -978,7 +1042,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 17.2
+                    "content": 29.24
                 },
                 "attrSequence": 0
             },
@@ -1002,11 +1066,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "M2",
+                "valueIdentifier": "UN",
                 "attrIdentifier": "uniteVente",
                 "valueString": {
                     "locale": "fr",
-                    "content": "M2"
+                    "content": "UN"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1025,7 +1089,7 @@
         "isDefault": true,
         "seoItem": {"urlKeyword": {
             "locale": "fr",
-            "content": "sol-vinyle-orion-bois-naturel-ep-5mm-le-m2-2550486"
+            "content": "sol-vinyle-orion-bois-naturel-ep-5mm-botte-de-1-708m--2550480"
         }},
         "imageFull": {"locale": "fr"},
         "shortDesc": {"locale": "fr"},
@@ -1035,9 +1099,9 @@
         },
         "label": {
             "locale": "fr",
-            "content": "Sol vinyle ORION bois naturel Ep.5mm le m2"
+            "content": "Sol vinyle ORION bois naturel Ep.5mm botte de 1,708m²"
         },
-        "sku": 2550486,
+        "sku": 2550480,
         "additionalDesc1": {"locale": "fr"},
         "longDesc": {
             "locale": "fr",

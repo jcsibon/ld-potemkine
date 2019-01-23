@@ -11,7 +11,7 @@
         "locale": "fr",
         "content": "Sol vinyle décor DESIGN+ carreau de ciment"
     },
-    "type": "CATALOGUE_PAPIER",
+    "type": "STANDARD",
     "additionalDesc1": {
         "locale": "fr",
         "content": "Bénéficiez d'une pose facile en optant pour la pose angulaire ou la pose à plat (système Unifit). Produit résistant et idéal en rénovation."
@@ -28,20 +28,20 @@
             "attrSequence": 0
         },
         {
+            "attrIdentifier": "codeEan",
+            "valueString": {
+                "locale": "fr",
+                "content": 9007022266859
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
+        {
             "attrIdentifier": "coeffConversionPrix",
             "attrUsage": 2,
             "valueDecimal": {
                 "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "coeffConversionQuantite",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
+                "content": 0.5028
             },
             "attrSequence": 0
         },
@@ -55,11 +55,11 @@
             "attrSequence": 0
         },
         {
-            "valueIdentifier": 9,
+            "valueIdentifier": 0,
             "attrIdentifier": "contrainteColisage",
             "valueString": {
                 "locale": "fr",
-                "content": 9
+                "content": 0
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -68,27 +68,27 @@
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
-                "content": "Prix pour la dimension l 19,2 cm  x L  x E"
+                "content": "Prix pour la dimension l 19,2 cm  x L 129,5 cm x E 5 mm"
             },
             "attrUsage": 2,
             "attrSequence": 0
         },
         {
-            "valueIdentifier": "M2",
+            "valueIdentifier": "UN",
             "attrIdentifier": "uniteSecondaire",
             "valueString": {
                 "locale": "fr",
-                "content": "M2"
+                "content": "UN"
             },
             "attrUsage": 2,
             "attrSequence": 0
         },
         {
-            "valueIdentifier": "M2",
+            "valueIdentifier": "UN",
             "attrIdentifier": "uniteVente",
             "valueString": {
                 "locale": "fr",
-                "content": "M2"
+                "content": "UN"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -116,6 +116,33 @@
                     "content": "Cl32 - passage régulier"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-COUCHE-D-USURE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-EPAISSEUR-SS-COUCHE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-FAB-EN-FRANCE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
                 "attrSequence": 0
             },
             {
@@ -166,12 +193,30 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "ATC-SURFACE-BOTTE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1.9891
+                },
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "ATD-CategorieCDG",
                 "valueString": {
                     "locale": "fr",
                     "content": "G3501-A CLIPSER"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATD-DiffusionSI",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 1
+                },
                 "attrSequence": 0
             },
             {
@@ -187,7 +232,7 @@
                 "attrIdentifier": "ATD-LibelleCommercial",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Sol vinyle Design +  décor carreaux de ciment le m²"
+                    "content": "Sol vinyle Design + décor carreaux de ciment  1,9891 m²"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -205,7 +250,7 @@
                 "attrIdentifier": "ATD-SousCategorieCDG2",
                 "valueString": {
                     "locale": "fr",
-                    "content": "2546056-DESIGN+ DECOR CARREAUX DE CIMENT LE M2"
+                    "content": "2546050-DESIGN+ DECOR CARREAUX DE CIMENT 1.989M2"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -238,11 +283,20 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "ATDDecomposition",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "2546056;29,9;A l'offre ;---; 1,989;0;;2018-11-12;"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "ATDDiffusionWebLive",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -251,7 +305,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -277,7 +331,7 @@
                 "attrIdentifier": "ATE-0000003",
                 "valueString": {
                     "locale": "fr",
-                    "content": "l 19,2 cm  x L  x E <BR/>Panneau hdf - Bleu"
+                    "content": "l 19,2 cm  x L 129,5 cm x E 5 mm<BR/>Panneau hdf - Bleu"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -395,7 +449,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 2546056
+                    "content": 2546050
                 },
                 "attrSequence": 0
             },
@@ -450,6 +504,16 @@
                 "attrSequence": 0
             },
             {
+                "valueIdentifier": "CCU0007-ATC-EPAISSEUR-5",
+                "attrIdentifier": "CCU0007-ATC-EPAISSEUR",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 5
+                },
+                "attrSequence": 0
+            },
+            {
                 "valueIdentifier": "CCU0007-ATC-FINITION-XN7",
                 "attrIdentifier": "CCU0007-ATC-FINITION",
                 "valueString": {
@@ -457,6 +521,16 @@
                     "content": "Carreaux de ciment"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "valueIdentifier": "CCU0007-ATC-LONGUEUR-129.5",
+                "attrIdentifier": "CCU0007-ATC-LONGUEUR",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 129.5
+                },
                 "attrSequence": 0
             },
             {
@@ -520,6 +594,16 @@
                 "attrSequence": 0
             },
             {
+                "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS-16.6",
+                "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-POIDS",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 16.6
+                },
+                "attrSequence": 0
+            },
+            {
                 "valueIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-PROFONDEUR-130",
                 "attrIdentifier": "CCU0007-DIMENSIONS-COMMUNES-DIM-PROFONDEUR",
                 "attrUsage": 2,
@@ -539,21 +623,21 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "ART",
+                "valueIdentifier": "DEC",
                 "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                 "valueString": {
                     "locale": "fr",
-                    "content": "PRIX DEFINI"
+                    "content": "PRIX AVEC DECOMPOSITION"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "CAT",
+                "valueIdentifier": "ORD",
                 "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                 "valueString": {
                     "locale": "fr",
-                    "content": "CODE CATALOGUE"
+                    "content": "ORDINAIRE"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -625,11 +709,21 @@
                 "attrSequence": 0
             },
             {
+                "valueIdentifier": "N75",
+                "attrIdentifier": "COMMUNES-3-COMM-CHARTE-EXPO",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Incontournable"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1.989
                 },
                 "attrSequence": 0
             },
@@ -638,7 +732,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -898,20 +992,20 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "codeEan",
+                "valueString": {
+                    "locale": "fr",
+                    "content": 9007022266859
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "coeffConversionPrix",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "coeffConversionQuantite",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
+                    "content": 0.5028
                 },
                 "attrSequence": 0
             },
@@ -925,11 +1019,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 9,
+                "valueIdentifier": 0,
                 "attrIdentifier": "contrainteColisage",
                 "valueString": {
                     "locale": "fr",
-                    "content": 9
+                    "content": 0
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -956,27 +1050,27 @@
                 "attrIdentifier": "priceLabel",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Prix pour la dimension l 19,2 cm  x L  x E"
+                    "content": "Prix pour la dimension l 19,2 cm  x L 129,5 cm x E 5 mm"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "M2",
+                "valueIdentifier": "UN",
                 "attrIdentifier": "uniteSecondaire",
                 "valueString": {
                     "locale": "fr",
-                    "content": "M2"
+                    "content": "UN"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "M2",
+                "valueIdentifier": "UN",
                 "attrIdentifier": "uniteVente",
                 "valueString": {
                     "locale": "fr",
-                    "content": "M2"
+                    "content": "UN"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -995,7 +1089,7 @@
         "isDefault": true,
         "seoItem": {"urlKeyword": {
             "locale": "fr",
-            "content": "sol-vinyle-design-decor-carreaux-de-ciment-le-m--2546056"
+            "content": "sol-vinyle-design-decor-carreaux-de-ciment-1-9891-m--2546050"
         }},
         "imageFull": {"locale": "fr"},
         "shortDesc": {"locale": "fr"},
@@ -1005,9 +1099,9 @@
         },
         "label": {
             "locale": "fr",
-            "content": "Sol vinyle Design +  décor carreaux de ciment le m²"
+            "content": "Sol vinyle Design + décor carreaux de ciment  1,9891 m²"
         },
-        "sku": 2546056,
+        "sku": 2546050,
         "additionalDesc1": {"locale": "fr"},
         "longDesc": {
             "locale": "fr",
