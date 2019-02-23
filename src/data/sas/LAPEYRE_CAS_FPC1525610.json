@@ -10,7 +10,7 @@
         "locale": "fr",
         "content": "Sol vinyle décor gris KIMO LAME"
     },
-    "type": "CATALOGUE_PAPIER",
+    "type": "STANDARD",
     "categoryParent": {"categoryIdentifier": "vinyles-fonce-gris_CCN0198_MASTER"},
     "additionalDesc1": {
         "locale": "fr",
@@ -28,20 +28,20 @@
             "attrSequence": 0
         },
         {
+            "attrIdentifier": "codeEan",
+            "valueString": {
+                "locale": "fr",
+                "content": 3306940878196
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
+        {
             "attrIdentifier": "coeffConversionPrix",
             "attrUsage": 2,
             "valueDecimal": {
                 "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "coeffConversionQuantite",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
+                "content": 0.4554
             },
             "attrSequence": 0
         },
@@ -55,11 +55,11 @@
             "attrSequence": 0
         },
         {
-            "valueIdentifier": 9,
+            "valueIdentifier": 0,
             "attrIdentifier": "contrainteColisage",
             "valueString": {
                 "locale": "fr",
-                "content": 9
+                "content": 0
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -74,21 +74,21 @@
             "attrSequence": 0
         },
         {
-            "valueIdentifier": "M2",
+            "valueIdentifier": "UN",
             "attrIdentifier": "uniteSecondaire",
             "valueString": {
                 "locale": "fr",
-                "content": "M2"
+                "content": "UN"
             },
             "attrUsage": 2,
             "attrSequence": 0
         },
         {
-            "valueIdentifier": "M2",
+            "valueIdentifier": "UN",
             "attrIdentifier": "uniteVente",
             "valueString": {
                 "locale": "fr",
-                "content": "M2"
+                "content": "UN"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -135,6 +135,15 @@
                     "content": "Gris"
                 },
                 "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-EPAISSEUR-SS-COUCHE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
                 "attrSequence": 0
             },
             {
@@ -203,6 +212,15 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "ATC-SURFACE-BOTTE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 2.196
+                },
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "ATD-CategorieCDG",
                 "valueString": {
                     "locale": "fr",
@@ -233,7 +251,7 @@
                 "attrIdentifier": "ATD-LibelleCommercial",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Sol vinyle KIMO LAME GRIS LE M2"
+                    "content": "Sol vinyle KIMO LAME GRIS botte de 2,196 M2"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -251,7 +269,7 @@
                 "attrIdentifier": "ATD-SousCategorieCDG2",
                 "valueString": {
                     "locale": "fr",
-                    "content": "2553556-KIMO LAME GRIS LE M2"
+                    "content": "2553550-KIMO LAME GRIS 2.196 M2"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -279,6 +297,15 @@
                 "valueString": {
                     "locale": "fr",
                     "content": "G8-REVETEMENTS"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATDDecomposition",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "2553556;19,9;A l'offre ;---; 2,196;0;;2018-11-12;"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -450,7 +477,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 2553556
+                    "content": 2553550
                 },
                 "attrSequence": 0
             },
@@ -624,21 +651,21 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "ART",
+                "valueIdentifier": "DEC",
                 "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                 "valueString": {
                     "locale": "fr",
-                    "content": "PRIX DEFINI"
+                    "content": "PRIX AVEC DECOMPOSITION"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "CAT",
+                "valueIdentifier": "ORD",
                 "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                 "valueString": {
                     "locale": "fr",
-                    "content": "CODE CATALOGUE"
+                    "content": "ORDINAIRE"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -663,11 +690,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "APX",
+                "valueIdentifier": "EDG",
                 "attrIdentifier": "COMMUNE-SUITE-SPEC-NAT-NIVEAU",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Point rouge"
+                    "content": "Entrée De Gamme"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -710,11 +737,21 @@
                 "attrSequence": 0
             },
             {
+                "valueIdentifier": "N75",
+                "attrIdentifier": "COMMUNES-3-COMM-CHARTE-EXPO",
+                "valueString": {
+                    "locale": "fr",
+                    "content": "Incontournable"
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "COMMUNES-3-COMM-COEF-VOL",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 2.196
                 },
                 "attrSequence": 0
             },
@@ -723,7 +760,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -939,7 +976,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 0
+                    "content": 1
                 },
                 "attrSequence": 0
             },
@@ -964,15 +1001,6 @@
                 "attrSequence": 0
             },
             {
-                "attrIdentifier": "atoutPrix",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
                 "attrIdentifier": "categorieGoogle",
                 "valueString": {
                     "locale": "fr",
@@ -982,20 +1010,20 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "codeEan",
+                "valueString": {
+                    "locale": "fr",
+                    "content": 3306940878196
+                },
+                "attrUsage": 2,
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "coeffConversionPrix",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
-                },
-                "attrSequence": 0
-            },
-            {
-                "attrIdentifier": "coeffConversionQuantite",
-                "attrUsage": 2,
-                "valueDecimal": {
-                    "locale": "fr",
-                    "content": 1
+                    "content": 0.4554
                 },
                 "attrSequence": 0
             },
@@ -1009,11 +1037,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": 9,
+                "valueIdentifier": 0,
                 "attrIdentifier": "contrainteColisage",
                 "valueString": {
                     "locale": "fr",
-                    "content": 9
+                    "content": 0
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1046,21 +1074,21 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "M2",
+                "valueIdentifier": "UN",
                 "attrIdentifier": "uniteSecondaire",
                 "valueString": {
                     "locale": "fr",
-                    "content": "M2"
+                    "content": "UN"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "M2",
+                "valueIdentifier": "UN",
                 "attrIdentifier": "uniteVente",
                 "valueString": {
                     "locale": "fr",
-                    "content": "M2"
+                    "content": "UN"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1085,9 +1113,9 @@
         },
         "label": {
             "locale": "fr",
-            "content": "Sol vinyle KIMO LAME GRIS LE M2"
+            "content": "Sol vinyle KIMO LAME GRIS botte de 2,196 M2"
         },
-        "sku": 2553556,
+        "sku": 2553550,
         "additionalDesc1": {"locale": "fr"},
         "longDesc": {
             "locale": "fr",
