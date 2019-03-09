@@ -3,7 +3,7 @@
     "brandPartnumber": "UC3",
     "imageFull": {
         "locale": "fr",
-        "content": "/standardMain/927/507/201927507.jpg"
+        "content": "/standardMain/750/6_2/201927506_2.jpg"
     },
     "published": {
         "locale": "fr",
@@ -13,7 +13,7 @@
         "locale": "fr",
         "content": "Lambris GX Wall Lame"
     },
-    "type": "CATALOGUE_PAPIER",
+    "type": "STANDARD",
     "categoryParent": {"categoryIdentifier": "lambris_CCN0204_MASTER"},
     "additionalDesc1": {"locale": "fr"},
     "additionalDesc2": {"locale": "fr"},
@@ -33,20 +33,20 @@
             "attrSequence": 0
         },
         {
+            "attrIdentifier": "codeEan",
+            "valueString": {
+                "locale": "fr",
+                "content": 3100038173367
+            },
+            "attrUsage": 2,
+            "attrSequence": 0
+        },
+        {
             "attrIdentifier": "coeffConversionPrix",
             "attrUsage": 2,
             "valueDecimal": {
                 "locale": "fr",
-                "content": 1
-            },
-            "attrSequence": 0
-        },
-        {
-            "attrIdentifier": "coeffConversionQuantite",
-            "attrUsage": 2,
-            "valueDecimal": {
-                "locale": "fr",
-                "content": 1
+                "content": 0.4902
             },
             "attrSequence": 0
         },
@@ -79,21 +79,21 @@
             "attrSequence": 0
         },
         {
-            "valueIdentifier": "M2",
+            "valueIdentifier": "UN",
             "attrIdentifier": "uniteSecondaire",
             "valueString": {
                 "locale": "fr",
-                "content": "M2"
+                "content": "UN"
             },
             "attrUsage": 2,
             "attrSequence": 0
         },
         {
-            "valueIdentifier": "M2",
+            "valueIdentifier": "UN",
             "attrIdentifier": "uniteVente",
             "valueString": {
                 "locale": "fr",
-                "content": "M2"
+                "content": "UN"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -143,6 +143,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-FAB-EN-FRANCE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 535,
                     "attrIdentifier": "ATC-LAME",
                     "valueString": {
@@ -169,6 +178,33 @@
                         "content": "Sans chanfrein"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-PEFC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -229,7 +265,7 @@
                     "attrIdentifier": "ATD-LibelleCommercial",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Lambris décoratif GX WALL LAME NATUREL PVC le M2"
+                        "content": "Lambris décoratif GX WALL LAME NATUREL PVC botte de 2,04 M2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -265,7 +301,7 @@
                     "attrIdentifier": "ATD-SousCategorieCDG3",
                     "valueString": {
                         "locale": "fr",
-                        "content": "2552126-GX WALL LAME NATUREL LE M2"
+                        "content": "2552120-GX WALL LAME NATUREL 2.04M2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -284,6 +320,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "G8-REVETEMENTS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATDDecomposition",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2552126;35,9;A l'offre ;---; 2,04;0;;2018-10-31;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -455,7 +500,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 2552126
+                        "content": 2552120
                     },
                     "attrSequence": 0
                 },
@@ -629,21 +674,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "ART",
+                    "valueIdentifier": "DEC",
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX DEFINI"
+                        "content": "PRIX AVEC DECOMPOSITION"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CAT",
+                    "valueIdentifier": "ORD",
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "CODE CATALOGUE"
+                        "content": "ORDINAIRE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -729,7 +774,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 0
+                        "content": 2.04
                     },
                     "attrSequence": 0
                 },
@@ -738,7 +783,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 0
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -942,11 +987,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 3,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "MENUISERIES"
+                        "content": "SALLE DE BAINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1018,20 +1063,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "codeEan",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 3100038173367
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "coeffConversionPrix",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "coeffConversionQuantite",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
+                        "content": 0.4902
                     },
                     "attrSequence": 0
                 },
@@ -1082,21 +1127,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "M2",
+                    "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
                         "locale": "fr",
-                        "content": "M2"
+                        "content": "UN"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "M2",
+                    "valueIdentifier": "UN",
                     "attrIdentifier": "uniteVente",
                     "valueString": {
                         "locale": "fr",
-                        "content": "M2"
+                        "content": "UN"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1112,8 +1157,11 @@
                     "attrSequence": 0
                 }
             ]},
-            "isDefault": false,
-            "imageFull": {"locale": "fr"},
+            "isDefault": true,
+            "imageFull": {
+                "locale": "fr",
+                "content": "/standardMain/750/6_2/201927506_2.jpg"
+            },
             "shortDesc": {"locale": "fr"},
             "published": {
                 "locale": "fr",
@@ -1121,13 +1169,16 @@
             },
             "label": {
                 "locale": "fr",
-                "content": "Lambris décoratif GX WALL LAME NATUREL PVC le M2"
+                "content": "Lambris décoratif GX WALL LAME NATUREL PVC botte de 2,04 M2"
             },
-            "sku": 2552126,
+            "sku": 2552120,
             "additionalDesc1": {"locale": "fr"},
             "longDesc": {"locale": "fr"},
             "additionalDesc2": {"locale": "fr"},
-            "imageThumbnail": {"locale": "fr"}
+            "imageThumbnail": {
+                "locale": "fr",
+                "content": "/thumbnail/750/6_2/201927506_2.jpg"
+            }
         },
         {
             "attributeValueList": {"attributeValue": [
@@ -1160,6 +1211,15 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "ATC-FAB-EN-FRANCE",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 1
+                    },
+                    "attrSequence": 0
+                },
+                {
                     "valueIdentifier": 535,
                     "attrIdentifier": "ATC-LAME",
                     "valueString": {
@@ -1186,6 +1246,33 @@
                         "content": "Sans chanfrein"
                     },
                     "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-FSC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-NF",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATC-NORME-PEFC",
+                    "attrUsage": 2,
+                    "valueDecimal": {
+                        "locale": "fr",
+                        "content": 0
+                    },
                     "attrSequence": 0
                 },
                 {
@@ -1246,7 +1333,7 @@
                     "attrIdentifier": "ATD-LibelleCommercial",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Lambris décoratif GX WALL LAME GRIS PVC le M2"
+                        "content": "Lambris décoratif GX WALL LAME GRIS PVC botte de 2,04 M2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1282,7 +1369,7 @@
                     "attrIdentifier": "ATD-SousCategorieCDG3",
                     "valueString": {
                         "locale": "fr",
-                        "content": "2552136-GX WALL LAME GRIS LE M2"
+                        "content": "2552130-GX WALL LAME GRIS 2.04M2"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1301,6 +1388,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "G8-REVETEMENTS"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATDDecomposition",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "2552136;35,9;A l'offre ;---; 2,04;0;;2018-10-31;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1472,7 +1568,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 2552136
+                        "content": 2552130
                     },
                     "attrSequence": 0
                 },
@@ -1646,21 +1742,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "ART",
+                    "valueIdentifier": "DEC",
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX DEFINI"
+                        "content": "PRIX AVEC DECOMPOSITION"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "CAT",
+                    "valueIdentifier": "ORD",
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "CODE CATALOGUE"
+                        "content": "ORDINAIRE"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1746,7 +1842,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 0
+                        "content": 2.04
                     },
                     "attrSequence": 0
                 },
@@ -1755,7 +1851,7 @@
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 0
+                        "content": 1
                     },
                     "attrSequence": 0
                 },
@@ -1959,11 +2055,11 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": 1,
+                    "valueIdentifier": 3,
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-CATAL-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "MENUISERIES"
+                        "content": "SALLE DE BAINS"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2035,20 +2131,20 @@
                     "attrSequence": 0
                 },
                 {
+                    "attrIdentifier": "codeEan",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": 3100038173350
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
                     "attrIdentifier": "coeffConversionPrix",
                     "attrUsage": 2,
                     "valueDecimal": {
                         "locale": "fr",
-                        "content": 1
-                    },
-                    "attrSequence": 0
-                },
-                {
-                    "attrIdentifier": "coeffConversionQuantite",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 1
+                        "content": 0.4902
                     },
                     "attrSequence": 0
                 },
@@ -2099,21 +2195,21 @@
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "M2",
+                    "valueIdentifier": "UN",
                     "attrIdentifier": "uniteSecondaire",
                     "valueString": {
                         "locale": "fr",
-                        "content": "M2"
+                        "content": "UN"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
                 },
                 {
-                    "valueIdentifier": "M2",
+                    "valueIdentifier": "UN",
                     "attrIdentifier": "uniteVente",
                     "valueString": {
                         "locale": "fr",
-                        "content": "M2"
+                        "content": "UN"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2129,10 +2225,10 @@
                     "attrSequence": 0
                 }
             ]},
-            "isDefault": true,
+            "isDefault": false,
             "imageFull": {
                 "locale": "fr",
-                "content": "/standardMain/927/507/201927507.jpg"
+                "content": "/standardMain/750/5_2/201927505_2.jpg"
             },
             "shortDesc": {"locale": "fr"},
             "published": {
@@ -2141,15 +2237,15 @@
             },
             "label": {
                 "locale": "fr",
-                "content": "Lambris décoratif GX WALL LAME GRIS PVC le M2"
+                "content": "Lambris décoratif GX WALL LAME GRIS PVC botte de 2,04 M2"
             },
-            "sku": 2552136,
+            "sku": 2552130,
             "additionalDesc1": {"locale": "fr"},
             "longDesc": {"locale": "fr"},
             "additionalDesc2": {"locale": "fr"},
             "imageThumbnail": {
                 "locale": "fr",
-                "content": "/thumbnail/927/507/201927507.jpg"
+                "content": "/thumbnail/750/5_2/201927505_2.jpg"
             }
         }
     ]},
@@ -2157,6 +2253,6 @@
     "longDesc": {"locale": "fr"},
     "imageThumbnail": {
         "locale": "fr",
-        "content": "/thumbnail/927/507/201927507.jpg"
+        "content": "/thumbnail/750/6_2/201927506_2.jpg"
     }
 }}

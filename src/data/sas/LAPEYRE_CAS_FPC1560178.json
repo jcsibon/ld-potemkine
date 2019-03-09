@@ -62,7 +62,7 @@
             "attrIdentifier": "priceLabel",
             "valueString": {
                 "locale": "fr",
-                "content": "Prix pour la dimension H 220,0 x L 85,0  x P 85,0 cm"
+                "content": "Prix pour la dimension H 230,0 x L 85,0  x P 85,0 cm"
             },
             "attrUsage": 2,
             "attrSequence": 0
@@ -107,12 +107,39 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1
+                    "content": 0
                 },
                 "attrSequence": 0
             },
             {
                 "attrIdentifier": "ATC-AUSSI-SUR-MESURE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-EXISTE-EN-DIFF-DIMENSIONS",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-EXISTE-EN-DIFF-FINITIONS-DE-VERRES",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
+                "attrIdentifier": "ATC-EXISTE-EN-DIFF-TYPES-D-OUVERTURE",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
@@ -177,6 +204,15 @@
                 "attrSequence": 0
             },
             {
+                "attrIdentifier": "ATC-REVERSIBLE",
+                "attrUsage": 2,
+                "valueDecimal": {
+                    "locale": "fr",
+                    "content": 0
+                },
+                "attrSequence": 0
+            },
+            {
                 "attrIdentifier": "ATD-CategorieCDG",
                 "valueString": {
                     "locale": "fr",
@@ -234,7 +270,7 @@
                 "attrIdentifier": "ATD-SousCategorieCDG2",
                 "valueString": {
                     "locale": "fr",
-                    "content": "1245023-CABINE DE DOUCHE DOUVE 85X85 H.220 MECA"
+                    "content": "1245023-CABINE DE DOUCHE DOUVE 85X85 H.230 MECA"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -315,7 +351,7 @@
                 "attrIdentifier": "ATE-0000003",
                 "valueString": {
                     "locale": "fr",
-                    "content": "L   x l 85,0 cm x H 220,0 cm<BR/>Verre transparent - Chromé"
+                    "content": "L   x l 85,0 cm x H 230,0 cm<BR/>Verre sérigraphié - Chromé"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -324,7 +360,7 @@
                 "attrIdentifier": "ATE-CARACTERISTIQUES",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Epaisseur : 5,0 mm<BR/>Anticalcaire : OUI<BR/><BR/>Type d'ouverture : Coulissant"
+                    "content": "Epaisseur : 4,0 mm<BR/>Anticalcaire : NON<BR/>Réversible : NON<BR/>Type d'ouverture : Coulissant"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -441,7 +477,7 @@
                 "attrIdentifier": "ATE-OPTIONS",
                 "valueString": {
                     "locale": "fr",
-                    "content": "<BR/><BR/>"
+                    "content": "Existe en différentes dimensions : NON<BR/>Existe en différents types d'ouverture : NON<BR/>Existe en différentes finitions de verres : NON"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -516,12 +552,12 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "CCU0002-ATC-EPAISSEUR-5",
+                "valueIdentifier": "CCU0002-ATC-EPAISSEUR-4",
                 "attrIdentifier": "CCU0002-ATC-EPAISSEUR",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 5
+                    "content": 4
                 },
                 "attrSequence": 0
             },
@@ -536,11 +572,11 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "CCU0002-ATC-MATERIAU-L59",
+                "valueIdentifier": "CCU0002-ATC-MATERIAU-L58",
                 "attrIdentifier": "CCU0002-ATC-MATERIAU",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Verre transparent"
+                    "content": "Verre sérigraphié"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -586,12 +622,12 @@
                 "attrSequence": 0
             },
             {
-                "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-220",
+                "valueIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR-230",
                 "attrIdentifier": "CCU0002-DIMENSIONS-COMMUNES-DIM-HAUTEUR",
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 220
+                    "content": 230
                 },
                 "attrSequence": 0
             },
@@ -864,7 +900,7 @@
                 "attrUsage": 2,
                 "valueDecimal": {
                     "locale": "fr",
-                    "content": 1589.5
+                    "content": 1661.75
                 },
                 "attrSequence": 0
             },
@@ -872,7 +908,7 @@
                 "attrIdentifier": "IS-ELIGIBLE-PROMO-SIMPLE",
                 "valueString": {
                     "locale": "fr",
-                    "content": "NON"
+                    "content": "OUI"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
@@ -1089,7 +1125,7 @@
                 "attrIdentifier": "priceLabel",
                 "valueString": {
                     "locale": "fr",
-                    "content": "Prix pour la dimension H 220,0 x L 85,0  x P 85,0 cm"
+                    "content": "Prix pour la dimension H 230,0 x L 85,0  x P 85,0 cm"
                 },
                 "attrUsage": 2,
                 "attrSequence": 0
