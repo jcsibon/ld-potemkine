@@ -263,7 +263,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0670390;18;A l'offre ;---; 1,0;1,0;20;2012-09-06;<BR/>0838720;23,5;A l'offre ;---; 3,0;3,0;30;2012-09-06;<BR/>1729020;141;Supprime  6 Mois ;---; 1,0;1,0;50;2012-09-06;<BR/>1729040;151;A l'offre ;---; 1,0;1,0;40;2012-09-06;<BR/>2318900;96;Supprime  6 Mois ;---; 1,0;1,0;60;2012-09-06;<BR/>2364311;1767;Supprime  6 Mois ;---; 1,0;1,0;10;2012-09-06;"
+                        "content": "0670390;18;0 = A l'offre ;---; 1,0;1,0;20;2012-09-06;<BR/>0838720;23,5;0 = A l'offre ;---; 3,0;3,0;30;2012-09-06;<BR/>1729020;141;3 = Supprimé + 6 Mois ;---; 1,0;1,0;50;2012-09-06;<BR/>1729040;151;0 = A l'offre ;---; 1,0;1,0;40;2012-09-06;<BR/>2318900;96;3 = Supprimé + 6 Mois ;---; 1,0;1,0;60;2012-09-06;<BR/>2364311;1767;2 = Supprimé - 6 Mois ;---; 1,0;1,0;10;2012-09-06;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -317,7 +317,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 300,0 cm  x L  x E <BR/>Aluminium - Blanc"
+                        "content": "l 300,0 cm  x H 160,0 cm x P 6,1 cm<BR/>Aluminium - Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Droit<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -326,7 +344,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -417,6 +435,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -594,7 +621,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -604,7 +631,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -888,7 +915,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Supprime  6 Mois"
+                        "content": "3 = Supprimé + 6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1214,7 +1241,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0670390;18;A l'offre ;---; 1,0;1,0;20;2012-09-06;<BR/>0838720;23,5;A l'offre ;---; 3,0;3,0;30;2012-09-06;<BR/>1729020;141;Supprime  6 Mois ;---; 1,0;1,0;50;2012-09-06;<BR/>1729040;151;A l'offre ;---; 1,0;1,0;40;2012-09-06;<BR/>2318900;96;Supprime  6 Mois ;---; 1,0;1,0;60;2012-09-06;<BR/>2364312;1767;Supprime  6 Mois ;---; 1,0;1,0;10;2012-09-06;"
+                        "content": "0670390;18;0 = A l'offre ;---; 1,0;1,0;20;2012-09-06;<BR/>0838720;23,5;0 = A l'offre ;---; 3,0;3,0;30;2012-09-06;<BR/>1729020;141;3 = Supprimé + 6 Mois ;---; 1,0;1,0;50;2012-09-06;<BR/>1729040;151;0 = A l'offre ;---; 1,0;1,0;40;2012-09-06;<BR/>2318900;96;3 = Supprimé + 6 Mois ;---; 1,0;1,0;60;2012-09-06;<BR/>2364312;1767;2 = Supprimé - 6 Mois ;---; 1,0;1,0;10;2012-09-06;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1268,7 +1295,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 300,0 cm  x L  x E <BR/>Aluminium - Blanc"
+                        "content": "l 300,0 cm  x H 160,0 cm x P 6,1 cm<BR/>Aluminium - Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Droit<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1277,7 +1322,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1368,6 +1413,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1545,7 +1599,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1555,7 +1609,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1839,7 +1893,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Supprime  6 Mois"
+                        "content": "3 = Supprimé + 6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2156,7 +2210,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0670390;18;A l'offre ;---; 1,0;1,0;20;2012-09-06;<BR/>0838720;23,5;A l'offre ;---; 4,0;4,0;30;2012-09-06;<BR/>1729020;141;Supprime  6 Mois ;---; 1,0;1,0;50;2012-09-06;<BR/>1729040;151;A l'offre ;---; 1,0;1,0;40;2012-09-06;<BR/>2318900;96;Supprime  6 Mois ;---; 1,0;1,0;60;2012-09-06;<BR/>2364321;1995;Supprime  6 Mois ;---; 1,0;1,0;10;2012-09-06;"
+                        "content": "0670390;18;0 = A l'offre ;---; 1,0;1,0;20;2012-09-06;<BR/>0838720;23,5;0 = A l'offre ;---; 4,0;4,0;30;2012-09-06;<BR/>1729020;141;3 = Supprimé + 6 Mois ;---; 1,0;1,0;50;2012-09-06;<BR/>1729040;151;0 = A l'offre ;---; 1,0;1,0;40;2012-09-06;<BR/>2318900;96;3 = Supprimé + 6 Mois ;---; 1,0;1,0;60;2012-09-06;<BR/>2364321;1995;2 = Supprimé - 6 Mois ;---; 1,0;1,0;10;2012-09-06;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2210,7 +2264,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 350,0 cm  x L  x E <BR/>Aluminium - Blanc"
+                        "content": "l 350,0 cm  x H 160,0 cm x P 6,1 cm<BR/>Aluminium - Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Droit<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2219,7 +2291,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2310,6 +2382,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2487,7 +2568,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2497,7 +2578,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2781,7 +2862,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Supprime  6 Mois"
+                        "content": "3 = Supprimé + 6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3107,7 +3188,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0670390;18;A l'offre ;---; 1,0;1,0;20;2012-09-06;<BR/>0838720;23,5;A l'offre ;---; 4,0;4,0;30;2012-09-06;<BR/>1729020;141;Supprime  6 Mois ;---; 1,0;1,0;50;2012-09-06;<BR/>1729040;151;A l'offre ;---; 1,0;1,0;40;2012-09-06;<BR/>2318900;96;Supprime  6 Mois ;---; 1,0;1,0;60;2012-09-06;<BR/>2364322;1995;Supprime  6 Mois ;---; 1,0;1,0;10;2012-09-06;"
+                        "content": "0670390;18;0 = A l'offre ;---; 1,0;1,0;20;2012-09-06;<BR/>0838720;23,5;0 = A l'offre ;---; 4,0;4,0;30;2012-09-06;<BR/>1729020;141;3 = Supprimé + 6 Mois ;---; 1,0;1,0;50;2012-09-06;<BR/>1729040;151;0 = A l'offre ;---; 1,0;1,0;40;2012-09-06;<BR/>2318900;96;3 = Supprimé + 6 Mois ;---; 1,0;1,0;60;2012-09-06;<BR/>2364322;1995;2 = Supprimé - 6 Mois ;---; 1,0;1,0;10;2012-09-06;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3161,7 +3242,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 350,0 cm  x L  x E <BR/>Aluminium - Blanc"
+                        "content": "l 350,0 cm  x H 160,0 cm x P 6,1 cm<BR/>Aluminium - Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Droit<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3170,7 +3269,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3261,6 +3360,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3438,7 +3546,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3448,7 +3556,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3732,7 +3840,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Supprime  6 Mois"
+                        "content": "3 = Supprimé + 6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4049,7 +4157,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0670390;18;A l'offre ;---; 1,0;1,0;20;2012-09-06;<BR/>0838720;23,5;A l'offre ;---; 4,0;4,0;30;2012-09-06;<BR/>1729020;141;Supprime  6 Mois ;---; 1,0;1,0;50;2012-09-06;<BR/>1729040;151;A l'offre ;---; 1,0;1,0;40;2012-09-06;<BR/>2318900;96;Supprime  6 Mois ;---; 1,0;1,0;60;2012-09-06;<BR/>2364331;2215;Supprime  6 Mois ;---; 1,0;1,0;10;2012-09-06;"
+                        "content": "0670390;18;0 = A l'offre ;---; 1,0;1,0;20;2012-09-06;<BR/>0838720;23,5;0 = A l'offre ;---; 4,0;4,0;30;2012-09-06;<BR/>1729020;141;3 = Supprimé + 6 Mois ;---; 1,0;1,0;50;2012-09-06;<BR/>1729040;151;0 = A l'offre ;---; 1,0;1,0;40;2012-09-06;<BR/>2318900;96;3 = Supprimé + 6 Mois ;---; 1,0;1,0;60;2012-09-06;<BR/>2364331;2215;2 = Supprimé - 6 Mois ;---; 1,0;1,0;10;2012-09-06;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4103,7 +4211,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 400,0 cm  x L  x E <BR/>Aluminium - Blanc"
+                        "content": "l 400,0 cm  x H 160,0 cm x P 6,1 cm<BR/>Aluminium - Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Droit<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4112,7 +4238,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4203,6 +4329,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4380,7 +4515,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4390,7 +4525,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4674,7 +4809,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Supprime  6 Mois"
+                        "content": "3 = Supprimé + 6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5000,7 +5135,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0670390;18;A l'offre ;---; 1,0;1,0;20;2012-09-06;<BR/>0838720;23,5;A l'offre ;---; 4,0;4,0;30;2012-09-06;<BR/>1729020;141;Supprime  6 Mois ;---; 1,0;1,0;50;2012-09-06;<BR/>1729040;151;A l'offre ;---; 1,0;1,0;40;2012-09-06;<BR/>2318900;96;Supprime  6 Mois ;---; 1,0;1,0;60;2012-09-06;<BR/>2364332;2215;Supprime  6 Mois ;---; 1,0;1,0;10;2012-09-06;"
+                        "content": "0670390;18;0 = A l'offre ;---; 1,0;1,0;20;2012-09-06;<BR/>0838720;23,5;0 = A l'offre ;---; 4,0;4,0;30;2012-09-06;<BR/>1729020;141;3 = Supprimé + 6 Mois ;---; 1,0;1,0;50;2012-09-06;<BR/>1729040;151;0 = A l'offre ;---; 1,0;1,0;40;2012-09-06;<BR/>2318900;96;3 = Supprimé + 6 Mois ;---; 1,0;1,0;60;2012-09-06;<BR/>2364332;2215;2 = Supprimé - 6 Mois ;---; 1,0;1,0;10;2012-09-06;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5054,7 +5189,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 400,0 cm  x L  x E <BR/>Aluminium - Blanc"
+                        "content": "l 400,0 cm  x H 160,0 cm x P 6,1 cm<BR/>Aluminium - Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Droit<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5063,7 +5216,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5154,6 +5307,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5331,7 +5493,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5341,7 +5503,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5625,7 +5787,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Supprime  6 Mois"
+                        "content": "3 = Supprimé + 6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -5848,15 +6010,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NORME-NF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-NORME-PEFC",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -5978,7 +6131,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0670390;18;A l'offre ;---; 1,0;1,0;20;2016-12-07;<BR/>0838720;23,5;A l'offre ;---; 3,0;3,0;30;2016-12-07;<BR/>1729040;151;A l'offre ;---; 1,0;1,0;40;2016-12-07;<BR/>2364311;1767;Supprime  6 Mois ;---; 1,0;1,0;10;2016-12-07;"
+                        "content": "0670390;18;0 = A l'offre ;---; 1,0;1,0;20;2016-12-07;<BR/>0838720;23,5;0 = A l'offre ;---; 3,0;3,0;30;2016-12-07;<BR/>1729040;151;0 = A l'offre ;---; 1,0;1,0;40;2016-12-07;<BR/>2364311;1767;2 = Supprimé - 6 Mois ;---; 1,0;1,0;10;2016-12-07;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6032,7 +6185,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 300,0 cm  x L  x E <BR/>Aluminium - Blanc"
+                        "content": "l 300,0 cm  x H 160,0 cm x P 6,1 cm<BR/>Aluminium - Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Droit<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6041,7 +6212,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6132,6 +6303,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6319,7 +6499,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6329,7 +6509,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6613,7 +6793,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Supprime  6 Mois"
+                        "content": "2 = Supprimé - 6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -6835,15 +7015,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NORME-NF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-NORME-PEFC",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -6965,7 +7136,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0670390;18;A l'offre ;---; 1,0;1,0;20;2016-12-07;<BR/>0838720;23,5;A l'offre ;---; 3,0;3,0;30;2016-12-07;<BR/>1729040;151;A l'offre ;---; 1,0;1,0;40;2016-12-07;<BR/>2364312;1767;Supprime  6 Mois ;---; 1,0;1,0;10;2016-12-07;"
+                        "content": "0670390;18;0 = A l'offre ;---; 1,0;1,0;20;2016-12-07;<BR/>0838720;23,5;0 = A l'offre ;---; 3,0;3,0;30;2016-12-07;<BR/>1729040;151;0 = A l'offre ;---; 1,0;1,0;40;2016-12-07;<BR/>2364312;1767;2 = Supprimé - 6 Mois ;---; 1,0;1,0;10;2016-12-07;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7019,7 +7190,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 300,0 cm  x L  x E <BR/>Aluminium - Blanc"
+                        "content": "l 300,0 cm  x H 160,0 cm x P 6,1 cm<BR/>Aluminium - Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Droit<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7028,7 +7217,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7119,6 +7308,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7306,7 +7504,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7316,7 +7514,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7600,7 +7798,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Supprime  6 Mois"
+                        "content": "2 = Supprimé - 6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7813,15 +8011,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NORME-NF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-NORME-PEFC",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -7943,7 +8132,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0670390;18;A l'offre ;---; 1,0;1,0;20;2016-12-07;<BR/>0838720;23,5;A l'offre ;---; 4,0;4,0;30;2016-12-07;<BR/>1729040;151;A l'offre ;---; 1,0;1,0;40;2016-12-07;<BR/>2364321;1995;Supprime  6 Mois ;---; 1,0;1,0;10;2016-12-07;"
+                        "content": "0670390;18;0 = A l'offre ;---; 1,0;1,0;20;2016-12-07;<BR/>0838720;23,5;0 = A l'offre ;---; 4,0;4,0;30;2016-12-07;<BR/>1729040;151;0 = A l'offre ;---; 1,0;1,0;40;2016-12-07;<BR/>2364321;1995;2 = Supprimé - 6 Mois ;---; 1,0;1,0;10;2016-12-07;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -7997,7 +8186,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 350,0 cm  x L  x E <BR/>Aluminium - Blanc"
+                        "content": "l 350,0 cm  x H 160,0 cm x P 6,1 cm<BR/>Aluminium - Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Droit<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8006,7 +8213,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8097,6 +8304,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8284,7 +8500,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8294,7 +8510,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8578,7 +8794,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Supprime  6 Mois"
+                        "content": "2 = Supprimé - 6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8800,15 +9016,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NORME-NF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-NORME-PEFC",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -8930,7 +9137,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0670390;18;A l'offre ;---; 1,0;1,0;20;2016-12-07;<BR/>0838720;23,5;A l'offre ;---; 4,0;4,0;30;2016-12-07;<BR/>1729040;151;A l'offre ;---; 1,0;1,0;40;2016-12-07;<BR/>2364322;1995;Supprime  6 Mois ;---; 1,0;1,0;10;2016-12-07;"
+                        "content": "0670390;18;0 = A l'offre ;---; 1,0;1,0;20;2016-12-07;<BR/>0838720;23,5;0 = A l'offre ;---; 4,0;4,0;30;2016-12-07;<BR/>1729040;151;0 = A l'offre ;---; 1,0;1,0;40;2016-12-07;<BR/>2364322;1995;2 = Supprimé - 6 Mois ;---; 1,0;1,0;10;2016-12-07;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8984,7 +9191,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 350,0 cm  x L  x E <BR/>Aluminium - Blanc"
+                        "content": "l 350,0 cm  x H 160,0 cm x P 6,1 cm<BR/>Aluminium - Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Droit<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -8993,7 +9218,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9084,6 +9309,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9271,7 +9505,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9281,7 +9515,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9565,7 +9799,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Supprime  6 Mois"
+                        "content": "2 = Supprimé - 6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9778,15 +10012,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NORME-NF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-NORME-PEFC",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -9908,7 +10133,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0670390;18;A l'offre ;---; 1,0;1,0;20;2016-12-07;<BR/>0838720;23,5;A l'offre ;---; 4,0;4,0;30;2016-12-07;<BR/>1729040;151;A l'offre ;---; 1,0;1,0;40;2016-12-07;<BR/>2364331;2215;Supprime  6 Mois ;---; 1,0;1,0;10;2016-12-07;"
+                        "content": "0670390;18;0 = A l'offre ;---; 1,0;1,0;20;2016-12-07;<BR/>0838720;23,5;0 = A l'offre ;---; 4,0;4,0;30;2016-12-07;<BR/>1729040;151;0 = A l'offre ;---; 1,0;1,0;40;2016-12-07;<BR/>2364331;2215;2 = Supprimé - 6 Mois ;---; 1,0;1,0;10;2016-12-07;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9962,7 +10187,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 400,0 cm  x L  x E <BR/>Aluminium - Blanc"
+                        "content": "l 400,0 cm  x H 160,0 cm x P 6,1 cm<BR/>Aluminium - Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Droit<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -9971,7 +10214,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10062,6 +10305,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10249,7 +10501,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10259,7 +10511,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10543,7 +10795,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Supprime  6 Mois"
+                        "content": "2 = Supprimé - 6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10765,15 +11017,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NORME-NF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-NORME-PEFC",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -10895,7 +11138,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0670390;18;A l'offre ;---; 1,0;1,0;20;2016-12-07;<BR/>0838720;23,5;A l'offre ;---; 4,0;4,0;30;2016-12-07;<BR/>1729040;151;A l'offre ;---; 1,0;1,0;40;2016-12-07;<BR/>2364332;2215;Supprime  6 Mois ;---; 1,0;1,0;10;2016-12-07;"
+                        "content": "0670390;18;0 = A l'offre ;---; 1,0;1,0;20;2016-12-07;<BR/>0838720;23,5;0 = A l'offre ;---; 4,0;4,0;30;2016-12-07;<BR/>1729040;151;0 = A l'offre ;---; 1,0;1,0;40;2016-12-07;<BR/>2364332;2215;2 = Supprimé - 6 Mois ;---; 1,0;1,0;10;2016-12-07;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10949,7 +11192,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 400,0 cm  x L  x E <BR/>Aluminium - Blanc"
+                        "content": "l 400,0 cm  x H 160,0 cm x P 6,1 cm<BR/>Aluminium - Blanc"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Droit<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -10958,7 +11219,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11049,6 +11310,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11236,7 +11506,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11246,7 +11516,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -11530,7 +11800,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "Supprime  6 Mois"
+                        "content": "2 = Supprimé - 6 Mois"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0

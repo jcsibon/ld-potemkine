@@ -183,15 +183,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NORME-NF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-NORME-PEFC",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -331,7 +322,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0860740;70;A l'offre ;---; 1,0;1,0;30;2003-09-04;<BR/>0860790;12;A l'offre ;---; 4,0;4,0;60;2003-09-04;<BR/>0860912;15;A l'offre ;---; 1,0;1,0;40;2003-09-04;<BR/>0860920;30;A l'offre ;---; 1,0;1,0;50;2003-09-04;<BR/>1711110;229;A l'offre ;---; 1,0;1,0;10;2003-09-04;<BR/>1711120;260;A l'offre ;---; 1,0;1,0;20;2003-09-04;<BR/>1715920;5;A l'offre ;---; 1,0;1,0;70;2003-09-04;"
+                        "content": "0860740;70;0 = A l'offre ;---; 1,0;1,0;30;2003-09-04;<BR/>0860790;12;0 = A l'offre ;---; 4,0;4,0;60;2003-09-04;<BR/>0860912;15;0 = A l'offre ;---; 1,0;1,0;40;2003-09-04;<BR/>0860920;30;0 = A l'offre ;---; 1,0;1,0;50;2003-09-04;<BR/>1711110;229;0 = A l'offre ;---; 1,0;1,0;10;2003-09-04;<BR/>1711120;260;0 = A l'offre ;---; 1,0;1,0;20;2003-09-04;<BR/>1715920;5;0 = A l'offre ;---; 1,0;1,0;70;2003-09-04;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -385,7 +376,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 250,0 cm  x L  x E <BR/>Bois - Bois exotique"
+                        "content": "l 250,0 cm  x H 110,0 cm x P 4,0 cm<BR/>Bois - Bois exotique"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Galbé<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -394,7 +403,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -485,6 +494,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -662,7 +680,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -672,7 +690,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -975,7 +993,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A l'offre"
+                        "content": "0 = A l'offre"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1197,15 +1215,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NORME-NF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-NORME-PEFC",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -1345,7 +1354,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0860740;70;A l'offre ;---; 1,0;1,0;20;2003-09-04;<BR/>0860790;12;A l'offre ;---; 4,0;4,0;40;2003-09-04;<BR/>0860920;30;A l'offre ;---; 1,0;1,0;30;2003-09-04;<BR/>1711120;260;A l'offre ;---; 2,0;2,0;10;2003-09-04;<BR/>1715920;5;A l'offre ;---; 1,0;1,0;50;2003-09-04;"
+                        "content": "0860740;70;0 = A l'offre ;---; 1,0;1,0;20;2003-09-04;<BR/>0860790;12;0 = A l'offre ;---; 4,0;4,0;40;2003-09-04;<BR/>0860920;30;0 = A l'offre ;---; 1,0;1,0;30;2003-09-04;<BR/>1711120;260;0 = A l'offre ;---; 2,0;2,0;10;2003-09-04;<BR/>1715920;5;0 = A l'offre ;---; 1,0;1,0;50;2003-09-04;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1399,7 +1408,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 300,0 cm  x L  x E <BR/>Bois - Bois exotique"
+                        "content": "l 300,0 cm  x H 110,0 cm x P 4,0 cm<BR/>Bois - Bois exotique"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Galbé<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1408,7 +1435,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1499,6 +1526,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1676,7 +1712,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -1686,7 +1722,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2043,7 +2079,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A l'offre"
+                        "content": "0 = A l'offre"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2265,15 +2301,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NORME-NF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-NORME-PEFC",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -2413,7 +2440,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0860740;70;A l'offre ;---; 1,0;1,0;20;2003-09-04;<BR/>0860790;12;A l'offre ;---; 4,0;4,0;40;2003-09-04;<BR/>0860930;37;A l'offre ;---; 1,0;1,0;30;2003-09-04;<BR/>1711130;344;A l'offre ;---; 2,0;2,0;10;2003-09-04;<BR/>1715920;5;A l'offre ;---; 1,0;1,0;50;2003-09-04;"
+                        "content": "0860740;70;0 = A l'offre ;---; 1,0;1,0;20;2003-09-04;<BR/>0860790;12;0 = A l'offre ;---; 4,0;4,0;40;2003-09-04;<BR/>0860930;37;0 = A l'offre ;---; 1,0;1,0;30;2003-09-04;<BR/>1711130;344;0 = A l'offre ;---; 2,0;2,0;10;2003-09-04;<BR/>1715920;5;0 = A l'offre ;---; 1,0;1,0;50;2003-09-04;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2467,7 +2494,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 350,0 cm  x L  x E <BR/>Bois - Bois exotique"
+                        "content": "l 350,0 cm  x H 110,0 cm x P 4,0 cm<BR/>Bois - Bois exotique"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Galbé<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2476,7 +2521,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2567,6 +2612,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2744,7 +2798,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -2754,7 +2808,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3057,7 +3111,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A l'offre"
+                        "content": "0 = A l'offre"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3279,15 +3333,6 @@
                     "attrSequence": 0
                 },
                 {
-                    "attrIdentifier": "ATC-NORME-NF",
-                    "attrUsage": 2,
-                    "valueDecimal": {
-                        "locale": "fr",
-                        "content": 0
-                    },
-                    "attrSequence": 0
-                },
-                {
                     "attrIdentifier": "ATC-NORME-PEFC",
                     "attrUsage": 2,
                     "valueDecimal": {
@@ -3427,7 +3472,7 @@
                     "attrIdentifier": "ATDDecomposition",
                     "valueString": {
                         "locale": "fr",
-                        "content": "0860740;70;A l'offre ;---; 1,0;1,0;30;2003-09-04;<BR/>0860790;12;A l'offre ;---; 4,0;4,0;60;2003-09-04;<BR/>0860911;15;A l'offre ;---; 1,0;1,0;40;2003-09-04;<BR/>0860920;30;A l'offre ;---; 1,0;1,0;50;2003-09-04;<BR/>1711110;229;A l'offre ;---; 1,0;1,0;10;2003-09-04;<BR/>1711120;260;A l'offre ;---; 1,0;1,0;20;2003-09-04;<BR/>1715920;5;A l'offre ;---; 1,0;1,0;70;2003-09-04;"
+                        "content": "0860740;70;0 = A l'offre ;---; 1,0;1,0;30;2003-09-04;<BR/>0860790;12;0 = A l'offre ;---; 4,0;4,0;60;2003-09-04;<BR/>0860911;15;0 = A l'offre ;---; 1,0;1,0;40;2003-09-04;<BR/>0860920;30;0 = A l'offre ;---; 1,0;1,0;50;2003-09-04;<BR/>1711110;229;0 = A l'offre ;---; 1,0;1,0;10;2003-09-04;<BR/>1711120;260;0 = A l'offre ;---; 1,0;1,0;20;2003-09-04;<BR/>1715920;5;0 = A l'offre ;---; 1,0;1,0;70;2003-09-04;"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3481,7 +3526,25 @@
                     "attrIdentifier": "ATE-0000003",
                     "valueString": {
                         "locale": "fr",
-                        "content": "l 250,0 cm  x L  x E <BR/>Bois - Bois exotique"
+                        "content": "l 250,0 cm  x H 130,0 cm x P 4,0 cm<BR/>Bois - Bois exotique"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-CARACTERISTIQUES",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Forme du portail : Incurvé<BR/><BR/><BR/>"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-FLAG",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "Fait"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3490,7 +3553,7 @@
                     "attrIdentifier": "ATE-LABEL-FORMAT",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A8H"
+                        "content": "LV"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3581,6 +3644,15 @@
                     "valueString": {
                         "locale": "fr",
                         "content": "TTC"
+                    },
+                    "attrUsage": 2,
+                    "attrSequence": 0
+                },
+                {
+                    "attrIdentifier": "ATE-OPTIONS",
+                    "valueString": {
+                        "locale": "fr",
+                        "content": "<BR/><BR/>Motorisation : Oui"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3748,7 +3820,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYP-TARIF",
                     "valueString": {
                         "locale": "fr",
-                        "content": "PRIX AVEC DECOMPOSITION"
+                        "content": "PRIX AVEC DECOMPOSITION (DEC)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -3758,7 +3830,7 @@
                     "attrIdentifier": "COMMUNE-COMM-ART-TYPE",
                     "valueString": {
                         "locale": "fr",
-                        "content": "COMPOSITION DE VENTE"
+                        "content": "COMPOSITION DE VENTE (CPV)"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
@@ -4061,7 +4133,7 @@
                     "attrIdentifier": "SPECIF-RESO-XXX-SPEC-RESO-OBSO",
                     "valueString": {
                         "locale": "fr",
-                        "content": "A l'offre"
+                        "content": "0 = A l'offre"
                     },
                     "attrUsage": 2,
                     "attrSequence": 0
